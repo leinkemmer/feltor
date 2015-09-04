@@ -1,12 +1,14 @@
 var NAVTREE =
 [
   [ "Discontinuous Galerkin Library", "index.html", [
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -16,10 +18,11 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -31,7 +34,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "algorithm_8h.html",
-"structdg_1_1_histogram2_d.html#ae442645862b8112c7cc34bd3c2bfc047"
+"grid_8h_source.html",
+"namespacemembers_func.html",
+"structdg_1_1_grid3d.html#ac5c49e75fc0244f4f5fe721764db060c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

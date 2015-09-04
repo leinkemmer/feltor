@@ -24,15 +24,15 @@ var group__geom =
     ] ],
     [ "PsipR", "structsolovev_1_1_psip_r.html", [
       [ "PsipR", "structsolovev_1_1_psip_r.html#a9ed70b25c22662a70ea4859a1336962b", null ],
-      [ "display", "structsolovev_1_1_psip_r.html#ae05ab59288ea92a85991611108ec558e", null ],
-      [ "operator()", "structsolovev_1_1_psip_r.html#a021440c9ee5be27d62a9e3f6ac3892dd", null ],
-      [ "operator()", "structsolovev_1_1_psip_r.html#ac29ecf4e89f426a119b2f369f697b73c", null ]
+      [ "display", "structsolovev_1_1_psip_r.html#aa9f6c9e84478b751dd1cd99323b40eba", null ],
+      [ "operator()", "structsolovev_1_1_psip_r.html#a36614badd788dfe989b8fc8496937038", null ],
+      [ "operator()", "structsolovev_1_1_psip_r.html#a044dfdd41af52b4a425d2f3a6e1f51a7", null ]
     ] ],
     [ "PsipRR", "structsolovev_1_1_psip_r_r.html", [
       [ "PsipRR", "structsolovev_1_1_psip_r_r.html#aa50ab546b89d4e3af9e7244e9ca742ff", null ],
       [ "display", "structsolovev_1_1_psip_r_r.html#a6f23fd8259ba2253a0a8a0369cd82a8c", null ],
-      [ "operator()", "structsolovev_1_1_psip_r_r.html#ade58b2aebe56979d740b1e8e1645b779", null ],
-      [ "operator()", "structsolovev_1_1_psip_r_r.html#afb12c9f082c095511a8db8988f9664c5", null ]
+      [ "operator()", "structsolovev_1_1_psip_r_r.html#a745b341c1c3082d223db0844265bbb86", null ],
+      [ "operator()", "structsolovev_1_1_psip_r_r.html#a6bf1851991fd03a25ba742cb67e9e76f", null ]
     ] ],
     [ "PsipZ", "structsolovev_1_1_psip_z.html", [
       [ "PsipZ", "structsolovev_1_1_psip_z.html#a851828d945124f59959a004abb7c5a44", null ],
@@ -130,54 +130,6 @@ var group__geom =
     [ "BHatP", "structsolovev_1_1_b_hat_p.html", [
       [ "BHatP", "structsolovev_1_1_b_hat_p.html#acda6158b871fadf7392c2bc6e2a7f24f", null ],
       [ "operator()", "structsolovev_1_1_b_hat_p.html#a4f4d179c1f497c927ab094d8d28ff745", null ]
-    ] ],
-    [ "Iris", "structsolovev_1_1_iris.html", [
-      [ "Iris", "structsolovev_1_1_iris.html#ae30833f147e64e8ba87e2edb85ae03b7", null ],
-      [ "operator()", "structsolovev_1_1_iris.html#aba82ac25c92cb639c2d9d8483254944e", null ],
-      [ "operator()", "structsolovev_1_1_iris.html#a417b9c7c5214758219cddc78b923fbbf", null ]
-    ] ],
-    [ "Pupil", "structsolovev_1_1_pupil.html", [
-      [ "Pupil", "structsolovev_1_1_pupil.html#a7bc1e3e5606a589c061298ee994e575b", null ],
-      [ "operator()", "structsolovev_1_1_pupil.html#aa3b229b269a2ade0937833b66e63c791", null ],
-      [ "operator()", "structsolovev_1_1_pupil.html#ab1f7acf8205571c5315ab5d47440a42d", null ]
-    ] ],
-    [ "PsiPupil", "structsolovev_1_1_psi_pupil.html", [
-      [ "PsiPupil", "structsolovev_1_1_psi_pupil.html#ad09e5d29b383e7fbda267f4046c419bb", null ],
-      [ "operator()", "structsolovev_1_1_psi_pupil.html#ad3339ceac3f72f22a201295f8d9d560e", null ],
-      [ "operator()", "structsolovev_1_1_psi_pupil.html#a83453dd4124146e44a1f6d436edaf1f4", null ]
-    ] ],
-    [ "PsiLimiter", "structsolovev_1_1_psi_limiter.html", [
-      [ "PsiLimiter", "structsolovev_1_1_psi_limiter.html#a3c232bd73c8c2deb4e4f73e887a884b8", null ],
-      [ "operator()", "structsolovev_1_1_psi_limiter.html#a82eef81b347fd5c2a3dcae2c5d9c6a87", null ],
-      [ "operator()", "structsolovev_1_1_psi_limiter.html#a3f50447c170189146fe3a16ffaa5e56c", null ]
-    ] ],
-    [ "GaussianDamping", "structsolovev_1_1_gaussian_damping.html", [
-      [ "GaussianDamping", "structsolovev_1_1_gaussian_damping.html#a3cca529ce2c29f2eaf4bbd96a15a67f6", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_damping.html#a77205349fcba6e44b53598a8d47d1bc4", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_damping.html#a8bfa9eb991b48b92714dfe449ecb3ac6", null ]
-    ] ],
-    [ "GaussianProfDamping", "structsolovev_1_1_gaussian_prof_damping.html", [
-      [ "GaussianProfDamping", "structsolovev_1_1_gaussian_prof_damping.html#a124b3946e9b9dc7dbe233e3bd5274e5d", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_prof_damping.html#ae3876471dccbd555eaf63e9207e63a0e", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_prof_damping.html#a00cf2e2340fb8087cec603d46bd1a0a2", null ]
-    ] ],
-    [ "GaussianProfXDamping", "structsolovev_1_1_gaussian_prof_x_damping.html", [
-      [ "GaussianProfXDamping", "structsolovev_1_1_gaussian_prof_x_damping.html#a1fcd8e6043731cdc7b6867150072c66b", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_prof_x_damping.html#a9e1aa9c1023b34d9fdd270b3ecccfc6c", null ],
-      [ "operator()", "structsolovev_1_1_gaussian_prof_x_damping.html#ab6d5c1abb114d8c1573dc6bbaf9623ed", null ]
-    ] ],
-    [ "TanhSource", "structsolovev_1_1_tanh_source.html", [
-      [ "TanhSource", "structsolovev_1_1_tanh_source.html#ab697d6609475d0548ddf9a9ffd36410c", null ],
-      [ "operator()", "structsolovev_1_1_tanh_source.html#a16a60c034aea04522361ac3b61d31baa", null ],
-      [ "operator()", "structsolovev_1_1_tanh_source.html#a03a72254e60c292e5247cf1745fe70dc", null ]
-    ] ],
-    [ "TestFunction", "structsolovev_1_1_test_function.html", [
-      [ "TestFunction", "structsolovev_1_1_test_function.html#a4e8934d72cc7d257b8d0e29968a02fd3", null ],
-      [ "operator()", "structsolovev_1_1_test_function.html#a0f4491be5be0ccbcd8f35397b6e9f616", null ]
-    ] ],
-    [ "DeriTestFunction", "structsolovev_1_1_deri_test_function.html", [
-      [ "DeriTestFunction", "structsolovev_1_1_deri_test_function.html#ac20d7985edb58bfb1aaa6fcec409d9fb", null ],
-      [ "operator()", "structsolovev_1_1_deri_test_function.html#a052d52ebdcfae5fa18de6db4e7ce9393", null ]
     ] ],
     [ "display", "group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
     [ "GeomParameters", "group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],

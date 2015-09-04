@@ -9,6 +9,7 @@ var group__algorithms =
     ] ],
     [ "Invert", "structdg_1_1_invert.html", [
       [ "Invert", "structdg_1_1_invert.html#a36911150e0779cce30ef7e7d002ef0ac", null ],
+      [ "get_last", "structdg_1_1_invert.html#a3f72ec59f67ad4dcfbba25c178b1fe7e", null ],
       [ "get_max", "structdg_1_1_invert.html#a9bf8b8325e4b96dc859103b09a3112a7", null ],
       [ "operator()", "structdg_1_1_invert.html#aba7447f25ad0b970efe0df955c1da484", null ],
       [ "operator()", "structdg_1_1_invert.html#a04af60e082a2c5a2058fae930338001b", null ],

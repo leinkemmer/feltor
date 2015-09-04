@@ -1,4 +1,4 @@
 var structdg_1_1_min_mod =
 [
-    [ "operator()", "structdg_1_1_min_mod.html#a88d5901b10cea0b447e7758de1807b20", null ]
+    [ "operator()", "structdg_1_1_min_mod.html#a504362c1b2c43fc75a7306b842f109ed", null ]
 ];

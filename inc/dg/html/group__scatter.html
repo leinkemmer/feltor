@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.0.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -65,6 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -107,7 +108,7 @@ $(document).ready(function(){initNavTree('group__scatter.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Groups</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,16 +118,354 @@ $(document).ready(function(){initNavTree('group__scatter.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Utility functions for reorder operations on DG-formatted vectors<div class="ingroups"><a class="el" href="group__utilities.html">Utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga67481e26561ad0454ce39a6388b116c7"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga67481e26561ad0454ce39a6388b116c7">dg::create::scatterMap</a> (unsigned nx, unsigned ny, unsigned Nx, unsigned Ny)</td></tr>
+<tr class="memdesc:ga67481e26561ad0454ce39a6388b116c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index Map for scatter operation on dg formatted vectors.  <a href="#ga67481e26561ad0454ce39a6388b116c7">More...</a><br/></td></tr>
+<tr class="separator:ga67481e26561ad0454ce39a6388b116c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94bbc21cbc209cea13595b5e169d798d"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga94bbc21cbc209cea13595b5e169d798d">dg::create::gatherMap</a> (unsigned n, unsigned Nx, unsigned Ny)</td></tr>
+<tr class="memdesc:ga94bbc21cbc209cea13595b5e169d798d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index map for gather operations on dg formatted vectors.  <a href="#ga94bbc21cbc209cea13595b5e169d798d">More...</a><br/></td></tr>
+<tr class="separator:ga94bbc21cbc209cea13595b5e169d798d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, <br class="typebreak"/>
+cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">dg::create::gather</a> (const thrust::host_vector&lt; int &gt; &amp;map)</td></tr>
+<tr class="memdesc:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a permutation matrix from a permutation map.  <a href="#ga852436a9d6fafcaabeafad11aa79c9b9">More...</a><br/></td></tr>
+<tr class="separator:ga852436a9d6fafcaabeafad11aa79c9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98595d0efc1a95030957a7117650e00a"><td class="memItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, double, <br class="typebreak"/>
+cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga98595d0efc1a95030957a7117650e00a">dg::create::scatter</a> (const thrust::host_vector&lt; int &gt; &amp;map)</td></tr>
+<tr class="memdesc:ga98595d0efc1a95030957a7117650e00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a permutation matrix from a permutation map.  <a href="#ga98595d0efc1a95030957a7117650e00a">More...</a><br/></td></tr>
+<tr class="separator:ga98595d0efc1a95030957a7117650e00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf87708048b0f23b73c9144adc0a1a97"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaaf87708048b0f23b73c9144adc0a1a97"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, T, <br class="typebreak"/>
+cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gaaf87708048b0f23b73c9144adc0a1a97">dg::create::backscatter</a> (const Grid2d&lt; T &gt; &amp;g)</td></tr>
+<tr class="memdesc:gaaf87708048b0f23b73c9144adc0a1a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a matrix that transforms values to an equidistant grid ready for visualisation  <a href="#gaaf87708048b0f23b73c9144adc0a1a97">More...</a><br/></td></tr>
+<tr class="separator:gaaf87708048b0f23b73c9144adc0a1a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafae4397f10cadab919d07670ec33659"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:gaafae4397f10cadab919d07670ec33659"><td class="memTemplItemLeft" align="right" valign="top">cusp::coo_matrix&lt; int, T, <br class="typebreak"/>
+cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__scatter.html#gaafae4397f10cadab919d07670ec33659">dg::create::backscatter</a> (const Grid3d&lt; T &gt; &amp;g)</td></tr>
+<tr class="memdesc:gaafae4397f10cadab919d07670ec33659"><td class="mdescLeft">&#160;</td><td class="mdescRight">make a matrix that transforms values to an equidistant grid ready for visualisation  <a href="#gaafae4397f10cadab919d07670ec33659">More...</a><br/></td></tr>
+<tr class="separator:gaafae4397f10cadab919d07670ec33659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70e4b451226a61dc762a6b8a1f46b316"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga70e4b451226a61dc762a6b8a1f46b316">dg::create::scatterMapInvertxy</a> (unsigned n, unsigned Nx, unsigned Ny)</td></tr>
+<tr class="memdesc:ga70e4b451226a61dc762a6b8a1f46b316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index map for scatter operation on dg - formatted vectors.  <a href="#ga70e4b451226a61dc762a6b8a1f46b316">More...</a><br/></td></tr>
+<tr class="separator:ga70e4b451226a61dc762a6b8a1f46b316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04b35be22a8270bba0a4ece48603e1bc"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__scatter.html#ga04b35be22a8270bba0a4ece48603e1bc">dg::create::contiguousLineNumbers</a> (unsigned rows, unsigned cols)</td></tr>
+<tr class="memdesc:ga04b35be22a8270bba0a4ece48603e1bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">write a matrix containing it's line number as elements  <a href="#ga04b35be22a8270bba0a4ece48603e1bc">More...</a><br/></td></tr>
+<tr class="separator:ga04b35be22a8270bba0a4ece48603e1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gaaf87708048b0f23b73c9144adc0a1a97"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, T, cusp::host_memory&gt; dg::create::backscatter </td>
+          <td>(</td>
+          <td class="paramtype">const Grid2d&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make a matrix that transforms values to an equidistant grid ready for visualisation </p>
+<p>Useful if you want to visualize a dg-formatted vector. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>value type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid on which to operate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>transformation matrix </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>this matrix has ~n^4 N^2 entries and is not sorted </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaafae4397f10cadab919d07670ec33659"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, T, cusp::host_memory&gt; dg::create::backscatter </td>
+          <td>(</td>
+          <td class="paramtype">const Grid3d&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make a matrix that transforms values to an equidistant grid ready for visualisation </p>
+<p>Useful if you want to visualize a dg-formatted vector. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>value type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The 3d grid on which to operate</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>transformation matrix </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>this matrix has ~n^4 N^2 entries and is not sorted </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga04b35be22a8270bba0a4ece48603e1bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;int&gt; dg::create::contiguousLineNumbers </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>cols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write a matrix containing it's line number as elements </p>
+<p>Useful in a reduce_by_key computation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rows</td><td># of rows of the matrix </td></tr>
+    <tr><td class="paramname">cols</td><td># of cols of the matrix</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a vector of size rows*cols containing line numbers </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga852436a9d6fafcaabeafad11aa79c9b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::gather </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a permutation matrix from a permutation map. </p>
+<p>A permutation can be done in two ways. Either you name to every index in a vector an index where this place should go to ( scatter) or you name to every index the index of the position that comes to this place (gather). A Scatter is the inverse of a Gather operation with the same index-map. When transformed to a permutation matrix scatter is the inverse ( = transpose) of gather. (Permutation matrices are orthogonal and sparse) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>index map</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Permutation matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga94bbc21cbc209cea13595b5e169d798d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;int&gt; dg::create::gatherMap </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Ny</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index map for gather operations on dg formatted vectors. </p>
+<p>In 2D the vector elements of an x-space dg vector in one cell lie contiguously in memory. Sometimes you want elements in the x-direction to lie contiguously instead. This map can be used in a gather operation to permute elements in exactly that way. The elements of the map contain the indices that come at that place i.e. w[i] = v[m[i]] Gather from not-contiguous to contiguous or Scatter from contiguous to non-contiguous</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td># of polynomial coefficients </td></tr>
+    <tr><td class="paramname">Nx</td><td># of points in x </td></tr>
+    <tr><td class="paramname">Ny</td><td># of points in y</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>map of indices </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>memory layout has been changed </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga98595d0efc1a95030957a7117650e00a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cusp::coo_matrix&lt;int, double, cusp::host_memory&gt; dg::create::scatter </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a permutation matrix from a permutation map. </p>
+<p>A permutation can be done in two ways. Either you name to every index in a vector an index where this place should go to ( scatter) or you name to every index the index of the position that comes to this place (gather). A Scatter is the inverse of a Gather operation with the same index-map. When transformed to a permutation matrix scatter is the inverse ( = transpose) of gather. (Permutation matrices are orthogonal and sparse) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td>index map</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Permutation matrix </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga67481e26561ad0454ce39a6388b116c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;int&gt; dg::create::scatterMap </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Ny</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index Map for scatter operation on dg formatted vectors. </p>
+<p>In 2D the vector elements of an x-space dg vector in one cell lie contiguously in memory. Sometimes you want elements in the x-direction to lie contiguously instead. This map can be used in a scatter operation to permute elements in exactly that way. The elements of the map contain the indices where this place goes to i.e. w[m[i]] = v[i] Scatter from not-contiguous to contiguous or Gather from contiguous to non-contiguous</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nx</td><td># of polynomial coefficients in x </td></tr>
+    <tr><td class="paramname">ny</td><td># of polynomial coefficients in y </td></tr>
+    <tr><td class="paramname">Nx</td><td># of points in x </td></tr>
+    <tr><td class="paramname">Ny</td><td># of points in y</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>map of indices </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>memory layout has been changed </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga70e4b451226a61dc762a6b8a1f46b316"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;int&gt; dg::create::scatterMapInvertxy </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>Ny</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index map for scatter operation on dg - formatted vectors. </p>
+<p>Use in thrust::scatter function on a dg-formatted vector. We obtain a vector where the y direction is contiguous in memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td># of polynomial coefficients </td></tr>
+    <tr><td class="paramname">Nx</td><td># of points in x </td></tr>
+    <tr><td class="paramname">Ny</td><td># of points in y</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>map of indices </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 16 2015 23:45:07 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['texture_5frgbf',['Texture_RGBf',['../../../../inc/toefl/html/group__utilities.html#ga356c71893774c0fdfb1e26ef1ab9577e',1,'toefl::Texture_RGBf()'],['../../../../inc/toefl/html/group__utilities.html#ga356c71893774c0fdfb1e26ef1ab9577e',1,'Texture_RGBf()(Global Namespace)']]]
+  ['dds',['DDS',['../../../../inc/dg/html/namespacedg.html#a95ddc03eb343687757cd1777a44fc1be',1,'dg']]],
+  ['dmatrix',['DMatrix',['../../../../inc/dg/html/group__typedefs.html#ga000e7f1be2b8bf629eb8865f9fea62b5',1,'dg::DMatrix()'],['../../../../inc/dg/html/group__typedefs.html#ga000e7f1be2b8bf629eb8865f9fea62b5',1,'DMatrix()(Global Namespace)']]],
+  ['dvec',['DVec',['../../../../inc/dg/html/group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6',1,'dg::DVec()'],['../../../../inc/dg/html/group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6',1,'DVec()(Global Namespace)']]]
 ];

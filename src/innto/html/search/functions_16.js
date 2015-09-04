@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['_7edft_5fdft',['~DFT_DFT',['../../../../inc/toefl/html/classtoefl_1_1_d_f_t___d_f_t.html#a9dc932a569dd0d3d846f15c4a28bc60b',1,'toefl::DFT_DFT']]],
-  ['_7edft_5fdrt',['~DFT_DRT',['../../../../inc/toefl/html/classtoefl_1_1_d_f_t___d_r_t.html#a830985e207bcd99891faca3ed1c1c1ea',1,'toefl::DFT_DRT']]],
-  ['_7edrt_5fdft',['~DRT_DFT',['../../../../inc/toefl/html/classtoefl_1_1_d_r_t___d_f_t.html#a736fdfd84649a1f681152279ea945e49',1,'toefl::DRT_DFT']]],
-  ['_7edrt_5fdrt',['~DRT_DRT',['../../../../inc/toefl/html/classtoefl_1_1_d_r_t___d_r_t.html#a5ee3da75aab8cadc487513972509b8d3',1,'toefl::DRT_DRT']]],
-  ['_7ematrix',['~Matrix',['../../../../inc/toefl/html/classtoefl_1_1_matrix.html#ae0bbffe530ad595079c99355458c064c',1,'toefl::GhostMatrix']]],
-  ['_7et5rdonly',['~T5rdonly',['../../../../inc/file/html/structfile_1_1_t5rdonly.html#acfdc4ae9c3e1b027d438e4b06672ca41',1,'file::T5rdonly']]]
+  ['x0',['x0',['../../../../inc/dg/html/structdg_1_1_grid1d.html#ae1a24f9bce8adc436e3b3245e5096b12',1,'dg::Grid1d::x0()'],['../../../../inc/dg/html/structdg_1_1_grid2d.html#aa0882e444de4fcca3a34ff9f308fa129',1,'dg::Grid2d::x0()'],['../../../../inc/dg/html/structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733',1,'dg::Grid3d::x0()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid2d.html#adf6f915b4a4131d47fb4ef7e63cee42d',1,'dg::MPI_Grid2d::x0()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid3d.html#a11a432c2a322b77f4c2a251307475953',1,'dg::MPI_Grid3d::x0()']]],
+  ['x1',['x1',['../../../../inc/dg/html/structdg_1_1_grid1d.html#a898b47303f81eba4dae18ddf9b11a543',1,'dg::Grid1d::x1()'],['../../../../inc/dg/html/structdg_1_1_grid2d.html#a500760450beb756e4c22f7715b2628b5',1,'dg::Grid2d::x1()'],['../../../../inc/dg/html/structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f',1,'dg::Grid3d::x1()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid2d.html#a6cc45ad00895a7e7381f448b926bdd9c',1,'dg::MPI_Grid2d::x1()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid3d.html#ac5ce37896bd00b3a66645493e9e823e8',1,'dg::MPI_Grid3d::x1()']]]
 ];

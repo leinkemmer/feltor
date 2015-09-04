@@ -41,5 +41,10 @@ var group__solvers =
       [ "laplace", "struct_particle_density.html#af0e4cc37962112f13802f83fae316aea", null ],
       [ "linear", "struct_particle_density.html#ae2d772b39a513ec3e46f9d66961ab629", null ],
       [ "nonlinear", "struct_particle_density.html#ace42becde6c108a7b8378c2a7abfa98d", null ]
-    ] ]
+    ] ],
+    [ "axpby", "group__solvers.html#ga92b1eb47da852923585d1d3f299f4187", null ],
+    [ "dot", "group__solvers.html#ga6eecb521e70c9ab797edf47ce5f28e4f", null ],
+    [ "dot", "group__solvers.html#ga928beccfe695855be0085a93f3bb09e1", null ],
+    [ "dot", "group__solvers.html#ga2745dd7e65d77fb2e7d013416c201d11", null ],
+    [ "dy", "group__solvers.html#ga7da14ed364625f70e7ffddc2b456348b", null ]
 ];

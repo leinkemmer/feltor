@@ -4,7 +4,7 @@ var structdg_1_1_helmholtz =
     [ "Helmholtz", "group__matrixoperators.html#ga5a2fc2f7c83288c951b5a938d8cacd85", null ],
     [ "alpha", "group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6", null ],
     [ "alpha", "group__matrixoperators.html#ga59320b5e0dd00f8e5a7c49c880912d60", null ],
-    [ "chi", "group__matrixoperators.html#gaf8330683e97b34392b998695d33f13ba", null ],
+    [ "chi", "group__matrixoperators.html#gafa5d16b61453a474667c8f1431a5f654", null ],
     [ "precond", "group__matrixoperators.html#ga42af8edcfc2def422a545c6fe950dbfc", null ],
     [ "reset_chi", "group__matrixoperators.html#gaf76f445d7887289a03f0e48ed42c2a3d", null ],
     [ "set_chi", "group__matrixoperators.html#gac95fce512bf66491a2235d589148a64a", null ],

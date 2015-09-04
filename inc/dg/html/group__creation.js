@@ -1,7 +1,7 @@
 var group__creation =
 [
-    [ "Lowlevel helper functions and classes", "group__lowlevel.html", null ],
-    [ "Matrix creation functions and classes", "group__highlevel.html", null ],
+    [ "Lowlevel helper functions and classes", "group__lowlevel.html", "group__lowlevel" ],
+    [ "Matrix creation functions and classes", "group__highlevel.html", "group__highlevel" ],
     [ "Arakawas scheme", "group__arakawa.html", "group__arakawa" ],
     [ "Classes that act as matrices in blas2 routines", "group__matrixoperators.html", "group__matrixoperators" ],
     [ "bc", "group__creation.html#ga59440bdf436f2874b49aa52b670ed364", [

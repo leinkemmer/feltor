@@ -133,6 +133,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solver for dirichlet type x-boundary conditions of the toefl equations.  <a href="classtoefl_1_1_d_r_t___d_f_t___solver.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtoefl_1_1_energetics.html">toefl::Energetics&lt; n &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute <a class="el" href="structtoefl_1_1_energetics.html" title="Compute Energetics of INNTO code. ">Energetics</a> of INNTO code.  <a href="structtoefl_1_1_energetics.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_particle_density.html">ParticleDensity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes real particle density from ion gyrocenter density.  <a href="struct_particle_density.html#details">More...</a><br/></td></tr>
@@ -140,39 +141,256 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga92b1eb47da852923585d1d3f299f4187"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga92b1eb47da852923585d1d3f299f4187"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::axpby</b> (double <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6">alpha</a>, const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;x, double beta, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;y)</td></tr>
+<tr class="memitem:ga92b1eb47da852923585d1d3f299f4187"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solvers.html#ga92b1eb47da852923585d1d3f299f4187">toefl::axpby</a> (double <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6">alpha</a>, const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;x, double beta, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;y)</td></tr>
+<tr class="memdesc:ga92b1eb47da852923585d1d3f299f4187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blas1 function.  <a href="#ga92b1eb47da852923585d1d3f299f4187">More...</a><br/></td></tr>
 <tr class="separator:ga92b1eb47da852923585d1d3f299f4187"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6eecb521e70c9ab797edf47ce5f28e4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6eecb521e70c9ab797edf47ce5f28e4f"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::dot</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m1, const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m2)</td></tr>
+<tr class="memitem:ga6eecb521e70c9ab797edf47ce5f28e4f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solvers.html#ga6eecb521e70c9ab797edf47ce5f28e4f">toefl::dot</a> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m1, const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m2)</td></tr>
+<tr class="memdesc:ga6eecb521e70c9ab797edf47ce5f28e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blas1 dot product.  <a href="#ga6eecb521e70c9ab797edf47ce5f28e4f">More...</a><br/></td></tr>
 <tr class="separator:ga6eecb521e70c9ab797edf47ce5f28e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga928beccfe695855be0085a93f3bb09e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga928beccfe695855be0085a93f3bb09e1"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::dot</b> (const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;v1, const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;v2)</td></tr>
+<tr class="memitem:ga928beccfe695855be0085a93f3bb09e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solvers.html#ga928beccfe695855be0085a93f3bb09e1">toefl::dot</a> (const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;v1, const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;v2)</td></tr>
+<tr class="memdesc:ga928beccfe695855be0085a93f3bb09e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute dot product.  <a href="#ga928beccfe695855be0085a93f3bb09e1">More...</a><br/></td></tr>
 <tr class="separator:ga928beccfe695855be0085a93f3bb09e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2745dd7e65d77fb2e7d013416c201d11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2745dd7e65d77fb2e7d013416c201d11"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::dot</b> (const std::vector&lt; double &gt; &amp;v1, const std::vector&lt; double &gt; &amp;v2)</td></tr>
+<tr class="memitem:ga2745dd7e65d77fb2e7d013416c201d11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solvers.html#ga2745dd7e65d77fb2e7d013416c201d11">toefl::dot</a> (const std::vector&lt; double &gt; &amp;v1, const std::vector&lt; double &gt; &amp;v2)</td></tr>
+<tr class="memdesc:ga2745dd7e65d77fb2e7d013416c201d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute dot product.  <a href="#ga2745dd7e65d77fb2e7d013416c201d11">More...</a><br/></td></tr>
 <tr class="separator:ga2745dd7e65d77fb2e7d013416c201d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a99fba212e988fb261a58de260c6e2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4a99fba212e988fb261a58de260c6e2d"></a>
 std::vector&lt; std::complex<br class="typebreak"/>
 &lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::extract_sum_y</b> (const Matrix&lt; std::complex&lt; double &gt; &gt; &amp;in)</td></tr>
 <tr class="separator:ga4a99fba212e988fb261a58de260c6e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4c98a6523a1d9d13536945e0e7d4c63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf4c98a6523a1d9d13536945e0e7d4c63"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::extract_sum_y</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in)</td></tr>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::extract_sum_y</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in)</td></tr>
 <tr class="separator:gaf4c98a6523a1d9d13536945e0e7d4c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ad961f8c9fa4ec830cf5cd350b51199"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3ad961f8c9fa4ec830cf5cd350b51199"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::remove_average_y</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::remove_average_y</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;m)</td></tr>
 <tr class="separator:ga3ad961f8c9fa4ec830cf5cd350b51199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7da14ed364625f70e7ffddc2b456348b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7da14ed364625f70e7ffddc2b456348b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>toefl::dy</b> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;out, double h)</td></tr>
+<tr class="memitem:ga7da14ed364625f70e7ffddc2b456348b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__solvers.html#ga7da14ed364625f70e7ffddc2b456348b">toefl::dy</a> (const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;in, Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;out, double h)</td></tr>
+<tr class="memdesc:ga7da14ed364625f70e7ffddc2b456348b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute y derivative using spectral method.  <a href="#ga7da14ed364625f70e7ffddc2b456348b">More...</a><br/></td></tr>
 <tr class="separator:ga7da14ed364625f70e7ffddc2b456348b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga92b1eb47da852923585d1d3f299f4187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toefl::axpby </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blas1 function. </p>
+<p>computes </p>
+<p class="formulaDsp">
+\[ y = \alpha x + \beta y \]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alpha</td><td>a scalar </td></tr>
+    <tr><td class="paramname">x</td><td><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/classtoefl_1_1_matrix.html">Matrix</a> </td></tr>
+    <tr><td class="paramname">beta</td><td>a scalar </td></tr>
+    <tr><td class="paramname">y</td><td><a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/classtoefl_1_1_matrix.html">Matrix</a> (read &amp; write) containing result on output </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6eecb521e70c9ab797edf47ce5f28e4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double toefl::dot </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>m2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blas1 dot product. </p>
+<p>Computes </p>
+<p class="formulaDsp">
+\[\sum_{ij} m_{1ij}m_{2ij}\]
+</p>
+ <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">m1</td><td></td></tr>
+    <tr><td class="paramname">m2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Dot product </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga928beccfe695855be0085a93f3bb09e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double toefl::dot </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::complex&lt; double &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute dot product. </p>
+<p>Computes </p>
+<p class="formulaDsp">
+\[\sum_{i} v_{1i}v^*_{2i}\]
+</p>
+<p> where * is the complex conjugate</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td></td></tr>
+    <tr><td class="paramname">v2</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2745dd7e65d77fb2e7d013416c201d11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double toefl::dot </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute dot product. </p>
+<p>Computes </p>
+<p class="formulaDsp">
+\[\sum_{i} v_{1i}v^_{2i}\]
+</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v1</td><td>real vector </td></tr>
+    <tr><td class="paramname">v2</td><td>real vector</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>dot product </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga7da14ed364625f70e7ffddc2b456348b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void toefl::dy </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix&lt; double, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/inc/toefl.tag:../../../inc/toefl/html/" href="../../../inc/toefl/html/group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147">TL_DFT</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute y derivative using spectral method. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">in</td><td></td></tr>
+    <tr><td class="paramname">out</td><td></td></tr>
+    <tr><td class="paramname">h</td><td>grid constant </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 16 2015 23:45:12 for INNTO code by
+    <li class="footer">Generated on Fri Sep 4 2015 16:33:19 for INNTO code by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

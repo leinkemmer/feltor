@@ -2,38 +2,723 @@
 <tagfile>
   <compound kind="file">
     <name>algorithm.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>algorithm_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="arakawa_8h" name="arakawa.h" local="yes" imported="no">arakawa.h</includes>
-    <includes id="helmholtz_8h" name="helmholtz.h" local="yes" imported="no">helmholtz.h</includes>
-    <includes id="cg_8h" name="cg.h" local="yes" imported="no">cg.h</includes>
-    <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">exceptions.h</includes>
-    <includes id="functors_8h" name="functors.h" local="yes" imported="no">functors.h</includes>
-    <includes id="multistep_8h" name="multistep.h" local="yes" imported="no">multistep.h</includes>
-    <includes id="elliptic_8h" name="elliptic.h" local="yes" imported="no">elliptic.h</includes>
-    <includes id="runge__kutta_8h" name="runge_kutta.h" local="yes" imported="no">runge_kutta.h</includes>
-    <includes id="dz_8h" name="dz.h" local="yes" imported="no">dz.h</includes>
   </compound>
   <compound kind="file">
     <name>arakawa.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>arakawa_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="enums_8h" name="enums.h" local="yes" imported="no">enums.h</includes>
     <class kind="struct">dg::ArakawaX</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
+    <name>average.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
+    <filename>average_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>average.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>backend_2average_8h</filename>
+    <class kind="struct">dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</class>
+    <namespace>dg</namespace>
+  </compound>
+  <compound kind="file">
+    <name>average.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>average_8cuh</filename>
+    <class kind="struct">dg::PoloidalAverage</class>
+    <class kind="struct">dg::ToroidalAverage</class>
+    <namespace>dg</namespace>
+  </compound>
+  <compound kind="file">
+    <name>derivatives.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>derivatives_8h</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga69c10f1ff46a0283c2f5e1ddd8e64465</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa5ed6f9f8fbebc82ff21085480b9c2d5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9a8e4982e7ceb95ce7508fd4a6d51f8b</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafac8350100011450eaf94f74c66cddb5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac6c5bdeeff04f149ffbfadfd54e134c7</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga71bd4069fa49806625c0377baa1b5e85</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga408cc1f12f4b1d99f431d5deee524590</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3dad84da244ac1c8ae28bc226228644</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga7752f03c83aa8abfb9f9cc13a5afa4dc</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gace169e38d13cad07fcb765fccc392181</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafb374b601cfb7dff1f187e3b7ca44241</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaec13a9d41ed59c227f68dc8472fe4b39</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga2f8388284a65b7dc473d7a26eb11bfe7</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad71fb653a1bce34fce275dab57785c9c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac7d40127801cae83a93fa04355250e1c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga1039ae2a0f2a10603fa1cfe2e6d28fca</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3aee94a9f3f66d65c20bbcb720b1200</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad93c2b4b5b54db591e5e637c2c9bcfd0</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga835fb03693f889c0742bc379fc7e98d3</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga91107e83028633d52ed0b1865dd66ca6</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>dx.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>dx_8h</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_symm</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga73eb7642435404c4463a59ba423233c1</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_plus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga7cb05902116470e4e3f40bb64c91e5f3</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_minus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaafaa62ed9e4cc975d82e1c6f0dfabf8b</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jump</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gab9b667c4dc2c84e26b26d41144af7f2f</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_normed</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaa9a9ae9a1c8dd960747be631e3c76e87</anchor>
+      <arglist>(int n, int N, double h, bc bcx, direction dir)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga51d737bc72722410c3379685359d4724</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gad81ca75e4fb901edb156de6718cec261</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ell_interpolation.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>ell__interpolation_8cuh</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>IHMatrix</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a0af8204731ee6327dc4616a5980af2d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>IDMatrix</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a0d122f4172a3e60105754f9419c0831f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; double, int, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aca24d18f61418bd8938d5326bea3c8ce</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a71eb3c13f4be1fb861138da47c116f88</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const thrust::device_vector&lt; double &gt; &amp;y, const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aab1696cd3592ca0385f4e3768ae7d07d</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const thrust::device_vector&lt; double &gt; &amp;y, const thrust::device_vector&lt; double &gt; &amp;z, const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a5f404f0beafa3a4d8924ebf279869e91</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g_new, const Grid3d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a0c8f8fa4691539661912b90d92480919</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g_new, const Grid2d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>evaluation.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>evaluation_8cuh</filename>
+    <namespace>dg</namespace>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga954a5010786bf8a66827a7a6b2e8034f</anchor>
+      <arglist>(UnaryOp f, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga601fe153d55c6d184e58fee8794068e4</anchor>
+      <arglist>(BinaryOp f, const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga4562d9e65a9c5d8cac3555655128961a</anchor>
+      <arglist>(TernaryOp f, const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>functions.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>functions_8h</filename>
+    <namespace>dg</namespace>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga5797166cdb9d26408ea629f742534fa7</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga00fbb55c78ef8e349169a2e3556d78bc</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gaa8487df41f74a33ef2a63065415b88b5</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga4c5536b3b96ccc28668a59d142293b6d</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga8be4db51a073762c73c61dc2cfac4aaa</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gafe8af9f57dfc455b23e054f107acd28d</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga59b5a3c6ae442e096d03c937e43cb30a</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab2a696c36a0e02b0b2ddc7d24e47e5c9</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab9b55ef9761fe4771b708e7b4f543e24</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga66ec91cd05d75e09896a0198737d05c1</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga2761f13261f98b9080c3d41330f91e74</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo3</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gac71c7be4a51ce1589f13fe8a803af81f</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>grid.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>grid_8h</filename>
+    <class kind="struct">dg::Grid1d</class>
+    <class kind="struct">dg::Grid2d</class>
+    <class kind="struct">dg::Grid3d</class>
+    <namespace>dg</namespace>
+  </compound>
+  <compound kind="file">
+    <name>interpolation.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>interpolation_8cuh</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga28a0f2e4fd5fd3a750897e4a4762d7ff</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaa9532d319b905f87746b8afd586886c7</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const Grid2d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gab7efbde4b1a209579331db290e4d6973</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const thrust::host_vector&lt; double &gt; &amp;z, const Grid3d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gafbf39c7ca7d42d45182162f22c4f39ee</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g_new, const Grid1d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaf3585c951c4f547a87e5dd6834cf25ff</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g_new, const Grid2d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaeda0154f55370694090f01e8ca231895</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g_new, const Grid3d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>mpi_evaluation.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>mpi__evaluation_8h</filename>
+    <namespace>dg</namespace>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga7da86ed30c45a3e43f0dfd140a492421</anchor>
+      <arglist>(BinaryOp f, const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga8f6efc29b4cae7cebd49d2eab0b8d9c1</anchor>
+      <arglist>(TernaryOp f, const MPI_Grid3d &amp;g)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>mpi_grid.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>mpi__grid_8h</filename>
+    <class kind="struct">dg::MPI_Grid2d</class>
+    <class kind="struct">dg::MPI_Grid3d</class>
+    <namespace>dg</namespace>
+  </compound>
+  <compound kind="file">
+    <name>projection.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>projection_8cuh</filename>
+    <class kind="struct">dg::DifferenceNorm</class>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>gcd</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga58d186cf9c7cd8137a991006c98e23ba</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>lcm</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga37074755dc63807f983425695d5a0665</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>projection</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a3852fe6dd714c4f6d684b36b21504a1e</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g1, const Grid1d&lt; double &gt; &amp;g2)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>projection</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aab5333c5a1344d5d79a3f214eb371ece</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g1, const Grid2d&lt; double &gt; &amp;g2)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>typedefs.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>typedefs_8cuh</filename>
+    <namespace>dg</namespace>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; double &gt;</type>
+      <name>DVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gac0ff05273efb141d62270f033c68bcb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>HVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gab99e8227ed890885a7b9915806865a7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; int &gt;</type>
+      <name>IDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga178ba9447324aa98fc88cceadab913ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>IHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0c58467dabe6a60443ed1a2b44ca868c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMatDevice</type>
+      <name>DMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga000e7f1be2b8bf629eb8865f9fea62b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMat</type>
+      <name>HMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga03a560e5d834c343a9528e3a02cde3cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>MDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gabbb1bf8faeb15e042d40fe642a14c6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>MHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga42b83dea4782a1ec37824551ecaff972</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>NearestNeighborComm&lt; thrust::device_vector&lt; int &gt;, thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>NNCD</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga9526a6506cb251beba7b95ecf21d1fa6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMat, dg::CooSparseBlockMat, dg::NNCH &gt;</type>
+      <name>MHMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga292fe9a8c6f2fb6532dc8d26405d051e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMatDevice, dg::CooSparseBlockMatDevice, dg::NNCD &gt;</type>
+      <name>MDMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gae6871db5bef0f34e855db9218cfc4b88</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>weights.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>weights_8cuh</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9d55636b3dc71b870dfdf338074d2934</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gab9ef09ad08d360d60d32c5d21de279a9</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa87f74eb140e7bc2bf54a453972d7fd5</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga60dfd4688dad035393b9a0c12907d21f</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>xspacelib.cuh</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>xspacelib_8cuh</filename>
+    <namespace>dg</namespace>
+    <namespace>dg::create</namespace>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga67481e26561ad0454ce39a6388b116c7</anchor>
+      <arglist>(unsigned nx, unsigned ny, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>gatherMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga94bbc21cbc209cea13595b5e169d798d</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>gather</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga852436a9d6fafcaabeafad11aa79c9b9</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>scatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga98595d0efc1a95030957a7117650e00a</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaaf87708048b0f23b73c9144adc0a1a97</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaafae4397f10cadab919d07670ec33659</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMapInvertxy</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga70e4b451226a61dc762a6b8a1f46b316</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>contiguousLineNumbers</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga04b35be22a8270bba0a4ece48603e1bc</anchor>
+      <arglist>(unsigned rows, unsigned cols)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>blas.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas_8h</filename>
-    <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
-    <includes id="blas2_8h" name="blas2.h" local="yes" imported="no">blas2.h</includes>
   </compound>
   <compound kind="file">
     <name>blas1.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas1_8h</filename>
     <namespace>dg</namespace>
     <namespace>dg::blas1</namespace>
@@ -89,7 +774,7 @@
   </compound>
   <compound kind="file">
     <name>blas2.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>blas2_8h</filename>
     <namespace>dg</namespace>
     <namespace>dg::blas2</namespace>
@@ -131,9 +816,8 @@
   </compound>
   <compound kind="file">
     <name>cg.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>cg_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
     <class kind="class">dg::CG</class>
     <class kind="struct">dg::Invert</class>
     <namespace>dg</namespace>
@@ -146,23 +830,52 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>dz.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
-    <filename>dz_8h</filename>
+    <name>ds.h</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
+    <filename>ds_8h</filename>
+    <class kind="struct">dg::DS</class>
+    <namespace>dg</namespace>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IDMatrix, dg::DVec &gt;, dg::DMatrix, dg::DVec &gt;</type>
+      <name>DDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a95ddc03eb343687757cd1777a44fc1be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IHMatrix, dg::HVec &gt;, dg::HMatrix, dg::HVec &gt;</type>
+      <name>HDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>acfefd6b04678e0c404fda98c77df6006</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IDMatrix, dg::BijectiveComm&lt; dg::IDVec, dg::DVec &gt;, dg::DVec &gt;, dg::MDMatrix, dg::MDVec &gt;</type>
+      <name>MDDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a06da979028329f4f8fad32798075c9e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IHMatrix, dg::BijectiveComm&lt; dg::IHVec, dg::HVec &gt;, dg::HVec &gt;, dg::MHMatrix, dg::MHVec &gt;</type>
+      <name>MHDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>af92dfe215532f73f424f188ede0ee48b</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>elliptic.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>elliptic_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="enums_8h" name="enums.h" local="yes" imported="no">enums.h</includes>
     <class kind="class">dg::Elliptic</class>
     <class kind="struct">dg::GeneralElliptic</class>
+    <class kind="struct">dg::GeneralEllipticSym</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>enums.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>enums_8h</filename>
     <namespace>dg</namespace>
     <member kind="enumeration">
@@ -280,16 +993,15 @@
   </compound>
   <compound kind="file">
     <name>exceptions.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>exceptions_8h</filename>
     <class kind="struct">dg::Fail</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>functors.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>functors_8h</filename>
-    <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
     <class kind="struct">dg::AbsMax</class>
     <class kind="struct">dg::AbsMin</class>
     <class kind="struct">dg::Gaussian</class>
@@ -301,8 +1013,7 @@
     <class kind="struct">dg::ExpProfX</class>
     <class kind="struct">dg::LinearX</class>
     <class kind="struct">dg::LinearY</class>
-    <class kind="struct">dg::LHalf</class>
-    <class kind="struct">dg::RHalf</class>
+    <class kind="struct">dg::TanhProfX</class>
     <class kind="struct">dg::Lamb</class>
     <class kind="struct">dg::Vortex</class>
     <class kind="struct">dg::BathRZ</class>
@@ -313,6 +1024,7 @@
     <class kind="struct">dg::PLUS</class>
     <class kind="struct">dg::MOD</class>
     <class kind="struct">dg::ABS</class>
+    <class kind="struct">dg::POSVALUE</class>
     <class kind="struct">dg::CONSTANT</class>
     <class kind="struct">dg::Histogram</class>
     <class kind="struct">dg::Histogram2D</class>
@@ -341,18 +1053,16 @@
   </compound>
   <compound kind="file">
     <name>helmholtz.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>helmholtz_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="elliptic_8h" name="elliptic.h" local="yes" imported="no">elliptic.h</includes>
     <class kind="struct">dg::Helmholtz</class>
+    <class kind="struct">dg::Helmholtz2</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>multistep.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>multistep_8h</filename>
-    <includes id="cg_8h" name="cg.h" local="yes" imported="no">cg.h</includes>
     <class kind="struct">dg::AB</class>
     <class kind="struct">dg::Karniadakis</class>
     <class kind="struct">dg::SIRK</class>
@@ -360,7 +1070,7 @@
   </compound>
   <compound kind="file">
     <name>nullstelle.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>nullstelle_8h</filename>
     <class kind="struct">dg::Ooops</class>
     <class kind="class">dg::KeineNST_1D</class>
@@ -375,19 +1085,15 @@
   </compound>
   <compound kind="file">
     <name>poisson.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>poisson_8h</filename>
-    <includes id="blas_8h" name="blas.h" local="yes" imported="no">blas.h</includes>
-    <includes id="enums_8h" name="enums.h" local="yes" imported="no">enums.h</includes>
     <class kind="struct">dg::Poisson</class>
     <namespace>dg</namespace>
   </compound>
   <compound kind="file">
     <name>runge_kutta.h</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>runge__kutta_8h</filename>
-    <includes id="exceptions_8h" name="exceptions.h" local="yes" imported="no">exceptions.h</includes>
-    <includes id="blas1_8h" name="blas1.h" local="yes" imported="no">blas1.h</includes>
     <class kind="struct">dg::rk_coeff</class>
     <class kind="struct">dg::RK</class>
     <class kind="struct">dg::NotANumber</class>
@@ -412,16 +1118,57 @@
     <subgroup>algorithms</subgroup>
     <subgroup>utilities</subgroup>
     <subgroup>mpi_structures</subgroup>
+    <subgroup>typedefs</subgroup>
   </compound>
   <compound kind="group">
     <name>grid</name>
     <title>Grid objects</title>
     <filename>group__grid.html</filename>
+    <class kind="struct">dg::Grid1d</class>
+    <class kind="struct">dg::Grid2d</class>
+    <class kind="struct">dg::Grid3d</class>
+    <class kind="struct">dg::MPI_Grid2d</class>
+    <class kind="struct">dg::MPI_Grid3d</class>
   </compound>
   <compound kind="group">
     <name>evaluation</name>
     <title>Function discretization</title>
     <filename>group__evaluation.html</filename>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga954a5010786bf8a66827a7a6b2e8034f</anchor>
+      <arglist>(UnaryOp f, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga601fe153d55c6d184e58fee8794068e4</anchor>
+      <arglist>(BinaryOp f, const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga4562d9e65a9c5d8cac3555655128961a</anchor>
+      <arglist>(TernaryOp f, const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga7da86ed30c45a3e43f0dfd140a492421</anchor>
+      <arglist>(BinaryOp f, const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga8f6efc29b4cae7cebd49d2eab0b8d9c1</anchor>
+      <arglist>(TernaryOp f, const MPI_Grid3d &amp;g)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>functions</name>
@@ -438,8 +1185,7 @@
     <class kind="struct">dg::ExpProfX</class>
     <class kind="struct">dg::LinearX</class>
     <class kind="struct">dg::LinearY</class>
-    <class kind="struct">dg::LHalf</class>
-    <class kind="struct">dg::RHalf</class>
+    <class kind="struct">dg::TanhProfX</class>
     <class kind="struct">dg::Lamb</class>
     <class kind="struct">dg::Vortex</class>
     <class kind="struct">dg::BathRZ</class>
@@ -450,9 +1196,94 @@
     <class kind="struct">dg::PLUS</class>
     <class kind="struct">dg::MOD</class>
     <class kind="struct">dg::ABS</class>
+    <class kind="struct">dg::POSVALUE</class>
     <class kind="struct">dg::CONSTANT</class>
     <class kind="struct">dg::Histogram</class>
     <class kind="struct">dg::Histogram2D</class>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga5797166cdb9d26408ea629f742534fa7</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga00fbb55c78ef8e349169a2e3556d78bc</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gaa8487df41f74a33ef2a63065415b88b5</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga4c5536b3b96ccc28668a59d142293b6d</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga8be4db51a073762c73c61dc2cfac4aaa</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gafe8af9f57dfc455b23e054f107acd28d</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga59b5a3c6ae442e096d03c937e43cb30a</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab2a696c36a0e02b0b2ddc7d24e47e5c9</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab9b55ef9761fe4771b708e7b4f543e24</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga66ec91cd05d75e09896a0198737d05c1</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga2761f13261f98b9080c3d41330f91e74</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo3</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gac71c7be4a51ce1589f13fe8a803af81f</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
     <member kind="function">
       <type>double</type>
       <name>bessj1</name>
@@ -600,11 +1431,499 @@
     <name>lowlevel</name>
     <title>Lowlevel helper functions and classes</title>
     <filename>group__lowlevel.html</filename>
+    <class kind="class">dg::Operator</class>
+    <class kind="struct">dg::EllSparseBlockMatDevice</class>
+    <class kind="struct">dg::CooSparseBlockMatDevice</class>
+    <class kind="struct">dg::EllSparseBlockMat</class>
+    <class kind="struct">dg::CooSparseBlockMat</class>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_symm</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga73eb7642435404c4463a59ba423233c1</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_plus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga7cb05902116470e4e3f40bb64c91e5f3</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_minus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaafaa62ed9e4cc975d82e1c6f0dfabf8b</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jump</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gab9b667c4dc2c84e26b26d41144af7f2f</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_normed</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaa9a9ae9a1c8dd960747be631e3c76e87</anchor>
+      <arglist>(int n, int N, double h, bc bcx, direction dir)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga51d737bc72722410c3379685359d4724</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gad81ca75e4fb901edb156de6718cec261</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>delta</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga5240e4a7a0ed5e0185c05f8223de9466</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pipj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga5742ac1cee8b8c09619bcd1da1730fa6</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pipj_inv</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga9270698ddf50a70aeeeccb0b8d4ea1e2</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pidxpj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga47baf9139f33e72afb91a5bd168f2adf</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>rirj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga326a160653330e4cbdc794590a81db8f</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>rilj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gad4f5c0d21818f276dda23c904461e2cc</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>lirj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga46edb26b7a8c8544ea641aa03f6fd7fa</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>lilj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaaaa29e3675d675f7d04e946cd7f66ed5</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gac5552aee1d84311775cd55c373f97756</anchor>
+      <arglist>(const DLT&lt; double &gt; &amp;dlt)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>precond</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaa88e5198f069f6bda6d73df4a9d6b1b7</anchor>
+      <arglist>(const DLT&lt; double &gt; &amp;dlt)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; T &gt;</type>
+      <name>tensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga795b9814582cf00c83d5e24efc453bcd</anchor>
+      <arglist>(const Operator&lt; T &gt; &amp;op1, const Operator&lt; T &gt; &amp;op2)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>tensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga4048740f4f80d57e64429d4d4116e314</anchor>
+      <arglist>(unsigned N, const Operator&lt; T &gt; &amp;op)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>sandwich</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga3422398aa1ab280d5eb2267dc50233ee</anchor>
+      <arglist>(const Operator&lt; T &gt; &amp;left, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;m, const Operator&lt; T &gt; &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>dgtensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaee60d8f4c31af0180d3a4aea0e301ea9</anchor>
+      <arglist>(unsigned n, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;lhs, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;rhs)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>highlevel</name>
     <title>Matrix creation functions and classes</title>
     <filename>group__highlevel.html</filename>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga69c10f1ff46a0283c2f5e1ddd8e64465</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa5ed6f9f8fbebc82ff21085480b9c2d5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9a8e4982e7ceb95ce7508fd4a6d51f8b</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafac8350100011450eaf94f74c66cddb5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac6c5bdeeff04f149ffbfadfd54e134c7</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga71bd4069fa49806625c0377baa1b5e85</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga408cc1f12f4b1d99f431d5deee524590</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3dad84da244ac1c8ae28bc226228644</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga7752f03c83aa8abfb9f9cc13a5afa4dc</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gace169e38d13cad07fcb765fccc392181</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafb374b601cfb7dff1f187e3b7ca44241</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaec13a9d41ed59c227f68dc8472fe4b39</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga2f8388284a65b7dc473d7a26eb11bfe7</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad71fb653a1bce34fce275dab57785c9c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac7d40127801cae83a93fa04355250e1c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga1039ae2a0f2a10603fa1cfe2e6d28fca</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3aee94a9f3f66d65c20bbcb720b1200</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad93c2b4b5b54db591e5e637c2c9bcfd0</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga835fb03693f889c0742bc379fc7e98d3</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga91107e83028633d52ed0b1865dd66ca6</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga439af5f0be047a0fb8eaf5d4cfd4f76c</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9599c240d72a8e091f878be6b90b510f</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad0dc0c3363d22f9c0bd177469c1f5110</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga58517e4680ce13bb21cfe3871b85046c</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga14636033fd3b0e8232cff455fc77c417</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad1fbf1ff8fbc0930af27124af129132c</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga8801a19daa68957373e9c5278db4688e</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga521fbc195c468688eb040d36868fa67e</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac831d19ccc80869ef85f17340c6db2bf</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaf69b2cdbab2b517d4d2981f7e3e4f833</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga583ba4929103b067f3da8cd15cc8b58b</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga052c83aa6c1198557ec87effb8dbe7b3</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac6da315df384435cb835058e3044924d</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gadd00414c50d66854de23a12b30ed0187</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafbd75f014065e509e52df9c7932cabc1</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga26aaa50d13ae8a7e4e90df8c31b3a4c6</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaeb99d74f34489decaaf58ff4a4cd7e3f</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaf36f2f96638551c890dfb814aeddd9cd</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga74c3f03a267b2ef2f7d6b2f6237ddb27</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga6366376e70d7bac716b0f415ee8e382d</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga516908b4ba89e00774386860f3b68897</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga90632d7c240a20e8206e286f2f86f25a</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gadad712eb1f1c27ba4d1c8f1c695676f8</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gae3ff6672b3abde44ff687d0a0dee6126</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9d55636b3dc71b870dfdf338074d2934</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gab9ef09ad08d360d60d32c5d21de279a9</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa87f74eb140e7bc2bf54a453972d7fd5</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga60dfd4688dad035393b9a0c12907d21f</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>arakawa</name>
@@ -619,7 +1938,9 @@
     <filename>group__matrixoperators.html</filename>
     <class kind="class">dg::Elliptic</class>
     <class kind="struct">dg::GeneralElliptic</class>
+    <class kind="struct">dg::GeneralEllipticSym</class>
     <class kind="struct">dg::Helmholtz</class>
+    <class kind="struct">dg::Helmholtz2</class>
     <member kind="function">
       <type></type>
       <name>Helmholtz</name>
@@ -687,8 +2008,78 @@
       <type>const Vector &amp;</type>
       <name>chi</name>
       <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf8330683e97b34392b998695d33f13ba</anchor>
+      <anchor>gafa5d16b61453a474667c8f1431a5f654</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Helmholtz2</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga69faa6f1c4ce9a14689565784ddd8244</anchor>
+      <arglist>(const Grid &amp;g, double alpha=1., direction dir=dg::forward)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Helmholtz2</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga92ba0168fcf2f3152cad54298f4001c7</anchor>
+      <arglist>(const Grid &amp;g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga0b7bd6b68be0f335a8077a79b011866c</anchor>
+      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>weights</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga2aa58df4698a150a0dbbc6b4d9c8ca4d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>precond</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gab85b5b3e443d48175327b9e57238d095</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double &amp;</type>
+      <name>alpha</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga690d77e9309c8cf46ee89337a71037cc</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>alpha</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gac1ce81af740fcc2f0ff857d192c9fbf5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gaeb435677d0c32060ddcb1fc6b56b3892</anchor>
+      <arglist>(const Vector &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset_chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga5cedef37876d81b44f2a75fe1510c5f5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const Vector &amp;</type>
+      <name>chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga4b726119725cc618116b57d379059837</anchor>
+      <arglist>() const </arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -824,10 +2215,71 @@
     <title>Utilities</title>
     <filename>group__utilities.html</filename>
     <subgroup>scatter</subgroup>
-    <subgroup>polarization</subgroup>
+    <namespace>dg::create</namespace>
+    <class kind="struct">dg::PoloidalAverage</class>
+    <class kind="struct">dg::ToroidalAverage</class>
+    <class kind="struct">dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</class>
+    <class kind="struct">dg::DifferenceNorm</class>
+    <class kind="class">dg::Timer</class>
     <class kind="struct">dg::Fail</class>
     <class kind="struct">dg::Ooops</class>
     <class kind="class">dg::KeineNST_1D</class>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga28a0f2e4fd5fd3a750897e4a4762d7ff</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaa9532d319b905f87746b8afd586886c7</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const Grid2d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gab7efbde4b1a209579331db290e4d6973</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const thrust::host_vector&lt; double &gt; &amp;z, const Grid3d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gafbf39c7ca7d42d45182162f22c4f39ee</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g_new, const Grid1d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaf3585c951c4f547a87e5dd6834cf25ff</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g_new, const Grid2d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaeda0154f55370694090f01e8ca231895</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g_new, const Grid3d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>gcd</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga58d186cf9c7cd8137a991006c98e23ba</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>lcm</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga37074755dc63807f983425695d5a0665</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>bisection1d</name>
@@ -840,27 +2292,214 @@
     <name>scatter</name>
     <title>Utility functions for reorder operations on DG-formatted vectors</title>
     <filename>group__scatter.html</filename>
-  </compound>
-  <compound kind="group">
-    <name>polarization</name>
-    <title>Utility functions for C-style bindings of polarization solver</title>
-    <filename>group__polarization.html</filename>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga67481e26561ad0454ce39a6388b116c7</anchor>
+      <arglist>(unsigned nx, unsigned ny, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>gatherMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga94bbc21cbc209cea13595b5e169d798d</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>gather</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga852436a9d6fafcaabeafad11aa79c9b9</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>scatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga98595d0efc1a95030957a7117650e00a</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaaf87708048b0f23b73c9144adc0a1a97</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaafae4397f10cadab919d07670ec33659</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMapInvertxy</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga70e4b451226a61dc762a6b8a1f46b316</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>contiguousLineNumbers</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga04b35be22a8270bba0a4ece48603e1bc</anchor>
+      <arglist>(unsigned rows, unsigned cols)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>mpi_structures</name>
     <title>MPI backend funcionality</title>
     <filename>group__mpi__structures.html</filename>
+    <class kind="struct">dg::BijectiveComm</class>
+    <class kind="struct">dg::RowColDistMat</class>
+    <class kind="struct">dg::RowDistMat</class>
+    <class kind="struct">dg::ColDistMat</class>
+    <class kind="struct">dg::MPI_Vector</class>
+    <class kind="struct">dg::NearestNeighborComm</class>
+  </compound>
+  <compound kind="group">
+    <name>typedefs</name>
+    <title>Typedefs</title>
+    <filename>group__typedefs.html</filename>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; double &gt;</type>
+      <name>DVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gac0ff05273efb141d62270f033c68bcb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>HVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gab99e8227ed890885a7b9915806865a7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; int &gt;</type>
+      <name>IDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga178ba9447324aa98fc88cceadab913ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>IHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0c58467dabe6a60443ed1a2b44ca868c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMatDevice</type>
+      <name>DMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga000e7f1be2b8bf629eb8865f9fea62b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMat</type>
+      <name>HMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga03a560e5d834c343a9528e3a02cde3cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>MDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gabbb1bf8faeb15e042d40fe642a14c6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>MHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga42b83dea4782a1ec37824551ecaff972</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>NearestNeighborComm&lt; thrust::host_vector&lt; int &gt;, thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>NNCH</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga2c9d22ed910faf66c483d261c4702f49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>NearestNeighborComm&lt; thrust::device_vector&lt; int &gt;, thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>NNCD</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga9526a6506cb251beba7b95ecf21d1fa6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMat, dg::CooSparseBlockMat, dg::NNCH &gt;</type>
+      <name>MHMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga292fe9a8c6f2fb6532dc8d26405d051e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMatDevice, dg::CooSparseBlockMatDevice, dg::NNCD &gt;</type>
+      <name>MDMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gae6871db5bef0f34e855db9218cfc4b88</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="namespace">
     <name>dg</name>
     <filename>namespacedg.html</filename>
     <namespace>dg::blas1</namespace>
     <namespace>dg::blas2</namespace>
+    <namespace>dg::create</namespace>
     <class kind="struct">dg::ArakawaX</class>
+    <class kind="struct">dg::PoloidalAverage</class>
+    <class kind="struct">dg::ToroidalAverage</class>
+    <class kind="struct">dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</class>
+    <class kind="class">dg::DLT</class>
+    <class kind="struct">dg::DefaultLimiter</class>
+    <class kind="struct">dg::NoLimiter</class>
+    <class kind="struct">dg::BoxIntegrator</class>
+    <class kind="struct">dg::FieldAligned</class>
+    <class kind="struct">dg::Grid1d</class>
+    <class kind="struct">dg::Grid2d</class>
+    <class kind="struct">dg::Grid3d</class>
+    <class kind="struct">dg::AnyMatrixTag</class>
+    <class kind="struct">dg::CuspMatrixTag</class>
+    <class kind="struct">dg::SelfMadeMatrixTag</class>
+    <class kind="struct">dg::dx_matrixTag</class>
+    <class kind="struct">dg::MPIMatrixTag</class>
+    <class kind="struct">dg::ThrustMatrixTag</class>
+    <class kind="struct">dg::MPIPreconTag</class>
+    <class kind="struct">dg::BijectiveComm</class>
+    <class kind="struct">dg::MPI_FieldAligned</class>
+    <class kind="struct">dg::MPI_Grid2d</class>
+    <class kind="struct">dg::MPI_Grid3d</class>
+    <class kind="struct">dg::RowColDistMat</class>
+    <class kind="struct">dg::RowDistMat</class>
+    <class kind="struct">dg::ColDistMat</class>
+    <class kind="struct">dg::MPI_Vector</class>
+    <class kind="struct">dg::NearestNeighborComm</class>
+    <class kind="class">dg::Operator</class>
+    <class kind="struct">dg::DifferenceNorm</class>
+    <class kind="struct">dg::EllSparseBlockMatDevice</class>
+    <class kind="struct">dg::CooSparseBlockMatDevice</class>
+    <class kind="struct">dg::EllSparseBlockMat</class>
+    <class kind="struct">dg::CooSparseBlockMat</class>
+    <class kind="class">dg::Timer</class>
+    <class kind="struct">dg::AnyVectorTag</class>
+    <class kind="struct">dg::StdVectorTag</class>
+    <class kind="struct">dg::ThrustVectorTag</class>
+    <class kind="struct">dg::MPIVectorTag</class>
     <class kind="class">dg::CG</class>
     <class kind="struct">dg::Invert</class>
+    <class kind="struct">dg::DS</class>
     <class kind="class">dg::Elliptic</class>
     <class kind="struct">dg::GeneralElliptic</class>
+    <class kind="struct">dg::GeneralEllipticSym</class>
     <class kind="struct">dg::Fail</class>
     <class kind="struct">dg::AbsMax</class>
     <class kind="struct">dg::AbsMin</class>
@@ -873,8 +2512,7 @@
     <class kind="struct">dg::ExpProfX</class>
     <class kind="struct">dg::LinearX</class>
     <class kind="struct">dg::LinearY</class>
-    <class kind="struct">dg::LHalf</class>
-    <class kind="struct">dg::RHalf</class>
+    <class kind="struct">dg::TanhProfX</class>
     <class kind="struct">dg::Lamb</class>
     <class kind="struct">dg::Vortex</class>
     <class kind="struct">dg::BathRZ</class>
@@ -885,10 +2523,12 @@
     <class kind="struct">dg::PLUS</class>
     <class kind="struct">dg::MOD</class>
     <class kind="struct">dg::ABS</class>
+    <class kind="struct">dg::POSVALUE</class>
     <class kind="struct">dg::CONSTANT</class>
     <class kind="struct">dg::Histogram</class>
     <class kind="struct">dg::Histogram2D</class>
     <class kind="struct">dg::Helmholtz</class>
+    <class kind="struct">dg::Helmholtz2</class>
     <class kind="struct">dg::AB</class>
     <class kind="struct">dg::Karniadakis</class>
     <class kind="struct">dg::SIRK</class>
@@ -898,6 +2538,132 @@
     <class kind="struct">dg::rk_coeff</class>
     <class kind="struct">dg::RK</class>
     <class kind="struct">dg::NotANumber</class>
+    <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>IHMatrix</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a0af8204731ee6327dc4616a5980af2d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>IDMatrix</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a0d122f4172a3e60105754f9419c0831f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>NearestNeighborComm&lt; thrust::host_vector&lt; int &gt;, thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>NNCH</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga2c9d22ed910faf66c483d261c4702f49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; double &gt;</type>
+      <name>DVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gac0ff05273efb141d62270f033c68bcb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>HVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gab99e8227ed890885a7b9915806865a7a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::device_vector&lt; int &gt;</type>
+      <name>IDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga178ba9447324aa98fc88cceadab913ad</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>IHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0c58467dabe6a60443ed1a2b44ca868c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMatDevice</type>
+      <name>DMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga000e7f1be2b8bf629eb8865f9fea62b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>EllSparseBlockMat</type>
+      <name>HMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga03a560e5d834c343a9528e3a02cde3cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>MDVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gabbb1bf8faeb15e042d40fe642a14c6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>MHVec</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga42b83dea4782a1ec37824551ecaff972</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>NearestNeighborComm&lt; thrust::device_vector&lt; int &gt;, thrust::device_vector&lt; double &gt; &gt;</type>
+      <name>NNCD</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga9526a6506cb251beba7b95ecf21d1fa6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMat, dg::CooSparseBlockMat, dg::NNCH &gt;</type>
+      <name>MHMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga292fe9a8c6f2fb6532dc8d26405d051e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::RowColDistMat&lt; dg::EllSparseBlockMatDevice, dg::CooSparseBlockMatDevice, dg::NNCD &gt;</type>
+      <name>MDMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gae6871db5bef0f34e855db9218cfc4b88</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IDMatrix, dg::DVec &gt;, dg::DMatrix, dg::DVec &gt;</type>
+      <name>DDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a95ddc03eb343687757cd1777a44fc1be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IHMatrix, dg::HVec &gt;, dg::HMatrix, dg::HVec &gt;</type>
+      <name>HDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>acfefd6b04678e0c404fda98c77df6006</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IDMatrix, dg::BijectiveComm&lt; dg::IDVec, dg::DVec &gt;, dg::DVec &gt;, dg::MDMatrix, dg::MDVec &gt;</type>
+      <name>MDDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a06da979028329f4f8fad32798075c9e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IHMatrix, dg::BijectiveComm&lt; dg::IHVec, dg::HVec &gt;, dg::HVec &gt;, dg::MHMatrix, dg::MHVec &gt;</type>
+      <name>MHDS</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>af92dfe215532f73f424f188ede0ee48b</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>bc</name>
@@ -1011,6 +2777,174 @@
       <arglist></arglist>
     </member>
     <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga954a5010786bf8a66827a7a6b2e8034f</anchor>
+      <arglist>(UnaryOp f, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga601fe153d55c6d184e58fee8794068e4</anchor>
+      <arglist>(BinaryOp f, const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga4562d9e65a9c5d8cac3555655128961a</anchor>
+      <arglist>(TernaryOp f, const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>boxintegrator</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>aef282725f18bfde89893cca06b78f97a</anchor>
+      <arglist>(Field &amp;field, const Grid &amp;grid, const thrust::host_vector&lt; double &gt; &amp;coords0, thrust::host_vector&lt; double &gt; &amp;coords1, double &amp;phi1, double eps, dg::bc globalbcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga5797166cdb9d26408ea629f742534fa7</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga00fbb55c78ef8e349169a2e3556d78bc</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>one</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gaa8487df41f74a33ef2a63065415b88b5</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga4c5536b3b96ccc28668a59d142293b6d</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga8be4db51a073762c73c61dc2cfac4aaa</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>zero</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gafe8af9f57dfc455b23e054f107acd28d</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga59b5a3c6ae442e096d03c937e43cb30a</anchor>
+      <arglist>(double x)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab2a696c36a0e02b0b2ddc7d24e47e5c9</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo1</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gab9b55ef9761fe4771b708e7b4f543e24</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga66ec91cd05d75e09896a0198737d05c1</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo2</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>ga2761f13261f98b9080c3d41330f91e74</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>coo3</name>
+      <anchorfile>group__functions.html</anchorfile>
+      <anchor>gac71c7be4a51ce1589f13fe8a803af81f</anchor>
+      <arglist>(double x, double y, double z)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga7da86ed30c45a3e43f0dfd140a492421</anchor>
+      <arglist>(BinaryOp f, const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>group__evaluation.html</anchorfile>
+      <anchor>ga8f6efc29b4cae7cebd49d2eab0b8d9c1</anchor>
+      <arglist>(TernaryOp f, const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; T &gt;</type>
+      <name>tensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga795b9814582cf00c83d5e24efc453bcd</anchor>
+      <arglist>(const Operator&lt; T &gt; &amp;op1, const Operator&lt; T &gt; &amp;op2)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>tensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga4048740f4f80d57e64429d4d4116e314</anchor>
+      <arglist>(unsigned N, const Operator&lt; T &gt; &amp;op)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>sandwich</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga3422398aa1ab280d5eb2267dc50233ee</anchor>
+      <arglist>(const Operator&lt; T &gt; &amp;left, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;m, const Operator&lt; T &gt; &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>gcd</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga58d186cf9c7cd8137a991006c98e23ba</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>lcm</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga37074755dc63807f983425695d5a0665</anchor>
+      <arglist>(unsigned a, unsigned b)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>dgtensor</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaee60d8f4c31af0180d3a4aea0e301ea9</anchor>
+      <arglist>(unsigned n, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;lhs, const cusp::coo_matrix&lt; int, T, cusp::host_memory &gt; &amp;rhs)</arglist>
+    </member>
+    <member kind="function">
       <type>unsigned</type>
       <name>cg</name>
       <anchorfile>group__algorithms.html</anchorfile>
@@ -1108,6 +3042,2072 @@
       <arglist>(container &amp;lhs, container &amp;rhs, container &amp;result)</arglist>
     </member>
   </compound>
+  <compound kind="struct">
+    <name>dg::PoloidalAverage</name>
+    <filename>structdg_1_1_poloidal_average.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>PoloidalAverage</name>
+      <anchorfile>structdg_1_1_poloidal_average.html</anchorfile>
+      <anchor>abe96183bd40c195f7342acfb4e4cf1e1</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_poloidal_average.html</anchorfile>
+      <anchor>a49a39ac1af310890d90ead9042e3914a</anchor>
+      <arglist>(const container &amp;src, container &amp;res)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ToroidalAverage</name>
+    <filename>structdg_1_1_toroidal_average.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>ToroidalAverage</name>
+      <anchorfile>structdg_1_1_toroidal_average.html</anchorfile>
+      <anchor>a19b83d4f4d130a5e1636f0f5cb67b1eb</anchor>
+      <arglist>(const dg::Grid3d&lt; double &gt; &amp;g3d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_toroidal_average.html</anchorfile>
+      <anchor>a354f034dfdec0b6b5c021c82d2a0c0a8</anchor>
+      <arglist>(const container &amp;src, container &amp;res)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</name>
+    <filename>structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>PoloidalAverage</name>
+      <anchorfile>structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html</anchorfile>
+      <anchor>ac766d37b2e98b3545b191b0d94f55b70</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html</anchorfile>
+      <anchor>a1080986be232f5813e4068ab0d36efeb</anchor>
+      <arglist>(const MPI_Vector&lt; container &gt; &amp;src, MPI_Vector&lt; container &gt; &amp;res)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>dg::DLT</name>
+    <filename>classdg_1_1_d_l_t.html</filename>
+    <templarg>T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>DLT</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>a639dd4af4e77f8be5fe1e18c2b7df797</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; T &gt; &amp;</type>
+      <name>weights</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>a3029c6f214ed85f400ed1d70035a198d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; T &gt; &amp;</type>
+      <name>abscissas</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>a4828cac01d378d2e9ebb7cc90d54546d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; T &gt; &amp;</type>
+      <name>forward</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>afc3b01c52b7be79060e5481e83287263</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; T &gt; &amp;</type>
+      <name>backward</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>a0ea2a6dafbba862fc0b5238d81432f2c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; T &gt; &amp;</type>
+      <name>backwardEQ</name>
+      <anchorfile>classdg_1_1_d_l_t.html</anchorfile>
+      <anchor>a82aae3c20a040800f96686caf467da22</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::DefaultLimiter</name>
+    <filename>structdg_1_1_default_limiter.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_default_limiter.html</anchorfile>
+      <anchor>a968245a92c4848fd48beae9d191b0a19</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::NoLimiter</name>
+    <filename>structdg_1_1_no_limiter.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_no_limiter.html</anchorfile>
+      <anchor>a670a2b7dbcfac2d09774de616e287bee</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::BoxIntegrator</name>
+    <filename>structdg_1_1_box_integrator.html</filename>
+    <templarg>Field</templarg>
+    <templarg>Grid</templarg>
+    <member kind="function">
+      <type></type>
+      <name>BoxIntegrator</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>ab6462a5e77839d7029a57ea4e3e85aea</anchor>
+      <arglist>(Field field, const Grid &amp;g, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_coords</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>ab60c28cd2715399c28bbd578d32f311b</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;coords)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>af62b7dfac3e3f5f1e3ffd539b35b04a3</anchor>
+      <arglist>(double deltaPhi)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::FieldAligned</name>
+    <filename>structdg_1_1_field_aligned.html</filename>
+    <templarg>Matrix</templarg>
+    <templarg>container</templarg>
+    <member kind="function">
+      <type></type>
+      <name>FieldAligned</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a6c594dadd9b8b57e814eeab1593ede02</anchor>
+      <arglist>(Field field, const dg::Grid3d&lt; double &gt; &amp;grid, double eps=1e-4, Limiter limit=DefaultLimiter(), dg::bc globalbcz=dg::DIR, double deltaPhi=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aeca7966fe069e3603b0bfa5b7b622ca5</anchor>
+      <arglist>(dg::bc bcz, double left, double right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a9e86c5c53a58829be3472b18b021f2b8</anchor>
+      <arglist>(dg::bc bcz, const container &amp;left, const container &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aac4ea43cda34d6fb589cf90b73d7eb38</anchor>
+      <arglist>(dg::bc bcz, const container &amp;global, double scal_left, double scal_right)</arglist>
+    </member>
+    <member kind="function">
+      <type>container</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>af14696d77c6c06d41cf7defc671755a2</anchor>
+      <arglist>(BinaryOp f, unsigned plane=0) const </arglist>
+    </member>
+    <member kind="function">
+      <type>container</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a2c816cc998a1c4395f4bca8f06dc1e47</anchor>
+      <arglist>(BinaryOp f, UnaryOp g, unsigned p0, unsigned rounds) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlus</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a569273cd44aabc209894c01d626c5049</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinus</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a701c42d4e9cc441cbfcef95788c82705</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlusT</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aec221c8b68389dd57300beab116f4f4a</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinusT</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a892602741a45367bc0a5a4c1d3c130f4</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hz</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a8497fbebf606f9a9375cb89943d84d42</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hp</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a1dcdf334f69cc44467aec52b4b46c4bb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hm</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a9b17f35e61d36cc5de7261d1d11245d2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Grid3d&lt; double &gt; &amp;</type>
+      <name>grid</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a9ad979e5552118832f95068da002577e</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Grid1d</name>
+    <filename>structdg_1_1_grid1d.html</filename>
+    <templarg>T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>Grid1d</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a9506a5da19e42515e17fb3545289ea07</anchor>
+      <arglist>(T x0, T x1, unsigned n, unsigned N, bc bcx=PER)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x0</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>ae1a24f9bce8adc436e3b3245e5096b12</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x1</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a898b47303f81eba4dae18ddf9b11a543</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>lx</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a1ff5a54216d951536b6a4bf086c44155</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>h</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>aeca28f16b53095df3fb10f89bd54ed07</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>N</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a6f392842848f99dd098c7ffc2888ba8f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a0f0e5e803667d75973a388dc4e0b4987</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcx</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a981853f0dbaadec4ff479ed6c64bce6f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a35d9e3b6599efa6cf6dbc22eb6cb5dc6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; T &gt; &amp;</type>
+      <name>dlt</name>
+      <anchorfile>structdg_1_1_grid1d.html</anchorfile>
+      <anchor>a830d6989f3174100d651914799b7df11</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Grid2d</name>
+    <filename>structdg_1_1_grid2d.html</filename>
+    <templarg>T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>Grid2d</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a09ec1cf6cc3c65ea65d58365a2ddda71</anchor>
+      <arglist>(T x0, T x1, T y0, T y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx=PER, bc bcy=PER)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Grid2d</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>afc7ddf5140c0eb12f3c56e58d4aa2dfc</anchor>
+      <arglist>(const Grid1d&lt; T &gt; &amp;gx, const Grid1d&lt; T &gt; &amp;gy)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x0</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>aa0882e444de4fcca3a34ff9f308fa129</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x1</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a500760450beb756e4c22f7715b2628b5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>y0</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a6e3b11b1ac3e555eceb134e5a9e8b49b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>y1</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a15a6efc9d4bb3543089b826b8eb37ec3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>lx</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>aac8ef2dc4469d9735f19ef5d5a8ffd12</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>ly</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a5c1d956bfa052d1916174b643a25857a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>hx</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>ac597cec9bb9efe74eac5e896276bf758</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>hy</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>ab2f9c2c4701336768a43f4c93766cb5b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a548c605351b7f3a47b6d833da6369e48</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nx</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>ac738be121a03aba1e5018b97cb3ccb51</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Ny</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a33786350160783070fb359d36f7f97c1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcx</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>aa4ea333ffb8124870349dfb80e99f720</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcy</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a33410939468778faec38082ed09a20d6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Grid2d&lt; double &gt;</type>
+      <name>local_grid</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a20f9717445ddf76630ead76db45db322</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; T &gt; &amp;</type>
+      <name>dlt</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>ac91268f67a6382bbf64efb15c7b38806</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>dg::system</type>
+      <name>system</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a15f8056a1dfa1a806f60c22e71b0f802</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a3cacac7ed3a9f56f33d6e711a4fa26dd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_grid2d.html</anchorfile>
+      <anchor>a8a06934408aa60a8f1f039697c6f04ac</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Grid3d</name>
+    <filename>structdg_1_1_grid3d.html</filename>
+    <templarg>T</templarg>
+    <member kind="function">
+      <type></type>
+      <name>Grid3d</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a10f8747165a20e84ca9c27e22bf5ab42</anchor>
+      <arglist>(T x0, T x1, T y0, T y1, T z0, T z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx=PER, bc bcy=PER, bc bcz=PER, system sys=cartesian)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Grid3d</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>ac1a1ece4fef56fdb1a0993f86ec2d533</anchor>
+      <arglist>(const Grid1d&lt; T &gt; &amp;gx, const Grid1d&lt; T &gt; &amp;gy, const Grid1d&lt; T &gt; &amp;gz)</arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x0</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>ac941b52fa272e519baa2341f90c92733</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>x1</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a63d6494b8c85cec08ee05e4140528b9f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>y0</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a381324aab18891f6f7e8679f8504ee32</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>y1</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a9a9a52498083df87cb1429920966edbb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>z0</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a97ee6911496deaee8ae9044cc1050ff4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>z1</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>ad96ac714e4a60150dcb98fb1d30e06c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>lx</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a0af34f4247a3b91d28f09664eb15ad69</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>ly</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a3eb421c632723438c688c233d91b6b33</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>lz</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a2ec52fad9a98db080733806057d13a57</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>hx</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a4dbf5b27ccde3f6d8b7e26c4934e3324</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>hy</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a314b167a7bd9435d6a76cfd817d255c5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>T</type>
+      <name>hz</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a4347a5bc892d7e7f9d3f5d1c4f0b27f5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>ac5c49e75fc0244f4f5fe721764db060c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nx</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>aeff58f8eb7fba9a2711fe2db9ced3855</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Ny</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a86f554b35fbf463d7330139c453a9571</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nz</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a7bcc72531fedb001db8d7aefe1948e20</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcx</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a8b44835e84ef8f90eca0646b58ab39fa</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcy</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>ac3b2931214a2969efc8836473f487e01</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcz</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a60a76d1e0f0dd8c48427c321b95dbbd0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; T &gt; &amp;</type>
+      <name>dlt</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>aa010828d78d6d9fd41d7a1ed0e248409</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>dg::system</type>
+      <name>system</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a325fdf7e3516607945c5f8362109084a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a03f150ccbd6fd03b3d104f03cbff4090</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_grid3d.html</anchorfile>
+      <anchor>a677be1af279858496af03e2d091ff982</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::AnyMatrixTag</name>
+    <filename>structdg_1_1_any_matrix_tag.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CuspMatrixTag</name>
+    <filename>structdg_1_1_cusp_matrix_tag.html</filename>
+    <base>dg::AnyMatrixTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::SelfMadeMatrixTag</name>
+    <filename>structdg_1_1_self_made_matrix_tag.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::dx_matrixTag</name>
+    <filename>structdg_1_1dx__matrix_tag.html</filename>
+    <base>dg::AnyMatrixTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPIMatrixTag</name>
+    <filename>structdg_1_1_m_p_i_matrix_tag.html</filename>
+    <base>dg::AnyMatrixTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ThrustMatrixTag</name>
+    <filename>structdg_1_1_thrust_matrix_tag.html</filename>
+    <base>dg::AnyMatrixTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPIPreconTag</name>
+    <filename>structdg_1_1_m_p_i_precon_tag.html</filename>
+    <base>dg::AnyMatrixTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::BijectiveComm</name>
+    <filename>structdg_1_1_bijective_comm.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>BijectiveComm</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>a6ae489e5157a1aae7b07b4871d715ea4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>BijectiveComm</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>ae292872aaa59341fd5ca8d254d81348c</anchor>
+      <arglist>(thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector</type>
+      <name>collect</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>ac99aa91a4eb223f327c305734c429291</anchor>
+      <arglist>(const Vector &amp;values) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>send_and_reduce</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>a79c477cdbe538bae5388eef43c0d8835</anchor>
+      <arglist>(const Vector &amp;gatherFrom, Vector &amp;values) const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>recv_size</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>abf21f1460acdf32e0e55e159c0aedb29</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>send_size</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>a8daf6ddd1ee2caec8da829c1579f7a66</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>a4f1fc5abfe953311e23917c56ca42776</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Comm</type>
+      <name>communicator</name>
+      <anchorfile>structdg_1_1_bijective_comm.html</anchorfile>
+      <anchor>aa9ff8caca0cc54b9b7fb7e2b60cf3f32</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPI_FieldAligned</name>
+    <filename>structdg_1_1_m_p_i___field_aligned.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>MPI_FieldAligned</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a43ea8ce8d221399f203cc3394f8cc977</anchor>
+      <arglist>(Field field, const dg::MPI_Grid3d &amp;grid, double eps=1e-4, Limiter limit=DefaultLimiter(), dg::bc globalbcz=dg::DIR, double deltaPhi=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>acf9240c1752b61525279e50b65731d12</anchor>
+      <arglist>(dg::bc bcz, double left, double right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a7343fdfa4497dad1f51756c16f879af8</anchor>
+      <arglist>(dg::bc bcz, const LocalContainer &amp;left, const LocalContainer &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>aa867117c723a7733dbf3c467bc847c0f</anchor>
+      <arglist>(dg::bc bcz, const MPI_Vector&lt; LocalContainer &gt; &amp;global, double scal_left, double scal_right)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; LocalContainer &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a183971174bc1be65ee146f40e986d471</anchor>
+      <arglist>(BinaryOp f, unsigned plane=0) const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; LocalContainer &gt;</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a756b73efe4175ddb18aeb153f9f75454</anchor>
+      <arglist>(BinaryOp f, UnaryOp g, unsigned p0, unsigned rounds) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlus</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a62f8cf60eec4aad1167550d5ed8a3028</anchor>
+      <arglist>(const MPI_Vector&lt; LocalContainer &gt; &amp;in, MPI_Vector&lt; LocalContainer &gt; &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinus</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>adbde9349bfafb79a22db9082bfd81c89</anchor>
+      <arglist>(const MPI_Vector&lt; LocalContainer &gt; &amp;in, MPI_Vector&lt; LocalContainer &gt; &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlusT</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a1af522bb8eb38e9c932772dd69642263</anchor>
+      <arglist>(const MPI_Vector&lt; LocalContainer &gt; &amp;in, MPI_Vector&lt; LocalContainer &gt; &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinusT</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>af10bf081698a5e1f4489c108c27c7eb8</anchor>
+      <arglist>(const MPI_Vector&lt; LocalContainer &gt; &amp;in, MPI_Vector&lt; LocalContainer &gt; &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>const MPI_Vector&lt; LocalContainer &gt; &amp;</type>
+      <name>hz</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>ad6ac5988714b56c0657661fb01d4592f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const MPI_Vector&lt; LocalContainer &gt; &amp;</type>
+      <name>hp</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a9d25604138c22bc0ebe68ecd7814b6fe</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const MPI_Vector&lt; LocalContainer &gt; &amp;</type>
+      <name>hm</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>aae6fd6080f718b888319b06c41d89829</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const MPI_Grid3d &amp;</type>
+      <name>grid</name>
+      <anchorfile>structdg_1_1_m_p_i___field_aligned.html</anchorfile>
+      <anchor>a97a701266f39b7cf8d331e2e0fec5f4d</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPI_Grid2d</name>
+    <filename>structdg_1_1_m_p_i___grid2d.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Grid2d</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>ab604a2d1ddc989f80c3613fdd91a6fca</anchor>
+      <arglist>(double x0, double x1, double y0, double y1, unsigned n, unsigned Nx, unsigned Ny, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Grid2d</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a291e2bcbc68eac6e612cf479f1aff1ee</anchor>
+      <arglist>(double x0, double x1, double y0, double y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx, bc bcy, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>x0</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>adf6f915b4a4131d47fb4ef7e63cee42d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>x1</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a6cc45ad00895a7e7381f448b926bdd9c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>y0</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>af20c7c7d51ed543794943f7cc3c3fd07</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>y1</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a9b9e1f6d68fe6813b703d8bac72f53f1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>aac1419a0a682f5ae1f7f7024d8176ebd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ly</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>aee03cf6beccf5f847a8262bc4f79b4f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>hx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a1d37d2a3257f900b0961fb75b7bd83d3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>hy</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a30057baea271176a7ce3ee831354556e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>ab1f1115b7a2be70ad3628d63efb98448</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a47967125570cec08cc583ae1580afb9c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Ny</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a94e71a0818a5966b6c13dce05702598e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>acc0d7cbd6a29ab2bc14adabf4955c136</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcy</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a5e8ef06af2c31c19a625f04790eac06a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Comm</type>
+      <name>communicator</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>abe042856814e47c69865b599e999ac38</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; double &gt; &amp;</type>
+      <name>dlt</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>ad6e03bcfdcdcc319a89992c7514135ae</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>dg::system</type>
+      <name>system</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a4dd4eac1e8db3a88981bcd3866f46e3f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a46e9b455f105f9c77cac0053edfef570</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a5930e9bb3b4d30a5be7395840026ac17</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+    </member>
+    <member kind="function">
+      <type>Grid2d&lt; double &gt;</type>
+      <name>local</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>a242a395699f88d4dec0f6f59339a481b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Grid2d&lt; double &gt;</type>
+      <name>global</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>aa4aad097820c4c6e168cb796be8d0e1d</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPI_Grid3d</name>
+    <filename>structdg_1_1_m_p_i___grid3d.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Grid3d</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>aab38f1fd2db872c7df729a20b832ea52</anchor>
+      <arglist>(double x0, double x1, double y0, double y1, double z0, double z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Grid3d</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>ac427b65ffaefc40971bb0c9caed3023b</anchor>
+      <arglist>(double x0, double x1, double y0, double y1, double z0, double z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, dg::system sys, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>x0</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a11a432c2a322b77f4c2a251307475953</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>x1</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>ac5ce37896bd00b3a66645493e9e823e8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>y0</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a738984fc9bfd3e4248b45c696c326e46</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>y1</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>abe60607416a4bc9bac516244e3a40b45</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>z0</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a9bcbfe34691a774fcfc71d82d6c355ef</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>z1</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a24ad74d1ad28b21d8e459980faf48dd5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a290793ce447757091535485e8f05f80a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ly</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a4b83164a9657890ccf955316d03b2814</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lz</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a3f09dfcb18a41a24daafa735beb0480b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>hx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a0101d904d01c5b76b3e709eb4d67e86f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>hy</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a4faf508bff4e5753b35f5a820853e634</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>hz</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>aa6b8ca65d12737bf1c771c9dce353b1f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a8c972e7b531f53c860d6a3cbc76ed4fb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a655dc44ce8d9d23e336e16fd8d5a94b3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Ny</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a632ed4c64257c0390320a096d23e0e2a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>Nz</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a9b38793942147d0d2b42a6a0d470b644</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcx</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>afaa0772fd2698d8d9340d82aaf605bf2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcy</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a309df1ff0ad76f45b027eca3937bb30d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bc</type>
+      <name>bcz</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a6cfa2224db952b6c73e58f15caf9ec5e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Comm</type>
+      <name>communicator</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>aef173dce8176f09b926eb14dd934bad5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DLT&lt; double &gt; &amp;</type>
+      <name>dlt</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a1ba03e9d0c0a14d1c954ca7db95ba1af</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>dg::system</type>
+      <name>system</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a41f5d2f0117003022993c61a1e05105c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a5d29467e83e0bb72fd9d49de20dbcc03</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a35443a835eacd07761c352d243f56d66</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+    </member>
+    <member kind="function">
+      <type>Grid3d&lt; double &gt;</type>
+      <name>local</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a84647e9557a34cffe5e2ed9c551f5cea</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Grid3d&lt; double &gt;</type>
+      <name>global</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>ac3fa3409e7e8adcd8bdedd99c572c334</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>pidOf</name>
+      <anchorfile>structdg_1_1_m_p_i___grid3d.html</anchorfile>
+      <anchor>a9a1618fd94e01503d23aa520ccb57640</anchor>
+      <arglist>(double x, double y, double z) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::RowColDistMat</name>
+    <filename>structdg_1_1_row_col_dist_mat.html</filename>
+    <templarg>LocalMatrixInner</templarg>
+    <templarg>LocalMatrixOuter</templarg>
+    <templarg>Collective</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RowColDistMat</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>ac1e66c3615a2e2256b9615be89057d4e</anchor>
+      <arglist>(const LocalMatrixInner &amp;m_inside, const LocalMatrixOuter &amp;m_outside, const Collective &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RowColDistMat</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>a3e60395af1bfd71d925af6e704405a50</anchor>
+      <arglist>(const RowColDistMat&lt; OtherMatrixInner, OtherMatrixOuter, OtherCollective &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>const LocalMatrixInner &amp;</type>
+      <name>inner_matrix</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>ac95cd9424ce4d3b32e22c865774c3334</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const LocalMatrixOuter &amp;</type>
+      <name>outer_matrix</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>a9f3734482145566d8eb994ba90b2189b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Collective &amp;</type>
+      <name>collective</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>a40bc8d123ee3441ccb7405b890a84e8b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_row_col_dist_mat.html</anchorfile>
+      <anchor>a69be149644264515dd361b49e724e042</anchor>
+      <arglist>(const MPI_Vector&lt; container &gt; &amp;x, MPI_Vector&lt; container &gt; &amp;y) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::RowDistMat</name>
+    <filename>structdg_1_1_row_dist_mat.html</filename>
+    <templarg>LocalMatrix</templarg>
+    <templarg>Collective</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RowDistMat</name>
+      <anchorfile>structdg_1_1_row_dist_mat.html</anchorfile>
+      <anchor>abfef4ad1617d65b89df65531aba21d99</anchor>
+      <arglist>(const LocalMatrix &amp;m, const Collective &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>RowDistMat</name>
+      <anchorfile>structdg_1_1_row_dist_mat.html</anchorfile>
+      <anchor>a15a421a47743817e14f8c1547b54c2a8</anchor>
+      <arglist>(const RowDistMat&lt; OtherMatrix, OtherCollective &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>const LocalMatrix &amp;</type>
+      <name>matrix</name>
+      <anchorfile>structdg_1_1_row_dist_mat.html</anchorfile>
+      <anchor>ac83c0529e3ceb06a93982b7a64a36cbd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Collective &amp;</type>
+      <name>collective</name>
+      <anchorfile>structdg_1_1_row_dist_mat.html</anchorfile>
+      <anchor>a210e168ef549247f9058a0c565059b5c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_row_dist_mat.html</anchorfile>
+      <anchor>a84a0d4eda46fd8e2ab51a7f6f96773bb</anchor>
+      <arglist>(const MPI_Vector&lt; container &gt; &amp;x, MPI_Vector&lt; container &gt; &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ColDistMat</name>
+    <filename>structdg_1_1_col_dist_mat.html</filename>
+    <templarg>LocalMatrix</templarg>
+    <templarg>Collective</templarg>
+    <member kind="function">
+      <type></type>
+      <name>ColDistMat</name>
+      <anchorfile>structdg_1_1_col_dist_mat.html</anchorfile>
+      <anchor>a4297a483e3ad3f1a7128be73b1265a4d</anchor>
+      <arglist>(const LocalMatrix &amp;m, const Collective &amp;c)</arglist>
+    </member>
+    <member kind="function">
+      <type>const LocalMatrix &amp;</type>
+      <name>matrix</name>
+      <anchorfile>structdg_1_1_col_dist_mat.html</anchorfile>
+      <anchor>a3cd8bb0cd2aca9b4b6190d9bce48a0f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Collective &amp;</type>
+      <name>collective</name>
+      <anchorfile>structdg_1_1_col_dist_mat.html</anchorfile>
+      <anchor>aaac4b1cc6a06a864b27bba32ae18764b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_col_dist_mat.html</anchorfile>
+      <anchor>a5178a4ced33cb93d3afd768276e369ac</anchor>
+      <arglist>(const MPI_Vector&lt; container &gt; &amp;x, MPI_Vector&lt; container &gt; &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPI_Vector</name>
+    <filename>structdg_1_1_m_p_i___vector.html</filename>
+    <templarg>container</templarg>
+    <member kind="typedef">
+      <type>container</type>
+      <name>container_type</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>ad42ce5571b198915c6b5c2eb9033ceb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Vector</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>ab79c8907a64d91971c63f1542df07f04</anchor>
+      <arglist>(const container &amp;data, MPI_Comm comm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>MPI_Vector</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>a896368bf40dca6d0e3c860c1875406ca</anchor>
+      <arglist>(const MPI_Vector&lt; OtherContainer &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>container &amp;</type>
+      <name>data</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>a2102f399a256c19e86f6d599d561e7fb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>data</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>ae537fd21bda75f32afcf3d0eb2e782ea</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>aaf8b846a0196833afef45c0469d506d4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Comm</type>
+      <name>communicator</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>a77541670d6003db3dae5ea3c626870c4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>ac6e60a2b40563376f18719040c3bc79a</anchor>
+      <arglist>(std::ostream &amp;os) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator[]</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>ae86dc9d00c461800e906a40a0fd5a218</anchor>
+      <arglist>(int i) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>swap</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>a679244781d28e4134f122c4797cfd000</anchor>
+      <arglist>(MPI_Vector &amp;that)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend std::ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>structdg_1_1_m_p_i___vector.html</anchorfile>
+      <anchor>a4caefc423561c60b74e655ed07291d70</anchor>
+      <arglist>(std::ostream &amp;os, const MPI_Vector &amp;v)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::NearestNeighborComm</name>
+    <filename>structdg_1_1_nearest_neighbor_comm.html</filename>
+    <templarg>Index</templarg>
+    <templarg>Vector</templarg>
+    <member kind="function">
+      <type></type>
+      <name>NearestNeighborComm</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>aafd0dcd64150e9324c84c46c33d23374</anchor>
+      <arglist>(int n, const int vector_dimensions[3], MPI_Comm comm, int direction)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NearestNeighborComm</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>a29afb9b75b076d8e3ac1d86bd5a460d4</anchor>
+      <arglist>(const NearestNeighborComm&lt; OtherIndex, OtherVector &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>Vector</type>
+      <name>collect</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>a567bf1426f7b6ec4b70d1ccc6552df17</anchor>
+      <arglist>(const Vector &amp;input) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>size</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>ac918f5d1191dd26b731832c3493177ab</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Comm</type>
+      <name>communicator</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>af66764f2258a99dc8362548dde0bd2b8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>ae5d150f7877d4904f6b4eb000c2c7dd5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const int *</type>
+      <name>dims</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>aec42a618713f87a34e472e47ab748609</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>direction</name>
+      <anchorfile>structdg_1_1_nearest_neighbor_comm.html</anchorfile>
+      <anchor>a07da53afb41bee291906752c578493b9</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>dg::Operator</name>
+    <filename>classdg_1_1_operator.html</filename>
+    <templarg>T</templarg>
+    <member kind="typedef">
+      <type>T</type>
+      <name>value_type</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a322ecb3322b51f04d23178d05578cdd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Operator</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>af341daeacc03a69bacaaf2335cd6f228</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Operator</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a55e6f171312dcb8c5ffb11dc2afc7b7b</anchor>
+      <arglist>(const unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Operator</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>aea27e076660f16ed925b3460aff2a43f</anchor>
+      <arglist>(const unsigned n, const T &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Operator</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>afd7740c4acea7bfe7b89a24e9a0d02c6</anchor>
+      <arglist>(InputIterator first, InputIterator last)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Operator</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a1eaf0ce3926e91737bf45681aa751618</anchor>
+      <arglist>(const std::vector&lt; T &gt; &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>T &amp;</type>
+      <name>operator()</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>ada4d2d751a0fee7360c156aeb5cd9da8</anchor>
+      <arglist>(const size_t i, const size_t j)</arglist>
+    </member>
+    <member kind="function">
+      <type>const T &amp;</type>
+      <name>operator()</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a349a46f8efa4cf0ad7130096cf3d017d</anchor>
+      <arglist>(const size_t i, const size_t j) const </arglist>
+    </member>
+    <member kind="function">
+      <type>unsigned</type>
+      <name>size</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>ab26b2c05623deea924ec19a05f4a6cbf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resize</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a4c03dee26cfa432aecb8d9a5b2b2e56c</anchor>
+      <arglist>(unsigned m)</arglist>
+    </member>
+    <member kind="function">
+      <type>const std::vector&lt; double &gt; &amp;</type>
+      <name>data</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a2797bab65f792fbbc04a26fd71ed15a7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Operator</type>
+      <name>transpose</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>ac7f3aa813f8894b2f5a44f08da781dfd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Operator</type>
+      <name>operator-</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a70c2f4d0289c18f650ced600f39b25a9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Operator &amp;</type>
+      <name>operator+=</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a8762389e11fb76aff49a3221357caacf</anchor>
+      <arglist>(const Operator &amp;op)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator &amp;</type>
+      <name>operator-=</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>aae1278088b73bd0ee1e27fcd0e7ff3c7</anchor>
+      <arglist>(const Operator &amp;op)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator &amp;</type>
+      <name>operator*=</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>aa17b5845d02c2981174a77b1b8ca8dab</anchor>
+      <arglist>(const T &amp;value)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Operator</type>
+      <name>operator+</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>aaa97ad076b4a15ea3ac251575424bd88</anchor>
+      <arglist>(const Operator &amp;lhs, const Operator &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Operator</type>
+      <name>operator-</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a18222a08be1b4ab3ff9acc121cd428d3</anchor>
+      <arglist>(const Operator &amp;lhs, const Operator &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Operator</type>
+      <name>operator*</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>aa0c12018483764a7d5bbbe9715ceeedb</anchor>
+      <arglist>(const T &amp;value, const Operator &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Operator</type>
+      <name>operator*</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a59ac512dcfdd7d5cbaf91b99c9570f69</anchor>
+      <arglist>(const Operator &amp;lhs, const T &amp;value)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Operator</type>
+      <name>operator*</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a21c2941115cda0ff80533f6da58895eb</anchor>
+      <arglist>(const Operator &amp;lhs, const Operator &amp;rhs)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Ostream &amp;</type>
+      <name>operator&lt;&lt;</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>ab833a82581c61a865606131e274b11c7</anchor>
+      <arglist>(Ostream &amp;os, const Operator &amp;mat)</arglist>
+    </member>
+    <member kind="friend">
+      <type>friend Istream &amp;</type>
+      <name>operator&gt;&gt;</name>
+      <anchorfile>classdg_1_1_operator.html</anchorfile>
+      <anchor>a48552daaed7c7274884efa19e3985e0a</anchor>
+      <arglist>(Istream &amp;is, Operator&lt; T &gt; &amp;mat)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::DifferenceNorm</name>
+    <filename>structdg_1_1_difference_norm.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>DifferenceNorm</name>
+      <anchorfile>structdg_1_1_difference_norm.html</anchorfile>
+      <anchor>a9e8fceeb6c5b8cab49783186d6460d5b</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g1, const Grid2d&lt; double &gt; &amp;g2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_difference_norm.html</anchorfile>
+      <anchor>a5232ce937ee7c367e927ff9311f68ef9</anchor>
+      <arglist>(const container &amp;v1, const container &amp;v2)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>sum</name>
+      <anchorfile>structdg_1_1_difference_norm.html</anchorfile>
+      <anchor>ab975ddce7dc4242e942e839a0a12e0f1</anchor>
+      <arglist>(const container &amp;v1, const container &amp;v2)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::EllSparseBlockMatDevice</name>
+    <filename>structdg_1_1_ell_sparse_block_mat_device.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>EllSparseBlockMatDevice</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat_device.html</anchorfile>
+      <anchor>a7132fbc02d15dc8bfde5d58a96295ef2</anchor>
+      <arglist>(const EllSparseBlockMat &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat_device.html</anchorfile>
+      <anchor>aa6db43231cbc58f45e0e7d04286cd6e5</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, thrust::device_vector&lt; double &gt; &amp;y) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CooSparseBlockMatDevice</name>
+    <filename>structdg_1_1_coo_sparse_block_mat_device.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CooSparseBlockMatDevice</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat_device.html</anchorfile>
+      <anchor>a918cd621a90245fad84a912c8f7793e8</anchor>
+      <arglist>(const CooSparseBlockMat &amp;src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat_device.html</anchorfile>
+      <anchor>a0b95d7e13275f831f248d8e7f1115a6f</anchor>
+      <arglist>(double alpha, const thrust::device_vector&lt; double &gt; &amp;x, double beta, thrust::device_vector&lt; double &gt; &amp;y) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::EllSparseBlockMat</name>
+    <filename>structdg_1_1_ell_sparse_block_mat.html</filename>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>HVec</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>aad1709092f02ce9604ebfb948238fcba</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>IVec</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a3cc028685806f9631dc92dcd0b65a8e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>EllSparseBlockMat</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a5b81a380b40ebfa61365ffb3d7132de1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>EllSparseBlockMat</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>add89682c2699d8ec50bacc0645f259ba</anchor>
+      <arglist>(int num_block_rows, int num_block_cols, int num_blocks_per_line, int num_different_blocks, int n)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a559f955c51790860f40e8c369e77d0d6</anchor>
+      <arglist>(const HVec &amp;x, HVec &amp;y) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>HVec</type>
+      <name>data</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a94a18d9ddd1c6b67bef75c846bcb7c6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>IVec</type>
+      <name>cols_idx</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a484d89c21208ffc5e66e8b2590721934</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>IVec</type>
+      <name>data_idx</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a74ee42f6499e0d1cf6ef2ff17b9355bc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_rows</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a8b57d0ac5938082c81c2f6c0b9862b4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_cols</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a47d33e2fa0d4e710bb24fe61c0d993f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>blocks_per_line</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a75ed23900e08d6ac6f99fdc2d65c7ebd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a157eb78d6c45868d7a43a3e435d4af0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>left</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>afa215c3354d917b09d4e708fba9bffa9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>right</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>adfb922a1de31351e8df3261112d25f27</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CooSparseBlockMat</name>
+    <filename>structdg_1_1_coo_sparse_block_mat.html</filename>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>HVec</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>adb54ac53fcc846cd4c84dc2e2456d22b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>IVec</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>ac6775057c997b32be01ef4563bf9f375</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooSparseBlockMat</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a0e63a0450a983cc61022306de3827828</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>CooSparseBlockMat</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>ad867c5393eb88429805ddcac2fa7e542</anchor>
+      <arglist>(int num_block_rows, int num_block_cols, int n, int left, int right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>add_value</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>aaa2a4f75d53eeab3b3f20dc58b4629d8</anchor>
+      <arglist>(int row, int col, const thrust::host_vector&lt; double &gt; &amp;element)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>ad03433070ba5ad8cd43f2e58b4582dca</anchor>
+      <arglist>(double alpha, const HVec &amp;x, double beta, HVec &amp;y) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>HVec</type>
+      <name>data</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a71c77af87387f08630f0f9261f9a2b2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>IVec</type>
+      <name>cols_idx</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a60ca400fdae6e53a671a5943c06b70a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>IVec</type>
+      <name>rows_idx</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a7cf79e29d660accac859a3a13878f658</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>IVec</type>
+      <name>data_idx</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a6b127f4f8248a6d93ae4798a87ba64d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_rows</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a31dce90c20250a524918ba43f2c96ca7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_cols</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>ae5ea31eafa63a02dd09ff8e4cb5ac8f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>num_entries</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a1b6f8a891ec2ac29c6e7bfb0fa70249c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>n</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a191b0a0bf5399be7c2f8d8d3d1c6c061</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>left</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>afb5e9b3c9b385c60223ee7d6d2ea9e60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>right</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>ac1ebebd51b4e4c93335447d5876f47c6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>dg::Timer</name>
+    <filename>classdg_1_1_timer.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>tic</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>ab3ff0dbe977c6151118227cfbd0aefb2</anchor>
+      <arglist>(MPI_Comm comm=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>toc</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>afbe78fc3702a5c3d4263c2941745b8a7</anchor>
+      <arglist>(MPI_Comm comm=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>diff</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a0f4b829eee178035bbb5a343f550dcca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>tic</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>ad158907d0e4a975b832fed780d7b4655</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>toc</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a3c1a18f62626dcfaf728c2b490a64a43</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>diff</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a0f4b829eee178035bbb5a343f550dcca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>tic</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>ad158907d0e4a975b832fed780d7b4655</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>toc</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a3c1a18f62626dcfaf728c2b490a64a43</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>diff</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a0f4b829eee178035bbb5a343f550dcca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>tic</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>ab3ff0dbe977c6151118227cfbd0aefb2</anchor>
+      <arglist>(MPI_Comm comm=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>toc</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>afbe78fc3702a5c3d4263c2941745b8a7</anchor>
+      <arglist>(MPI_Comm comm=MPI_COMM_WORLD)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>diff</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a0f4b829eee178035bbb5a343f550dcca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>tic</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a5a1fabbcd329f328a29b76fac1760583</anchor>
+      <arglist>(cudaStream_t stream=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>toc</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>a4e72960bc2100bcf0b8763591f590c20</anchor>
+      <arglist>(cudaStream_t stream=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>float</type>
+      <name>diff</name>
+      <anchorfile>classdg_1_1_timer.html</anchorfile>
+      <anchor>acc8486e5d04570b0d14aef219909b23b</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::AnyVectorTag</name>
+    <filename>structdg_1_1_any_vector_tag.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::StdVectorTag</name>
+    <filename>structdg_1_1_std_vector_tag.html</filename>
+    <base>dg::AnyVectorTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ThrustVectorTag</name>
+    <filename>structdg_1_1_thrust_vector_tag.html</filename>
+    <base>dg::AnyVectorTag</base>
+  </compound>
+  <compound kind="struct">
+    <name>dg::MPIVectorTag</name>
+    <filename>structdg_1_1_m_p_i_vector_tag.html</filename>
+    <base>dg::AnyVectorTag</base>
+  </compound>
   <compound kind="class">
     <name>dg::CG</name>
     <filename>classdg_1_1_c_g.html</filename>
@@ -1160,6 +5160,13 @@
       <arglist>(const container &amp;copyable, unsigned max_iter, double eps, double nrmb_correction=1)</arglist>
     </member>
     <member kind="function">
+      <type>const container &amp;</type>
+      <name>get_last</name>
+      <anchorfile>structdg_1_1_invert.html</anchorfile>
+      <anchor>a3f72ec59f67ad4dcfbba25c178b1fe7e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
       <type>unsigned</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_invert.html</anchorfile>
@@ -1185,6 +5192,153 @@
       <name>get_max</name>
       <anchorfile>structdg_1_1_invert.html</anchorfile>
       <anchor>a9bf8b8325e4b96dc859103b09a3112a7</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::DS</name>
+    <filename>structdg_1_1_d_s.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="typedef">
+      <type>FA</type>
+      <name>FieldAligned</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a013ea66911d8b0ff7984385513f211bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DS</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a6d9687bdcc12a3676533cc01d57f2cca</anchor>
+      <arglist>(const FA &amp;field, InvB invB, const Grid &amp;grid, dg::norm no=dg::normed, dg::direction dir=dg::centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>forward</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>aa6de04f758b54c897f86a4c96b7622b2</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>backward</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a67b12042736530a2e141e8ec9c84aaab</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>centered</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>af318c233edce815bda0890de38e07458</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>forwardT</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a32af453703f8ffba4e8203c6446a9b00</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>backwardT</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>acaaae77dd4791497116914556e079fb2</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>centeredTD</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a2478d48efd855e346b7f93716f7888f4</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>forwardTD</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>adc8cdf60ae3b32f3f9181101e57dbad0</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>backwardTD</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a20e1eed33344778ea9b49e6637bb2340</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>centeredT</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a3103c5e22420249662241ca8f33e091b</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a6a4942a8e203657f74e06dbba93fae44</anchor>
+      <arglist>(const container &amp;f, container &amp;dsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>dss</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a2d0dfc02871961230fc42eccb60a9e7f</anchor>
+      <arglist>(const container &amp;f, container &amp;dssf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>ab3c71edb78f2c7fb444ca64bf8b560f4</anchor>
+      <arglist>(const container &amp;f, container &amp;dsTdsf)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a4592818bed3271cd385645aea0a19b61</anchor>
+      <arglist>(dg::bc bcz, double left, double right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a2c9eb642f4f751bbdc5b6885357c70ca</anchor>
+      <arglist>(dg::bc bcz, const container &amp;left, const container &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a1bd4170acca0e972ab3d03f195fbedbd</anchor>
+      <arglist>(dg::bc bcz, const container &amp;global, double scal_left, double scal_right)</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>weights</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>a8a40fb4fc4d7fb7fa97d4f1f43878712</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>precond</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>ae200e02d7b581bb5bc274de119fa920c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const FA &amp;</type>
+      <name>fieldaligned</name>
+      <anchorfile>structdg_1_1_d_s.html</anchorfile>
+      <anchor>acf15e8b43140440b6dbe5def4ccf1688</anchor>
       <arglist>() const </arglist>
     </member>
   </compound>
@@ -1233,8 +5387,8 @@
       <type>void</type>
       <name>symv</name>
       <anchorfile>classdg_1_1_elliptic.html</anchorfile>
-      <anchor>aaa875850f691e28b53de7560367bc950</anchor>
-      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
+      <anchor>ab341f58a1af35ca977616a8765af2e61</anchor>
+      <arglist>(const Vector &amp;x, Vector &amp;y)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1249,6 +5403,13 @@
       <anchorfile>structdg_1_1_general_elliptic.html</anchorfile>
       <anchor>a951d4bf81105a15efac024fbcfb029d2</anchor>
       <arglist>(const Grid &amp;g, norm no=not_normed, direction dir=forward)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GeneralElliptic</name>
+      <anchorfile>structdg_1_1_general_elliptic.html</anchorfile>
+      <anchor>a24429fa31ff45aed5151b14b6c67a3f3</anchor>
+      <arglist>(const Grid &amp;g, bc bcx, bc bcy, bc bcz, norm no=not_normed, direction dir=forward)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -1301,6 +5462,76 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::GeneralEllipticSym</name>
+    <filename>structdg_1_1_general_elliptic_sym.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>GeneralEllipticSym</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>ad8af1c7d677fc5601f802a242efe6db1</anchor>
+      <arglist>(const Grid &amp;g, norm no=not_normed, direction dir=forward)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GeneralEllipticSym</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a5294215c8cccab265778ec6adc70731f</anchor>
+      <arglist>(const Grid &amp;g, bc bcx, bc bcy, bc bcz, norm no=not_normed, direction dir=forward)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_x</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a6812a06e7d6680466178d04e0181590c</anchor>
+      <arglist>(const Vector &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_y</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a8ef0a16586227cb964af9d695f03b5d1</anchor>
+      <arglist>(const Vector &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_z</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a4c0d69157a44b5d76ddfef7ef7eada5b</anchor>
+      <arglist>(const Vector &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a1789e5ababf966494b7b8c7a58a4ba69</anchor>
+      <arglist>(const std::vector&lt; Vector &gt; &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>weights</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a48262fd3c3153906431483ecef30d0bb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>precond</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>a657601a5bac5b1f8a39e12be7ff968ae</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>structdg_1_1_general_elliptic_sym.html</anchorfile>
+      <anchor>aa28753c5a982158f1a601d62f5952449</anchor>
+      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>dg::Fail</name>
     <filename>structdg_1_1_fail.html</filename>
     <member kind="function">
@@ -1330,10 +5561,10 @@
     <filename>structdg_1_1_abs_max.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_abs_max.html</anchorfile>
-      <anchor>aa714656703ea5cb3d7714faabe9d7629</anchor>
+      <anchor>adf6c2585935bb203e21347c809d52407</anchor>
       <arglist>(const T &amp;x, const T &amp;y)</arglist>
     </member>
   </compound>
@@ -1342,10 +5573,10 @@
     <filename>structdg_1_1_abs_min.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_abs_min.html</anchorfile>
-      <anchor>a916191cf7cf149afc3bdb36c9fd24435</anchor>
+      <anchor>a46552c86532d05536071a3d0938e798f</anchor>
       <arglist>(const T &amp;x, const T &amp;y)</arglist>
     </member>
   </compound>
@@ -1513,6 +5744,13 @@
       <anchor>afb11c904cbdcde60dba138fc133629a6</anchor>
       <arglist>(double x, double y)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_linear_x.html</anchorfile>
+      <anchor>a7f5a89ec70eaa5b292f1bd8bb8071551</anchor>
+      <arglist>(double x)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::LinearY</name>
@@ -1533,38 +5771,20 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>dg::LHalf</name>
-    <filename>structdg_1_1_l_half.html</filename>
+    <name>dg::TanhProfX</name>
+    <filename>structdg_1_1_tanh_prof_x.html</filename>
     <member kind="function">
       <type></type>
-      <name>LHalf</name>
-      <anchorfile>structdg_1_1_l_half.html</anchorfile>
-      <anchor>a73a6c6de949ca50467a3cd8c9371bddf</anchor>
-      <arglist>(double xb)</arglist>
+      <name>TanhProfX</name>
+      <anchorfile>structdg_1_1_tanh_prof_x.html</anchorfile>
+      <anchor>a38043606afa505f7f9a70511119ac74b</anchor>
+      <arglist>(double xb, double width, int sign, double bgamp, double profamp)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structdg_1_1_l_half.html</anchorfile>
-      <anchor>aaaf6fbf27136e0a443e42be3d41152e7</anchor>
-      <arglist>(double x, double y)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>dg::RHalf</name>
-    <filename>structdg_1_1_r_half.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>RHalf</name>
-      <anchorfile>structdg_1_1_r_half.html</anchorfile>
-      <anchor>a683a4e23fef2cf4afe953006342c19f9</anchor>
-      <arglist>(double xb)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structdg_1_1_r_half.html</anchorfile>
-      <anchor>a128cce7a2daa7e1078608845f526ac47</anchor>
+      <anchorfile>structdg_1_1_tanh_prof_x.html</anchorfile>
+      <anchor>a7fe1391febb7ce8da28c1eb305835ec0</anchor>
       <arglist>(double x, double y)</arglist>
     </member>
   </compound>
@@ -1662,10 +5882,10 @@
       <arglist>(double amp=1., double lambda=1.)</arglist>
     </member>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_e_x_p.html</anchorfile>
-      <anchor>a5a8ae6a0f36fa060e7fe97a632c2f978</anchor>
+      <anchor>a8b9562bd655f074080d5adae14779ad2</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1674,10 +5894,10 @@
     <filename>structdg_1_1_l_n.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_l_n.html</anchorfile>
-      <anchor>aaa9d64f99df571d4f164eefada35797b</anchor>
+      <anchor>a49b0e6d513822989a9088676c2435501</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1686,10 +5906,10 @@
     <filename>structdg_1_1_s_q_r_t.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_s_q_r_t.html</anchorfile>
-      <anchor>a262a9118b42b69858043cb66b97aa7d2</anchor>
+      <anchor>a0a175662622807ce3ec394adfc6d7325</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1698,10 +5918,10 @@
     <filename>structdg_1_1_min_mod.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_min_mod.html</anchorfile>
-      <anchor>a88d5901b10cea0b447e7758de1807b20</anchor>
+      <anchor>a504362c1b2c43fc75a7306b842f109ed</anchor>
       <arglist>(T a1, T a2, T a3)</arglist>
     </member>
   </compound>
@@ -1717,10 +5937,10 @@
       <arglist>(T value)</arglist>
     </member>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_p_l_u_s.html</anchorfile>
-      <anchor>adce602b7c450f6b06c9954283e828dee</anchor>
+      <anchor>ad5842bc8b987da5d72b3373fbc3884ad</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1736,10 +5956,10 @@
       <arglist>(T m)</arglist>
     </member>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_m_o_d.html</anchorfile>
-      <anchor>aa66c4ae9784689450e8d94ec6bf90fe8</anchor>
+      <anchor>a7be9dc04696f43b4760d533c07848f47</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1748,10 +5968,22 @@
     <filename>structdg_1_1_a_b_s.html</filename>
     <templarg></templarg>
     <member kind="function">
-      <type>T</type>
+      <type>__host__ __device__ T</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_a_b_s.html</anchorfile>
-      <anchor>ae877fcbbc5d06b6ca15c21bbeb74040c</anchor>
+      <anchor>ae52434a32ab21489cf0193ca5c3f3599</anchor>
+      <arglist>(const T &amp;x)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::POSVALUE</name>
+    <filename>structdg_1_1_p_o_s_v_a_l_u_e.html</filename>
+    <templarg></templarg>
+    <member kind="function">
+      <type>__host__ __device__ T</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_p_o_s_v_a_l_u_e.html</anchorfile>
+      <anchor>a3890b2bdcafba78f3df66f8f5773ff4e</anchor>
       <arglist>(const T &amp;x)</arglist>
     </member>
   </compound>
@@ -1766,24 +5998,24 @@
       <arglist>(double cte)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
+      <type>__host__ __device__ double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_c_o_n_s_t_a_n_t.html</anchorfile>
-      <anchor>ac7883c7de7daa091b4ebe20c8fdad508</anchor>
+      <anchor>aaeb3cbafed28934fc9938c585276acc4</anchor>
       <arglist>(double x)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
+      <type>__host__ __device__ double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_c_o_n_s_t_a_n_t.html</anchorfile>
-      <anchor>ad08e5a0ee5593660f0b47b11a217e1ff</anchor>
+      <anchor>a89f96caaf6a6c7261b5d1a92ab008c39</anchor>
       <arglist>(double x, double y)</arglist>
     </member>
     <member kind="function">
-      <type>double</type>
+      <type>__host__ __device__ double</type>
       <name>operator()</name>
       <anchorfile>structdg_1_1_c_o_n_s_t_a_n_t.html</anchorfile>
-      <anchor>ab0b682a0acc252ce3b7d7f934cdfee5a</anchor>
+      <anchor>a957ca7a22cdfdf8c4e60ca4cd2a2a1b0</anchor>
       <arglist>(double x, double y, double z)</arglist>
     </member>
   </compound>
@@ -1905,8 +6137,85 @@
       <type>const Vector &amp;</type>
       <name>chi</name>
       <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf8330683e97b34392b998695d33f13ba</anchor>
+      <anchor>gafa5d16b61453a474667c8f1431a5f654</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Helmholtz2</name>
+    <filename>structdg_1_1_helmholtz2.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>Helmholtz2</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga69faa6f1c4ce9a14689565784ddd8244</anchor>
+      <arglist>(const Grid &amp;g, double alpha=1., direction dir=dg::forward)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Helmholtz2</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga92ba0168fcf2f3152cad54298f4001c7</anchor>
+      <arglist>(const Grid &amp;g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>symv</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga0b7bd6b68be0f335a8077a79b011866c</anchor>
+      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>weights</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga2aa58df4698a150a0dbbc6b4d9c8ca4d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Preconditioner &amp;</type>
+      <name>precond</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gab85b5b3e443d48175327b9e57238d095</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double &amp;</type>
+      <name>alpha</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga690d77e9309c8cf46ee89337a71037cc</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>alpha</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gac1ce81af740fcc2f0ff857d192c9fbf5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>gaeb435677d0c32060ddcb1fc6b56b3892</anchor>
+      <arglist>(const Vector &amp;chi)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset_chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga5cedef37876d81b44f2a75fe1510c5f5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const Vector &amp;</type>
+      <name>chi</name>
+      <anchorfile>group__matrixoperators.html</anchorfile>
+      <anchor>ga4b726119725cc618116b57d379059837</anchor>
+      <arglist>() const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -2270,18 +6579,681 @@
       <arglist>(Matrix &amp;m, Vector1 &amp;x, Vector2 &amp;y)</arglist>
     </member>
   </compound>
+  <compound kind="namespace">
+    <name>dg::create</name>
+    <filename>namespacedg_1_1create.html</filename>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga69c10f1ff46a0283c2f5e1ddd8e64465</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa5ed6f9f8fbebc82ff21085480b9c2d5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9a8e4982e7ceb95ce7508fd4a6d51f8b</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafac8350100011450eaf94f74c66cddb5</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac6c5bdeeff04f149ffbfadfd54e134c7</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga71bd4069fa49806625c0377baa1b5e85</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga408cc1f12f4b1d99f431d5deee524590</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3dad84da244ac1c8ae28bc226228644</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga7752f03c83aa8abfb9f9cc13a5afa4dc</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gace169e38d13cad07fcb765fccc392181</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafb374b601cfb7dff1f187e3b7ca44241</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaec13a9d41ed59c227f68dc8472fe4b39</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga2f8388284a65b7dc473d7a26eb11bfe7</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad71fb653a1bce34fce275dab57785c9c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac7d40127801cae83a93fa04355250e1c</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga1039ae2a0f2a10603fa1cfe2e6d28fca</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac3aee94a9f3f66d65c20bbcb720b1200</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad93c2b4b5b54db591e5e637c2c9bcfd0</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga835fb03693f889c0742bc379fc7e98d3</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga91107e83028633d52ed0b1865dd66ca6</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_symm</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga73eb7642435404c4463a59ba423233c1</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_plus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga7cb05902116470e4e3f40bb64c91e5f3</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_minus</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaafaa62ed9e4cc975d82e1c6f0dfabf8b</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>jump</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gab9b667c4dc2c84e26b26d41144af7f2f</anchor>
+      <arglist>(int n, int N, double h, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx_normed</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaa9a9ae9a1c8dd960747be631e3c76e87</anchor>
+      <arglist>(int n, int N, double h, bc bcx, direction dir)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga51d737bc72722410c3379685359d4724</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>EllSparseBlockMat</type>
+      <name>dx</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gad81ca75e4fb901edb156de6718cec261</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; double, int, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aca24d18f61418bd8938d5326bea3c8ce</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a71eb3c13f4be1fb861138da47c116f88</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const thrust::device_vector&lt; double &gt; &amp;y, const Grid2d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aab1696cd3592ca0385f4e3768ae7d07d</anchor>
+      <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, const thrust::device_vector&lt; double &gt; &amp;y, const thrust::device_vector&lt; double &gt; &amp;z, const Grid3d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a5f404f0beafa3a4d8924ebf279869e91</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g_new, const Grid3d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::ell_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>ell_interpolation</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a0c8f8fa4691539661912b90d92480919</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g_new, const Grid2d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>ga28a0f2e4fd5fd3a750897e4a4762d7ff</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const Grid1d&lt; double &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaa9532d319b905f87746b8afd586886c7</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const Grid2d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gab7efbde4b1a209579331db290e4d6973</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;x, const thrust::host_vector&lt; double &gt; &amp;y, const thrust::host_vector&lt; double &gt; &amp;z, const Grid3d&lt; double &gt; &amp;g, dg::bc globalbcz=dg::NEU)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gafbf39c7ca7d42d45182162f22c4f39ee</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g_new, const Grid1d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaf3585c951c4f547a87e5dd6834cf25ff</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g_new, const Grid2d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>interpolation</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaeda0154f55370694090f01e8ca231895</anchor>
+      <arglist>(const Grid3d&lt; double &gt; &amp;g_new, const Grid3d&lt; double &gt; &amp;g_old)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga439af5f0be047a0fb8eaf5d4cfd4f76c</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9599c240d72a8e091f878be6b90b510f</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad0dc0c3363d22f9c0bd177469c1f5110</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga58517e4680ce13bb21cfe3871b85046c</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga14636033fd3b0e8232cff455fc77c417</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gad1fbf1ff8fbc0930af27124af129132c</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga8801a19daa68957373e9c5278db4688e</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga521fbc195c468688eb040d36868fa67e</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac831d19ccc80869ef85f17340c6db2bf</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaf69b2cdbab2b517d4d2981f7e3e4f833</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga583ba4929103b067f3da8cd15cc8b58b</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga052c83aa6c1198557ec87effb8dbe7b3</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gac6da315df384435cb835058e3044924d</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gadd00414c50d66854de23a12b30ed0187</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gafbd75f014065e509e52df9c7932cabc1</anchor>
+      <arglist>(const MPI_Grid2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga26aaa50d13ae8a7e4e90df8c31b3a4c6</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaeb99d74f34489decaaf58ff4a4cd7e3f</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaf36f2f96638551c890dfb814aeddd9cd</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga74c3f03a267b2ef2f7d6b2f6237ddb27</anchor>
+      <arglist>(const MPI_Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>RowColDistMat&lt; EllSparseBlockMat, CooSparseBlockMat, NNCH &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga6366376e70d7bac716b0f415ee8e382d</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga516908b4ba89e00774386860f3b68897</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga90632d7c240a20e8206e286f2f86f25a</anchor>
+      <arglist>(const MPI_Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gadad712eb1f1c27ba4d1c8f1c695676f8</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gae3ff6672b3abde44ff687d0a0dee6126</anchor>
+      <arglist>(const MPI_Grid3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>delta</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga5240e4a7a0ed5e0185c05f8223de9466</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pipj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga5742ac1cee8b8c09619bcd1da1730fa6</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pipj_inv</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga9270698ddf50a70aeeeccb0b8d4ea1e2</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>pidxpj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga47baf9139f33e72afb91a5bd168f2adf</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>rirj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga326a160653330e4cbdc794590a81db8f</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>rilj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gad4f5c0d21818f276dda23c904461e2cc</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>lirj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>ga46edb26b7a8c8544ea641aa03f6fd7fa</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>lilj</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaaaa29e3675d675f7d04e946cd7f66ed5</anchor>
+      <arglist>(unsigned n)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gac5552aee1d84311775cd55c373f97756</anchor>
+      <arglist>(const DLT&lt; double &gt; &amp;dlt)</arglist>
+    </member>
+    <member kind="function">
+      <type>Operator&lt; double &gt;</type>
+      <name>precond</name>
+      <anchorfile>group__lowlevel.html</anchorfile>
+      <anchor>gaa88e5198f069f6bda6d73df4a9d6b1b7</anchor>
+      <arglist>(const DLT&lt; double &gt; &amp;dlt)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>projection</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>a3852fe6dd714c4f6d684b36b21504a1e</anchor>
+      <arglist>(const Grid1d&lt; double &gt; &amp;g1, const Grid1d&lt; double &gt; &amp;g2)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>projection</name>
+      <anchorfile>namespacedg_1_1create.html</anchorfile>
+      <anchor>aab5333c5a1344d5d79a3f214eb371ece</anchor>
+      <arglist>(const Grid2d&lt; double &gt; &amp;g1, const Grid2d&lt; double &gt; &amp;g2)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga9d55636b3dc71b870dfdf338074d2934</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gab9ef09ad08d360d60d32c5d21de279a9</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>gaa87f74eb140e7bc2bf54a453972d7fd5</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; T &gt;</type>
+      <name>inv_weights</name>
+      <anchorfile>group__highlevel.html</anchorfile>
+      <anchor>ga60dfd4688dad035393b9a0c12907d21f</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga67481e26561ad0454ce39a6388b116c7</anchor>
+      <arglist>(unsigned nx, unsigned ny, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>gatherMap</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga94bbc21cbc209cea13595b5e169d798d</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>gather</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga852436a9d6fafcaabeafad11aa79c9b9</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>scatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga98595d0efc1a95030957a7117650e00a</anchor>
+      <arglist>(const thrust::host_vector&lt; int &gt; &amp;map)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaaf87708048b0f23b73c9144adc0a1a97</anchor>
+      <arglist>(const Grid2d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>cusp::coo_matrix&lt; int, T, cusp::host_memory &gt;</type>
+      <name>backscatter</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>gaafae4397f10cadab919d07670ec33659</anchor>
+      <arglist>(const Grid3d&lt; T &gt; &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>scatterMapInvertxy</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga70e4b451226a61dc762a6b8a1f46b316</anchor>
+      <arglist>(unsigned n, unsigned Nx, unsigned Ny)</arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; int &gt;</type>
+      <name>contiguousLineNumbers</name>
+      <anchorfile>group__scatter.html</anchorfile>
+      <anchor>ga04b35be22a8270bba0a4ece48603e1bc</anchor>
+      <arglist>(unsigned rows, unsigned cols)</arglist>
+    </member>
+  </compound>
   <compound kind="dir">
-    <name>/home/matthias/feltor/inc/dg</name>
-    <path>/home/matthias/feltor/inc/dg/</path>
+    <name>/home/matthias/Projekte/feltor/inc/dg/backend</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/backend/</path>
+    <filename>dir_2534fabef37d53a9be799c6b35cbe4e0.html</filename>
+    <file>average.cuh</file>
+    <file>average.h</file>
+    <file>creation.cuh</file>
+    <file>cusp_matrix_blas.cuh</file>
+    <file>cusp_thrust_backend.h</file>
+    <file>derivatives.h</file>
+    <file>dlt.h</file>
+    <file>dx.h</file>
+    <file>dx_matrix.cuh</file>
+    <file>dx_matrix_blas.cuh</file>
+    <file>dxmatrix_traits.h</file>
+    <file>ell_interpolation.cuh</file>
+    <file>evaluation.cuh</file>
+    <file>fieldaligned.h</file>
+    <file>functions.h</file>
+    <file>grid.h</file>
+    <file>interpolation.cuh</file>
+    <file>matrix_categories.h</file>
+    <file>matrix_traits.h</file>
+    <file>matrix_traits_thrust.h</file>
+    <file>mpi_collective.h</file>
+    <file>mpi_derivatives.h</file>
+    <file>mpi_evaluation.h</file>
+    <file>mpi_fieldaligned.h</file>
+    <file>mpi_grid.h</file>
+    <file>mpi_init.h</file>
+    <file>mpi_matrix.h</file>
+    <file>mpi_matrix_blas.h</file>
+    <file>mpi_precon.h</file>
+    <file>mpi_precon_blas.h</file>
+    <file>mpi_vector.h</file>
+    <file>mpi_vector_blas.h</file>
+    <file>operator.h</file>
+    <file>operator_tensor.cuh</file>
+    <file>projection.cuh</file>
+    <file>selfmade_blas.cuh</file>
+    <file>sparseblockmat.cuh</file>
+    <file>sparseblockmat.h</file>
+    <file>std_matrix_blas.cuh</file>
+    <file>std_vector_blas.cuh</file>
+    <file>tensor.cuh</file>
+    <file>thrust_matrix_blas.cuh</file>
+    <file>thrust_vector_blas.cuh</file>
+    <file>timer.cuh</file>
+    <file>transpose.h</file>
+    <file>typedefs.cuh</file>
+    <file>vector_categories.h</file>
+    <file>vector_traits.h</file>
+    <file>weights.cuh</file>
+    <file>xspacelib.cuh</file>
+  </compound>
+  <compound kind="dir">
+    <name>/home/matthias/Projekte/feltor/inc/dg</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>dir_cba352cc187f01702d3926d435723909.html</filename>
+    <dir>/home/matthias/Projekte/feltor/inc/dg/backend</dir>
     <file>algorithm.h</file>
     <file>arakawa.h</file>
+    <file>average.h</file>
     <file>blas.h</file>
     <file>blas1.h</file>
     <file>blas2.h</file>
     <file>cg.h</file>
     <file>dg_doc.h</file>
-    <file>dz.h</file>
+    <file>ds.h</file>
     <file>elliptic.h</file>
     <file>enums.h</file>
     <file>exceptions.h</file>
@@ -2294,10 +7266,10 @@
     <file>toefl.cuh</file>
   </compound>
   <compound kind="dir">
-    <name>/home/matthias/feltor/inc</name>
-    <path>/home/matthias/feltor/inc/</path>
+    <name>/home/matthias/Projekte/feltor/inc</name>
+    <path>/home/matthias/Projekte/feltor/inc/</path>
     <filename>dir_bfccd401955b95cf8c75461437045ac0.html</filename>
-    <dir>/home/matthias/feltor/inc/dg</dir>
+    <dir>/home/matthias/Projekte/feltor/inc/dg</dir>
   </compound>
   <compound kind="page">
     <name>index</name>

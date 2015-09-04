@@ -151,9 +151,14 @@ Public Member Functions</h2></td></tr>
 struct solovev::FluxSurfaceAverage&lt; container &gt;</h3>
 
 <p>Flux surface average over quantity. </p>
+<p>The average is computing using the formula </p>
+<p class="formulaDsp">
+\[ &lt;f&gt;(\psi_0) = \frac{1}{V} \int dV \delta(\psi_p(R,Z)-\psi_0) (\nabla\psi_p)^2f(R,Z) \]
+</p>
+<p> with \( V = \int dV \delta(\psi_p(R,Z)-\psi_0)(\nabla\psi_p)^2\) </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">container</td><td></td></tr>
+    <tr><td class="paramname">container</td><td>The container class of the vector to average </td></tr>
   </table>
   </dd>
 </dl>
@@ -246,7 +251,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/matthias/feltor/src/solovev/<a class="el" href="geometry_8h_source.html">geometry.h</a></li>
+<li>/home/matthias/Projekte/feltor/src/solovev/<a class="el" href="geometry_8h_source.html">geometry.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -254,7 +259,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><a class="el" href="structsolovev_1_1_flux_surface_average.html">FluxSurfaceAverage</a></li>
-    <li class="footer">Generated on Mon Mar 16 2015 23:45:10 for Solovev by
+    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for Solovev by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

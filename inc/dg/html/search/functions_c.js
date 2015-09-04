@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['notanumber',['NotANumber',['../structdg_1_1_not_a_number.html#a7d030a378e263935212063aed1bfec1a',1,'dg::NotANumber']]]
+  ['matrix',['matrix',['../structdg_1_1_row_dist_mat.html#ac83c0529e3ceb06a93982b7a64a36cbd',1,'dg::RowDistMat::matrix()'],['../structdg_1_1_col_dist_mat.html#a3cd8bb0cd2aca9b4b6190d9bce48a0f4',1,'dg::ColDistMat::matrix()']]],
+  ['mod',['MOD',['../structdg_1_1_m_o_d.html#a1661e093118805e4334b61089134bf6f',1,'dg::MOD']]],
+  ['mpi_5ffieldaligned',['MPI_FieldAligned',['../structdg_1_1_m_p_i___field_aligned.html#a43ea8ce8d221399f203cc3394f8cc977',1,'dg::MPI_FieldAligned']]],
+  ['mpi_5fgrid2d',['MPI_Grid2d',['../structdg_1_1_m_p_i___grid2d.html#ab604a2d1ddc989f80c3613fdd91a6fca',1,'dg::MPI_Grid2d::MPI_Grid2d(double x0, double x1, double y0, double y1, unsigned n, unsigned Nx, unsigned Ny, MPI_Comm comm)'],['../structdg_1_1_m_p_i___grid2d.html#a291e2bcbc68eac6e612cf479f1aff1ee',1,'dg::MPI_Grid2d::MPI_Grid2d(double x0, double x1, double y0, double y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx, bc bcy, MPI_Comm comm)']]],
+  ['mpi_5fgrid3d',['MPI_Grid3d',['../structdg_1_1_m_p_i___grid3d.html#aab38f1fd2db872c7df729a20b832ea52',1,'dg::MPI_Grid3d::MPI_Grid3d(double x0, double x1, double y0, double y1, double z0, double z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, MPI_Comm comm)'],['../structdg_1_1_m_p_i___grid3d.html#ac427b65ffaefc40971bb0c9caed3023b',1,'dg::MPI_Grid3d::MPI_Grid3d(double x0, double x1, double y0, double y1, double z0, double z1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, bc bcx, bc bcy, bc bcz, dg::system sys, MPI_Comm comm)']]],
+  ['mpi_5fvector',['MPI_Vector',['../structdg_1_1_m_p_i___vector.html#ab79c8907a64d91971c63f1542df07f04',1,'dg::MPI_Vector::MPI_Vector(const container &amp;data, MPI_Comm comm)'],['../structdg_1_1_m_p_i___vector.html#a896368bf40dca6d0e3c860c1875406ca',1,'dg::MPI_Vector::MPI_Vector(const MPI_Vector&lt; OtherContainer &gt; &amp;src)']]]
 ];

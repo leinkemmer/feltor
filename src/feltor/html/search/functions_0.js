@@ -1,10 +1,12 @@
 var searchData=
 [
   ['ab',['AB',['../../../../inc/dg/html/structdg_1_1_a_b.html#a7334cb5aa3f4b596ecb54148264f2569',1,'dg::AB']]],
+  ['abscissas',['abscissas',['../../../../inc/dg/html/classdg_1_1_d_l_t.html#a4828cac01d378d2e9ebb7cc90d54546d',1,'dg::DLT']]],
   ['adaptive_5fstep',['adaptive_step',['../../../../inc/dg/html/structdg_1_1_s_i_r_k.html#a01757c756e22e533e871286f91672a5a',1,'dg::SIRK']]],
+  ['add_5fvalue',['add_value',['../../../../inc/dg/html/structdg_1_1_coo_sparse_block_mat.html#aaa2a4f75d53eeab3b3f20dc58b4629d8',1,'dg::CooSparseBlockMat']]],
   ['allocate',['allocate',['../../../../inc/toefl/html/classtoefl_1_1_matrix.html#a171550ab096ef57acfbd755c7bfe930f',1,'toefl::GhostMatrix']]],
   ['allocationerror',['AllocationError',['../../../../inc/toefl/html/classtoefl_1_1_allocation_error.html#a424affcd290790c0aa982d03d5a5918e',1,'toefl::AllocationError']]],
-  ['alpha',['alpha',['../../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6',1,'dg::Helmholtz::alpha()'],['../../../../inc/dg/html/group__matrixoperators.html#ga59320b5e0dd00f8e5a7c49c880912d60',1,'dg::Helmholtz::alpha() const '],['../../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6',1,'alpha()(Global Namespace)']]],
+  ['alpha',['alpha',['../../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6',1,'dg::Helmholtz::alpha()'],['../../../../inc/dg/html/group__matrixoperators.html#ga59320b5e0dd00f8e5a7c49c880912d60',1,'dg::Helmholtz::alpha() const '],['../../../../inc/dg/html/group__matrixoperators.html#ga690d77e9309c8cf46ee89337a71037cc',1,'dg::Helmholtz2::alpha()'],['../../../../inc/dg/html/group__matrixoperators.html#gac1ce81af740fcc2f0ff857d192c9fbf5',1,'dg::Helmholtz2::alpha() const '],['../../../../inc/dg/html/group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6',1,'alpha()(Global Namespace)']]],
   ['anzeigen',['anzeigen',['../../../../inc/dg/html/classdg_1_1_keine_n_s_t__1_d.html#ab9089e775ecb1a2a2d13aab1e5e47b20',1,'dg::KeineNST_1D']]],
   ['append',['append',['../../../../inc/file/html/structfile_1_1_t5trunc.html#a04bc063ba2a831126bbfd8bfdc190d13',1,'file::T5trunc']]],
   ['arakawa',['Arakawa',['../../../../inc/toefl/html/classtoefl_1_1_arakawa.html#ac7d18718d661f4c8b9edf50dbc1075e2',1,'toefl::Arakawa']]],

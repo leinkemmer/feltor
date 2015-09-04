@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../../../../inc/dg/html/classdg_1_1_c_g.html#a1ef5a42ac2f35b465a9b5e5d2293d572',1,'dg::CG']]]
+  ['fieldaligned',['FieldAligned',['../../../../inc/dg/html/structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf',1,'dg::DS']]]
 ];

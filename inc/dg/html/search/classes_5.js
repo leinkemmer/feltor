@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['gaussian',['Gaussian',['../structdg_1_1_gaussian.html',1,'dg']]],
-  ['gaussian3d',['Gaussian3d',['../structdg_1_1_gaussian3d.html',1,'dg']]],
-  ['gaussianx',['GaussianX',['../structdg_1_1_gaussian_x.html',1,'dg']]],
-  ['gaussiany',['GaussianY',['../structdg_1_1_gaussian_y.html',1,'dg']]],
-  ['gaussianz',['GaussianZ',['../structdg_1_1_gaussian_z.html',1,'dg']]],
-  ['generalelliptic',['GeneralElliptic',['../structdg_1_1_general_elliptic.html',1,'dg']]]
+  ['fail',['Fail',['../structdg_1_1_fail.html',1,'dg']]],
+  ['fieldaligned',['FieldAligned',['../structdg_1_1_field_aligned.html',1,'dg']]],
+  ['fieldaligned_3c_20localmatrix_2c_20localcontainer_20_3e',['FieldAligned&lt; LocalMatrix, LocalContainer &gt;',['../structdg_1_1_field_aligned.html',1,'dg']]]
 ];

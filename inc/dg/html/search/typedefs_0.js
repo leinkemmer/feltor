@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ftype',['value_type',['../classdg_1_1_c_g.html#a1ef5a42ac2f35b465a9b5e5d2293d572',1,'dg::CG']]]
+  ['container_5ftype',['container_type',['../structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3',1,'dg::MPI_Vector']]]
 ];

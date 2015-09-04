@@ -4,6 +4,7 @@ var searchData=
   ['bc',['bc',['../structeule_1_1_parameters.html#a8fe2d494676b3471d9890d821bb5ebd7',1,'eule::Parameters']]],
   ['beta',['beta',['../../../../inc/dg/html/structdg_1_1rk__coeff.html#ab4f695515e6baecffd138cbe457f7fa0',1,'dg::rk_coeff::beta()'],['../../../../inc/toefl/html/structtoefl_1_1_coefficients.html#a5026e54e417b2ed77c28e81383b62916',1,'toefl::Coefficients::beta()'],['../structeule_1_1_parameters.html#a6c191c9ea4b0a088ab9a295aa2940a8d',1,'eule::Parameters::beta()']]],
   ['bgprofamp',['bgprofamp',['../structeule_1_1_parameters.html#a2c0bf94951b351231be9a9af17008a33',1,'eule::Parameters']]],
+  ['blocks_5fper_5fline',['blocks_per_line',['../../../../inc/dg/html/structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd',1,'dg::EllSparseBlockMat']]],
   ['boxscalerm',['boxscaleRm',['../structeule_1_1_parameters.html#a0f23824d61ec92043dc52282cdc49d09',1,'eule::Parameters']]],
   ['boxscalerp',['boxscaleRp',['../structeule_1_1_parameters.html#af63ba15d593136b722ff6b0afe6a0eca',1,'eule::Parameters']]],
   ['boxscalezm',['boxscaleZm',['../structeule_1_1_parameters.html#a17375bc6759b58935d4f0fd7aca025d8',1,'eule::Parameters']]],

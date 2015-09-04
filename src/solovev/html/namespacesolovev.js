@@ -34,6 +34,8 @@ var namespacesolovev =
     [ "GaussianProfDamping", "structsolovev_1_1_gaussian_prof_damping.html", "structsolovev_1_1_gaussian_prof_damping" ],
     [ "GaussianProfXDamping", "structsolovev_1_1_gaussian_prof_x_damping.html", "structsolovev_1_1_gaussian_prof_x_damping" ],
     [ "TanhSource", "structsolovev_1_1_tanh_source.html", "structsolovev_1_1_tanh_source" ],
+    [ "Nprofile", "structsolovev_1_1_nprofile.html", "structsolovev_1_1_nprofile" ],
+    [ "ZonalFlow", "structsolovev_1_1_zonal_flow.html", "structsolovev_1_1_zonal_flow" ],
     [ "TestFunction", "structsolovev_1_1_test_function.html", "structsolovev_1_1_test_function" ],
     [ "DeriTestFunction", "structsolovev_1_1_deri_test_function.html", "structsolovev_1_1_deri_test_function" ]
 ];
