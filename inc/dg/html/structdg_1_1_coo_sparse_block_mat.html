@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -168,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad03433070ba5ad8cd43f2e58b4582dca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#ad03433070ba5ad8cd43f2e58b4582dca">symv</a> (double alpha, const <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#adb54ac53fcc846cd4c84dc2e2456d22b">HVec</a> &amp;x, double beta, <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#adb54ac53fcc846cd4c84dc2e2456d22b">HVec</a> &amp;y) const </td></tr>
 <tr class="memdesc:ad03433070ba5ad8cd43f2e58b4582dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#ad03433070ba5ad8cd43f2e58b4582dca">More...</a><br/></td></tr>
 <tr class="separator:ad03433070ba5ad8cd43f2e58b4582dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715b6a0f6f1273742dd2483751cee260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html#a715b6a0f6f1273742dd2483751cee260">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
+<tr class="memdesc:a715b6a0f6f1273742dd2483751cee260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#a715b6a0f6f1273742dd2483751cee260">More...</a><br/></td></tr>
+<tr class="separator:a715b6a0f6f1273742dd2483751cee260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -220,7 +223,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 </p>
 <p> where \( 1\) are diagonal matrices of variable size and \( M\) is our one-dimensional matrix. </p>
 <dl class="section note"><dt>Note</dt><dd>This matrix type is used for the computation of boundary points in mpi - distributed matrices </dd></dl>
-<dl class="section attention"><dt>Attention</dt><dd>For parallelization purposes there may not be more than one block in each line at this moment </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad867c5393eb88429805ddcac2fa7e542"></a>
 <div class="memitem">
@@ -338,6 +340,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 
 </div>
 </div>
+<a class="anchor" id="a715b6a0f6f1273742dd2483751cee260"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::CooSparseBlockMat::display </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em> = <code>std::cout</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Display internal data to a stream. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>the output stream </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ad03433070ba5ad8cd43f2e58b4582dca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +422,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_coo_sparse_block_mat.html">CooSparseBlockMat</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

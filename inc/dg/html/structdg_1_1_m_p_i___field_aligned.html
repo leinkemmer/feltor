@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -197,8 +197,9 @@ struct dg::MPI_FieldAligned&lt; LocalMatrix, Communicator, LocalContainer &gt;</
 <p>Class for the evaluation of a parallel derivative (MPI Version) </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Matrix</td><td>The matrix class of the interpolation matrix </td></tr>
-    <tr><td class="paramname">container</td><td>The container-class to on which the interpolation matrix operates on (does not need to be <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a>) </td></tr>
+    <tr><td class="paramname">LocalMatrix</td><td>The matrix class of the interpolation matrix </td></tr>
+    <tr><td class="paramname">Communicator</td><td>The communicator used to exchange data in the RZ planes </td></tr>
+    <tr><td class="paramname">LocalContainer</td><td>The container-class to on which the interpolation matrix operates on (does not need to be <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -815,7 +816,7 @@ template&lt;class LocalMatrix , class Communicator , class LocalContainer &gt; <
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i___field_aligned.html">MPI_FieldAligned</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('structsolovev_1_1_safety_factor.html',
 
 <p>Class for the evaluation of the safety factor q </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
 <p>.  
  <a href="structsolovev_1_1_safety_factor.html#details">More...</a></p>
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1f873bfa1e8b3bc0f4ce43912666603"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_safety_factor.html#ad1f873bfa1e8b3bc0f4ce43912666603">operator()</a> (double psip0)</td></tr>
 <tr class="memdesc:ad1f873bfa1e8b3bc0f4ce43912666603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the q profile over the function f which has to be the global safety factor </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
 <p>.  <a href="#ad1f873bfa1e8b3bc0f4ce43912666603">More...</a><br/></td></tr>
 <tr class="separator:ad1f873bfa1e8b3bc0f4ce43912666603"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -160,7 +160,7 @@ struct solovev::SafetyFactor&lt; container &gt;</h3>
 
 <p>Class for the evaluation of the safety factor q </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
 <p>. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
@@ -249,7 +249,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 
 <p>Calculate the q profile over the function f which has to be the global safety factor </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
 <p>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -270,7 +270,7 @@ template&lt;class container  = thrust::host_vector&lt;double&gt;&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><a class="el" href="structsolovev_1_1_safety_factor.html">SafetyFactor</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for Solovev by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for Solovev by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

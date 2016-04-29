@@ -362,22 +362,22 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip.html</anchorfile>
-      <anchor>a6079b6a7c9ea5a5d6bbf4b65dd9d8dde</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>aae77f65ee67cb420aad4ad8a243accd4</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip.html</anchorfile>
-      <anchor>a2385c203b4756a6152431027cfb4809a</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a39b7eb50f84f806a2835735089185a55</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>display</name>
       <anchorfile>structsolovev_1_1_psip.html</anchorfile>
-      <anchor>a20893a4d67455be10ae7eb9a4b571422</anchor>
-      <arglist>()</arglist>
+      <anchor>a4bc0dfab6f8129e83cad45eb3726833f</anchor>
+      <arglist>() const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -451,15 +451,15 @@
       <type>double</type>
       <name>psipZ_alt</name>
       <anchorfile>structsolovev_1_1_psip_z.html</anchorfile>
-      <anchor>aff69e7f70ddf400c832f63c7a19b7186</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>abc3ed53227d3f5955891269fb534c769</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip_z.html</anchorfile>
-      <anchor>a35ddf6228cfc1aa61f2900def0af997f</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a2d608839a9b30bcd7b5ecc2b2a8ff96e</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -469,15 +469,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip_z_z.html</anchorfile>
-      <anchor>aee49e53656604a30914dc82426d26c47</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a13d524f6f8d35e47dd06c2e609eb8bbe</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip_z_z.html</anchorfile>
-      <anchor>ab721ef47bd336556a8b507207927b89a</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a5d95423db4753bc967178cd9b86ed43b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -487,15 +487,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip_r_z.html</anchorfile>
-      <anchor>a93021f5c1d733da732156ccd0437b4ee</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a85d931a5e84a2335abc78097afc271d0</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_psip_r_z.html</anchorfile>
-      <anchor>aefe986563641b2c99029aaa3e66af1c8</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>acff295cd510bff71fe820df72ea66275</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -505,15 +505,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_ipol.html</anchorfile>
-      <anchor>ac7f62f21fe31980c090c758ddb3546be</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a2a4b545a6f670a4b136672c280ddfd6b</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_ipol.html</anchorfile>
-      <anchor>a38e6bf8839b7f2aa713b9404aeba1216</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a438caa0afe2fb1a51e025de0ac2e6a66</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -523,15 +523,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_inv_b.html</anchorfile>
-      <anchor>a6a4886f03129ef2d86201ef93cf770cc</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a1c012d1e779502b11e9656c3389353f8</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_inv_b.html</anchorfile>
-      <anchor>aabeacd7338e98c31a9ad110405150e02</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>aff45ab8287d80b8576dee50650bc9735</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -541,15 +541,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_ln_b.html</anchorfile>
-      <anchor>abb3f660d8d54b1e8137a817b103929fa</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>ab8b1725a3ac0ec45275a4ce010c99f3e</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_ln_b.html</anchorfile>
-      <anchor>aea17bc8b35668db5d791de55193d1bf0</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a2179d9cea03c882724c038a304028cba</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -559,15 +559,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_b_r.html</anchorfile>
-      <anchor>a2b3d726869082bb8508edff7ad4d6939</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>aa8d951952e8cd07e12aaa60e4a6f1ffb</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_b_r.html</anchorfile>
-      <anchor>ad51795460d6ffdab89e0bb80e2bdcc30</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>aa53d701488bcd6f8cfe3be60d33b5b4d</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -577,15 +577,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_b_z.html</anchorfile>
-      <anchor>af0affe6814923f166fcfb86ee81d169b</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a1ac33a626ddabde3544ad2efe7ec399c</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_b_z.html</anchorfile>
-      <anchor>a214d4daf79272a88090d4cf96e441dde</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a4bc8c10487ba23ce8101e77143599151</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -595,15 +595,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_curvature_r.html</anchorfile>
-      <anchor>a47ced9a9b5b11240c310f75842b99c1a</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a51b70c532ac5eba4d88a6ffa4c9a996c</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_curvature_r.html</anchorfile>
-      <anchor>ae8bb72df104c240b8431db46494510d5</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a2f1bd20edb69558bb19cc27991f6084f</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -613,15 +613,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_curvature_z.html</anchorfile>
-      <anchor>af3b12dd9d9b4f2ff689fe732075ec5f9</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a86d98dbbfc2c0d6704243c57a2f1c23f</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_curvature_z.html</anchorfile>
-      <anchor>aa546524f1ed88d8cc34252db0aafe281</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>ae02adb93425f940e1e58bfdab0273c36</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -631,15 +631,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_grad_ln_b.html</anchorfile>
-      <anchor>a8233010d792cc270d54367e81d369a53</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a6df8a4eb20bdd45022858ff776938ac8</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_grad_ln_b.html</anchorfile>
-      <anchor>ada4bd9996056400ca36a49b013b05a5b</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a0fc1deaae4bdbc804b3f1238959da8ff</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -649,29 +649,29 @@
       <type>void</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field.html</anchorfile>
-      <anchor>ac597f776e803b07f473bbbca93370eeb</anchor>
-      <arglist>(const std::vector&lt; dg::HVec &gt; &amp;y, std::vector&lt; dg::HVec &gt; &amp;yp)</arglist>
+      <anchor>a3dc3da045af6fbc3cdf213ba437fedcb</anchor>
+      <arglist>(const std::vector&lt; dg::HVec &gt; &amp;y, std::vector&lt; dg::HVec &gt; &amp;yp) const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field.html</anchorfile>
-      <anchor>a4e57961339228e02bb741c9817aa7f99</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
+      <anchor>ab923245d704dda9bc77e8a3b71cbe4b2</anchor>
+      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field.html</anchorfile>
-      <anchor>a70180a0878cb37e8843427a2c3e7053a</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>aeecf5d3a23254d930bc9a6ff587d6608</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field.html</anchorfile>
-      <anchor>a62e310bdf0e4262a2485a4b954d8abc9</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a0a0761cd26c8f7e7077ae3fbd60b738f</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -685,8 +685,8 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field_r.html</anchorfile>
-      <anchor>a14bb00edf187f0cb6701f7684f4e4e40</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a7615eafcb93e640e547398bbfb1be8ca</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -696,8 +696,8 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_field_z.html</anchorfile>
-      <anchor>a28d73b39d9f8c063099de953bede3f18</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a2acdb3267c33bc7e33835bf24a694280</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -733,15 +733,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_delta_function.html</anchorfile>
-      <anchor>ad7e6536af721dd055513f62cf14a32ec</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>a4d00e30341147a729f62236d68ea9821</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_delta_function.html</anchorfile>
-      <anchor>aab8a7a4a766e85687a4d65a57152076c</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a61987ed52cd6879b02b909c3d810391d</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -789,15 +789,15 @@
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_alpha.html</anchorfile>
-      <anchor>a8f9319119f46173ff7763092ccc646c6</anchor>
-      <arglist>(double R, double Z)</arglist>
+      <anchor>ae5541cda860eea0fa29446a8e4b4bafb</anchor>
+      <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_alpha.html</anchorfile>
-      <anchor>adffaa862d4bc1965cb34c0b30e7e1a58</anchor>
-      <arglist>(double R, double Z, double phi)</arglist>
+      <anchor>a2a4907c3c140194d977a504316087e7f</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">

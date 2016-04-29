@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lamb',['Lamb',['../../../../inc/dg/html/structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd',1,'dg::Lamb']]],
-  ['laplacianm',['laplacianM',['../structeule_1_1_rolkar.html#aace6eadd6e9a64324c7627f7cbe48181',1,'eule::Rolkar']]],
+  ['laplacianm',['laplacianM',['../structeule_1_1_rolkar.html#a6c344eb1dbfa92617265986b4261f547',1,'eule::Rolkar']]],
   ['last',['last',['../../../../inc/dg/html/structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b',1,'dg::Karniadakis']]],
   ['lcm',['lcm',['../../../../inc/dg/html/group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'dg::lcm()'],['../../../../inc/dg/html/group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'lcm()(Global Namespace)']]],
   ['lilj',['lilj',['../../../../inc/dg/html/group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5',1,'dg::create::lilj()'],['../../../../inc/dg/html/group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5',1,'lilj()(Global Namespace)']]],

@@ -2,8 +2,8 @@ var group__profiles =
 [
     [ "DeltaFunction", "structsolovev_1_1_delta_function.html", [
       [ "DeltaFunction", "structsolovev_1_1_delta_function.html#a32765fa673a4d23b7de86b8ab39107cb", null ],
-      [ "operator()", "structsolovev_1_1_delta_function.html#ad7e6536af721dd055513f62cf14a32ec", null ],
-      [ "operator()", "structsolovev_1_1_delta_function.html#aab8a7a4a766e85687a4d65a57152076c", null ],
+      [ "operator()", "structsolovev_1_1_delta_function.html#a4d00e30341147a729f62236d68ea9821", null ],
+      [ "operator()", "structsolovev_1_1_delta_function.html#a61987ed52cd6879b02b909c3d810391d", null ],
       [ "setepsilon", "structsolovev_1_1_delta_function.html#af94134b90af3d303477943fcc568bab0", null ],
       [ "setpsi", "structsolovev_1_1_delta_function.html#a926936141cb404924a1b58c90e4a7193", null ]
     ] ],
@@ -17,8 +17,8 @@ var group__profiles =
     ] ],
     [ "Alpha", "structsolovev_1_1_alpha.html", [
       [ "Alpha", "structsolovev_1_1_alpha.html#aec6bc06417ea5dc04ae954f561c4f92d", null ],
-      [ "operator()", "structsolovev_1_1_alpha.html#a8f9319119f46173ff7763092ccc646c6", null ],
-      [ "operator()", "structsolovev_1_1_alpha.html#adffaa862d4bc1965cb34c0b30e7e1a58", null ]
+      [ "operator()", "structsolovev_1_1_alpha.html#ae5541cda860eea0fa29446a8e4b4bafb", null ],
+      [ "operator()", "structsolovev_1_1_alpha.html#a2a4907c3c140194d977a504316087e7f", null ]
     ] ],
     [ "Iris", "structsolovev_1_1_iris.html", [
       [ "Iris", "structsolovev_1_1_iris.html#ae30833f147e64e8ba87e2edb85ae03b7", null ],

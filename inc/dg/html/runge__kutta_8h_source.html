@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -239,9 +239,9 @@ $(document).ready(function(){initNavTree('runge__kutta_8h_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;};</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">template</span>&lt; <span class="keyword">class</span> RHS, <span class="keyword">class</span> Vector&gt;</div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">  190</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">integrateRK4</a>(RHS&amp; rhs, <span class="keyword">const</span> Vector&amp; begin, Vector&amp; end, <span class="keywordtype">double</span> T_max, <span class="keywordtype">double</span> eps_abs )</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">integrateRK4</a>(RHS&amp; rhs, <span class="keyword">const</span> Vector&amp; begin, Vector&amp; end, <span class="keywordtype">double</span> T_max, <span class="keywordtype">double</span> eps_abs )</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;{</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="structdg_1_1_r_k.html">RK&lt;4, Vector &gt;</a> rk( begin); </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    RK&lt;4, Vector &gt; rk( begin); </div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    Vector old_end(begin), temp(begin),diffm(begin);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    end = begin;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span>( T_max == 0) <span class="keywordflow">return</span>;</div>
@@ -300,12 +300,12 @@ $(document).ready(function(){initNavTree('runge__kutta_8h_source.html','');});
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span>( isnan(error) )</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    {</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;ATTENTION: Choose more parallel planes for convergence! &quot;</span>&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="structdg_1_1_not_a_number.html">NotANumber</a>();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">throw</span> NotANumber();</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">if</span>( error &gt; eps_abs )</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;ATTENTION: error is &quot;</span>&lt;&lt;error&lt;&lt;std::endl;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="structdg_1_1_fail.html">Fail</a>( eps_abs);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">throw</span> Fail( eps_abs);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
@@ -333,9 +333,8 @@ $(document).ready(function(){initNavTree('runge__kutta_8h_source.html','');});
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif //_DG_RK_</span></div>
 <div class="ttc" id="structdg_1_1_not_a_number_html_a7d030a378e263935212063aed1bfec1a"><div class="ttname"><a href="structdg_1_1_not_a_number.html#a7d030a378e263935212063aed1bfec1a">dg::NotANumber::NotANumber</a></div><div class="ttdeci">NotANumber()</div><div class="ttdoc">Construct. </div><div class="ttdef"><b>Definition:</b> runge_kutta.h:167</div></div>
-<div class="ttc" id="group__algorithms_html_ga098434b3580fe8186441a1fd178214ef"><div class="ttname"><a href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">dg::integrateRK4</a></div><div class="ttdeci">void integrateRK4(RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</div><div class="ttdoc">Integrates the differential equation using RK4 and a rudimentary stepsize-control. </div><div class="ttdef"><b>Definition:</b> runge_kutta.h:190</div></div>
+<div class="ttc" id="group__algorithms_html_ga098434b3580fe8186441a1fd178214ef"><div class="ttname"><a href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">dg::integrateRK4</a></div><div class="ttdeci">void integrateRK4(RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</div><div class="ttdoc">Integrates the differential equation using RK4 and a rudimentary stepsize-control. </div><div class="ttdef"><b>Definition:</b> new_fieldaligned.h:135</div></div>
 <div class="ttc" id="structdg_1_1rk__coeff_html_a23c2aa1eeb057a2cccd29d586d787afa"><div class="ttname"><a href="structdg_1_1rk__coeff.html#a23c2aa1eeb057a2cccd29d586d787afa">dg::rk_coeff::alpha</a></div><div class="ttdeci">static const double alpha[k][k]</div><div class="ttdoc">alpha </div><div class="ttdef"><b>Definition:</b> runge_kutta.h:32</div></div>
-<div class="ttc" id="structdg_1_1_fail_html"><div class="ttname"><a href="structdg_1_1_fail.html">dg::Fail</a></div><div class="ttdoc">Class you might want to throw in case of a non convergence. </div><div class="ttdef"><b>Definition:</b> exceptions.h:19</div></div>
 <div class="ttc" id="structdg_1_1_r_k_html_a6c429247370a3e14d0b818dc9c486b6b"><div class="ttname"><a href="structdg_1_1_r_k.html#a6c429247370a3e14d0b818dc9c486b6b">dg::RK::RK</a></div><div class="ttdeci">RK(const Vector &amp;copyable)</div><div class="ttdoc">Reserve memory for the integration. </div><div class="ttdef"><b>Definition:</b> runge_kutta.h:109</div></div>
 <div class="ttc" id="structdg_1_1_not_a_number_html"><div class="ttname"><a href="structdg_1_1_not_a_number.html">dg::NotANumber</a></div><div class="ttdoc">Thrown by the integrateRK4 function if the rhs is badly conditioned. </div><div class="ttdef"><b>Definition:</b> runge_kutta.h:161</div></div>
 <div class="ttc" id="exceptions_8h_html"><div class="ttname"><a href="exceptions_8h.html">exceptions.h</a></div></div>
@@ -353,7 +352,7 @@ $(document).ready(function(){initNavTree('runge__kutta_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="runge__kutta_8h.html">runge_kutta.h</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

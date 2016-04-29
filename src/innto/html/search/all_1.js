@@ -37,7 +37,7 @@ var searchData=
   ['blueprint',['Blueprint',['../classtoefl_1_1_blueprint.html',1,'toefl']]],
   ['boundary',['boundary',['../classtoefl_1_1_blueprint.html#aed99738b94d66090003c7c11f4e25575',1,'toefl::Blueprint::boundary() const '],['../classtoefl_1_1_blueprint.html#a403b73914b6b40d1e7a518636fc0abc6',1,'toefl::Blueprint::boundary()'],['../../../../inc/toefl/html/namespacetoefl.html#a305a5de24dad48e37df372fd7432afae',1,'toefl::boundary()']]],
   ['boundary',['Boundary',['../structtoefl_1_1_boundary.html',1,'toefl']]],
-  ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../../../../inc/dg/html/namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
+  ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../../../../inc/dg/html/namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
   ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html',1,'dg']]],
   ['br',['BR',['../../../../src/solovev/html/structsolovev_1_1_b_r.html',1,'solovev']]],
   ['brackets',['bracketS',['../../../../inc/dg/html/structdg_1_1_arakawa_x.html#a4bca8c8355aa0d33f5913edf77fe96db',1,'dg::ArakawaX::bracketS()'],['../../../../inc/dg/html/structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0',1,'dg::Poisson::bracketS()']]],

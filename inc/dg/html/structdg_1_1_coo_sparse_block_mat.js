@@ -5,6 +5,7 @@ var structdg_1_1_coo_sparse_block_mat =
     [ "CooSparseBlockMat", "structdg_1_1_coo_sparse_block_mat.html#a0e63a0450a983cc61022306de3827828", null ],
     [ "CooSparseBlockMat", "structdg_1_1_coo_sparse_block_mat.html#ad867c5393eb88429805ddcac2fa7e542", null ],
     [ "add_value", "structdg_1_1_coo_sparse_block_mat.html#aaa2a4f75d53eeab3b3f20dc58b4629d8", null ],
+    [ "display", "structdg_1_1_coo_sparse_block_mat.html#a715b6a0f6f1273742dd2483751cee260", null ],
     [ "symv", "structdg_1_1_coo_sparse_block_mat.html#ad03433070ba5ad8cd43f2e58b4582dca", null ],
     [ "cols_idx", "structdg_1_1_coo_sparse_block_mat.html#a60ca400fdae6e53a671a5943c06b70a8", null ],
     [ "data", "structdg_1_1_coo_sparse_block_mat.html#a71c77af87387f08630f0f9261f9a2b2a", null ],

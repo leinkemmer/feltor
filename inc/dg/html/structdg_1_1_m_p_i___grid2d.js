@@ -16,6 +16,7 @@ var structdg_1_1_m_p_i___grid2d =
     [ "n", "structdg_1_1_m_p_i___grid2d.html#ab1f1115b7a2be70ad3628d63efb98448", null ],
     [ "Nx", "structdg_1_1_m_p_i___grid2d.html#a47967125570cec08cc583ae1580afb9c", null ],
     [ "Ny", "structdg_1_1_m_p_i___grid2d.html#a94e71a0818a5966b6c13dce05702598e", null ],
+    [ "pidOf", "structdg_1_1_m_p_i___grid2d.html#aaba1c12059286d0af209b5589b1a8a3a", null ],
     [ "size", "structdg_1_1_m_p_i___grid2d.html#a46e9b455f105f9c77cac0053edfef570", null ],
     [ "system", "structdg_1_1_m_p_i___grid2d.html#a4dd4eac1e8db3a88981bcd3866f46e3f", null ],
     [ "x0", "structdg_1_1_m_p_i___grid2d.html#adf6f915b4a4131d47fb4ef7e63cee42d", null ],

@@ -2,10 +2,10 @@ var searchData=
 [
   ['matrix_20creation_20functions_20and_20classes',['Matrix creation functions and classes',['../group__highlevel.html',1,'']]],
   ['matrix',['matrix',['../structdg_1_1_row_dist_mat.html#ac83c0529e3ceb06a93982b7a64a36cbd',1,'dg::RowDistMat::matrix()'],['../structdg_1_1_col_dist_mat.html#a3cd8bb0cd2aca9b4b6190d9bce48a0f4',1,'dg::ColDistMat::matrix()']]],
-  ['mdds',['MDDS',['../namespacedg.html#a06da979028329f4f8fad32798075c9e1',1,'dg']]],
+  ['mdds',['MDDS',['../group__typedefs.html#ga06da979028329f4f8fad32798075c9e1',1,'dg']]],
   ['mdmatrix',['MDMatrix',['../group__typedefs.html#gae6871db5bef0f34e855db9218cfc4b88',1,'dg']]],
   ['mdvec',['MDVec',['../group__typedefs.html#gabbb1bf8faeb15e042d40fe642a14c6ff',1,'dg']]],
-  ['mhds',['MHDS',['../namespacedg.html#af92dfe215532f73f424f188ede0ee48b',1,'dg']]],
+  ['mhds',['MHDS',['../group__typedefs.html#gaf92dfe215532f73f424f188ede0ee48b',1,'dg']]],
   ['mhmatrix',['MHMatrix',['../group__typedefs.html#ga292fe9a8c6f2fb6532dc8d26405d051e',1,'dg']]],
   ['mhvec',['MHVec',['../group__typedefs.html#ga42b83dea4782a1ec37824551ecaff972',1,'dg']]],
   ['minmod',['MinMod',['../structdg_1_1_min_mod.html',1,'dg']]],

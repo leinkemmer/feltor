@@ -1,8 +1,8 @@
 var structsolovev_1_1_psip_z =
 [
     [ "PsipZ", "structsolovev_1_1_psip_z.html#a851828d945124f59959a004abb7c5a44", null ],
-    [ "display", "structsolovev_1_1_psip_z.html#a53ec004a7e6c5290aa1d2daa980fe029", null ],
-    [ "operator()", "structsolovev_1_1_psip_z.html#a825fdf48070c7a5e4dbda633ee07efa0", null ],
-    [ "operator()", "structsolovev_1_1_psip_z.html#a35ddf6228cfc1aa61f2900def0af997f", null ],
-    [ "psipZ_alt", "structsolovev_1_1_psip_z.html#aff69e7f70ddf400c832f63c7a19b7186", null ]
+    [ "display", "structsolovev_1_1_psip_z.html#aa2eb988ab8f75e9439f4d85f032bcad2", null ],
+    [ "operator()", "structsolovev_1_1_psip_z.html#a0c24609290f5f60f33ba6e59736f69ca", null ],
+    [ "operator()", "structsolovev_1_1_psip_z.html#a2d608839a9b30bcd7b5ecc2b2a8ff96e", null ],
+    [ "psipZ_alt", "structsolovev_1_1_psip_z.html#abc3ed53227d3f5955891269fb534c769", null ]
 ];

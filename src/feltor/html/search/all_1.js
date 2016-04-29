@@ -35,7 +35,7 @@ var searchData=
   ['blocks_5fper_5fline',['blocks_per_line',['../../../../inc/dg/html/structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd',1,'dg::EllSparseBlockMat']]],
   ['boundary',['boundary',['../../../../inc/toefl/html/namespacetoefl.html#a305a5de24dad48e37df372fd7432afae',1,'toefl']]],
   ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html',1,'dg']]],
-  ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../../../../inc/dg/html/namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
+  ['boxintegrator',['BoxIntegrator',['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../../../../inc/dg/html/structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../../../../inc/dg/html/namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
   ['boxscalerm',['boxscaleRm',['../structeule_1_1_parameters.html#a0f23824d61ec92043dc52282cdc49d09',1,'eule::Parameters']]],
   ['boxscalerp',['boxscaleRp',['../structeule_1_1_parameters.html#af63ba15d593136b722ff6b0afe6a0eca',1,'eule::Parameters']]],
   ['boxscalezm',['boxscaleZm',['../structeule_1_1_parameters.html#a17375bc6759b58935d4f0fd7aca025d8',1,'eule::Parameters']]],

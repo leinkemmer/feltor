@@ -197,18 +197,18 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <tr id="row_0_21_" class="even"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_b_hat_p.html" target="_self">BHatP</a></td><td class="desc">Phi component of magnetic field \( b_\Phi\) </td></tr>
 <tr id="row_0_22_"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_delta_function.html" target="_self">DeltaFunction</a></td><td class="desc">Delta function for poloidal flux \( B_Z\) </p>
 <p class="formulaDsp">
-\[ (\nabla \psi_p)^2\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
+\[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
  </td></tr>
 <tr id="row_0_23_" class="even"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_flux_surface_average.html" target="_self">FluxSurfaceAverage</a></td><td class="desc">Flux surface average over quantity </td></tr>
 <tr id="row_0_24_"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_safety_factor.html" target="_self">SafetyFactor</a></td><td class="desc">Class for the evaluation of the safety factor q </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
  </td></tr>
 <tr id="row_0_25_" class="even"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_alpha.html" target="_self">Alpha</a></td><td class="desc">Global safety factor </p>
 <p class="formulaDsp">
-\[ \alpha(R,Z) = \frac{R_0I_{pol}(R,Z)}{R^2(\nabla\psi_p)^2} \]
+\[ \alpha(R,Z) = \frac{|B^\varphi|}{R|B^\eta|} = \frac{I_{pol}(R,Z)}{R|\nabla\psi_p|} \]
 </p>
  </td></tr>
 <tr id="row_0_26_"><td class="entry"><img src="ftv2blank.png" alt="&#160;" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="structsolovev_1_1_iris.html" target="_self">Iris</a></td><td class="desc">Returns zero outside psipmax and inside psipmin, otherwise 1 </p>
@@ -278,7 +278,7 @@ $(document).ready(function(){initNavTree('annotated.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for Solovev by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for Solovev by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

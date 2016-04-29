@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FELTOR
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Full F electrostatic code in toroidal geometry</div>
   </td>
@@ -141,9 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa52ec88bca05fa9a055584b896e5c245"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structeule_1_1_feltor.html#aa52ec88bca05fa9a055584b896e5c245">Feltor</a> (const Grid3d &amp;g, <a class="el" href="structeule_1_1_parameters.html">eule::Parameters</a> p, <a class="elRef" doxygen="/home/matthias/Projekte/feltor/doc/src/solovev.tag:../../../src/solovev/html/" href="../../../src/solovev/html/structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
 <tr class="memdesc:aa52ec88bca05fa9a055584b896e5c245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from parameters.  <a href="#aa52ec88bca05fa9a055584b896e5c245">More...</a><br/></td></tr>
 <tr class="separator:aa52ec88bca05fa9a055584b896e5c245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e9f1a6e501b96472ffdddb594d40386"><td class="memItemLeft" align="right" valign="top">const DS &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeule_1_1_feltor.html#a8e9f1a6e501b96472ffdddb594d40386">ds</a> ()</td></tr>
-<tr class="memdesc:a8e9f1a6e501b96472ffdddb594d40386"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a ds class for evaluation purposes.  <a href="#a8e9f1a6e501b96472ffdddb594d40386">More...</a><br/></td></tr>
-<tr class="separator:a8e9f1a6e501b96472ffdddb594d40386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a215ca0546a7651bed66a93881391171c"><td class="memItemLeft" align="right" valign="top">DS &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeule_1_1_feltor.html#a215ca0546a7651bed66a93881391171c">ds</a> ()</td></tr>
+<tr class="memdesc:a215ca0546a7651bed66a93881391171c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a ds class for evaluation purposes.  <a href="#a215ca0546a7651bed66a93881391171c">More...</a><br/></td></tr>
+<tr class="separator:a215ca0546a7651bed66a93881391171c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b1265281c9504419c576b46e0454e62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b1265281c9504419c576b46e0454e62"></a>
+DS &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>dsDIR</b> ()</td></tr>
+<tr class="separator:a2b1265281c9504419c576b46e0454e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf5a1361fac56a290f1b9efa3fa7f75"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; container &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeule_1_1_feltor.html#adbf5a1361fac56a290f1b9efa3fa7f75">potential</a> () const </td></tr>
 <tr class="memdesc:adbf5a1361fac56a290f1b9efa3fa7f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns phi and psi that belong to the last solve of the polarization equation.  <a href="#adbf5a1361fac56a290f1b9efa3fa7f75">More...</a><br/></td></tr>
 <tr class="separator:adbf5a1361fac56a290f1b9efa3fa7f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +180,12 @@ Public Member Functions</h2></td></tr>
 </p>
   <a href="#a0820c95fe156045531afe45c7fa264ea">More...</a><br/></td></tr>
 <tr class="separator:a0820c95fe156045531afe45c7fa264ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc0e918a23c2aef1fbfb7145dfb404b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeule_1_1_feltor.html#acdc0e918a23c2aef1fbfb7145dfb404b">fieldalignment</a> ()</td></tr>
+<tr class="memdesc:acdc0e918a23c2aef1fbfb7145dfb404b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \begin{align} \int_V d^3 x \left[ (1+\ln N)\Delta_\parallel N \right] = - \int_V d^3x \frac{(\nabla_\parallel N)^2}{N} , \end{align} \]
+</p>
+  <a href="#acdc0e918a23c2aef1fbfb7145dfb404b">More...</a><br/></td></tr>
+<tr class="separator:acdc0e918a23c2aef1fbfb7145dfb404b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class DS, class Matrix, class container = thrust::device_vector&lt;double&gt;, class Preconditioner = thrust::device_vector&lt;double&gt;&gt;<br/>
@@ -245,7 +254,7 @@ template&lt;class Grid3d &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8e9f1a6e501b96472ffdddb594d40386"></a>
+<a class="anchor" id="a215ca0546a7651bed66a93881391171c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -255,7 +264,7 @@ template&lt;class DS , class Matrix , class container  = thrust::device_vector&l
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const DS&amp; <a class="el" href="structeule_1_1_feltor.html">eule::Feltor</a>&lt; DS, Matrix, container, Preconditioner &gt;::ds </td>
+          <td class="memname">DS&amp; <a class="el" href="structeule_1_1_feltor.html">eule::Feltor</a>&lt; DS, Matrix, container, Preconditioner &gt;::ds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -363,6 +372,37 @@ template&lt;class DS , class Matrix , class container  = thrust::device_vector&l
 <p>Individual energies. </p>
 <dl class="section return"><dt>Returns</dt><dd>individual energy terms in total energy E[0]=S_e, E[1] = S_i, E[2] = U_E, E[3] = T_pare, E[4] = T_pari </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>call energies() before use </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acdc0e918a23c2aef1fbfb7145dfb404b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class DS , class Matrix , class container  = thrust::device_vector&lt;double&gt;, class Preconditioner  = thrust::device_vector&lt;double&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structeule_1_1_feltor.html">eule::Feltor</a>&lt; DS, Matrix, container, Preconditioner &gt;::fieldalignment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><p class="formulaDsp">
+\[ \begin{align} \int_V d^3 x \left[ (1+\ln N)\Delta_\parallel N \right] = - \int_V d^3x \frac{(\nabla_\parallel N)^2}{N} , \end{align} \]
+</p>
+ </p>
+<dl class="section return"><dt>Returns</dt><dd>energy loss by parallel electron diffusion </dd></dl>
 
 </div>
 </div>
@@ -538,7 +578,7 @@ template&lt;class DS , class Matrix , class container  = thrust::device_vector&l
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceeule.html">eule</a></li><li class="navelem"><a class="el" href="structeule_1_1_feltor.html">Feltor</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for FELTOR by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for FELTOR by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -12,15 +12,16 @@ var group__geom =
       [ "psipmaxcut", "group__geom.html#gacb8f51dbbad0b5dcab7c0d0469b1c175", null ],
       [ "psipmaxlim", "group__geom.html#ga0b3f04d5f78ead10d7c6e887dc147401", null ],
       [ "psipmin", "group__geom.html#ga89dcd3bf445d866d590d930d299379d8", null ],
+      [ "qampl", "group__geom.html#ga2d428d07bdca508a5c246cfb75a83df3", null ],
       [ "R_0", "group__geom.html#ga04042807c96e6c40e0ecda5fa494423b", null ],
       [ "rk4eps", "group__geom.html#ga6447257304ba1dec05d84d1f27efdc41", null ],
       [ "triangularity", "group__geom.html#ga1b5afb66804a41c779f0fabb30089f67", null ]
     ] ],
     [ "Psip", "structsolovev_1_1_psip.html", [
       [ "Psip", "structsolovev_1_1_psip.html#aad4b94ff287a2320ce1a99c8d0ca7310", null ],
-      [ "display", "structsolovev_1_1_psip.html#a20893a4d67455be10ae7eb9a4b571422", null ],
-      [ "operator()", "structsolovev_1_1_psip.html#a6079b6a7c9ea5a5d6bbf4b65dd9d8dde", null ],
-      [ "operator()", "structsolovev_1_1_psip.html#a2385c203b4756a6152431027cfb4809a", null ]
+      [ "display", "structsolovev_1_1_psip.html#a4bc0dfab6f8129e83cad45eb3726833f", null ],
+      [ "operator()", "structsolovev_1_1_psip.html#aae77f65ee67cb420aad4ad8a243accd4", null ],
+      [ "operator()", "structsolovev_1_1_psip.html#a39b7eb50f84f806a2835735089185a55", null ]
     ] ],
     [ "PsipR", "structsolovev_1_1_psip_r.html", [
       [ "PsipR", "structsolovev_1_1_psip_r.html#a9ed70b25c22662a70ea4859a1336962b", null ],
@@ -36,100 +37,96 @@ var group__geom =
     ] ],
     [ "PsipZ", "structsolovev_1_1_psip_z.html", [
       [ "PsipZ", "structsolovev_1_1_psip_z.html#a851828d945124f59959a004abb7c5a44", null ],
-      [ "display", "structsolovev_1_1_psip_z.html#a53ec004a7e6c5290aa1d2daa980fe029", null ],
-      [ "operator()", "structsolovev_1_1_psip_z.html#a825fdf48070c7a5e4dbda633ee07efa0", null ],
-      [ "operator()", "structsolovev_1_1_psip_z.html#a35ddf6228cfc1aa61f2900def0af997f", null ],
-      [ "psipZ_alt", "structsolovev_1_1_psip_z.html#aff69e7f70ddf400c832f63c7a19b7186", null ]
+      [ "display", "structsolovev_1_1_psip_z.html#aa2eb988ab8f75e9439f4d85f032bcad2", null ],
+      [ "operator()", "structsolovev_1_1_psip_z.html#a0c24609290f5f60f33ba6e59736f69ca", null ],
+      [ "operator()", "structsolovev_1_1_psip_z.html#a2d608839a9b30bcd7b5ecc2b2a8ff96e", null ],
+      [ "psipZ_alt", "structsolovev_1_1_psip_z.html#abc3ed53227d3f5955891269fb534c769", null ]
     ] ],
     [ "PsipZZ", "structsolovev_1_1_psip_z_z.html", [
       [ "PsipZZ", "structsolovev_1_1_psip_z_z.html#a26959ba0ec5ee07bd8a96cd3b066698b", null ],
-      [ "display", "structsolovev_1_1_psip_z_z.html#a03aaaf90eaceb501012b4d8522e015b6", null ],
-      [ "operator()", "structsolovev_1_1_psip_z_z.html#aee49e53656604a30914dc82426d26c47", null ],
-      [ "operator()", "structsolovev_1_1_psip_z_z.html#ab721ef47bd336556a8b507207927b89a", null ]
+      [ "display", "structsolovev_1_1_psip_z_z.html#a4cf35e0bc760e5da93629b8eb30ca132", null ],
+      [ "operator()", "structsolovev_1_1_psip_z_z.html#a13d524f6f8d35e47dd06c2e609eb8bbe", null ],
+      [ "operator()", "structsolovev_1_1_psip_z_z.html#a5d95423db4753bc967178cd9b86ed43b", null ]
     ] ],
     [ "PsipRZ", "structsolovev_1_1_psip_r_z.html", [
       [ "PsipRZ", "structsolovev_1_1_psip_r_z.html#a4bfd156b4bc1243f2780aa972af384bd", null ],
-      [ "display", "structsolovev_1_1_psip_r_z.html#ae6ee990a66043a0e7d83e6df311cda00", null ],
-      [ "operator()", "structsolovev_1_1_psip_r_z.html#a93021f5c1d733da732156ccd0437b4ee", null ],
-      [ "operator()", "structsolovev_1_1_psip_r_z.html#aefe986563641b2c99029aaa3e66af1c8", null ]
+      [ "display", "structsolovev_1_1_psip_r_z.html#ae70defcb2b1bdcd69301dc55546869a8", null ],
+      [ "operator()", "structsolovev_1_1_psip_r_z.html#a85d931a5e84a2335abc78097afc271d0", null ],
+      [ "operator()", "structsolovev_1_1_psip_r_z.html#acff295cd510bff71fe820df72ea66275", null ]
     ] ],
     [ "Ipol", "structsolovev_1_1_ipol.html", [
       [ "Ipol", "structsolovev_1_1_ipol.html#a83c6c3f69740f0a52f7da89ddff144f3", null ],
-      [ "display", "structsolovev_1_1_ipol.html#a81df6a3d8d22d8814daaea76ad070efd", null ],
-      [ "operator()", "structsolovev_1_1_ipol.html#ac7f62f21fe31980c090c758ddb3546be", null ],
-      [ "operator()", "structsolovev_1_1_ipol.html#a38e6bf8839b7f2aa713b9404aeba1216", null ]
+      [ "display", "structsolovev_1_1_ipol.html#a52014b22e4e20caa0d838dad9be97077", null ],
+      [ "operator()", "structsolovev_1_1_ipol.html#a2a4b545a6f670a4b136672c280ddfd6b", null ],
+      [ "operator()", "structsolovev_1_1_ipol.html#a438caa0afe2fb1a51e025de0ac2e6a66", null ]
     ] ],
     [ "InvB", "structsolovev_1_1_inv_b.html", [
       [ "InvB", "structsolovev_1_1_inv_b.html#abd47543bdc47640c7ec60028a1aaf570", null ],
-      [ "display", "structsolovev_1_1_inv_b.html#a24936d254e704092cdcc1fb54769110d", null ],
-      [ "operator()", "structsolovev_1_1_inv_b.html#a6a4886f03129ef2d86201ef93cf770cc", null ],
-      [ "operator()", "structsolovev_1_1_inv_b.html#aabeacd7338e98c31a9ad110405150e02", null ]
+      [ "operator()", "structsolovev_1_1_inv_b.html#a1c012d1e779502b11e9656c3389353f8", null ],
+      [ "operator()", "structsolovev_1_1_inv_b.html#aff45ab8287d80b8576dee50650bc9735", null ]
     ] ],
     [ "LnB", "structsolovev_1_1_ln_b.html", [
       [ "LnB", "structsolovev_1_1_ln_b.html#a9a1795c82eeb6f3b71cde635d8dde818", null ],
-      [ "display", "structsolovev_1_1_ln_b.html#a21bab33266fcedc095a479b8f3ee375f", null ],
-      [ "operator()", "structsolovev_1_1_ln_b.html#abb3f660d8d54b1e8137a817b103929fa", null ],
-      [ "operator()", "structsolovev_1_1_ln_b.html#aea17bc8b35668db5d791de55193d1bf0", null ]
+      [ "operator()", "structsolovev_1_1_ln_b.html#ab8b1725a3ac0ec45275a4ce010c99f3e", null ],
+      [ "operator()", "structsolovev_1_1_ln_b.html#a2179d9cea03c882724c038a304028cba", null ]
     ] ],
     [ "BR", "structsolovev_1_1_b_r.html", [
       [ "BR", "structsolovev_1_1_b_r.html#aa3c28313e0e19bd98b825d438c14b797", null ],
-      [ "display", "structsolovev_1_1_b_r.html#a5e783787430598708219cc2fa41c25a5", null ],
-      [ "operator()", "structsolovev_1_1_b_r.html#a2b3d726869082bb8508edff7ad4d6939", null ],
-      [ "operator()", "structsolovev_1_1_b_r.html#ad51795460d6ffdab89e0bb80e2bdcc30", null ]
+      [ "operator()", "structsolovev_1_1_b_r.html#aa8d951952e8cd07e12aaa60e4a6f1ffb", null ],
+      [ "operator()", "structsolovev_1_1_b_r.html#aa53d701488bcd6f8cfe3be60d33b5b4d", null ]
     ] ],
     [ "BZ", "structsolovev_1_1_b_z.html", [
       [ "BZ", "structsolovev_1_1_b_z.html#af797690a2262c1634c3dfa502119df91", null ],
-      [ "display", "structsolovev_1_1_b_z.html#a5b6ed1433c5177afc461ff796194ae30", null ],
-      [ "operator()", "structsolovev_1_1_b_z.html#af0affe6814923f166fcfb86ee81d169b", null ],
-      [ "operator()", "structsolovev_1_1_b_z.html#a214d4daf79272a88090d4cf96e441dde", null ]
+      [ "operator()", "structsolovev_1_1_b_z.html#a1ac33a626ddabde3544ad2efe7ec399c", null ],
+      [ "operator()", "structsolovev_1_1_b_z.html#a4bc8c10487ba23ce8101e77143599151", null ]
     ] ],
     [ "CurvatureR", "structsolovev_1_1_curvature_r.html", [
       [ "CurvatureR", "structsolovev_1_1_curvature_r.html#ae53baa3867e83e36fb8cd40bc7fcfc08", null ],
-      [ "operator()", "structsolovev_1_1_curvature_r.html#a47ced9a9b5b11240c310f75842b99c1a", null ],
-      [ "operator()", "structsolovev_1_1_curvature_r.html#ae8bb72df104c240b8431db46494510d5", null ]
+      [ "operator()", "structsolovev_1_1_curvature_r.html#a51b70c532ac5eba4d88a6ffa4c9a996c", null ],
+      [ "operator()", "structsolovev_1_1_curvature_r.html#a2f1bd20edb69558bb19cc27991f6084f", null ]
     ] ],
     [ "CurvatureZ", "structsolovev_1_1_curvature_z.html", [
       [ "CurvatureZ", "structsolovev_1_1_curvature_z.html#ac230a6b32e01768c1fa7f793364bc4b3", null ],
-      [ "operator()", "structsolovev_1_1_curvature_z.html#af3b12dd9d9b4f2ff689fe732075ec5f9", null ],
-      [ "operator()", "structsolovev_1_1_curvature_z.html#aa546524f1ed88d8cc34252db0aafe281", null ]
+      [ "operator()", "structsolovev_1_1_curvature_z.html#a86d98dbbfc2c0d6704243c57a2f1c23f", null ],
+      [ "operator()", "structsolovev_1_1_curvature_z.html#ae02adb93425f940e1e58bfdab0273c36", null ]
     ] ],
     [ "GradLnB", "structsolovev_1_1_grad_ln_b.html", [
       [ "GradLnB", "structsolovev_1_1_grad_ln_b.html#a09e4d2b8cf4d11c0be5163c66bcb611e", null ],
-      [ "operator()", "structsolovev_1_1_grad_ln_b.html#a8233010d792cc270d54367e81d369a53", null ],
-      [ "operator()", "structsolovev_1_1_grad_ln_b.html#ada4bd9996056400ca36a49b013b05a5b", null ]
+      [ "operator()", "structsolovev_1_1_grad_ln_b.html#a6df8a4eb20bdd45022858ff776938ac8", null ],
+      [ "operator()", "structsolovev_1_1_grad_ln_b.html#a0fc1deaae4bdbc804b3f1238959da8ff", null ]
     ] ],
     [ "Field", "structsolovev_1_1_field.html", [
       [ "Field", "structsolovev_1_1_field.html#ab38fe0dbe0823e9c7536220fb9a20da7", null ],
-      [ "operator()", "structsolovev_1_1_field.html#ac597f776e803b07f473bbbca93370eeb", null ],
-      [ "operator()", "structsolovev_1_1_field.html#a4e57961339228e02bb741c9817aa7f99", null ],
-      [ "operator()", "structsolovev_1_1_field.html#a70180a0878cb37e8843427a2c3e7053a", null ],
-      [ "operator()", "structsolovev_1_1_field.html#a62e310bdf0e4262a2485a4b954d8abc9", null ]
+      [ "operator()", "structsolovev_1_1_field.html#a3dc3da045af6fbc3cdf213ba437fedcb", null ],
+      [ "operator()", "structsolovev_1_1_field.html#ab923245d704dda9bc77e8a3b71cbe4b2", null ],
+      [ "operator()", "structsolovev_1_1_field.html#aeecf5d3a23254d930bc9a6ff587d6608", null ],
+      [ "operator()", "structsolovev_1_1_field.html#a0a0761cd26c8f7e7077ae3fbd60b738f", null ]
     ] ],
     [ "FieldP", "structsolovev_1_1_field_p.html", [
       [ "FieldP", "structsolovev_1_1_field_p.html#a63a255729edb0bd801570a4c3c8e311d", null ],
-      [ "operator()", "structsolovev_1_1_field_p.html#a466a3cfdfdc89e9669e6a1342d10e1c1", null ]
+      [ "operator()", "structsolovev_1_1_field_p.html#ac12964adbc777251239d66fe777b5d41", null ]
     ] ],
     [ "FieldR", "structsolovev_1_1_field_r.html", [
       [ "FieldR", "structsolovev_1_1_field_r.html#af4e576788f8d80224c1e23e5fc16cf72", null ],
-      [ "operator()", "structsolovev_1_1_field_r.html#a906a3b115fb8bbb64bcfa9dd0c6db22e", null ],
-      [ "operator()", "structsolovev_1_1_field_r.html#a14bb00edf187f0cb6701f7684f4e4e40", null ]
+      [ "operator()", "structsolovev_1_1_field_r.html#adf82922facbc0ebf51cec423fd6bcbea", null ],
+      [ "operator()", "structsolovev_1_1_field_r.html#a7615eafcb93e640e547398bbfb1be8ca", null ]
     ] ],
     [ "FieldZ", "structsolovev_1_1_field_z.html", [
       [ "FieldZ", "structsolovev_1_1_field_z.html#a4b97ddaef65192a697dadb71262393e7", null ],
-      [ "operator()", "structsolovev_1_1_field_z.html#aa31a785b3f287fc938ed0d9a969f71d5", null ],
-      [ "operator()", "structsolovev_1_1_field_z.html#a28d73b39d9f8c063099de953bede3f18", null ]
+      [ "operator()", "structsolovev_1_1_field_z.html#afb546fb4bb0aa0abbf899f7b28b1e156", null ],
+      [ "operator()", "structsolovev_1_1_field_z.html#a2acdb3267c33bc7e33835bf24a694280", null ]
     ] ],
     [ "BHatR", "structsolovev_1_1_b_hat_r.html", [
       [ "BHatR", "structsolovev_1_1_b_hat_r.html#a3c5da0bb2569339e880f5a73c857a164", null ],
-      [ "operator()", "structsolovev_1_1_b_hat_r.html#a511378bc3f5a00199d68e501b2bd5d2d", null ]
+      [ "operator()", "structsolovev_1_1_b_hat_r.html#a9f8df241036dca9c5ceeefb5f1500fbf", null ]
     ] ],
     [ "BHatZ", "structsolovev_1_1_b_hat_z.html", [
       [ "BHatZ", "structsolovev_1_1_b_hat_z.html#af9e9f5c6ad6c4e24324d9f745a1639f5", null ],
-      [ "operator()", "structsolovev_1_1_b_hat_z.html#a3304cae4066ccb35f99f7ec218431865", null ]
+      [ "operator()", "structsolovev_1_1_b_hat_z.html#a594d635a3e4248f32633447f8739f2a6", null ]
     ] ],
     [ "BHatP", "structsolovev_1_1_b_hat_p.html", [
       [ "BHatP", "structsolovev_1_1_b_hat_p.html#acda6158b871fadf7392c2bc6e2a7f24f", null ],
-      [ "operator()", "structsolovev_1_1_b_hat_p.html#a4f4d179c1f497c927ab094d8d28ff745", null ]
+      [ "operator()", "structsolovev_1_1_b_hat_p.html#ad8a55eb13c0462aee33b84ce666167f8", null ]
     ] ],
     [ "display", "group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
     [ "GeomParameters", "group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],

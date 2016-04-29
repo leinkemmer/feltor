@@ -27,6 +27,6 @@ var searchData=
   ['blas2_2eh',['blas2.h',['../blas2_8h.html',1,'']]],
   ['blocks_5fper_5fline',['blocks_per_line',['../structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd',1,'dg::EllSparseBlockMat']]],
   ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html',1,'dg']]],
-  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
+  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
   ['brackets',['bracketS',['../structdg_1_1_arakawa_x.html#a4bca8c8355aa0d33f5913edf77fe96db',1,'dg::ArakawaX::bracketS()'],['../structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0',1,'dg::Poisson::bracketS()']]]
 ];

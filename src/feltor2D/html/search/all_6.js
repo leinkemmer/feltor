@@ -43,7 +43,7 @@ var searchData=
   ['ghostmatrix',['GhostMatrix',['../../../../inc/toefl/html/classtoefl_1_1_ghost_matrix.html',1,'toefl']]],
   ['global',['global',['../../../../inc/dg/html/structdg_1_1_m_p_i___grid2d.html#aa4aad097820c4c6e168cb796be8d0e1d',1,'dg::MPI_Grid2d::global()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid3d.html#ac3fa3409e7e8adcd8bdedd99c572c334',1,'dg::MPI_Grid3d::global()']]],
   ['gradlnb',['GradLnB',['../../../../src/solovev/html/structsolovev_1_1_grad_ln_b.html',1,'solovev']]],
-  ['grid',['grid',['../../../../inc/dg/html/structdg_1_1_field_aligned.html#a9ad979e5552118832f95068da002577e',1,'dg::FieldAligned::grid()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___field_aligned.html#a97a701266f39b7cf8d331e2e0fec5f4d',1,'dg::MPI_FieldAligned::grid()'],['../../../../inc/dg/html/group__grid.html',1,'(Global Namespace)']]],
+  ['grid',['grid',['../../../../inc/dg/html/structdg_1_1_field_aligned.html#a9ad979e5552118832f95068da002577e',1,'dg::FieldAligned::grid() const '],['../../../../inc/dg/html/structdg_1_1_field_aligned.html#a69479574801c2973e6a5d2331dff42bd',1,'dg::FieldAligned::grid() const '],['../../../../inc/dg/html/structdg_1_1_m_p_i___field_aligned.html#a97a701266f39b7cf8d331e2e0fec5f4d',1,'dg::MPI_FieldAligned::grid()'],['../../../../inc/dg/html/group__grid.html',1,'(Global Namespace)']]],
   ['grid_2eh',['grid.h',['../../../../inc/dg/html/grid_8h.html',1,'']]],
   ['grid1d',['Grid1d',['../../../../inc/dg/html/structdg_1_1_grid1d.html#a9506a5da19e42515e17fb3545289ea07',1,'dg::Grid1d']]],
   ['grid1d',['Grid1d',['../../../../inc/dg/html/structdg_1_1_grid1d.html',1,'dg']]],

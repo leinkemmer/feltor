@@ -4,6 +4,7 @@ var structdg_1_1_ell_sparse_block_mat =
     [ "IVec", "structdg_1_1_ell_sparse_block_mat.html#a3cc028685806f9631dc92dcd0b65a8e3", null ],
     [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a5b81a380b40ebfa61365ffb3d7132de1", null ],
     [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#add89682c2699d8ec50bacc0645f259ba", null ],
+    [ "display", "structdg_1_1_ell_sparse_block_mat.html#a4b4287c2b702351f206a5b50fa55a980", null ],
     [ "symv", "structdg_1_1_ell_sparse_block_mat.html#a559f955c51790860f40e8c369e77d0d6", null ],
     [ "blocks_per_line", "structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd", null ],
     [ "cols_idx", "structdg_1_1_ell_sparse_block_mat.html#a484d89c21208ffc5e66e8b2590721934", null ],

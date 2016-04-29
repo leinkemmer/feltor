@@ -20,6 +20,7 @@ var structeule_1_1_parameters =
     [ "itstp", "structeule_1_1_parameters.html#ac38b2829e1f52f126625b8e8b91338b2", null ],
     [ "k_psi", "structeule_1_1_parameters.html#a4b5ba376f09d79e36d265240e67d2e1a", null ],
     [ "maxout", "structeule_1_1_parameters.html#a34fa9ede7f45572a2b31a2d76791c882", null ],
+    [ "mode", "structeule_1_1_parameters.html#a0cb4c3216067ac83c8b80c8896103e22", null ],
     [ "mu", "structeule_1_1_parameters.html#abf8b084d1f6be3c7c2696d26d86c0350", null ],
     [ "n", "structeule_1_1_parameters.html#a5d1224e1dd6485707c3d024db72cbecc", null ],
     [ "n_out", "structeule_1_1_parameters.html#a2245539b3f2a3632c44d34689b5ed4a5", null ],

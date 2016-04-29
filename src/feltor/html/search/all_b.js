@@ -2,7 +2,7 @@ var searchData=
 [
   ['lamb',['Lamb',['../../../../inc/dg/html/structdg_1_1_lamb.html',1,'dg']]],
   ['lamb',['Lamb',['../../../../inc/dg/html/structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd',1,'dg::Lamb']]],
-  ['laplacianm',['laplacianM',['../structeule_1_1_rolkar.html#aace6eadd6e9a64324c7627f7cbe48181',1,'eule::Rolkar']]],
+  ['laplacianm',['laplacianM',['../structeule_1_1_rolkar.html#a6c344eb1dbfa92617265986b4261f547',1,'eule::Rolkar']]],
   ['last',['last',['../../../../inc/dg/html/structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b',1,'dg::Karniadakis']]],
   ['lcm',['lcm',['../../../../inc/dg/html/group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'dg::lcm()'],['../../../../inc/dg/html/group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'lcm()(Global Namespace)']]],
   ['left',['left',['../../../../inc/dg/html/structdg_1_1_ell_sparse_block_mat.html#afa215c3354d917b09d4e708fba9bffa9',1,'dg::EllSparseBlockMat::left()'],['../../../../inc/dg/html/structdg_1_1_coo_sparse_block_mat.html#afb5e9b3c9b385c60223ee7d6d2ea9e60',1,'dg::CooSparseBlockMat::left()']]],

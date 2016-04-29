@@ -7,7 +7,7 @@ var searchData=
   ['permute_5ffields',['permute_fields',['../../../../inc/toefl/html/classtoefl_1_1_matrix.html#a2a5baf9d8f440c1f53ed075cd3628906',1,'toefl::Matrix::permute_fields()'],['../../../../inc/toefl/html/namespacetoefl.html#ab501c750a4b0a58f3e07f3478c42d7d8',1,'toefl::permute_fields()']]],
   ['physical',['Physical',['../structtoefl_1_1_physical.html',1,'toefl']]],
   ['physical',['Physical',['../structtoefl_1_1_physical.html#a705d4bd5a38ea9e40e0f7d1b36823eb8',1,'toefl::Physical::Physical()'],['../classtoefl_1_1_blueprint.html#aec97fb2b0c8394e20698bd902c344798',1,'toefl::Blueprint::physical() const '],['../classtoefl_1_1_blueprint.html#ac5ca91fba27c4f4c7cd04f5555d0f71a',1,'toefl::Blueprint::physical()']]],
-  ['pidof',['pidOf',['../../../../inc/dg/html/structdg_1_1_m_p_i___grid3d.html#a9a1618fd94e01503d23aa520ccb57640',1,'dg::MPI_Grid3d']]],
+  ['pidof',['pidOf',['../../../../inc/dg/html/structdg_1_1_m_p_i___grid2d.html#aaba1c12059286d0af209b5589b1a8a3a',1,'dg::MPI_Grid2d::pidOf()'],['../../../../inc/dg/html/structdg_1_1_m_p_i___grid3d.html#a9a1618fd94e01503d23aa520ccb57640',1,'dg::MPI_Grid3d::pidOf()']]],
   ['pidxpj',['pidxpj',['../../../../inc/dg/html/group__lowlevel.html#ga47baf9139f33e72afb91a5bd168f2adf',1,'dg::create::pidxpj()'],['../../../../inc/dg/html/group__lowlevel.html#ga47baf9139f33e72afb91a5bd168f2adf',1,'pidxpj()(Global Namespace)']]],
   ['pipj',['pipj',['../../../../inc/dg/html/group__lowlevel.html#ga5742ac1cee8b8c09619bcd1da1730fa6',1,'dg::create::pipj()'],['../../../../inc/dg/html/group__lowlevel.html#ga5742ac1cee8b8c09619bcd1da1730fa6',1,'pipj()(Global Namespace)']]],
   ['pipj_5finv',['pipj_inv',['../../../../inc/dg/html/group__lowlevel.html#ga9270698ddf50a70aeeeccb0b8d4ea1e2',1,'dg::create::pipj_inv()'],['../../../../inc/dg/html/group__lowlevel.html#ga9270698ddf50a70aeeeccb0b8d4ea1e2',1,'pipj_inv()(Global Namespace)']]],
@@ -47,7 +47,7 @@ var searchData=
   ['psiprz',['PsipRZ',['../../../../src/solovev/html/structsolovev_1_1_psip_r_z.html',1,'solovev']]],
   ['psipupil',['PsiPupil',['../../../../src/solovev/html/structsolovev_1_1_psi_pupil.html',1,'solovev']]],
   ['psipz',['PsipZ',['../../../../src/solovev/html/structsolovev_1_1_psip_z.html',1,'solovev']]],
-  ['psipz_5falt',['psipZ_alt',['../../../../src/solovev/html/structsolovev_1_1_psip_z.html#aff69e7f70ddf400c832f63c7a19b7186',1,'solovev::PsipZ']]],
+  ['psipz_5falt',['psipZ_alt',['../../../../src/solovev/html/structsolovev_1_1_psip_z.html#abc3ed53227d3f5955891269fb534c769',1,'solovev::PsipZ']]],
   ['psipzz',['PsipZZ',['../../../../src/solovev/html/structsolovev_1_1_psip_z_z.html',1,'solovev']]],
   ['pupil',['Pupil',['../../../../src/solovev/html/structsolovev_1_1_pupil.html',1,'solovev']]]
 ];

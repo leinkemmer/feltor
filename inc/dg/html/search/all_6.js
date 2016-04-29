@@ -21,7 +21,7 @@ var searchData=
   ['get_5flast',['get_last',['../structdg_1_1_invert.html#a3f72ec59f67ad4dcfbba25c178b1fe7e',1,'dg::Invert']]],
   ['get_5fmax',['get_max',['../classdg_1_1_c_g.html#a6c6ddea9c0e7b7f2149722ef25cc9dd8',1,'dg::CG::get_max()'],['../structdg_1_1_invert.html#a9bf8b8325e4b96dc859103b09a3112a7',1,'dg::Invert::get_max()']]],
   ['global',['global',['../structdg_1_1_m_p_i___grid2d.html#aa4aad097820c4c6e168cb796be8d0e1d',1,'dg::MPI_Grid2d::global()'],['../structdg_1_1_m_p_i___grid3d.html#ac3fa3409e7e8adcd8bdedd99c572c334',1,'dg::MPI_Grid3d::global()']]],
-  ['grid',['grid',['../structdg_1_1_field_aligned.html#a9ad979e5552118832f95068da002577e',1,'dg::FieldAligned::grid()'],['../structdg_1_1_m_p_i___field_aligned.html#a97a701266f39b7cf8d331e2e0fec5f4d',1,'dg::MPI_FieldAligned::grid()'],['../group__grid.html',1,'(Global Namespace)']]],
+  ['grid',['grid',['../structdg_1_1_field_aligned.html#a9ad979e5552118832f95068da002577e',1,'dg::FieldAligned::grid()'],['../structdg_1_1_m_p_i___field_aligned.html#a97a701266f39b7cf8d331e2e0fec5f4d',1,'dg::MPI_FieldAligned::grid()'],['../structdg_1_1_field_aligned.html#a69479574801c2973e6a5d2331dff42bd',1,'dg::FieldAligned::grid()'],['../group__grid.html',1,'(Global Namespace)']]],
   ['grid_2eh',['grid.h',['../grid_8h.html',1,'']]],
   ['grid1d',['Grid1d',['../structdg_1_1_grid1d.html',1,'dg']]],
   ['grid1d',['Grid1d',['../structdg_1_1_grid1d.html#a9506a5da19e42515e17fb3545289ea07',1,'dg::Grid1d']]],

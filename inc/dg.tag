@@ -244,15 +244,15 @@
     <member kind="typedef">
       <type>cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;</type>
       <name>IHMatrix</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0af8204731ee6327dc4616a5980af2d5</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0af8204731ee6327dc4616a5980af2d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;</type>
       <name>IDMatrix</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0d122f4172a3e60105754f9419c0831f</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0d122f4172a3e60105754f9419c0831f</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
@@ -838,29 +838,29 @@
     <member kind="typedef">
       <type>dg::DS&lt; dg::FieldAligned&lt; dg::IDMatrix, dg::DVec &gt;, dg::DMatrix, dg::DVec &gt;</type>
       <name>DDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a95ddc03eb343687757cd1777a44fc1be</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga95ddc03eb343687757cd1777a44fc1be</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::FieldAligned&lt; dg::IHMatrix, dg::HVec &gt;, dg::HMatrix, dg::HVec &gt;</type>
       <name>HDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>acfefd6b04678e0c404fda98c77df6006</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gacfefd6b04678e0c404fda98c77df6006</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IDMatrix, dg::BijectiveComm&lt; dg::IDVec, dg::DVec &gt;, dg::DVec &gt;, dg::MDMatrix, dg::MDVec &gt;</type>
       <name>MDDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a06da979028329f4f8fad32798075c9e1</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga06da979028329f4f8fad32798075c9e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IHMatrix, dg::BijectiveComm&lt; dg::IHVec, dg::HVec &gt;, dg::HVec &gt;, dg::MHMatrix, dg::MHVec &gt;</type>
       <name>MHDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>af92dfe215532f73f424f188ede0ee48b</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gaf92dfe215532f73f424f188ede0ee48b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2191,6 +2191,7 @@
     <filename>group__algorithms.html</filename>
     <class kind="class">dg::CG</class>
     <class kind="struct">dg::Invert</class>
+    <class kind="struct">dg::FieldAligned</class>
     <class kind="struct">dg::AB</class>
     <class kind="struct">dg::Karniadakis</class>
     <class kind="struct">dg::SIRK</class>
@@ -2201,6 +2202,13 @@
       <anchorfile>group__algorithms.html</anchorfile>
       <anchor>ga61caca7351ed278357a3923adb6ab655</anchor>
       <arglist>(Matrix &amp;A, Vector &amp;x, const Vector &amp;b, const Preconditioner &amp;P, typename VectorTraits&lt; Vector &gt;::value_type eps, unsigned max_iter)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>integrateRK</name>
+      <anchorfile>group__algorithms.html</anchorfile>
+      <anchor>gaf3fed90b31f8ce986ab2ada38eb1812d</anchor>
+      <arglist>(RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2365,6 +2373,20 @@
     <title>Typedefs</title>
     <filename>group__typedefs.html</filename>
     <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;</type>
+      <name>IHMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0af8204731ee6327dc4616a5980af2d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;</type>
+      <name>IDMatrix</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0d122f4172a3e60105754f9419c0831f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
       <type>thrust::device_vector&lt; double &gt;</type>
       <name>DVec</name>
       <anchorfile>group__typedefs.html</anchorfile>
@@ -2446,6 +2468,34 @@
       <name>MDMatrix</name>
       <anchorfile>group__typedefs.html</anchorfile>
       <anchor>gae6871db5bef0f34e855db9218cfc4b88</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IDMatrix, dg::DVec &gt;, dg::DMatrix, dg::DVec &gt;</type>
+      <name>DDS</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga95ddc03eb343687757cd1777a44fc1be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::FieldAligned&lt; dg::IHMatrix, dg::HVec &gt;, dg::HMatrix, dg::HVec &gt;</type>
+      <name>HDS</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gacfefd6b04678e0c404fda98c77df6006</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IDMatrix, dg::BijectiveComm&lt; dg::IDVec, dg::DVec &gt;, dg::DVec &gt;, dg::MDMatrix, dg::MDVec &gt;</type>
+      <name>MDDS</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga06da979028329f4f8fad32798075c9e1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IHMatrix, dg::BijectiveComm&lt; dg::IHVec, dg::HVec &gt;, dg::HVec &gt;, dg::MHMatrix, dg::MHVec &gt;</type>
+      <name>MHDS</name>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gaf92dfe215532f73f424f188ede0ee48b</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2541,15 +2591,15 @@
     <member kind="typedef">
       <type>cusp::csr_matrix&lt; int, double, cusp::host_memory &gt;</type>
       <name>IHMatrix</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0af8204731ee6327dc4616a5980af2d5</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0af8204731ee6327dc4616a5980af2d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>cusp::csr_matrix&lt; int, double, cusp::device_memory &gt;</type>
       <name>IDMatrix</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a0d122f4172a3e60105754f9419c0831f</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga0d122f4172a3e60105754f9419c0831f</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
@@ -2639,29 +2689,29 @@
     <member kind="typedef">
       <type>dg::DS&lt; dg::FieldAligned&lt; dg::IDMatrix, dg::DVec &gt;, dg::DMatrix, dg::DVec &gt;</type>
       <name>DDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a95ddc03eb343687757cd1777a44fc1be</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga95ddc03eb343687757cd1777a44fc1be</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::FieldAligned&lt; dg::IHMatrix, dg::HVec &gt;, dg::HMatrix, dg::HVec &gt;</type>
       <name>HDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>acfefd6b04678e0c404fda98c77df6006</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gacfefd6b04678e0c404fda98c77df6006</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IDMatrix, dg::BijectiveComm&lt; dg::IDVec, dg::DVec &gt;, dg::DVec &gt;, dg::MDMatrix, dg::MDVec &gt;</type>
       <name>MDDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>a06da979028329f4f8fad32798075c9e1</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>ga06da979028329f4f8fad32798075c9e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>dg::DS&lt; dg::MPI_FieldAligned&lt; dg::IHMatrix, dg::BijectiveComm&lt; dg::IHVec, dg::HVec &gt;, dg::HVec &gt;, dg::MHMatrix, dg::MHVec &gt;</type>
       <name>MHDS</name>
-      <anchorfile>namespacedg.html</anchorfile>
-      <anchor>af92dfe215532f73f424f188ede0ee48b</anchor>
+      <anchorfile>group__typedefs.html</anchorfile>
+      <anchor>gaf92dfe215532f73f424f188ede0ee48b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -2973,11 +3023,11 @@
       <arglist>(double x)</arglist>
     </member>
     <member kind="function">
-      <type>int</type>
-      <name>bisection1d</name>
-      <anchorfile>group__utilities.html</anchorfile>
-      <anchor>gaa269808db678039605044e14fc849675</anchor>
-      <arglist>(UnaryOp &amp;funktion, double &amp;x_min, double &amp;x_max, const double aufloesung)</arglist>
+      <type>void</type>
+      <name>integrateRK</name>
+      <anchorfile>group__algorithms.html</anchorfile>
+      <anchor>gaf3fed90b31f8ce986ab2ada38eb1812d</anchor>
+      <arglist>(RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -2985,6 +3035,13 @@
       <anchorfile>group__algorithms.html</anchorfile>
       <anchor>ga098434b3580fe8186441a1fd178214ef</anchor>
       <arglist>(RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>bisection1d</name>
+      <anchorfile>group__utilities.html</anchorfile>
+      <anchor>gaa269808db678039605044e14fc849675</anchor>
+      <arglist>(UnaryOp &amp;funktion, double &amp;x_min, double &amp;x_max, const double aufloesung)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -3158,10 +3215,24 @@
       <anchor>a968245a92c4848fd48beae9d191b0a19</anchor>
       <arglist>(double x, double y)</arglist>
     </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_default_limiter.html</anchorfile>
+      <anchor>a968245a92c4848fd48beae9d191b0a19</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::NoLimiter</name>
     <filename>structdg_1_1_no_limiter.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_no_limiter.html</anchorfile>
+      <anchor>a670a2b7dbcfac2d09774de616e287bee</anchor>
+      <arglist>(double x, double y)</arglist>
+    </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
@@ -3175,6 +3246,27 @@
     <filename>structdg_1_1_box_integrator.html</filename>
     <templarg>Field</templarg>
     <templarg>Grid</templarg>
+    <member kind="function">
+      <type></type>
+      <name>BoxIntegrator</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>ab6462a5e77839d7029a57ea4e3e85aea</anchor>
+      <arglist>(Field field, const Grid &amp;g, double eps)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_coords</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>ab60c28cd2715399c28bbd578d32f311b</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;coords)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_box_integrator.html</anchorfile>
+      <anchor>af62b7dfac3e3f5f1e3ffd539b35b04a3</anchor>
+      <arglist>(double deltaPhi)</arglist>
+    </member>
     <member kind="function">
       <type></type>
       <name>BoxIntegrator</name>
@@ -3298,6 +3390,104 @@
       <name>grid</name>
       <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
       <anchor>a9ad979e5552118832f95068da002577e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>FieldAligned</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a1ccec723a2764f9b2bf4afed19ff5132</anchor>
+      <arglist>(Field field, Geometry grid, double eps=1e-4, Limiter limit=DefaultLimiter(), dg::bc globalbcz=dg::DIR, double deltaPhi=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aeca7966fe069e3603b0bfa5b7b622ca5</anchor>
+      <arglist>(dg::bc bcz, double left, double right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a9e86c5c53a58829be3472b18b021f2b8</anchor>
+      <arglist>(dg::bc bcz, const container &amp;left, const container &amp;right)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>set_boundaries</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aac4ea43cda34d6fb589cf90b73d7eb38</anchor>
+      <arglist>(dg::bc bcz, const container &amp;global, double scal_left, double scal_right)</arglist>
+    </member>
+    <member kind="function">
+      <type>container</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>af14696d77c6c06d41cf7defc671755a2</anchor>
+      <arglist>(BinaryOp f, unsigned plane=0) const </arglist>
+    </member>
+    <member kind="function">
+      <type>container</type>
+      <name>evaluate</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a2c816cc998a1c4395f4bca8f06dc1e47</anchor>
+      <arglist>(BinaryOp f, UnaryOp g, unsigned p0, unsigned rounds) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlus</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a569273cd44aabc209894c01d626c5049</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinus</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a701c42d4e9cc441cbfcef95788c82705</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsPlusT</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>aec221c8b68389dd57300beab116f4f4a</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>einsMinusT</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a892602741a45367bc0a5a4c1d3c130f4</anchor>
+      <arglist>(const container &amp;in, container &amp;out)</arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hz</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a8497fbebf606f9a9375cb89943d84d42</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hp</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a1dcdf334f69cc44467aec52b4b46c4bb</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const container &amp;</type>
+      <name>hm</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a9b17f35e61d36cc5de7261d1d11245d2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const Geometry &amp;</type>
+      <name>grid</name>
+      <anchorfile>structdg_1_1_field_aligned.html</anchorfile>
+      <anchor>a69479574801c2973e6a5d2331dff42bd</anchor>
       <arglist>() const </arglist>
     </member>
   </compound>
@@ -4058,6 +4248,13 @@
       <anchor>aa4aad097820c4c6e168cb796be8d0e1d</anchor>
       <arglist>() const </arglist>
     </member>
+    <member kind="function">
+      <type>int</type>
+      <name>pidOf</name>
+      <anchorfile>structdg_1_1_m_p_i___grid2d.html</anchorfile>
+      <anchor>aaba1c12059286d0af209b5589b1a8a3a</anchor>
+      <arglist>(double x, double y) const </arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::MPI_Grid3d</name>
@@ -4359,8 +4556,8 @@
   <compound kind="struct">
     <name>dg::ColDistMat</name>
     <filename>structdg_1_1_col_dist_mat.html</filename>
-    <templarg>LocalMatrix</templarg>
-    <templarg>Collective</templarg>
+    <templarg></templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>ColDistMat</name>
@@ -4743,6 +4940,13 @@
       <anchor>aa6db43231cbc58f45e0e7d04286cd6e5</anchor>
       <arglist>(const thrust::device_vector&lt; double &gt; &amp;x, thrust::device_vector&lt; double &gt; &amp;y) const </arglist>
     </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat_device.html</anchorfile>
+      <anchor>a20254b14899ca0bf40b0491199ba8e66</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>dg::CooSparseBlockMatDevice</name>
@@ -4760,6 +4964,13 @@
       <anchorfile>structdg_1_1_coo_sparse_block_mat_device.html</anchorfile>
       <anchor>a0b95d7e13275f831f248d8e7f1115a6f</anchor>
       <arglist>(double alpha, const thrust::device_vector&lt; double &gt; &amp;x, double beta, thrust::device_vector&lt; double &gt; &amp;y) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat_device.html</anchorfile>
+      <anchor>ad41fdced3b0b2131e4e1de75780c9186</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -4799,6 +5010,13 @@
       <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
       <anchor>a559f955c51790860f40e8c369e77d0d6</anchor>
       <arglist>(const HVec &amp;x, HVec &amp;y) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_ell_sparse_block_mat.html</anchorfile>
+      <anchor>a4b4287c2b702351f206a5b50fa55a980</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
     </member>
     <member kind="variable">
       <type>HVec</type>
@@ -4908,6 +5126,13 @@
       <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
       <anchor>ad03433070ba5ad8cd43f2e58b4582dca</anchor>
       <arglist>(double alpha, const HVec &amp;x, double beta, HVec &amp;y) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>display</name>
+      <anchorfile>structdg_1_1_coo_sparse_block_mat.html</anchorfile>
+      <anchor>a715b6a0f6f1273742dd2483751cee260</anchor>
+      <arglist>(std::ostream &amp;os=std::cout) const </arglist>
     </member>
     <member kind="variable">
       <type>HVec</type>
@@ -6453,7 +6678,7 @@
     <name>dg::RK</name>
     <filename>structdg_1_1_r_k.html</filename>
     <templarg>k</templarg>
-    <templarg>Vector</templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
       <name>RK</name>
@@ -7245,6 +7470,7 @@
     <path>/home/matthias/Projekte/feltor/inc/dg/</path>
     <filename>dir_cba352cc187f01702d3926d435723909.html</filename>
     <dir>/home/matthias/Projekte/feltor/inc/dg/backend</dir>
+    <dir>/home/matthias/Projekte/feltor/inc/dg/geometry</dir>
     <file>algorithm.h</file>
     <file>arakawa.h</file>
     <file>average.h</file>
@@ -7264,6 +7490,12 @@
     <file>poisson.h</file>
     <file>runge_kutta.h</file>
     <file>toefl.cuh</file>
+  </compound>
+  <compound kind="dir">
+    <name>/home/matthias/Projekte/feltor/inc/dg/geometry</name>
+    <path>/home/matthias/Projekte/feltor/inc/dg/geometry/</path>
+    <filename>dir_f510d91e1c70d38491b70a6221c1a3dc.html</filename>
+    <file>new_fieldaligned.h</file>
   </compound>
   <compound kind="dir">
     <name>/home/matthias/Projekte/feltor/inc</name>

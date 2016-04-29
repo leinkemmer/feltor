@@ -18,7 +18,7 @@ var searchData=
   ['rk',['RK',['../../../../inc/dg/html/structdg_1_1_r_k.html#a6c429247370a3e14d0b818dc9c486b6b',1,'dg::RK']]],
   ['rk4eps',['rk4eps',['../../../../src/solovev/html/group__geom.html#ga6447257304ba1dec05d84d1f27efdc41',1,'solovev::GeomParameters::rk4eps()'],['../../../../src/solovev/html/group__geom.html#ga6447257304ba1dec05d84d1f27efdc41',1,'rk4eps()(Global Namespace)']]],
   ['rk_5fcoeff',['rk_coeff',['../../../../inc/dg/html/structdg_1_1rk__coeff.html',1,'dg']]],
-  ['rolkar',['Rolkar',['../structeule_1_1_rolkar.html#a1bf6d234df0f3889790dae24ec209b7a',1,'eule::Rolkar']]],
+  ['rolkar',['Rolkar',['../structeule_1_1_rolkar.html#ab58111bcab213d2f048e53254860a64b',1,'eule::Rolkar']]],
   ['rolkar',['Rolkar',['../structeule_1_1_rolkar.html',1,'eule']]],
   ['rowcoldistmat',['RowColDistMat',['../../../../inc/dg/html/structdg_1_1_row_col_dist_mat.html',1,'dg']]],
   ['rowcoldistmat',['RowColDistMat',['../../../../inc/dg/html/structdg_1_1_row_col_dist_mat.html#ac1e66c3615a2e2256b9615be89057d4e',1,'dg::RowColDistMat::RowColDistMat(const LocalMatrixInner &amp;m_inside, const LocalMatrixOuter &amp;m_outside, const Collective &amp;c)'],['../../../../inc/dg/html/structdg_1_1_row_col_dist_mat.html#a3e60395af1bfd71d925af6e704405a50',1,'dg::RowColDistMat::RowColDistMat(const RowColDistMat&lt; OtherMatrixInner, OtherMatrixOuter, OtherCollective &gt; &amp;src)']]],

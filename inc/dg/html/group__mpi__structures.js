@@ -47,6 +47,7 @@ var group__mpi__structures =
       [ "operator<<", "structdg_1_1_m_p_i___vector.html#a4caefc423561c60b74e655ed07291d70", null ]
     ] ],
     [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html", [
+      [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a5ec314af366d32c870272005b8f38b3e", null ],
       [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#aafd0dcd64150e9324c84c46c33d23374", null ],
       [ "NearestNeighborComm", "structdg_1_1_nearest_neighbor_comm.html#a29afb9b75b076d8e3ac1d86bd5a460d4", null ],
       [ "collect", "structdg_1_1_nearest_neighbor_comm.html#a567bf1426f7b6ec4b70d1ccc6552df17", null ],

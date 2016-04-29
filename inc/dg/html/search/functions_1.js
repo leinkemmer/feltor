@@ -15,6 +15,6 @@ var searchData=
   ['bijectivecomm',['BijectiveComm',['../structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4',1,'dg::BijectiveComm::BijectiveComm()'],['../structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c',1,'dg::BijectiveComm::BijectiveComm(thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)']]],
   ['binwidth',['binwidth',['../structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407',1,'dg::Histogram']]],
   ['bisection1d',['bisection1d',['../group__utilities.html#gaa269808db678039605044e14fc849675',1,'dg']]],
-  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
+  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
   ['brackets',['bracketS',['../structdg_1_1_arakawa_x.html#a4bca8c8355aa0d33f5913edf77fe96db',1,'dg::ArakawaX::bracketS()'],['../structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0',1,'dg::Poisson::bracketS()']]]
 ];

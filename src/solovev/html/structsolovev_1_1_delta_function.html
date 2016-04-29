@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('structsolovev_1_1_delta_function.html'
 
 <p>Delta function for poloidal flux \( B_Z\) </p>
 <p class="formulaDsp">
-\[ (\nabla \psi_p)^2\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
+\[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
 <p>.  
  <a href="structsolovev_1_1_delta_function.html#details">More...</a></p>
@@ -152,22 +152,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a926936141cb404924a1b58c90e4a7193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html#a926936141cb404924a1b58c90e4a7193">setpsi</a> (double psi_0)</td></tr>
 <tr class="memdesc:a926936141cb404924a1b58c90e4a7193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a new \( \psi_0\).  <a href="#a926936141cb404924a1b58c90e4a7193">More...</a><br/></td></tr>
 <tr class="separator:a926936141cb404924a1b58c90e4a7193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e6536af721dd055513f62cf14a32ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7e6536af721dd055513f62cf14a32ec"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html#ad7e6536af721dd055513f62cf14a32ec">operator()</a> (double R, double Z)</td></tr>
-<tr class="memdesc:ad7e6536af721dd055513f62cf14a32ec"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+<tr class="memitem:a4d00e30341147a729f62236d68ea9821"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d00e30341147a729f62236d68ea9821"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html#a4d00e30341147a729f62236d68ea9821">operator()</a> (double R, double Z) const </td></tr>
+<tr class="memdesc:a4d00e30341147a729f62236d68ea9821"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
  <br/></td></tr>
-<tr class="separator:ad7e6536af721dd055513f62cf14a32ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab8a7a4a766e85687a4d65a57152076c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab8a7a4a766e85687a4d65a57152076c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html#aab8a7a4a766e85687a4d65a57152076c">operator()</a> (double R, double Z, double phi)</td></tr>
-<tr class="memdesc:aab8a7a4a766e85687a4d65a57152076c"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br/></td></tr>
-<tr class="separator:aab8a7a4a766e85687a4d65a57152076c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4d00e30341147a729f62236d68ea9821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61987ed52cd6879b02b909c3d810391d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61987ed52cd6879b02b909c3d810391d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html#a61987ed52cd6879b02b909c3d810391d">operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:a61987ed52cd6879b02b909c3d810391d"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br/></td></tr>
+<tr class="separator:a61987ed52cd6879b02b909c3d810391d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Delta function for poloidal flux \( B_Z\) </p>
 <p class="formulaDsp">
-\[ (\nabla \psi_p)^2\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
+\[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
 <p>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -244,7 +244,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><a class="el" href="structsolovev_1_1_delta_function.html">DeltaFunction</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for Solovev by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for Solovev by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -227,96 +227,100 @@ $(document).ready(function(){initNavTree('mpi__collective_8h_source.html','');})
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">Collective::gather</a>( <span class="keyword">const</span> thrust::host_vector&lt;double&gt;&amp; gatherFrom, thrust::host_vector&lt;double&gt;&amp; values)<span class="keyword"> const </span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    assert( gatherFrom.size() == store_size() );</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    values.resize( values_size() );</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    MPI_Alltoallv( </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            const_cast&lt;double*&gt;(gatherFrom.data()), </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            const_cast&lt;int*&gt;(recvFrom_.data()),</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            const_cast&lt;int*&gt;(accR_.data()), MPI_DOUBLE, </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            values.data(), </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keyword">const_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(sendTo_.data()), </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            const_cast&lt;int*&gt;(accS_.data()), MPI_DOUBLE, comm_);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//BijectiveComm ist der Spezialfall, dass jedes Element nur ein einziges Mal gebraucht wird. </span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt; <span class="keyword">class</span> Index, <span class="keyword">class</span> Vector&gt;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html">  171</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structdg_1_1_bijective_comm.html">BijectiveComm</a></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">  176</a></span>&#160;    <a class="code" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a>( ){}</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">  183</a></span>&#160;    <a class="code" href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">BijectiveComm</a>( thrust::host_vector&lt;int&gt; pids, MPI_Comm comm): idx_(pids)</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">int</span> rank, <a class="code" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">size</a>; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        MPI_Comm_size( comm, &amp;size);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        MPI_Comm_rank( comm, &amp;rank);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;pids.size(); i++)</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            assert( 0 &lt;= pids[i] &amp;&amp; pids[i] &lt; size);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        thrust::host_vector&lt;int&gt; index(pids);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        thrust::sequence( index.begin(), index.end());</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        thrust::host_vector&lt;int&gt; <a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>( pids.size(), 1), keys(<a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>), number(<a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        thrust::stable_sort_by_key( pids.begin(), pids.end(), index.begin());</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">typedef</span> thrust::host_vector&lt;int&gt;::iterator iterator;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        thrust::pair&lt; iterator, iterator&gt; new_end = </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            thrust::reduce_by_key( pids.begin(), pids.end(), <a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>.begin(), </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                                     keys.begin(), number.begin() ); </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">unsigned</span> distance = thrust::distance( keys.begin(), new_end.first);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        thrust::host_vector&lt;int&gt; sendTo( size, 0 );</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;distance; i++)</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            sendTo[keys[i]] = number[i];</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        p_.construct( sendTo, comm);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        idx_=index;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">  217</a></span>&#160;     Vector <a class="code" href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">collect</a>( <span class="keyword">const</span> Vector&amp; values)<span class="keyword">const</span></div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        assert( values.size() == idx_.size());</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        Vector values_(values);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="comment">//nach PID ordnen</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">thrust::gather</a>( idx_.begin(), idx_.end(), values.begin(), values_.begin());</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="comment">//senden</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        Vector store = p_.scatter( values_);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> store;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">  236</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">send_and_reduce</a>( <span class="keyword">const</span> Vector&amp; gatherFrom, Vector&amp; values)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        Vector values_(values.size());</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">//sammeln</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        p_.gather( gatherFrom, values_);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="comment">//nach PID geordnete Werte wieder umsortieren</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="group__scatter.html#ga98595d0efc1a95030957a7117650e00a">thrust::scatter</a>( values_.begin(), values_.end(), idx_.begin(), values.begin());</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">  252</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">recv_size</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> p_.store_size();}</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">  259</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">send_size</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> p_.values_size();}</div>
-<div class="line"><a name="l00265"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">  265</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">size</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> p_.store_size();}</div>
-<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">  271</a></span>&#160;    MPI_Comm <a class="code" href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">communicator</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> p_.communicator();}</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    Index idx_;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    Collective p_;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}<span class="comment">//namespace dg</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//std::cout &lt;&lt; gatherFrom.size()&lt;&lt;&quot; &quot;&lt;&lt;store_size()&lt;&lt;std::endl;</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    assert( gatherFrom.size() == store_size() );</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    values.resize( values_size() );</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    MPI_Alltoallv( </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            const_cast&lt;double*&gt;(gatherFrom.data()), </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            const_cast&lt;int*&gt;(recvFrom_.data()),</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            const_cast&lt;int*&gt;(accR_.data()), MPI_DOUBLE, </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            values.data(), </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">const_cast&lt;</span><span class="keywordtype">int</span>*<span class="keyword">&gt;</span>(sendTo_.data()), </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            const_cast&lt;int*&gt;(accS_.data()), MPI_DOUBLE, comm_);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">//BijectiveComm ist der Spezialfall, dass jedes Element nur ein einziges Mal gebraucht wird. </span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"></span><span class="comment">//</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"></span><span class="keyword">template</span>&lt; <span class="keyword">class</span> Index, <span class="keyword">class</span> Vector&gt;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html">  172</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structdg_1_1_bijective_comm.html">BijectiveComm</a></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">  177</a></span>&#160;    <a class="code" href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">BijectiveComm</a>( ){ }</div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">  184</a></span>&#160;    <a class="code" href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">BijectiveComm</a>( thrust::host_vector&lt;int&gt; pids, MPI_Comm comm): idx_(pids)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordtype">int</span> rank, <a class="code" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">size</a>; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        MPI_Comm_size( comm, &amp;size);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        MPI_Comm_rank( comm, &amp;rank);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;pids.size(); i++)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            assert( 0 &lt;= pids[i] &amp;&amp; pids[i] &lt; size);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        thrust::host_vector&lt;int&gt; index(pids);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        thrust::sequence( index.begin(), index.end());</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        thrust::host_vector&lt;int&gt; <a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>( pids.size(), 1), keys(<a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>), number(<a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        thrust::stable_sort_by_key( pids.begin(), pids.end(), index.begin());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">typedef</span> thrust::host_vector&lt;int&gt;::iterator iterator;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        thrust::pair&lt; iterator, iterator&gt; new_end = </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            thrust::reduce_by_key( pids.begin(), pids.end(), <a class="code" href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">one</a>.begin(), </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                     keys.begin(), number.begin() ); </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordtype">unsigned</span> distance = thrust::distance( keys.begin(), new_end.first);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        thrust::host_vector&lt;int&gt; sendTo( size, 0 );</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> i=0; i&lt;distance; i++)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            sendTo[keys[i]] = number[i];</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        p_.construct( sendTo, comm);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        idx_=index;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">  218</a></span>&#160;     Vector <a class="code" href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">collect</a>( <span class="keyword">const</span> Vector&amp; values)<span class="keyword">const</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        assert( values.size() == idx_.size());</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        Vector values_(values);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="comment">//nach PID ordnen</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">thrust::gather</a>( idx_.begin(), idx_.end(), values.begin(), values_.begin());</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="comment">//senden</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        Vector store = p_.scatter( values_);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">return</span> store;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">  237</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">send_and_reduce</a>( <span class="keyword">const</span> Vector&amp; gatherFrom, Vector&amp; values)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        Vector values_(values.size());</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">//sammeln</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        p_.gather( gatherFrom, values_);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">//nach PID geordnete Werte wieder umsortieren</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="group__scatter.html#ga98595d0efc1a95030957a7117650e00a">thrust::scatter</a>( values_.begin(), values_.end(), idx_.begin(), values.begin());</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">  253</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">recv_size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> p_.store_size();}</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">  261</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">send_size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> p_.values_size();}</div>
+<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">  268</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">size</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> p_.store_size();}</div>
+<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">  275</a></span>&#160;    MPI_Comm <a class="code" href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">communicator</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> p_.communicator();}</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    Index idx_;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    Collective p_;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;};</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}<span class="comment">//namespace dg</span></div>
 <div class="ttc" id="group__scatter_html_ga98595d0efc1a95030957a7117650e00a"><div class="ttname"><a href="group__scatter.html#ga98595d0efc1a95030957a7117650e00a">dg::create::scatter</a></div><div class="ttdeci">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt; scatter(const thrust::host_vector&lt; int &gt; &amp;map)</div><div class="ttdoc">Create a permutation matrix from a permutation map. </div><div class="ttdef"><b>Definition:</b> xspacelib.cuh:139</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_ae292872aaa59341fd5ca8d254d81348c"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">dg::BijectiveComm::BijectiveComm</a></div><div class="ttdeci">BijectiveComm(thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)</div><div class="ttdoc">Construct from a given map. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:183</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_ae292872aaa59341fd5ca8d254d81348c"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c">dg::BijectiveComm::BijectiveComm</a></div><div class="ttdeci">BijectiveComm(thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)</div><div class="ttdoc">Construct from a given map. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:184</div></div>
 <div class="ttc" id="group__functions_html_ga5797166cdb9d26408ea629f742534fa7"><div class="ttname"><a href="group__functions.html#ga5797166cdb9d26408ea629f742534fa7">dg::one</a></div><div class="ttdeci">double one(double x)</div><div class="ttdoc"> </div><div class="ttdef"><b>Definition:</b> functions.h:148</div></div>
 <div class="ttc" id="group__scatter_html_ga852436a9d6fafcaabeafad11aa79c9b9"><div class="ttname"><a href="group__scatter.html#ga852436a9d6fafcaabeafad11aa79c9b9">dg::create::gather</a></div><div class="ttdeci">cusp::coo_matrix&lt; int, double, cusp::host_memory &gt; gather(const thrust::host_vector&lt; int &gt; &amp;map)</div><div class="ttdoc">Create a permutation matrix from a permutation map. </div><div class="ttdef"><b>Definition:</b> xspacelib.cuh:111</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_a8daf6ddd1ee2caec8da829c1579f7a66"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">dg::BijectiveComm::send_size</a></div><div class="ttdeci">unsigned send_size() const </div><div class="ttdoc">return # of elements the calling process has to send in a scatter process (or receive in the gather p...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:259</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html"><div class="ttname"><a href="structdg_1_1_bijective_comm.html">dg::BijectiveComm</a></div><div class="ttdoc">Struct that performs collective scatter and gather operations across processes on distributed vectors...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:171</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_a4f1fc5abfe953311e23917c56ca42776"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">dg::BijectiveComm::size</a></div><div class="ttdeci">unsigned size() const </div><div class="ttdoc">The size of the collected vector. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:265</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_abf21f1460acdf32e0e55e159c0aedb29"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">dg::BijectiveComm::recv_size</a></div><div class="ttdeci">unsigned recv_size() const </div><div class="ttdoc">compute total # of elements the calling process receives in the scatter process (or sends in the gath...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:252</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_aa9ff8caca0cc54b9b7fb7e2b60cf3f32"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">dg::BijectiveComm::communicator</a></div><div class="ttdeci">MPI_Comm communicator() const </div><div class="ttdoc">The internal communicator used. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:271</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_a79c477cdbe538bae5388eef43c0d8835"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">dg::BijectiveComm::send_and_reduce</a></div><div class="ttdeci">void send_and_reduce(const Vector &amp;gatherFrom, Vector &amp;values) const </div><div class="ttdoc">Gather data according to the map given in the constructor. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:236</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_ac99aa91a4eb223f327c305734c429291"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">dg::BijectiveComm::collect</a></div><div class="ttdeci">Vector collect(const Vector &amp;values) const </div><div class="ttdoc">Scatters data according to the map given in the Constructor. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:217</div></div>
-<div class="ttc" id="structdg_1_1_bijective_comm_html_a6ae489e5157a1aae7b07b4871d715ea4"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">dg::BijectiveComm::BijectiveComm</a></div><div class="ttdeci">BijectiveComm()</div><div class="ttdoc">Construct empty class. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:176</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_a8daf6ddd1ee2caec8da829c1579f7a66"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a8daf6ddd1ee2caec8da829c1579f7a66">dg::BijectiveComm::send_size</a></div><div class="ttdeci">unsigned send_size() const </div><div class="ttdoc">return # of elements the calling process has to send in a scatter process (or receive in the gather p...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:261</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html"><div class="ttname"><a href="structdg_1_1_bijective_comm.html">dg::BijectiveComm</a></div><div class="ttdoc">Struct that performs collective scatter and gather operations across processes on distributed vectors...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:172</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_a4f1fc5abfe953311e23917c56ca42776"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">dg::BijectiveComm::size</a></div><div class="ttdeci">unsigned size() const </div><div class="ttdoc">The size of the collected vector. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:268</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_abf21f1460acdf32e0e55e159c0aedb29"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#abf21f1460acdf32e0e55e159c0aedb29">dg::BijectiveComm::recv_size</a></div><div class="ttdeci">unsigned recv_size() const </div><div class="ttdoc">compute total # of elements the calling process receives in the scatter process (or sends in the gath...</div><div class="ttdef"><b>Definition:</b> mpi_collective.h:253</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_aa9ff8caca0cc54b9b7fb7e2b60cf3f32"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">dg::BijectiveComm::communicator</a></div><div class="ttdeci">MPI_Comm communicator() const </div><div class="ttdoc">The internal communicator used. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:275</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_a79c477cdbe538bae5388eef43c0d8835"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a79c477cdbe538bae5388eef43c0d8835">dg::BijectiveComm::send_and_reduce</a></div><div class="ttdeci">void send_and_reduce(const Vector &amp;gatherFrom, Vector &amp;values) const </div><div class="ttdoc">Gather data according to the map given in the constructor. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:237</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_ac99aa91a4eb223f327c305734c429291"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291">dg::BijectiveComm::collect</a></div><div class="ttdeci">Vector collect(const Vector &amp;values) const </div><div class="ttdoc">Scatters data according to the map given in the Constructor. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:218</div></div>
+<div class="ttc" id="structdg_1_1_bijective_comm_html_a6ae489e5157a1aae7b07b4871d715ea4"><div class="ttname"><a href="structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4">dg::BijectiveComm::BijectiveComm</a></div><div class="ttdeci">BijectiveComm()</div><div class="ttdoc">Construct empty class. </div><div class="ttdef"><b>Definition:</b> mpi_collective.h:177</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="dir_2534fabef37d53a9be799c6b35cbe4e0.html">backend</a></li><li class="navelem"><b>mpi_collective.h</b></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:52 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

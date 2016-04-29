@@ -27,10 +27,12 @@ var group__lowlevel =
     ] ],
     [ "EllSparseBlockMatDevice", "structdg_1_1_ell_sparse_block_mat_device.html", [
       [ "EllSparseBlockMatDevice", "structdg_1_1_ell_sparse_block_mat_device.html#a7132fbc02d15dc8bfde5d58a96295ef2", null ],
+      [ "display", "structdg_1_1_ell_sparse_block_mat_device.html#a20254b14899ca0bf40b0491199ba8e66", null ],
       [ "symv", "structdg_1_1_ell_sparse_block_mat_device.html#aa6db43231cbc58f45e0e7d04286cd6e5", null ]
     ] ],
     [ "CooSparseBlockMatDevice", "structdg_1_1_coo_sparse_block_mat_device.html", [
       [ "CooSparseBlockMatDevice", "structdg_1_1_coo_sparse_block_mat_device.html#a918cd621a90245fad84a912c8f7793e8", null ],
+      [ "display", "structdg_1_1_coo_sparse_block_mat_device.html#ad41fdced3b0b2131e4e1de75780c9186", null ],
       [ "symv", "structdg_1_1_coo_sparse_block_mat_device.html#a0b95d7e13275f831f248d8e7f1115a6f", null ]
     ] ],
     [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html", [
@@ -38,6 +40,7 @@ var group__lowlevel =
       [ "IVec", "structdg_1_1_ell_sparse_block_mat.html#a3cc028685806f9631dc92dcd0b65a8e3", null ],
       [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a5b81a380b40ebfa61365ffb3d7132de1", null ],
       [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#add89682c2699d8ec50bacc0645f259ba", null ],
+      [ "display", "structdg_1_1_ell_sparse_block_mat.html#a4b4287c2b702351f206a5b50fa55a980", null ],
       [ "symv", "structdg_1_1_ell_sparse_block_mat.html#a559f955c51790860f40e8c369e77d0d6", null ],
       [ "blocks_per_line", "structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd", null ],
       [ "cols_idx", "structdg_1_1_ell_sparse_block_mat.html#a484d89c21208ffc5e66e8b2590721934", null ],
@@ -55,6 +58,7 @@ var group__lowlevel =
       [ "CooSparseBlockMat", "structdg_1_1_coo_sparse_block_mat.html#a0e63a0450a983cc61022306de3827828", null ],
       [ "CooSparseBlockMat", "structdg_1_1_coo_sparse_block_mat.html#ad867c5393eb88429805ddcac2fa7e542", null ],
       [ "add_value", "structdg_1_1_coo_sparse_block_mat.html#aaa2a4f75d53eeab3b3f20dc58b4629d8", null ],
+      [ "display", "structdg_1_1_coo_sparse_block_mat.html#a715b6a0f6f1273742dd2483751cee260", null ],
       [ "symv", "structdg_1_1_coo_sparse_block_mat.html#ad03433070ba5ad8cd43f2e58b4582dca", null ],
       [ "cols_idx", "structdg_1_1_coo_sparse_block_mat.html#a60ca400fdae6e53a671a5943c06b70a8", null ],
       [ "data", "structdg_1_1_coo_sparse_block_mat.html#a71c77af87387f08630f0f9261f9a2b2a", null ],

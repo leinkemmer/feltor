@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -150,6 +150,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_box_integrator.html#af62b7dfac3e3f5f1e3ffd539b35b04a3">operator()</a> (double deltaPhi)</td></tr>
 <tr class="memdesc:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate from 0 to deltaPhi.  <a href="#af62b7dfac3e3f5f1e3ffd539b35b04a3">More...</a><br/></td></tr>
 <tr class="separator:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6462a5e77839d7029a57ea4e3e85aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea">BoxIntegrator</a> (Field field, const Grid &amp;g, double eps)</td></tr>
+<tr class="memdesc:ab6462a5e77839d7029a57ea4e3e85aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a given Field and Grid and accuracy.  <a href="#ab6462a5e77839d7029a57ea4e3e85aea">More...</a><br/></td></tr>
+<tr class="separator:ab6462a5e77839d7029a57ea4e3e85aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60c28cd2715399c28bbd578d32f311b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_box_integrator.html#ab60c28cd2715399c28bbd578d32f311b">set_coords</a> (const thrust::host_vector&lt; double &gt; &amp;coords)</td></tr>
+<tr class="memdesc:ab60c28cd2715399c28bbd578d32f311b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the starting coordinates for next field line integration.  <a href="#ab60c28cd2715399c28bbd578d32f311b">More...</a><br/></td></tr>
+<tr class="separator:ab60c28cd2715399c28bbd578d32f311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_box_integrator.html#af62b7dfac3e3f5f1e3ffd539b35b04a3">operator()</a> (double deltaPhi)</td></tr>
+<tr class="memdesc:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrate from 0 to deltaPhi.  <a href="#af62b7dfac3e3f5f1e3ffd539b35b04a3">More...</a><br/></td></tr>
+<tr class="separator:af62b7dfac3e3f5f1e3ffd539b35b04a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Field, class Grid&gt;<br/>
@@ -164,6 +173,58 @@ struct dg::BoxIntegrator&lt; Field, Grid &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab6462a5e77839d7029a57ea4e3e85aea"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Field, class Grid&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdg_1_1_box_integrator.html">dg::BoxIntegrator</a>&lt; Field, Grid &gt;::<a class="el" href="structdg_1_1_box_integrator.html">BoxIntegrator</a> </td>
+          <td>(</td>
+          <td class="paramtype">Field&#160;</td>
+          <td class="paramname"><em>field</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Grid &amp;&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>eps</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from a given Field and Grid and accuracy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">field</td><td>field must overload operator() with <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a> for three entries </td></tr>
+    <tr><td class="paramname">g</td><td>The 2d or 3d grid </td></tr>
+    <tr><td class="paramname">eps</td><td>the accuracy of the runge kutta integrator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab6462a5e77839d7029a57ea4e3e85aea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -252,6 +313,41 @@ template&lt;class Field, class Grid&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="af62b7dfac3e3f5f1e3ffd539b35b04a3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Field, class Grid&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="structdg_1_1_box_integrator.html">dg::BoxIntegrator</a>&lt; Field, Grid &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>deltaPhi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Integrate from 0 to deltaPhi. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaPhi</td><td>upper integration boundary</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if point is inside the box, -1 else </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ab60c28cd2715399c28bbd578d32f311b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -286,8 +382,43 @@ template&lt;class Field, class Grid&gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a class="anchor" id="ab60c28cd2715399c28bbd578d32f311b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Field, class Grid&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdg_1_1_box_integrator.html">dg::BoxIntegrator</a>&lt; Field, Grid &gt;::set_coords </td>
+          <td>(</td>
+          <td class="paramtype">const thrust::host_vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>coords</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the starting coordinates for next field line integration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coords</td><td>the new coords (must have size = 3) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/matthias/Projekte/feltor/inc/dg/backend/<a class="el" href="fieldaligned_8h_source.html">fieldaligned.h</a></li>
+<li>/home/matthias/Projekte/feltor/inc/dg/geometry/<a class="el" href="new__fieldaligned_8h_source.html">new_fieldaligned.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -295,7 +426,7 @@ template&lt;class Field, class Grid&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_box_integrator.html">BoxIntegrator</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

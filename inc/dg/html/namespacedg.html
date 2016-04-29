@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -490,16 +490,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a0af8204731ee6327dc4616a5980af2d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0af8204731ee6327dc4616a5980af2d5"></a>
+<tr class="memitem:ga0af8204731ee6327dc4616a5980af2d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0af8204731ee6327dc4616a5980af2d5"></a>
 typedef cusp::csr_matrix&lt; int, <br class="typebreak"/>
-double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#a0af8204731ee6327dc4616a5980af2d5">IHMatrix</a></td></tr>
-<tr class="memdesc:a0af8204731ee6327dc4616a5980af2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR host Matrix. <br/></td></tr>
-<tr class="separator:a0af8204731ee6327dc4616a5980af2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d122f4172a3e60105754f9419c0831f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0d122f4172a3e60105754f9419c0831f"></a>
-typedef cusp::csr_matrix&lt; int, <br class="typebreak"/>
-double, cusp::device_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#a0d122f4172a3e60105754f9419c0831f">IDMatrix</a></td></tr>
-<tr class="memdesc:a0d122f4172a3e60105754f9419c0831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR device Matrix. <br/></td></tr>
-<tr class="separator:a0d122f4172a3e60105754f9419c0831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+double, cusp::host_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">IHMatrix</a></td></tr>
+<tr class="memdesc:ga0af8204731ee6327dc4616a5980af2d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR host Matrix. <br/></td></tr>
+<tr class="separator:ga0af8204731ee6327dc4616a5980af2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d122f4172a3e60105754f9419c0831f"><td class="memItemLeft" align="right" valign="top">typedef cusp::csr_matrix&lt; int, <br class="typebreak"/>
+double, cusp::device_memory &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">IDMatrix</a></td></tr>
+<tr class="memdesc:ga0d122f4172a3e60105754f9419c0831f"><td class="mdescLeft">&#160;</td><td class="mdescRight">CSR device Matrix.  <a href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">More...</a><br/></td></tr>
+<tr class="separator:ga0d122f4172a3e60105754f9419c0831f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c9d22ed910faf66c483d261c4702f49"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2c9d22ed910faf66c483d261c4702f49"></a>
 typedef <a class="el" href="structdg_1_1_nearest_neighbor_comm.html">NearestNeighborComm</a><br class="typebreak"/>
 &lt; thrust::host_vector&lt; int &gt;<br class="typebreak"/>
@@ -565,38 +564,38 @@ typedef <a class="el" href="structdg_1_1_row_col_dist_mat.html">dg::RowColDistMa
 <a class="el" href="group__typedefs.html#ga9526a6506cb251beba7b95ecf21d1fa6">dg::NNCD</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gae6871db5bef0f34e855db9218cfc4b88">MDMatrix</a></td></tr>
 <tr class="memdesc:gae6871db5bef0f34e855db9218cfc4b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI Device Matrix for derivatives. <br/></td></tr>
 <tr class="separator:gae6871db5bef0f34e855db9218cfc4b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ddc03eb343687757cd1777a44fc1be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95ddc03eb343687757cd1777a44fc1be"></a>
+<tr class="memitem:ga95ddc03eb343687757cd1777a44fc1be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga95ddc03eb343687757cd1777a44fc1be"></a>
 typedef <a class="el" href="structdg_1_1_d_s.html">dg::DS</a><br class="typebreak"/>
 &lt; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacedg.html#a0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;<br class="typebreak"/>
-, <a class="el" href="group__typedefs.html#ga000e7f1be2b8bf629eb8865f9fea62b5">dg::DMatrix</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#a95ddc03eb343687757cd1777a44fc1be">DDS</a></td></tr>
-<tr class="memdesc:a95ddc03eb343687757cd1777a44fc1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">device <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type <br/></td></tr>
-<tr class="separator:a95ddc03eb343687757cd1777a44fc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfefd6b04678e0c404fda98c77df6006"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfefd6b04678e0c404fda98c77df6006"></a>
+&lt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;<br class="typebreak"/>
+, <a class="el" href="group__typedefs.html#ga000e7f1be2b8bf629eb8865f9fea62b5">dg::DMatrix</a>, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga95ddc03eb343687757cd1777a44fc1be">DDS</a></td></tr>
+<tr class="memdesc:ga95ddc03eb343687757cd1777a44fc1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">device <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type <br/></td></tr>
+<tr class="separator:ga95ddc03eb343687757cd1777a44fc1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfefd6b04678e0c404fda98c77df6006"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacfefd6b04678e0c404fda98c77df6006"></a>
 typedef <a class="el" href="structdg_1_1_d_s.html">dg::DS</a><br class="typebreak"/>
 &lt; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacedg.html#a0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;<br class="typebreak"/>
-, <a class="el" href="group__typedefs.html#ga03a560e5d834c343a9528e3a02cde3cd">dg::HMatrix</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#acfefd6b04678e0c404fda98c77df6006">HDS</a></td></tr>
-<tr class="memdesc:acfefd6b04678e0c404fda98c77df6006"><td class="mdescLeft">&#160;</td><td class="mdescRight">host <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type <br/></td></tr>
-<tr class="separator:acfefd6b04678e0c404fda98c77df6006"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06da979028329f4f8fad32798075c9e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06da979028329f4f8fad32798075c9e1"></a>
+&lt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;<br class="typebreak"/>
+, <a class="el" href="group__typedefs.html#ga03a560e5d834c343a9528e3a02cde3cd">dg::HMatrix</a>, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gacfefd6b04678e0c404fda98c77df6006">HDS</a></td></tr>
+<tr class="memdesc:gacfefd6b04678e0c404fda98c77df6006"><td class="mdescLeft">&#160;</td><td class="mdescRight">host <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type <br/></td></tr>
+<tr class="separator:gacfefd6b04678e0c404fda98c77df6006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06da979028329f4f8fad32798075c9e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga06da979028329f4f8fad32798075c9e1"></a>
 typedef <a class="el" href="structdg_1_1_d_s.html">dg::DS</a><br class="typebreak"/>
 &lt; <a class="el" href="structdg_1_1_m_p_i___field_aligned.html">dg::MPI_FieldAligned</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacedg.html#a0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, <br class="typebreak"/>
+&lt; <a class="el" href="group__typedefs.html#ga0d122f4172a3e60105754f9419c0831f">dg::IDMatrix</a>, <br class="typebreak"/>
 <a class="el" href="structdg_1_1_bijective_comm.html">dg::BijectiveComm</a>&lt; <a class="el" href="group__typedefs.html#ga178ba9447324aa98fc88cceadab913ad">dg::IDVec</a>, <br class="typebreak"/>
 <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;, <a class="el" href="group__typedefs.html#gac0ff05273efb141d62270f033c68bcb6">dg::DVec</a> &gt;<br class="typebreak"/>
-, <a class="el" href="group__typedefs.html#gae6871db5bef0f34e855db9218cfc4b88">dg::MDMatrix</a>, <a class="el" href="group__typedefs.html#gabbb1bf8faeb15e042d40fe642a14c6ff">dg::MDVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#a06da979028329f4f8fad32798075c9e1">MDDS</a></td></tr>
-<tr class="memdesc:a06da979028329f4f8fad32798075c9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI device <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type. <br/></td></tr>
-<tr class="separator:a06da979028329f4f8fad32798075c9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af92dfe215532f73f424f188ede0ee48b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af92dfe215532f73f424f188ede0ee48b"></a>
+, <a class="el" href="group__typedefs.html#gae6871db5bef0f34e855db9218cfc4b88">dg::MDMatrix</a>, <a class="el" href="group__typedefs.html#gabbb1bf8faeb15e042d40fe642a14c6ff">dg::MDVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#ga06da979028329f4f8fad32798075c9e1">MDDS</a></td></tr>
+<tr class="memdesc:ga06da979028329f4f8fad32798075c9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI device <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type. <br/></td></tr>
+<tr class="separator:ga06da979028329f4f8fad32798075c9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf92dfe215532f73f424f188ede0ee48b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf92dfe215532f73f424f188ede0ee48b"></a>
 typedef <a class="el" href="structdg_1_1_d_s.html">dg::DS</a><br class="typebreak"/>
 &lt; <a class="el" href="structdg_1_1_m_p_i___field_aligned.html">dg::MPI_FieldAligned</a><br class="typebreak"/>
-&lt; <a class="el" href="namespacedg.html#a0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, <br class="typebreak"/>
+&lt; <a class="el" href="group__typedefs.html#ga0af8204731ee6327dc4616a5980af2d5">dg::IHMatrix</a>, <br class="typebreak"/>
 <a class="el" href="structdg_1_1_bijective_comm.html">dg::BijectiveComm</a>&lt; <a class="el" href="group__typedefs.html#ga0c58467dabe6a60443ed1a2b44ca868c">dg::IHVec</a>, <br class="typebreak"/>
 <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;, <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &gt;<br class="typebreak"/>
-, <a class="el" href="group__typedefs.html#ga292fe9a8c6f2fb6532dc8d26405d051e">dg::MHMatrix</a>, <a class="el" href="group__typedefs.html#ga42b83dea4782a1ec37824551ecaff972">dg::MHVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html#af92dfe215532f73f424f188ede0ee48b">MHDS</a></td></tr>
-<tr class="memdesc:af92dfe215532f73f424f188ede0ee48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI host <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type. <br/></td></tr>
-<tr class="separator:af92dfe215532f73f424f188ede0ee48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+, <a class="el" href="group__typedefs.html#ga292fe9a8c6f2fb6532dc8d26405d051e">dg::MHMatrix</a>, <a class="el" href="group__typedefs.html#ga42b83dea4782a1ec37824551ecaff972">dg::MHVec</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__typedefs.html#gaf92dfe215532f73f424f188ede0ee48b">MHDS</a></td></tr>
+<tr class="memdesc:gaf92dfe215532f73f424f188ede0ee48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI host <a class="el" href="structdg_1_1_d_s.html" title="Class for the evaluation of a parallel derivative. ">DS</a> type. <br/></td></tr>
+<tr class="separator:gaf92dfe215532f73f424f188ede0ee48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -766,14 +765,26 @@ cusp::host_memory &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><
 <tr class="memitem:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">bessk1</a> (double x)</td></tr>
 <tr class="memdesc:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modified Bessel function \( K_1(x)\) for positive real x.  <a href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">More...</a><br/></td></tr>
 <tr class="separator:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa269808db678039605044e14fc849675"><td class="memTemplParams" colspan="2">template&lt;typename UnaryOp &gt; </td></tr>
-<tr class="memitem:gaa269808db678039605044e14fc849675"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utilities.html#gaa269808db678039605044e14fc849675">bisection1d</a> (UnaryOp &amp;funktion, double &amp;x_min, double &amp;x_max, const double aufloesung)</td></tr>
-<tr class="memdesc:gaa269808db678039605044e14fc849675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a root of a 1d function in given boundaries.  <a href="group__utilities.html#gaa269808db678039605044e14fc849675">More...</a><br/></td></tr>
-<tr class="separator:gaa269808db678039605044e14fc849675"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3fed90b31f8ce986ab2ada38eb1812d"><td class="memTemplParams" colspan="2">template&lt;class RHS , class Vector , unsigned s&gt; </td></tr>
+<tr class="memitem:gaf3fed90b31f8ce986ab2ada38eb1812d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithms.html#gaf3fed90b31f8ce986ab2ada38eb1812d">integrateRK</a> (RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</td></tr>
+<tr class="memdesc:gaf3fed90b31f8ce986ab2ada38eb1812d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using a s stage <a class="el" href="structdg_1_1_r_k.html" title="Struct for Runge-Kutta explicit time-integration . ">RK</a> scheme and a rudimentary stepsize-control.  <a href="group__algorithms.html#gaf3fed90b31f8ce986ab2ada38eb1812d">More...</a><br/></td></tr>
+<tr class="separator:gaf3fed90b31f8ce986ab2ada38eb1812d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga098434b3580fe8186441a1fd178214ef"><td class="memTemplParams" colspan="2">template&lt;class RHS , class Vector &gt; </td></tr>
 <tr class="memitem:ga098434b3580fe8186441a1fd178214ef"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">integrateRK4</a> (RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</td></tr>
 <tr class="memdesc:ga098434b3580fe8186441a1fd178214ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the differential equation using RK4 and a rudimentary stepsize-control.  <a href="group__algorithms.html#ga098434b3580fe8186441a1fd178214ef">More...</a><br/></td></tr>
 <tr class="separator:ga098434b3580fe8186441a1fd178214ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad69398e7e0b23a1ecddd79760c6abf"><td class="memTemplParams" colspan="2"><a class="anchor" id="a4ad69398e7e0b23a1ecddd79760c6abf"></a>
+template&lt;class RHS , class Vector &gt; </td></tr>
+<tr class="memitem:a4ad69398e7e0b23a1ecddd79760c6abf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>integrateRK6</b> (RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</td></tr>
+<tr class="separator:a4ad69398e7e0b23a1ecddd79760c6abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474f0dd5c75000f92259d444a01c5af6"><td class="memTemplParams" colspan="2"><a class="anchor" id="a474f0dd5c75000f92259d444a01c5af6"></a>
+template&lt;class RHS , class Vector &gt; </td></tr>
+<tr class="memitem:a474f0dd5c75000f92259d444a01c5af6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>integrateRK17</b> (RHS &amp;rhs, const Vector &amp;begin, Vector &amp;end, double T_max, double eps_abs)</td></tr>
+<tr class="separator:a474f0dd5c75000f92259d444a01c5af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa269808db678039605044e14fc849675"><td class="memTemplParams" colspan="2">template&lt;typename UnaryOp &gt; </td></tr>
+<tr class="memitem:gaa269808db678039605044e14fc849675"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__utilities.html#gaa269808db678039605044e14fc849675">bisection1d</a> (UnaryOp &amp;funktion, double &amp;x_min, double &amp;x_max, const double aufloesung)</td></tr>
+<tr class="memdesc:gaa269808db678039605044e14fc849675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a root of a 1d function in given boundaries.  <a href="group__utilities.html#gaa269808db678039605044e14fc849675">More...</a><br/></td></tr>
+<tr class="separator:gaa269808db678039605044e14fc849675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is the namespace for all functions and classes defined and used by the discontinuous galerkin solvers. </p>
@@ -863,7 +874,7 @@ template&lt;class Field , class Grid &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

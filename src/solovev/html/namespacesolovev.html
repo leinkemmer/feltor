@@ -245,7 +245,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html">DeltaFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delta function for poloidal flux \( B_Z\) </p>
 <p class="formulaDsp">
-\[ (\nabla \psi_p)^2\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
+\[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
 <p>.  <a href="structsolovev_1_1_delta_function.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,14 +255,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_safety_factor.html">SafetyFactor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for the evaluation of the safety factor q </p>
 <p class="formulaDsp">
-\[ q(\psi_0) = \frac{1}{2\pi} \int dV (\nabla\psi_p)^2 \delta(\psi_p-\psi_0) \alpha( R,Z) \]
+\[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
 <p>.  <a href="structsolovev_1_1_safety_factor.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_alpha.html">Alpha</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global safety factor </p>
 <p class="formulaDsp">
-\[ \alpha(R,Z) = \frac{R_0I_{pol}(R,Z)}{R^2(\nabla\psi_p)^2} \]
+\[ \alpha(R,Z) = \frac{|B^\varphi|}{R|B^\eta|} = \frac{I_{pol}(R,Z)}{R|\nabla\psi_p|} \]
 </p>
 <p>.  <a href="structsolovev_1_1_alpha.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -359,7 +359,7 @@ Classes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for Solovev by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for Solovev by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

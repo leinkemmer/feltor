@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">2.0.1</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -207,6 +207,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4aad097820c4c6e168cb796be8d0e1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___grid2d.html#aa4aad097820c4c6e168cb796be8d0e1d">global</a> () const </td></tr>
 <tr class="memdesc:aa4aad097820c4c6e168cb796be8d0e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a grid global for the calling process.  <a href="#aa4aad097820c4c6e168cb796be8d0e1d">More...</a><br/></td></tr>
 <tr class="separator:aa4aad097820c4c6e168cb796be8d0e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaba1c12059286d0af209b5589b1a8a3a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_p_i___grid2d.html#aaba1c12059286d0af209b5589b1a8a3a">pidOf</a> (double x, double y) const </td></tr>
+<tr class="memdesc:aaba1c12059286d0af209b5589b1a8a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pid of the process that holds the local grid surrounding the given point.  <a href="#aaba1c12059286d0af209b5589b1a8a3a">More...</a><br/></td></tr>
+<tr class="separator:aaba1c12059286d0af209b5589b1a8a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>2D MPI Grid class </p>
@@ -772,6 +775,42 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaba1c12059286d0af209b5589b1a8a3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dg::MPI_Grid2d::pidOf </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the pid of the process that holds the local grid surrounding the given point. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>X-coord </td></tr>
+    <tr><td class="paramname">y</td><td>Y-coord</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pid of a process, or -1 if non of the grids matches </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a46e9b455f105f9c77cac0053edfef570"></a>
 <div class="memitem">
 <div class="memproto">
@@ -938,7 +977,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a></li>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:17 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:53 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

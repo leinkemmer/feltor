@@ -49,7 +49,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">FELTOR
-   &#160;<span id="projectnumber">2.0</span>
+   &#160;<span id="projectnumber">2.1</span>
    </div>
    <div id="projectbrief">Full F electrostatic code in toroidal geometry</div>
   </td>
@@ -132,14 +132,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 <div class="contents">
 &#160;<ul>
-<li>damping()
-: <a class="el" href="structeule_1_1_rolkar.html#abc8ae8dfa3f36f34f2e060982265f910">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
-</li>
 <li>display()
 : <a class="el" href="structeule_1_1_parameters.html#af0b2f8a75b671e93d993c80358c08fc1">eule::Parameters</a>
 </li>
 <li>ds()
-: <a class="el" href="structeule_1_1_feltor.html#a8e9f1a6e501b96472ffdddb594d40386">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
+: <a class="el" href="structeule_1_1_feltor.html#a215ca0546a7651bed66a93881391171c">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>energy()
 : <a class="el" href="structeule_1_1_feltor.html#ab32546522d9755e37e0bd2ad015ae6e0">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
@@ -153,11 +150,14 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>Feltor()
 : <a class="el" href="structeule_1_1_feltor.html#aa52ec88bca05fa9a055584b896e5c245">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
+<li>fieldalignment()
+: <a class="el" href="structeule_1_1_feltor.html#acdc0e918a23c2aef1fbfb7145dfb404b">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
+</li>
 <li>initializene()
 : <a class="el" href="structeule_1_1_feltor.html#a264eaa1ba423819b029d4df84876142c">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>laplacianM()
-: <a class="el" href="structeule_1_1_rolkar.html#aace6eadd6e9a64324c7627f7cbe48181">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
+: <a class="el" href="structeule_1_1_rolkar.html#a6c344eb1dbfa92617265986b4261f547">eule::Rolkar&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>mass()
 : <a class="el" href="structeule_1_1_feltor.html#afeb7af6b6c10b5458c6c6f53bfe6f032">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>operator()()
 : <a class="el" href="structeule_1_1_feltor.html#adfa2b8b4f21b723b69fbe1a0f3973df5">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
-, <a class="el" href="structeule_1_1_rolkar.html#a669083c029fb988d1983700f2cde724f">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
+, <a class="el" href="structeule_1_1_rolkar.html#a86ac926787f4d445a46a9b082b772527">eule::Rolkar&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>Parameters()
 : <a class="el" href="structeule_1_1_parameters.html#a3e8addf365fb4c9f660e40ab4bdf04d4">eule::Parameters</a>
@@ -176,13 +176,13 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="structeule_1_1_feltor.html#adbf5a1361fac56a290f1b9efa3fa7f75">eule::Feltor&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>precond()
-: <a class="el" href="structeule_1_1_rolkar.html#a60b8c943fa0479ba1b7bbccedde05e40">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
+: <a class="el" href="structeule_1_1_rolkar.html#a2944f205e62f9b0342cc609ab7c6469f">eule::Rolkar&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>Rolkar()
-: <a class="el" href="structeule_1_1_rolkar.html#a1bf6d234df0f3889790dae24ec209b7a">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
+: <a class="el" href="structeule_1_1_rolkar.html#ab58111bcab213d2f048e53254860a64b">eule::Rolkar&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 <li>weights()
-: <a class="el" href="structeule_1_1_rolkar.html#a2a54abc4ebf066afe5d514bea7a4aab5">eule::Rolkar&lt; Matrix, container, Preconditioner &gt;</a>
+: <a class="el" href="structeule_1_1_rolkar.html#a2cb677b1b0c6ff2ca8e2ecbd984813b0">eule::Rolkar&lt; DS, Matrix, container, Preconditioner &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Sep 4 2015 16:33:18 for FELTOR by
+    <li class="footer">Generated on Fri Apr 29 2016 16:42:54 for FELTOR by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
