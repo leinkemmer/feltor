@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['ringgrid3d',['RingGrid3d',['../structboozer_1_1_ring_grid3d.html#a029f0744b14e9c7af4694a3c01275aff',1,'boozer::RingGrid3d::RingGrid3d()'],['../structconformal_1_1_ring_grid3d.html#abad3550979c3b83e717184599fd9f468',1,'conformal::RingGrid3d::RingGrid3d()'],['../structequalarc_1_1_ring_grid3d.html#a2cdad3c9b869ea3e8fa3f9da1550be16',1,'equalarc::RingGrid3d::RingGrid3d()'],['../structflux_1_1_ring_grid3d.html#a9c1f5164993f3355cdeb688fee776988',1,'flux::RingGrid3d::RingGrid3d()'],['../structflux2_1_1_ring_grid3d.html#a2a55fe71641baa198ba43b113a38eea0',1,'flux2::RingGrid3d::RingGrid3d()'],['../structhamada_1_1_ring_grid3d.html#a932eaa2494b06e3cae0298cfb5705895',1,'hamada::RingGrid3d::RingGrid3d()'],['../structorthogonal_1_1_ring_grid3d.html#ae4f8003df57b629cee13f26dbdcac281',1,'orthogonal::RingGrid3d::RingGrid3d()']]]
-];
