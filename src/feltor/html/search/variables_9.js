@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['maxout',['maxout',['../structeule_1_1_parameters.html#a34fa9ede7f45572a2b31a2d76791c882',1,'eule::Parameters']]],
-  ['mode',['mode',['../structeule_1_1_parameters.html#a0cb4c3216067ac83c8b80c8896103e22',1,'eule::Parameters']]],
-  ['mu',['mu',['../structeule_1_1_parameters.html#abf8b084d1f6be3c7c2696d26d86c0350',1,'eule::Parameters']]]
+  ['left',['left',['../../../../inc/dg/html/structdg_1_1_coo_sparse_block_mat.html#ac94159acb3abc9e701e224df86da89a6',1,'dg::CooSparseBlockMat::left()'],['../../../../inc/dg/html/structdg_1_1_ell_sparse_block_mat.html#aa7716d8de0dc65abcccbea960ebaef17',1,'dg::EllSparseBlockMat::left()']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data',['data',['../structdg_1_1_ell_sparse_block_mat.html#a94a18d9ddd1c6b67bef75c846bcb7c6b',1,'dg::EllSparseBlockMat::data()'],['../structdg_1_1_coo_sparse_block_mat.html#a71c77af87387f08630f0f9261f9a2b2a',1,'dg::CooSparseBlockMat::data()']]],
-  ['data_5fidx',['data_idx',['../structdg_1_1_ell_sparse_block_mat.html#a74ee42f6499e0d1cf6ef2ff17b9355bc',1,'dg::EllSparseBlockMat::data_idx()'],['../structdg_1_1_coo_sparse_block_mat.html#a6b127f4f8248a6d93ae4798a87ba64d3',1,'dg::CooSparseBlockMat::data_idx()']]]
+  ['data',['data',['../structdg_1_1_ell_sparse_block_mat.html#a56beeefe5a17057cfa7895f3ad532a19',1,'dg::EllSparseBlockMat::data()'],['../structdg_1_1_coo_sparse_block_mat.html#a270f8fb63a914c19b7053beeb03b7432',1,'dg::CooSparseBlockMat::data()']]],
+  ['data_5fidx',['data_idx',['../structdg_1_1_ell_sparse_block_mat.html#a38da1061ca4dc2267709979ed5dc6dbd',1,'dg::EllSparseBlockMat::data_idx()'],['../structdg_1_1_coo_sparse_block_mat.html#aca232359fb1e449032f48dfa9f3c9f66',1,'dg::CooSparseBlockMat::data_idx()']]]
 ];

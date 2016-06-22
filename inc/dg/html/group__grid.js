@@ -1,50 +1,61 @@
 var group__grid =
 [
     [ "Grid1d", "structdg_1_1_grid1d.html", [
+      [ "memory_category", "structdg_1_1_grid1d.html#a7cc6726d88373c1b80d0b679a771887e", null ],
       [ "Grid1d", "structdg_1_1_grid1d.html#a9506a5da19e42515e17fb3545289ea07", null ],
       [ "bcx", "structdg_1_1_grid1d.html#a981853f0dbaadec4ff479ed6c64bce6f", null ],
+      [ "contains", "structdg_1_1_grid1d.html#aa7610345a07e407992f75b2477d6cf86", null ],
+      [ "display", "structdg_1_1_grid1d.html#a37485d9bb6730b307e5d4e9b6bb2fc50", null ],
       [ "dlt", "structdg_1_1_grid1d.html#a830d6989f3174100d651914799b7df11", null ],
       [ "h", "structdg_1_1_grid1d.html#aeca28f16b53095df3fb10f89bd54ed07", null ],
       [ "lx", "structdg_1_1_grid1d.html#a1ff5a54216d951536b6a4bf086c44155", null ],
       [ "N", "structdg_1_1_grid1d.html#a6f392842848f99dd098c7ffc2888ba8f", null ],
       [ "n", "structdg_1_1_grid1d.html#a0f0e5e803667d75973a388dc4e0b4987", null ],
+      [ "shift_topologic", "structdg_1_1_grid1d.html#aef58234da4500df6d237b4c3f286c7f3", null ],
       [ "size", "structdg_1_1_grid1d.html#a35d9e3b6599efa6cf6dbc22eb6cb5dc6", null ],
       [ "x0", "structdg_1_1_grid1d.html#ae1a24f9bce8adc436e3b3245e5096b12", null ],
       [ "x1", "structdg_1_1_grid1d.html#a898b47303f81eba4dae18ddf9b11a543", null ]
     ] ],
     [ "Grid2d", "structdg_1_1_grid2d.html", [
+      [ "memory_category", "structdg_1_1_grid2d.html#a61f019ea75f9e8a934e46b9860f3ede7", null ],
       [ "Grid2d", "structdg_1_1_grid2d.html#a09ec1cf6cc3c65ea65d58365a2ddda71", null ],
       [ "Grid2d", "structdg_1_1_grid2d.html#afc7ddf5140c0eb12f3c56e58d4aa2dfc", null ],
       [ "bcx", "structdg_1_1_grid2d.html#aa4ea333ffb8124870349dfb80e99f720", null ],
       [ "bcy", "structdg_1_1_grid2d.html#a33410939468778faec38082ed09a20d6", null ],
+      [ "contains", "structdg_1_1_grid2d.html#ab00607b3c5278242e97a61cf4ccb2363", null ],
       [ "display", "structdg_1_1_grid2d.html#a8a06934408aa60a8f1f039697c6f04ac", null ],
       [ "dlt", "structdg_1_1_grid2d.html#ac91268f67a6382bbf64efb15c7b38806", null ],
       [ "hx", "structdg_1_1_grid2d.html#ac597cec9bb9efe74eac5e896276bf758", null ],
       [ "hy", "structdg_1_1_grid2d.html#ab2f9c2c4701336768a43f4c93766cb5b", null ],
+      [ "init_X_boundaries", "structdg_1_1_grid2d.html#ac3d18ea454481f7c937c61f3013ee07f", null ],
       [ "local_grid", "structdg_1_1_grid2d.html#a20f9717445ddf76630ead76db45db322", null ],
       [ "lx", "structdg_1_1_grid2d.html#aac8ef2dc4469d9735f19ef5d5a8ffd12", null ],
       [ "ly", "structdg_1_1_grid2d.html#a5c1d956bfa052d1916174b643a25857a", null ],
       [ "n", "structdg_1_1_grid2d.html#a548c605351b7f3a47b6d833da6369e48", null ],
       [ "Nx", "structdg_1_1_grid2d.html#ac738be121a03aba1e5018b97cb3ccb51", null ],
       [ "Ny", "structdg_1_1_grid2d.html#a33786350160783070fb359d36f7f97c1", null ],
+      [ "shift_topologic", "structdg_1_1_grid2d.html#a0f2b1a7e69d5a5e141e057965aafc331", null ],
       [ "size", "structdg_1_1_grid2d.html#a3cacac7ed3a9f56f33d6e711a4fa26dd", null ],
-      [ "system", "structdg_1_1_grid2d.html#a15f8056a1dfa1a806f60c22e71b0f802", null ],
       [ "x0", "structdg_1_1_grid2d.html#aa0882e444de4fcca3a34ff9f308fa129", null ],
       [ "x1", "structdg_1_1_grid2d.html#a500760450beb756e4c22f7715b2628b5", null ],
       [ "y0", "structdg_1_1_grid2d.html#a6e3b11b1ac3e555eceb134e5a9e8b49b", null ],
-      [ "y1", "structdg_1_1_grid2d.html#a15a6efc9d4bb3543089b826b8eb37ec3", null ]
+      [ "y1", "structdg_1_1_grid2d.html#a15a6efc9d4bb3543089b826b8eb37ec3", null ],
+      [ "MPI_Grid2d", "structdg_1_1_grid2d.html#a46fa445828a61d6f34f2f28df53abf7a", null ]
     ] ],
     [ "Grid3d", "structdg_1_1_grid3d.html", [
-      [ "Grid3d", "structdg_1_1_grid3d.html#a10f8747165a20e84ca9c27e22bf5ab42", null ],
+      [ "memory_category", "structdg_1_1_grid3d.html#a100685cc0555c1e9f081e31367a1c53b", null ],
+      [ "Grid3d", "structdg_1_1_grid3d.html#ae2968b6a6c637c4c9673204faa978549", null ],
       [ "Grid3d", "structdg_1_1_grid3d.html#ac1a1ece4fef56fdb1a0993f86ec2d533", null ],
       [ "bcx", "structdg_1_1_grid3d.html#a8b44835e84ef8f90eca0646b58ab39fa", null ],
       [ "bcy", "structdg_1_1_grid3d.html#ac3b2931214a2969efc8836473f487e01", null ],
       [ "bcz", "structdg_1_1_grid3d.html#a60a76d1e0f0dd8c48427c321b95dbbd0", null ],
+      [ "contains", "structdg_1_1_grid3d.html#abd52e901dd79055eb8d55f36733b3be5", null ],
       [ "display", "structdg_1_1_grid3d.html#a677be1af279858496af03e2d091ff982", null ],
       [ "dlt", "structdg_1_1_grid3d.html#aa010828d78d6d9fd41d7a1ed0e248409", null ],
       [ "hx", "structdg_1_1_grid3d.html#a4dbf5b27ccde3f6d8b7e26c4934e3324", null ],
       [ "hy", "structdg_1_1_grid3d.html#a314b167a7bd9435d6a76cfd817d255c5", null ],
       [ "hz", "structdg_1_1_grid3d.html#a4347a5bc892d7e7f9d3f5d1c4f0b27f5", null ],
+      [ "init_X_boundaries", "structdg_1_1_grid3d.html#a5df2cdf96ad2c595680bef7c174b3345", null ],
       [ "lx", "structdg_1_1_grid3d.html#a0af34f4247a3b91d28f09664eb15ad69", null ],
       [ "ly", "structdg_1_1_grid3d.html#a3eb421c632723438c688c233d91b6b33", null ],
       [ "lz", "structdg_1_1_grid3d.html#a2ec52fad9a98db080733806057d13a57", null ],
@@ -52,16 +63,18 @@ var group__grid =
       [ "Nx", "structdg_1_1_grid3d.html#aeff58f8eb7fba9a2711fe2db9ced3855", null ],
       [ "Ny", "structdg_1_1_grid3d.html#a86f554b35fbf463d7330139c453a9571", null ],
       [ "Nz", "structdg_1_1_grid3d.html#a7bcc72531fedb001db8d7aefe1948e20", null ],
+      [ "shift_topologic", "structdg_1_1_grid3d.html#a9a8de01b0eb962bac4e9de540bfb7aab", null ],
       [ "size", "structdg_1_1_grid3d.html#a03f150ccbd6fd03b3d104f03cbff4090", null ],
-      [ "system", "structdg_1_1_grid3d.html#a325fdf7e3516607945c5f8362109084a", null ],
       [ "x0", "structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733", null ],
       [ "x1", "structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f", null ],
       [ "y0", "structdg_1_1_grid3d.html#a381324aab18891f6f7e8679f8504ee32", null ],
       [ "y1", "structdg_1_1_grid3d.html#a9a9a52498083df87cb1429920966edbb", null ],
       [ "z0", "structdg_1_1_grid3d.html#a97ee6911496deaee8ae9044cc1050ff4", null ],
-      [ "z1", "structdg_1_1_grid3d.html#ad96ac714e4a60150dcb98fb1d30e06c2", null ]
+      [ "z1", "structdg_1_1_grid3d.html#ad96ac714e4a60150dcb98fb1d30e06c2", null ],
+      [ "MPI_Grid3d", "structdg_1_1_grid3d.html#a7f14b7a577012d196c9fe8b5e9f5d967", null ]
     ] ],
     [ "MPI_Grid2d", "structdg_1_1_m_p_i___grid2d.html", [
+      [ "memory_category", "structdg_1_1_m_p_i___grid2d.html#a52f491c128cd14a07909467f3124f2e8", null ],
       [ "MPI_Grid2d", "structdg_1_1_m_p_i___grid2d.html#ab604a2d1ddc989f80c3613fdd91a6fca", null ],
       [ "MPI_Grid2d", "structdg_1_1_m_p_i___grid2d.html#a291e2bcbc68eac6e612cf479f1aff1ee", null ],
       [ "bcx", "structdg_1_1_m_p_i___grid2d.html#acc0d7cbd6a29ab2bc14adabf4955c136", null ],
@@ -72,6 +85,7 @@ var group__grid =
       [ "global", "structdg_1_1_m_p_i___grid2d.html#aa4aad097820c4c6e168cb796be8d0e1d", null ],
       [ "hx", "structdg_1_1_m_p_i___grid2d.html#a1d37d2a3257f900b0961fb75b7bd83d3", null ],
       [ "hy", "structdg_1_1_m_p_i___grid2d.html#a30057baea271176a7ce3ee831354556e", null ],
+      [ "init_X_boundaries", "structdg_1_1_m_p_i___grid2d.html#a00d2182183d9162291c09079215f72f3", null ],
       [ "local", "structdg_1_1_m_p_i___grid2d.html#a242a395699f88d4dec0f6f59339a481b", null ],
       [ "lx", "structdg_1_1_m_p_i___grid2d.html#aac1419a0a682f5ae1f7f7024d8176ebd", null ],
       [ "ly", "structdg_1_1_m_p_i___grid2d.html#aee03cf6beccf5f847a8262bc4f79b4f4", null ],
@@ -80,15 +94,15 @@ var group__grid =
       [ "Ny", "structdg_1_1_m_p_i___grid2d.html#a94e71a0818a5966b6c13dce05702598e", null ],
       [ "pidOf", "structdg_1_1_m_p_i___grid2d.html#aaba1c12059286d0af209b5589b1a8a3a", null ],
       [ "size", "structdg_1_1_m_p_i___grid2d.html#a46e9b455f105f9c77cac0053edfef570", null ],
-      [ "system", "structdg_1_1_m_p_i___grid2d.html#a4dd4eac1e8db3a88981bcd3866f46e3f", null ],
       [ "x0", "structdg_1_1_m_p_i___grid2d.html#adf6f915b4a4131d47fb4ef7e63cee42d", null ],
       [ "x1", "structdg_1_1_m_p_i___grid2d.html#a6cc45ad00895a7e7381f448b926bdd9c", null ],
       [ "y0", "structdg_1_1_m_p_i___grid2d.html#af20c7c7d51ed543794943f7cc3c3fd07", null ],
       [ "y1", "structdg_1_1_m_p_i___grid2d.html#a9b9e1f6d68fe6813b703d8bac72f53f1", null ]
     ] ],
     [ "MPI_Grid3d", "structdg_1_1_m_p_i___grid3d.html", [
+      [ "memory_category", "structdg_1_1_m_p_i___grid3d.html#afbae1210667d24ceebb47d2da653b892", null ],
       [ "MPI_Grid3d", "structdg_1_1_m_p_i___grid3d.html#aab38f1fd2db872c7df729a20b832ea52", null ],
-      [ "MPI_Grid3d", "structdg_1_1_m_p_i___grid3d.html#ac427b65ffaefc40971bb0c9caed3023b", null ],
+      [ "MPI_Grid3d", "structdg_1_1_m_p_i___grid3d.html#ac0ef608306a6338fe73f6030b90248e1", null ],
       [ "bcx", "structdg_1_1_m_p_i___grid3d.html#afaa0772fd2698d8d9340d82aaf605bf2", null ],
       [ "bcy", "structdg_1_1_m_p_i___grid3d.html#a309df1ff0ad76f45b027eca3937bb30d", null ],
       [ "bcz", "structdg_1_1_m_p_i___grid3d.html#a6cfa2224db952b6c73e58f15caf9ec5e", null ],
@@ -99,6 +113,7 @@ var group__grid =
       [ "hx", "structdg_1_1_m_p_i___grid3d.html#a0101d904d01c5b76b3e709eb4d67e86f", null ],
       [ "hy", "structdg_1_1_m_p_i___grid3d.html#a4faf508bff4e5753b35f5a820853e634", null ],
       [ "hz", "structdg_1_1_m_p_i___grid3d.html#aa6b8ca65d12737bf1c771c9dce353b1f", null ],
+      [ "init_X_boundaries", "structdg_1_1_m_p_i___grid3d.html#af6c19d2c4fd0fd589f2738e392e94171", null ],
       [ "local", "structdg_1_1_m_p_i___grid3d.html#a84647e9557a34cffe5e2ed9c551f5cea", null ],
       [ "lx", "structdg_1_1_m_p_i___grid3d.html#a290793ce447757091535485e8f05f80a", null ],
       [ "ly", "structdg_1_1_m_p_i___grid3d.html#a4b83164a9657890ccf955316d03b2814", null ],
@@ -109,12 +124,55 @@ var group__grid =
       [ "Nz", "structdg_1_1_m_p_i___grid3d.html#a9b38793942147d0d2b42a6a0d470b644", null ],
       [ "pidOf", "structdg_1_1_m_p_i___grid3d.html#a9a1618fd94e01503d23aa520ccb57640", null ],
       [ "size", "structdg_1_1_m_p_i___grid3d.html#a5d29467e83e0bb72fd9d49de20dbcc03", null ],
-      [ "system", "structdg_1_1_m_p_i___grid3d.html#a41f5d2f0117003022993c61a1e05105c", null ],
       [ "x0", "structdg_1_1_m_p_i___grid3d.html#a11a432c2a322b77f4c2a251307475953", null ],
       [ "x1", "structdg_1_1_m_p_i___grid3d.html#ac5ce37896bd00b3a66645493e9e823e8", null ],
       [ "y0", "structdg_1_1_m_p_i___grid3d.html#a738984fc9bfd3e4248b45c696c326e46", null ],
       [ "y1", "structdg_1_1_m_p_i___grid3d.html#abe60607416a4bc9bac516244e3a40b45", null ],
       [ "z0", "structdg_1_1_m_p_i___grid3d.html#a9bcbfe34691a774fcfc71d82d6c355ef", null ],
       [ "z1", "structdg_1_1_m_p_i___grid3d.html#a24ad74d1ad28b21d8e459980faf48dd5", null ]
+    ] ],
+    [ "CartesianGrid1d", "structdg_1_1_cartesian_grid1d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid1d.html#ac410bb98d7496745d04ac58a1551afb3", null ],
+      [ "CartesianGrid1d", "structdg_1_1_cartesian_grid1d.html#a6a2130bee088688684ab83bd86dd777b", null ],
+      [ "CartesianGrid1d", "structdg_1_1_cartesian_grid1d.html#af7db9abda5894cb88b380f6139fb9d86", null ]
+    ] ],
+    [ "CartesianGrid2d", "structdg_1_1_cartesian_grid2d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid2d.html#ac094b49e8def76a321a4e924a8c10147", null ],
+      [ "CartesianGrid2d", "structdg_1_1_cartesian_grid2d.html#a5d1079516ec0bc3ee9ecd1f70b9811aa", null ],
+      [ "CartesianGrid2d", "structdg_1_1_cartesian_grid2d.html#a9bfb9eb4fb91ff0cb755ef5531c15f8e", null ]
+    ] ],
+    [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_grid3d.html#ab15b503dab256214340d878d7fbd0374", null ],
+      [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html#a285ed505d9b7d483d7e382a03ce6a5c2", null ],
+      [ "CartesianGrid3d", "structdg_1_1_cartesian_grid3d.html#a7ff8beb83f591bc311cdb6c291d0ed4a", null ]
+    ] ],
+    [ "CylindricalGrid", "structdg_1_1_cylindrical_grid.html", [
+      [ "metric_category", "structdg_1_1_cylindrical_grid.html#a5e710468585f369f320445944d496d02", null ],
+      [ "perpendicular_grid", "structdg_1_1_cylindrical_grid.html#a17f91ab9d716a5e6894ea5baa49bcfad", null ],
+      [ "CylindricalGrid", "structdg_1_1_cylindrical_grid.html#ad59c19090fb9512276c4fda6a38dd1cc", null ],
+      [ "CylindricalGrid", "structdg_1_1_cylindrical_grid.html#acdc9d71d2ddc8ce40b2698bc3c8a6f42", null ],
+      [ "perp_grid", "structdg_1_1_cylindrical_grid.html#abbf7677e354c9df5b5bd20f3bb8dd5e0", null ],
+      [ "vol", "structdg_1_1_cylindrical_grid.html#a6fde18c7bd70a0d1e89892c7e5d15484", null ]
+    ] ],
+    [ "CartesianMPIGrid2d", "structdg_1_1_cartesian_m_p_i_grid2d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_m_p_i_grid2d.html#aedb9e8a2b8e9685a88511538d01d8687", null ],
+      [ "CartesianMPIGrid2d", "structdg_1_1_cartesian_m_p_i_grid2d.html#a39dccb804ecb3f832aad50a4205113b3", null ],
+      [ "CartesianMPIGrid2d", "structdg_1_1_cartesian_m_p_i_grid2d.html#a1994e6c122b6bca90e761a6370d62ebe", null ],
+      [ "CartesianMPIGrid2d", "structdg_1_1_cartesian_m_p_i_grid2d.html#a9cf306ec4223df288d6c62c0621bd47a", null ]
+    ] ],
+    [ "CartesianMPIGrid3d", "structdg_1_1_cartesian_m_p_i_grid3d.html", [
+      [ "metric_category", "structdg_1_1_cartesian_m_p_i_grid3d.html#af8906c4bf1d59f68e049cc083072d9e5", null ],
+      [ "CartesianMPIGrid3d", "structdg_1_1_cartesian_m_p_i_grid3d.html#ace88140cef7426b02309f20164c37e10", null ],
+      [ "CartesianMPIGrid3d", "structdg_1_1_cartesian_m_p_i_grid3d.html#a4f2a9423f68fb44621ed28c7f5c5eff3", null ],
+      [ "CartesianMPIGrid3d", "structdg_1_1_cartesian_m_p_i_grid3d.html#aa42743bed797bef0f432460eaf288438", null ]
+    ] ],
+    [ "CylindricalMPIGrid", "structdg_1_1_cylindrical_m_p_i_grid.html", [
+      [ "metric_category", "structdg_1_1_cylindrical_m_p_i_grid.html#a9961dc5b3a3c26343934ee1c93ed9cc3", null ],
+      [ "perpendicular_grid", "structdg_1_1_cylindrical_m_p_i_grid.html#aeaf7f3a7ca3d85863e0e10a5afb0cada", null ],
+      [ "CylindricalMPIGrid", "structdg_1_1_cylindrical_m_p_i_grid.html#a5e8a02014b5ea0cf8116b6515ed4a8dd", null ],
+      [ "CylindricalMPIGrid", "structdg_1_1_cylindrical_m_p_i_grid.html#ab69200687a5b3cd6e5ff5e415b337ca3", null ],
+      [ "CylindricalMPIGrid", "structdg_1_1_cylindrical_m_p_i_grid.html#a1ae715742a14de86e40cbef5098aa9ae", null ],
+      [ "perp_grid", "structdg_1_1_cylindrical_m_p_i_grid.html#a4106367b1b2358cc83f5d7cc6f8ecfaf", null ],
+      [ "vol", "structdg_1_1_cylindrical_m_p_i_grid.html#ae02332a49b4537b10efc1776181b620f", null ]
     ] ]
 ];

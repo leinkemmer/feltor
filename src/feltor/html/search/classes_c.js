@@ -5,5 +5,5 @@ var searchData=
   ['nearestneighborcomm',['NearestNeighborComm',['../../../../inc/dg/html/structdg_1_1_nearest_neighbor_comm.html',1,'dg']]],
   ['nolimiter',['NoLimiter',['../../../../inc/dg/html/structdg_1_1_no_limiter.html',1,'dg']]],
   ['notanumber',['NotANumber',['../../../../inc/dg/html/structdg_1_1_not_a_number.html',1,'dg']]],
-  ['nprofile',['Nprofile',['../../../../src/solovev/html/structsolovev_1_1_nprofile.html',1,'solovev']]]
+  ['nprofile',['Nprofile',['../../../../inc/geometries/html/structsolovev_1_1_nprofile.html',1,'solovev']]]
 ];

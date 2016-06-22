@@ -4,7 +4,7 @@
 # It generates tag files so that src documentation can link to inc documentations and uses the html_header feature of doxygen to create the top menu bar
 
 #pay attention on name collisions in documentations through tag files
-include="inc/dg inc/file inc/toefl src/solovev"
+include="inc/dg inc/file inc/toefl inc/geometries"
 src="src/feltor src/feltor2D src/innto"
 all="$include $src"
 tagfiles=""

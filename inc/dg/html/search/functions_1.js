@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['backscatter',['backscatter',['../group__scatter.html#gaaf87708048b0f23b73c9144adc0a1a97',1,'dg::create::backscatter(const Grid2d&lt; T &gt; &amp;g)'],['../group__scatter.html#gaafae4397f10cadab919d07670ec33659',1,'dg::create::backscatter(const Grid3d&lt; T &gt; &amp;g)']]],
   ['backward',['backward',['../classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c',1,'dg::DLT::backward()'],['../structdg_1_1_d_s.html#a67b12042736530a2e141e8ec9c84aaab',1,'dg::DS::backward()']]],
   ['backwardeq',['backwardEQ',['../classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22',1,'dg::DLT']]],
   ['backwardt',['backwardT',['../structdg_1_1_d_s.html#acaaae77dd4791497116914556e079fb2',1,'dg::DS']]],
@@ -15,6 +14,5 @@ var searchData=
   ['bijectivecomm',['BijectiveComm',['../structdg_1_1_bijective_comm.html#a6ae489e5157a1aae7b07b4871d715ea4',1,'dg::BijectiveComm::BijectiveComm()'],['../structdg_1_1_bijective_comm.html#ae292872aaa59341fd5ca8d254d81348c',1,'dg::BijectiveComm::BijectiveComm(thrust::host_vector&lt; int &gt; pids, MPI_Comm comm)']]],
   ['binwidth',['binwidth',['../structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407',1,'dg::Histogram']]],
   ['bisection1d',['bisection1d',['../group__utilities.html#gaa269808db678039605044e14fc849675',1,'dg']]],
-  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
-  ['brackets',['bracketS',['../structdg_1_1_arakawa_x.html#a4bca8c8355aa0d33f5913edf77fe96db',1,'dg::ArakawaX::bracketS()'],['../structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0',1,'dg::Poisson::bracketS()']]]
+  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]]
 ];

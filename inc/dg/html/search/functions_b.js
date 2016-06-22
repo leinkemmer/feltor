@@ -2,10 +2,10 @@ var searchData=
 [
   ['lamb',['Lamb',['../structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd',1,'dg::Lamb']]],
   ['last',['last',['../structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b',1,'dg::Karniadakis']]],
-  ['lcm',['lcm',['../group__utilities.html#ga37074755dc63807f983425695d5a0665',1,'dg']]],
   ['lilj',['lilj',['../group__lowlevel.html#gaaaa29e3675d675f7d04e946cd7f66ed5',1,'dg::create']]],
   ['linearx',['LinearX',['../structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c',1,'dg::LinearX']]],
   ['lineary',['LinearY',['../structdg_1_1_linear_y.html#a141df376a562eb957ae6c05ce76c78d8',1,'dg::LinearY']]],
+  ['linearz',['LinearZ',['../structdg_1_1_linear_z.html#aafebe34c10d894f6f0122264ac96a1a0',1,'dg::LinearZ']]],
   ['lirj',['lirj',['../group__lowlevel.html#ga46edb26b7a8c8544ea641aa03f6fd7fa',1,'dg::create']]],
   ['local',['local',['../structdg_1_1_m_p_i___grid2d.html#a242a395699f88d4dec0f6f59339a481b',1,'dg::MPI_Grid2d::local()'],['../structdg_1_1_m_p_i___grid3d.html#a84647e9557a34cffe5e2ed9c551f5cea',1,'dg::MPI_Grid3d::local()']]],
   ['local_5fgrid',['local_grid',['../structdg_1_1_grid2d.html#a20f9717445ddf76630ead76db45db322',1,'dg::Grid2d']]],

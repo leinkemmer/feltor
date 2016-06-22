@@ -1,7 +1,6 @@
 var NAVTREEINDEX0 =
 {
 ".html":[1,0,0],
-".html":[1,0,1],
 "annotated.html":[1,0],
 "blueprint_8h_source.html":[2,0,0,0,0],
 "classes.html":[1,1],

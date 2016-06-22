@@ -19,5 +19,6 @@ var enums_8h =
     [ "system", "enums_8h.html#ga75789d2c36dff2caed4b3bb80191b346", [
       [ "cartesian", "enums_8h.html#gga75789d2c36dff2caed4b3bb80191b346a49a654c38e355ec847e55f927511019d", null ],
       [ "cylindrical", "enums_8h.html#gga75789d2c36dff2caed4b3bb80191b346a6962eb4bbef38ebabc41458844991bfd", null ]
-    ] ]
+    ] ],
+    [ "str2bc", "enums_8h.html#a7b085d8c8fe7084a653bf69956cf200a", null ]
 ];

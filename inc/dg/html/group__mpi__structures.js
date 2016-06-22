@@ -11,6 +11,7 @@ var group__mpi__structures =
       [ "size", "structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776", null ]
     ] ],
     [ "RowColDistMat", "structdg_1_1_row_col_dist_mat.html", [
+      [ "RowColDistMat", "structdg_1_1_row_col_dist_mat.html#aaa4284e5e09774695761bd1f79642445", null ],
       [ "RowColDistMat", "structdg_1_1_row_col_dist_mat.html#ac1e66c3615a2e2256b9615be89057d4e", null ],
       [ "RowColDistMat", "structdg_1_1_row_col_dist_mat.html#a3e60395af1bfd71d925af6e704405a50", null ],
       [ "collective", "structdg_1_1_row_col_dist_mat.html#a40bc8d123ee3441ccb7405b890a84e8b", null ],
@@ -35,8 +36,10 @@ var group__mpi__structures =
     ] ],
     [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html", [
       [ "container_type", "structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3", null ],
+      [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html#a0f9c525a987ea24d60acd942cb5a4f1c", null ],
       [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html#ab79c8907a64d91971c63f1542df07f04", null ],
       [ "MPI_Vector", "structdg_1_1_m_p_i___vector.html#a896368bf40dca6d0e3c860c1875406ca", null ],
+      [ "communicator", "structdg_1_1_m_p_i___vector.html#a7333d65d51c13784bc280b89db2b2ef8", null ],
       [ "communicator", "structdg_1_1_m_p_i___vector.html#a77541670d6003db3dae5ea3c626870c4", null ],
       [ "data", "structdg_1_1_m_p_i___vector.html#a2102f399a256c19e86f6d599d561e7fb", null ],
       [ "data", "structdg_1_1_m_p_i___vector.html#ae537fd21bda75f32afcf3d0eb2e782ea", null ],

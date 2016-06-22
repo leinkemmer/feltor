@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['backscatter',['backscatter',['../group__scatter.html#gaaf87708048b0f23b73c9144adc0a1a97',1,'dg::create::backscatter(const Grid2d&lt; T &gt; &amp;g)'],['../group__scatter.html#gaafae4397f10cadab919d07670ec33659',1,'dg::create::backscatter(const Grid3d&lt; T &gt; &amp;g)']]],
+  ['b',['b',['../structdg_1_1rk__classic.html#a8206e11e7fddddd1f068e4a785d00603',1,'dg::rk_classic']]],
   ['backward',['backward',['../classdg_1_1_d_l_t.html#a0ea2a6dafbba862fc0b5238d81432f2c',1,'dg::DLT::backward()'],['../structdg_1_1_d_s.html#a67b12042736530a2e141e8ec9c84aaab',1,'dg::DS::backward()'],['../group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a3e10d2598f5b58a930631b12774e05cb',1,'dg::backward()']]],
   ['backwardeq',['backwardEQ',['../classdg_1_1_d_l_t.html#a82aae3c20a040800f96686caf467da22',1,'dg::DLT']]],
   ['backwardt',['backwardT',['../structdg_1_1_d_s.html#acaaae77dd4791497116914556e079fb2',1,'dg::DS']]],
   ['backwardtd',['backwardTD',['../structdg_1_1_d_s.html#a20e1eed33344778ea9b49e6637bb2340',1,'dg::DS']]],
-  ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html#ad3957e162dc4759b89df68e9696cb81d',1,'dg::BathRZ']]],
   ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html',1,'dg']]],
+  ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html#ad3957e162dc4759b89df68e9696cb81d',1,'dg::BathRZ']]],
   ['bc',['bc',['../group__creation.html#ga59440bdf436f2874b49aa52b670ed364',1,'dg']]],
   ['bcx',['bcx',['../structdg_1_1_grid1d.html#a981853f0dbaadec4ff479ed6c64bce6f',1,'dg::Grid1d::bcx()'],['../structdg_1_1_grid2d.html#aa4ea333ffb8124870349dfb80e99f720',1,'dg::Grid2d::bcx()'],['../structdg_1_1_grid3d.html#a8b44835e84ef8f90eca0646b58ab39fa',1,'dg::Grid3d::bcx()'],['../structdg_1_1_m_p_i___grid2d.html#acc0d7cbd6a29ab2bc14adabf4955c136',1,'dg::MPI_Grid2d::bcx()'],['../structdg_1_1_m_p_i___grid3d.html#afaa0772fd2698d8d9340d82aaf605bf2',1,'dg::MPI_Grid3d::bcx()']]],
   ['bcy',['bcy',['../structdg_1_1_grid2d.html#a33410939468778faec38082ed09a20d6',1,'dg::Grid2d::bcy()'],['../structdg_1_1_grid3d.html#ac3b2931214a2969efc8836473f487e01',1,'dg::Grid3d::bcy()'],['../structdg_1_1_m_p_i___grid2d.html#a5e8ef06af2c31c19a625f04790eac06a',1,'dg::MPI_Grid2d::bcy()'],['../structdg_1_1_m_p_i___grid3d.html#a309df1ff0ad76f45b027eca3937bb30d',1,'dg::MPI_Grid3d::bcy()']]],
@@ -19,14 +19,13 @@ var searchData=
   ['bijectivecomm',['BijectiveComm',['../structdg_1_1_bijective_comm.html',1,'dg']]],
   ['binwidth',['binwidth',['../structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407',1,'dg::Histogram']]],
   ['bisection1d',['bisection1d',['../group__utilities.html#gaa269808db678039605044e14fc849675',1,'dg']]],
-  ['basic_20linear_20algebra_20subprograms',['Basic Linear Algebra Subprograms',['../group__blas.html',1,'']]],
+  ['basic_20linear_20algebra_20and_20geometric_20subprograms',['Basic Linear Algebra and Geometric Subprograms',['../group__blas.html',1,'']]],
   ['blas_2eh',['blas.h',['../blas_8h.html',1,'']]],
   ['blas_20level_201_20routines',['BLAS level 1 routines',['../group__blas1.html',1,'']]],
   ['blas1_2eh',['blas1.h',['../blas1_8h.html',1,'']]],
   ['blas_20level_202_20routines',['BLAS level 2 routines',['../group__blas2.html',1,'']]],
   ['blas2_2eh',['blas2.h',['../blas2_8h.html',1,'']]],
-  ['blocks_5fper_5fline',['blocks_per_line',['../structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd',1,'dg::EllSparseBlockMat']]],
-  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html',1,'dg']]],
+  ['blocks_5fper_5fline',['blocks_per_line',['../structdg_1_1_ell_sparse_block_mat.html#a49d70e8ce88ac45a7db26c1375550834',1,'dg::EllSparseBlockMat']]],
   ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator(Field field, const Grid &amp;g, double eps)'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
-  ['brackets',['bracketS',['../structdg_1_1_arakawa_x.html#a4bca8c8355aa0d33f5913edf77fe96db',1,'dg::ArakawaX::bracketS()'],['../structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0',1,'dg::Poisson::bracketS()']]]
+  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html',1,'dg']]]
 ];

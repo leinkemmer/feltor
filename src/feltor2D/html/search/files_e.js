@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['texture_2eh',['texture.h',['../../../../inc/toefl/html/texture_8h.html',1,'']]],
-  ['toefl_2eh',['toefl.h',['../../../../inc/toefl/html/toefl_8h.html',1,'']]],
-  ['typedefs_2ecuh',['typedefs.cuh',['../../../../inc/dg/html/typedefs_8cuh.html',1,'']]]
+  ['solovev_2eh',['solovev.h',['../../../../inc/geometries/html/solovev_8h.html',1,'']]],
+  ['solovev_5fparameters_2eh',['solovev_parameters.h',['../../../../inc/geometries/html/solovev__parameters_8h.html',1,'']]]
 ];

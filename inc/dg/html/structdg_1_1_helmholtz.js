@@ -1,13 +1,13 @@
 var structdg_1_1_helmholtz =
 [
-    [ "Helmholtz", "group__matrixoperators.html#ga76ec5eaa2cc3dd1ef9b0c90f8a85fd6c", null ],
-    [ "Helmholtz", "group__matrixoperators.html#ga5a2fc2f7c83288c951b5a938d8cacd85", null ],
-    [ "alpha", "group__matrixoperators.html#ga7fceb7f2dbaf51df5941643f33f1f8a6", null ],
-    [ "alpha", "group__matrixoperators.html#ga59320b5e0dd00f8e5a7c49c880912d60", null ],
-    [ "chi", "group__matrixoperators.html#gafa5d16b61453a474667c8f1431a5f654", null ],
-    [ "precond", "group__matrixoperators.html#ga42af8edcfc2def422a545c6fe950dbfc", null ],
-    [ "reset_chi", "group__matrixoperators.html#gaf76f445d7887289a03f0e48ed42c2a3d", null ],
-    [ "set_chi", "group__matrixoperators.html#gac95fce512bf66491a2235d589148a64a", null ],
-    [ "symv", "group__matrixoperators.html#ga3f5c52b98883ecc88056b3f82030f548", null ],
-    [ "weights", "group__matrixoperators.html#gaa999c6af019581113bde43dd67cacc44", null ]
+    [ "Helmholtz", "group__matrixoperators.html#ga7d83963ab6cba7a264c115917acbfcbc", null ],
+    [ "Helmholtz", "group__matrixoperators.html#ga72c4df6fe1b8cbdd8cac6c7e826556b1", null ],
+    [ "alpha", "group__matrixoperators.html#gaca7c3b6fa97aca47c847724bf4d5017a", null ],
+    [ "alpha", "group__matrixoperators.html#ga063811d4e2858ef457a6be6e53b1b707", null ],
+    [ "chi", "group__matrixoperators.html#ga6b1ffe5e120fedcc9415f75219c241cd", null ],
+    [ "precond", "group__matrixoperators.html#gaf2db23f6f9f7d12864c720581c86fa6e", null ],
+    [ "reset_chi", "group__matrixoperators.html#ga97293c4b945515a6eaec503856f6cde2", null ],
+    [ "set_chi", "group__matrixoperators.html#gaf45fae77c7bdf38af02016d1b7b1e921", null ],
+    [ "symv", "group__matrixoperators.html#ga0bea530c607a7713e619b9641fc946a0", null ],
+    [ "weights", "group__matrixoperators.html#gab83777043bbd5a66e604e51c3fb4f147", null ]
 ];

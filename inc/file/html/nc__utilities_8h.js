@@ -9,5 +9,6 @@ var nc__utilities_8h =
     [ "define_dimensions", "nc__utilities_8h.html#a437d502f8dbb9343ab38c568446ae3aa", null ],
     [ "define_dimensions", "nc__utilities_8h.html#ac45d16d851bfa0df93305e5e1a836e46", null ],
     [ "define_dimensions", "nc__utilities_8h.html#ae1535f34423979479a0e0c43e377287e", null ],
+    [ "define_limited_time", "nc__utilities_8h.html#aa63598d3ee7e2a842fed7d4fc8d47295", null ],
     [ "define_time", "nc__utilities_8h.html#a6359fc68f28994afced36013b94fdc07", null ]
 ];

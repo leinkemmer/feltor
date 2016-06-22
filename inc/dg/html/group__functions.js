@@ -39,12 +39,18 @@ var group__functions =
     ] ],
     [ "LinearX", "structdg_1_1_linear_x.html", [
       [ "LinearX", "structdg_1_1_linear_x.html#a2721b98ac435a39e4864b42657e7c07c", null ],
+      [ "operator()", "structdg_1_1_linear_x.html#a4031edffaf13542927d5c5a69c174619", null ],
       [ "operator()", "structdg_1_1_linear_x.html#afb11c904cbdcde60dba138fc133629a6", null ],
       [ "operator()", "structdg_1_1_linear_x.html#a7f5a89ec70eaa5b292f1bd8bb8071551", null ]
     ] ],
     [ "LinearY", "structdg_1_1_linear_y.html", [
       [ "LinearY", "structdg_1_1_linear_y.html#a141df376a562eb957ae6c05ce76c78d8", null ],
+      [ "operator()", "structdg_1_1_linear_y.html#a661fa065770f02a0f46dd47ad06e1a0d", null ],
       [ "operator()", "structdg_1_1_linear_y.html#af249cdd8fb6ae1b7dd8fabfc0e854827", null ]
+    ] ],
+    [ "LinearZ", "structdg_1_1_linear_z.html", [
+      [ "LinearZ", "structdg_1_1_linear_z.html#aafebe34c10d894f6f0122264ac96a1a0", null ],
+      [ "operator()", "structdg_1_1_linear_z.html#ab00b274766440c98ae14f2b41edd55a9", null ]
     ] ],
     [ "TanhProfX", "structdg_1_1_tanh_prof_x.html", [
       [ "TanhProfX", "structdg_1_1_tanh_prof_x.html#a38043606afa505f7f9a70511119ac74b", null ],

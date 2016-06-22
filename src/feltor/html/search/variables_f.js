@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tau',['tau',['../structeule_1_1_parameters.html#a0e1e3158aa87aa570bffe9e3ae35eeca',1,'eule::Parameters']]],
-  ['triangularity',['triangularity',['../../../../src/solovev/html/group__geom.html#ga1b5afb66804a41c779f0fabb30089f67',1,'solovev::GeomParameters::triangularity()'],['../../../../src/solovev/html/group__geom.html#ga1b5afb66804a41c779f0fabb30089f67',1,'triangularity()(Global Namespace)']]]
+  ['sigma',['sigma',['../structeule_1_1_parameters.html#af9ca9dde679634abd20a1f2b409bf805',1,'eule::Parameters']]],
+  ['sigma_5fz',['sigma_z',['../structeule_1_1_parameters.html#ae7e64c1a6616a7aa5feffb1da6b0cca4',1,'eule::Parameters']]]
 ];

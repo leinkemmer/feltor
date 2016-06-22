@@ -1,18 +1,18 @@
 var structdg_1_1_ell_sparse_block_mat =
 [
-    [ "HVec", "structdg_1_1_ell_sparse_block_mat.html#aad1709092f02ce9604ebfb948238fcba", null ],
-    [ "IVec", "structdg_1_1_ell_sparse_block_mat.html#a3cc028685806f9631dc92dcd0b65a8e3", null ],
-    [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a5b81a380b40ebfa61365ffb3d7132de1", null ],
-    [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#add89682c2699d8ec50bacc0645f259ba", null ],
-    [ "display", "structdg_1_1_ell_sparse_block_mat.html#a4b4287c2b702351f206a5b50fa55a980", null ],
-    [ "symv", "structdg_1_1_ell_sparse_block_mat.html#a559f955c51790860f40e8c369e77d0d6", null ],
-    [ "blocks_per_line", "structdg_1_1_ell_sparse_block_mat.html#a75ed23900e08d6ac6f99fdc2d65c7ebd", null ],
-    [ "cols_idx", "structdg_1_1_ell_sparse_block_mat.html#a484d89c21208ffc5e66e8b2590721934", null ],
-    [ "data", "structdg_1_1_ell_sparse_block_mat.html#a94a18d9ddd1c6b67bef75c846bcb7c6b", null ],
-    [ "data_idx", "structdg_1_1_ell_sparse_block_mat.html#a74ee42f6499e0d1cf6ef2ff17b9355bc", null ],
-    [ "left", "structdg_1_1_ell_sparse_block_mat.html#afa215c3354d917b09d4e708fba9bffa9", null ],
-    [ "n", "structdg_1_1_ell_sparse_block_mat.html#a157eb78d6c45868d7a43a3e435d4af0a", null ],
-    [ "num_cols", "structdg_1_1_ell_sparse_block_mat.html#a47d33e2fa0d4e710bb24fe61c0d993f7", null ],
-    [ "num_rows", "structdg_1_1_ell_sparse_block_mat.html#a8b57d0ac5938082c81c2f6c0b9862b4f", null ],
-    [ "right", "structdg_1_1_ell_sparse_block_mat.html#adfb922a1de31351e8df3261112d25f27", null ]
+    [ "IVec", "structdg_1_1_ell_sparse_block_mat.html#aba88c63a4f93fd8d50f059640c23a5c3", null ],
+    [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a9017f5cc8f4e40f2c7467ea9c32f60be", null ],
+    [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a5c45f67973ed4df1bc4978e95c143904", null ],
+    [ "EllSparseBlockMat", "structdg_1_1_ell_sparse_block_mat.html#a5aead0e2b5a120b0f94412e5e5e41188", null ],
+    [ "display", "structdg_1_1_ell_sparse_block_mat.html#a8e0c177a0d12193b95c2e2bc819b60ed", null ],
+    [ "symv", "structdg_1_1_ell_sparse_block_mat.html#ad5f23cbab22cd4fda2d8df586f84c51a", null ],
+    [ "blocks_per_line", "structdg_1_1_ell_sparse_block_mat.html#a49d70e8ce88ac45a7db26c1375550834", null ],
+    [ "cols_idx", "structdg_1_1_ell_sparse_block_mat.html#a252ee653004c5f47c96452924dde056f", null ],
+    [ "data", "structdg_1_1_ell_sparse_block_mat.html#a56beeefe5a17057cfa7895f3ad532a19", null ],
+    [ "data_idx", "structdg_1_1_ell_sparse_block_mat.html#a38da1061ca4dc2267709979ed5dc6dbd", null ],
+    [ "left", "structdg_1_1_ell_sparse_block_mat.html#aa7716d8de0dc65abcccbea960ebaef17", null ],
+    [ "n", "structdg_1_1_ell_sparse_block_mat.html#aa29bbb8bca4155841dbb603362dcdfe4", null ],
+    [ "num_cols", "structdg_1_1_ell_sparse_block_mat.html#a97dc6569dd4fcc1af9847b8c8fb9f287", null ],
+    [ "num_rows", "structdg_1_1_ell_sparse_block_mat.html#a4bf43725ff2db10da6ddda7508ff7b27", null ],
+    [ "right", "structdg_1_1_ell_sparse_block_mat.html#ab58f9ace6b43228ca7300a63547f67c7", null ]
 ];

@@ -5,5 +5,6 @@ var group__blas2 =
     [ "dot", "group__blas2.html#gac72ec781ca79b3b983099ea172f896ab", null ],
     [ "gemv", "group__blas2.html#gadda8a3d0278c095d51becf208760d49b", null ],
     [ "symv", "group__blas2.html#ga7f66ae102c9c093cdc0877a989fd82b3", null ],
-    [ "symv", "group__blas2.html#ga268c50e488c18db3dc5be1d1934eb7b2", null ]
+    [ "symv", "group__blas2.html#ga268c50e488c18db3dc5be1d1934eb7b2", null ],
+    [ "transfer", "group__blas2.html#gad3c358fa105ff9431956a16d0d58744a", null ]
 ];

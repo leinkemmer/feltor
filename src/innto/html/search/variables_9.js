@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mu',['mu',['../structtoefl_1_1_physical.html#a7f8ceffbdba5f1241e725d37ccd621bc',1,'toefl::Physical']]]
+  ['kappa',['kappa',['../structtoefl_1_1_physical.html#a7d2f03d1bdae804891a79c86a4530f4c',1,'toefl::Physical']]]
 ];

@@ -1,13 +1,12 @@
 var structdg_1_1_poisson =
 [
-    [ "Poisson", "structdg_1_1_poisson.html#a9d05425969806b3e32ced184efb07209", null ],
-    [ "Poisson", "structdg_1_1_poisson.html#abad7fc6e4aa73ad7004e6895821395f8", null ],
-    [ "Poisson", "structdg_1_1_poisson.html#a5a06c1b0627b5691634667f3913ec04f", null ],
-    [ "bracketS", "structdg_1_1_poisson.html#a80fee7f21e899ac8893837a750a274b0", null ],
-    [ "dxlhs", "structdg_1_1_poisson.html#a82faeacbd8a78bec7d51542481c0e994", null ],
-    [ "dxrhs", "structdg_1_1_poisson.html#a92cfd99de07a6b82956e7ee7d0c685b5", null ],
-    [ "dylhs", "structdg_1_1_poisson.html#a58b4e644b217e1fac0c1d6411ca02312", null ],
-    [ "dyrhs", "structdg_1_1_poisson.html#af712507150681dd8a78eb91676be705b", null ],
-    [ "operator()", "structdg_1_1_poisson.html#a436cea4bbf782e872e31db7fd922ff3d", null ],
-    [ "variationRHS", "structdg_1_1_poisson.html#adf321b9c9e29d3a110d95ef382b771bd", null ]
+    [ "Poisson", "structdg_1_1_poisson.html#a6e05a31dbb6d940377b87009ce2db330", null ],
+    [ "Poisson", "structdg_1_1_poisson.html#a9f97b5cdea658ae7b7ceb8afb29a8ac0", null ],
+    [ "Poisson", "structdg_1_1_poisson.html#a0027c0ce5662faac50517775640777a5", null ],
+    [ "dxlhs", "structdg_1_1_poisson.html#a15753840c2c1122c423c7df421f7ce4f", null ],
+    [ "dxrhs", "structdg_1_1_poisson.html#af15be11c0194e76c0e427f8926db9b64", null ],
+    [ "dylhs", "structdg_1_1_poisson.html#a00171bb950e06b5df331a345d6399b42", null ],
+    [ "dyrhs", "structdg_1_1_poisson.html#ae9500c612c21ca7d0c3412a734e85dbe", null ],
+    [ "operator()", "structdg_1_1_poisson.html#a21d2c759b839d9b8d7266f4adbd1c069", null ],
+    [ "variationRHS", "structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787", null ]
 ];

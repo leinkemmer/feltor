@@ -1,7 +1,7 @@
 var structdg_1_1_d_s =
 [
     [ "FieldAligned", "structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf", null ],
-    [ "DS", "structdg_1_1_d_s.html#a6d9687bdcc12a3676533cc01d57f2cca", null ],
+    [ "DS", "structdg_1_1_d_s.html#a67d4bc919abe93e7fc18abd7d8cc032a", null ],
     [ "backward", "structdg_1_1_d_s.html#a67b12042736530a2e141e8ec9c84aaab", null ],
     [ "backwardT", "structdg_1_1_d_s.html#acaaae77dd4791497116914556e079fb2", null ],
     [ "backwardTD", "structdg_1_1_d_s.html#a20e1eed33344778ea9b49e6637bb2340", null ],

@@ -1,8 +1,7 @@
 var ds_8h =
 [
-    [ "DS", "structdg_1_1_d_s.html", "structdg_1_1_d_s" ],
-    [ "DDS", "ds_8h.html#ga95ddc03eb343687757cd1777a44fc1be", null ],
-    [ "HDS", "ds_8h.html#gacfefd6b04678e0c404fda98c77df6006", null ],
-    [ "MDDS", "ds_8h.html#ga06da979028329f4f8fad32798075c9e1", null ],
-    [ "MHDS", "ds_8h.html#gaf92dfe215532f73f424f188ede0ee48b", null ]
+    [ "DDS", "ds_8h.html#ga64820aeb3407e540f474e7fca85d22ad", null ],
+    [ "HDS", "ds_8h.html#gaf550998d5283cf4055644e2f9ba1ed08", null ],
+    [ "MDDS", "ds_8h.html#ga80cc0266d79aacac98229303f65448a8", null ],
+    [ "MHDS", "ds_8h.html#ga4c90f01d4555184d347f4c2c0542cd05", null ]
 ];
