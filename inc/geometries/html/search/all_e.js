@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['r_5f0',['R_0',['../group__geom.html#ga04042807c96e6c40e0ecda5fa494423b',1,'solovev::GeomParameters']]],
+  ['ringgrid2d',['RingGrid2d',['../structconformal_1_1_ring_grid2d.html',1,'conformal']]],
+  ['ringgrid2d',['RingGrid2d',['../structorthogonal_1_1_ring_grid2d.html',1,'orthogonal']]],
+  ['ringgrid2d',['RingGrid2d',['../structequalarc_1_1_ring_grid2d.html',1,'equalarc']]],
+  ['ringgrid2d',['RingGrid2d',['../structflux_1_1_ring_grid2d.html',1,'flux']]],
+  ['ringgrid2d',['RingGrid2d',['../structflux2_1_1_ring_grid2d.html',1,'flux2']]],
+  ['ringgrid2d',['RingGrid2d',['../structhamada_1_1_ring_grid2d.html',1,'hamada']]],
+  ['ringgrid2d',['RingGrid2d',['../structboozer_1_1_ring_grid2d.html',1,'boozer']]],
+  ['ringgrid3d',['RingGrid3d',['../structorthogonal_1_1_ring_grid3d.html',1,'orthogonal']]],
+  ['ringgrid3d',['RingGrid3d',['../structboozer_1_1_ring_grid3d.html',1,'boozer']]],
+  ['ringgrid3d',['RingGrid3d',['../structflux_1_1_ring_grid3d.html',1,'flux']]],
+  ['ringgrid3d',['RingGrid3d',['../structflux2_1_1_ring_grid3d.html',1,'flux2']]],
+  ['ringgrid3d',['RingGrid3d',['../structconformal_1_1_ring_grid3d.html',1,'conformal']]],
+  ['ringgrid3d',['RingGrid3d',['../structhamada_1_1_ring_grid3d.html',1,'hamada']]],
+  ['ringgrid3d',['RingGrid3d',['../structboozer_1_1_ring_grid3d.html#a029f0744b14e9c7af4694a3c01275aff',1,'boozer::RingGrid3d::RingGrid3d()'],['../structconformal_1_1_ring_grid3d.html#abad3550979c3b83e717184599fd9f468',1,'conformal::RingGrid3d::RingGrid3d()'],['../structequalarc_1_1_ring_grid3d.html#a2cdad3c9b869ea3e8fa3f9da1550be16',1,'equalarc::RingGrid3d::RingGrid3d()'],['../structflux_1_1_ring_grid3d.html#a9c1f5164993f3355cdeb688fee776988',1,'flux::RingGrid3d::RingGrid3d()'],['../structflux2_1_1_ring_grid3d.html#a2a55fe71641baa198ba43b113a38eea0',1,'flux2::RingGrid3d::RingGrid3d()'],['../structhamada_1_1_ring_grid3d.html#a932eaa2494b06e3cae0298cfb5705895',1,'hamada::RingGrid3d::RingGrid3d()'],['../structorthogonal_1_1_ring_grid3d.html#ae4f8003df57b629cee13f26dbdcac281',1,'orthogonal::RingGrid3d::RingGrid3d()']]],
+  ['ringgrid3d',['RingGrid3d',['../structequalarc_1_1_ring_grid3d.html',1,'equalarc']]],
+  ['rk4eps',['rk4eps',['../group__geom.html#ga6447257304ba1dec05d84d1f27efdc41',1,'solovev::GeomParameters']]]
+];
