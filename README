@@ -6,3 +6,9 @@ In order to update the gh-pages on github
 2. maybe update folder structure in generate_doc.sh and header.html
 3. generate new documentation
     sh generate_doc.sh
+4. add and commit all files to repository
+    git add .
+    git commit -am 'update documentation to version '
+    git push origin gh-pages
+
+

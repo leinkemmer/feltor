@@ -1,0 +1,125 @@
+var group__algorithms =
+[
+    [ "CG", "classdg_1_1_c_g.html", [
+      [ "value_type", "classdg_1_1_c_g.html#a1ef5a42ac2f35b465a9b5e5d2293d572", null ],
+      [ "CG", "classdg_1_1_c_g.html#a670ef27210508cb36b9e94b95d5d2782", null ],
+      [ "CG", "classdg_1_1_c_g.html#ad7f145a193177e75f310405e96d6e20d", null ],
+      [ "construct", "classdg_1_1_c_g.html#a996717c0157bbf5a09e8b15c0b9d51f1", null ],
+      [ "get_max", "classdg_1_1_c_g.html#a6c6ddea9c0e7b7f2149722ef25cc9dd8", null ],
+      [ "operator()", "classdg_1_1_c_g.html#a8dc452436c95a758207bc35cec53909f", null ],
+      [ "operator()", "classdg_1_1_c_g.html#ad76d2d064bc429aa814259cf6791f3d3", null ],
+      [ "set_max", "classdg_1_1_c_g.html#a5b59194ed8198858e1eb969059559a4e", null ]
+    ] ],
+    [ "Invert", "structdg_1_1_invert.html", [
+      [ "value_type", "structdg_1_1_invert.html#ac9b9b4f5149a5b63a797a75bf3ac74d7", null ],
+      [ "Invert", "structdg_1_1_invert.html#ab64907846ffeb150d9412b0056db66f5", null ],
+      [ "Invert", "structdg_1_1_invert.html#a2602f6e265142a91b7e7ecad2f60fad9", null ],
+      [ "construct", "structdg_1_1_invert.html#a31050b07bab8454e00dfcb3159b3b3b9", null ],
+      [ "get_last", "structdg_1_1_invert.html#a3f72ec59f67ad4dcfbba25c178b1fe7e", null ],
+      [ "get_max", "structdg_1_1_invert.html#a9bf8b8325e4b96dc859103b09a3112a7", null ],
+      [ "operator()", "structdg_1_1_invert.html#aba7447f25ad0b970efe0df955c1da484", null ],
+      [ "operator()", "structdg_1_1_invert.html#a209f60aeb78f93f0a7bf89a058f088bf", null ],
+      [ "set_accuracy", "structdg_1_1_invert.html#a32a75a63b9b6378fd94834d6c56bfe79", null ],
+      [ "set_extrapolationType", "structdg_1_1_invert.html#a020cbb61850fd96b7c77730dd1e9dd64", null ],
+      [ "set_max", "structdg_1_1_invert.html#ab1c32f7fdd5c123eab428283df6cf83c", null ],
+      [ "set_size", "structdg_1_1_invert.html#a89c45fec93545786a03b89a0b3a58439", null ]
+    ] ],
+    [ "DS", "structdg_1_1_d_s.html", [
+      [ "FieldAligned", "structdg_1_1_d_s.html#a013ea66911d8b0ff7984385513f211bf", null ],
+      [ "DS", "structdg_1_1_d_s.html#a67d4bc919abe93e7fc18abd7d8cc032a", null ],
+      [ "backward", "structdg_1_1_d_s.html#a67b12042736530a2e141e8ec9c84aaab", null ],
+      [ "backwardT", "structdg_1_1_d_s.html#acaaae77dd4791497116914556e079fb2", null ],
+      [ "backwardTD", "structdg_1_1_d_s.html#a20e1eed33344778ea9b49e6637bb2340", null ],
+      [ "centered", "structdg_1_1_d_s.html#af318c233edce815bda0890de38e07458", null ],
+      [ "centeredT", "structdg_1_1_d_s.html#a3103c5e22420249662241ca8f33e091b", null ],
+      [ "centeredTD", "structdg_1_1_d_s.html#a2478d48efd855e346b7f93716f7888f4", null ],
+      [ "dss", "structdg_1_1_d_s.html#a2d0dfc02871961230fc42eccb60a9e7f", null ],
+      [ "fieldaligned", "structdg_1_1_d_s.html#acf15e8b43140440b6dbe5def4ccf1688", null ],
+      [ "forward", "structdg_1_1_d_s.html#aa6de04f758b54c897f86a4c96b7622b2", null ],
+      [ "forwardT", "structdg_1_1_d_s.html#a32af453703f8ffba4e8203c6446a9b00", null ],
+      [ "forwardTD", "structdg_1_1_d_s.html#adc8cdf60ae3b32f3f9181101e57dbad0", null ],
+      [ "operator()", "structdg_1_1_d_s.html#a6a4942a8e203657f74e06dbba93fae44", null ],
+      [ "precond", "structdg_1_1_d_s.html#ae200e02d7b581bb5bc274de119fa920c", null ],
+      [ "set_boundaries", "structdg_1_1_d_s.html#a4592818bed3271cd385645aea0a19b61", null ],
+      [ "set_boundaries", "structdg_1_1_d_s.html#a2c9eb642f4f751bbdc5b6885357c70ca", null ],
+      [ "set_boundaries", "structdg_1_1_d_s.html#a1bd4170acca0e972ab3d03f195fbedbd", null ],
+      [ "symv", "structdg_1_1_d_s.html#ab3c71edb78f2c7fb444ca64bf8b560f4", null ],
+      [ "weights", "structdg_1_1_d_s.html#a8a40fb4fc4d7fb7fa97d4f1f43878712", null ]
+    ] ],
+    [ "FieldAligned", "structdg_1_1_field_aligned.html", [
+      [ "FieldAligned", "structdg_1_1_field_aligned.html#ace99b0fc621a942f1e7c0677200f19f6", null ],
+      [ "FieldAligned", "structdg_1_1_field_aligned.html#ace99b0fc621a942f1e7c0677200f19f6", null ],
+      [ "einsMinus", "structdg_1_1_field_aligned.html#ab45b603fe3d77abbbf4a175168425fa7", null ],
+      [ "einsMinus", "structdg_1_1_field_aligned.html#ab45b603fe3d77abbbf4a175168425fa7", null ],
+      [ "einsMinusT", "structdg_1_1_field_aligned.html#aaec3eea3da4c5e25c8e6973414f61b3d", null ],
+      [ "einsMinusT", "structdg_1_1_field_aligned.html#aaec3eea3da4c5e25c8e6973414f61b3d", null ],
+      [ "einsPlus", "structdg_1_1_field_aligned.html#a5c37e89aae9924661203600f042a7645", null ],
+      [ "einsPlus", "structdg_1_1_field_aligned.html#a5c37e89aae9924661203600f042a7645", null ],
+      [ "einsPlusT", "structdg_1_1_field_aligned.html#ac7eb4e66ccbc085cdbbd513e5d1288af", null ],
+      [ "einsPlusT", "structdg_1_1_field_aligned.html#ac7eb4e66ccbc085cdbbd513e5d1288af", null ],
+      [ "evaluate", "structdg_1_1_field_aligned.html#a368f2c773ba9672d8133d0653f7d40cc", null ],
+      [ "evaluate", "structdg_1_1_field_aligned.html#a2ff54b14baf88482d4edae2a7199af1e", null ],
+      [ "evaluate", "structdg_1_1_field_aligned.html#a368f2c773ba9672d8133d0653f7d40cc", null ],
+      [ "evaluate", "structdg_1_1_field_aligned.html#a2ff54b14baf88482d4edae2a7199af1e", null ],
+      [ "grid", "structdg_1_1_field_aligned.html#a7a004c3ef022f452f4998da2bb80f144", null ],
+      [ "grid", "structdg_1_1_field_aligned.html#a7a004c3ef022f452f4998da2bb80f144", null ],
+      [ "hm", "structdg_1_1_field_aligned.html#a24338824aa1de68850ee5969e6872d5a", null ],
+      [ "hm", "structdg_1_1_field_aligned.html#a24338824aa1de68850ee5969e6872d5a", null ],
+      [ "hp", "structdg_1_1_field_aligned.html#ae19b9f40bdc2930123d25daeb999f1d7", null ],
+      [ "hp", "structdg_1_1_field_aligned.html#ae19b9f40bdc2930123d25daeb999f1d7", null ],
+      [ "hz", "structdg_1_1_field_aligned.html#a5de0d24c35d419cf24e4089fc55355c4", null ],
+      [ "hz", "structdg_1_1_field_aligned.html#a5de0d24c35d419cf24e4089fc55355c4", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a1b8aa89bd475a9ac804dcb2d5d2d54ea", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a0ac19e8e4a98685dc4c70543f5237c89", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a4518fc0ecdec9f6ed87d4a6b555acf03", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a1b8aa89bd475a9ac804dcb2d5d2d54ea", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a0ac19e8e4a98685dc4c70543f5237c89", null ],
+      [ "set_boundaries", "structdg_1_1_field_aligned.html#a4518fc0ecdec9f6ed87d4a6b555acf03", null ]
+    ] ],
+    [ "MPI_FieldAligned", "structdg_1_1_m_p_i___field_aligned.html", [
+      [ "MPI_FieldAligned", "structdg_1_1_m_p_i___field_aligned.html#a28ebee51e0decb692933a38363dca3f2", null ],
+      [ "einsMinus", "structdg_1_1_m_p_i___field_aligned.html#afe026edb02d7a59379de90d1ab308684", null ],
+      [ "einsMinusT", "structdg_1_1_m_p_i___field_aligned.html#a1cd80eca837c50fa2f148546c4041029", null ],
+      [ "einsPlus", "structdg_1_1_m_p_i___field_aligned.html#ac3af364529543736c33b86f24e0db44b", null ],
+      [ "einsPlusT", "structdg_1_1_m_p_i___field_aligned.html#ae7682fbb1c95526e0a4fa67c03ce631e", null ],
+      [ "evaluate", "structdg_1_1_m_p_i___field_aligned.html#a2a5093da7f2c37f905a9a748773aa2bb", null ],
+      [ "evaluate", "structdg_1_1_m_p_i___field_aligned.html#a54e6e1e828d25dcf97fe794827fdc060", null ],
+      [ "grid", "structdg_1_1_m_p_i___field_aligned.html#abeec60a06ae03211c2eaae8d6c359589", null ],
+      [ "hm", "structdg_1_1_m_p_i___field_aligned.html#a80b37ed57ac517960102a0111a68787e", null ],
+      [ "hp", "structdg_1_1_m_p_i___field_aligned.html#ad40f4ee40f5135c4fc37d84e82bd9529", null ],
+      [ "hz", "structdg_1_1_m_p_i___field_aligned.html#a7b27922562618e04b631e450d22058b3", null ],
+      [ "set_boundaries", "structdg_1_1_m_p_i___field_aligned.html#ac82d1728dc5a9a86919dd2ec5f1f04bd", null ],
+      [ "set_boundaries", "structdg_1_1_m_p_i___field_aligned.html#afedbdcbfbeaf5b1fd8635061451d5846", null ],
+      [ "set_boundaries", "structdg_1_1_m_p_i___field_aligned.html#aac8dd803bd3438778440824a5a376e6e", null ]
+    ] ],
+    [ "AB", "structdg_1_1_a_b.html", [
+      [ "AB", "structdg_1_1_a_b.html#a7334cb5aa3f4b596ecb54148264f2569", null ],
+      [ "init", "structdg_1_1_a_b.html#a2d1c81ab60c6528f4c71852ea383f707", null ],
+      [ "operator()", "structdg_1_1_a_b.html#a7cb49f139538a4620df7f689815a485d", null ]
+    ] ],
+    [ "Karniadakis", "structdg_1_1_karniadakis.html", [
+      [ "Karniadakis", "structdg_1_1_karniadakis.html#ae8a8dbf53c366e472ef172de06b12f83", null ],
+      [ "head", "structdg_1_1_karniadakis.html#adfce7b22810fa973c4baa31525278770", null ],
+      [ "init", "structdg_1_1_karniadakis.html#a3ca17d71a6074b2f7ca8f6e4f48f99e9", null ],
+      [ "last", "structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b", null ],
+      [ "operator()", "structdg_1_1_karniadakis.html#a84f10f1572bc1319b97315a3d710ab0b", null ]
+    ] ],
+    [ "SIRK", "structdg_1_1_s_i_r_k.html", [
+      [ "SIRK", "structdg_1_1_s_i_r_k.html#a49a92efeaf2cd379a821e0642d73db9b", null ],
+      [ "adaptive_step", "structdg_1_1_s_i_r_k.html#a01757c756e22e533e871286f91672a5a", null ],
+      [ "operator()", "structdg_1_1_s_i_r_k.html#a8a88353bfe5754bee28b02748dc63bb4", null ]
+    ] ],
+    [ "RK", "structdg_1_1_r_k.html", [
+      [ "RK", "structdg_1_1_r_k.html#a6c429247370a3e14d0b818dc9c486b6b", null ],
+      [ "operator()", "structdg_1_1_r_k.html#a1e4a116d7fb767a76e725a6dfe4b98c1", null ]
+    ] ],
+    [ "RK_classic", "structdg_1_1_r_k__classic.html", [
+      [ "RK_classic", "structdg_1_1_r_k__classic.html#a591477cba840a01dc16db85ffcbbaf48", null ],
+      [ "operator()", "structdg_1_1_r_k__classic.html#a0b43ed4c0eb0b3b1eb2ecb9d572db8c4", null ]
+    ] ],
+    [ "integrateRK", "group__algorithms.html#gaf3fed90b31f8ce986ab2ada38eb1812d", null ],
+    [ "stepperRK", "group__algorithms.html#ga266d8134495e64da3933bcf3b834cbb6", null ],
+    [ "stepperRK17", "group__algorithms.html#ga14b86e682cd126f06a0fd5410f1f0f01", null ],
+    [ "stepperRK4", "group__algorithms.html#ga4ae13a63c4a1a2365ff63a97cb0a251a", null ],
+    [ "stepperRK6", "group__algorithms.html#ga218595e339660fa4f0c4964956a2898b", null ]
+];

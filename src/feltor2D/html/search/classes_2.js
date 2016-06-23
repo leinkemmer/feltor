@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['cartesiangrid1d',['CartesianGrid1d',['../../../../inc/dg/html/structdg_1_1_cartesian_grid1d.html',1,'dg']]],
+  ['cartesiangrid2d',['CartesianGrid2d',['../../../../inc/dg/html/structdg_1_1_cartesian_grid2d.html',1,'dg']]],
+  ['cartesiangrid3d',['CartesianGrid3d',['../../../../inc/dg/html/structdg_1_1_cartesian_grid3d.html',1,'dg']]],
+  ['cartesianmpigrid2d',['CartesianMPIGrid2d',['../../../../inc/dg/html/structdg_1_1_cartesian_m_p_i_grid2d.html',1,'dg']]],
+  ['cartesianmpigrid3d',['CartesianMPIGrid3d',['../../../../inc/dg/html/structdg_1_1_cartesian_m_p_i_grid3d.html',1,'dg']]],
+  ['cg',['CG',['../../../../inc/dg/html/classdg_1_1_c_g.html',1,'dg']]],
+  ['cg_3c_20container_20_3e',['CG&lt; container &gt;',['../../../../inc/dg/html/classdg_1_1_c_g.html',1,'']]],
+  ['coefficients',['Coefficients',['../../../../inc/toefl/html/structtoefl_1_1_coefficients.html',1,'toefl']]],
+  ['coldistmat',['ColDistMat',['../../../../inc/dg/html/structdg_1_1_col_dist_mat.html',1,'dg']]],
+  ['colormap_5fext',['colormap_ext',['../../../../inc/toefl/html/structtoefl_1_1colormap__ext.html',1,'toefl']]],
+  ['colormap_5ff',['colormap_f',['../../../../inc/toefl/html/structtoefl_1_1colormap__f.html',1,'toefl']]],
+  ['constant',['CONSTANT',['../../../../inc/dg/html/structdg_1_1_c_o_n_s_t_a_n_t.html',1,'dg']]],
+  ['coosparseblockmat',['CooSparseBlockMat',['../../../../inc/dg/html/structdg_1_1_coo_sparse_block_mat.html',1,'dg']]],
+  ['curvaturer',['CurvatureR',['../../../../inc/geometries/html/structsolovev_1_1_curvature_r.html',1,'solovev']]],
+  ['curvaturez',['CurvatureZ',['../../../../inc/geometries/html/structsolovev_1_1_curvature_z.html',1,'solovev']]],
+  ['curvilinearcylindricaltag',['CurvilinearCylindricalTag',['../../../../inc/dg/html/structdg_1_1_curvilinear_cylindrical_tag.html',1,'dg']]],
+  ['curvilineartag',['CurvilinearTag',['../../../../inc/dg/html/structdg_1_1_curvilinear_tag.html',1,'dg']]],
+  ['cuspmatrixtag',['CuspMatrixTag',['../../../../inc/dg/html/structdg_1_1_cusp_matrix_tag.html',1,'dg']]],
+  ['cuspprecontag',['CuspPreconTag',['../../../../inc/dg/html/structdg_1_1_cusp_precon_tag.html',1,'dg']]],
+  ['cuspvectortag',['CuspVectorTag',['../../../../inc/dg/html/structdg_1_1_cusp_vector_tag.html',1,'dg']]],
+  ['cylindricalgrid',['CylindricalGrid',['../../../../inc/dg/html/structdg_1_1_cylindrical_grid.html',1,'dg']]],
+  ['cylindricalmpigrid',['CylindricalMPIGrid',['../../../../inc/dg/html/structdg_1_1_cylindrical_m_p_i_grid.html',1,'dg']]]
+];
