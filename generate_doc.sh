@@ -12,6 +12,7 @@ tagfiles=""
 #first generate tag files for include components
 for i in $include;
 do (cat ../$i/Doxyfile; \
+    mkdir -p $i
 	echo "INPUT = ../$i/"; \
     echo "GENERATE_HTML=NO";\
 	echo "OUTPUT_DIRECTORY = ./$i/"; \
@@ -32,6 +33,7 @@ done;
 #generate dependent documentations
 for i in $src;
 do (cat ../$i/Doxyfile; \
+    mkdir -p $i
 	echo "INPUT = ../$i/"; \
 	echo "OUTPUT_DIRECTORY = ./$i/"; \
 	echo "HTML_HEADER = ./header.html"; \
