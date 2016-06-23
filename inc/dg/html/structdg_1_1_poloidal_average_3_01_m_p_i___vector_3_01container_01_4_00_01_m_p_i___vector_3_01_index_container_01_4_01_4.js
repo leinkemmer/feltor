@@ -1,5 +1,0 @@
-var structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4 =
-[
-    [ "PoloidalAverage", "structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html#ac766d37b2e98b3545b191b0d94f55b70", null ],
-    [ "operator()", "structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html#a1080986be232f5813e4068ab0d36efeb", null ]
-];
