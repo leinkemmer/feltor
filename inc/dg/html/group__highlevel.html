@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: Matrix creation functions and classes</title>
+<title>Discontinuous Galerkin Library: Weight functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -122,156 +123,131 @@ $(document).ready(function(){initNavTree('group__highlevel.html','');});
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Matrix creation functions and classes<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a> &raquo; <a class="el" href="group__creation.html">Discrete derivatives</a></div></div>  </div>
+<div class="title">Weight functions<div class="ingroups"><a class="el" href="group__geo.html">Topology and Geometry</a> &raquo; <a class="el" href="group__grid.html">Topological grids and operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4b8d708f745d60685daf4418b1585602"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga4b8d708f745d60685daf4418b1585602">dg::create::dx</a> (const Grid2d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:ga4b8d708f745d60685daf4418b1585602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__highlevel.html#ga4b8d708f745d60685daf4418b1585602">More...</a><br /></td></tr>
-<tr class="separator:ga4b8d708f745d60685daf4418b1585602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad384372583f9bdec4a4301645b440832"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gad384372583f9bdec4a4301645b440832">dg::create::dx</a> (const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gad384372583f9bdec4a4301645b440832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__highlevel.html#gad384372583f9bdec4a4301645b440832">More...</a><br /></td></tr>
-<tr class="separator:gad384372583f9bdec4a4301645b440832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad652ef370b7850958e9af42762c937f0"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gad652ef370b7850958e9af42762c937f0">dg::create::dy</a> (const Grid2d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:gad652ef370b7850958e9af42762c937f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__highlevel.html#gad652ef370b7850958e9af42762c937f0">More...</a><br /></td></tr>
-<tr class="separator:gad652ef370b7850958e9af42762c937f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29a63d5d3d64a4b941277e73f6641ed4"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga29a63d5d3d64a4b941277e73f6641ed4">dg::create::dy</a> (const Grid2d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga29a63d5d3d64a4b941277e73f6641ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__highlevel.html#ga29a63d5d3d64a4b941277e73f6641ed4">More...</a><br /></td></tr>
-<tr class="separator:ga29a63d5d3d64a4b941277e73f6641ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10c234c8254a646ccc335f48ea90eda6"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga10c234c8254a646ccc335f48ea90eda6">dg::create::jumpX</a> (const Grid2d&lt; double &gt; &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga10c234c8254a646ccc335f48ea90eda6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in X direction.  <a href="group__highlevel.html#ga10c234c8254a646ccc335f48ea90eda6">More...</a><br /></td></tr>
-<tr class="separator:ga10c234c8254a646ccc335f48ea90eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2137ac0e7a192dde9b77d208c2ddd4cf"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga2137ac0e7a192dde9b77d208c2ddd4cf">dg::create::jumpY</a> (const Grid2d&lt; double &gt; &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:ga2137ac0e7a192dde9b77d208c2ddd4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in Y direction.  <a href="group__highlevel.html#ga2137ac0e7a192dde9b77d208c2ddd4cf">More...</a><br /></td></tr>
-<tr class="separator:ga2137ac0e7a192dde9b77d208c2ddd4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab36940f1e8d6038fae5041c6a3e956fa"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab36940f1e8d6038fae5041c6a3e956fa">dg::create::jumpX</a> (const Grid2d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:gab36940f1e8d6038fae5041c6a3e956fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in X direction taking boundary conditions from the grid.  <a href="group__highlevel.html#gab36940f1e8d6038fae5041c6a3e956fa">More...</a><br /></td></tr>
-<tr class="separator:gab36940f1e8d6038fae5041c6a3e956fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf7db9cf0a3a69197fe60773adc1646ea"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaf7db9cf0a3a69197fe60773adc1646ea">dg::create::jumpY</a> (const Grid2d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:gaf7db9cf0a3a69197fe60773adc1646ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in Y direction taking boundary conditions from the grid.  <a href="group__highlevel.html#gaf7db9cf0a3a69197fe60773adc1646ea">More...</a><br /></td></tr>
-<tr class="separator:gaf7db9cf0a3a69197fe60773adc1646ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76cd4d05169f83ce905ca1ecd77a3582"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga76cd4d05169f83ce905ca1ecd77a3582">dg::create::jumpX</a> (const Grid3d&lt; double &gt; &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga76cd4d05169f83ce905ca1ecd77a3582"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in X direction in 3D.  <a href="group__highlevel.html#ga76cd4d05169f83ce905ca1ecd77a3582">More...</a><br /></td></tr>
-<tr class="separator:ga76cd4d05169f83ce905ca1ecd77a3582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacbd0f66cb8f92b70ee7be6ab78dc4ec9"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gacbd0f66cb8f92b70ee7be6ab78dc4ec9">dg::create::jumpY</a> (const Grid3d&lt; double &gt; &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:gacbd0f66cb8f92b70ee7be6ab78dc4ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in Y direction in 3D.  <a href="group__highlevel.html#gacbd0f66cb8f92b70ee7be6ab78dc4ec9">More...</a><br /></td></tr>
-<tr class="separator:gacbd0f66cb8f92b70ee7be6ab78dc4ec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga527fe50685be7f1b898ca1c2f52ca62f"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga527fe50685be7f1b898ca1c2f52ca62f">dg::create::jumpZ</a> (const Grid3d&lt; double &gt; &amp;g, bc bcz)</td></tr>
-<tr class="memdesc:ga527fe50685be7f1b898ca1c2f52ca62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in Z direction in 3D.  <a href="group__highlevel.html#ga527fe50685be7f1b898ca1c2f52ca62f">More...</a><br /></td></tr>
-<tr class="separator:ga527fe50685be7f1b898ca1c2f52ca62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9043b0aa7c3545b716160474cb8f0f49"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga9043b0aa7c3545b716160474cb8f0f49">dg::create::jumpX</a> (const Grid3d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga9043b0aa7c3545b716160474cb8f0f49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in X direction taking boundary conditions from the grid.  <a href="group__highlevel.html#ga9043b0aa7c3545b716160474cb8f0f49">More...</a><br /></td></tr>
-<tr class="separator:ga9043b0aa7c3545b716160474cb8f0f49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f49de68eef89410e06f7efdb06fa542"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga4f49de68eef89410e06f7efdb06fa542">dg::create::jumpY</a> (const Grid3d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga4f49de68eef89410e06f7efdb06fa542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in Y direction taking boundary conditions from the grid.  <a href="group__highlevel.html#ga4f49de68eef89410e06f7efdb06fa542">More...</a><br /></td></tr>
-<tr class="separator:ga4f49de68eef89410e06f7efdb06fa542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga377f2c43f9712050d1090c4cd113fd6e"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga377f2c43f9712050d1090c4cd113fd6e">dg::create::jumpZ</a> (const Grid3d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga377f2c43f9712050d1090c4cd113fd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in Z direction taking boundary conditions from the grid.  <a href="group__highlevel.html#ga377f2c43f9712050d1090c4cd113fd6e">More...</a><br /></td></tr>
-<tr class="separator:ga377f2c43f9712050d1090c4cd113fd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae500da52dc4811579841cb6bcf058f55"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae500da52dc4811579841cb6bcf058f55">dg::create::dx</a> (const Grid3d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:gae500da52dc4811579841cb6bcf058f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__highlevel.html#gae500da52dc4811579841cb6bcf058f55">More...</a><br /></td></tr>
-<tr class="separator:gae500da52dc4811579841cb6bcf058f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc205e80132591522db9c070627c84b8"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gabc205e80132591522db9c070627c84b8">dg::create::dx</a> (const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gabc205e80132591522db9c070627c84b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__highlevel.html#gabc205e80132591522db9c070627c84b8">More...</a><br /></td></tr>
-<tr class="separator:gabc205e80132591522db9c070627c84b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga861f37443f7b550f1a12535b19311134"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga861f37443f7b550f1a12535b19311134">dg::create::dy</a> (const Grid3d&lt; double &gt; &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:ga861f37443f7b550f1a12535b19311134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__highlevel.html#ga861f37443f7b550f1a12535b19311134">More...</a><br /></td></tr>
-<tr class="separator:ga861f37443f7b550f1a12535b19311134"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga465a35b736ae565cd61f4c06e244c40c"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga465a35b736ae565cd61f4c06e244c40c">dg::create::dy</a> (const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga465a35b736ae565cd61f4c06e244c40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__highlevel.html#ga465a35b736ae565cd61f4c06e244c40c">More...</a><br /></td></tr>
-<tr class="separator:ga465a35b736ae565cd61f4c06e244c40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f090319cafcd6dcbeda7772ad3208f6"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga2f090319cafcd6dcbeda7772ad3208f6">dg::create::dz</a> (const Grid3d&lt; double &gt; &amp;g, bc bcz, direction dir=centered)</td></tr>
-<tr class="memdesc:ga2f090319cafcd6dcbeda7772ad3208f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__highlevel.html#ga2f090319cafcd6dcbeda7772ad3208f6">More...</a><br /></td></tr>
-<tr class="separator:ga2f090319cafcd6dcbeda7772ad3208f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4382930b433f73374028e6e95bfe2c79"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga4382930b433f73374028e6e95bfe2c79">dg::create::dz</a> (const Grid3d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga4382930b433f73374028e6e95bfe2c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__highlevel.html#ga4382930b433f73374028e6e95bfe2c79">More...</a><br /></td></tr>
-<tr class="separator:ga4382930b433f73374028e6e95bfe2c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga851542a96cf6d32047d002a1715d6d5a"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga851542a96cf6d32047d002a1715d6d5a">dg::create::dx</a> (const MPI_Grid2d &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:ga851542a96cf6d32047d002a1715d6d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the x-direction for mpi.  <a href="group__highlevel.html#ga851542a96cf6d32047d002a1715d6d5a">More...</a><br /></td></tr>
-<tr class="separator:ga851542a96cf6d32047d002a1715d6d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0b8e1b784ef8802c17134a652bd14dff"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga0b8e1b784ef8802c17134a652bd14dff">dg::create::dy</a> (const MPI_Grid2d &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:ga0b8e1b784ef8802c17134a652bd14dff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d derivative in the y-direction for mpi.  <a href="group__highlevel.html#ga0b8e1b784ef8802c17134a652bd14dff">More...</a><br /></td></tr>
-<tr class="separator:ga0b8e1b784ef8802c17134a652bd14dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3a602807e896ad9751d7c5b55b13217"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gad3a602807e896ad9751d7c5b55b13217">dg::create::jumpX</a> (const MPI_Grid2d &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:gad3a602807e896ad9751d7c5b55b13217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the x-direction for mpi.  <a href="group__highlevel.html#gad3a602807e896ad9751d7c5b55b13217">More...</a><br /></td></tr>
-<tr class="separator:gad3a602807e896ad9751d7c5b55b13217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga721da874c569c56a97b4a6d88201269b"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga721da874c569c56a97b4a6d88201269b">dg::create::jumpY</a> (const MPI_Grid2d &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:ga721da874c569c56a97b4a6d88201269b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 2d jump in the y-direction for mpi.  <a href="group__highlevel.html#ga721da874c569c56a97b4a6d88201269b">More...</a><br /></td></tr>
-<tr class="separator:ga721da874c569c56a97b4a6d88201269b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5ec8892b32d913133379f2b8b61bcf6"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaf5ec8892b32d913133379f2b8b61bcf6">dg::create::dx</a> (const MPI_Grid3d &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:gaf5ec8892b32d913133379f2b8b61bcf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the x-direction for mpi.  <a href="group__highlevel.html#gaf5ec8892b32d913133379f2b8b61bcf6">More...</a><br /></td></tr>
-<tr class="separator:gaf5ec8892b32d913133379f2b8b61bcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4af83a7e3a48ca40c972372a7d9e01f"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab4af83a7e3a48ca40c972372a7d9e01f">dg::create::dy</a> (const MPI_Grid3d &amp;g, bc bcy, direction dir=centered)</td></tr>
-<tr class="memdesc:gab4af83a7e3a48ca40c972372a7d9e01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the y-direction for mpi.  <a href="group__highlevel.html#gab4af83a7e3a48ca40c972372a7d9e01f">More...</a><br /></td></tr>
-<tr class="separator:gab4af83a7e3a48ca40c972372a7d9e01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5639af0d50101c04a944637dc281ecf6"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga5639af0d50101c04a944637dc281ecf6">dg::create::dz</a> (const MPI_Grid3d &amp;g, bc bcz, direction dir=centered)</td></tr>
-<tr class="memdesc:ga5639af0d50101c04a944637dc281ecf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d derivative in the z-direction for mpi.  <a href="group__highlevel.html#ga5639af0d50101c04a944637dc281ecf6">More...</a><br /></td></tr>
-<tr class="separator:ga5639af0d50101c04a944637dc281ecf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ab1f06a0ebc26531783cf20681df2e6"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga2ab1f06a0ebc26531783cf20681df2e6">dg::create::jumpX</a> (const MPI_Grid3d &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:ga2ab1f06a0ebc26531783cf20681df2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the x-direction for mpi.  <a href="group__highlevel.html#ga2ab1f06a0ebc26531783cf20681df2e6">More...</a><br /></td></tr>
-<tr class="separator:ga2ab1f06a0ebc26531783cf20681df2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga39b1612a2e9dbbcd714432dc9caa86be"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga39b1612a2e9dbbcd714432dc9caa86be">dg::create::jumpY</a> (const MPI_Grid3d &amp;g, bc bcy)</td></tr>
-<tr class="memdesc:ga39b1612a2e9dbbcd714432dc9caa86be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the y-direction for mpi.  <a href="group__highlevel.html#ga39b1612a2e9dbbcd714432dc9caa86be">More...</a><br /></td></tr>
-<tr class="separator:ga39b1612a2e9dbbcd714432dc9caa86be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85419e1fab117847a853be3f2b4a1d98"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga85419e1fab117847a853be3f2b4a1d98">dg::create::jumpZ</a> (const MPI_Grid3d &amp;g, bc bcz)</td></tr>
-<tr class="memdesc:ga85419e1fab117847a853be3f2b4a1d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a 3d jump in the z-direction for mpi.  <a href="group__highlevel.html#ga85419e1fab117847a853be3f2b4a1d98">More...</a><br /></td></tr>
-<tr class="separator:ga85419e1fab117847a853be3f2b4a1d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c3cbf408d9f342432ae3f001a993881"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga8c3cbf408d9f342432ae3f001a993881">dg::create::dx</a> (const MPI_Grid2d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga8c3cbf408d9f342432ae3f001a993881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__highlevel.html#ga8c3cbf408d9f342432ae3f001a993881">More...</a><br /></td></tr>
-<tr class="separator:ga8c3cbf408d9f342432ae3f001a993881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9bebb1a37d52593c1872e07af094556"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gac9bebb1a37d52593c1872e07af094556">dg::create::dx</a> (const MPI_Grid3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gac9bebb1a37d52593c1872e07af094556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__highlevel.html#gac9bebb1a37d52593c1872e07af094556">More...</a><br /></td></tr>
-<tr class="separator:gac9bebb1a37d52593c1872e07af094556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga32537fbd88f3a144db912553fd190d9d"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga32537fbd88f3a144db912553fd190d9d">dg::create::jumpX</a> (const MPI_Grid2d &amp;g)</td></tr>
-<tr class="memdesc:ga32537fbd88f3a144db912553fd190d9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in x-direction.  <a href="group__highlevel.html#ga32537fbd88f3a144db912553fd190d9d">More...</a><br /></td></tr>
-<tr class="separator:ga32537fbd88f3a144db912553fd190d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab56db751f433ea2e36e6cfabce6a4349"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab56db751f433ea2e36e6cfabce6a4349">dg::create::jumpX</a> (const MPI_Grid3d &amp;g)</td></tr>
-<tr class="memdesc:gab56db751f433ea2e36e6cfabce6a4349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in x-direction.  <a href="group__highlevel.html#gab56db751f433ea2e36e6cfabce6a4349">More...</a><br /></td></tr>
-<tr class="separator:gab56db751f433ea2e36e6cfabce6a4349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaadeb7720f2577d3d081e8ede15cde382"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaadeb7720f2577d3d081e8ede15cde382">dg::create::dy</a> (const MPI_Grid2d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gaadeb7720f2577d3d081e8ede15cde382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__highlevel.html#gaadeb7720f2577d3d081e8ede15cde382">More...</a><br /></td></tr>
-<tr class="separator:gaadeb7720f2577d3d081e8ede15cde382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga28c280d7b3020d5828f7b7d307158896"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga28c280d7b3020d5828f7b7d307158896">dg::create::dy</a> (const MPI_Grid3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:ga28c280d7b3020d5828f7b7d307158896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__highlevel.html#ga28c280d7b3020d5828f7b7d307158896">More...</a><br /></td></tr>
-<tr class="separator:ga28c280d7b3020d5828f7b7d307158896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc0289cd97d7f4885e67b8d200435d1b"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gafc0289cd97d7f4885e67b8d200435d1b">dg::create::jumpY</a> (const MPI_Grid2d &amp;g)</td></tr>
-<tr class="memdesc:gafc0289cd97d7f4885e67b8d200435d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d jump in y-direction.  <a href="group__highlevel.html#gafc0289cd97d7f4885e67b8d200435d1b">More...</a><br /></td></tr>
-<tr class="separator:gafc0289cd97d7f4885e67b8d200435d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1beec353829b91b70ba05fe13fc1fb29"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga1beec353829b91b70ba05fe13fc1fb29">dg::create::jumpY</a> (const MPI_Grid3d &amp;g)</td></tr>
-<tr class="memdesc:ga1beec353829b91b70ba05fe13fc1fb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in y-direction.  <a href="group__highlevel.html#ga1beec353829b91b70ba05fe13fc1fb29">More...</a><br /></td></tr>
-<tr class="separator:ga1beec353829b91b70ba05fe13fc1fb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf90c41981330292485017cb2a956e488"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaf90c41981330292485017cb2a956e488">dg::create::dz</a> (const MPI_Grid3d &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gaf90c41981330292485017cb2a956e488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__highlevel.html#gaf90c41981330292485017cb2a956e488">More...</a><br /></td></tr>
-<tr class="separator:gaf90c41981330292485017cb2a956e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga205fba6e3ac960bd8461e933525378ab"><td class="memItemLeft" align="right" valign="top">RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga205fba6e3ac960bd8461e933525378ab">dg::create::jumpZ</a> (const MPI_Grid3d &amp;g)</td></tr>
-<tr class="memdesc:ga205fba6e3ac960bd8461e933525378ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d jump in z-direction.  <a href="group__highlevel.html#ga205fba6e3ac960bd8461e933525378ab">More...</a><br /></td></tr>
-<tr class="separator:ga205fba6e3ac960bd8461e933525378ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga516908b4ba89e00774386860f3b68897"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga516908b4ba89e00774386860f3b68897">dg::create::weights</a> (const MPI_Grid2d &amp;g)</td></tr>
-<tr class="memdesc:ga516908b4ba89e00774386860f3b68897"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 2d X-space weight coefficients  <a href="group__highlevel.html#ga516908b4ba89e00774386860f3b68897">More...</a><br /></td></tr>
-<tr class="separator:ga516908b4ba89e00774386860f3b68897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90632d7c240a20e8206e286f2f86f25a"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga90632d7c240a20e8206e286f2f86f25a">dg::create::inv_weights</a> (const MPI_Grid2d &amp;g)</td></tr>
-<tr class="memdesc:ga90632d7c240a20e8206e286f2f86f25a"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 2d inverse X-space weight coefficients  <a href="group__highlevel.html#ga90632d7c240a20e8206e286f2f86f25a">More...</a><br /></td></tr>
-<tr class="separator:ga90632d7c240a20e8206e286f2f86f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadad712eb1f1c27ba4d1c8f1c695676f8"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gadad712eb1f1c27ba4d1c8f1c695676f8">dg::create::weights</a> (const MPI_Grid3d &amp;g)</td></tr>
-<tr class="memdesc:gadad712eb1f1c27ba4d1c8f1c695676f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 3d X-space weight coefficients  <a href="group__highlevel.html#gadad712eb1f1c27ba4d1c8f1c695676f8">More...</a><br /></td></tr>
-<tr class="separator:gadad712eb1f1c27ba4d1c8f1c695676f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3ff6672b3abde44ff687d0a0dee6126"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae3ff6672b3abde44ff687d0a0dee6126">dg::create::inv_weights</a> (const MPI_Grid3d &amp;g)</td></tr>
-<tr class="memdesc:gae3ff6672b3abde44ff687d0a0dee6126"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 3d inverse X-space weight coefficients  <a href="group__highlevel.html#gae3ff6672b3abde44ff687d0a0dee6126">More...</a><br /></td></tr>
-<tr class="separator:gae3ff6672b3abde44ff687d0a0dee6126"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga847578afcce10a86d4008d4887508e65"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga847578afcce10a86d4008d4887508e65">dg::create::dx</a> (const GridX2d &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:ga847578afcce10a86d4008d4887508e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__highlevel.html#ga847578afcce10a86d4008d4887508e65">More...</a><br /></td></tr>
+<tr class="separator:ga847578afcce10a86d4008d4887508e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a8a0b47821c282c8993a05e7def7b9e"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga5a8a0b47821c282c8993a05e7def7b9e">dg::create::dx</a> (const GridX2d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga5a8a0b47821c282c8993a05e7def7b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in x-direction.  <a href="group__highlevel.html#ga5a8a0b47821c282c8993a05e7def7b9e">More...</a><br /></td></tr>
+<tr class="separator:ga5a8a0b47821c282c8993a05e7def7b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9101fc947165d374befb610466e86685"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga9101fc947165d374befb610466e86685">dg::create::dy</a> (const GridX2d &amp;g, bc bcy, direction dir=centered)</td></tr>
+<tr class="memdesc:ga9101fc947165d374befb610466e86685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__highlevel.html#ga9101fc947165d374befb610466e86685">More...</a><br /></td></tr>
+<tr class="separator:ga9101fc947165d374befb610466e86685"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4b36f72ed1fe0d27c06078d4c39525b"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gac4b36f72ed1fe0d27c06078d4c39525b">dg::create::dy</a> (const GridX2d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:gac4b36f72ed1fe0d27c06078d4c39525b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 2d derivative in y-direction.  <a href="group__highlevel.html#gac4b36f72ed1fe0d27c06078d4c39525b">More...</a><br /></td></tr>
+<tr class="separator:gac4b36f72ed1fe0d27c06078d4c39525b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88919924c76e64717f3a6626626201ef"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga88919924c76e64717f3a6626626201ef">dg::create::jumpX</a> (const GridX2d &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:ga88919924c76e64717f3a6626626201ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in X direction.  <a href="group__highlevel.html#ga88919924c76e64717f3a6626626201ef">More...</a><br /></td></tr>
+<tr class="separator:ga88919924c76e64717f3a6626626201ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae70931588fce6c43c891ec0685222875"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae70931588fce6c43c891ec0685222875">dg::create::jumpY</a> (const GridX2d &amp;g, bc bcy)</td></tr>
+<tr class="memdesc:gae70931588fce6c43c891ec0685222875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in Y direction.  <a href="group__highlevel.html#gae70931588fce6c43c891ec0685222875">More...</a><br /></td></tr>
+<tr class="separator:gae70931588fce6c43c891ec0685222875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68544d757de0b00407508a5b7b4cf76f"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga68544d757de0b00407508a5b7b4cf76f">dg::create::jumpX</a> (const GridX2d &amp;g)</td></tr>
+<tr class="memdesc:ga68544d757de0b00407508a5b7b4cf76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in X direction taking boundary conditions from the grid.  <a href="group__highlevel.html#ga68544d757de0b00407508a5b7b4cf76f">More...</a><br /></td></tr>
+<tr class="separator:ga68544d757de0b00407508a5b7b4cf76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga47b9788fab407120d68b22be3070c84c"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga47b9788fab407120d68b22be3070c84c">dg::create::jumpY</a> (const GridX2d &amp;g)</td></tr>
+<tr class="memdesc:ga47b9788fab407120d68b22be3070c84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 2d jump terms in Y direction taking boundary conditions from the grid.  <a href="group__highlevel.html#ga47b9788fab407120d68b22be3070c84c">More...</a><br /></td></tr>
+<tr class="separator:ga47b9788fab407120d68b22be3070c84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91fd9086d0f5a954aeca9a24e26015eb"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga91fd9086d0f5a954aeca9a24e26015eb">dg::create::jumpX</a> (const GridX3d &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:ga91fd9086d0f5a954aeca9a24e26015eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in X direction in 3D.  <a href="group__highlevel.html#ga91fd9086d0f5a954aeca9a24e26015eb">More...</a><br /></td></tr>
+<tr class="separator:ga91fd9086d0f5a954aeca9a24e26015eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb74c2f92340c357f3e3b40d745baa41"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gacb74c2f92340c357f3e3b40d745baa41">dg::create::jumpY</a> (const GridX3d &amp;g, bc bcy)</td></tr>
+<tr class="memdesc:gacb74c2f92340c357f3e3b40d745baa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in Y direction in 3D.  <a href="group__highlevel.html#gacb74c2f92340c357f3e3b40d745baa41">More...</a><br /></td></tr>
+<tr class="separator:gacb74c2f92340c357f3e3b40d745baa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga621c4fa259c999e891d35c8c74c0e522"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga621c4fa259c999e891d35c8c74c0e522">dg::create::jumpZ</a> (const GridX3d &amp;g, bc bcz)</td></tr>
+<tr class="memdesc:ga621c4fa259c999e891d35c8c74c0e522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains jump terms in Z direction in 3D.  <a href="group__highlevel.html#ga621c4fa259c999e891d35c8c74c0e522">More...</a><br /></td></tr>
+<tr class="separator:ga621c4fa259c999e891d35c8c74c0e522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc6637be3a320466b81230249a46217a"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gadc6637be3a320466b81230249a46217a">dg::create::jumpX</a> (const GridX3d &amp;g)</td></tr>
+<tr class="memdesc:gadc6637be3a320466b81230249a46217a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in X direction taking boundary conditions from the grid.  <a href="group__highlevel.html#gadc6637be3a320466b81230249a46217a">More...</a><br /></td></tr>
+<tr class="separator:gadc6637be3a320466b81230249a46217a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2262f08b549298a1b1892479d546cd1"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaf2262f08b549298a1b1892479d546cd1">dg::create::jumpY</a> (const GridX3d &amp;g)</td></tr>
+<tr class="memdesc:gaf2262f08b549298a1b1892479d546cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in Y direction taking boundary conditions from the grid.  <a href="group__highlevel.html#gaf2262f08b549298a1b1892479d546cd1">More...</a><br /></td></tr>
+<tr class="separator:gaf2262f08b549298a1b1892479d546cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4f0a614b23abcb2df464b1bc6d955b9"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gad4f0a614b23abcb2df464b1bc6d955b9">dg::create::jumpZ</a> (const GridX3d &amp;g)</td></tr>
+<tr class="memdesc:gad4f0a614b23abcb2df464b1bc6d955b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix that contains 3d jump terms in Z direction taking boundary conditions from the grid.  <a href="group__highlevel.html#gad4f0a614b23abcb2df464b1bc6d955b9">More...</a><br /></td></tr>
+<tr class="separator:gad4f0a614b23abcb2df464b1bc6d955b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc81462757f60719dffff9f390f18a6e"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gabc81462757f60719dffff9f390f18a6e">dg::create::dx</a> (const GridX3d &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:gabc81462757f60719dffff9f390f18a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__highlevel.html#gabc81462757f60719dffff9f390f18a6e">More...</a><br /></td></tr>
+<tr class="separator:gabc81462757f60719dffff9f390f18a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga37a3244f8accf9d8e1cf0f7ce9ef248a"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga37a3244f8accf9d8e1cf0f7ce9ef248a">dg::create::dx</a> (const GridX3d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga37a3244f8accf9d8e1cf0f7ce9ef248a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in x-direction.  <a href="group__highlevel.html#ga37a3244f8accf9d8e1cf0f7ce9ef248a">More...</a><br /></td></tr>
+<tr class="separator:ga37a3244f8accf9d8e1cf0f7ce9ef248a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3994623c9e63caa217b528ba47754f1"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae3994623c9e63caa217b528ba47754f1">dg::create::dy</a> (const GridX3d &amp;g, bc bcy, direction dir=centered)</td></tr>
+<tr class="memdesc:gae3994623c9e63caa217b528ba47754f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__highlevel.html#gae3994623c9e63caa217b528ba47754f1">More...</a><br /></td></tr>
+<tr class="separator:gae3994623c9e63caa217b528ba47754f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga844858da7195c4e8547d3a3201d7888a"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga844858da7195c4e8547d3a3201d7888a">dg::create::dy</a> (const GridX3d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:ga844858da7195c4e8547d3a3201d7888a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in y-direction.  <a href="group__highlevel.html#ga844858da7195c4e8547d3a3201d7888a">More...</a><br /></td></tr>
+<tr class="separator:ga844858da7195c4e8547d3a3201d7888a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga30cba7a7eb8093df853726bc61110fc6"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga30cba7a7eb8093df853726bc61110fc6">dg::create::dz</a> (const GridX3d &amp;g, bc bcz, direction dir=centered)</td></tr>
+<tr class="memdesc:ga30cba7a7eb8093df853726bc61110fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__highlevel.html#ga30cba7a7eb8093df853726bc61110fc6">More...</a><br /></td></tr>
+<tr class="separator:ga30cba7a7eb8093df853726bc61110fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad08afc1d081b3d263d5769276ed0421b"><td class="memItemLeft" align="right" valign="top">Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gad08afc1d081b3d263d5769276ed0421b">dg::create::dz</a> (const GridX3d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:gad08afc1d081b3d263d5769276ed0421b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 3d derivative in z-direction.  <a href="group__highlevel.html#gad08afc1d081b3d263d5769276ed0421b">More...</a><br /></td></tr>
+<tr class="separator:gad08afc1d081b3d263d5769276ed0421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf25151461f1018550f90e137b04598f"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gacf25151461f1018550f90e137b04598f">dg::create::weights</a> (const MPIGrid2d &amp;g)</td></tr>
+<tr class="memdesc:gacf25151461f1018550f90e137b04598f"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 2d X-space weight coefficients  <a href="group__highlevel.html#gacf25151461f1018550f90e137b04598f">More...</a><br /></td></tr>
+<tr class="separator:gacf25151461f1018550f90e137b04598f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42b5d904a464a2fddf3e5407e1de69f4"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga42b5d904a464a2fddf3e5407e1de69f4">dg::create::inv_weights</a> (const MPIGrid2d &amp;g)</td></tr>
+<tr class="memdesc:ga42b5d904a464a2fddf3e5407e1de69f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 2d inverse X-space weight coefficients  <a href="group__highlevel.html#ga42b5d904a464a2fddf3e5407e1de69f4">More...</a><br /></td></tr>
+<tr class="separator:ga42b5d904a464a2fddf3e5407e1de69f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga875b96222769ee80cc07dd611eede5d5"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga875b96222769ee80cc07dd611eede5d5">dg::create::weights</a> (const MPIGrid3d &amp;g)</td></tr>
+<tr class="memdesc:ga875b96222769ee80cc07dd611eede5d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 3d X-space weight coefficients  <a href="group__highlevel.html#ga875b96222769ee80cc07dd611eede5d5">More...</a><br /></td></tr>
+<tr class="separator:ga875b96222769ee80cc07dd611eede5d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadea2846bdda1a681dbe775c3f6c33200"><td class="memItemLeft" align="right" valign="top">MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gadea2846bdda1a681dbe775c3f6c33200">dg::create::inv_weights</a> (const MPIGrid3d &amp;g)</td></tr>
+<tr class="memdesc:gadea2846bdda1a681dbe775c3f6c33200"><td class="mdescLeft">&#160;</td><td class="mdescRight">create Preconditioner containing 3d inverse X-space weight coefficients  <a href="group__highlevel.html#gadea2846bdda1a681dbe775c3f6c33200">More...</a><br /></td></tr>
+<tr class="separator:gadea2846bdda1a681dbe775c3f6c33200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga648eae054e3f4e562b6cc5236292c81c"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga648eae054e3f4e562b6cc5236292c81c">dg::create::weights</a> (const Grid1d &amp;g)</td></tr>
+<tr class="memdesc:ga648eae054e3f4e562b6cc5236292c81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 1d X-space weight coefficients  <a href="group__highlevel.html#ga648eae054e3f4e562b6cc5236292c81c">More...</a><br /></td></tr>
+<tr class="separator:ga648eae054e3f4e562b6cc5236292c81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae23a7f52a99da81d8316f8e4851afdf6"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gae23a7f52a99da81d8316f8e4851afdf6">dg::create::inv_weights</a> (const Grid1d &amp;g)</td></tr>
+<tr class="memdesc:gae23a7f52a99da81d8316f8e4851afdf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 1d X-space inverse weight coefficients  <a href="group__highlevel.html#gae23a7f52a99da81d8316f8e4851afdf6">More...</a><br /></td></tr>
+<tr class="separator:gae23a7f52a99da81d8316f8e4851afdf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfda934f46993fd61f0549dcee940838"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gacfda934f46993fd61f0549dcee940838">dg::create::weights</a> (const Grid2d &amp;g)</td></tr>
+<tr class="memdesc:gacfda934f46993fd61f0549dcee940838"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 2d X-space integration weight coefficients  <a href="group__highlevel.html#gacfda934f46993fd61f0549dcee940838">More...</a><br /></td></tr>
+<tr class="separator:gacfda934f46993fd61f0549dcee940838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga752ea2aca9b9f30196f5a0c12def9358"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga752ea2aca9b9f30196f5a0c12def9358">dg::create::inv_weights</a> (const Grid2d &amp;g)</td></tr>
+<tr class="memdesc:ga752ea2aca9b9f30196f5a0c12def9358"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 2d X-space inverse weight coefficients  <a href="group__highlevel.html#ga752ea2aca9b9f30196f5a0c12def9358">More...</a><br /></td></tr>
+<tr class="separator:ga752ea2aca9b9f30196f5a0c12def9358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga786ea88243414227b3cb4ca9e645ff28"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga786ea88243414227b3cb4ca9e645ff28">dg::create::weights</a> (const Grid3d &amp;g)</td></tr>
+<tr class="memdesc:ga786ea88243414227b3cb4ca9e645ff28"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 3d X-space weight coefficients for integration  <a href="group__highlevel.html#ga786ea88243414227b3cb4ca9e645ff28">More...</a><br /></td></tr>
+<tr class="separator:ga786ea88243414227b3cb4ca9e645ff28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b5dad8c5e51a1c7eb869b5660f12cde"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga5b5dad8c5e51a1c7eb869b5660f12cde">dg::create::inv_weights</a> (const Grid3d &amp;g)</td></tr>
+<tr class="memdesc:ga5b5dad8c5e51a1c7eb869b5660f12cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 3d X-space inverse weight coefficients  <a href="group__highlevel.html#ga5b5dad8c5e51a1c7eb869b5660f12cde">More...</a><br /></td></tr>
+<tr class="separator:ga5b5dad8c5e51a1c7eb869b5660f12cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4ca746304146ab6ca17eb579ea8bc06"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gac4ca746304146ab6ca17eb579ea8bc06">dg::create::weights</a> (const <a class="el" href="structdg_1_1_grid_x1d.html">dg::GridX1d</a> &amp;g)</td></tr>
+<tr class="memdesc:gac4ca746304146ab6ca17eb579ea8bc06"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 1d X-space weight coefficients  <a href="group__highlevel.html#gac4ca746304146ab6ca17eb579ea8bc06">More...</a><br /></td></tr>
+<tr class="separator:gac4ca746304146ab6ca17eb579ea8bc06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21d12300d671e480e34dc884882c65d7"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga21d12300d671e480e34dc884882c65d7">dg::create::inv_weights</a> (const GridX1d &amp;g)</td></tr>
+<tr class="memdesc:ga21d12300d671e480e34dc884882c65d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 1d X-space inverse weight coefficients  <a href="group__highlevel.html#ga21d12300d671e480e34dc884882c65d7">More...</a><br /></td></tr>
+<tr class="separator:ga21d12300d671e480e34dc884882c65d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38fddca93dc8eee772d5a5d779ec9c22"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#ga38fddca93dc8eee772d5a5d779ec9c22">dg::create::weights</a> (const GridX2d &amp;g)</td></tr>
+<tr class="memdesc:ga38fddca93dc8eee772d5a5d779ec9c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 2d X-space integration weight coefficients  <a href="group__highlevel.html#ga38fddca93dc8eee772d5a5d779ec9c22">More...</a><br /></td></tr>
+<tr class="separator:ga38fddca93dc8eee772d5a5d779ec9c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedfc93480bab3fb7b82d7dad395df099"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gaedfc93480bab3fb7b82d7dad395df099">dg::create::inv_weights</a> (const GridX2d &amp;g)</td></tr>
+<tr class="memdesc:gaedfc93480bab3fb7b82d7dad395df099"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 2d X-space inverse weight coefficients  <a href="group__highlevel.html#gaedfc93480bab3fb7b82d7dad395df099">More...</a><br /></td></tr>
+<tr class="separator:gaedfc93480bab3fb7b82d7dad395df099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa170ccd5f60356c806a5d31cfe6d82e"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gafa170ccd5f60356c806a5d31cfe6d82e">dg::create::weights</a> (const GridX3d &amp;g)</td></tr>
+<tr class="memdesc:gafa170ccd5f60356c806a5d31cfe6d82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 3d X-space weight coefficients for integration  <a href="group__highlevel.html#gafa170ccd5f60356c806a5d31cfe6d82e">More...</a><br /></td></tr>
+<tr class="separator:gafa170ccd5f60356c806a5d31cfe6d82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab534ed06b8f8541b2dc1059155978d40"><td class="memItemLeft" align="right" valign="top">thrust::host_vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__highlevel.html#gab534ed06b8f8541b2dc1059155978d40">dg::create::inv_weights</a> (const GridX3d &amp;g)</td></tr>
+<tr class="memdesc:gab534ed06b8f8541b2dc1059155978d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">create host_vector containing 3d X-space inverse weight coefficients  <a href="group__highlevel.html#gab534ed06b8f8541b2dc1059155978d40">More...</a><br /></td></tr>
+<tr class="separator:gab534ed06b8f8541b2dc1059155978d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>High level matrix creation functions </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga4b8d708f745d60685daf4418b1585602"></a>
+<a class="anchor" id="ga847578afcce10a86d4008d4887508e65"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dx </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -307,14 +283,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gad384372583f9bdec4a4301645b440832"></a>
+<a class="anchor" id="ga5a8a0b47821c282c8993a05e7def7b9e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dx </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -343,100 +319,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga851542a96cf6d32047d002a1715d6d5a"></a>
+<a class="anchor" id="gabc81462757f60719dffff9f390f18a6e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 2d derivative in the x-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
-    <tr><td class="paramname">bcx</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gaf5ec8892b32d913133379f2b8b61bcf6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the x-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcx</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gae500da52dc4811579841cb6bcf058f55"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dx </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -472,14 +362,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gabc205e80132591522db9c070627c84b8"></a>
+<a class="anchor" id="ga37a3244f8accf9d8e1cf0f7ce9ef248a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dx </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dx </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -508,86 +398,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8c3cbf408d9f342432ae3f001a993881"></a>
+<a class="anchor" id="ga9101fc947165d374befb610466e86685"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dy </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 2d derivative in x-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dx (boundary condition is taken from here) </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction of the first derivative</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gac9bebb1a37d52593c1872e07af094556"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dx </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 3d derivative in x-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dx (boundary condition is taken from here) </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction of the first derivative</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gad652ef370b7850958e9af42762c937f0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -623,14 +441,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga29a63d5d3d64a4b941277e73f6641ed4"></a>
+<a class="anchor" id="gac4b36f72ed1fe0d27c06078d4c39525b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dy </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dy </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -659,100 +477,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0b8e1b784ef8802c17134a652bd14dff"></a>
+<a class="anchor" id="gae3994623c9e63caa217b528ba47754f1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dy </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 2d derivative in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gab4af83a7e3a48ca40c972372a7d9e01f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga861f37443f7b550f1a12535b19311134"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -788,14 +520,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga465a35b736ae565cd61f4c06e244c40c"></a>
+<a class="anchor" id="ga844858da7195c4e8547d3a3201d7888a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dy </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dy </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -824,129 +556,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaadeb7720f2577d3d081e8ede15cde382"></a>
+<a class="anchor" id="ga30cba7a7eb8093df853726bc61110fc6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dz </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 2d derivative in y-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dy (boundary condition is taken from here) </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction of the first derivative</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga28c280d7b3020d5828f7b7d307158896"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dy </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 3d derivative in y-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dy (boundary condition is taken from here) </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction of the first derivative</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga5639af0d50101c04a944637dc281ecf6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dz </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d derivative in the z-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">dir</td><td>centered, forward or backward</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga2f090319cafcd6dcbeda7772ad3208f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dz </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -982,14 +599,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4382930b433f73374028e6e95bfe2c79"></a>
+<a class="anchor" id="gad08afc1d081b3d263d5769276ed0421b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::dz </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::dz </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1018,50 +635,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf90c41981330292485017cb2a956e488"></a>
+<a class="anchor" id="ga21d12300d671e480e34dc884882c65d7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::dz </td>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x1d.html">GridX1d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#gabf9ea3df33484cbb5886e257c3899e48">direction</a>&#160;</td>
-          <td class="paramname"><em>dir</em> = <code><a class="el" href="group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a6281b4fc609cb723a615662b5adac9df">centered</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create 3d derivative in z-direction. </p>
+<p>create host_vector containing 1d X-space inverse weight coefficients </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dz (boundary condition is taken from here) </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction of the first derivative</td></tr>
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga90632d7c240a20e8206e286f2f86f25a"></a>
+<a class="anchor" id="ga42b5d904a464a2fddf3e5407e1de69f4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::create::inv_weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i_grid2d.html">MPIGrid2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1079,14 +685,95 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae3ff6672b3abde44ff687d0a0dee6126"></a>
+<a class="anchor" id="gaedfc93480bab3fb7b82d7dad395df099"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 2d X-space inverse weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae23a7f52a99da81d8316f8e4851afdf6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 1d X-space inverse weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab534ed06b8f8541b2dc1059155978d40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 3d X-space inverse weight coefficients </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>value type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadea2846bdda1a681dbe775c3f6c33200"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::create::inv_weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i_grid3d.html">MPIGrid3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1104,14 +791,64 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga10c234c8254a646ccc335f48ea90eda6"></a>
+<a class="anchor" id="ga752ea2aca9b9f30196f5a0c12def9358"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpX </td>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 2d X-space inverse weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5b5dad8c5e51a1c7eb869b5660f12cde"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::inv_weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 3d X-space inverse weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga88919924c76e64717f3a6626626201ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpX </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1140,14 +877,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab36940f1e8d6038fae5041c6a3e956fa"></a>
+<a class="anchor" id="ga68544d757de0b00407508a5b7b4cf76f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpX </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpX </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1165,14 +902,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga76cd4d05169f83ce905ca1ecd77a3582"></a>
+<a class="anchor" id="ga91fd9086d0f5a954aeca9a24e26015eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpX </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpX </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1201,50 +938,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gad3a602807e896ad9751d7c5b55b13217"></a>
+<a class="anchor" id="gadc6637be3a320466b81230249a46217a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpX </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpX </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 2d jump in the x-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
-    <tr><td class="paramname">bcx</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga9043b0aa7c3545b716160474cb8f0f49"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpX </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1262,100 +963,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2ab1f06a0ebc26531783cf20681df2e6"></a>
+<a class="anchor" id="gae70931588fce6c43c891ec0685222875"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpX </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpY </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d jump in the x-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcx</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga32537fbd88f3a144db912553fd190d9d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpX </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 2d jump in x-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create jump (boundary condition is taken from here)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gab56db751f433ea2e36e6cfabce6a4349"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpX </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 3d jump in x-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create jump (boundary condition is taken from here)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga2137ac0e7a192dde9b77d208c2ddd4cf"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpY </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1384,14 +999,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf7db9cf0a3a69197fe60773adc1646ea"></a>
+<a class="anchor" id="ga47b9788fab407120d68b22be3070c84c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpY </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpY </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1409,14 +1024,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gacbd0f66cb8f92b70ee7be6ab78dc4ec9"></a>
+<a class="anchor" id="gacb74c2f92340c357f3e3b40d745baa41"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpY </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpY </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1445,50 +1060,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga721da874c569c56a97b4a6d88201269b"></a>
+<a class="anchor" id="gaf2262f08b549298a1b1892479d546cd1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpY </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 2d jump in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 2D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga4f49de68eef89410e06f7efdb06fa542"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpY </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1506,100 +1085,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga39b1612a2e9dbbcd714432dc9caa86be"></a>
+<a class="anchor" id="ga621c4fa259c999e891d35c8c74c0e522"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcy</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d jump in the y-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcy</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gafc0289cd97d7f4885e67b8d200435d1b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 2d jump in y-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dy (boundary condition is taken from here)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga1beec353829b91b70ba05fe13fc1fb29"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpY </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create 3d jump in y-direction. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dy (boundary condition is taken from here)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga527fe50685be7f1b898ca1c2f52ca62f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpZ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em>, </td>
         </tr>
         <tr>
@@ -1628,14 +1121,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga377f2c43f9712050d1090c4cd113fd6e"></a>
+<a class="anchor" id="gad4f0a614b23abcb2df464b1bc6d955b9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">EllSparseBlockMat&lt;double&gt; dg::create::jumpZ </td>
+          <td class="memname">Composite&lt;EllSparseBlockMat&lt;double&gt; &gt; dg::create::jumpZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a>&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1653,75 +1146,39 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga85419e1fab117847a853be3f2b4a1d98"></a>
+<a class="anchor" id="gac4ca746304146ab6ca17eb579ea8bc06"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RowColDistMat&lt; EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpZ </td>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Create a 3d jump in the z-direction for mpi. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">g</td><td>A 3D mpi grid </td></tr>
-    <tr><td class="paramname">bcz</td><td>boundary condition</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga205fba6e3ac960bd8461e933525378ab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RowColDistMat&lt;EllSparseBlockMat&lt;double&gt;, CooSparseBlockMat&lt;double&gt;, NNCH&gt; dg::create::jumpZ </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x1d.html">dg::GridX1d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create 3d jump in z-direction. </p>
+<p>create host_vector containing 1d X-space weight coefficients </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">g</td><td>The grid on which to create dz (boundary condition is taken from here)</td></tr>
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A mpi matrix </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga516908b4ba89e00774386860f3b68897"></a>
+<a class="anchor" id="gacf25151461f1018550f90e137b04598f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::create::weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid2d.html">MPI_Grid2d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i_grid2d.html">MPIGrid2d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1739,14 +1196,89 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gadad712eb1f1c27ba4d1c8f1c695676f8"></a>
+<a class="anchor" id="ga38fddca93dc8eee772d5a5d779ec9c22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x2d.html">GridX2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 2d X-space integration weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga648eae054e3f4e562b6cc5236292c81c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 1d X-space weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gafa170ccd5f60356c806a5d31cfe6d82e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid_x3d.html">GridX3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 3d X-space weight coefficients for integration </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga875b96222769ee80cc07dd611eede5d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">MPI_Vector&lt;thrust::host_vector&lt;double&gt; &gt; dg::create::weights </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i___grid3d.html">MPI_Grid3d</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_m_p_i_grid3d.html">MPIGrid3d</a> &amp;&#160;</td>
           <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1764,12 +1296,62 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gacfda934f46993fd61f0549dcee940838"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid2d.html">Grid2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 2d X-space integration weight coefficients </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga786ea88243414227b3cb4ca9e645ff28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">thrust::host_vector&lt;double&gt; dg::create::weights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid3d.html">Grid3d</a> &amp;&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>create host_vector containing 3d X-space weight coefficients for integration </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">g</td><td>The grid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Host Vector </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

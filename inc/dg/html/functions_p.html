@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -167,11 +168,11 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>perp_grid()
-: <a class="el" href="structdg_1_1_cylindrical_grid.html#abbf7677e354c9df5b5bd20f3bb8dd5e0">dg::CylindricalGrid&lt; container &gt;</a>
+: <a class="el" href="structdg_1_1_cylindrical_grid3d.html#a118c595a4afca604b4d121a6719f9411">dg::CylindricalGrid3d&lt; container &gt;</a>
 </li>
 <li>pidOf()
-: <a class="el" href="structdg_1_1_m_p_i___grid2d.html#aaba1c12059286d0af209b5589b1a8a3a">dg::MPI_Grid2d</a>
-, <a class="el" href="structdg_1_1_m_p_i___grid3d.html#a9a1618fd94e01503d23aa520ccb57640">dg::MPI_Grid3d</a>
+: <a class="el" href="structdg_1_1_m_p_i_grid2d.html#a89fc816531cab1f0d7be5a720e7a0f89">dg::MPIGrid2d</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid3d.html#a5c7301c95d7dbfceb9096019c0efc698">dg::MPIGrid3d</a>
 </li>
 <li>PLUS()
 : <a class="el" href="structdg_1_1_p_l_u_s.html#a6046659f109429be9e83c4a344c14064">dg::PLUS&lt; T &gt;</a>
@@ -180,7 +181,8 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 : <a class="el" href="structdg_1_1_poisson.html#a6e05a31dbb6d940377b87009ce2db330">dg::Poisson&lt; Geometry, Matrix, container &gt;</a>
 </li>
 <li>PoloidalAverage()
-: <a class="el" href="structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html#ac766d37b2e98b3545b191b0d94f55b70">dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</a>
+: <a class="el" href="structdg_1_1_poloidal_average.html#a30e1591662713c038b20d88d19ea4b19">dg::PoloidalAverage&lt; container, IndexContainer &gt;</a>
+, <a class="el" href="structdg_1_1_poloidal_average_3_01_m_p_i___vector_3_01container_01_4_00_01_m_p_i___vector_3_01_index_container_01_4_01_4.html#ab493f87baadae6c2565a77d210a7fc93">dg::PoloidalAverage&lt; MPI_Vector&lt; container &gt;, MPI_Vector&lt; IndexContainer &gt; &gt;</a>
 </li>
 <li>precond()
 : <a class="el" href="structdg_1_1_d_s.html#ae200e02d7b581bb5bc274de119fa920c">dg::DS&lt; FA, Matrix, container &gt;</a>
@@ -189,6 +191,8 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#aa922091ec0924d85ec7f03b45db44975">dg::GeneralEllipticSym&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#gafdf00a11485c5283743a60fc75eaf96e">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#gaf2db23f6f9f7d12864c720581c86fa6e">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a3df1ebddebbabed53d4e9562ef223258">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_elliptic.html#a7a20acdec681a806368e33a78af0b1af">dg::TensorElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -196,7 +200,7 @@ $(document).ready(function(){initNavTree('functions_p.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,0 +1,27 @@
+var structconformal_1_1_grid_x3d =
+[
+    [ "metric_category", "structconformal_1_1_grid_x3d.html#ac7f6a138e9323781eb2c4b4211d7194b", null ],
+    [ "perpendicular_grid", "structconformal_1_1_grid_x3d.html#a866aa151cbd3c079ff01066c8e036a50", null ],
+    [ "GridX3d", "structconformal_1_1_grid_x3d.html#a50933d20bddb18f6363b2ce6b4d66363", null ],
+    [ "f", "structconformal_1_1_grid_x3d.html#a37f4dec0fa0452a2dbadcf9ca95f00f0", null ],
+    [ "f_x", "structconformal_1_1_grid_x3d.html#aeb69e51dcb3f7d1fe152d35f49a93bd7", null ],
+    [ "g_pp", "structconformal_1_1_grid_x3d.html#aa618e44366290444a67981b9bb0c9465", null ],
+    [ "g_xx", "structconformal_1_1_grid_x3d.html#aadae09c8bdfbcaf723f3dfb07cd3ca7d", null ],
+    [ "g_xy", "structconformal_1_1_grid_x3d.html#a290c213070ec36d53d12b8229b6aebba", null ],
+    [ "g_yy", "structconformal_1_1_grid_x3d.html#a151534292f7cf64ce0545845097e1fd4", null ],
+    [ "perp_grid", "structconformal_1_1_grid_x3d.html#ab27a5bfaa147f162df4eb5f5c257e00c", null ],
+    [ "perpVol", "structconformal_1_1_grid_x3d.html#a5a4dad1c96598559c170a66d801d090d", null ],
+    [ "psi1", "structconformal_1_1_grid_x3d.html#a6eb572ad8e2720f671614316b95578ed", null ],
+    [ "r", "structconformal_1_1_grid_x3d.html#a916b6fd0f947b612fdc79d8c1683ec76", null ],
+    [ "rx0", "structconformal_1_1_grid_x3d.html#a7a40bfc1502dc4fc95a420f891d6393f", null ],
+    [ "rx1", "structconformal_1_1_grid_x3d.html#aee92d8ea44f87ad5261e76dcf2d4633f", null ],
+    [ "vol", "structconformal_1_1_grid_x3d.html#a39de0fbb99d1a3a3d9d4d120f6e0e192", null ],
+    [ "x", "structconformal_1_1_grid_x3d.html#a99210cbeb99747848f6b1b106bb91694", null ],
+    [ "xr", "structconformal_1_1_grid_x3d.html#a0c369d673a8f3fa00684155ed091b7bb", null ],
+    [ "xz", "structconformal_1_1_grid_x3d.html#a2a268141eb9d40dc401f731c246e8390", null ],
+    [ "yr", "structconformal_1_1_grid_x3d.html#adb7b0758b84812dd57ef0d1d0896751f", null ],
+    [ "yz", "structconformal_1_1_grid_x3d.html#a3b2736794557b7bfa815c3c4bd7cdc35", null ],
+    [ "z", "structconformal_1_1_grid_x3d.html#a8f8ff38a66b5018fe578dd7eb9370832", null ],
+    [ "zx0", "structconformal_1_1_grid_x3d.html#a4f8d41e010997d3b2af9de149e981dc1", null ],
+    [ "zx1", "structconformal_1_1_grid_x3d.html#a61bf1a2e72a95ffacd4d900a8df4858c", null ]
+];

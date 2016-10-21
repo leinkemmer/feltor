@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Solovev: The field line geometry</title>
+<title>Geometry: The field line geometry</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -50,10 +50,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Solovev
+   <div id="projectname">Geometry
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">field line geometry</div>
+   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -160,17 +160,35 @@ Classes</h2></td></tr>
 </p>
   <a href="structsolovev_1_1_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_r.html">solovev::CurvatureR</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_nabla_b_r.html">solovev::CurvatureNablaBR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}} \]
+\[ \mathcal{\hat{K}}^{\hat{R}}_{\nabla B} \]
 </p>
-  <a href="structsolovev_1_1_curvature_r.html#details">More...</a><br /></td></tr>
+  <a href="structsolovev_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_z.html">solovev::CurvatureZ</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_nabla_b_z.html">solovev::CurvatureNablaBZ</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}} \]
+\[ \mathcal{\hat{K}}^{\hat{Z}}_{\nabla B} \]
 </p>
-  <a href="structsolovev_1_1_curvature_z.html#details">More...</a><br /></td></tr>
+  <a href="structsolovev_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_kappa_r.html">solovev::CurvatureKappaR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}} \]
+</p>
+  <a href="structsolovev_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_kappa_z.html">solovev::CurvatureKappaZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \mathcal{\hat{K}}^{\hat{Z}}_{\vec{\kappa}} \]
+</p>
+  <a href="structsolovev_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_div_curvature_kappa.html">solovev::DivCurvatureKappa</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \vec{\hat{\nabla}}\cdot \mathcal{\hat{K}}_{\vec{\kappa}} \]
+</p>
+  <a href="structsolovev_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_grad_ln_b.html">solovev::GradLnB</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
@@ -193,15 +211,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_t.html">solovev::FieldT</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">\(\theta\) component of magnetic field  <a href="structsolovev_1_1_field_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r_z.html">solovev::FieldRZ</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r_ztau.html">solovev::FieldRZtau&lt; PsiR, PsiZ &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_z_r.html">solovev::FieldZR</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_hessian_r_ztau.html">solovev::HessianRZtau&lt; PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r_ztau.html">solovev::FieldRZtau</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_hessian_r_ztau.html">solovev::HessianRZtau</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_minimal_curve.html">solovev::MinimalCurve</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_minimal_curve.html">solovev::MinimalCurve&lt; Psi, PsiX, PsiY &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_b_hat_r.html">solovev::BHatR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">R component of magnetic field \( b_R\).  <a href="structsolovev_1_1_b_hat_r.html#details">More...</a><br /></td></tr>
@@ -343,6 +357,64 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs and display geometric parameters.  <a href="structsolovev_1_1_geom_parameters.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_laplace_psip.html">solovev::LaplacePsip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_collective_psip.html">solovev::CollectivePsip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip.html">solovev::mod::Psip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip_r.html">solovev::mod::PsipR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip_z.html">solovev::mod::PsipZ</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip_z_z.html">solovev::mod::PsipZZ</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip_r_r.html">solovev::mod::PsipRR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_psip_r_z.html">solovev::mod::PsipRZ</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1mod_1_1_laplace_psip.html">solovev::mod::LaplacePsip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip.html">taylor::Psip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip_r.html">taylor::PsipR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip_r_r.html">taylor::PsipRR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R}^2}\]
+</p>
+  <a href="structtaylor_1_1_psip_r_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip_z.html">taylor::PsipZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[\frac{\partial \hat{\psi}_p }{ \partial \hat{Z}}\]
+</p>
+  <a href="structtaylor_1_1_psip_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip_z_z.html">taylor::PsipZZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{Z}^2}\]
+</p>
+  <a href="structtaylor_1_1_psip_z_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_psip_r_z.html">taylor::PsipRZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[\frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R} \partial\hat{Z}}\]
+</p>
+  <a href="structtaylor_1_1_psip_r_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_laplace_psip.html">taylor::LaplacePsip</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_ipol.html">taylor::Ipol</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[\hat{I}\]
+</p>
+  <a href="structtaylor_1_1_ipol.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_ipol_r.html">taylor::IpolR</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtaylor_1_1_ipol_z.html">taylor::IpolZ</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -430,6 +502,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::IpolZ::ope
 <tr class="memitem:ga33f43196e4cf4e85bd9640ba62d9230a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a">solovev::GeomParameters::GeomParameters</a> (const std::vector&lt; double &gt; &amp;v)</td></tr>
 <tr class="memdesc:ga33f43196e4cf4e85bd9640ba62d9230a"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor to make an object  <a href="#ga33f43196e4cf4e85bd9640ba62d9230a">More...</a><br /></td></tr>
 <tr class="separator:ga33f43196e4cf4e85bd9640ba62d9230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga864d399eaf4ca8f9f6a3d58992e8659b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga864d399eaf4ca8f9f6a3d58992e8659b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::GeomParameters::GeomParameters</b> (const Json::Value &amp;js)</td></tr>
+<tr class="separator:ga864d399eaf4ca8f9f6a3d58992e8659b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac75127cc87f46a3a5b05ef2304a85fdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd">solovev::GeomParameters::display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:gac75127cc87f46a3a5b05ef2304a85fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display parameters.  <a href="#gac75127cc87f46a3a5b05ef2304a85fdd">More...</a><br /></td></tr>
 <tr class="separator:gac75127cc87f46a3a5b05ef2304a85fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -461,6 +536,181 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::PsipZZ::disp
 <tr class="memitem:gae70defcb2b1bdcd69301dc55546869a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae70defcb2b1bdcd69301dc55546869a8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::PsipRZ::display</b> () const </td></tr>
 <tr class="separator:gae70defcb2b1bdcd69301dc55546869a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c27645c94240e4bd8539493a5810577"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9c27645c94240e4bd8539493a5810577"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::LaplacePsip::LaplacePsip</b> (GeomParameters gp)</td></tr>
+<tr class="separator:ga9c27645c94240e4bd8539493a5810577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1970da46624cd99f6cd412086a8ae505"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1970da46624cd99f6cd412086a8ae505"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::LaplacePsip::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga1970da46624cd99f6cd412086a8ae505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf91b088a22a9e009214b9dd2586757ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf91b088a22a9e009214b9dd2586757ec"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::LaplacePsip::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:gaf91b088a22a9e009214b9dd2586757ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0cc7acb30f8d6d65c1d96d0ea436db8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa0cc7acb30f8d6d65c1d96d0ea436db8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::CollectivePsip</b> (GeomParameters gp)</td></tr>
+<tr class="separator:gaa0cc7acb30f8d6d65c1d96d0ea436db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11ffff8fa139d0653196ac2b28918573"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga11ffff8fa139d0653196ac2b28918573"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::Psip::Psip</b> (GeomParameters gp)</td></tr>
+<tr class="separator:ga11ffff8fa139d0653196ac2b28918573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga873775946717c42a520b10d89ad25937"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga873775946717c42a520b10d89ad25937"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::Psip::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga873775946717c42a520b10d89ad25937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1926e4d6a39afa2fab187bc372eff2c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1926e4d6a39afa2fab187bc372eff2c3"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::Psip::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:ga1926e4d6a39afa2fab187bc372eff2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2a657a4134e98176528501fd06f57eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad2a657a4134e98176528501fd06f57eb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipR::PsipR</b> (GeomParameters gp)</td></tr>
+<tr class="separator:gad2a657a4134e98176528501fd06f57eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b2b76d6c70391be7d8ff720bcbee12a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4b2b76d6c70391be7d8ff720bcbee12a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipR::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga4b2b76d6c70391be7d8ff720bcbee12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6b0e0a6a1cec8a405025b44a89918536"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6b0e0a6a1cec8a405025b44a89918536"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipR::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:ga6b0e0a6a1cec8a405025b44a89918536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga96735dc6ec2f58df7b2312ff392c67a2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga96735dc6ec2f58df7b2312ff392c67a2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZ::PsipZ</b> (GeomParameters gp)</td></tr>
+<tr class="separator:ga96735dc6ec2f58df7b2312ff392c67a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab044682b9990efcc30ad26728e6c07ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab044682b9990efcc30ad26728e6c07ca"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:gab044682b9990efcc30ad26728e6c07ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac866c8fcb7c9c2a97a0cc1517cd49e93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac866c8fcb7c9c2a97a0cc1517cd49e93"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZ::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:gac866c8fcb7c9c2a97a0cc1517cd49e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga83fa782aed056205f55dd081eef6565c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga83fa782aed056205f55dd081eef6565c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZZ::PsipZZ</b> (GeomParameters gp)</td></tr>
+<tr class="separator:ga83fa782aed056205f55dd081eef6565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c46a91598a6f8cb665ce48a3dd44215"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6c46a91598a6f8cb665ce48a3dd44215"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga6c46a91598a6f8cb665ce48a3dd44215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85aa3f27c4a648d496b26a6778ebd45c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga85aa3f27c4a648d496b26a6778ebd45c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipZZ::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:ga85aa3f27c4a648d496b26a6778ebd45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2da151a6bc272699f11ac8f77d5031ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2da151a6bc272699f11ac8f77d5031ef"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRR::PsipRR</b> (GeomParameters gp)</td></tr>
+<tr class="separator:ga2da151a6bc272699f11ac8f77d5031ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb73dab332a30f6e85941feced739eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0cb73dab332a30f6e85941feced739eb"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRR::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga0cb73dab332a30f6e85941feced739eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga748bc6a51b4befe1b481a58715888576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga748bc6a51b4befe1b481a58715888576"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRR::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:ga748bc6a51b4befe1b481a58715888576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb93cb242bece52e246940e8e3efa595"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaeb93cb242bece52e246940e8e3efa595"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRZ::PsipRZ</b> (GeomParameters gp)</td></tr>
+<tr class="separator:gaeb93cb242bece52e246940e8e3efa595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94896ff8001f1e3e47b0affdc10d9da5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga94896ff8001f1e3e47b0affdc10d9da5"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga94896ff8001f1e3e47b0affdc10d9da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a601e70ff7579400caeb7d95b95204"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga16a601e70ff7579400caeb7d95b95204"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::PsipRZ::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:ga16a601e70ff7579400caeb7d95b95204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfb778667a57cbb777199cbffc4a1055"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabfb778667a57cbb777199cbffc4a1055"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::LaplacePsip::LaplacePsip</b> (GeomParameters gp)</td></tr>
+<tr class="separator:gabfb778667a57cbb777199cbffc4a1055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e5535072af04c6ed8036e78e16ff54d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8e5535072af04c6ed8036e78e16ff54d"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::LaplacePsip::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga8e5535072af04c6ed8036e78e16ff54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc7cf1f88f3013bdc358a49c1a6fed8c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacc7cf1f88f3013bdc358a49c1a6fed8c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::mod::LaplacePsip::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:gacc7cf1f88f3013bdc358a49c1a6fed8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec16ae1da63a12ef096edd13699619bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaec16ae1da63a12ef096edd13699619bc">taylor::Psip::Psip</a> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="memdesc:gaec16ae1da63a12ef096edd13699619bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from given geometric parameters.  <a href="#gaec16ae1da63a12ef096edd13699619bc">More...</a><br /></td></tr>
+<tr class="separator:gaec16ae1da63a12ef096edd13699619bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c0776ada6570ac01f9cfd1f8008d23e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga4c0776ada6570ac01f9cfd1f8008d23e">taylor::Psip::operator()</a> (double R, double Z) const </td></tr>
+<tr class="memdesc:ga4c0776ada6570ac01f9cfd1f8008d23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \hat \psi_p(R,Z) \)  <a href="#ga4c0776ada6570ac01f9cfd1f8008d23e">More...</a><br /></td></tr>
+<tr class="separator:ga4c0776ada6570ac01f9cfd1f8008d23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf890a92ded55e0eecb7a9fab10647cbd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gaf890a92ded55e0eecb7a9fab10647cbd">taylor::Psip::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:gaf890a92ded55e0eecb7a9fab10647cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \psi_p(R,Z,\phi) \equiv \psi_p(R,Z)\)  <a href="#gaf890a92ded55e0eecb7a9fab10647cbd">More...</a><br /></td></tr>
+<tr class="separator:gaf890a92ded55e0eecb7a9fab10647cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaabaf96b2c91510fab293c62a9148d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gafaabaf96b2c91510fab293c62a9148d1">taylor::PsipR::PsipR</a> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="memdesc:gafaabaf96b2c91510fab293c62a9148d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from given geometric parameters.  <a href="#gafaabaf96b2c91510fab293c62a9148d1">More...</a><br /></td></tr>
+<tr class="separator:gafaabaf96b2c91510fab293c62a9148d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9ce4630308aeed4e97002329cbc90d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gae9ce4630308aeed4e97002329cbc90d1">taylor::PsipR::operator()</a> (double R, double Z) const </td></tr>
+<tr class="memdesc:gae9ce4630308aeed4e97002329cbc90d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z) \)  <a href="#gae9ce4630308aeed4e97002329cbc90d1">More...</a><br /></td></tr>
+<tr class="separator:gae9ce4630308aeed4e97002329cbc90d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa2c03b025acc6aad48bfabf581a839"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga8aa2c03b025acc6aad48bfabf581a839">taylor::PsipR::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga8aa2c03b025acc6aad48bfabf581a839"><td class="mdescLeft">&#160;</td><td class="mdescRight">\( \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z,\phi) \equiv \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z)\)  <a href="#ga8aa2c03b025acc6aad48bfabf581a839">More...</a><br /></td></tr>
+<tr class="separator:ga8aa2c03b025acc6aad48bfabf581a839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09c4c4b7886bca52440a317301903e63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga09c4c4b7886bca52440a317301903e63">taylor::PsipRR::PsipRR</a> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="memdesc:ga09c4c4b7886bca52440a317301903e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ga09c4c4b7886bca52440a317301903e63">More...</a><br /></td></tr>
+<tr class="separator:ga09c4c4b7886bca52440a317301903e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga020302ae2d2749ce316e66935faa4ccd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga020302ae2d2749ce316e66935faa4ccd"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipRR::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga020302ae2d2749ce316e66935faa4ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718fd4544c9fa6edcda65869e6a101f6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga718fd4544c9fa6edcda65869e6a101f6">taylor::PsipRR::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga718fd4544c9fa6edcda65869e6a101f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">return operator()(R,Z)  <a href="#ga718fd4544c9fa6edcda65869e6a101f6">More...</a><br /></td></tr>
+<tr class="separator:ga718fd4544c9fa6edcda65869e6a101f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4b6aaf453bb71ec537aca656f210098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae4b6aaf453bb71ec537aca656f210098"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipZ::PsipZ</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:gae4b6aaf453bb71ec537aca656f210098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fe168e34355cea15eb06af1e7272218"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7fe168e34355cea15eb06af1e7272218"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga7fe168e34355cea15eb06af1e7272218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d63adb6c51327bdd5789ab36ccc267b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3d63adb6c51327bdd5789ab36ccc267b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga3d63adb6c51327bdd5789ab36ccc267b">taylor::PsipZ::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga3d63adb6c51327bdd5789ab36ccc267b"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:ga3d63adb6c51327bdd5789ab36ccc267b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d21d2c2a82cb75a5ba93d963273478e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7d21d2c2a82cb75a5ba93d963273478e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipZZ::PsipZZ</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:ga7d21d2c2a82cb75a5ba93d963273478e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2189daf3febc99b03ea53d27a414dcd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2189daf3febc99b03ea53d27a414dcd1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipZZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga2189daf3febc99b03ea53d27a414dcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f468be948fe392959d5c2cca320599"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga36f468be948fe392959d5c2cca320599"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga36f468be948fe392959d5c2cca320599">taylor::PsipZZ::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga36f468be948fe392959d5c2cca320599"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:ga36f468be948fe392959d5c2cca320599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e1616d68572ccadb3c719a82c71e155"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7e1616d68572ccadb3c719a82c71e155"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipRZ::PsipRZ</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:ga7e1616d68572ccadb3c719a82c71e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga997deb2eff5c2a58b659222682408f90"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga997deb2eff5c2a58b659222682408f90"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::PsipRZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga997deb2eff5c2a58b659222682408f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56c3436e25f4a02c525bb81254369c4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga56c3436e25f4a02c525bb81254369c4b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga56c3436e25f4a02c525bb81254369c4b">taylor::PsipRZ::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga56c3436e25f4a02c525bb81254369c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:ga56c3436e25f4a02c525bb81254369c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad880c041f6251d5c9d790b40dbf4c55d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad880c041f6251d5c9d790b40dbf4c55d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::LaplacePsip::LaplacePsip</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:gad880c041f6251d5c9d790b40dbf4c55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed8fc60c66edf3d0a37e3c04f6b32633"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaed8fc60c66edf3d0a37e3c04f6b32633"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::LaplacePsip::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:gaed8fc60c66edf3d0a37e3c04f6b32633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf6fd3dd3f0118cc79f2cb91cae9aa77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacf6fd3dd3f0118cc79f2cb91cae9aa77"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::LaplacePsip::operator()</b> (double R, double Z, double phi) const </td></tr>
+<tr class="separator:gacf6fd3dd3f0118cc79f2cb91cae9aa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga226b3aee596978233fd91884f15568a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga226b3aee596978233fd91884f15568a7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::Ipol::Ipol</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:ga226b3aee596978233fd91884f15568a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga068111042266c437a0e22f3f6b40fa83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga068111042266c437a0e22f3f6b40fa83"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga068111042266c437a0e22f3f6b40fa83">taylor::Ipol::operator()</a> (double R, double Z) const </td></tr>
+<tr class="memdesc:ga068111042266c437a0e22f3f6b40fa83"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[\hat{I}= \sqrt{-2 A \hat{\psi}_p / \hat{R}_0 +1}\]
+</p>
+ <br /></td></tr>
+<tr class="separator:ga068111042266c437a0e22f3f6b40fa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9032062c6d6ff6ce85c18e05f5105a2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9032062c6d6ff6ce85c18e05f5105a2b"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga9032062c6d6ff6ce85c18e05f5105a2b">taylor::Ipol::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga9032062c6d6ff6ce85c18e05f5105a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:ga9032062c6d6ff6ce85c18e05f5105a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabda8d7a8125ac7a0a4f621080e0cebb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabda8d7a8125ac7a0a4f621080e0cebb8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::IpolR::IpolR</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:gabda8d7a8125ac7a0a4f621080e0cebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga126124f3307eaba9810c7d19c4bd8716"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga126124f3307eaba9810c7d19c4bd8716"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::IpolR::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:ga126124f3307eaba9810c7d19c4bd8716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c71a204eaf02686830eb23f5e802d8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5c71a204eaf02686830eb23f5e802d8e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga5c71a204eaf02686830eb23f5e802d8e">taylor::IpolR::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:ga5c71a204eaf02686830eb23f5e802d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:ga5c71a204eaf02686830eb23f5e802d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44906e9779527106319d5c3ce6c64676"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga44906e9779527106319d5c3ce6c64676"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::IpolZ::IpolZ</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a> gp)</td></tr>
+<tr class="separator:ga44906e9779527106319d5c3ce6c64676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf388bd5f33fbb17c013d8d62b33851c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadf388bd5f33fbb17c013d8d62b33851c"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>taylor::IpolZ::operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:gadf388bd5f33fbb17c013d8d62b33851c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabae9552548689222b4e1bfeb7fe5102e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabae9552548689222b4e1bfeb7fe5102e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gabae9552548689222b4e1bfeb7fe5102e">taylor::IpolZ::operator()</a> (double R, double Z, double phi) const </td></tr>
+<tr class="memdesc:gabae9552548689222b4e1bfeb7fe5102e"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
+<tr class="separator:gabae9552548689222b4e1bfeb7fe5102e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -511,6 +761,36 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gr
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#gac186e71de1e69b391e52f0ebd4bb257f">solovev::GeomParameters::c</a></td></tr>
 <tr class="memdesc:gac186e71de1e69b391e52f0ebd4bb257f"><td class="mdescLeft">&#160;</td><td class="mdescRight">coefficients for the solovev equilibrium <br /></td></tr>
 <tr class="separator:gac186e71de1e69b391e52f0ebd4bb257f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade7cd2bdc8526fc980aae3327f2f89f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gade7cd2bdc8526fc980aae3327f2f89f6"></a>
+Psip&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psip</b></td></tr>
+<tr class="separator:gade7cd2bdc8526fc980aae3327f2f89f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dd0a3141f3a50f7808da85eaeccc8b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5dd0a3141f3a50f7808da85eaeccc8b5"></a>
+PsipR&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psipR</b></td></tr>
+<tr class="separator:ga5dd0a3141f3a50f7808da85eaeccc8b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cb41ffcd5f9759ddf212d70bb5b2348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0cb41ffcd5f9759ddf212d70bb5b2348"></a>
+PsipZ&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psipZ</b></td></tr>
+<tr class="separator:ga0cb41ffcd5f9759ddf212d70bb5b2348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa307fc213d4a6e51dbe82ce08d0bec2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa307fc213d4a6e51dbe82ce08d0bec2e"></a>
+PsipRR&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psipRR</b></td></tr>
+<tr class="separator:gaa307fc213d4a6e51dbe82ce08d0bec2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d8af2a20d8c9a520150e5a88746ca0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4d8af2a20d8c9a520150e5a88746ca0f"></a>
+PsipRZ&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psipRZ</b></td></tr>
+<tr class="separator:ga4d8af2a20d8c9a520150e5a88746ca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabc0c3b92d4eecee3ef83d89dd02d88b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaabc0c3b92d4eecee3ef83d89dd02d88b"></a>
+PsipZZ&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::psipZZ</b></td></tr>
+<tr class="separator:gaabc0c3b92d4eecee3ef83d89dd02d88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae40aa752bae1feddfa67bcfa3d750158"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae40aa752bae1feddfa67bcfa3d750158"></a>
+LaplacePsip&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::laplacePsip</b></td></tr>
+<tr class="separator:gae40aa752bae1feddfa67bcfa3d750158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1517135b543fb6d607cc67d38faf18c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1517135b543fb6d607cc67d38faf18c4"></a>
+Ipol&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::ipol</b></td></tr>
+<tr class="separator:ga1517135b543fb6d607cc67d38faf18c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf578348cec580d124bc7c5be5a4d4e63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf578348cec580d124bc7c5be5a4d4e63"></a>
+IpolR&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::ipolR</b></td></tr>
+<tr class="separator:gaf578348cec580d124bc7c5be5a4d4e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad96aeb16d6def38e9263a5f819b77ca4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad96aeb16d6def38e9263a5f819b77ca4"></a>
+IpolZ&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::CollectivePsip::ipolZ</b></td></tr>
+<tr class="separator:gad96aeb16d6def38e9263a5f819b77ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97e1ff33b7ef8b50e3a4a8878a61b0e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga97e1ff33b7ef8b50e3a4a8878a61b0e5"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__geom.html#ga97e1ff33b7ef8b50e3a4a8878a61b0e5">solovev::GeomParameters::A</a></td></tr>
 <tr class="memdesc:ga97e1ff33b7ef8b50e3a4a8878a61b0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A. <br /></td></tr>
@@ -586,6 +866,343 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::GeomParame
 
 </div>
 </div>
+<a class="anchor" id="ga4c0776ada6570ac01f9cfd1f8008d23e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double taylor::Psip::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\( \hat \psi_p(R,Z) \) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>radius (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">Z</td><td>height (boost::math::cylindrical coordinates) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>\( \hat \psi_p(R,Z) \) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf890a92ded55e0eecb7a9fab10647cbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double taylor::Psip::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\( \psi_p(R,Z,\phi) \equiv \psi_p(R,Z)\) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>radius (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">Z</td><td>height (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">phi</td><td>angle (boost::math::cylindrical coordinates)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>\( \hat \psi_p(R,Z,\phi) \) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae9ce4630308aeed4e97002329cbc90d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double taylor::PsipR::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Z</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\( \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z) \) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>radius (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">Z</td><td>height (boost::math::cylindrical coordinates) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>\( \frac{\partial \hat{\psi}_p}{ \partial \hat{R}}(R,Z) \) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8aa2c03b025acc6aad48bfabf581a839"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double taylor::PsipR::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>\( \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z,\phi) \equiv \frac{\partial \hat{\psi}_p }{ \partial \hat{R}}(R,Z)\) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>radius (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">Z</td><td>height (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">phi</td><td>angle (boost::math::cylindrical coordinates) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>\( \frac{\partial \hat{\psi}_p}{ \partial \hat{R}}(R,Z,\phi) \) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga718fd4544c9fa6edcda65869e6a101f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double taylor::PsipRR::operator() </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Z</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>phi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return operator()(R,Z) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>radius (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">Z</td><td>height (boost::math::cylindrical coordinates) </td></tr>
+    <tr><td class="paramname">phi</td><td>angle (boost::math::cylindrical coordinates)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gaec16ae1da63a12ef096edd13699619bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">taylor::Psip::Psip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a>&#160;</td>
+          <td class="paramname"><em>gp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from given geometric parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gp</td><td>useful geometric parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gafaabaf96b2c91510fab293c62a9148d1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">taylor::PsipR::PsipR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a>&#160;</td>
+          <td class="paramname"><em>gp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from given geometric parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gp</td><td>useful geometric parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga09c4c4b7886bca52440a317301903e63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">taylor::PsipRR::PsipRR </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsolovev_1_1_geom_parameters.html">solovev::GeomParameters</a>&#160;</td>
+          <td class="paramname"><em>gp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gp</td><td>geometric parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="ga6447257304ba1dec05d84d1f27efdc41"></a>
 <div class="memitem">
@@ -607,7 +1224,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>solovev::GeomParame
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:46 for Solovev by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:14 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

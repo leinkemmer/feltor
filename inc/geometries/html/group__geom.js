@@ -25,15 +25,29 @@ var group__geom =
       [ "operator()", "structsolovev_1_1_b_z.html#a1ac33a626ddabde3544ad2efe7ec399c", null ],
       [ "operator()", "structsolovev_1_1_b_z.html#a4bc8c10487ba23ce8101e77143599151", null ]
     ] ],
-    [ "CurvatureR", "structsolovev_1_1_curvature_r.html", [
-      [ "CurvatureR", "structsolovev_1_1_curvature_r.html#ae53baa3867e83e36fb8cd40bc7fcfc08", null ],
-      [ "operator()", "structsolovev_1_1_curvature_r.html#a51b70c532ac5eba4d88a6ffa4c9a996c", null ],
-      [ "operator()", "structsolovev_1_1_curvature_r.html#a2f1bd20edb69558bb19cc27991f6084f", null ]
+    [ "CurvatureNablaBR", "structsolovev_1_1_curvature_nabla_b_r.html", [
+      [ "CurvatureNablaBR", "structsolovev_1_1_curvature_nabla_b_r.html#ab4511f761e0ea5a3d9ef04010b2b99f8", null ],
+      [ "operator()", "structsolovev_1_1_curvature_nabla_b_r.html#a5d6c496b51a44539d1e29d59fb17b976", null ],
+      [ "operator()", "structsolovev_1_1_curvature_nabla_b_r.html#a9ea605f2a962cbc66e7f356b9f8b8e1b", null ]
     ] ],
-    [ "CurvatureZ", "structsolovev_1_1_curvature_z.html", [
-      [ "CurvatureZ", "structsolovev_1_1_curvature_z.html#ac230a6b32e01768c1fa7f793364bc4b3", null ],
-      [ "operator()", "structsolovev_1_1_curvature_z.html#a86d98dbbfc2c0d6704243c57a2f1c23f", null ],
-      [ "operator()", "structsolovev_1_1_curvature_z.html#ae02adb93425f940e1e58bfdab0273c36", null ]
+    [ "CurvatureNablaBZ", "structsolovev_1_1_curvature_nabla_b_z.html", [
+      [ "CurvatureNablaBZ", "structsolovev_1_1_curvature_nabla_b_z.html#a4da1c5ab4e9ad893525756a89dde7ad5", null ],
+      [ "operator()", "structsolovev_1_1_curvature_nabla_b_z.html#a1f25cc6f5d5546b16b6ce25a116c18c4", null ],
+      [ "operator()", "structsolovev_1_1_curvature_nabla_b_z.html#a49086d4ef2c28debb6edc1ce6f061957", null ]
+    ] ],
+    [ "CurvatureKappaR", "structsolovev_1_1_curvature_kappa_r.html", [
+      [ "operator()", "structsolovev_1_1_curvature_kappa_r.html#ac5db8153885c330b060857a92bad9f93", null ],
+      [ "operator()", "structsolovev_1_1_curvature_kappa_r.html#af60853bd461776f3acd283d519452b79", null ]
+    ] ],
+    [ "CurvatureKappaZ", "structsolovev_1_1_curvature_kappa_z.html", [
+      [ "CurvatureKappaZ", "structsolovev_1_1_curvature_kappa_z.html#a95d865cba15dd159637ea167cda30149", null ],
+      [ "operator()", "structsolovev_1_1_curvature_kappa_z.html#a3e368e5f9343e7f8cceab94d153b40d8", null ],
+      [ "operator()", "structsolovev_1_1_curvature_kappa_z.html#a9bd0ac10a9ae844c019bf3408487caca", null ]
+    ] ],
+    [ "DivCurvatureKappa", "structsolovev_1_1_div_curvature_kappa.html", [
+      [ "DivCurvatureKappa", "structsolovev_1_1_div_curvature_kappa.html#add9626863504eb686b3ae02bf14bb0d5", null ],
+      [ "operator()", "structsolovev_1_1_div_curvature_kappa.html#a78a67137c6a2b4408eeed12b14831f57", null ],
+      [ "operator()", "structsolovev_1_1_div_curvature_kappa.html#aefc094d624a200990ee6327a9d8ef5b8", null ]
     ] ],
     [ "GradLnB", "structsolovev_1_1_grad_ln_b.html", [
       [ "GradLnB", "structsolovev_1_1_grad_ln_b.html#a09e4d2b8cf4d11c0be5163c66bcb611e", null ],
@@ -67,29 +81,21 @@ var group__geom =
       [ "operator()", "structsolovev_1_1_field_t.html#a7fc84a82226a31bd4caff5eda8bd2936", null ],
       [ "operator()", "structsolovev_1_1_field_t.html#ad44bbb9cc22fd34f3d9df27a69e14b9d", null ]
     ] ],
-    [ "FieldRZ", "structsolovev_1_1_field_r_z.html", [
-      [ "FieldRZ", "structsolovev_1_1_field_r_z.html#a37616b3283b0d47194ef25a67570cba3", null ],
-      [ "operator()", "structsolovev_1_1_field_r_z.html#a52fc6411881b432c45458c11c545d013", null ]
-    ] ],
-    [ "FieldZR", "structsolovev_1_1_field_z_r.html", [
-      [ "FieldZR", "structsolovev_1_1_field_z_r.html#a8d6f24616b3ff18dd453f8407f007a8d", null ],
-      [ "operator()", "structsolovev_1_1_field_z_r.html#a42422f40e330677149bce332effe9cca", null ]
-    ] ],
     [ "FieldRZtau", "structsolovev_1_1_field_r_ztau.html", [
-      [ "FieldRZtau", "structsolovev_1_1_field_r_ztau.html#a062ace79cfb6d22146dec0cbf2fbda6c", null ],
-      [ "operator()", "structsolovev_1_1_field_r_ztau.html#a90b944c33a76fe966244a610e283f9f0", null ]
+      [ "FieldRZtau", "structsolovev_1_1_field_r_ztau.html#a2dd33d8a2284f2681d054b2f77e3219f", null ],
+      [ "operator()", "structsolovev_1_1_field_r_ztau.html#ac2e8cb8f053d94078bea9c7aae73432f", null ]
     ] ],
     [ "HessianRZtau", "structsolovev_1_1_hessian_r_ztau.html", [
-      [ "HessianRZtau", "structsolovev_1_1_hessian_r_ztau.html#a952f5a0a54141573ddeea718cd86ac14", null ],
-      [ "newton_iteration", "structsolovev_1_1_hessian_r_ztau.html#a0f7affcd54693afe0154d32df33269a4", null ],
-      [ "operator()", "structsolovev_1_1_hessian_r_ztau.html#ae7c2372dc5f1847defac7050567eca41", null ],
-      [ "set_norm", "structsolovev_1_1_hessian_r_ztau.html#afbc0436dfdf76438d4d716ba46b695b7", null ],
-      [ "set_quadrant", "structsolovev_1_1_hessian_r_ztau.html#adbebf85e5dd42e8556804be1391fa768", null ]
+      [ "HessianRZtau", "structsolovev_1_1_hessian_r_ztau.html#ad9c8a064b3c389d6ab9e190481af02fb", null ],
+      [ "newton_iteration", "structsolovev_1_1_hessian_r_ztau.html#a47c3fd47b266eac638d08d787a0fc2b0", null ],
+      [ "operator()", "structsolovev_1_1_hessian_r_ztau.html#a0f4d53377d923733ec2ae404d7281a19", null ],
+      [ "set_norm", "structsolovev_1_1_hessian_r_ztau.html#a455b83390dc77448fbe595f53ef006ad", null ],
+      [ "set_quadrant", "structsolovev_1_1_hessian_r_ztau.html#a7e9733ad2084c6216bebe67650f96597", null ]
     ] ],
     [ "MinimalCurve", "structsolovev_1_1_minimal_curve.html", [
-      [ "MinimalCurve", "structsolovev_1_1_minimal_curve.html#aae2db2674687f49db212a49bd45eb8a5", null ],
-      [ "operator()", "structsolovev_1_1_minimal_curve.html#a276895626b5535a717c0f0acbd683844", null ],
-      [ "set_norm", "structsolovev_1_1_minimal_curve.html#a731b5be2a8cff02abe20dd20bdc3b72a", null ]
+      [ "MinimalCurve", "structsolovev_1_1_minimal_curve.html#a8860493481a0d23ce51ad233c5e6eb3c", null ],
+      [ "operator()", "structsolovev_1_1_minimal_curve.html#af04952acdfc23af4f2cace783a24547d", null ],
+      [ "set_norm", "structsolovev_1_1_minimal_curve.html#a84d907abbe396c848df4cbb0663a1492", null ]
     ] ],
     [ "BHatR", "structsolovev_1_1_b_hat_r.html", [
       [ "BHatR", "structsolovev_1_1_b_hat_r.html#a3c5da0bb2569339e880f5a73c857a164", null ],
@@ -205,6 +211,8 @@ var group__geom =
     [ "Field", "structguenther_1_1_field.html", [
       [ "Field", "structguenther_1_1_field.html#abe8fcfa0af58cf5a19615611324db0d3", null ],
       [ "Field", "structguenther_1_1_field.html#a859b883c58d6e642acd5eb628ed0af0f", null ],
+      [ "error", "structguenther_1_1_field.html#a9a6666e28ea400dd6a104c16679e3c24", null ],
+      [ "monitor", "structguenther_1_1_field.html#a21632f1d8b6683d7ade3b1c0683f8e66", null ],
       [ "operator()", "structguenther_1_1_field.html#a34daa686f28ab94f162f9c9eb24dd966", null ],
       [ "operator()", "structguenther_1_1_field.html#a77639853fcc7d1aa8fd3d08ec82e6d6d", null ],
       [ "operator()", "structguenther_1_1_field.html#a9ec20e36547b20aa750e9e96da405fb7", null ],
@@ -260,7 +268,9 @@ var group__geom =
     ] ],
     [ "GeomParameters", "structsolovev_1_1_geom_parameters.html", [
       [ "GeomParameters", "group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],
+      [ "GeomParameters", "group__geom.html#ga864d399eaf4ca8f9f6a3d58992e8659b", null ],
       [ "GeomParameters", "structsolovev_1_1_geom_parameters.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],
+      [ "GeomParameters", "structsolovev_1_1_geom_parameters.html#ga864d399eaf4ca8f9f6a3d58992e8659b", null ],
       [ "display", "group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
       [ "display", "structsolovev_1_1_geom_parameters.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
       [ "A", "group__geom.html#ga97e1ff33b7ef8b50e3a4a8878a61b0e5", null ],
@@ -278,11 +288,129 @@ var group__geom =
       [ "rk4eps", "group__geom.html#ga6447257304ba1dec05d84d1f27efdc41", null ],
       [ "triangularity", "group__geom.html#ga1b5afb66804a41c779f0fabb30089f67", null ]
     ] ],
+    [ "LaplacePsip", "structsolovev_1_1_laplace_psip.html", [
+      [ "LaplacePsip", "group__geom.html#ga9c27645c94240e4bd8539493a5810577", null ],
+      [ "operator()", "group__geom.html#ga1970da46624cd99f6cd412086a8ae505", null ],
+      [ "operator()", "group__geom.html#gaf91b088a22a9e009214b9dd2586757ec", null ]
+    ] ],
+    [ "CollectivePsip", "structsolovev_1_1_collective_psip.html", [
+      [ "CollectivePsip", "group__geom.html#gaa0cc7acb30f8d6d65c1d96d0ea436db8", null ],
+      [ "ipol", "group__geom.html#ga1517135b543fb6d607cc67d38faf18c4", null ],
+      [ "ipolR", "group__geom.html#gaf578348cec580d124bc7c5be5a4d4e63", null ],
+      [ "ipolZ", "group__geom.html#gad96aeb16d6def38e9263a5f819b77ca4", null ],
+      [ "laplacePsip", "group__geom.html#gae40aa752bae1feddfa67bcfa3d750158", null ],
+      [ "psip", "group__geom.html#gade7cd2bdc8526fc980aae3327f2f89f6", null ],
+      [ "psipR", "group__geom.html#ga5dd0a3141f3a50f7808da85eaeccc8b5", null ],
+      [ "psipRR", "group__geom.html#gaa307fc213d4a6e51dbe82ce08d0bec2e", null ],
+      [ "psipRZ", "group__geom.html#ga4d8af2a20d8c9a520150e5a88746ca0f", null ],
+      [ "psipZ", "group__geom.html#ga0cb41ffcd5f9759ddf212d70bb5b2348", null ],
+      [ "psipZZ", "group__geom.html#gaabc0c3b92d4eecee3ef83d89dd02d88b", null ]
+    ] ],
+    [ "Psip", "structsolovev_1_1mod_1_1_psip.html", [
+      [ "Psip", "group__geom.html#ga11ffff8fa139d0653196ac2b28918573", null ],
+      [ "operator()", "group__geom.html#ga873775946717c42a520b10d89ad25937", null ],
+      [ "operator()", "group__geom.html#ga1926e4d6a39afa2fab187bc372eff2c3", null ]
+    ] ],
+    [ "PsipR", "structsolovev_1_1mod_1_1_psip_r.html", [
+      [ "PsipR", "group__geom.html#gad2a657a4134e98176528501fd06f57eb", null ],
+      [ "operator()", "group__geom.html#ga4b2b76d6c70391be7d8ff720bcbee12a", null ],
+      [ "operator()", "group__geom.html#ga6b0e0a6a1cec8a405025b44a89918536", null ]
+    ] ],
+    [ "PsipZ", "structsolovev_1_1mod_1_1_psip_z.html", [
+      [ "PsipZ", "group__geom.html#ga96735dc6ec2f58df7b2312ff392c67a2", null ],
+      [ "operator()", "group__geom.html#gab044682b9990efcc30ad26728e6c07ca", null ],
+      [ "operator()", "group__geom.html#gac866c8fcb7c9c2a97a0cc1517cd49e93", null ]
+    ] ],
+    [ "PsipZZ", "structsolovev_1_1mod_1_1_psip_z_z.html", [
+      [ "PsipZZ", "group__geom.html#ga83fa782aed056205f55dd081eef6565c", null ],
+      [ "operator()", "group__geom.html#ga6c46a91598a6f8cb665ce48a3dd44215", null ],
+      [ "operator()", "group__geom.html#ga85aa3f27c4a648d496b26a6778ebd45c", null ]
+    ] ],
+    [ "PsipRR", "structsolovev_1_1mod_1_1_psip_r_r.html", [
+      [ "PsipRR", "group__geom.html#ga2da151a6bc272699f11ac8f77d5031ef", null ],
+      [ "operator()", "group__geom.html#ga0cb73dab332a30f6e85941feced739eb", null ],
+      [ "operator()", "group__geom.html#ga748bc6a51b4befe1b481a58715888576", null ]
+    ] ],
+    [ "PsipRZ", "structsolovev_1_1mod_1_1_psip_r_z.html", [
+      [ "PsipRZ", "group__geom.html#gaeb93cb242bece52e246940e8e3efa595", null ],
+      [ "operator()", "group__geom.html#ga94896ff8001f1e3e47b0affdc10d9da5", null ],
+      [ "operator()", "group__geom.html#ga16a601e70ff7579400caeb7d95b95204", null ]
+    ] ],
+    [ "LaplacePsip", "structsolovev_1_1mod_1_1_laplace_psip.html", [
+      [ "LaplacePsip", "group__geom.html#gabfb778667a57cbb777199cbffc4a1055", null ],
+      [ "operator()", "group__geom.html#ga8e5535072af04c6ed8036e78e16ff54d", null ],
+      [ "operator()", "group__geom.html#gacc7cf1f88f3013bdc358a49c1a6fed8c", null ]
+    ] ],
+    [ "Psip", "structtaylor_1_1_psip.html", [
+      [ "Psip", "group__geom.html#gaec16ae1da63a12ef096edd13699619bc", null ],
+      [ "operator()", "group__geom.html#ga4c0776ada6570ac01f9cfd1f8008d23e", null ],
+      [ "operator()", "group__geom.html#gaf890a92ded55e0eecb7a9fab10647cbd", null ]
+    ] ],
+    [ "PsipR", "structtaylor_1_1_psip_r.html", [
+      [ "PsipR", "group__geom.html#gafaabaf96b2c91510fab293c62a9148d1", null ],
+      [ "operator()", "group__geom.html#gae9ce4630308aeed4e97002329cbc90d1", null ],
+      [ "operator()", "group__geom.html#ga8aa2c03b025acc6aad48bfabf581a839", null ]
+    ] ],
+    [ "PsipRR", "structtaylor_1_1_psip_r_r.html", [
+      [ "PsipRR", "group__geom.html#ga09c4c4b7886bca52440a317301903e63", null ],
+      [ "operator()", "group__geom.html#ga020302ae2d2749ce316e66935faa4ccd", null ],
+      [ "operator()", "group__geom.html#ga718fd4544c9fa6edcda65869e6a101f6", null ]
+    ] ],
+    [ "PsipZ", "structtaylor_1_1_psip_z.html", [
+      [ "PsipZ", "group__geom.html#gae4b6aaf453bb71ec537aca656f210098", null ],
+      [ "operator()", "group__geom.html#ga7fe168e34355cea15eb06af1e7272218", null ],
+      [ "operator()", "group__geom.html#ga3d63adb6c51327bdd5789ab36ccc267b", null ]
+    ] ],
+    [ "PsipZZ", "structtaylor_1_1_psip_z_z.html", [
+      [ "PsipZZ", "group__geom.html#ga7d21d2c2a82cb75a5ba93d963273478e", null ],
+      [ "operator()", "group__geom.html#ga2189daf3febc99b03ea53d27a414dcd1", null ],
+      [ "operator()", "group__geom.html#ga36f468be948fe392959d5c2cca320599", null ]
+    ] ],
+    [ "PsipRZ", "structtaylor_1_1_psip_r_z.html", [
+      [ "PsipRZ", "group__geom.html#ga7e1616d68572ccadb3c719a82c71e155", null ],
+      [ "operator()", "group__geom.html#ga997deb2eff5c2a58b659222682408f90", null ],
+      [ "operator()", "group__geom.html#ga56c3436e25f4a02c525bb81254369c4b", null ]
+    ] ],
+    [ "LaplacePsip", "structtaylor_1_1_laplace_psip.html", [
+      [ "LaplacePsip", "group__geom.html#gad880c041f6251d5c9d790b40dbf4c55d", null ],
+      [ "operator()", "group__geom.html#gaed8fc60c66edf3d0a37e3c04f6b32633", null ],
+      [ "operator()", "group__geom.html#gacf6fd3dd3f0118cc79f2cb91cae9aa77", null ]
+    ] ],
+    [ "Ipol", "structtaylor_1_1_ipol.html", [
+      [ "Ipol", "group__geom.html#ga226b3aee596978233fd91884f15568a7", null ],
+      [ "operator()", "group__geom.html#ga068111042266c437a0e22f3f6b40fa83", null ],
+      [ "operator()", "group__geom.html#ga9032062c6d6ff6ce85c18e05f5105a2b", null ]
+    ] ],
+    [ "IpolR", "structtaylor_1_1_ipol_r.html", [
+      [ "IpolR", "group__geom.html#gabda8d7a8125ac7a0a4f621080e0cebb8", null ],
+      [ "operator()", "group__geom.html#ga126124f3307eaba9810c7d19c4bd8716", null ],
+      [ "operator()", "group__geom.html#ga5c71a204eaf02686830eb23f5e802d8e", null ]
+    ] ],
+    [ "IpolZ", "structtaylor_1_1_ipol_z.html", [
+      [ "IpolZ", "group__geom.html#ga44906e9779527106319d5c3ce6c64676", null ],
+      [ "operator()", "group__geom.html#gadf388bd5f33fbb17c013d8d62b33851c", null ],
+      [ "operator()", "group__geom.html#gabae9552548689222b4e1bfeb7fe5102e", null ]
+    ] ],
     [ "display", "group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
     [ "display", "group__geom.html#ga4bc0dfab6f8129e83cad45eb3726833f", null ],
     [ "display", "group__geom.html#gaa9f6c9e84478b751dd1cd99323b40eba", null ],
     [ "display", "group__geom.html#ga6f23fd8259ba2253a0a8a0369cd82a8c", null ],
     [ "GeomParameters", "group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],
+    [ "operator()", "group__geom.html#ga4c0776ada6570ac01f9cfd1f8008d23e", null ],
+    [ "operator()", "group__geom.html#gaf890a92ded55e0eecb7a9fab10647cbd", null ],
+    [ "operator()", "group__geom.html#gae9ce4630308aeed4e97002329cbc90d1", null ],
+    [ "operator()", "group__geom.html#ga8aa2c03b025acc6aad48bfabf581a839", null ],
+    [ "operator()", "group__geom.html#ga718fd4544c9fa6edcda65869e6a101f6", null ],
+    [ "operator()", "group__geom.html#ga3d63adb6c51327bdd5789ab36ccc267b", null ],
+    [ "operator()", "group__geom.html#ga36f468be948fe392959d5c2cca320599", null ],
+    [ "operator()", "group__geom.html#ga56c3436e25f4a02c525bb81254369c4b", null ],
+    [ "operator()", "group__geom.html#ga068111042266c437a0e22f3f6b40fa83", null ],
+    [ "operator()", "group__geom.html#ga9032062c6d6ff6ce85c18e05f5105a2b", null ],
+    [ "operator()", "group__geom.html#ga5c71a204eaf02686830eb23f5e802d8e", null ],
+    [ "operator()", "group__geom.html#gabae9552548689222b4e1bfeb7fe5102e", null ],
+    [ "Psip", "group__geom.html#gaec16ae1da63a12ef096edd13699619bc", null ],
+    [ "PsipR", "group__geom.html#gafaabaf96b2c91510fab293c62a9148d1", null ],
+    [ "PsipRR", "group__geom.html#ga09c4c4b7886bca52440a317301903e63", null ],
     [ "psipZ_alt", "group__geom.html#gabc3ed53227d3f5955891269fb534c769", null ],
     [ "A", "group__geom.html#ga97e1ff33b7ef8b50e3a4a8878a61b0e5", null ],
     [ "a", "group__geom.html#ga937bb16d9918139c82537b0522d9d50c", null ],

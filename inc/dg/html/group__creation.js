@@ -1,9 +1,5 @@
 var group__creation =
 [
-    [ "Lowlevel helper functions and classes", "group__lowlevel.html", "group__lowlevel" ],
-    [ "Matrix creation functions and classes", "group__highlevel.html", "group__highlevel" ],
-    [ "Arakawas scheme", "group__arakawa.html", "group__arakawa" ],
-    [ "Classes that act as matrices in blas2 routines", "group__matrixoperators.html", "group__matrixoperators" ],
     [ "bc", "group__creation.html#ga59440bdf436f2874b49aa52b670ed364", [
       [ "PER", "group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3", null ],
       [ "DIR", "group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6", null ],
@@ -20,8 +16,44 @@ var group__creation =
       [ "normed", "group__creation.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123", null ],
       [ "not_normed", "group__creation.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066", null ]
     ] ],
-    [ "system", "group__creation.html#ga75789d2c36dff2caed4b3bb80191b346", [
-      [ "cartesian", "group__creation.html#gga75789d2c36dff2caed4b3bb80191b346a49a654c38e355ec847e55f927511019d", null ],
-      [ "cylindrical", "group__creation.html#gga75789d2c36dff2caed4b3bb80191b346a6962eb4bbef38ebabc41458844991bfd", null ]
-    ] ]
+    [ "dx", "group__creation.html#gad5be2465211da58a5b54fc499b58c4bb", null ],
+    [ "dx", "group__creation.html#ga6be9acf63c532389fac159106e97a402", null ],
+    [ "dx", "group__creation.html#ga39c7996ba83696c77fa23c2beeaa9d28", null ],
+    [ "dx", "group__creation.html#gade51022062525e440f0650256d01fc4a", null ],
+    [ "dx", "group__creation.html#ga8a1b5272d82ca222a64831cf3a03f4cf", null ],
+    [ "dx", "group__creation.html#gad9dd4b3ee49e99bb31cca568f0d39716", null ],
+    [ "dx", "group__creation.html#ga65e7ba940e675dc8c0f63fd539150351", null ],
+    [ "dx", "group__creation.html#ga1224a2d3641ffa92c10c49d344d72545", null ],
+    [ "dy", "group__creation.html#ga5b267018279f8be898f9c2a548aa5c71", null ],
+    [ "dy", "group__creation.html#gac54fd106927e5255aad8c99e356e389b", null ],
+    [ "dy", "group__creation.html#ga75b259c66847e7efa8d43dae3c6bb950", null ],
+    [ "dy", "group__creation.html#ga36572aa8918ec1d5cd6aece9391a5b84", null ],
+    [ "dy", "group__creation.html#ga04e15e6adc4668b7420dcd012d5b4f9c", null ],
+    [ "dy", "group__creation.html#ga58add2c10bc4a5431c4bb4aea90f564e", null ],
+    [ "dy", "group__creation.html#ga63aee1e603e9b22a65ea7d2549e2d809", null ],
+    [ "dy", "group__creation.html#ga58edbe9ff36cd7c37ebd13461e069e76", null ],
+    [ "dz", "group__creation.html#gab5a47acb0154b646b9de97f954f28334", null ],
+    [ "dz", "group__creation.html#gaa9617fb6d1b5b74051689b50a482fbe0", null ],
+    [ "dz", "group__creation.html#gae6d3a4fc87b06bb8d36ab0677b8e6ba5", null ],
+    [ "dz", "group__creation.html#gaee2e820a0227cf56349fb062a6aae05a", null ],
+    [ "jumpX", "group__creation.html#ga0368756d182e0c112c2a7d00071471e0", null ],
+    [ "jumpX", "group__creation.html#gac7804a49269b063c8e9510ced5ffe3ee", null ],
+    [ "jumpX", "group__creation.html#ga3b858987a991cb49a88cdbffea10f595", null ],
+    [ "jumpX", "group__creation.html#ga8ba14c2e8b94c4a74f288177349b8aec", null ],
+    [ "jumpX", "group__creation.html#ga338aa80bea10fb9acb4481f1ac39b05d", null ],
+    [ "jumpX", "group__creation.html#ga8d860b962e95d6ddedfe626a25d3a8b6", null ],
+    [ "jumpX", "group__creation.html#gac36223a2a8446f71d49a77cec6fef7fb", null ],
+    [ "jumpX", "group__creation.html#gabfb6c1890e7ba34cb22874f386427177", null ],
+    [ "jumpY", "group__creation.html#gabdefdedb5368453c450a0c8c02de20f8", null ],
+    [ "jumpY", "group__creation.html#gaf1ac3b51ca13b5f143cc064a8f43021e", null ],
+    [ "jumpY", "group__creation.html#gabcd03495be4307b03ccd96d4b0d3003c", null ],
+    [ "jumpY", "group__creation.html#ga95eb60413b84708a166ffa0b55fc552c", null ],
+    [ "jumpY", "group__creation.html#gada8a9c70d52b7262330de5b62828b265", null ],
+    [ "jumpY", "group__creation.html#ga6199456a2216ab8d49f7b75980767684", null ],
+    [ "jumpY", "group__creation.html#ga1f6c4096bec1e04f89afa1a8c2e696c6", null ],
+    [ "jumpY", "group__creation.html#ga35e6524cc0ba32123405e08d5f8d941f", null ],
+    [ "jumpZ", "group__creation.html#gad7c3b185b89b57d98556e58de14ccefb", null ],
+    [ "jumpZ", "group__creation.html#gabd23dff6fa246700d345337b592680be", null ],
+    [ "jumpZ", "group__creation.html#ga2809335fdaf0997fb196e360a4f1a755", null ],
+    [ "jumpZ", "group__creation.html#gae392abd9fcdb68c6069e82ae184ed86d", null ]
 ];

@@ -34,7 +34,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -163,30 +163,33 @@ Functions</h2></td></tr>
 <tr class="memitem:a6359fc68f28994afced36013b94fdc07"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a6359fc68f28994afced36013b94fdc07">define_time</a> (int ncid, const char *name, int *dimID, int *tvarID)</td></tr>
 <tr class="memdesc:a6359fc68f28994afced36013b94fdc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an unlimited time variable.  <a href="#a6359fc68f28994afced36013b94fdc07">More...</a><br /></td></tr>
 <tr class="separator:a6359fc68f28994afced36013b94fdc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa63598d3ee7e2a842fed7d4fc8d47295"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa63598d3ee7e2a842fed7d4fc8d47295"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b> (int ncid, const char *name, int size, int *dimID, int *tvarID)</td></tr>
+<tr class="memitem:aa63598d3ee7e2a842fed7d4fc8d47295"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#aa63598d3ee7e2a842fed7d4fc8d47295">define_limited_time</a> (int ncid, const char *name, int size, int *dimID, int *tvarID)</td></tr>
+<tr class="memdesc:aa63598d3ee7e2a842fed7d4fc8d47295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a limited time variable.  <a href="#aa63598d3ee7e2a842fed7d4fc8d47295">More...</a><br /></td></tr>
 <tr class="separator:aa63598d3ee7e2a842fed7d4fc8d47295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a846a2bb3ad75738bad0fe50c891b0bd7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a846a2bb3ad75738bad0fe50c891b0bd7">define_dimension</a> (int ncid, const char *name, int *dimID, const double *points, int size)</td></tr>
 <tr class="memdesc:a846a2bb3ad75738bad0fe50c891b0bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 1d dimension variable together with its data points.  <a href="#a846a2bb3ad75738bad0fe50c891b0bd7">More...</a><br /></td></tr>
 <tr class="separator:a846a2bb3ad75738bad0fe50c891b0bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd9f1ad6f13f19c99869def05583fb09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#afd9f1ad6f13f19c99869def05583fb09">define_dimension</a> (int ncid, const char *name, int *dimID, const dg::Grid1d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:afd9f1ad6f13f19c99869def05583fb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 1d dimension variable together with its data points.  <a href="#afd9f1ad6f13f19c99869def05583fb09">More...</a><br /></td></tr>
-<tr class="separator:afd9f1ad6f13f19c99869def05583fb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a452009c263aa1fb8b8c6cfab310fff84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a452009c263aa1fb8b8c6cfab310fff84">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:a452009c263aa1fb8b8c6cfab310fff84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 1d time-dependent dimension variable together with its data points.  <a href="#a452009c263aa1fb8b8c6cfab310fff84">More...</a><br /></td></tr>
-<tr class="separator:a452009c263aa1fb8b8c6cfab310fff84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a775499582ff288f9675263e69736fbcd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a775499582ff288f9675263e69736fbcd">define_dimensions</a> (int ncid, int *dimsIDs, const dg::Grid2d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:a775499582ff288f9675263e69736fbcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 2d dimensions and associate values in NetCDF-file.  <a href="#a775499582ff288f9675263e69736fbcd">More...</a><br /></td></tr>
-<tr class="separator:a775499582ff288f9675263e69736fbcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a437d502f8dbb9343ab38c568446ae3aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a437d502f8dbb9343ab38c568446ae3aa">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:a437d502f8dbb9343ab38c568446ae3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 2d time-dependent dimensions and associate values in NetCDF-file.  <a href="#a437d502f8dbb9343ab38c568446ae3aa">More...</a><br /></td></tr>
-<tr class="separator:a437d502f8dbb9343ab38c568446ae3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac45d16d851bfa0df93305e5e1a836e46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ac45d16d851bfa0df93305e5e1a836e46">define_dimensions</a> (int ncid, int *dimsIDs, const dg::Grid3d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ac45d16d851bfa0df93305e5e1a836e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 3d dimensions and associate values in NetCDF-file.  <a href="#ac45d16d851bfa0df93305e5e1a836e46">More...</a><br /></td></tr>
-<tr class="separator:ac45d16d851bfa0df93305e5e1a836e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1535f34423979479a0e0c43e377287e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#ae1535f34423979479a0e0c43e377287e">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ae1535f34423979479a0e0c43e377287e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 3d time-dependent dimensions and associate values in NetCDF-file.  <a href="#ae1535f34423979479a0e0c43e377287e">More...</a><br /></td></tr>
-<tr class="separator:ae1535f34423979479a0e0c43e377287e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e8dddbb98ed098fd20d77485879d48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a35e8dddbb98ed098fd20d77485879d48">define_dimension</a> (int ncid, const char *name, int *dimID, const dg::Grid1d &amp;g)</td></tr>
+<tr class="memdesc:a35e8dddbb98ed098fd20d77485879d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 1d dimension variable together with its data points.  <a href="#a35e8dddbb98ed098fd20d77485879d48">More...</a><br /></td></tr>
+<tr class="separator:a35e8dddbb98ed098fd20d77485879d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e1c68e70e1c4b393d5223c19d1c853"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a82e1c68e70e1c4b393d5223c19d1c853">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d &amp;g)</td></tr>
+<tr class="memdesc:a82e1c68e70e1c4b393d5223c19d1c853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a 1d time-dependent dimension variable together with its data points.  <a href="#a82e1c68e70e1c4b393d5223c19d1c853">More...</a><br /></td></tr>
+<tr class="separator:a82e1c68e70e1c4b393d5223c19d1c853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb7aec3ca83c981949b345ba9d751b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a8fb7aec3ca83c981949b345ba9d751b5">define_dimensions</a> (int ncid, int *dimsIDs, const dg::Grid2d &amp;g)</td></tr>
+<tr class="memdesc:a8fb7aec3ca83c981949b345ba9d751b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 2d dimensions and associate values in NetCDF-file.  <a href="#a8fb7aec3ca83c981949b345ba9d751b5">More...</a><br /></td></tr>
+<tr class="separator:a8fb7aec3ca83c981949b345ba9d751b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c30d8412ff90bb2f8a58a49a422237"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a24c30d8412ff90bb2f8a58a49a422237">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d &amp;g)</td></tr>
+<tr class="memdesc:a24c30d8412ff90bb2f8a58a49a422237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 2d time-dependent dimensions and associate values in NetCDF-file.  <a href="#a24c30d8412ff90bb2f8a58a49a422237">More...</a><br /></td></tr>
+<tr class="separator:a24c30d8412ff90bb2f8a58a49a422237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a7416266700dfbc1d8d249f9556a964"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a1a7416266700dfbc1d8d249f9556a964">define_limtime_xy</a> (int ncid, int *dimsIDs, int size, int *tvarID, const dg::Grid2d &amp;g)</td></tr>
+<tr class="memdesc:a1a7416266700dfbc1d8d249f9556a964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 2d time-dependent (limited) dimensions and associate values in NetCDF-file.  <a href="#a1a7416266700dfbc1d8d249f9556a964">More...</a><br /></td></tr>
+<tr class="separator:a1a7416266700dfbc1d8d249f9556a964"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac6eb445fc0ee37cf7d623d00be8a01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#aaac6eb445fc0ee37cf7d623d00be8a01">define_dimensions</a> (int ncid, int *dimsIDs, const dg::Grid3d &amp;g)</td></tr>
+<tr class="memdesc:aaac6eb445fc0ee37cf7d623d00be8a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 3d dimensions and associate values in NetCDF-file.  <a href="#aaac6eb445fc0ee37cf7d623d00be8a01">More...</a><br /></td></tr>
+<tr class="separator:aaac6eb445fc0ee37cf7d623d00be8a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69fd54000d5a743a5b0c0b14058c16c3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#a69fd54000d5a743a5b0c0b14058c16c3">define_dimensions</a> (int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d &amp;g)</td></tr>
+<tr class="memdesc:a69fd54000d5a743a5b0c0b14058c16c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define 3d time-dependent dimensions and associate values in NetCDF-file.  <a href="#a69fd54000d5a743a5b0c0b14058c16c3">More...</a><br /></td></tr>
+<tr class="separator:a69fd54000d5a743a5b0c0b14058c16c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc66deea3b4e458f87784035ecd72873"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefile.html#acc66deea3b4e458f87784035ecd72873">read_input</a> (const char *filename)</td></tr>
 <tr class="memdesc:acc66deea3b4e458f87784035ecd72873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract paramters from a file.  <a href="#acc66deea3b4e458f87784035ecd72873">More...</a><br /></td></tr>
 <tr class="separator:acc66deea3b4e458f87784035ecd72873"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +260,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="afd9f1ad6f13f19c99869def05583fb09"></a>
+<a class="anchor" id="a35e8dddbb98ed098fd20d77485879d48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -282,7 +285,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid1d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid1d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -307,7 +310,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="a452009c263aa1fb8b8c6cfab310fff84"></a>
+<a class="anchor" id="a82e1c68e70e1c4b393d5223c19d1c853"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -332,7 +335,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid1d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid1d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -357,7 +360,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="a775499582ff288f9675263e69736fbcd"></a>
+<a class="anchor" id="a8fb7aec3ca83c981949b345ba9d751b5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -376,7 +379,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid2d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid2d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -401,7 +404,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="a437d502f8dbb9343ab38c568446ae3aa"></a>
+<a class="anchor" id="a24c30d8412ff90bb2f8a58a49a422237"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -426,7 +429,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid2d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid2d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -452,7 +455,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="ac45d16d851bfa0df93305e5e1a836e46"></a>
+<a class="anchor" id="aaac6eb445fc0ee37cf7d623d00be8a01"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -471,7 +474,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid3d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid3d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -496,7 +499,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 
 </div>
 </div>
-<a class="anchor" id="ae1535f34423979479a0e0c43e377287e"></a>
+<a class="anchor" id="a69fd54000d5a743a5b0c0b14058c16c3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -521,7 +524,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const dg::Grid3d&lt; double &gt; &amp;&#160;</td>
+          <td class="paramtype">const dg::Grid3d &amp;&#160;</td>
           <td class="paramname"><em>g</em>&#160;</td>
         </tr>
         <tr>
@@ -539,6 +542,121 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
     <tr><td class="paramname">dimsIDs</td><td>(write - only) 4D array of dimension IDs (time, z,y,x) </td></tr>
     <tr><td class="paramname">tvarID</td><td>(write - only) The ID of the time variable </td></tr>
     <tr><td class="paramname">g</td><td>The grid from which to derive the dimensions</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>if anything goes wrong it returns the netcdf code, else SUCCESS </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>File stays in define mode </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa63598d3ee7e2a842fed7d4fc8d47295"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int file::define_limited_time </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dimID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tvarID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define a limited time variable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ncid</td><td>file ID </td></tr>
+    <tr><td class="paramname">name</td><td>Name of the time variable (usually "time") </td></tr>
+    <tr><td class="paramname">size</td><td>The number of timesteps </td></tr>
+    <tr><td class="paramname">dimID</td><td>time-dimension ID </td></tr>
+    <tr><td class="paramname">tvarID</td><td>time-variable ID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>netcdf error code if any </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1a7416266700dfbc1d8d249f9556a964"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int file::define_limtime_xy </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>dimsIDs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>tvarID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const dg::Grid2d &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define 2d time-dependent (limited) dimensions and associate values in NetCDF-file. </p>
+<p>Dimensions are named x, y, and time (limited) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ncid</td><td>file ID </td></tr>
+    <tr><td class="paramname">dimsIDs</td><td>(write - only) 3D array of dimension IDs (time, y,x) </td></tr>
+    <tr><td class="paramname">size</td><td>The size of the time variable </td></tr>
+    <tr><td class="paramname">tvarID</td><td>(write - only) The ID of the time variable </td></tr>
+    <tr><td class="paramname">g</td><td>The 2d grid from which to derive the dimensions</td></tr>
   </table>
   </dd>
 </dl>
@@ -789,7 +907,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>define_limited_time</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefile.html">file</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Input and Output utilities by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Input and Output utilities by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

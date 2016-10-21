@@ -1,7 +1,7 @@
 var searchData=
 [
   ['texture_2eh',['texture.h',['../texture_8h.html',1,'']]],
-  ['texture_5frgbf',['Texture_RGBf',['../group__utilities.html#ga356c71893774c0fdfb1e26ef1ab9577e',1,'toefl']]],
+  ['texture_5frgbf',['Texture_RGBf',['../group__utilities_x.html#ga356c71893774c0fdfb1e26ef1ab9577e',1,'toefl']]],
   ['tic',['tic',['../classtoefl_1_1_timer.html#a58b8b58e5f80b1055d3e5bc8ac8787b3',1,'toefl::Timer']]],
   ['timer',['Timer',['../classtoefl_1_1_timer.html',1,'toefl']]],
   ['tl_5fdft',['TL_DFT',['../group__containers.html#gga8e7cb091290b8f98cc2a25a7954e0023a0b59e46cc6cbf6420f5a069dc01de147',1,'toefl']]],

@@ -15,9 +15,9 @@ var searchData=
   ['gradlnb',['GradLnB',['../../../../inc/geometries/html/structguenther_1_1_grad_ln_b.html',1,'guenther']]],
   ['gradlnb',['GradLnB',['../../../../inc/geometries/html/structsolovev_1_1_grad_ln_b.html',1,'solovev']]],
   ['grid1d',['Grid1d',['../../../../inc/dg/html/structdg_1_1_grid1d.html',1,'dg']]],
-  ['grid1d_3c_20double_20_3e',['Grid1d&lt; double &gt;',['../../../../inc/dg/html/structdg_1_1_grid1d.html',1,'']]],
   ['grid2d',['Grid2d',['../../../../inc/dg/html/structdg_1_1_grid2d.html',1,'dg']]],
-  ['grid2d_3c_20double_20_3e',['Grid2d&lt; double &gt;',['../../../../inc/dg/html/structdg_1_1_grid2d.html',1,'']]],
   ['grid3d',['Grid3d',['../../../../inc/dg/html/structdg_1_1_grid3d.html',1,'dg']]],
-  ['grid3d_3c_20double_20_3e',['Grid3d&lt; double &gt;',['../../../../inc/dg/html/structdg_1_1_grid3d.html',1,'']]]
+  ['gridx1d',['GridX1d',['../../../../inc/dg/html/structdg_1_1_grid_x1d.html',1,'dg']]],
+  ['gridx2d',['GridX2d',['../../../../inc/dg/html/structdg_1_1_grid_x2d.html',1,'dg']]],
+  ['gridx3d',['GridX3d',['../../../../inc/dg/html/structdg_1_1_grid_x3d.html',1,'dg']]]
 ];

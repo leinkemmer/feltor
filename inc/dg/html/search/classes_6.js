@@ -8,9 +8,9 @@ var searchData=
   ['generalelliptic',['GeneralElliptic',['../structdg_1_1_general_elliptic.html',1,'dg']]],
   ['generalellipticsym',['GeneralEllipticSym',['../structdg_1_1_general_elliptic_sym.html',1,'dg']]],
   ['grid1d',['Grid1d',['../structdg_1_1_grid1d.html',1,'dg']]],
-  ['grid1d_3c_20double_20_3e',['Grid1d&lt; double &gt;',['../structdg_1_1_grid1d.html',1,'dg']]],
   ['grid2d',['Grid2d',['../structdg_1_1_grid2d.html',1,'dg']]],
-  ['grid2d_3c_20double_20_3e',['Grid2d&lt; double &gt;',['../structdg_1_1_grid2d.html',1,'dg']]],
   ['grid3d',['Grid3d',['../structdg_1_1_grid3d.html',1,'dg']]],
-  ['grid3d_3c_20double_20_3e',['Grid3d&lt; double &gt;',['../structdg_1_1_grid3d.html',1,'dg']]]
+  ['gridx1d',['GridX1d',['../structdg_1_1_grid_x1d.html',1,'dg']]],
+  ['gridx2d',['GridX2d',['../structdg_1_1_grid_x2d.html',1,'dg']]],
+  ['gridx3d',['GridX3d',['../structdg_1_1_grid_x3d.html',1,'dg']]]
 ];

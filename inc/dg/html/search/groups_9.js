@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['the_20discontinuous_20galerkin_20library',['The Discontinuous Galerkin library',['../group___d_g.html',1,'']]],
-  ['typedefs',['Typedefs',['../group__typedefs.html',1,'']]]
+  ['scatter',['Scatter',['../group__scatter.html',1,'']]],
+  ['sparse_20matrix_20formats',['Sparse matrix formats',['../group__sparsematrix.html',1,'']]]
 ];

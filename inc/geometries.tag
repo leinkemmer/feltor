@@ -2,56 +2,36 @@
 <tagfile>
   <compound kind="file">
     <name>fields.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>fields_8h</filename>
     <class kind="struct">solovev::Bmodule</class>
     <class kind="struct">solovev::InvB</class>
     <class kind="struct">solovev::LnB</class>
     <class kind="struct">solovev::BR</class>
     <class kind="struct">solovev::BZ</class>
-    <class kind="struct">solovev::CurvatureR</class>
-    <class kind="struct">solovev::CurvatureZ</class>
+    <class kind="struct">solovev::CurvatureNablaBR</class>
+    <class kind="struct">solovev::CurvatureNablaBZ</class>
+    <class kind="struct">solovev::CurvatureKappaR</class>
+    <class kind="struct">solovev::CurvatureKappaZ</class>
+    <class kind="struct">solovev::DivCurvatureKappa</class>
     <class kind="struct">solovev::GradLnB</class>
     <class kind="struct">solovev::Field</class>
     <class kind="struct">solovev::FieldP</class>
     <class kind="struct">solovev::FieldR</class>
     <class kind="struct">solovev::FieldZ</class>
     <class kind="struct">solovev::FieldT</class>
-    <class kind="struct">solovev::flux2::FieldY</class>
-    <class kind="struct">solovev::flux2::FieldRZYT</class>
-    <class kind="struct">solovev::flux2::FieldRZYZ</class>
-    <class kind="struct">solovev::flux2::FieldRZY</class>
-    <class kind="struct">solovev::flux2::FieldRZYRYZY</class>
-    <class kind="struct">solovev::flux::FieldY</class>
     <class kind="struct">solovev::flux::FieldRZYT</class>
     <class kind="struct">solovev::flux::FieldRZYZ</class>
     <class kind="struct">solovev::flux::FieldRZY</class>
     <class kind="struct">solovev::flux::FieldRZYRYZY</class>
-    <class kind="struct">solovev::conformal::FieldY</class>
-    <class kind="struct">solovev::conformal::FieldRZYT</class>
-    <class kind="struct">solovev::conformal::FieldRZYZ</class>
-    <class kind="struct">solovev::conformal::FieldRZY</class>
-    <class kind="struct">solovev::conformal::FieldRZYRYZY</class>
-    <class kind="struct">solovev::equalarc::FieldY</class>
+    <class kind="struct">solovev::ribeiro::FieldRZYT</class>
+    <class kind="struct">solovev::ribeiro::FieldRZYZ</class>
+    <class kind="struct">solovev::ribeiro::FieldRZY</class>
+    <class kind="struct">solovev::ribeiro::FieldRZYRYZY</class>
     <class kind="struct">solovev::equalarc::FieldRZYT</class>
     <class kind="struct">solovev::equalarc::FieldRZYZ</class>
     <class kind="struct">solovev::equalarc::FieldRZY</class>
     <class kind="struct">solovev::equalarc::FieldRZYRYZY</class>
-    <class kind="struct">solovev::boozer::FieldY</class>
-    <class kind="struct">solovev::boozer::FieldRZYT</class>
-    <class kind="struct">solovev::boozer::FieldRZYZ</class>
-    <class kind="struct">solovev::boozer::FieldRZY</class>
-    <class kind="struct">solovev::boozer::FieldRZYRYZY</class>
-    <class kind="struct">solovev::hamada::FieldY</class>
-    <class kind="struct">solovev::hamada::FieldRZYT</class>
-    <class kind="struct">solovev::hamada::FieldRZYZ</class>
-    <class kind="struct">solovev::hamada::FieldRZY</class>
-    <class kind="struct">solovev::hamada::FieldRZYRYZY</class>
-    <class kind="struct">solovev::orthogonal::FieldRZYT</class>
-    <class kind="struct">solovev::orthogonal::FieldRZYZ</class>
-    <class kind="struct">solovev::orthogonal::FieldRZY</class>
-    <class kind="struct">solovev::FieldRZ</class>
-    <class kind="struct">solovev::FieldZR</class>
     <class kind="struct">solovev::FieldRZtau</class>
     <class kind="struct">solovev::HessianRZtau</class>
     <class kind="struct">solovev::MinimalCurve</class>
@@ -69,11 +49,12 @@
     <class kind="struct">solovev::FuncDirNeu</class>
     <class kind="struct">solovev::BmodTheta</class>
     <class kind="struct">solovev::EllipticDirNeuM</class>
+    <class kind="struct">solovev::EllipticDirSimpleM</class>
     <namespace>solovev</namespace>
   </compound>
   <compound kind="file">
     <name>guenther.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>guenther_8h</filename>
     <includes id="guenther__parameters_8h" name="guenther_parameters.h" local="yes" imported="no">guenther_parameters.h</includes>
     <includes id="fields_8h" name="fields.h" local="yes" imported="no">fields.h</includes>
@@ -107,14 +88,14 @@
   </compound>
   <compound kind="file">
     <name>guenther_parameters.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>guenther__parameters_8h</filename>
     <class kind="struct">solovev::GeomParameters</class>
     <namespace>solovev</namespace>
   </compound>
   <compound kind="file">
     <name>init.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>init_8h</filename>
     <class kind="struct">solovev::Iris</class>
     <class kind="struct">solovev::Pupil</class>
@@ -132,7 +113,7 @@
   </compound>
   <compound kind="file">
     <name>solovev.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>solovev_8h</filename>
     <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
     <includes id="fields_8h" name="fields.h" local="yes" imported="no">fields.h</includes>
@@ -142,17 +123,43 @@
     <class kind="struct">solovev::PsipZ</class>
     <class kind="struct">solovev::PsipZZ</class>
     <class kind="struct">solovev::PsipRZ</class>
+    <class kind="struct">solovev::LaplacePsip</class>
     <class kind="struct">solovev::Ipol</class>
     <class kind="struct">solovev::IpolR</class>
     <class kind="struct">solovev::IpolZ</class>
+    <class kind="struct">solovev::CollectivePsip</class>
+    <class kind="struct">solovev::mod::Psip</class>
+    <class kind="struct">solovev::mod::PsipR</class>
+    <class kind="struct">solovev::mod::PsipZ</class>
+    <class kind="struct">solovev::mod::PsipZZ</class>
+    <class kind="struct">solovev::mod::PsipRR</class>
+    <class kind="struct">solovev::mod::PsipRZ</class>
+    <class kind="struct">solovev::mod::LaplacePsip</class>
     <namespace>solovev</namespace>
   </compound>
   <compound kind="file">
     <name>solovev_parameters.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/geometries/</path>
+    <path>/home/matthias/feltor/inc/geometries/</path>
     <filename>solovev__parameters_8h</filename>
     <class kind="struct">solovev::GeomParameters</class>
     <namespace>solovev</namespace>
+  </compound>
+  <compound kind="file">
+    <name>taylor.h</name>
+    <path>/home/matthias/feltor/inc/geometries/</path>
+    <filename>taylor_8h</filename>
+    <includes id="solovev__parameters_8h" name="solovev_parameters.h" local="yes" imported="no">solovev_parameters.h</includes>
+    <includes id="fields_8h" name="fields.h" local="yes" imported="no">fields.h</includes>
+    <class kind="struct">taylor::Psip</class>
+    <class kind="struct">taylor::PsipR</class>
+    <class kind="struct">taylor::PsipRR</class>
+    <class kind="struct">taylor::PsipZ</class>
+    <class kind="struct">taylor::PsipZZ</class>
+    <class kind="struct">taylor::PsipRZ</class>
+    <class kind="struct">taylor::LaplacePsip</class>
+    <class kind="struct">taylor::Ipol</class>
+    <class kind="struct">taylor::IpolR</class>
+    <class kind="struct">taylor::IpolZ</class>
   </compound>
   <compound kind="struct">
     <name>solovev::Alpha</name>
@@ -251,39 +258,205 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::CurvatureR</name>
-    <filename>structsolovev_1_1_curvature_r.html</filename>
+    <name>solovev::CollectivePsip</name>
+    <filename>structsolovev_1_1_collective_psip.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalGrid2d</name>
+    <filename>structdg_1_1_conformal_grid2d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalGrid3d</name>
+    <filename>structdg_1_1_conformal_grid3d.html</filename>
+    <templarg>container</templarg>
+    <member kind="typedef">
+      <type>dg::ConformalCylindricalTag</type>
+      <name>metric_category</name>
+      <anchorfile>structdg_1_1_conformal_grid3d.html</anchorfile>
+      <anchor>a9fca4c00310407879db5c9be1f18113a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>ConformalGrid2d&lt; container &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1_conformal_grid3d.html</anchorfile>
+      <anchor>acf0e8ae8e5bce1cadd755786da572c66</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalMPIGrid2d</name>
+    <filename>structdg_1_1_conformal_m_p_i_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalMPIGrid3d</name>
+    <filename>structdg_1_1_conformal_m_p_i_grid3d.html</filename>
+    <templarg>LocalContainer</templarg>
+    <member kind="typedef">
+      <type>dg::ConformalCylindricalTag</type>
+      <name>metric_category</name>
+      <anchorfile>structdg_1_1_conformal_m_p_i_grid3d.html</anchorfile>
+      <anchor>a9f776763460ca9b7e0bca3f4dda32e2a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::ConformalMPIGrid2d&lt; LocalContainer &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1_conformal_m_p_i_grid3d.html</anchorfile>
+      <anchor>aac94ac27ee4d824a074a28b94e1f8d25</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalRefinedGrid2d</name>
+    <filename>structdg_1_1_conformal_refined_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::ConformalRefinedGrid3d</name>
+    <filename>structdg_1_1_conformal_refined_grid3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::CurvatureKappaR</name>
+    <filename>structsolovev_1_1_curvature_kappa_r.html</filename>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structsolovev_1_1_curvature_r.html</anchorfile>
-      <anchor>a51b70c532ac5eba4d88a6ffa4c9a996c</anchor>
+      <anchorfile>structsolovev_1_1_curvature_kappa_r.html</anchorfile>
+      <anchor>ac5db8153885c330b060857a92bad9f93</anchor>
       <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structsolovev_1_1_curvature_r.html</anchorfile>
-      <anchor>a2f1bd20edb69558bb19cc27991f6084f</anchor>
+      <anchorfile>structsolovev_1_1_curvature_kappa_r.html</anchorfile>
+      <anchor>af60853bd461776f3acd283d519452b79</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::CurvatureZ</name>
-    <filename>structsolovev_1_1_curvature_z.html</filename>
+    <name>solovev::CurvatureKappaZ</name>
+    <filename>structsolovev_1_1_curvature_kappa_z.html</filename>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structsolovev_1_1_curvature_z.html</anchorfile>
-      <anchor>a86d98dbbfc2c0d6704243c57a2f1c23f</anchor>
+      <anchorfile>structsolovev_1_1_curvature_kappa_z.html</anchorfile>
+      <anchor>a3e368e5f9343e7f8cceab94d153b40d8</anchor>
       <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structsolovev_1_1_curvature_z.html</anchorfile>
-      <anchor>ae02adb93425f940e1e58bfdab0273c36</anchor>
+      <anchorfile>structsolovev_1_1_curvature_kappa_z.html</anchorfile>
+      <anchor>a9bd0ac10a9ae844c019bf3408487caca</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::CurvatureNablaBR</name>
+    <filename>structsolovev_1_1_curvature_nabla_b_r.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_curvature_nabla_b_r.html</anchorfile>
+      <anchor>a5d6c496b51a44539d1e29d59fb17b976</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_curvature_nabla_b_r.html</anchorfile>
+      <anchor>a9ea605f2a962cbc66e7f356b9f8b8e1b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::CurvatureNablaBZ</name>
+    <filename>structsolovev_1_1_curvature_nabla_b_z.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_curvature_nabla_b_z.html</anchorfile>
+      <anchor>a1f25cc6f5d5546b16b6ce25a116c18c4</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_curvature_nabla_b_z.html</anchorfile>
+      <anchor>a49086d4ef2c28debb6edc1ce6f061957</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearGrid2d</name>
+    <filename>structdg_1_1_curvilinear_grid2d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearGrid3d</name>
+    <filename>structdg_1_1_curvilinear_grid3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearGridX2d</name>
+    <filename>structdg_1_1_curvilinear_grid_x2d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearGridX3d</name>
+    <filename>structdg_1_1_curvilinear_grid_x3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearMPIGrid2d</name>
+    <filename>structdg_1_1_curvilinear_m_p_i_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearMPIGrid3d</name>
+    <filename>structdg_1_1_curvilinear_m_p_i_grid3d.html</filename>
+    <templarg>LocalContainer</templarg>
+    <member kind="typedef">
+      <type>dg::CurvilinearCylindricalTag</type>
+      <name>metric_category</name>
+      <anchorfile>structdg_1_1_curvilinear_m_p_i_grid3d.html</anchorfile>
+      <anchor>ab1b49e69508090e32148ca21750d50e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::CurvilinearMPIGrid2d&lt; LocalContainer &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1_curvilinear_m_p_i_grid3d.html</anchorfile>
+      <anchor>a0cbe7dcf908861943102d69ba1951be2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearRefinedGrid2d</name>
+    <filename>structdg_1_1_curvilinear_refined_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::CurvilinearRefinedGrid3d</name>
+    <filename>structdg_1_1_curvilinear_refined_grid3d.html</filename>
+    <templarg>container</templarg>
+    <member kind="typedef">
+      <type>dg::CurvilinearCylindricalTag</type>
+      <name>metric_category</name>
+      <anchorfile>structdg_1_1_curvilinear_refined_grid3d.html</anchorfile>
+      <anchor>ac2607ff2d1666b4ab8f184991b9a5300</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>CurvilinearRefinedGrid2d&lt; container &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1_curvilinear_refined_grid3d.html</anchorfile>
+      <anchor>aba027b5b429093ab4b6ded7b97d4960d</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -319,12 +492,12 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::DeriNeu</name>
-    <filename>structsolovev_1_1_deri_neu.html</filename>
-  </compound>
-  <compound kind="struct">
     <name>guenther::DeriNeu</name>
     <filename>structguenther_1_1_deri_neu.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::DeriNeu</name>
+    <filename>structsolovev_1_1_deri_neu.html</filename>
   </compound>
   <compound kind="struct">
     <name>guenther::DeriNeu2</name>
@@ -354,6 +527,42 @@
     <filename>structguenther_1_1_divb.html</filename>
   </compound>
   <compound kind="struct">
+    <name>solovev::DivCurvatureKappa</name>
+    <filename>structsolovev_1_1_div_curvature_kappa.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_div_curvature_kappa.html</anchorfile>
+      <anchor>a78a67137c6a2b4408eeed12b14831f57</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>structsolovev_1_1_div_curvature_kappa.html</anchorfile>
+      <anchor>aefc094d624a200990ee6327a9d8ef5b8</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::DivLiseikinX</name>
+    <filename>structdg_1_1_div_liseikin_x.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::DivLiseikinY</name>
+    <filename>structdg_1_1_div_liseikin_y.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
+  </compound>
+  <compound kind="struct">
     <name>solovev::EllipticDirNeuM</name>
     <filename>structsolovev_1_1_elliptic_dir_neu_m.html</filename>
   </compound>
@@ -362,129 +571,8 @@
     <filename>structsolovev_1_1_elliptic_dir_per_m.html</filename>
   </compound>
   <compound kind="struct">
-    <name>boozer::Field</name>
-    <filename>structboozer_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structboozer_1_1_field.html</anchorfile>
-      <anchor>a00c4830ee1dc032bce3b1a9a94c52de0</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structboozer_1_1_field.html</anchorfile>
-      <anchor>a5975774e2c9e4f92efe98dab2229363f</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structboozer_1_1_field.html</anchorfile>
-      <anchor>aba4ac673d923e6331684a38ed1c5331b</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>orthogonal::Field</name>
-    <filename>structorthogonal_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structorthogonal_1_1_field.html</anchorfile>
-      <anchor>a4dbf50cd8f4d530d474e1e5a8fce0a2d</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structorthogonal_1_1_field.html</anchorfile>
-      <anchor>af16603bebec6ab98d6e331c67a4a39c5</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structorthogonal_1_1_field.html</anchorfile>
-      <anchor>a506b14d93c6409fb5e04f812c70a30bd</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>conformal::Field</name>
-    <filename>structconformal_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structconformal_1_1_field.html</anchorfile>
-      <anchor>a43073b6114c3e3275e80e0c78f450b93</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structconformal_1_1_field.html</anchorfile>
-      <anchor>a535af60ca031f458e45a7cc07cc3ae84</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structconformal_1_1_field.html</anchorfile>
-      <anchor>a0aeca76a7a844b713d17222b5534957e</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>flux::Field</name>
-    <filename>structflux_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structflux_1_1_field.html</anchorfile>
-      <anchor>a4ce2de521aaf54153e85e6a9044fcc9b</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structflux_1_1_field.html</anchorfile>
-      <anchor>aafd6aca573eca7a30d33a7534bb61ff9</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structflux_1_1_field.html</anchorfile>
-      <anchor>a5b4002be94f8ad498a02a0ed57d0f1f4</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>flux2::Field</name>
-    <filename>structflux2_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structflux2_1_1_field.html</anchorfile>
-      <anchor>a65f83ae086f01c656a4212a8524f7b16</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structflux2_1_1_field.html</anchorfile>
-      <anchor>aac347662cbdf56308ed362c2d23d46e6</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structflux2_1_1_field.html</anchorfile>
-      <anchor>a66a4651e5d8fef4cfc91727b6a759516</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
+    <name>solovev::EllipticDirSimpleM</name>
+    <filename>structsolovev_1_1_elliptic_dir_simple_m.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::Field</name>
@@ -512,86 +600,33 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>equalarc::Field</name>
-    <filename>structequalarc_1_1_field.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>operator()</name>
-      <anchorfile>structequalarc_1_1_field.html</anchorfile>
-      <anchor>ae52b7df0d2c71813a19e846e698489e6</anchor>
-      <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structequalarc_1_1_field.html</anchorfile>
-      <anchor>a3d60a853840a30d006faa232b64046d3</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structequalarc_1_1_field.html</anchorfile>
-      <anchor>a6edeb6b044c12a7bb95ffdd1c9f07612</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>guenther::Field</name>
     <filename>structguenther_1_1_field.html</filename>
   </compound>
   <compound kind="struct">
-    <name>hamada::Field</name>
-    <filename>structhamada_1_1_field.html</filename>
+    <name>dg::Field</name>
+    <filename>structdg_1_1_field.html</filename>
     <member kind="function">
       <type>void</type>
       <name>operator()</name>
-      <anchorfile>structhamada_1_1_field.html</anchorfile>
-      <anchor>af42cd547ded3f6185eed68ca6d0f1a67</anchor>
+      <anchorfile>structdg_1_1_field.html</anchorfile>
+      <anchor>a16ca34101d9da2e70adf31b28039e9f6</anchor>
       <arglist>(const dg::HVec &amp;y, dg::HVec &amp;yp)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structhamada_1_1_field.html</anchorfile>
-      <anchor>a5e12d9267df872b178f878b055d10034</anchor>
+      <anchorfile>structdg_1_1_field.html</anchorfile>
+      <anchor>ae9db36046b40bd7566eac1634952dc3c</anchor>
       <arglist>(double R, double Z) const </arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>operator()</name>
-      <anchorfile>structhamada_1_1_field.html</anchorfile>
-      <anchor>a14ed204e7f9f5a35c2aa6fac0f3cbef1</anchor>
+      <anchorfile>structdg_1_1_field.html</anchorfile>
+      <anchor>afa8edf644b3370931ee7a611134fc8c4</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
     </member>
-  </compound>
-  <compound kind="struct">
-    <name>orthogonal::detail::FieldFinv</name>
-    <filename>structorthogonal_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>flux::detail::FieldFinv</name>
-    <filename>structflux_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>boozer::detail::FieldFinv</name>
-    <filename>structboozer_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>flux2::detail::FieldFinv</name>
-    <filename>structflux2_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>equalarc::detail::FieldFinv</name>
-    <filename>structequalarc_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>conformal::detail::FieldFinv</name>
-    <filename>structconformal_1_1detail_1_1_field_finv.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>hamada::detail::FieldFinv</name>
-    <filename>structhamada_1_1detail_1_1_field_finv.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::FieldP</name>
@@ -600,10 +635,6 @@
   <compound kind="struct">
     <name>guenther::FieldP</name>
     <filename>structguenther_1_1_field_p.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>guenther::FieldR</name>
-    <filename>structguenther_1_1_field_r.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::FieldR</name>
@@ -617,120 +648,109 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::FieldRZ</name>
-    <filename>structsolovev_1_1_field_r_z.html</filename>
+    <name>guenther::FieldR</name>
+    <filename>structguenther_1_1_field_r.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::FieldRZtau</name>
     <filename>structsolovev_1_1_field_r_ztau.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
-  <compound kind="struct">
-    <name>solovev::flux2::FieldRZY</name>
-    <filename>structsolovev_1_1flux2_1_1_field_r_z_y.html</filename>
+  <compound kind="class">
+    <name>FieldRZtau&lt; PsiX, PsiY &gt;</name>
+    <filename>structsolovev_1_1_field_r_ztau.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::flux::FieldRZY</name>
     <filename>structsolovev_1_1flux_1_1_field_r_z_y.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
-    <name>solovev::conformal::FieldRZY</name>
-    <filename>structsolovev_1_1conformal_1_1_field_r_z_y.html</filename>
+    <name>solovev::ribeiro::FieldRZY</name>
+    <filename>structsolovev_1_1ribeiro_1_1_field_r_z_y.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::equalarc::FieldRZY</name>
     <filename>structsolovev_1_1equalarc_1_1_field_r_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::boozer::FieldRZY</name>
-    <filename>structsolovev_1_1boozer_1_1_field_r_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::hamada::FieldRZY</name>
-    <filename>structsolovev_1_1hamada_1_1_field_r_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::orthogonal::FieldRZY</name>
-    <filename>structsolovev_1_1orthogonal_1_1_field_r_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::flux2::FieldRZYRYZY</name>
-    <filename>structsolovev_1_1flux2_1_1_field_r_z_y_r_y_z_y.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::flux::FieldRZYRYZY</name>
     <filename>structsolovev_1_1flux_1_1_field_r_z_y_r_y_z_y.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
+    <templarg>PsiRR</templarg>
+    <templarg>PsiRZ</templarg>
+    <templarg>PsiZZ</templarg>
+    <templarg>Ipol</templarg>
+    <templarg>IpolR</templarg>
+    <templarg>IpolZ</templarg>
   </compound>
   <compound kind="struct">
-    <name>solovev::conformal::FieldRZYRYZY</name>
-    <filename>structsolovev_1_1conformal_1_1_field_r_z_y_r_y_z_y.html</filename>
+    <name>solovev::ribeiro::FieldRZYRYZY</name>
+    <filename>structsolovev_1_1ribeiro_1_1_field_r_z_y_r_y_z_y.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
+    <templarg>PsiRR</templarg>
+    <templarg>PsiRZ</templarg>
+    <templarg>PsiZZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::equalarc::FieldRZYRYZY</name>
     <filename>structsolovev_1_1equalarc_1_1_field_r_z_y_r_y_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::boozer::FieldRZYRYZY</name>
-    <filename>structsolovev_1_1boozer_1_1_field_r_z_y_r_y_z_y.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::hamada::FieldRZYRYZY</name>
-    <filename>structsolovev_1_1hamada_1_1_field_r_z_y_r_y_z_y.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
+    <templarg>PsiRR</templarg>
+    <templarg>PsiRZ</templarg>
+    <templarg>PsiZZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::flux::FieldRZYT</name>
     <filename>structsolovev_1_1flux_1_1_field_r_z_y_t.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
+    <templarg>Ipol</templarg>
   </compound>
   <compound kind="struct">
-    <name>solovev::conformal::FieldRZYT</name>
-    <filename>structsolovev_1_1conformal_1_1_field_r_z_y_t.html</filename>
+    <name>solovev::ribeiro::FieldRZYT</name>
+    <filename>structsolovev_1_1ribeiro_1_1_field_r_z_y_t.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::equalarc::FieldRZYT</name>
     <filename>structsolovev_1_1equalarc_1_1_field_r_z_y_t.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
-  <compound kind="struct">
-    <name>solovev::boozer::FieldRZYT</name>
-    <filename>structsolovev_1_1boozer_1_1_field_r_z_y_t.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::hamada::FieldRZYT</name>
-    <filename>structsolovev_1_1hamada_1_1_field_r_z_y_t.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::orthogonal::FieldRZYT</name>
-    <filename>structsolovev_1_1orthogonal_1_1_field_r_z_y_t.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::flux2::FieldRZYT</name>
-    <filename>structsolovev_1_1flux2_1_1_field_r_z_y_t.html</filename>
+  <compound kind="class">
+    <name>FieldRZYT&lt; PsiX, PsiY, Ipol &gt;</name>
+    <filename>structsolovev_1_1flux_1_1_field_r_z_y_t.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::flux::FieldRZYZ</name>
     <filename>structsolovev_1_1flux_1_1_field_r_z_y_z.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
-    <name>solovev::conformal::FieldRZYZ</name>
-    <filename>structsolovev_1_1conformal_1_1_field_r_z_y_z.html</filename>
+    <name>solovev::ribeiro::FieldRZYZ</name>
+    <filename>structsolovev_1_1ribeiro_1_1_field_r_z_y_z.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::equalarc::FieldRZYZ</name>
     <filename>structsolovev_1_1equalarc_1_1_field_r_z_y_z.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::boozer::FieldRZYZ</name>
-    <filename>structsolovev_1_1boozer_1_1_field_r_z_y_z.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::hamada::FieldRZYZ</name>
-    <filename>structsolovev_1_1hamada_1_1_field_r_z_y_z.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::orthogonal::FieldRZYZ</name>
-    <filename>structsolovev_1_1orthogonal_1_1_field_r_z_y_z.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::flux2::FieldRZYZ</name>
-    <filename>structsolovev_1_1flux2_1_1_field_r_z_y_z.html</filename>
+    <templarg>PsiR</templarg>
+    <templarg>PsiZ</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::FieldT</name>
@@ -751,118 +771,6 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::conformal::FieldY</name>
-    <filename>structsolovev_1_1conformal_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1conformal_1_1_field_y.html</anchorfile>
-      <anchor>a19ca9356f41fc95488017a3607439f8b</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1conformal_1_1_field_y.html</anchorfile>
-      <anchor>a8544b347aac144845665fd64e065a927</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::equalarc::FieldY</name>
-    <filename>structsolovev_1_1equalarc_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1equalarc_1_1_field_y.html</anchorfile>
-      <anchor>a0c9f644c2babe34c7021032d05f9e055</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1equalarc_1_1_field_y.html</anchorfile>
-      <anchor>aac9c77b55672874f35a33e903c438afa</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::boozer::FieldY</name>
-    <filename>structsolovev_1_1boozer_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1boozer_1_1_field_y.html</anchorfile>
-      <anchor>a2008493d67cad5b06cd5bb208a76485f</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1boozer_1_1_field_y.html</anchorfile>
-      <anchor>adf648d269e1259976da1a65cef50e12c</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::flux::FieldY</name>
-    <filename>structsolovev_1_1flux_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1flux_1_1_field_y.html</anchorfile>
-      <anchor>aaf86d99f69dec307af1b41ba72a623e5</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1flux_1_1_field_y.html</anchorfile>
-      <anchor>a5d4c4ad39e350e1b472a42a958f1ea92</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::hamada::FieldY</name>
-    <filename>structsolovev_1_1hamada_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1hamada_1_1_field_y.html</anchorfile>
-      <anchor>a82c13bc54ebfbc9456a8b5e4f78901e3</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1hamada_1_1_field_y.html</anchorfile>
-      <anchor>a69167c1ebf8e5b1a603f8f87c4bd30a2</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>solovev::flux2::FieldY</name>
-    <filename>structsolovev_1_1flux2_1_1_field_y.html</filename>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1flux2_1_1_field_y.html</anchorfile>
-      <anchor>a163f7646c0896cfddf50bef14ffb7d17</anchor>
-      <arglist>(double R, double Z) const </arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>operator()</name>
-      <anchorfile>structsolovev_1_1flux2_1_1_field_y.html</anchorfile>
-      <anchor>aa5343fa4a720cd83c42b4c128b4cfb05</anchor>
-      <arglist>(double R, double Z, double phi) const </arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>guenther::FieldZ</name>
-    <filename>structguenther_1_1_field_z.html</filename>
-  </compound>
-  <compound kind="struct">
     <name>solovev::FieldZ</name>
     <filename>structsolovev_1_1_field_z.html</filename>
     <member kind="function">
@@ -874,8 +782,49 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>solovev::FieldZR</name>
-    <filename>structsolovev_1_1_field_z_r.html</filename>
+    <name>guenther::FieldZ</name>
+    <filename>structguenther_1_1_field_z.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::FluxGenerator</name>
+    <filename>structdg_1_1_flux_generator.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>FluxGenerator</name>
+      <anchorfile>structdg_1_1_flux_generator.html</anchorfile>
+      <anchor>a1464921403df642c3610f54da200a47b</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, Ipol ipol, IpolR ipolR, IpolZ ipolZ, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_flux_generator.html</anchorfile>
+      <anchor>a86f7e2275ad13eb37f120ada3ca00552</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_flux_generator.html</anchorfile>
+      <anchor>aeca96770c13fd48ff0c918d91e3d376f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_flux_generator.html</anchorfile>
+      <anchor>a1ca14cc28faf92fe9ef5a993f69370c9</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>solovev::FluxSurfaceAverage</name>
@@ -885,8 +834,8 @@
       <type></type>
       <name>FluxSurfaceAverage</name>
       <anchorfile>structsolovev_1_1_flux_surface_average.html</anchorfile>
-      <anchor>a2f79d67265e3dc31851a156d18c41f8d</anchor>
-      <arglist>(const dg::Grid2d&lt; double &gt; &amp;g2d, GeomParameters gp, const container &amp;f)</arglist>
+      <anchor>a33c1b24be4dbacef94b338959d4c9990</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, GeomParameters gp, const container &amp;f)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -897,130 +846,12 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>orthogonal::detail::Fpsi</name>
-    <filename>structorthogonal_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structorthogonal_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a53f2b44b9862ec22b486db52b4680481</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structorthogonal_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a4d1672692c41fb6ccf2941c14bb5126a</anchor>
-      <arglist>(double psi_0, double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>boozer::detail::Fpsi</name>
-    <filename>structboozer_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structboozer_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>aed7e798f67e934d118764f14cbdf194f</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0, double deltapsi)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structboozer_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>ad5c0da0e2ab1c0c685b0cf6f5dc6220a</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>flux::detail::Fpsi</name>
-    <filename>structflux_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structflux_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a96e26f7ee8a0179ab226150783f6b690</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0, double deltapsi)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structflux_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a5d1f76ba5159511a4bdaaedcacf74309</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>flux2::detail::Fpsi</name>
-    <filename>structflux2_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structflux2_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a1fd6a8a53bfb025d73df53001c59b3c1</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0, double deltapsi)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structflux2_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a4d110e095502bb489045e931d6e19c0e</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>equalarc::detail::Fpsi</name>
-    <filename>structequalarc_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structequalarc_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a5c47fdedbea54bfe4b935953d86fa246</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structequalarc_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>ab5d903558df8ed9a905298c4adf54ea2</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>hamada::detail::Fpsi</name>
-    <filename>structhamada_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structhamada_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>aa491802a7293870e3b32c9b8ca3f5bfb</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0, double deltapsi)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structhamada_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a8ad312fb4d189744196fef22fd58ba87</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>conformal::detail::Fpsi</name>
-    <filename>structconformal_1_1detail_1_1_fpsi.html</filename>
-    <member kind="function">
-      <type></type>
-      <name>Fpsi</name>
-      <anchorfile>structconformal_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a28f67ec0e1ba92433143d3893b7b41a4</anchor>
-      <arglist>(const solovev::GeomParameters &amp;gp, double psi_0)</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>find_x1</name>
-      <anchorfile>structconformal_1_1detail_1_1_fpsi.html</anchorfile>
-      <anchor>a476b98c103a8353872688e91c45b6f41</anchor>
-      <arglist>(double psi_1)</arglist>
-    </member>
+    <name>dg::flux::detail::Fpsi</name>
+    <filename>structdg_1_1flux_1_1detail_1_1_fpsi.html</filename>
+    <templarg>Psi</templarg>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>Ipol</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::FuncDirNeu</name>
@@ -1035,12 +866,12 @@
     <filename>structguenther_1_1_func_minus_deri_neu_t2.html</filename>
   </compound>
   <compound kind="struct">
-    <name>solovev::FuncNeu</name>
-    <filename>structsolovev_1_1_func_neu.html</filename>
-  </compound>
-  <compound kind="struct">
     <name>guenther::FuncNeu</name>
     <filename>structguenther_1_1_func_neu.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::FuncNeu</name>
+    <filename>structsolovev_1_1_func_neu.html</filename>
   </compound>
   <compound kind="struct">
     <name>guenther::FuncNeu2</name>
@@ -1246,8 +1077,129 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::Hector</name>
+    <filename>structdg_1_1_hector.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>Hector</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a94ecafe60d4cc7fcb70c5c10b15451ac</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Hector</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>ad545433a839c565fb71e7e0e64abe8ab</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, Chi chi, ChiX chiX, ChiY chiY, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Hector</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>ac6224f4d396adbf3ef55779dcb62042f</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, Chi_XX chi_XX, Chi_XY chi_XY, Chi_YY chi_YY, DivChiX divChiX, DivChiY divChiY, double psi0, double psi1, double X0, double Y0, unsigned n=13, unsigned Nx=2, unsigned Ny=10, double eps_u=1e-10, bool verbose=false)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a662e984503a7ae96a3780c070ce0559a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>aaaa65a564e0fd21eac17a959d95caf80</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConformal</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a73a9aa3b102dccd4dcbf4e37e7dd677e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOrthogonal</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a39a2db869387e2452b026d6c4ce2ea52</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a4b04e6df4e5d0561aeb00c2119022c41</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;u1d, const thrust::host_vector&lt; double &gt; &amp;v1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;ux, thrust::host_vector&lt; double &gt; &amp;uy, thrust::host_vector&lt; double &gt; &amp;vx, thrust::host_vector&lt; double &gt; &amp;vy) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const dg::CurvilinearGrid2d&lt; container &gt; &amp;</type>
+      <name>internal_grid</name>
+      <anchorfile>structdg_1_1_hector.html</anchorfile>
+      <anchor>a1e5c34d8db67fad9583bbb40c3932d52</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::HectorX</name>
+    <filename>structdg_1_1_hector_x.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>HectorX</name>
+      <anchorfile>structdg_1_1_hector_x.html</anchorfile>
+      <anchor>a28140fff12a28b895effa3d93be218fb</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, LaplacePsi laplacePsi, double psi0, double psi1, double XX, double YX, double X0, double Y0, double fx, double fy, unsigned n=13, unsigned Nx=2, unsigned Ny=20, double eps_u=1e-10)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lu</name>
+      <anchorfile>structdg_1_1_hector_x.html</anchorfile>
+      <anchor>aebbde5ebf103ca5d3964c5965686572f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>lv</name>
+      <anchorfile>structdg_1_1_hector_x.html</anchorfile>
+      <anchor>ab99a312ee3404abb7d9764e8da9476d1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_hector_x.html</anchorfile>
+      <anchor>ae1c63849fab1338d33424a0fd4ba35d3</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;u1d, const thrust::host_vector&lt; double &gt; &amp;v1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;ux, thrust::host_vector&lt; double &gt; &amp;uy, thrust::host_vector&lt; double &gt; &amp;vx, thrust::host_vector&lt; double &gt; &amp;vy) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const dg::OrthogonalGridX2d&lt; container &gt; &amp;</type>
+      <name>orthogonal_grid</name>
+      <anchorfile>structdg_1_1_hector_x.html</anchorfile>
+      <anchor>acb4c029a7e6c34833cf2f6c5439796d2</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>solovev::HessianRZtau</name>
     <filename>structsolovev_1_1_hessian_r_ztau.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>guenther::InvB</name>
+    <filename>structguenther_1_1_inv_b.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::InvB</name>
@@ -1268,8 +1220,22 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>guenther::InvB</name>
-    <filename>structguenther_1_1_inv_b.html</filename>
+    <name>taylor::Ipol</name>
+    <filename>structtaylor_1_1_ipol.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga068111042266c437a0e22f3f6b40fa83</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga9032062c6d6ff6ce85c18e05f5105a2b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>solovev::Ipol</name>
@@ -1301,6 +1267,17 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>taylor::IpolR</name>
+    <filename>structtaylor_1_1_ipol_r.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga5c71a204eaf02686830eb23f5e802d8e</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>solovev::IpolZ</name>
     <filename>structsolovev_1_1_ipol_z.html</filename>
     <member kind="function">
@@ -1308,6 +1285,17 @@
       <name>operator()</name>
       <anchorfile>structsolovev_1_1_ipol_z.html</anchorfile>
       <anchor>gae15dfa2edf805a44545a309a500f460c</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::IpolZ</name>
+    <filename>structtaylor_1_1_ipol_z.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gabae9552548689222b4e1bfeb7fe5102e</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
@@ -1328,6 +1316,75 @@
       <anchor>a417b9c7c5214758219cddc78b923fbbf</anchor>
       <arglist>(double R, double Z, double phi)</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::detail::LaplaceAdaptPsi</name>
+    <filename>structdg_1_1detail_1_1_laplace_adapt_psi.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>LaplacePsi</templarg>
+    <templarg>Chi</templarg>
+    <templarg>ChiX</templarg>
+    <templarg>ChiY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::detail::LaplaceChiPsi</name>
+    <filename>structdg_1_1detail_1_1_laplace_chi_psi.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
+    <templarg>ChiXX</templarg>
+    <templarg>ChiXY</templarg>
+    <templarg>ChiYY</templarg>
+    <templarg>DivChiX</templarg>
+    <templarg>DivChiY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::detail::LaplacePsi</name>
+    <filename>structdg_1_1detail_1_1_laplace_psi.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::LaplacePsip</name>
+    <filename>structsolovev_1_1_laplace_psip.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::mod::LaplacePsip</name>
+    <filename>structsolovev_1_1mod_1_1_laplace_psip.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::LaplacePsip</name>
+    <filename>structtaylor_1_1_laplace_psip.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Liseikin_XX</name>
+    <filename>structdg_1_1_liseikin___x_x.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Liseikin_XY</name>
+    <filename>structdg_1_1_liseikin___x_y.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::Liseikin_YY</name>
+    <filename>structdg_1_1_liseikin___y_y.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::LiseikinCollective</name>
+    <filename>structdg_1_1_liseikin_collective.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::LnB</name>
@@ -1354,138 +1411,42 @@
   <compound kind="struct">
     <name>solovev::MinimalCurve</name>
     <filename>structsolovev_1_1_minimal_curve.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
-    <name>conformal::MPIRingGrid2d</name>
-    <filename>structconformal_1_1_m_p_i_ring_grid2d.html</filename>
-    <templarg>LocalContainer</templarg>
-    <member kind="function">
-      <type></type>
-      <name>MPIRingGrid2d</name>
-      <anchorfile>structconformal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>a32cc44a0188f82f6a76d065eab3b41f6</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx, MPI_Comm comm2d)</arglist>
-    </member>
+    <name>dg::NablaPsiInv</name>
+    <filename>structdg_1_1_nabla_psi_inv.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
   </compound>
   <compound kind="struct">
-    <name>orthogonal::MPIRingGrid2d</name>
-    <filename>structorthogonal_1_1_m_p_i_ring_grid2d.html</filename>
-    <templarg>LocalContainer</templarg>
-    <member kind="function">
-      <type></type>
-      <name>MPIRingGrid2d</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>a1dca1bb511efd9fb82f0b9bb67826c01</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, dg::bc bcx, MPI_Comm comm2d)</arglist>
-    </member>
-    <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f1_x</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>a95b09ed14e333763ad1a55c77d675a84</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f2_xy</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>a98dbb9429fbf95957ab5d88f0df8315e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const dg::MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt; &amp;</type>
-      <name>f1</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>a2d83d51d1f7c8a08027b7b1329a5e0de</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const dg::MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt; &amp;</type>
-      <name>f2</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid2d.html</anchorfile>
-      <anchor>af3215cda4cc32ce7f80848f546d146e8</anchor>
-      <arglist>() const </arglist>
-    </member>
+    <name>dg::NablaPsiInvCollective</name>
+    <filename>structdg_1_1_nabla_psi_inv_collective.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
-    <name>orthogonal::MPIRingGrid3d</name>
-    <filename>structorthogonal_1_1_m_p_i_ring_grid3d.html</filename>
-    <templarg>LocalContainer</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a5bfc24c279dd2f197f450fb83b59babf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>MPIRingGrid2d&lt; LocalContainer &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>abbec50106ae84107769eeea5f19c1c5f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>MPIRingGrid3d</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a895e6a0367d252b12afcfe34de735e5b</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx, MPI_Comm comm)</arglist>
-    </member>
-    <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f1_x</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a90bf9c538060a7d0a89961f2d39d55bd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f2_xy</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a0334ed81a431354f1983674d381b0516</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const dg::MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt; &amp;</type>
-      <name>f1</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a417cfcb7b94201ca6c01fd719af26418</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const dg::MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt; &amp;</type>
-      <name>f2</name>
-      <anchorfile>structorthogonal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>ac28875877c1e21ae3ac66775696bff86</anchor>
-      <arglist>() const </arglist>
-    </member>
+    <name>dg::NablaPsiInvX</name>
+    <filename>structdg_1_1_nabla_psi_inv_x.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
   </compound>
   <compound kind="struct">
-    <name>conformal::MPIRingGrid3d</name>
-    <filename>structconformal_1_1_m_p_i_ring_grid3d.html</filename>
-    <templarg>LocalContainer</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structconformal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>acd53b9e20460c943769dbdbc01ba5d8c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>MPIRingGrid2d&lt; LocalContainer &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structconformal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a55ef8364c61bda6ec4845ca3a9152e12</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>MPIRingGrid3d</name>
-      <anchorfile>structconformal_1_1_m_p_i_ring_grid3d.html</anchorfile>
-      <anchor>a4acc68bf5f00b04d58f631f755ce35cf</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx, MPI_Comm comm)</arglist>
-    </member>
+    <name>dg::NablaPsiInvY</name>
+    <filename>structdg_1_1_nabla_psi_inv_y.html</filename>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::Nprofile</name>
@@ -1506,6 +1467,70 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>dg::OrthogonalGrid2d</name>
+    <filename>structdg_1_1_orthogonal_grid2d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalGrid3d</name>
+    <filename>structdg_1_1_orthogonal_grid3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalGridX2d</name>
+    <filename>structdg_1_1_orthogonal_grid_x2d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalGridX3d</name>
+    <filename>structdg_1_1_orthogonal_grid_x3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalMPIGrid2d</name>
+    <filename>structdg_1_1_orthogonal_m_p_i_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalMPIGrid3d</name>
+    <filename>structdg_1_1_orthogonal_m_p_i_grid3d.html</filename>
+    <templarg>LocalContainer</templarg>
+    <member kind="typedef">
+      <type>dg::OrthogonalTag</type>
+      <name>metric_category</name>
+      <anchorfile>structdg_1_1_orthogonal_m_p_i_grid3d.html</anchorfile>
+      <anchor>a0f12cfedf053c8b937eabd479711f363</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>dg::OrthogonalMPIGrid2d&lt; LocalContainer &gt;</type>
+      <name>perpendicular_grid</name>
+      <anchorfile>structdg_1_1_orthogonal_m_p_i_grid3d.html</anchorfile>
+      <anchor>adead690560f9a91d048b3c186ed4332c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalRefinedGrid2d</name>
+    <filename>structdg_1_1_orthogonal_refined_grid2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalRefinedGrid3d</name>
+    <filename>structdg_1_1_orthogonal_refined_grid3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalRefinedGridX2d</name>
+    <filename>structdg_1_1_orthogonal_refined_grid_x2d.html</filename>
+    <templarg></templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::OrthogonalRefinedGridX3d</name>
+    <filename>structdg_1_1_orthogonal_refined_grid_x3d.html</filename>
+    <templarg>container</templarg>
+  </compound>
+  <compound kind="struct">
     <name>solovev::PsiLimiter</name>
     <filename>structsolovev_1_1_psi_limiter.html</filename>
     <member kind="function">
@@ -1521,6 +1546,31 @@
       <anchorfile>structsolovev_1_1_psi_limiter.html</anchorfile>
       <anchor>a3f50447c170189146fe3a16ffaa5e56c</anchor>
       <arglist>(double R, double Z, double phi)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::Psip</name>
+    <filename>structtaylor_1_1_psip.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Psip</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gaec16ae1da63a12ef096edd13699619bc</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga4c0776ada6570ac01f9cfd1f8008d23e</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gaf890a92ded55e0eecb7a9fab10647cbd</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1556,6 +1606,10 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>solovev::mod::Psip</name>
+    <filename>structsolovev_1_1mod_1_1_psip.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>solovev::PsipR</name>
     <filename>structsolovev_1_1_psip_r.html</filename>
     <member kind="function">
@@ -1586,6 +1640,35 @@
       <anchor>gaa9f6c9e84478b751dd1cd99323b40eba</anchor>
       <arglist>() const </arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::PsipR</name>
+    <filename>structtaylor_1_1_psip_r.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gafaabaf96b2c91510fab293c62a9148d1</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gae9ce4630308aeed4e97002329cbc90d1</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga8aa2c03b025acc6aad48bfabf581a839</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::mod::PsipR</name>
+    <filename>structsolovev_1_1mod_1_1_psip_r.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::PsipRR</name>
@@ -1620,6 +1703,28 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>taylor::PsipRR</name>
+    <filename>structtaylor_1_1_psip_r_r.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PsipRR</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga09c4c4b7886bca52440a317301903e63</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga718fd4544c9fa6edcda65869e6a101f6</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::mod::PsipRR</name>
+    <filename>structsolovev_1_1mod_1_1_psip_r_r.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>solovev::PsipRZ</name>
     <filename>structsolovev_1_1_psip_r_z.html</filename>
     <member kind="function">
@@ -1636,6 +1741,21 @@
       <anchor>gacff295cd510bff71fe820df72ea66275</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::PsipRZ</name>
+    <filename>structtaylor_1_1_psip_r_z.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga56c3436e25f4a02c525bb81254369c4b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::mod::PsipRZ</name>
+    <filename>structsolovev_1_1mod_1_1_psip_r_z.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::PsiPupil</name>
@@ -1656,6 +1776,10 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>solovev::mod::PsipZ</name>
+    <filename>structsolovev_1_1mod_1_1_psip_z.html</filename>
+  </compound>
+  <compound kind="struct">
     <name>solovev::PsipZ</name>
     <filename>structsolovev_1_1_psip_z.html</filename>
     <member kind="function">
@@ -1672,6 +1796,32 @@
       <anchor>ga2d608839a9b30bcd7b5ecc2b2a8ff96e</anchor>
       <arglist>(double R, double Z, double phi) const </arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::PsipZ</name>
+    <filename>structtaylor_1_1_psip_z.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga3d63adb6c51327bdd5789ab36ccc267b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>taylor::PsipZZ</name>
+    <filename>structtaylor_1_1_psip_z_z.html</filename>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga36f468be948fe392959d5c2cca320599</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>solovev::mod::PsipZZ</name>
+    <filename>structsolovev_1_1mod_1_1_psip_z_z.html</filename>
   </compound>
   <compound kind="struct">
     <name>solovev::PsipZZ</name>
@@ -1710,234 +1860,124 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>flux2::RingGrid2d</name>
-    <filename>structflux2_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>conformal::RingGrid2d</name>
-    <filename>structconformal_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>boozer::RingGrid2d</name>
-    <filename>structboozer_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>orthogonal::RingGrid2d</name>
-    <filename>structorthogonal_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>flux::RingGrid2d</name>
-    <filename>structflux_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>hamada::RingGrid2d</name>
-    <filename>structhamada_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>equalarc::RingGrid2d</name>
-    <filename>structequalarc_1_1_ring_grid2d.html</filename>
-    <templarg>container</templarg>
-  </compound>
-  <compound kind="struct">
-    <name>flux::RingGrid3d</name>
-    <filename>structflux_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structflux_1_1_ring_grid3d.html</anchorfile>
-      <anchor>af2f5aae694fb531dc1b60bba4e637b0e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structflux_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a3825954423b119e599623816ff903f68</anchor>
-      <arglist></arglist>
-    </member>
+    <name>dg::Ribeiro</name>
+    <filename>structdg_1_1_ribeiro.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
     <member kind="function">
       <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structflux_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a9c1f5164993f3355cdeb688fee776988</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>boozer::RingGrid3d</name>
-    <filename>structboozer_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structboozer_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a0cec52fb1dd57d098879f9339fee4941</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structboozer_1_1_ring_grid3d.html</anchorfile>
-      <anchor>afd39d8ab0cc313f6a538e2888468693c</anchor>
-      <arglist></arglist>
+      <name>Ribeiro</name>
+      <anchorfile>structdg_1_1_ribeiro.html</anchorfile>
+      <anchor>a236022ceb121e2663fe8aca02b157431</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
     </member>
     <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structboozer_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a029f0744b14e9c7af4694a3c01275aff</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>hamada::RingGrid3d</name>
-    <filename>structhamada_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structhamada_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a52e6532dea9e77c1c9a508c98fcd81ce</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structhamada_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ab984b61b6f4b5c7a73f22a82c4727e82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structhamada_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a932eaa2494b06e3cae0298cfb5705895</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>equalarc::RingGrid3d</name>
-    <filename>structequalarc_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structequalarc_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ace8f39820fd8d66982cad264a20c061c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structequalarc_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a1fb66b5f5877a113d14d2282013975ea</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structequalarc_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a2cdad3c9b869ea3e8fa3f9da1550be16</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>flux2::RingGrid3d</name>
-    <filename>structflux2_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structflux2_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a0fc6bf51382c771abd13718d1b7e58eb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structflux2_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ab6e84be499a88029337d8f021547e86d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structflux2_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a2a55fe71641baa198ba43b113a38eea0</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>conformal::RingGrid3d</name>
-    <filename>structconformal_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="typedef">
-      <type>dg::CurvilinearCylindricalTag</type>
-      <name>metric_category</name>
-      <anchorfile>structconformal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a164e88f3dd26ddf67034a6357f20d0d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>RingGrid2d&lt; container &gt;</type>
-      <name>perpendicular_grid</name>
-      <anchorfile>structconformal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ab34a483f804a41905d72700b830ca980</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structconformal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>abad3550979c3b83e717184599fd9f468</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>orthogonal::RingGrid3d</name>
-    <filename>structorthogonal_1_1_ring_grid3d.html</filename>
-    <templarg>container</templarg>
-    <member kind="function">
-      <type></type>
-      <name>RingGrid3d</name>
-      <anchorfile>structorthogonal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ae4f8003df57b629cee13f26dbdcac281</anchor>
-      <arglist>(solovev::GeomParameters gp, double psi_0, double psi_1, unsigned n, unsigned Nx, unsigned Ny, unsigned Nz, dg::bc bcx)</arglist>
-    </member>
-    <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f1_x</name>
-      <anchorfile>structorthogonal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ad9783c3bc54c6b79c2920a390d44cce9</anchor>
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_ribeiro.html</anchorfile>
+      <anchor>a2fdbb88052ccfe3fd92191b6b4718555</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f2_xy</name>
-      <anchorfile>structorthogonal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>ab36c66850acbc6c2abfce16bed425503</anchor>
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_ribeiro.html</anchorfile>
+      <anchor>aa207d20ec819eb5b409d08ddd6a46d40</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f1</name>
-      <anchorfile>structorthogonal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a973178f8f0a110bedb51f10fef81aa8a</anchor>
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>fx</name>
+      <anchorfile>structdg_1_1_ribeiro.html</anchorfile>
+      <anchor>a5fe09c54d082db898c1c07defdb26dfb</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
-      <type>const thrust::host_vector&lt; double &gt; &amp;</type>
-      <name>f2</name>
-      <anchorfile>structorthogonal_1_1_ring_grid3d.html</anchorfile>
-      <anchor>a27248a162db6fc2bc7ac2bb5589162c7</anchor>
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_ribeiro.html</anchorfile>
+      <anchor>a4a622679288bf47537f267c49b7eae4e</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::RibeiroFluxGenerator</name>
+    <filename>structdg_1_1_ribeiro_flux_generator.html</filename>
+    <templarg>Psi</templarg>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>PsiXX</templarg>
+    <templarg>PsiXY</templarg>
+    <templarg>PsiYY</templarg>
+    <member kind="function">
+      <type></type>
+      <name>RibeiroFluxGenerator</name>
+      <anchorfile>structdg_1_1_ribeiro_flux_generator.html</anchorfile>
+      <anchor>ab0bd3dd49d3b09e83b416aa55e0e248c</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, PsiXX psiXX, PsiXY psiXY, PsiYY psiYY, double psi_0, double psi_1, double x0, double y0, int mode=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_ribeiro_flux_generator.html</anchorfile>
+      <anchor>a69c473b03e1a66f2b34c4c224c273c1a</anchor>
       <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_ribeiro_flux_generator.html</anchorfile>
+      <anchor>aac77775863d30a9ef6a5f9275f45b2e3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_ribeiro_flux_generator.html</anchorfile>
+      <anchor>a9b99e42ce420552c77142a2551fe3012</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::RibeiroX</name>
+    <filename>structdg_1_1_ribeiro_x.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_ribeiro_x.html</anchorfile>
+      <anchor>a6310dfad503dacecf959bede87d6446c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_ribeiro_x.html</anchorfile>
+      <anchor>a989d20d0949593a7ffa0366887216f5e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>thrust::host_vector&lt; double &gt;</type>
+      <name>fx</name>
+      <anchorfile>structdg_1_1_ribeiro_x.html</anchorfile>
+      <anchor>ae0806320c4a754643f7c2d6f145e203d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_ribeiro_x.html</anchorfile>
+      <anchor>ad5cd128d11acbf4cc6edf8881a9568ad</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, const unsigned nodeX0, const unsigned nodeX1, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -1948,8 +1988,8 @@
       <type></type>
       <name>SafetyFactor</name>
       <anchorfile>structsolovev_1_1_safety_factor.html</anchorfile>
-      <anchor>acb29f8d43f9715abfbc392b22399188f</anchor>
-      <arglist>(const dg::Grid2d&lt; double &gt; &amp;g2d, GeomParameters gp, const container &amp;f)</arglist>
+      <anchor>a49ff4eab6f49cb6b2546c1ef86571bba</anchor>
+      <arglist>(const dg::Grid2d &amp;g2d, GeomParameters gp, const container &amp;f)</arglist>
     </member>
     <member kind="function">
       <type>double</type>
@@ -1958,6 +1998,79 @@
       <anchor>ad1f873bfa1e8b3bc0f4ce43912666603</anchor>
       <arglist>(double psip0)</arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::SeparatrixOrthogonal</name>
+    <filename>structdg_1_1_separatrix_orthogonal.html</filename>
+    <templarg>Psi</templarg>
+    <templarg>PsiX</templarg>
+    <templarg>PsiY</templarg>
+    <templarg>LaplacePsi</templarg>
+  </compound>
+  <compound kind="struct">
+    <name>dg::SimpleOrthogonal</name>
+    <filename>structdg_1_1_simple_orthogonal.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <member kind="function">
+      <type></type>
+      <name>SimpleOrthogonal</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a8dc882c414cca0d24f3eb504ff2b7520</anchor>
+      <arglist>(Psi psi, PsiX psiX, PsiY psiY, LaplacePsi laplacePsi, double psi_0, double psi_1, double x0, double y0, int firstline=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>f0</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a0ef2e91c4ebfc7866a3ebd9ee9c2dd95</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a41b78620757b4f6d452cc0f51b9fe135</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a98f07134fd8d91b272e675c76a3bafab</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOrthogonal</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a9c6b1fea3348327f73650009ae2c8d01</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConformal</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a6fef0aee46e091f75672c3dc9cf14ad5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>operator()</name>
+      <anchorfile>structdg_1_1_simple_orthogonal.html</anchorfile>
+      <anchor>a2e01618584af05c8ee8d38fc452008dd</anchor>
+      <arglist>(const thrust::host_vector&lt; double &gt; &amp;zeta1d, const thrust::host_vector&lt; double &gt; &amp;eta1d, thrust::host_vector&lt; double &gt; &amp;x, thrust::host_vector&lt; double &gt; &amp;y, thrust::host_vector&lt; double &gt; &amp;zetaX, thrust::host_vector&lt; double &gt; &amp;zetaY, thrust::host_vector&lt; double &gt; &amp;etaX, thrust::host_vector&lt; double &gt; &amp;etaY)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>dg::SimpleOrthogonalX</name>
+    <filename>structdg_1_1_simple_orthogonal_x.html</filename>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
+    <templarg></templarg>
   </compound>
   <compound kind="struct">
     <name>solovev::TanhSource</name>
@@ -2007,6 +2120,61 @@
     </member>
   </compound>
   <compound kind="namespace">
+    <name>dg</name>
+    <filename>namespacedg.html</filename>
+    <class kind="struct">dg::ConformalGrid2d</class>
+    <class kind="struct">dg::ConformalGrid3d</class>
+    <class kind="struct">dg::ConformalMPIGrid2d</class>
+    <class kind="struct">dg::ConformalMPIGrid3d</class>
+    <class kind="struct">dg::ConformalRefinedGrid2d</class>
+    <class kind="struct">dg::ConformalRefinedGrid3d</class>
+    <class kind="struct">dg::CurvilinearGrid2d</class>
+    <class kind="struct">dg::CurvilinearGrid3d</class>
+    <class kind="struct">dg::CurvilinearGridX2d</class>
+    <class kind="struct">dg::CurvilinearGridX3d</class>
+    <class kind="struct">dg::CurvilinearMPIGrid2d</class>
+    <class kind="struct">dg::CurvilinearMPIGrid3d</class>
+    <class kind="struct">dg::CurvilinearRefinedGrid2d</class>
+    <class kind="struct">dg::CurvilinearRefinedGrid3d</class>
+    <class kind="struct">dg::DivLiseikinX</class>
+    <class kind="struct">dg::DivLiseikinY</class>
+    <class kind="struct">dg::Field</class>
+    <class kind="struct">dg::FluxGenerator</class>
+    <class kind="struct">dg::Hector</class>
+    <class kind="struct">dg::HectorX</class>
+    <class kind="struct">dg::Liseikin_XX</class>
+    <class kind="struct">dg::Liseikin_XY</class>
+    <class kind="struct">dg::Liseikin_YY</class>
+    <class kind="struct">dg::LiseikinCollective</class>
+    <class kind="struct">dg::NablaPsiInv</class>
+    <class kind="struct">dg::NablaPsiInvCollective</class>
+    <class kind="struct">dg::NablaPsiInvX</class>
+    <class kind="struct">dg::NablaPsiInvY</class>
+    <class kind="struct">dg::OrthogonalGrid2d</class>
+    <class kind="struct">dg::OrthogonalGrid3d</class>
+    <class kind="struct">dg::OrthogonalGridX2d</class>
+    <class kind="struct">dg::OrthogonalGridX3d</class>
+    <class kind="struct">dg::OrthogonalMPIGrid2d</class>
+    <class kind="struct">dg::OrthogonalMPIGrid3d</class>
+    <class kind="struct">dg::OrthogonalRefinedGrid2d</class>
+    <class kind="struct">dg::OrthogonalRefinedGrid3d</class>
+    <class kind="struct">dg::OrthogonalRefinedGridX2d</class>
+    <class kind="struct">dg::OrthogonalRefinedGridX3d</class>
+    <class kind="struct">dg::Ribeiro</class>
+    <class kind="struct">dg::RibeiroFluxGenerator</class>
+    <class kind="struct">dg::RibeiroX</class>
+    <class kind="struct">dg::SeparatrixOrthogonal</class>
+    <class kind="struct">dg::SimpleOrthogonal</class>
+    <class kind="struct">dg::SimpleOrthogonalX</class>
+    <member kind="function">
+      <type>void</type>
+      <name>findXpoint</name>
+      <anchorfile>namespacedg.html</anchorfile>
+      <anchor>a38dd841e016efb11a32e4f54be5bcb7e</anchor>
+      <arglist>(const PsiR &amp;psiR, const PsiZ &amp;psiZ, const PsiRR &amp;psiRR, const PsiRZ &amp;psiRZ, const PsiZZ &amp;psiZZ, double &amp;R_X, double &amp;Z_X)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
     <name>solovev</name>
     <filename>namespacesolovev.html</filename>
     <class kind="struct">solovev::Alpha</class>
@@ -2017,21 +2185,24 @@
     <class kind="struct">solovev::Bmodule</class>
     <class kind="struct">solovev::BR</class>
     <class kind="struct">solovev::BZ</class>
-    <class kind="struct">solovev::CurvatureR</class>
-    <class kind="struct">solovev::CurvatureZ</class>
+    <class kind="struct">solovev::CollectivePsip</class>
+    <class kind="struct">solovev::CurvatureKappaR</class>
+    <class kind="struct">solovev::CurvatureKappaZ</class>
+    <class kind="struct">solovev::CurvatureNablaBR</class>
+    <class kind="struct">solovev::CurvatureNablaBZ</class>
     <class kind="struct">solovev::DeltaFunction</class>
     <class kind="struct">solovev::DeriNeu</class>
     <class kind="struct">solovev::DeriTestFunction</class>
+    <class kind="struct">solovev::DivCurvatureKappa</class>
     <class kind="struct">solovev::EllipticDirNeuM</class>
     <class kind="struct">solovev::EllipticDirPerM</class>
+    <class kind="struct">solovev::EllipticDirSimpleM</class>
     <class kind="struct">solovev::Field</class>
     <class kind="struct">solovev::FieldP</class>
     <class kind="struct">solovev::FieldR</class>
-    <class kind="struct">solovev::FieldRZ</class>
     <class kind="struct">solovev::FieldRZtau</class>
     <class kind="struct">solovev::FieldT</class>
     <class kind="struct">solovev::FieldZ</class>
-    <class kind="struct">solovev::FieldZR</class>
     <class kind="struct">solovev::FluxSurfaceAverage</class>
     <class kind="struct">solovev::FuncDirNeu</class>
     <class kind="struct">solovev::FuncDirPer</class>
@@ -2047,6 +2218,7 @@
     <class kind="struct">solovev::IpolR</class>
     <class kind="struct">solovev::IpolZ</class>
     <class kind="struct">solovev::Iris</class>
+    <class kind="struct">solovev::LaplacePsip</class>
     <class kind="struct">solovev::LnB</class>
     <class kind="struct">solovev::MinimalCurve</class>
     <class kind="struct">solovev::Nprofile</class>
@@ -2073,16 +2245,17 @@
     <class kind="struct">solovev::LnB</class>
     <class kind="struct">solovev::BR</class>
     <class kind="struct">solovev::BZ</class>
-    <class kind="struct">solovev::CurvatureR</class>
-    <class kind="struct">solovev::CurvatureZ</class>
+    <class kind="struct">solovev::CurvatureNablaBR</class>
+    <class kind="struct">solovev::CurvatureNablaBZ</class>
+    <class kind="struct">solovev::CurvatureKappaR</class>
+    <class kind="struct">solovev::CurvatureKappaZ</class>
+    <class kind="struct">solovev::DivCurvatureKappa</class>
     <class kind="struct">solovev::GradLnB</class>
     <class kind="struct">solovev::Field</class>
     <class kind="struct">solovev::FieldP</class>
     <class kind="struct">solovev::FieldR</class>
     <class kind="struct">solovev::FieldZ</class>
     <class kind="struct">solovev::FieldT</class>
-    <class kind="struct">solovev::FieldRZ</class>
-    <class kind="struct">solovev::FieldZR</class>
     <class kind="struct">solovev::FieldRZtau</class>
     <class kind="struct">solovev::HessianRZtau</class>
     <class kind="struct">solovev::MinimalCurve</class>
@@ -2116,6 +2289,25 @@
     <class kind="struct">guenther::DeriNeuT</class>
     <class kind="struct">guenther::Divb</class>
     <class kind="struct">solovev::GeomParameters</class>
+    <class kind="struct">solovev::LaplacePsip</class>
+    <class kind="struct">solovev::CollectivePsip</class>
+    <class kind="struct">solovev::mod::Psip</class>
+    <class kind="struct">solovev::mod::PsipR</class>
+    <class kind="struct">solovev::mod::PsipZ</class>
+    <class kind="struct">solovev::mod::PsipZZ</class>
+    <class kind="struct">solovev::mod::PsipRR</class>
+    <class kind="struct">solovev::mod::PsipRZ</class>
+    <class kind="struct">solovev::mod::LaplacePsip</class>
+    <class kind="struct">taylor::Psip</class>
+    <class kind="struct">taylor::PsipR</class>
+    <class kind="struct">taylor::PsipRR</class>
+    <class kind="struct">taylor::PsipZ</class>
+    <class kind="struct">taylor::PsipZZ</class>
+    <class kind="struct">taylor::PsipRZ</class>
+    <class kind="struct">taylor::LaplacePsip</class>
+    <class kind="struct">taylor::Ipol</class>
+    <class kind="struct">taylor::IpolR</class>
+    <class kind="struct">taylor::IpolZ</class>
     <member kind="function">
       <type></type>
       <name>GeomParameters</name>
@@ -2157,6 +2349,111 @@
       <anchorfile>group__geom.html</anchorfile>
       <anchor>gabc3ed53227d3f5955891269fb534c769</anchor>
       <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Psip</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gaec16ae1da63a12ef096edd13699619bc</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga4c0776ada6570ac01f9cfd1f8008d23e</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gaf890a92ded55e0eecb7a9fab10647cbd</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PsipR</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gafaabaf96b2c91510fab293c62a9148d1</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gae9ce4630308aeed4e97002329cbc90d1</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga8aa2c03b025acc6aad48bfabf581a839</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PsipRR</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga09c4c4b7886bca52440a317301903e63</anchor>
+      <arglist>(solovev::GeomParameters gp)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga718fd4544c9fa6edcda65869e6a101f6</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga3d63adb6c51327bdd5789ab36ccc267b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga36f468be948fe392959d5c2cca320599</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga56c3436e25f4a02c525bb81254369c4b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga068111042266c437a0e22f3f6b40fa83</anchor>
+      <arglist>(double R, double Z) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga9032062c6d6ff6ce85c18e05f5105a2b</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>ga5c71a204eaf02686830eb23f5e802d8e</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>operator()</name>
+      <anchorfile>group__geom.html</anchorfile>
+      <anchor>gabae9552548689222b4e1bfeb7fe5102e</anchor>
+      <arglist>(double R, double Z, double phi) const </arglist>
     </member>
     <member kind="variable">
       <type>double</type>
@@ -2265,6 +2562,7 @@
     <class kind="struct">solovev::FuncDirNeu</class>
     <class kind="struct">solovev::BmodTheta</class>
     <class kind="struct">solovev::EllipticDirNeuM</class>
+    <class kind="struct">solovev::EllipticDirSimpleM</class>
     <class kind="struct">solovev::Iris</class>
     <class kind="struct">solovev::Pupil</class>
     <class kind="struct">solovev::PsiPupil</class>
@@ -2277,6 +2575,47 @@
     <class kind="struct">solovev::ZonalFlow</class>
     <class kind="struct">solovev::TestFunction</class>
     <class kind="struct">solovev::DeriTestFunction</class>
+  </compound>
+  <compound kind="group">
+    <name>grids</name>
+    <title>Grids and grid generators</title>
+    <filename>group__grids.html</filename>
+    <subgroup>generators</subgroup>
+    <class kind="struct">dg::ConformalGrid3d</class>
+    <class kind="struct">dg::ConformalGrid2d</class>
+    <class kind="struct">dg::CurvilinearGrid3d</class>
+    <class kind="struct">dg::CurvilinearGrid2d</class>
+    <class kind="struct">dg::CurvilinearGridX3d</class>
+    <class kind="struct">dg::CurvilinearGridX2d</class>
+    <class kind="struct">dg::ConformalMPIGrid3d</class>
+    <class kind="struct">dg::ConformalMPIGrid2d</class>
+    <class kind="struct">dg::CurvilinearMPIGrid3d</class>
+    <class kind="struct">dg::CurvilinearMPIGrid2d</class>
+    <class kind="struct">dg::OrthogonalMPIGrid3d</class>
+    <class kind="struct">dg::OrthogonalMPIGrid2d</class>
+    <class kind="struct">dg::OrthogonalGrid3d</class>
+    <class kind="struct">dg::OrthogonalGrid2d</class>
+    <class kind="struct">dg::OrthogonalGridX3d</class>
+    <class kind="struct">dg::OrthogonalGridX2d</class>
+    <class kind="struct">dg::ConformalRefinedGrid3d</class>
+    <class kind="struct">dg::ConformalRefinedGrid2d</class>
+    <class kind="struct">dg::CurvilinearRefinedGrid3d</class>
+    <class kind="struct">dg::CurvilinearRefinedGrid2d</class>
+    <class kind="struct">dg::OrthogonalRefinedGrid3d</class>
+    <class kind="struct">dg::OrthogonalRefinedGrid2d</class>
+  </compound>
+  <compound kind="group">
+    <name>generators</name>
+    <title>Grid generators</title>
+    <filename>group__generators.html</filename>
+    <class kind="struct">dg::RibeiroX</class>
+    <class kind="struct">dg::FluxGenerator</class>
+    <class kind="struct">dg::RibeiroFluxGenerator</class>
+    <class kind="struct">dg::Hector</class>
+    <class kind="struct">dg::SimpleOrthogonal</class>
+    <class kind="struct">dg::SimpleOrthogonalX</class>
+    <class kind="struct">dg::SeparatrixOrthogonal</class>
+    <class kind="struct">dg::Ribeiro</class>
   </compound>
   <compound kind="page">
     <name>index</name>

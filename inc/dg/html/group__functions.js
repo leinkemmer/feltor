@@ -11,6 +11,16 @@ var group__functions =
       [ "operator()", "structdg_1_1_gaussian.html#a1fb4fe2bf3ba2ca34bc583d1ae458442", null ],
       [ "operator()", "structdg_1_1_gaussian.html#a7e4ebb4c3e7dc16bf2dcdbb70631bd2e", null ]
     ] ],
+    [ "Cauchy", "structdg_1_1_cauchy.html", [
+      [ "Cauchy", "structdg_1_1_cauchy.html#a508cb8140a3505aeeac4af782e779d50", null ],
+      [ "dx", "structdg_1_1_cauchy.html#ae51d9385e640b0e299d0813b860a0267", null ],
+      [ "dxx", "structdg_1_1_cauchy.html#a34c59fb80ed57b75c9bc9de008edd7d5", null ],
+      [ "dxy", "structdg_1_1_cauchy.html#a865af69a923468c679db4495bc552d13", null ],
+      [ "dy", "structdg_1_1_cauchy.html#aea3f1ed6e3defc6c169a4a7fd56d8e80", null ],
+      [ "dyy", "structdg_1_1_cauchy.html#ad6e6e7f4945ea2854adc4aca14d94536", null ],
+      [ "inside", "structdg_1_1_cauchy.html#a811035f6afe477f0a921289f489a9068", null ],
+      [ "operator()", "structdg_1_1_cauchy.html#a9ddafc1de04fa354892f5aa57a04e8f5", null ]
+    ] ],
     [ "Gaussian3d", "structdg_1_1_gaussian3d.html", [
       [ "Gaussian3d", "structdg_1_1_gaussian3d.html#acd75cd8bfa2dac659a308c1a17219f1e", null ],
       [ "operator()", "structdg_1_1_gaussian3d.html#a043038f3e18a1d88f149ae63bc2c2f4c", null ],
@@ -89,6 +99,9 @@ var group__functions =
       [ "PLUS", "structdg_1_1_p_l_u_s.html#a6046659f109429be9e83c4a344c14064", null ],
       [ "operator()", "structdg_1_1_p_l_u_s.html#ad5842bc8b987da5d72b3373fbc3884ad", null ]
     ] ],
+    [ "INVERT", "structdg_1_1_i_n_v_e_r_t.html", [
+      [ "operator()", "structdg_1_1_i_n_v_e_r_t.html#a22e1eb669efff0d817efd1aa8c623118", null ]
+    ] ],
     [ "MOD", "structdg_1_1_m_o_d.html", [
       [ "MOD", "structdg_1_1_m_o_d.html#a1661e093118805e4334b61089134bf6f", null ],
       [ "operator()", "structdg_1_1_m_o_d.html#a7be9dc04696f43b4760d533c07848f47", null ]
@@ -105,24 +118,31 @@ var group__functions =
       [ "operator()", "structdg_1_1_c_o_n_s_t_a_n_t.html#a89f96caaf6a6c7261b5d1a92ab008c39", null ],
       [ "operator()", "structdg_1_1_c_o_n_s_t_a_n_t.html#a957ca7a22cdfdf8c4e60ca4cd2a2a1b0", null ]
     ] ],
+    [ "ONE", "structdg_1_1_o_n_e.html", [
+      [ "operator()", "structdg_1_1_o_n_e.html#a4e741fbef7574905db2b52f1a1b20fc3", null ],
+      [ "operator()", "structdg_1_1_o_n_e.html#a16dee17a39bbe4887f230a83b351c459", null ],
+      [ "operator()", "structdg_1_1_o_n_e.html#ae16f7a8e7886e8002aabe21928ef7a0f", null ]
+    ] ],
+    [ "ZERO", "structdg_1_1_z_e_r_o.html", [
+      [ "operator()", "structdg_1_1_z_e_r_o.html#ac67ab0590c7c814b0a0f22e4550b1418", null ],
+      [ "operator()", "structdg_1_1_z_e_r_o.html#a354588f8f9bad2f9f9ce985e8a51b21c", null ],
+      [ "operator()", "structdg_1_1_z_e_r_o.html#a2dfec804f6e388598de3b537eb0d3bc5", null ]
+    ] ],
     [ "Histogram", "structdg_1_1_histogram.html", [
-      [ "Histogram", "structdg_1_1_histogram.html#ac5111e3519dc62ea32ff68e1de7eaebf", null ],
+      [ "Histogram", "structdg_1_1_histogram.html#a0759e95df4ac5885f8f436ea47334fe9", null ],
       [ "binwidth", "structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407", null ],
       [ "operator()", "structdg_1_1_histogram.html#ae34a37fd52249593abbf0482b583d7c5", null ]
     ] ],
     [ "Histogram2D", "structdg_1_1_histogram2_d.html", [
-      [ "Histogram2D", "structdg_1_1_histogram2_d.html#ad80ad774890b779e339151e6c79574e2", null ],
+      [ "Histogram2D", "structdg_1_1_histogram2_d.html#a5b8734d23299e56a4755fe91a3b005f3", null ],
       [ "operator()", "structdg_1_1_histogram2_d.html#ae442645862b8112c7cc34bd3c2bfc047", null ]
     ] ],
-    [ "bessi1", "group__functions.html#ga8f29ee46cf5603af9cabd93163cf98cc", null ],
-    [ "bessj1", "group__functions.html#ga31e93254b91f287daf4ca4756fb32385", null ],
-    [ "bessk1", "group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1", null ],
-    [ "coo1", "group__functions.html#ga59b5a3c6ae442e096d03c937e43cb30a", null ],
-    [ "coo1", "group__functions.html#gab2a696c36a0e02b0b2ddc7d24e47e5c9", null ],
-    [ "coo1", "group__functions.html#gab9b55ef9761fe4771b708e7b4f543e24", null ],
-    [ "coo2", "group__functions.html#ga66ec91cd05d75e09896a0198737d05c1", null ],
-    [ "coo2", "group__functions.html#ga2761f13261f98b9080c3d41330f91e74", null ],
-    [ "coo3", "group__functions.html#gac71c7be4a51ce1589f13fe8a803af81f", null ],
+    [ "cooX1d", "group__functions.html#ga585f4aa011369c015dd68cade3d17d51", null ],
+    [ "cooX2d", "group__functions.html#ga57832a7433f639967c88dba28c86a39c", null ],
+    [ "cooX3d", "group__functions.html#gaf3391865c980e362f471162a65dd66e0", null ],
+    [ "cooY2d", "group__functions.html#ga4c4b9a55a5b8f8cd183a18d4303b63e3", null ],
+    [ "cooY3d", "group__functions.html#ga7ea2f36bd92fca22e8547317dd10c201", null ],
+    [ "cooZ3d", "group__functions.html#gac8de69a16789a98d51e454a487b4bf50", null ],
     [ "one", "group__functions.html#ga5797166cdb9d26408ea629f742534fa7", null ],
     [ "one", "group__functions.html#ga00fbb55c78ef8e349169a2e3556d78bc", null ],
     [ "one", "group__functions.html#gaa8487df41f74a33ef2a63065415b88b5", null ],

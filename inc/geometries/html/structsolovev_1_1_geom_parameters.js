@@ -1,7 +1,9 @@
 var structsolovev_1_1_geom_parameters =
 [
     [ "GeomParameters", "group__geom.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],
+    [ "GeomParameters", "group__geom.html#ga864d399eaf4ca8f9f6a3d58992e8659b", null ],
     [ "GeomParameters", "structsolovev_1_1_geom_parameters.html#ga33f43196e4cf4e85bd9640ba62d9230a", null ],
+    [ "GeomParameters", "structsolovev_1_1_geom_parameters.html#ga864d399eaf4ca8f9f6a3d58992e8659b", null ],
     [ "display", "group__geom.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
     [ "display", "structsolovev_1_1_geom_parameters.html#gac75127cc87f46a3a5b05ef2304a85fdd", null ],
     [ "A", "group__geom.html#ga97e1ff33b7ef8b50e3a4a8878a61b0e5", null ],

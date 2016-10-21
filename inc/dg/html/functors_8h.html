@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: /home/matthias/Projekte/feltor/inc/dg/functors.h File Reference</title>
+<title>Discontinuous Galerkin Library: /home/matthias/feltor/inc/dg/functors.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -126,8 +127,7 @@ $(document).ready(function(){initNavTree('functors_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#namespaces">Namespaces</a>  </div>
   <div class="headertitle">
 <div class="title">functors.h File Reference</div>  </div>
 </div><!--header-->
@@ -154,6 +154,12 @@ Classes</h2></td></tr>
 \[ f(x,y) = Ae^{-\left(\frac{(x-x_0)^2}{2\sigma_x^2} + \frac{(y-y_0)^2}{2\sigma_y^2}\right)} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cauchy.html">dg::Cauchy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blob that drops to zero </p><p class="formulaDsp">
+\[ f(x,y) = Ae^{1 + \left(\frac{(x-x_0)^2}{\sigma_x^2} + \frac{(y-y_0)^2}{\sigma_y^2} - \right)^{-1}} \]
+</p>
+<p>.  <a href="structdg_1_1_cauchy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian3d.html">dg::Gaussian3d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 3d gaussian </p><p class="formulaDsp">
@@ -251,6 +257,12 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_p_l_u_s.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_i_n_v_e_r_t.html">dg::INVERT&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdg_1_1_invert.html" title="Smart conjugate gradient solver. ">Invert</a> the given value </p><p class="formulaDsp">
+\[ f(x) = 1/x \]
+</p>
+<p>.  <a href="structdg_1_1_i_n_v_e_r_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_o_d.html">dg::MOD&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns (positive) modulo </p><p class="formulaDsp">
 \[ f(x) = x\mod m\]
@@ -275,6 +287,18 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_c_o_n_s_t_a_n_t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_o_n_e.html">dg::ONE</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return one </p><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+<p>.  <a href="structdg_1_1_o_n_e.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_z_e_r_o.html">dg::ZERO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return zero </p><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+<p>.  <a href="structdg_1_1_z_e_r_o.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_histogram.html">dg::Histogram&lt; container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a histogram on a 1D grid.  <a href="structdg_1_1_histogram.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,30 +309,18 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
-<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous galerkin solvers. <br /></td></tr>
+<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga31e93254b91f287daf4ca4756fb32385"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga31e93254b91f287daf4ca4756fb32385">dg::bessj1</a> (double x)</td></tr>
-<tr class="memdesc:ga31e93254b91f287daf4ca4756fb32385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bessel function \( J_1(x)\) for any real x.  <a href="group__functions.html#ga31e93254b91f287daf4ca4756fb32385">More...</a><br /></td></tr>
-<tr class="separator:ga31e93254b91f287daf4ca4756fb32385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga8f29ee46cf5603af9cabd93163cf98cc">dg::bessi1</a> (double x)</td></tr>
-<tr class="memdesc:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modified Bessel function \( I_1(x)\) for any real x.  <a href="group__functions.html#ga8f29ee46cf5603af9cabd93163cf98cc">More...</a><br /></td></tr>
-<tr class="separator:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">dg::bessk1</a> (double x)</td></tr>
-<tr class="memdesc:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modified Bessel function \( K_1(x)\) for positive real x.  <a href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">More...</a><br /></td></tr>
-<tr class="separator:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Functors to use in <a class="el" href="group__evaluation.html#ga7da86ed30c45a3e43f0dfd140a492421" title="Evaluate a function on gaussian abscissas. ">dg::evaluate</a> or <a class="el" href="group__blas1.html#gace34b2c8e27a5173cb25db0542089c2c" title="&quot;new&quot; BLAS 1 routine transform ">dg::blas1::transform</a> functions </p>
+<div class="textblock"><p>Functors to use in <a class="el" href="group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d" title="Evaluate a function on gaussian abscissas. ">dg::evaluate</a> or <a class="el" href="group__blas1.html#gace34b2c8e27a5173cb25db0542089c2c" title="&quot;new&quot; BLAS 1 routine transform ">dg::blas1::transform</a> functions </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="functors_8h.html">functors.h</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

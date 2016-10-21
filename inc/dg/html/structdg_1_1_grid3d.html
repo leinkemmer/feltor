@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: dg::Grid3d&lt; T &gt; Struct Template Reference</title>
+<title>Discontinuous Galerkin Library: dg::Grid3d Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -134,7 +135,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_grid3d.html','');});
 <a href="#friends">Friends</a> &#124;
 <a href="structdg_1_1_grid3d-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::Grid3d&lt; T &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a> &raquo; <a class="el" href="group__grid.html">Grid objects</a></div></div>  </div>
+<div class="title">dg::Grid3d Struct Reference<div class="ingroups"><a class="el" href="group__geo.html">Topology and Geometry</a> &raquo; <a class="el" href="group__grid.html">Topological grids and operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -142,161 +143,165 @@ $(document).ready(function(){initNavTree('structdg_1_1_grid3d.html','');});
  <a href="structdg_1_1_grid3d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="grid_8h_source.html">grid.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for dg::Grid3d:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structdg_1_1_grid3d.png" usemap="#dg::Grid3d_map" alt=""/>
+  <map id="dg::Grid3d_map" name="dg::Grid3d_map">
+<area href="structdg_1_1_cartesian_grid3d.html" title="three-dimensional Grid with Cartesian metric " alt="dg::CartesianGrid3d" shape="rect" coords="0,56,208,80"/>
+<area href="structdg_1_1_cylindrical_grid3d.html" title="three-dimensional Grid with Cartesian metric " alt="dg::CylindricalGrid3d&lt; container &gt;" shape="rect" coords="218,56,426,80"/>
+<area href="structdg_1_1_refined_grid3d.html" title="Refined grid. " alt="dg::RefinedGrid3d" shape="rect" coords="436,56,644,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a100685cc0555c1e9f081e31367a1c53b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a100685cc0555c1e9f081e31367a1c53b"></a>
-typedef SharedTag&#160;</td><td class="memItemRight" valign="bottom"><b>memory_category</b></td></tr>
-<tr class="separator:a100685cc0555c1e9f081e31367a1c53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0051667fa6833545806e78936b1621"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc0051667fa6833545806e78936b1621"></a>
+typedef <a class="el" href="structdg_1_1_shared_tag.html">SharedTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>memory_category</b></td></tr>
+<tr class="separator:acc0051667fa6833545806e78936b1621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7a1c29db8df1f0058cee2c3a9139ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f7a1c29db8df1f0058cee2c3a9139ec"></a>
+typedef <a class="el" href="structdg_1_1_three_dimensional_tag.html">ThreeDimensionalTag</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dimensionality</b></td></tr>
+<tr class="separator:a2f7a1c29db8df1f0058cee2c3a9139ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae2968b6a6c637c4c9673204faa978549"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ae2968b6a6c637c4c9673204faa978549">Grid3d</a> (T <a class="el" href="structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733">x0</a>, T <a class="el" href="structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f">x1</a>, T <a class="el" href="structdg_1_1_grid3d.html#a381324aab18891f6f7e8679f8504ee32">y0</a>, T <a class="el" href="structdg_1_1_grid3d.html#a9a9a52498083df87cb1429920966edbb">y1</a>, T <a class="el" href="structdg_1_1_grid3d.html#a97ee6911496deaee8ae9044cc1050ff4">z0</a>, T <a class="el" href="structdg_1_1_grid3d.html#ad96ac714e4a60150dcb98fb1d30e06c2">z1</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#ac5c49e75fc0244f4f5fe721764db060c">n</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#aeff58f8eb7fba9a2711fe2db9ced3855">Nx</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#a86f554b35fbf463d7330139c453a9571">Ny</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#a7bcc72531fedb001db8d7aefe1948e20">Nz</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#a8b44835e84ef8f90eca0646b58ab39fa">bcx</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#ac3b2931214a2969efc8836473f487e01">bcy</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#a60a76d1e0f0dd8c48427c321b95dbbd0">bcz</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>)</td></tr>
-<tr class="memdesc:ae2968b6a6c637c4c9673204faa978549"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3D grid.  <a href="#ae2968b6a6c637c4c9673204faa978549">More...</a><br /></td></tr>
-<tr class="separator:ae2968b6a6c637c4c9673204faa978549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1a1ece4fef56fdb1a0993f86ec2d533"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ac1a1ece4fef56fdb1a0993f86ec2d533">Grid3d</a> (const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;gx, const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;gy, const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;gz)</td></tr>
-<tr class="memdesc:ac1a1ece4fef56fdb1a0993f86ec2d533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3d cartesian grid as the product of three 1d grids.  <a href="#ac1a1ece4fef56fdb1a0993f86ec2d533">More...</a><br /></td></tr>
-<tr class="separator:ac1a1ece4fef56fdb1a0993f86ec2d533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac941b52fa272e519baa2341f90c92733"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733">x0</a> () const </td></tr>
-<tr class="memdesc:ac941b52fa272e519baa2341f90c92733"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in x  <a href="#ac941b52fa272e519baa2341f90c92733">More...</a><br /></td></tr>
-<tr class="separator:ac941b52fa272e519baa2341f90c92733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d6494b8c85cec08ee05e4140528b9f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f">x1</a> () const </td></tr>
-<tr class="memdesc:a63d6494b8c85cec08ee05e4140528b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in x  <a href="#a63d6494b8c85cec08ee05e4140528b9f">More...</a><br /></td></tr>
-<tr class="separator:a63d6494b8c85cec08ee05e4140528b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a381324aab18891f6f7e8679f8504ee32"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a381324aab18891f6f7e8679f8504ee32">y0</a> () const </td></tr>
-<tr class="memdesc:a381324aab18891f6f7e8679f8504ee32"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in y  <a href="#a381324aab18891f6f7e8679f8504ee32">More...</a><br /></td></tr>
-<tr class="separator:a381324aab18891f6f7e8679f8504ee32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a9a52498083df87cb1429920966edbb"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a9a9a52498083df87cb1429920966edbb">y1</a> () const </td></tr>
-<tr class="memdesc:a9a9a52498083df87cb1429920966edbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in y  <a href="#a9a9a52498083df87cb1429920966edbb">More...</a><br /></td></tr>
-<tr class="separator:a9a9a52498083df87cb1429920966edbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ee6911496deaee8ae9044cc1050ff4"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a97ee6911496deaee8ae9044cc1050ff4">z0</a> () const </td></tr>
-<tr class="memdesc:a97ee6911496deaee8ae9044cc1050ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in z  <a href="#a97ee6911496deaee8ae9044cc1050ff4">More...</a><br /></td></tr>
-<tr class="separator:a97ee6911496deaee8ae9044cc1050ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad96ac714e4a60150dcb98fb1d30e06c2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ad96ac714e4a60150dcb98fb1d30e06c2">z1</a> () const </td></tr>
-<tr class="memdesc:ad96ac714e4a60150dcb98fb1d30e06c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in z  <a href="#ad96ac714e4a60150dcb98fb1d30e06c2">More...</a><br /></td></tr>
-<tr class="separator:ad96ac714e4a60150dcb98fb1d30e06c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0af34f4247a3b91d28f09664eb15ad69"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a0af34f4247a3b91d28f09664eb15ad69">lx</a> () const </td></tr>
-<tr class="memdesc:a0af34f4247a3b91d28f09664eb15ad69"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in x  <a href="#a0af34f4247a3b91d28f09664eb15ad69">More...</a><br /></td></tr>
-<tr class="separator:a0af34f4247a3b91d28f09664eb15ad69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb421c632723438c688c233d91b6b33"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a3eb421c632723438c688c233d91b6b33">ly</a> () const </td></tr>
-<tr class="memdesc:a3eb421c632723438c688c233d91b6b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in y  <a href="#a3eb421c632723438c688c233d91b6b33">More...</a><br /></td></tr>
-<tr class="separator:a3eb421c632723438c688c233d91b6b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ec52fad9a98db080733806057d13a57"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a2ec52fad9a98db080733806057d13a57">lz</a> () const </td></tr>
-<tr class="memdesc:a2ec52fad9a98db080733806057d13a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in z  <a href="#a2ec52fad9a98db080733806057d13a57">More...</a><br /></td></tr>
-<tr class="separator:a2ec52fad9a98db080733806057d13a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dbf5b27ccde3f6d8b7e26c4934e3324"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a4dbf5b27ccde3f6d8b7e26c4934e3324">hx</a> () const </td></tr>
-<tr class="memdesc:a4dbf5b27ccde3f6d8b7e26c4934e3324"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in x  <a href="#a4dbf5b27ccde3f6d8b7e26c4934e3324">More...</a><br /></td></tr>
-<tr class="separator:a4dbf5b27ccde3f6d8b7e26c4934e3324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a314b167a7bd9435d6a76cfd817d255c5"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a314b167a7bd9435d6a76cfd817d255c5">hy</a> () const </td></tr>
-<tr class="memdesc:a314b167a7bd9435d6a76cfd817d255c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in y  <a href="#a314b167a7bd9435d6a76cfd817d255c5">More...</a><br /></td></tr>
-<tr class="separator:a314b167a7bd9435d6a76cfd817d255c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4347a5bc892d7e7f9d3f5d1c4f0b27f5"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a4347a5bc892d7e7f9d3f5d1c4f0b27f5">hz</a> () const </td></tr>
-<tr class="memdesc:a4347a5bc892d7e7f9d3f5d1c4f0b27f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in z  <a href="#a4347a5bc892d7e7f9d3f5d1c4f0b27f5">More...</a><br /></td></tr>
-<tr class="separator:a4347a5bc892d7e7f9d3f5d1c4f0b27f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c49e75fc0244f4f5fe721764db060c"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ac5c49e75fc0244f4f5fe721764db060c">n</a> () const </td></tr>
-<tr class="memdesc:ac5c49e75fc0244f4f5fe721764db060c"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of polynomial coefficients in x and y  <a href="#ac5c49e75fc0244f4f5fe721764db060c">More...</a><br /></td></tr>
-<tr class="separator:ac5c49e75fc0244f4f5fe721764db060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff58f8eb7fba9a2711fe2db9ced3855"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#aeff58f8eb7fba9a2711fe2db9ced3855">Nx</a> () const </td></tr>
-<tr class="memdesc:aeff58f8eb7fba9a2711fe2db9ced3855"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in x  <a href="#aeff58f8eb7fba9a2711fe2db9ced3855">More...</a><br /></td></tr>
-<tr class="separator:aeff58f8eb7fba9a2711fe2db9ced3855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86f554b35fbf463d7330139c453a9571"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a86f554b35fbf463d7330139c453a9571">Ny</a> () const </td></tr>
-<tr class="memdesc:a86f554b35fbf463d7330139c453a9571"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in y  <a href="#a86f554b35fbf463d7330139c453a9571">More...</a><br /></td></tr>
-<tr class="separator:a86f554b35fbf463d7330139c453a9571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcc72531fedb001db8d7aefe1948e20"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a7bcc72531fedb001db8d7aefe1948e20">Nz</a> () const </td></tr>
-<tr class="memdesc:a7bcc72531fedb001db8d7aefe1948e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in z  <a href="#a7bcc72531fedb001db8d7aefe1948e20">More...</a><br /></td></tr>
-<tr class="separator:a7bcc72531fedb001db8d7aefe1948e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b44835e84ef8f90eca0646b58ab39fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a8b44835e84ef8f90eca0646b58ab39fa">bcx</a> () const </td></tr>
-<tr class="memdesc:a8b44835e84ef8f90eca0646b58ab39fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in x  <a href="#a8b44835e84ef8f90eca0646b58ab39fa">More...</a><br /></td></tr>
-<tr class="separator:a8b44835e84ef8f90eca0646b58ab39fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b2931214a2969efc8836473f487e01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ac3b2931214a2969efc8836473f487e01">bcy</a> () const </td></tr>
-<tr class="memdesc:ac3b2931214a2969efc8836473f487e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in y  <a href="#ac3b2931214a2969efc8836473f487e01">More...</a><br /></td></tr>
-<tr class="separator:ac3b2931214a2969efc8836473f487e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a76d1e0f0dd8c48427c321b95dbbd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a60a76d1e0f0dd8c48427c321b95dbbd0">bcz</a> () const </td></tr>
-<tr class="memdesc:a60a76d1e0f0dd8c48427c321b95dbbd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in z  <a href="#a60a76d1e0f0dd8c48427c321b95dbbd0">More...</a><br /></td></tr>
-<tr class="separator:a60a76d1e0f0dd8c48427c321b95dbbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa010828d78d6d9fd41d7a1ed0e248409"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#aa010828d78d6d9fd41d7a1ed0e248409">dlt</a> () const </td></tr>
-<tr class="memdesc:aa010828d78d6d9fd41d7a1ed0e248409"><td class="mdescLeft">&#160;</td><td class="mdescRight">discrete legendre transformation  <a href="#aa010828d78d6d9fd41d7a1ed0e248409">More...</a><br /></td></tr>
-<tr class="separator:aa010828d78d6d9fd41d7a1ed0e248409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03f150ccbd6fd03b3d104f03cbff4090"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a03f150ccbd6fd03b3d104f03cbff4090">size</a> () const </td></tr>
-<tr class="memdesc:a03f150ccbd6fd03b3d104f03cbff4090"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of points.  <a href="#a03f150ccbd6fd03b3d104f03cbff4090">More...</a><br /></td></tr>
-<tr class="separator:a03f150ccbd6fd03b3d104f03cbff4090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677be1af279858496af03e2d091ff982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a677be1af279858496af03e2d091ff982">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
-<tr class="memdesc:a677be1af279858496af03e2d091ff982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display.  <a href="#a677be1af279858496af03e2d091ff982">More...</a><br /></td></tr>
-<tr class="separator:a677be1af279858496af03e2d091ff982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a8de01b0eb962bac4e9de540bfb7aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a9a8de01b0eb962bac4e9de540bfb7aab">shift_topologic</a> (double <a class="el" href="structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733">x0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a381324aab18891f6f7e8679f8504ee32">y0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a97ee6911496deaee8ae9044cc1050ff4">z0</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f">x1</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#a9a9a52498083df87cb1429920966edbb">y1</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#ad96ac714e4a60150dcb98fb1d30e06c2">z1</a>) const </td></tr>
-<tr class="memdesc:a9a8de01b0eb962bac4e9de540bfb7aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts a point coordinate due to topology.  <a href="#a9a8de01b0eb962bac4e9de540bfb7aab">More...</a><br /></td></tr>
-<tr class="separator:a9a8de01b0eb962bac4e9de540bfb7aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd52e901dd79055eb8d55f36733b3be5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#abd52e901dd79055eb8d55f36733b3be5">contains</a> (double x, double y, double z) const </td></tr>
-<tr class="memdesc:abd52e901dd79055eb8d55f36733b3be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the grid contains a point.  <a href="#abd52e901dd79055eb8d55f36733b3be5">More...</a><br /></td></tr>
-<tr class="separator:abd52e901dd79055eb8d55f36733b3be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcef82718772650ed3f238c43a868dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#abdcef82718772650ed3f238c43a868dd">Grid3d</a> (double <a class="el" href="structdg_1_1_grid3d.html#a6531dcd0c1140b1dd6ab25c28082083c">x0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a3d360582de3bf4f8da1291637b7ed555">x1</a>, double <a class="el" href="structdg_1_1_grid3d.html#a71f5b91547f0d502c01778230ebd383c">y0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a35e594c8519f32d359115f5d2d9672a6">y1</a>, double <a class="el" href="structdg_1_1_grid3d.html#a512e11f0b12a9fc40563c8bf18df35ab">z0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a54162b908fcc8bd843652927e8b6e9da">z1</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#aa56bee3a44350930da2fe0c3c4c56c9b">n</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#ad2d0b414a05cd82baa75f8a7f3fc0f37">Nx</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#aa15b8f9bda76e47fd2a37a96430fd4a8">Ny</a>, unsigned <a class="el" href="structdg_1_1_grid3d.html#a50a4990e3fd6a0e528e52947e973bf68">Nz</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#a6ea3eee7e7d76b9f15cd23087c21c6d2">bcx</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#abdcc8ad0aaf09a35d2beaf9b9d936cf4">bcy</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>, <a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html#aa3deed2e571d374407686fe84f317fc1">bcz</a>=<a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364a948704f60491461974ce4fe6339778b3">PER</a>)</td></tr>
+<tr class="memdesc:abdcef82718772650ed3f238c43a868dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3D grid.  <a href="#abdcef82718772650ed3f238c43a868dd">More...</a><br /></td></tr>
+<tr class="separator:abdcef82718772650ed3f238c43a868dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b15c620077c48dce6dac4d12ec3443"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a40b15c620077c48dce6dac4d12ec3443">Grid3d</a> (const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;gx, const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;gy, const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;gz)</td></tr>
+<tr class="memdesc:a40b15c620077c48dce6dac4d12ec3443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a 3d cartesian grid as the product of three 1d grids.  <a href="#a40b15c620077c48dce6dac4d12ec3443">More...</a><br /></td></tr>
+<tr class="separator:a40b15c620077c48dce6dac4d12ec3443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6531dcd0c1140b1dd6ab25c28082083c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a6531dcd0c1140b1dd6ab25c28082083c">x0</a> () const </td></tr>
+<tr class="memdesc:a6531dcd0c1140b1dd6ab25c28082083c"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in x  <a href="#a6531dcd0c1140b1dd6ab25c28082083c">More...</a><br /></td></tr>
+<tr class="separator:a6531dcd0c1140b1dd6ab25c28082083c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d360582de3bf4f8da1291637b7ed555"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a3d360582de3bf4f8da1291637b7ed555">x1</a> () const </td></tr>
+<tr class="memdesc:a3d360582de3bf4f8da1291637b7ed555"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in x  <a href="#a3d360582de3bf4f8da1291637b7ed555">More...</a><br /></td></tr>
+<tr class="separator:a3d360582de3bf4f8da1291637b7ed555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f5b91547f0d502c01778230ebd383c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a71f5b91547f0d502c01778230ebd383c">y0</a> () const </td></tr>
+<tr class="memdesc:a71f5b91547f0d502c01778230ebd383c"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in y  <a href="#a71f5b91547f0d502c01778230ebd383c">More...</a><br /></td></tr>
+<tr class="separator:a71f5b91547f0d502c01778230ebd383c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35e594c8519f32d359115f5d2d9672a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a35e594c8519f32d359115f5d2d9672a6">y1</a> () const </td></tr>
+<tr class="memdesc:a35e594c8519f32d359115f5d2d9672a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in y  <a href="#a35e594c8519f32d359115f5d2d9672a6">More...</a><br /></td></tr>
+<tr class="separator:a35e594c8519f32d359115f5d2d9672a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512e11f0b12a9fc40563c8bf18df35ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a512e11f0b12a9fc40563c8bf18df35ab">z0</a> () const </td></tr>
+<tr class="memdesc:a512e11f0b12a9fc40563c8bf18df35ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">left boundary in z  <a href="#a512e11f0b12a9fc40563c8bf18df35ab">More...</a><br /></td></tr>
+<tr class="separator:a512e11f0b12a9fc40563c8bf18df35ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54162b908fcc8bd843652927e8b6e9da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a54162b908fcc8bd843652927e8b6e9da">z1</a> () const </td></tr>
+<tr class="memdesc:a54162b908fcc8bd843652927e8b6e9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">right boundary in z  <a href="#a54162b908fcc8bd843652927e8b6e9da">More...</a><br /></td></tr>
+<tr class="separator:a54162b908fcc8bd843652927e8b6e9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f3c6278137d6926e79cdbf508ba43b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ab8f3c6278137d6926e79cdbf508ba43b">lx</a> () const </td></tr>
+<tr class="memdesc:ab8f3c6278137d6926e79cdbf508ba43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in x  <a href="#ab8f3c6278137d6926e79cdbf508ba43b">More...</a><br /></td></tr>
+<tr class="separator:ab8f3c6278137d6926e79cdbf508ba43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd81fa432a955fe879767ec01a2e8b38"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#abd81fa432a955fe879767ec01a2e8b38">ly</a> () const </td></tr>
+<tr class="memdesc:abd81fa432a955fe879767ec01a2e8b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in y  <a href="#abd81fa432a955fe879767ec01a2e8b38">More...</a><br /></td></tr>
+<tr class="separator:abd81fa432a955fe879767ec01a2e8b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ef40c3353e0b364f8ade2e44efdeba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a42ef40c3353e0b364f8ade2e44efdeba">lz</a> () const </td></tr>
+<tr class="memdesc:a42ef40c3353e0b364f8ade2e44efdeba"><td class="mdescLeft">&#160;</td><td class="mdescRight">length in z  <a href="#a42ef40c3353e0b364f8ade2e44efdeba">More...</a><br /></td></tr>
+<tr class="separator:a42ef40c3353e0b364f8ade2e44efdeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bef0a20ee7e575ba79c94a809f3c0c3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a3bef0a20ee7e575ba79c94a809f3c0c3">hx</a> () const </td></tr>
+<tr class="memdesc:a3bef0a20ee7e575ba79c94a809f3c0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in x  <a href="#a3bef0a20ee7e575ba79c94a809f3c0c3">More...</a><br /></td></tr>
+<tr class="separator:a3bef0a20ee7e575ba79c94a809f3c0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a9207da0cb1daa6b326037403c36bc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ad8a9207da0cb1daa6b326037403c36bc">hy</a> () const </td></tr>
+<tr class="memdesc:ad8a9207da0cb1daa6b326037403c36bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in y  <a href="#ad8a9207da0cb1daa6b326037403c36bc">More...</a><br /></td></tr>
+<tr class="separator:ad8a9207da0cb1daa6b326037403c36bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eaf1e02fb7c18acac42ecf003cbd6dc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a2eaf1e02fb7c18acac42ecf003cbd6dc">hz</a> () const </td></tr>
+<tr class="memdesc:a2eaf1e02fb7c18acac42ecf003cbd6dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">cell size in z  <a href="#a2eaf1e02fb7c18acac42ecf003cbd6dc">More...</a><br /></td></tr>
+<tr class="separator:a2eaf1e02fb7c18acac42ecf003cbd6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56bee3a44350930da2fe0c3c4c56c9b"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#aa56bee3a44350930da2fe0c3c4c56c9b">n</a> () const </td></tr>
+<tr class="memdesc:aa56bee3a44350930da2fe0c3c4c56c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of polynomial coefficients in x and y  <a href="#aa56bee3a44350930da2fe0c3c4c56c9b">More...</a><br /></td></tr>
+<tr class="separator:aa56bee3a44350930da2fe0c3c4c56c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d0b414a05cd82baa75f8a7f3fc0f37"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#ad2d0b414a05cd82baa75f8a7f3fc0f37">Nx</a> () const </td></tr>
+<tr class="memdesc:ad2d0b414a05cd82baa75f8a7f3fc0f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in x  <a href="#ad2d0b414a05cd82baa75f8a7f3fc0f37">More...</a><br /></td></tr>
+<tr class="separator:ad2d0b414a05cd82baa75f8a7f3fc0f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15b8f9bda76e47fd2a37a96430fd4a8"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#aa15b8f9bda76e47fd2a37a96430fd4a8">Ny</a> () const </td></tr>
+<tr class="memdesc:aa15b8f9bda76e47fd2a37a96430fd4a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in y  <a href="#aa15b8f9bda76e47fd2a37a96430fd4a8">More...</a><br /></td></tr>
+<tr class="separator:aa15b8f9bda76e47fd2a37a96430fd4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a4990e3fd6a0e528e52947e973bf68"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a50a4990e3fd6a0e528e52947e973bf68">Nz</a> () const </td></tr>
+<tr class="memdesc:a50a4990e3fd6a0e528e52947e973bf68"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of points in z  <a href="#a50a4990e3fd6a0e528e52947e973bf68">More...</a><br /></td></tr>
+<tr class="separator:a50a4990e3fd6a0e528e52947e973bf68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea3eee7e7d76b9f15cd23087c21c6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a6ea3eee7e7d76b9f15cd23087c21c6d2">bcx</a> () const </td></tr>
+<tr class="memdesc:a6ea3eee7e7d76b9f15cd23087c21c6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in x  <a href="#a6ea3eee7e7d76b9f15cd23087c21c6d2">More...</a><br /></td></tr>
+<tr class="separator:a6ea3eee7e7d76b9f15cd23087c21c6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcc8ad0aaf09a35d2beaf9b9d936cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#abdcc8ad0aaf09a35d2beaf9b9d936cf4">bcy</a> () const </td></tr>
+<tr class="memdesc:abdcc8ad0aaf09a35d2beaf9b9d936cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in y  <a href="#abdcc8ad0aaf09a35d2beaf9b9d936cf4">More...</a><br /></td></tr>
+<tr class="separator:abdcc8ad0aaf09a35d2beaf9b9d936cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3deed2e571d374407686fe84f317fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#aa3deed2e571d374407686fe84f317fc1">bcz</a> () const </td></tr>
+<tr class="memdesc:aa3deed2e571d374407686fe84f317fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">boundary conditions in z  <a href="#aa3deed2e571d374407686fe84f317fc1">More...</a><br /></td></tr>
+<tr class="separator:aa3deed2e571d374407686fe84f317fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a37b23072e5cfa8265e53a9074bcc1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt; double &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a27a37b23072e5cfa8265e53a9074bcc1">dlt</a> () const </td></tr>
+<tr class="memdesc:a27a37b23072e5cfa8265e53a9074bcc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">discrete legendre transformation  <a href="#a27a37b23072e5cfa8265e53a9074bcc1">More...</a><br /></td></tr>
+<tr class="separator:a27a37b23072e5cfa8265e53a9074bcc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105942436dfcb8882fa355856fd23952"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a105942436dfcb8882fa355856fd23952">size</a> () const </td></tr>
+<tr class="memdesc:a105942436dfcb8882fa355856fd23952"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of points.  <a href="#a105942436dfcb8882fa355856fd23952">More...</a><br /></td></tr>
+<tr class="separator:a105942436dfcb8882fa355856fd23952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db75445860226d2f2060a9c57ef041a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a9db75445860226d2f2060a9c57ef041a">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
+<tr class="memdesc:a9db75445860226d2f2060a9c57ef041a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display.  <a href="#a9db75445860226d2f2060a9c57ef041a">More...</a><br /></td></tr>
+<tr class="separator:a9db75445860226d2f2060a9c57ef041a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c06649ec753fdcdaf2c93457fdbc23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a16c06649ec753fdcdaf2c93457fdbc23">shift_topologic</a> (double <a class="el" href="structdg_1_1_grid3d.html#a6531dcd0c1140b1dd6ab25c28082083c">x0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a71f5b91547f0d502c01778230ebd383c">y0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a512e11f0b12a9fc40563c8bf18df35ab">z0</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#a3d360582de3bf4f8da1291637b7ed555">x1</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#a35e594c8519f32d359115f5d2d9672a6">y1</a>, double &amp;<a class="el" href="structdg_1_1_grid3d.html#a54162b908fcc8bd843652927e8b6e9da">z1</a>) const </td></tr>
+<tr class="memdesc:a16c06649ec753fdcdaf2c93457fdbc23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shifts a point coordinate due to topology.  <a href="#a16c06649ec753fdcdaf2c93457fdbc23">More...</a><br /></td></tr>
+<tr class="separator:a16c06649ec753fdcdaf2c93457fdbc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068b4756ff906772ac050f44ee49b5d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_grid3d.html#a068b4756ff906772ac050f44ee49b5d1">contains</a> (double x, double y, double z) const </td></tr>
+<tr class="memdesc:a068b4756ff906772ac050f44ee49b5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the grid contains a point.  <a href="#a068b4756ff906772ac050f44ee49b5d1">More...</a><br /></td></tr>
+<tr class="separator:a068b4756ff906772ac050f44ee49b5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5df2cdf96ad2c595680bef7c174b3345"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df2cdf96ad2c595680bef7c174b3345"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b> (double <a class="el" href="structdg_1_1_grid3d.html#ac941b52fa272e519baa2341f90c92733">x0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a63d6494b8c85cec08ee05e4140528b9f">x1</a>)</td></tr>
-<tr class="separator:a5df2cdf96ad2c595680bef7c174b3345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0cb8a6f0d5d864fa216b4ed86e001b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f0cb8a6f0d5d864fa216b4ed86e001b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>init_X_boundaries</b> (double <a class="el" href="structdg_1_1_grid3d.html#a6531dcd0c1140b1dd6ab25c28082083c">x0</a>, double <a class="el" href="structdg_1_1_grid3d.html#a3d360582de3bf4f8da1291637b7ed555">x1</a>)</td></tr>
+<tr class="separator:a5f0cb8a6f0d5d864fa216b4ed86e001b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a7f14b7a577012d196c9fe8b5e9f5d967"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f14b7a577012d196c9fe8b5e9f5d967"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>MPI_Grid3d</b></td></tr>
-<tr class="separator:a7f14b7a577012d196c9fe8b5e9f5d967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5605a6d595fe2b46f29e00224df340a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5605a6d595fe2b46f29e00224df340a9"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MPIGrid3d</b></td></tr>
+<tr class="separator:a5605a6d595fe2b46f29e00224df340a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;class T&gt;<br />
-struct dg::Grid3d&lt; T &gt;</h3>
-
-<p>A 3D grid class for cartesian coordinates. </p>
-<p>In the third dimension only 1 polynomial coefficient is used, not n. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>scalar value type </td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>A 3D grid class for cartesian coordinates. </p>
+<p>In the third dimension only 1 polynomial coefficient is used, not n. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae2968b6a6c637c4c9673204faa978549"></a>
+<a class="anchor" id="abdcef82718772650ed3f238c43a868dd"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::<a class="el" href="structdg_1_1_grid3d.html">Grid3d</a> </td>
+          <td class="memname">dg::Grid3d::Grid3d </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>y0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>y1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z0</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>z1</em>, </td>
         </tr>
         <tr>
@@ -377,31 +382,29 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac1a1ece4fef56fdb1a0993f86ec2d533"></a>
+<a class="anchor" id="a40b15c620077c48dce6dac4d12ec3443"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::<a class="el" href="structdg_1_1_grid3d.html">Grid3d</a> </td>
+          <td class="memname">dg::Grid3d::Grid3d </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;&#160;</td>
           <td class="paramname"><em>gx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;&#160;</td>
           <td class="paramname"><em>gy</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="structdg_1_1_grid1d.html">Grid1d</a> &amp;&#160;</td>
           <td class="paramname"><em>gz</em>&#160;</td>
         </tr>
         <tr>
@@ -430,17 +433,15 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8b44835e84ef8f90eca0646b58ab39fa"></a>
+<a class="anchor" id="a6ea3eee7e7d76b9f15cd23087c21c6d2"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::bcx </td>
+          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> dg::Grid3d::bcx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -458,17 +459,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac3b2931214a2969efc8836473f487e01"></a>
+<a class="anchor" id="abdcc8ad0aaf09a35d2beaf9b9d936cf4"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::bcy </td>
+          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> dg::Grid3d::bcy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -486,17 +485,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a60a76d1e0f0dd8c48427c321b95dbbd0"></a>
+<a class="anchor" id="aa3deed2e571d374407686fe84f317fc1"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::bcz </td>
+          <td class="memname"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">bc</a> dg::Grid3d::bcz </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -514,17 +511,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abd52e901dd79055eb8d55f36733b3be5"></a>
+<a class="anchor" id="a068b4756ff906772ac050f44ee49b5d1"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::contains </td>
+          <td class="memname">bool dg::Grid3d::contains </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -568,17 +563,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a677be1af279858496af03e2d091ff982"></a>
+<a class="anchor" id="a9db75445860226d2f2060a9c57ef041a"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::display </td>
+          <td class="memname">void dg::Grid3d::display </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>os</em> = <code>std::cout</code></td><td>)</td>
@@ -602,17 +595,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa010828d78d6d9fd41d7a1ed0e248409"></a>
+<a class="anchor" id="a27a37b23072e5cfa8265e53a9074bcc1"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt;T&gt;&amp; <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::dlt </td>
+          <td class="memname">const <a class="el" href="classdg_1_1_d_l_t.html">DLT</a>&lt;double&gt;&amp; dg::Grid3d::dlt </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -630,17 +621,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4dbf5b27ccde3f6d8b7e26c4934e3324"></a>
+<a class="anchor" id="a3bef0a20ee7e575ba79c94a809f3c0c3"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::hx </td>
+          <td class="memname">double dg::Grid3d::hx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -658,17 +647,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a314b167a7bd9435d6a76cfd817d255c5"></a>
+<a class="anchor" id="ad8a9207da0cb1daa6b326037403c36bc"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::hy </td>
+          <td class="memname">double dg::Grid3d::hy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -686,17 +673,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4347a5bc892d7e7f9d3f5d1c4f0b27f5"></a>
+<a class="anchor" id="a2eaf1e02fb7c18acac42ecf003cbd6dc"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::hz </td>
+          <td class="memname">double dg::Grid3d::hz </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -714,17 +699,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0af34f4247a3b91d28f09664eb15ad69"></a>
+<a class="anchor" id="ab8f3c6278137d6926e79cdbf508ba43b"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::lx </td>
+          <td class="memname">double dg::Grid3d::lx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -742,17 +725,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3eb421c632723438c688c233d91b6b33"></a>
+<a class="anchor" id="abd81fa432a955fe879767ec01a2e8b38"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::ly </td>
+          <td class="memname">double dg::Grid3d::ly </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -770,17 +751,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2ec52fad9a98db080733806057d13a57"></a>
+<a class="anchor" id="a42ef40c3353e0b364f8ade2e44efdeba"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::lz </td>
+          <td class="memname">double dg::Grid3d::lz </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -798,17 +777,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac5c49e75fc0244f4f5fe721764db060c"></a>
+<a class="anchor" id="aa56bee3a44350930da2fe0c3c4c56c9b"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::n </td>
+          <td class="memname">unsigned dg::Grid3d::n </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -826,17 +803,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aeff58f8eb7fba9a2711fe2db9ced3855"></a>
+<a class="anchor" id="ad2d0b414a05cd82baa75f8a7f3fc0f37"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::Nx </td>
+          <td class="memname">unsigned dg::Grid3d::Nx </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -854,17 +829,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a86f554b35fbf463d7330139c453a9571"></a>
+<a class="anchor" id="aa15b8f9bda76e47fd2a37a96430fd4a8"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::Ny </td>
+          <td class="memname">unsigned dg::Grid3d::Ny </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -882,17 +855,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7bcc72531fedb001db8d7aefe1948e20"></a>
+<a class="anchor" id="a50a4990e3fd6a0e528e52947e973bf68"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::Nz </td>
+          <td class="memname">unsigned dg::Grid3d::Nz </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -910,17 +881,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9a8de01b0eb962bac4e9de540bfb7aab"></a>
+<a class="anchor" id="a16c06649ec753fdcdaf2c93457fdbc23"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::shift_topologic </td>
+          <td class="memname">void dg::Grid3d::shift_topologic </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x0</em>, </td>
@@ -983,17 +952,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a03f150ccbd6fd03b3d104f03cbff4090"></a>
+<a class="anchor" id="a105942436dfcb8882fa355856fd23952"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::size </td>
+          <td class="memname">unsigned dg::Grid3d::size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1011,17 +978,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac941b52fa272e519baa2341f90c92733"></a>
+<a class="anchor" id="a6531dcd0c1140b1dd6ab25c28082083c"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::x0 </td>
+          <td class="memname">double dg::Grid3d::x0 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1039,17 +1004,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a63d6494b8c85cec08ee05e4140528b9f"></a>
+<a class="anchor" id="a3d360582de3bf4f8da1291637b7ed555"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::x1 </td>
+          <td class="memname">double dg::Grid3d::x1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1067,17 +1030,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a381324aab18891f6f7e8679f8504ee32"></a>
+<a class="anchor" id="a71f5b91547f0d502c01778230ebd383c"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::y0 </td>
+          <td class="memname">double dg::Grid3d::y0 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1095,17 +1056,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9a9a52498083df87cb1429920966edbb"></a>
+<a class="anchor" id="a35e594c8519f32d359115f5d2d9672a6"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::y1 </td>
+          <td class="memname">double dg::Grid3d::y1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1123,17 +1082,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a97ee6911496deaee8ae9044cc1050ff4"></a>
+<a class="anchor" id="a512e11f0b12a9fc40563c8bf18df35ab"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::z0 </td>
+          <td class="memname">double dg::Grid3d::z0 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1151,17 +1108,15 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad96ac714e4a60150dcb98fb1d30e06c2"></a>
+<a class="anchor" id="a54162b908fcc8bd843652927e8b6e9da"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="structdg_1_1_grid3d.html">dg::Grid3d</a>&lt; T &gt;::z1 </td>
+          <td class="memname">double dg::Grid3d::z1 </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1180,7 +1135,7 @@ template&lt;class T&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/matthias/Projekte/feltor/inc/dg/backend/<a class="el" href="grid_8h_source.html">grid.h</a></li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="grid_8h_source.html">grid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1188,7 +1143,7 @@ template&lt;class T&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_grid3d.html">Grid3d</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

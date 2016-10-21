@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -175,22 +176,27 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>set()
 : <a class="el" href="structdg_1_1_general_elliptic.html#acaf29de603fa949f10f8e4b60c9ff4c0">dg::GeneralElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#a053a70dfb8045c4581dd94943be5453c">dg::GeneralEllipticSym&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_elliptic.html#ae00308faca82bf7eb9a08c1cb02855d0">dg::TensorElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 </li>
 <li>set_accuracy()
 : <a class="el" href="structdg_1_1_invert.html#a32a75a63b9b6378fd94834d6c56bfe79">dg::Invert&lt; container &gt;</a>
 </li>
 <li>set_boundaries()
-: <a class="el" href="structdg_1_1_d_s.html#a1bd4170acca0e972ab3d03f195fbedbd">dg::DS&lt; FA, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_field_aligned.html#a0ac19e8e4a98685dc4c70543f5237c89">dg::FieldAligned&lt; Geometry, Matrix, container &gt;</a>
-, <a class="el" href="structdg_1_1_m_p_i___field_aligned.html#ac82d1728dc5a9a86919dd2ec5f1f04bd">dg::MPI_FieldAligned&lt; Geometry, LocalMatrix, Communicator, LocalContainer &gt;</a>
+: <a class="el" href="structdg_1_1_d_s.html#a4592818bed3271cd385645aea0a19b61">dg::DS&lt; FA, Matrix, container &gt;</a>
+, <a class="el" href="structdg_1_1_field_aligned.html#a1b8aa89bd475a9ac804dcb2d5d2d54ea">dg::FieldAligned&lt; Geometry, Matrix, container &gt;</a>
+, <a class="el" href="structdg_1_1_m_p_i___field_aligned.html#aac8dd803bd3438778440824a5a376e6e">dg::MPI_FieldAligned&lt; Geometry, LocalMatrix, Communicator, LocalContainer &gt;</a>
 </li>
 <li>set_chi()
 : <a class="el" href="classdg_1_1_elliptic.html#abe14e6a277addc6bec7022218a7500d9">dg::Elliptic&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#ga0fc587749c003360eab032cec506237e">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#gaf45fae77c7bdf38af02016d1b7b1e921">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a96b50f83b9127cf4ea0ee97323f7b4a7">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
 </li>
 <li>set_coords()
 : <a class="el" href="structdg_1_1_box_integrator.html#ab60c28cd2715399c28bbd578d32f311b">dg::BoxIntegrator&lt; Field, Grid &gt;</a>
+</li>
+<li>set_default_range()
+: <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a3485d3aaa6724812ebd123cafc1fd91d">dg::EllSparseBlockMat&lt; value_type &gt;</a>
 </li>
 <li>set_extrapolationType()
 : <a class="el" href="structdg_1_1_invert.html#a020cbb61850fd96b7c77730dd1e9dd64">dg::Invert&lt; container &gt;</a>
@@ -215,9 +221,11 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#adb538548c2a27a4a6344e56a7d3928cf">dg::GeneralEllipticSym&lt; Geometry, Matrix, Vector &gt;</a>
 </li>
 <li>shift_topologic()
-: <a class="el" href="structdg_1_1_grid1d.html#aef58234da4500df6d237b4c3f286c7f3">dg::Grid1d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid2d.html#a0f2b1a7e69d5a5e141e057965aafc331">dg::Grid2d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid3d.html#a9a8de01b0eb962bac4e9de540bfb7aab">dg::Grid3d&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_grid1d.html#a9880b779865af5989dabb5a74c928344">dg::Grid1d</a>
+, <a class="el" href="structdg_1_1_grid2d.html#a8b1d1dcb785a6949d01a20ff4db46771">dg::Grid2d</a>
+, <a class="el" href="structdg_1_1_grid3d.html#a16c06649ec753fdcdaf2c93457fdbc23">dg::Grid3d</a>
+, <a class="el" href="structdg_1_1_grid_x1d.html#aca03c4cd99293d6e7d9922b7a5ddf809">dg::GridX1d</a>
+, <a class="el" href="structdg_1_1_grid_x2d.html#ae356167c61dd0452e120e11e251e9241">dg::GridX2d</a>
 </li>
 <li>SinProfX()
 : <a class="el" href="structdg_1_1_sin_prof_x.html#a1d8a1a06b4c66cf68b532ddaa47e3e4e">dg::SinProfX</a>
@@ -227,14 +235,20 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 </li>
 <li>size()
 : <a class="el" href="structdg_1_1_bijective_comm.html#a4f1fc5abfe953311e23917c56ca42776">dg::BijectiveComm&lt; Index, Vector &gt;</a>
-, <a class="el" href="structdg_1_1_grid1d.html#a35d9e3b6599efa6cf6dbc22eb6cb5dc6">dg::Grid1d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid2d.html#a3cacac7ed3a9f56f33d6e711a4fa26dd">dg::Grid2d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid3d.html#a03f150ccbd6fd03b3d104f03cbff4090">dg::Grid3d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_m_p_i___grid2d.html#a46e9b455f105f9c77cac0053edfef570">dg::MPI_Grid2d</a>
-, <a class="el" href="structdg_1_1_m_p_i___grid3d.html#a5d29467e83e0bb72fd9d49de20dbcc03">dg::MPI_Grid3d</a>
+, <a class="el" href="structdg_1_1_grid1d.html#afa23624d7278e66e3f60c055f5ac2d85">dg::Grid1d</a>
+, <a class="el" href="structdg_1_1_grid2d.html#ab7da9c5118a17509d46a957407bff1e2">dg::Grid2d</a>
+, <a class="el" href="structdg_1_1_grid3d.html#a105942436dfcb8882fa355856fd23952">dg::Grid3d</a>
+, <a class="el" href="structdg_1_1_grid_x1d.html#a6d134f36ee64d9675e08a203bf1770a7">dg::GridX1d</a>
+, <a class="el" href="structdg_1_1_grid_x2d.html#afc76cbdc2e4137a6a54f4f68e376b235">dg::GridX2d</a>
+, <a class="el" href="structdg_1_1_grid_x3d.html#a3b53b030ac5c6d448b5704aaff7941df">dg::GridX3d</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#aaf8b846a0196833afef45c0469d506d4">dg::MPI_Vector&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid2d.html#ac79a0746ddd1fe747d2114ef54ca163c">dg::MPIGrid2d</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid3d.html#a48cd616e99914d589564e4b1757b71b4">dg::MPIGrid3d</a>
 , <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#ac918f5d1191dd26b731832c3493177ab">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
 , <a class="el" href="classdg_1_1_operator.html#ab26b2c05623deea924ec19a05f4a6cbf">dg::Operator&lt; T &gt;</a>
+</li>
+<li>sum()
+: <a class="el" href="structdg_1_1_difference_norm.html#ab975ddce7dc4242e942e839a0a12e0f1">dg::DifferenceNorm&lt; container &gt;</a>
 </li>
 <li>swap()
 : <a class="el" href="structdg_1_1_m_p_i___vector.html#a679244781d28e4134f122c4797cfd000">dg::MPI_Vector&lt; container &gt;</a>
@@ -245,16 +259,20 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <li>symv()
 : <a class="el" href="structdg_1_1_col_dist_mat.html#a5178a4ced33cb93d3afd768276e369ac">dg::ColDistMat&lt; LocalMatrix, Collective &gt;</a>
 , <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#af5a686d1a81ad246efab987791956a14">dg::CooSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a4f852b3ffb56b8eafd34638f7fcc3e92">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_d_s.html#ab3c71edb78f2c7fb444ca64bf8b560f4">dg::DS&lt; FA, Matrix, container &gt;</a>
 , <a class="el" href="classdg_1_1_elliptic.html#a826734c1c50cf6cbfb0f3683f5eb3d2f">dg::Elliptic&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat.html#ad5f23cbab22cd4fda2d8df586f84c51a">dg::EllSparseBlockMat&lt; value_type &gt;</a>
+, <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a0cff38341994bbe0ccea72549188f115">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic.html#ab6ee7470bdae91dce095f9eec1626ca1">dg::GeneralElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#a024e00907d37657b9d346bb29dc22ee2">dg::GeneralEllipticSym&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#ga977f526daa90a2c04ff298838a88fbd0">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="group__matrixoperators.html#ga0bea530c607a7713e619b9641fc946a0">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_inverse.html#affc00be4ba357dcfae683ad79c8c6b02">dg::Inverse&lt; SymmetricOp, container &gt;</a>
+, <a class="el" href="classdg_1_1_refined_elliptic.html#a5187aeb38331f0773ddbee453ae184d1">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_row_col_dist_mat.html#a69be149644264515dd361b49e724e042">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
 , <a class="el" href="structdg_1_1_row_dist_mat.html#a84a0d4eda46fd8e2ab51a7f6f96773bb">dg::RowDistMat&lt; LocalMatrix, Collective &gt;</a>
+, <a class="el" href="structdg_1_1_tensor_elliptic.html#ac0a83f798b3c921764c81f6e2e2a59e2">dg::TensorElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -262,7 +280,7 @@ $(document).ready(function(){initNavTree('functions_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

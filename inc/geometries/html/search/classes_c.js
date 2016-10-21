@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['psilimiter',['PsiLimiter',['../structsolovev_1_1_psi_limiter.html',1,'solovev']]],
-  ['psip',['Psip',['../structsolovev_1_1_psip.html',1,'solovev']]],
-  ['psipr',['PsipR',['../structsolovev_1_1_psip_r.html',1,'solovev']]],
-  ['psiprr',['PsipRR',['../structsolovev_1_1_psip_r_r.html',1,'solovev']]],
-  ['psiprz',['PsipRZ',['../structsolovev_1_1_psip_r_z.html',1,'solovev']]],
-  ['psipupil',['PsiPupil',['../structsolovev_1_1_psi_pupil.html',1,'solovev']]],
-  ['psipz',['PsipZ',['../structsolovev_1_1_psip_z.html',1,'solovev']]],
-  ['psipzz',['PsipZZ',['../structsolovev_1_1_psip_z_z.html',1,'solovev']]],
-  ['pupil',['Pupil',['../structsolovev_1_1_pupil.html',1,'solovev']]]
+  ['orthogonalgrid2d',['OrthogonalGrid2d',['../structdg_1_1_orthogonal_grid2d.html',1,'dg']]],
+  ['orthogonalgrid3d',['OrthogonalGrid3d',['../structdg_1_1_orthogonal_grid3d.html',1,'dg']]],
+  ['orthogonalgridx2d',['OrthogonalGridX2d',['../structdg_1_1_orthogonal_grid_x2d.html',1,'dg']]],
+  ['orthogonalgridx3d',['OrthogonalGridX3d',['../structdg_1_1_orthogonal_grid_x3d.html',1,'dg']]],
+  ['orthogonalmpigrid2d',['OrthogonalMPIGrid2d',['../structdg_1_1_orthogonal_m_p_i_grid2d.html',1,'dg']]],
+  ['orthogonalmpigrid3d',['OrthogonalMPIGrid3d',['../structdg_1_1_orthogonal_m_p_i_grid3d.html',1,'dg']]],
+  ['orthogonalrefinedgrid2d',['OrthogonalRefinedGrid2d',['../structdg_1_1_orthogonal_refined_grid2d.html',1,'dg']]],
+  ['orthogonalrefinedgrid3d',['OrthogonalRefinedGrid3d',['../structdg_1_1_orthogonal_refined_grid3d.html',1,'dg']]],
+  ['orthogonalrefinedgridx2d',['OrthogonalRefinedGridX2d',['../structdg_1_1_orthogonal_refined_grid_x2d.html',1,'dg']]],
+  ['orthogonalrefinedgridx3d',['OrthogonalRefinedGridX3d',['../structdg_1_1_orthogonal_refined_grid_x3d.html',1,'dg']]]
 ];

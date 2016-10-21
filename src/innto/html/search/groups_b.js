@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['solvers',['Solvers',['../group__solvers.html',1,'']]]
+  ['root_20finding',['Root finding',['../../../../inc/dg/html/group__root.html',1,'']]]
 ];

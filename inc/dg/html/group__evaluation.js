@@ -1,9 +1,11 @@
 var group__evaluation =
 [
-    [ "evaluate", "group__evaluation.html#ga7da86ed30c45a3e43f0dfd140a492421", null ],
-    [ "evaluate", "group__evaluation.html#ga8f6efc29b4cae7cebd49d2eab0b8d9c1", null ],
-    [ "pullback", "group__evaluation.html#ga295587f4cc54d1ea022bb683b1a8657e", null ],
-    [ "pullback", "group__evaluation.html#ga787f8f71e852094b62408a0c77fde2f5", null ],
-    [ "pullback", "group__evaluation.html#ga010b7e609e3e23aafcb5f21c5e4e8173", null ],
-    [ "pullback", "group__evaluation.html#ga98c2eeeb1c3c73079ff40fa2177582ea", null ]
+    [ "evaluate", "group__evaluation.html#gab8f19ad0d5339859c93b1374d58cb31a", null ],
+    [ "evaluate", "group__evaluation.html#gaec9d2d0df3f48ed69dc1b1f01130839f", null ],
+    [ "evaluate", "group__evaluation.html#ga7521f4acb4edaf2d7896d99f97e1ed9d", null ],
+    [ "evaluate", "group__evaluation.html#gaf4a92aa91423a56d995a3afb1d2c7a87", null ],
+    [ "evaluate", "group__evaluation.html#gaa28d8728140ac08fda7887890b97868f", null ],
+    [ "evaluate", "group__evaluation.html#gac3bf73106963d9ca5c0807a200acba5c", null ],
+    [ "evaluate", "group__evaluation.html#ga3c0527838d25de0da65ed16e0fee268a", null ],
+    [ "evaluate", "group__evaluation.html#ga913762255a450c1316e4ad154fb5f2b7", null ]
 ];

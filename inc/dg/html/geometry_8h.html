@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: /home/matthias/Projekte/feltor/inc/dg/geometry.h File Reference</title>
+<title>Discontinuous Galerkin Library: /home/matthias/feltor/inc/dg/geometry.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('geometry_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
-<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous galerkin solvers. <br /></td></tr>
+<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
 <tr class="memdesc:namespacedg_1_1geo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometry routines. <br /></td></tr>
@@ -160,6 +161,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga2094d6099dd7f84df9ba5caeeb77c13c">dg::geo::raisePerpIndex</a> (container &amp;covX, container &amp;covY, container &amp;contraX, container &amp;contraY, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises the index of a covariant vector in 2d.  <a href="group__geometry.html#ga2094d6099dd7f84df9ba5caeeb77c13c">More...</a><br /></td></tr>
 <tr class="separator:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memTemplParams" colspan="2">template&lt;class container , class Geometry &gt; </td></tr>
+<tr class="memitem:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga110d789fb36d1d0e9a58ae873da00ea4">dg::geo::volRaisePerpIndex</a> (container &amp;covX, container &amp;covY, container &amp;contraX, container &amp;contraY, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises the index of a covariant vector in 2d and multiplies the perpendicular volume.  <a href="group__geometry.html#ga110d789fb36d1d0e9a58ae873da00ea4">More...</a><br /></td></tr>
+<tr class="separator:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga042c1df6b25c05ba35291380a8761ee0"><td class="memTemplParams" colspan="2">template&lt;class container , class Geometry &gt; </td></tr>
 <tr class="memitem:ga042c1df6b25c05ba35291380a8761ee0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga042c1df6b25c05ba35291380a8761ee0">dg::geo::multiplyPerpVolume</a> (container &amp;inout, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga042c1df6b25c05ba35291380a8761ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the two-dimensional volume element.  <a href="group__geometry.html#ga042c1df6b25c05ba35291380a8761ee0">More...</a><br /></td></tr>
@@ -168,10 +173,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45a8674961cba99abfc21210c24800b4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga45a8674961cba99abfc21210c24800b4">dg::geo::dividePerpVolume</a> (container &amp;inout, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga45a8674961cba99abfc21210c24800b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides the two-dimensional volume element.  <a href="group__geometry.html#ga45a8674961cba99abfc21210c24800b4">More...</a><br /></td></tr>
 <tr class="separator:ga45a8674961cba99abfc21210c24800b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp1 , class TernaryOp2 , class Geometry &gt; </td></tr>
-<tr class="memitem:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga3f30faec99c8e29c17d22e63d64ef8c0">dg::geo::pushForwardPerp</a> (TernaryOp1 vR, TernaryOp2 vZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vy, const Geometry &amp;g)</td></tr>
-<tr class="memdesc:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical to a new coordinate system.  <a href="group__geometry.html#ga3f30faec99c8e29c17d22e63d64ef8c0">More...</a><br /></td></tr>
-<tr class="separator:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fab27b490e14bfdf659a153d10f7800"><td class="memTemplParams" colspan="2">template&lt;class Functor1 , class Functor2 , class Geometry &gt; </td></tr>
+<tr class="memitem:ga5fab27b490e14bfdf659a153d10f7800"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga5fab27b490e14bfdf659a153d10f7800">dg::geo::pushForwardPerp</a> (Functor1 vR, Functor2 vZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vy, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga5fab27b490e14bfdf659a153d10f7800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical or Cartesian to a new coordinate system.  <a href="group__geometry.html#ga5fab27b490e14bfdf659a153d10f7800">More...</a><br /></td></tr>
+<tr class="separator:ga5fab27b490e14bfdf659a153d10f7800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada63086d574ca1963289b26bc5576226"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class Geometry &gt; </td></tr>
+<tr class="memitem:gada63086d574ca1963289b26bc5576226"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gada63086d574ca1963289b26bc5576226">dg::geo::pushForwardPerp</a> (FunctorRR chiRR, FunctorRZ chiRZ, FunctorZZ chiZZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chixx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chixy, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chiyy, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:gada63086d574ca1963289b26bc5576226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__geometry.html#gada63086d574ca1963289b26bc5576226">More...</a><br /></td></tr>
+<tr class="separator:gada63086d574ca1963289b26bc5576226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga1d9bd38a37e9beebdf4b4b43e46b8585">dg::create::volume</a> (const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the volume element on the grid (including weights!!)  <a href="group__geometry.html#ga1d9bd38a37e9beebdf4b4b43e46b8585">More...</a><br /></td></tr>
@@ -180,6 +189,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga44b9b10fbe5ae21f6f44448177e5e161">dg::create::inv_volume</a> (const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the inverse volume element on the grid (including weights!!)  <a href="group__geometry.html#ga44b9b10fbe5ae21f6f44448177e5e161">More...</a><br /></td></tr>
 <tr class="separator:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memTemplParams" colspan="2">template&lt;class Functor , class Geometry &gt; </td></tr>
+<tr class="memitem:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga0e19e232c5e127f8d69a55d70686f6a9">dg::pullback</a> (Functor f, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in cartesian coordinates to the curvilinear coordinate system.  <a href="group__geometry.html#ga0e19e232c5e127f8d69a55d70686f6a9">More...</a><br /></td></tr>
+<tr class="separator:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>geometry functions </p>
@@ -189,7 +202,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="geometry_8h.html">geometry.h</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -8,11 +8,11 @@ var group__profiles =
       [ "setpsi", "structsolovev_1_1_delta_function.html#a926936141cb404924a1b58c90e4a7193", null ]
     ] ],
     [ "FluxSurfaceAverage", "structsolovev_1_1_flux_surface_average.html", [
-      [ "FluxSurfaceAverage", "structsolovev_1_1_flux_surface_average.html#a2f79d67265e3dc31851a156d18c41f8d", null ],
+      [ "FluxSurfaceAverage", "structsolovev_1_1_flux_surface_average.html#a33c1b24be4dbacef94b338959d4c9990", null ],
       [ "operator()", "structsolovev_1_1_flux_surface_average.html#a4f178d26db3f362b63469442cd9cb4c7", null ]
     ] ],
     [ "SafetyFactor", "structsolovev_1_1_safety_factor.html", [
-      [ "SafetyFactor", "structsolovev_1_1_safety_factor.html#acb29f8d43f9715abfbc392b22399188f", null ],
+      [ "SafetyFactor", "structsolovev_1_1_safety_factor.html#a49ff4eab6f49cb6b2546c1ef86571bba", null ],
       [ "operator()", "structsolovev_1_1_safety_factor.html#ad1f873bfa1e8b3bc0f4ce43912666603", null ]
     ] ],
     [ "Alpha", "structsolovev_1_1_alpha.html", [
@@ -29,7 +29,7 @@ var group__profiles =
       [ "operator()", "structsolovev_1_1_deri_neu.html#a99d71f775c55547a2a233309eb7bae78", null ]
     ] ],
     [ "FuncDirPer", "structsolovev_1_1_func_dir_per.html", [
-      [ "FuncDirPer", "structsolovev_1_1_func_dir_per.html#a8e6fc52a7d19828cd5638e8a1eaa0594", null ],
+      [ "FuncDirPer", "structsolovev_1_1_func_dir_per.html#a60adfc99c880b1e82f0fc6a285dbd88a", null ],
       [ "dR", "structsolovev_1_1_func_dir_per.html#abd8afa5d6bef2b97056639d06964f7c1", null ],
       [ "dRR", "structsolovev_1_1_func_dir_per.html#a3d5ac21bf2f70da5913abd75dc1df5cb", null ],
       [ "dZ", "structsolovev_1_1_func_dir_per.html#a02145fc8067316d9c51bfd4628d0e8f8", null ],
@@ -38,24 +38,32 @@ var group__profiles =
       [ "operator()", "structsolovev_1_1_func_dir_per.html#a673ac6002ab3889e07f12b056ab66e68", null ]
     ] ],
     [ "EllipticDirPerM", "structsolovev_1_1_elliptic_dir_per_m.html", [
-      [ "EllipticDirPerM", "structsolovev_1_1_elliptic_dir_per_m.html#afa080afd4b02082a437ade2bc47f8f3a", null ],
-      [ "operator()", "structsolovev_1_1_elliptic_dir_per_m.html#ae1cbeaf089495b3227b8392ba71662a2", null ]
+      [ "EllipticDirPerM", "structsolovev_1_1_elliptic_dir_per_m.html#a5a4b258b92be2b3099e7204cc5a72846", null ],
+      [ "operator()", "structsolovev_1_1_elliptic_dir_per_m.html#ae1cbeaf089495b3227b8392ba71662a2", null ],
+      [ "operator()", "structsolovev_1_1_elliptic_dir_per_m.html#a9439bffc17a96172d0ecfdd86237bb9c", null ]
     ] ],
     [ "FuncDirNeu", "structsolovev_1_1_func_dir_neu.html", [
-      [ "FuncDirNeu", "structsolovev_1_1_func_dir_neu.html#a5e96c9e475214919db16fca0091da5ef", null ],
+      [ "FuncDirNeu", "structsolovev_1_1_func_dir_neu.html#a60b7c41450a8956cbbaeddbbd599c673", null ],
       [ "dR", "structsolovev_1_1_func_dir_neu.html#a57e29eb229bd720d9b621117c10a1965", null ],
       [ "dRR", "structsolovev_1_1_func_dir_neu.html#ac8602f1e385d76aae298f6271b60f52f", null ],
       [ "dZ", "structsolovev_1_1_func_dir_neu.html#ab0edaaf9bc6204fae928f9dc4ec2b331", null ],
       [ "dZZ", "structsolovev_1_1_func_dir_neu.html#ad14d474dd4f78e7986adb1b62020d776", null ],
-      [ "operator()", "structsolovev_1_1_func_dir_neu.html#a8f22118085f80e5c7573c9d7815643f8", null ]
+      [ "operator()", "structsolovev_1_1_func_dir_neu.html#a8f22118085f80e5c7573c9d7815643f8", null ],
+      [ "operator()", "structsolovev_1_1_func_dir_neu.html#a64a73f89c6daf220afed9cc2e9d45565", null ]
     ] ],
     [ "BmodTheta", "structsolovev_1_1_bmod_theta.html", [
       [ "BmodTheta", "structsolovev_1_1_bmod_theta.html#a717fada874a330db62c7535b3d849061", null ],
-      [ "operator()", "structsolovev_1_1_bmod_theta.html#a7cd7892d2ea3d3d6b4dd1bb6cdce4f6c", null ]
+      [ "operator()", "structsolovev_1_1_bmod_theta.html#a7cd7892d2ea3d3d6b4dd1bb6cdce4f6c", null ],
+      [ "operator()", "structsolovev_1_1_bmod_theta.html#ad6436c722a6c712e93db03c278e396c8", null ]
     ] ],
     [ "EllipticDirNeuM", "structsolovev_1_1_elliptic_dir_neu_m.html", [
-      [ "EllipticDirNeuM", "structsolovev_1_1_elliptic_dir_neu_m.html#ae21e538a0432c6844a4e268031393247", null ],
+      [ "EllipticDirNeuM", "structsolovev_1_1_elliptic_dir_neu_m.html#a4716f1d98a396a5ec396a609686646ae", null ],
+      [ "operator()", "structsolovev_1_1_elliptic_dir_neu_m.html#a0d48ec95556e8da2c85861503b5dd371", null ],
       [ "operator()", "structsolovev_1_1_elliptic_dir_neu_m.html#a4cd304ab07aca28d65db232eedac82fa", null ]
+    ] ],
+    [ "EllipticDirSimpleM", "structsolovev_1_1_elliptic_dir_simple_m.html", [
+      [ "EllipticDirSimpleM", "structsolovev_1_1_elliptic_dir_simple_m.html#aeec660627187473e091e15ff85a1fadd", null ],
+      [ "operator()", "structsolovev_1_1_elliptic_dir_simple_m.html#ac853b80a3c78d8d487e0d78fae13405e", null ]
     ] ],
     [ "Iris", "structsolovev_1_1_iris.html", [
       [ "Iris", "structsolovev_1_1_iris.html#ae30833f147e64e8ba87e2edb85ae03b7", null ],

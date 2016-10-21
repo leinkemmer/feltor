@@ -1,0 +1,28 @@
+var structdg_1_1_m_p_i_grid2d =
+[
+    [ "dimensionality", "structdg_1_1_m_p_i_grid2d.html#a92450ff04bff7a16808188de9989f013", null ],
+    [ "memory_category", "structdg_1_1_m_p_i_grid2d.html#ae2a7147eb3431a5e2a859b944dc9aa50", null ],
+    [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html#a06c3e7ecff7e994a2f36760f4da639e8", null ],
+    [ "MPIGrid2d", "structdg_1_1_m_p_i_grid2d.html#aad98366a4beb3efea77e16588ee19b96", null ],
+    [ "bcx", "structdg_1_1_m_p_i_grid2d.html#a86ebf1ecebc76af68e2bbbe9dd4192d1", null ],
+    [ "bcy", "structdg_1_1_m_p_i_grid2d.html#a0795a5a4fe378c2fb976ce856694507a", null ],
+    [ "communicator", "structdg_1_1_m_p_i_grid2d.html#a556c26a49f49d847e7e4dc7b06e81a37", null ],
+    [ "display", "structdg_1_1_m_p_i_grid2d.html#a85e94f6b87ba817271fd1b2f98878bb5", null ],
+    [ "dlt", "structdg_1_1_m_p_i_grid2d.html#a6ebbdb69d053a8480649b4094ed3a722", null ],
+    [ "global", "structdg_1_1_m_p_i_grid2d.html#a84aba0e0b350b60dcc55a6711b18e097", null ],
+    [ "hx", "structdg_1_1_m_p_i_grid2d.html#a8747afb709a9a38726407b4a3ad3dad2", null ],
+    [ "hy", "structdg_1_1_m_p_i_grid2d.html#a6d68ea86f1c768d453e67fe7f69e8f92", null ],
+    [ "init_X_boundaries", "structdg_1_1_m_p_i_grid2d.html#a1ad827964d531af4303d9b50a36e369d", null ],
+    [ "local", "structdg_1_1_m_p_i_grid2d.html#a69ad1d2e5e9ab31ea2a1f5de065069f0", null ],
+    [ "lx", "structdg_1_1_m_p_i_grid2d.html#aeb6a8da4dfe3f756153970a88d1b43dd", null ],
+    [ "ly", "structdg_1_1_m_p_i_grid2d.html#a317a524eaef9385b77d8121a439c1b21", null ],
+    [ "n", "structdg_1_1_m_p_i_grid2d.html#a3d9629e2c8dae710f5c64005c5ecfba5", null ],
+    [ "Nx", "structdg_1_1_m_p_i_grid2d.html#a60d5c8afce35d51120a4556aff79c50b", null ],
+    [ "Ny", "structdg_1_1_m_p_i_grid2d.html#a632abd40fe22a0896eedfaecab9d1337", null ],
+    [ "pidOf", "structdg_1_1_m_p_i_grid2d.html#a89fc816531cab1f0d7be5a720e7a0f89", null ],
+    [ "size", "structdg_1_1_m_p_i_grid2d.html#ac79a0746ddd1fe747d2114ef54ca163c", null ],
+    [ "x0", "structdg_1_1_m_p_i_grid2d.html#a6a196fcff9d44a530921fba61daec203", null ],
+    [ "x1", "structdg_1_1_m_p_i_grid2d.html#a5e9f5c340dca9f142b7b56b08d9a2e8c", null ],
+    [ "y0", "structdg_1_1_m_p_i_grid2d.html#aba6ad974553e3506024342a690251106", null ],
+    [ "y1", "structdg_1_1_m_p_i_grid2d.html#a17db635edc833098c627e9bb700d10e9", null ]
+];

@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>file.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/file/</path>
+    <path>/home/matthias/feltor/inc/file/</path>
     <filename>file_8h</filename>
     <class kind="struct">file::T5trunc</class>
     <class kind="struct">file::Probe</class>
@@ -39,7 +39,7 @@
   </compound>
   <compound kind="file">
     <name>nc_utilities.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/file/</path>
+    <path>/home/matthias/feltor/inc/file/</path>
     <filename>nc__utilities_8h</filename>
     <class kind="struct">file::NC_Error</class>
     <class kind="struct">file::NC_Error_Handle</class>
@@ -53,6 +53,13 @@
     </member>
     <member kind="function">
       <type>int</type>
+      <name>define_limited_time</name>
+      <anchorfile>namespacefile.html</anchorfile>
+      <anchor>aa63598d3ee7e2a842fed7d4fc8d47295</anchor>
+      <arglist>(int ncid, const char *name, int size, int *dimID, int *tvarID)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
       <name>define_dimension</name>
       <anchorfile>namespacefile.html</anchorfile>
       <anchor>a846a2bb3ad75738bad0fe50c891b0bd7</anchor>
@@ -62,43 +69,50 @@
       <type>int</type>
       <name>define_dimension</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>afd9f1ad6f13f19c99869def05583fb09</anchor>
-      <arglist>(int ncid, const char *name, int *dimID, const dg::Grid1d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a35e8dddbb98ed098fd20d77485879d48</anchor>
+      <arglist>(int ncid, const char *name, int *dimID, const dg::Grid1d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a452009c263aa1fb8b8c6cfab310fff84</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a82e1c68e70e1c4b393d5223c19d1c853</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a775499582ff288f9675263e69736fbcd</anchor>
-      <arglist>(int ncid, int *dimsIDs, const dg::Grid2d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a8fb7aec3ca83c981949b345ba9d751b5</anchor>
+      <arglist>(int ncid, int *dimsIDs, const dg::Grid2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a437d502f8dbb9343ab38c568446ae3aa</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a24c30d8412ff90bb2f8a58a49a422237</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>define_limtime_xy</name>
+      <anchorfile>namespacefile.html</anchorfile>
+      <anchor>a1a7416266700dfbc1d8d249f9556a964</anchor>
+      <arglist>(int ncid, int *dimsIDs, int size, int *tvarID, const dg::Grid2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>ac45d16d851bfa0df93305e5e1a836e46</anchor>
-      <arglist>(int ncid, int *dimsIDs, const dg::Grid3d&lt; double &gt; &amp;g)</arglist>
+      <anchor>aaac6eb445fc0ee37cf7d623d00be8a01</anchor>
+      <arglist>(int ncid, int *dimsIDs, const dg::Grid3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>ae1535f34423979479a0e0c43e377287e</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a69fd54000d5a743a5b0c0b14058c16c3</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d &amp;g)</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -285,6 +299,13 @@
     </member>
     <member kind="function">
       <type>int</type>
+      <name>define_limited_time</name>
+      <anchorfile>namespacefile.html</anchorfile>
+      <anchor>aa63598d3ee7e2a842fed7d4fc8d47295</anchor>
+      <arglist>(int ncid, const char *name, int size, int *dimID, int *tvarID)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
       <name>define_dimension</name>
       <anchorfile>namespacefile.html</anchorfile>
       <anchor>a846a2bb3ad75738bad0fe50c891b0bd7</anchor>
@@ -294,43 +315,50 @@
       <type>int</type>
       <name>define_dimension</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>afd9f1ad6f13f19c99869def05583fb09</anchor>
-      <arglist>(int ncid, const char *name, int *dimID, const dg::Grid1d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a35e8dddbb98ed098fd20d77485879d48</anchor>
+      <arglist>(int ncid, const char *name, int *dimID, const dg::Grid1d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a452009c263aa1fb8b8c6cfab310fff84</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a82e1c68e70e1c4b393d5223c19d1c853</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid1d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a775499582ff288f9675263e69736fbcd</anchor>
-      <arglist>(int ncid, int *dimsIDs, const dg::Grid2d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a8fb7aec3ca83c981949b345ba9d751b5</anchor>
+      <arglist>(int ncid, int *dimsIDs, const dg::Grid2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>a437d502f8dbb9343ab38c568446ae3aa</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a24c30d8412ff90bb2f8a58a49a422237</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>define_limtime_xy</name>
+      <anchorfile>namespacefile.html</anchorfile>
+      <anchor>a1a7416266700dfbc1d8d249f9556a964</anchor>
+      <arglist>(int ncid, int *dimsIDs, int size, int *tvarID, const dg::Grid2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>ac45d16d851bfa0df93305e5e1a836e46</anchor>
-      <arglist>(int ncid, int *dimsIDs, const dg::Grid3d&lt; double &gt; &amp;g)</arglist>
+      <anchor>aaac6eb445fc0ee37cf7d623d00be8a01</anchor>
+      <arglist>(int ncid, int *dimsIDs, const dg::Grid3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>define_dimensions</name>
       <anchorfile>namespacefile.html</anchorfile>
-      <anchor>ae1535f34423979479a0e0c43e377287e</anchor>
-      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d&lt; double &gt; &amp;g)</arglist>
+      <anchor>a69fd54000d5a743a5b0c0b14058c16c3</anchor>
+      <arglist>(int ncid, int *dimsIDs, int *tvarID, const dg::Grid3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>std::vector&lt; double &gt;</type>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['profiles_20based_20on_20the_20magnetic_20field_20geometry',['Profiles based on the magnetic field geometry',['../group__profiles.html',1,'']]]
+  ['grid_20generators',['Grid generators',['../group__generators.html',1,'']]],
+  ['grids_20and_20grid_20generators',['Grids and grid generators',['../group__grids.html',1,'']]]
 ];

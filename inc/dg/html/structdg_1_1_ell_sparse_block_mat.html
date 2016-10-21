@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -133,7 +134,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_ell_sparse_block_mat.html
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdg_1_1_ell_sparse_block_mat-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::EllSparseBlockMat&lt; value_type &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a> &raquo; <a class="el" href="group__creation.html">Discrete derivatives</a> &raquo; <a class="el" href="group__lowlevel.html">Lowlevel helper functions and classes</a></div></div>  </div>
+<div class="title">dg::EllSparseBlockMat&lt; value_type &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__backend.html">Vectors, Matrices and basic operations</a> &raquo; <a class="el" href="group__sparsematrix.html">Sparse matrix formats</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -165,6 +166,10 @@ template&lt;class OtherValueType &gt; </td></tr>
 <tr class="memitem:ad5f23cbab22cd4fda2d8df586f84c51a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#ad5f23cbab22cd4fda2d8df586f84c51a">symv</a> (const thrust::host_vector&lt; value_type &gt; &amp;x, thrust::host_vector&lt; value_type &gt; &amp;y) const </td></tr>
 <tr class="memdesc:ad5f23cbab22cd4fda2d8df586f84c51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the matrix to a vector.  <a href="#ad5f23cbab22cd4fda2d8df586f84c51a">More...</a><br /></td></tr>
 <tr class="separator:ad5f23cbab22cd4fda2d8df586f84c51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3485d3aaa6724812ebd123cafc1fd91d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3485d3aaa6724812ebd123cafc1fd91d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a3485d3aaa6724812ebd123cafc1fd91d">set_default_range</a> ()</td></tr>
+<tr class="memdesc:a3485d3aaa6724812ebd123cafc1fd91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ranges from 0 to left_size and 0 to right_size. <br /></td></tr>
+<tr class="separator:a3485d3aaa6724812ebd123cafc1fd91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e0c177a0d12193b95c2e2bc819b60ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a8e0c177a0d12193b95c2e2bc819b60ed">display</a> (std::ostream &amp;os=std::cout) const </td></tr>
 <tr class="memdesc:a8e0c177a0d12193b95c2e2bc819b60ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display internal data to a stream.  <a href="#a8e0c177a0d12193b95c2e2bc819b60ed">More...</a><br /></td></tr>
 <tr class="separator:a8e0c177a0d12193b95c2e2bc819b60ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,14 +204,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struc
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aa29bbb8bca4155841dbb603362dcdfe4">n</a></td></tr>
 <tr class="memdesc:aa29bbb8bca4155841dbb603362dcdfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">each block has size n*n <br /></td></tr>
 <tr class="separator:aa29bbb8bca4155841dbb603362dcdfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7716d8de0dc65abcccbea960ebaef17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7716d8de0dc65abcccbea960ebaef17"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aa7716d8de0dc65abcccbea960ebaef17">left</a></td></tr>
-<tr class="memdesc:aa7716d8de0dc65abcccbea960ebaef17"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the left Kronecker delta <br /></td></tr>
-<tr class="separator:aa7716d8de0dc65abcccbea960ebaef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab58f9ace6b43228ca7300a63547f67c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab58f9ace6b43228ca7300a63547f67c7"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#ab58f9ace6b43228ca7300a63547f67c7">right</a></td></tr>
-<tr class="memdesc:ab58f9ace6b43228ca7300a63547f67c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the right Kronecker delta (is e.g 1 for a x - derivative) <br /></td></tr>
-<tr class="separator:ab58f9ace6b43228ca7300a63547f67c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794a041e52b3e4fd6297d0dec8f3fc8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a794a041e52b3e4fd6297d0dec8f3fc8b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#a794a041e52b3e4fd6297d0dec8f3fc8b">left_size</a></td></tr>
+<tr class="memdesc:a794a041e52b3e4fd6297d0dec8f3fc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the left Kronecker delta <br /></td></tr>
+<tr class="separator:a794a041e52b3e4fd6297d0dec8f3fc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce816133c166271872359eb96a9b897"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abce816133c166271872359eb96a9b897"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#abce816133c166271872359eb96a9b897">right_size</a></td></tr>
+<tr class="memdesc:abce816133c166271872359eb96a9b897"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of the right Kronecker delta (is e.g 1 for a x - derivative) <br /></td></tr>
+<tr class="separator:abce816133c166271872359eb96a9b897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab609bd21cd26de2b7f0f360d4e8b2e07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab609bd21cd26de2b7f0f360d4e8b2e07"></a>
+<a class="el" href="structdg_1_1_ell_sparse_block_mat.html#aba88c63a4f93fd8d50f059640c23a5c3">IVec</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html#ab609bd21cd26de2b7f0f360d4e8b2e07">right_range</a></td></tr>
+<tr class="memdesc:ab609bd21cd26de2b7f0f360d4e8b2e07"><td class="mdescLeft">&#160;</td><td class="mdescRight">range <br /></td></tr>
+<tr class="separator:ab609bd21cd26de2b7f0f360d4e8b2e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class value_type&gt;<br />
@@ -349,7 +358,7 @@ template&lt;class value_type&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/matthias/Projekte/feltor/inc/dg/backend/<a class="el" href="sparseblockmat_8h_source.html">sparseblockmat.h</a></li>
+<li>/home/matthias/feltor/inc/dg/backend/<a class="el" href="sparseblockmat_8h_source.html">sparseblockmat.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -357,7 +366,7 @@ template&lt;class value_type&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_ell_sparse_block_mat.html">EllSparseBlockMat</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

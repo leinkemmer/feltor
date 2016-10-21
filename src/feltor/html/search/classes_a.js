@@ -1,9 +1,19 @@
 var searchData=
 [
   ['lamb',['Lamb',['../../../../inc/dg/html/structdg_1_1_lamb.html',1,'dg']]],
+  ['laplaceadaptpsi',['LaplaceAdaptPsi',['../../../../inc/geometries/html/structdg_1_1detail_1_1_laplace_adapt_psi.html',1,'dg::detail']]],
+  ['laplacechipsi',['LaplaceChiPsi',['../../../../inc/geometries/html/structdg_1_1detail_1_1_laplace_chi_psi.html',1,'dg::detail']]],
+  ['laplacepsi',['LaplacePsi',['../../../../inc/geometries/html/structdg_1_1detail_1_1_laplace_psi.html',1,'dg::detail']]],
+  ['laplacepsip',['LaplacePsip',['../../../../inc/geometries/html/structsolovev_1_1_laplace_psip.html',1,'solovev']]],
+  ['laplacepsip',['LaplacePsip',['../../../../inc/geometries/html/structtaylor_1_1_laplace_psip.html',1,'taylor']]],
+  ['laplacepsip',['LaplacePsip',['../../../../inc/geometries/html/structsolovev_1_1mod_1_1_laplace_psip.html',1,'solovev::mod']]],
   ['linearx',['LinearX',['../../../../inc/dg/html/structdg_1_1_linear_x.html',1,'dg']]],
   ['lineary',['LinearY',['../../../../inc/dg/html/structdg_1_1_linear_y.html',1,'dg']]],
   ['linearz',['LinearZ',['../../../../inc/dg/html/structdg_1_1_linear_z.html',1,'dg']]],
+  ['liseikin_5fxx',['Liseikin_XX',['../../../../inc/geometries/html/structdg_1_1_liseikin___x_x.html',1,'dg']]],
+  ['liseikin_5fxy',['Liseikin_XY',['../../../../inc/geometries/html/structdg_1_1_liseikin___x_y.html',1,'dg']]],
+  ['liseikin_5fyy',['Liseikin_YY',['../../../../inc/geometries/html/structdg_1_1_liseikin___y_y.html',1,'dg']]],
+  ['liseikincollective',['LiseikinCollective',['../../../../inc/geometries/html/structdg_1_1_liseikin_collective.html',1,'dg']]],
   ['ln',['LN',['../../../../inc/dg/html/structdg_1_1_l_n.html',1,'dg']]],
   ['lnb',['LnB',['../../../../inc/geometries/html/structsolovev_1_1_ln_b.html',1,'solovev']]],
   ['lnb',['LnB',['../../../../inc/geometries/html/structguenther_1_1_ln_b.html',1,'guenther']]]

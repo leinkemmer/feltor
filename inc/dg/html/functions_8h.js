@@ -1,11 +1,11 @@
 var functions_8h =
 [
-    [ "coo1", "functions_8h.html#ga59b5a3c6ae442e096d03c937e43cb30a", null ],
-    [ "coo1", "functions_8h.html#gab2a696c36a0e02b0b2ddc7d24e47e5c9", null ],
-    [ "coo1", "functions_8h.html#gab9b55ef9761fe4771b708e7b4f543e24", null ],
-    [ "coo2", "functions_8h.html#ga66ec91cd05d75e09896a0198737d05c1", null ],
-    [ "coo2", "functions_8h.html#ga2761f13261f98b9080c3d41330f91e74", null ],
-    [ "coo3", "functions_8h.html#gac71c7be4a51ce1589f13fe8a803af81f", null ],
+    [ "cooX1d", "functions_8h.html#ga585f4aa011369c015dd68cade3d17d51", null ],
+    [ "cooX2d", "functions_8h.html#ga57832a7433f639967c88dba28c86a39c", null ],
+    [ "cooX3d", "functions_8h.html#gaf3391865c980e362f471162a65dd66e0", null ],
+    [ "cooY2d", "functions_8h.html#ga4c4b9a55a5b8f8cd183a18d4303b63e3", null ],
+    [ "cooY3d", "functions_8h.html#ga7ea2f36bd92fca22e8547317dd10c201", null ],
+    [ "cooZ3d", "functions_8h.html#gac8de69a16789a98d51e454a487b4bf50", null ],
     [ "one", "functions_8h.html#ga5797166cdb9d26408ea629f742534fa7", null ],
     [ "one", "functions_8h.html#ga00fbb55c78ef8e349169a2e3556d78bc", null ],
     [ "one", "functions_8h.html#gaa8487df41f74a33ef2a63065415b88b5", null ],

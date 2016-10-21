@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['left',['left',['../structdg_1_1_ell_sparse_block_mat.html#aa7716d8de0dc65abcccbea960ebaef17',1,'dg::EllSparseBlockMat::left()'],['../structdg_1_1_coo_sparse_block_mat.html#ac94159acb3abc9e701e224df86da89a6',1,'dg::CooSparseBlockMat::left()']]]
+  ['left_5fsize',['left_size',['../structdg_1_1_ell_sparse_block_mat.html#a794a041e52b3e4fd6297d0dec8f3fc8b',1,'dg::EllSparseBlockMat::left_size()'],['../structdg_1_1_coo_sparse_block_mat.html#a5879228f786f6a22e351e26edd00423b',1,'dg::CooSparseBlockMat::left_size()']]]
 ];

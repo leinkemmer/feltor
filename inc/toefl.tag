@@ -2,7 +2,7 @@
 <tagfile>
   <compound kind="file">
     <name>arakawa.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>arakawa_8h</filename>
     <includes id="quadmat_8h" name="quadmat.h" local="yes" imported="no">quadmat.h</includes>
     <class kind="class">toefl::Arakawa</class>
@@ -24,7 +24,7 @@
   </compound>
   <compound kind="file">
     <name>fft.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>fft_8h</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">message.h</includes>
     <namespace>toefl</namespace>
@@ -87,28 +87,28 @@
   </compound>
   <compound kind="file">
     <name>init.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>init_8h</filename>
     <class kind="class">toefl::TurbulentBath</class>
     <namespace>toefl</namespace>
     <member kind="function">
       <type>void</type>
       <name>init_gaussian</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga0e730c6f07f61a20ea40d7866a5cdb90</anchor>
       <arglist>(M &amp;m, const double x0, const double y0, const double sigma_x, const double sigma_y, const double amplitude)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>init_gaussian_column</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gaf74f93e3a788741c663d72dc38fa4dd7</anchor>
       <arglist>(M &amp;m, const double x0, const double sigma_x, const double amplitude)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>message.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>message_8h</filename>
     <class kind="class">toefl::Message</class>
     <namespace>toefl</namespace>
@@ -122,7 +122,7 @@
   </compound>
   <compound kind="file">
     <name>quadmat.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>quadmat_8h</filename>
     <class kind="class">toefl::QuadMat</class>
     <namespace>toefl</namespace>
@@ -157,7 +157,7 @@
   </compound>
   <compound kind="file">
     <name>texture.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>texture_8h</filename>
     <class kind="struct">toefl::colormap_f</class>
     <class kind="struct">toefl::colormap_ext</class>
@@ -165,49 +165,49 @@
     <member kind="typedef">
       <type>struct toefl::colormap_ext</type>
       <name>colormap_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga5cbd63c6da2379bd643dc946f43784ed</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>toefl::Matrix&lt; std::array&lt; float, 3 &gt;, toefl::TL_NONE &gt;</type>
       <name>Texture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga356c71893774c0fdfb1e26ef1ab9577e</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type>colormap_f</type>
       <name>redblue_f</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gad8d19fbb27bf29fd5131c845ec7ceecb</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>colormap_ext</type>
       <name>redblue_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga860335025a878570144953e2dd20adff</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga53a0f84e4f5464be844a2dcd08447f48</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;field, const double maxabs)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf_temp</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga78ead2d548e26a1cd8d405aa2764e021</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;theta, const double ray)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>toefl.h</name>
-    <path>/home/matthias/Projekte/feltor/inc/toefl/</path>
+    <path>/home/matthias/feltor/inc/toefl/</path>
     <filename>toefl_8h</filename>
     <includes id="message_8h" name="message.h" local="yes" imported="no">message.h</includes>
     <includes id="quadmat_8h" name="quadmat.h" local="yes" imported="no">quadmat.h</includes>
@@ -1397,14 +1397,14 @@
     <member kind="typedef">
       <type>struct toefl::colormap_ext</type>
       <name>colormap_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga5cbd63c6da2379bd643dc946f43784ed</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>toefl::Matrix&lt; std::array&lt; float, 3 &gt;, toefl::TL_NONE &gt;</type>
       <name>Texture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga356c71893774c0fdfb1e26ef1ab9577e</anchor>
       <arglist></arglist>
     </member>
@@ -1581,14 +1581,14 @@
     <member kind="function">
       <type>void</type>
       <name>init_gaussian</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga0e730c6f07f61a20ea40d7866a5cdb90</anchor>
       <arglist>(M &amp;m, const double x0, const double y0, const double sigma_x, const double sigma_y, const double amplitude)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>init_gaussian_column</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gaf74f93e3a788741c663d72dc38fa4dd7</anchor>
       <arglist>(M &amp;m, const double x0, const double sigma_x, const double amplitude)</arglist>
     </member>
@@ -1658,28 +1658,28 @@
     <member kind="function">
       <type>colormap_f</type>
       <name>redblue_f</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gad8d19fbb27bf29fd5131c845ec7ceecb</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>colormap_ext</type>
       <name>redblue_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga860335025a878570144953e2dd20adff</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga53a0f84e4f5464be844a2dcd08447f48</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;field, const double maxabs)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf_temp</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga78ead2d548e26a1cd8d405aa2764e021</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;theta, const double ray)</arglist>
     </member>
@@ -1719,7 +1719,7 @@
     <subgroup>containers</subgroup>
     <subgroup>algorithms</subgroup>
     <subgroup>fftw</subgroup>
-    <subgroup>utilities</subgroup>
+    <subgroup>utilitiesX</subgroup>
     <subgroup>exceptions</subgroup>
   </compound>
   <compound kind="group">
@@ -1926,9 +1926,9 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>utilities</name>
+    <name>utilitiesX</name>
     <title>Utilities</title>
-    <filename>group__utilities.html</filename>
+    <filename>group__utilities_x.html</filename>
     <class kind="class">toefl::TurbulentBath</class>
     <class kind="struct">toefl::colormap_f</class>
     <class kind="struct">toefl::colormap_ext</class>
@@ -1936,56 +1936,56 @@
     <member kind="typedef">
       <type>struct toefl::colormap_ext</type>
       <name>colormap_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga5cbd63c6da2379bd643dc946f43784ed</anchor>
       <arglist></arglist>
     </member>
     <member kind="typedef">
       <type>toefl::Matrix&lt; std::array&lt; float, 3 &gt;, toefl::TL_NONE &gt;</type>
       <name>Texture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga356c71893774c0fdfb1e26ef1ab9577e</anchor>
       <arglist></arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>init_gaussian</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga0e730c6f07f61a20ea40d7866a5cdb90</anchor>
       <arglist>(M &amp;m, const double x0, const double y0, const double sigma_x, const double sigma_y, const double amplitude)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>init_gaussian_column</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gaf74f93e3a788741c663d72dc38fa4dd7</anchor>
       <arglist>(M &amp;m, const double x0, const double sigma_x, const double amplitude)</arglist>
     </member>
     <member kind="function">
       <type>colormap_f</type>
       <name>redblue_f</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>gad8d19fbb27bf29fd5131c845ec7ceecb</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>colormap_ext</type>
       <name>redblue_ext</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga860335025a878570144953e2dd20adff</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga53a0f84e4f5464be844a2dcd08447f48</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;field, const double maxabs)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>gentexture_RGBf_temp</name>
-      <anchorfile>group__utilities.html</anchorfile>
+      <anchorfile>group__utilities_x.html</anchorfile>
       <anchor>ga78ead2d548e26a1cd8d405aa2764e021</anchor>
       <arglist>(Texture_RGBf &amp;tex, const M &amp;theta, const double ray)</arglist>
     </member>

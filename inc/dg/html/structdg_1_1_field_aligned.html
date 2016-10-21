@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('structdg_1_1_field_aligned.html','');}
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structdg_1_1_field_aligned-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dg::FieldAligned&lt; Geometry, Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a> &raquo; <a class="el" href="group__algorithms.html">Numerical schemes</a></div></div>  </div>
+<div class="title">dg::FieldAligned&lt; Geometry, Matrix, container &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__geo.html">Topology and Geometry</a> &raquo; <a class="el" href="group__geometry.html">Geometric grids and operations</a> &raquo; <a class="el" href="group__utilities.html">Fieldalignment and Averaging</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -187,51 +188,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a004c3ef022f452f4998da2bb80f144"><td class="memItemLeft" align="right" valign="top">const Geometry &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a7a004c3ef022f452f4998da2bb80f144">grid</a> () const </td></tr>
 <tr class="memdesc:a7a004c3ef022f452f4998da2bb80f144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the underlying grid.  <a href="#a7a004c3ef022f452f4998da2bb80f144">More...</a><br /></td></tr>
 <tr class="separator:a7a004c3ef022f452f4998da2bb80f144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace99b0fc621a942f1e7c0677200f19f6"><td class="memTemplParams" colspan="2">template&lt;class Field , class Limiter &gt; </td></tr>
-<tr class="memitem:ace99b0fc621a942f1e7c0677200f19f6"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#ace99b0fc621a942f1e7c0677200f19f6">FieldAligned</a> (Field field, Geometry <a class="el" href="structdg_1_1_field_aligned.html#a7a004c3ef022f452f4998da2bb80f144">grid</a>, double eps=1e-4, Limiter limit=DefaultLimiter(), dg::bc globalbcz=dg::DIR, double deltaPhi=-1)</td></tr>
-<tr class="memdesc:ace99b0fc621a942f1e7c0677200f19f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a field and a grid.  <a href="#ace99b0fc621a942f1e7c0677200f19f6">More...</a><br /></td></tr>
-<tr class="separator:ace99b0fc621a942f1e7c0677200f19f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8aa89bd475a9ac804dcb2d5d2d54ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a1b8aa89bd475a9ac804dcb2d5d2d54ea">set_boundaries</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, double left, double right)</td></tr>
-<tr class="memdesc:a1b8aa89bd475a9ac804dcb2d5d2d54ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set boundary conditions in the limiter region.  <a href="#a1b8aa89bd475a9ac804dcb2d5d2d54ea">More...</a><br /></td></tr>
-<tr class="separator:a1b8aa89bd475a9ac804dcb2d5d2d54ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac19e8e4a98685dc4c70543f5237c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a0ac19e8e4a98685dc4c70543f5237c89">set_boundaries</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, const container &amp;left, const container &amp;right)</td></tr>
-<tr class="memdesc:a0ac19e8e4a98685dc4c70543f5237c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set boundary conditions in the limiter region.  <a href="#a0ac19e8e4a98685dc4c70543f5237c89">More...</a><br /></td></tr>
-<tr class="separator:a0ac19e8e4a98685dc4c70543f5237c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4518fc0ecdec9f6ed87d4a6b555acf03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a4518fc0ecdec9f6ed87d4a6b555acf03">set_boundaries</a> (<a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a> bcz, const container &amp;global, double scal_left, double scal_right)</td></tr>
-<tr class="memdesc:a4518fc0ecdec9f6ed87d4a6b555acf03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set boundary conditions in the limiter region.  <a href="#a4518fc0ecdec9f6ed87d4a6b555acf03">More...</a><br /></td></tr>
-<tr class="separator:a4518fc0ecdec9f6ed87d4a6b555acf03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a368f2c773ba9672d8133d0653f7d40cc"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp &gt; </td></tr>
-<tr class="memitem:a368f2c773ba9672d8133d0653f7d40cc"><td class="memTemplItemLeft" align="right" valign="top">container&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a368f2c773ba9672d8133d0653f7d40cc">evaluate</a> (BinaryOp f, unsigned plane=0) const </td></tr>
-<tr class="memdesc:a368f2c773ba9672d8133d0653f7d40cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d functor and transform to all planes along the fieldlines.  <a href="#a368f2c773ba9672d8133d0653f7d40cc">More...</a><br /></td></tr>
-<tr class="separator:a368f2c773ba9672d8133d0653f7d40cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff54b14baf88482d4edae2a7199af1e"><td class="memTemplParams" colspan="2">template&lt;class BinaryOp , class UnaryOp &gt; </td></tr>
-<tr class="memitem:a2ff54b14baf88482d4edae2a7199af1e"><td class="memTemplItemLeft" align="right" valign="top">container&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a2ff54b14baf88482d4edae2a7199af1e">evaluate</a> (BinaryOp f, UnaryOp g, unsigned p0, unsigned rounds) const </td></tr>
-<tr class="memdesc:a2ff54b14baf88482d4edae2a7199af1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a 2d functor and transform to all planes along the fieldlines.  <a href="#a2ff54b14baf88482d4edae2a7199af1e">More...</a><br /></td></tr>
-<tr class="separator:a2ff54b14baf88482d4edae2a7199af1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c37e89aae9924661203600f042a7645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a5c37e89aae9924661203600f042a7645">einsPlus</a> (const container &amp;in, container &amp;out)</td></tr>
-<tr class="memdesc:a5c37e89aae9924661203600f042a7645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the interpolation to the next planes.  <a href="#a5c37e89aae9924661203600f042a7645">More...</a><br /></td></tr>
-<tr class="separator:a5c37e89aae9924661203600f042a7645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab45b603fe3d77abbbf4a175168425fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#ab45b603fe3d77abbbf4a175168425fa7">einsMinus</a> (const container &amp;in, container &amp;out)</td></tr>
-<tr class="memdesc:ab45b603fe3d77abbbf4a175168425fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the interpolation to the previous planes.  <a href="#ab45b603fe3d77abbbf4a175168425fa7">More...</a><br /></td></tr>
-<tr class="separator:ab45b603fe3d77abbbf4a175168425fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7eb4e66ccbc085cdbbd513e5d1288af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#ac7eb4e66ccbc085cdbbd513e5d1288af">einsPlusT</a> (const container &amp;in, container &amp;out)</td></tr>
-<tr class="memdesc:ac7eb4e66ccbc085cdbbd513e5d1288af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the transposed interpolation to the previous plane.  <a href="#ac7eb4e66ccbc085cdbbd513e5d1288af">More...</a><br /></td></tr>
-<tr class="separator:ac7eb4e66ccbc085cdbbd513e5d1288af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaec3eea3da4c5e25c8e6973414f61b3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#aaec3eea3da4c5e25c8e6973414f61b3d">einsMinusT</a> (const container &amp;in, container &amp;out)</td></tr>
-<tr class="memdesc:aaec3eea3da4c5e25c8e6973414f61b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the transposed interpolation to the next plane.  <a href="#aaec3eea3da4c5e25c8e6973414f61b3d">More...</a><br /></td></tr>
-<tr class="separator:aaec3eea3da4c5e25c8e6973414f61b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de0d24c35d419cf24e4089fc55355c4"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a5de0d24c35d419cf24e4089fc55355c4">hz</a> () const </td></tr>
-<tr class="memdesc:a5de0d24c35d419cf24e4089fc55355c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">hz is the distance between the plus and minus planes  <a href="#a5de0d24c35d419cf24e4089fc55355c4">More...</a><br /></td></tr>
-<tr class="separator:a5de0d24c35d419cf24e4089fc55355c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19b9f40bdc2930123d25daeb999f1d7"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#ae19b9f40bdc2930123d25daeb999f1d7">hp</a> () const </td></tr>
-<tr class="memdesc:ae19b9f40bdc2930123d25daeb999f1d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">hp is the distance between the plus and current planes  <a href="#ae19b9f40bdc2930123d25daeb999f1d7">More...</a><br /></td></tr>
-<tr class="separator:ae19b9f40bdc2930123d25daeb999f1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24338824aa1de68850ee5969e6872d5a"><td class="memItemLeft" align="right" valign="top">const container &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a24338824aa1de68850ee5969e6872d5a">hm</a> () const </td></tr>
-<tr class="memdesc:a24338824aa1de68850ee5969e6872d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">hm is the distance between the current and minus planes  <a href="#a24338824aa1de68850ee5969e6872d5a">More...</a><br /></td></tr>
-<tr class="separator:a24338824aa1de68850ee5969e6872d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a004c3ef022f452f4998da2bb80f144"><td class="memItemLeft" align="right" valign="top">const Geometry &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_field_aligned.html#a7a004c3ef022f452f4998da2bb80f144">grid</a> () const </td></tr>
-<tr class="memdesc:a7a004c3ef022f452f4998da2bb80f144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the underlying grid.  <a href="#a7a004c3ef022f452f4998da2bb80f144">More...</a><br /></td></tr>
-<tr class="separator:a7a004c3ef022f452f4998da2bb80f144"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class Geometry, class Matrix, class container&gt;<br />
@@ -242,86 +198,11 @@ struct dg::FieldAligned&lt; Geometry, Matrix, container &gt;</h3>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Matrix</td><td>The matrix class of the interpolation matrix </td></tr>
-    <tr><td class="paramname">container</td><td>The container-class on which the interpolation matrix operates on (does not need to be dg::HVec) </td></tr>
+    <tr><td class="paramname">container</td><td>The container-class on which the interpolation matrix operates on (does not need to be <a class="el" href="group__typedefs.html#gab99e8227ed890885a7b9915806865a7a" title="Host Vector. ">dg::HVec</a>) </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ace99b0fc621a942f1e7c0677200f19f6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<div class="memtemplate">
-template&lt;class Field , class Limiter &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::<a class="el" href="structdg_1_1_field_aligned.html">FieldAligned</a> </td>
-          <td>(</td>
-          <td class="paramtype">Field&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Geometry&#160;</td>
-          <td class="paramname"><em>grid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>eps</em> = <code>1e-4</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Limiter&#160;</td>
-          <td class="paramname"><em>limit</em> = <code><a class="el" href="structdg_1_1_default_limiter.html">DefaultLimiter</a>()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>globalbcz</em> = <code><a class="el" href="group__creation.html#gga59440bdf436f2874b49aa52b670ed364adece0b7644d85f490823799a3b97f7e6">dg::DIR</a></code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>deltaPhi</em> = <code>-1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct from a field and a grid. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Field</td><td>The Fieldlines to be integrated: Has to provide void operator()( const std::vector&lt;dg::HVec&gt;&amp;, std::vector&lt;dg::HVec&gt;&amp;) where the first index is R, the second Z and the last s (the length of the field line) </td></tr>
-    <tr><td class="paramname">Limiter</td><td>Class that can be evaluated on a 2d grid, returns 1 if there is a limiter and 0 if there isn't. If a field line crosses the limiter in the plane \( \phi=0\) then the limiter boundary conditions apply. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>The field to integrate </td></tr>
-    <tr><td class="paramname">grid</td><td>The grid on which to operate </td></tr>
-    <tr><td class="paramname">eps</td><td>Desired accuracy of runge kutta </td></tr>
-    <tr><td class="paramname">limit</td><td>Instance of the limiter class (Default is a limiter everywhere, note that if bcz is periodic it doesn't matter if there is a limiter or not) </td></tr>
-    <tr><td class="paramname">globalbcz</td><td>Choose NEU or DIR. Defines BC in parallel on bounding box </td></tr>
-    <tr><td class="paramname">deltaPhi</td><td>Is either &lt;0 (then it's ignored), may differ from <a class="el" href="structdg_1_1_field_aligned.html#a5de0d24c35d419cf24e4089fc55355c4" title="hz is the distance between the plus and minus planes ">hz()</a> only if Nz() == 1 </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>If there is a limiter, the boundary condition on the first/last plane is set by the bcz variable from the grid and can be changed by the set_boundaries function. If there is no limiter the boundary condition is periodic. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ace99b0fc621a942f1e7c0677200f19f6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -435,80 +316,6 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab45b603fe3d77abbbf4a175168425fa7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::einsMinus </td>
-          <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the interpolation to the previous planes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>input </td></tr>
-    <tr><td class="paramname">out</td><td>output may not equal intpu </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aaec3eea3da4c5e25c8e6973414f61b3d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::einsMinusT </td>
-          <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the transposed interpolation to the next plane. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>input </td></tr>
-    <tr><td class="paramname">out</td><td>output may not equal intpu </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="aaec3eea3da4c5e25c8e6973414f61b3d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -573,80 +380,6 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </div><div class="memdoc">
 
 <p>Applies the interpolation to the next planes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>input </td></tr>
-    <tr><td class="paramname">out</td><td>output may not equal intpu </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5c37e89aae9924661203600f042a7645"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::einsPlus </td>
-          <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the interpolation to the next planes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>input </td></tr>
-    <tr><td class="paramname">out</td><td>output may not equal intpu </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac7eb4e66ccbc085cdbbd513e5d1288af"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::einsPlusT </td>
-          <td>(</td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">container &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Applies the transposed interpolation to the previous plane. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in</td><td>input </td></tr>
@@ -802,142 +535,6 @@ template&lt;class BinaryOp , class UnaryOp &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a368f2c773ba9672d8133d0653f7d40cc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<div class="memtemplate">
-template&lt;class BinaryOp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">container <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">BinaryOp&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>plane</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluate a 2d functor and transform to all planes along the fieldlines. </p>
-<p>Evaluates the given functor on a 2d plane and then follows fieldlines to get the values in the 3rd dimension. Uses the grid given in the constructor. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">BinaryOp</td><td>Binary Functor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>Functor to evaluate </td></tr>
-    <tr><td class="paramname">plane</td><td>The number of the plane to start</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an instance of container </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2ff54b14baf88482d4edae2a7199af1e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<div class="memtemplate">
-template&lt;class BinaryOp , class UnaryOp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">container <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::evaluate </td>
-          <td>(</td>
-          <td class="paramtype">BinaryOp&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">UnaryOp&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>p0</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>rounds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Evaluate a 2d functor and transform to all planes along the fieldlines. </p>
-<p>Evaluates the given functor on a 2d plane and then follows fieldlines to get the values in the 3rd dimension. Uses the grid given in the constructor. The second functor is used to scale the values along the fieldlines. The fieldlines are assumed to be periodic. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">BinaryOp</td><td>Binary Functor </td></tr>
-    <tr><td class="paramname">UnaryOp</td><td>Unary Functor </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">f</td><td>Functor to evaluate in x-y </td></tr>
-    <tr><td class="paramname">g</td><td>Functor to evaluate in z </td></tr>
-    <tr><td class="paramname">p0</td><td>The number of the plane to start </td></tr>
-    <tr><td class="paramname">rounds</td><td>The number of rounds to follow a fieldline </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>g is evaluated such that p0 corresponds to z=0, p0+1 corresponds to z=hz, p0-1 to z=-hz, ...</dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns an instance of container </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7a004c3ef022f452f4998da2bb80f144"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const Geometry&amp; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::grid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Access the underlying grid. </p>
-<dl class="section return"><dt>Returns</dt><dd>the grid </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a7a004c3ef022f452f4998da2bb80f144"></a>
 <div class="memitem">
 <div class="memproto">
@@ -994,34 +591,6 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a24338824aa1de68850ee5969e6872d5a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::hm </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>hm is the distance between the current and minus planes </p>
-<dl class="section return"><dt>Returns</dt><dd>three-dimensional vector </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ae19b9f40bdc2930123d25daeb999f1d7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1046,62 +615,6 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 </div><div class="memdoc">
 
 <p>hp is the distance between the plus and current planes </p>
-<dl class="section return"><dt>Returns</dt><dd>three-dimensional vector </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae19b9f40bdc2930123d25daeb999f1d7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::hp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>hp is the distance between the plus and current planes </p>
-<dl class="section return"><dt>Returns</dt><dd>three-dimensional vector </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5de0d24c35d419cf24e4089fc55355c4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const container&amp; <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::hz </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>hz is the distance between the plus and minus planes </p>
 <dl class="section return"><dt>Returns</dt><dd>three-dimensional vector </dd></dl>
 
 </div>
@@ -1289,164 +802,8 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1b8aa89bd475a9ac804dcb2d5d2d54ea"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::set_boundaries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set boundary conditions in the limiter region. </p>
-<p>if Dirichlet boundaries are used the left value is the left function value, if Neumann boundaries are used the left value is the left derivative value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">left</td><td>left boundary value </td></tr>
-    <tr><td class="paramname">right</td><td>right boundary value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a0ac19e8e4a98685dc4c70543f5237c89"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::set_boundaries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set boundary conditions in the limiter region. </p>
-<p>if Dirichlet boundaries are used the left value is the left function value, if Neumann boundaries are used the left value is the left derivative value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">left</td><td>left boundary value </td></tr>
-    <tr><td class="paramname">right</td><td>right boundary value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4518fc0ecdec9f6ed87d4a6b555acf03"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Geometry , class Matrix , class container &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structdg_1_1_field_aligned.html">dg::FieldAligned</a>&lt; Geometry, Matrix, container &gt;::set_boundaries </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__creation.html#ga59440bdf436f2874b49aa52b670ed364">dg::bc</a>&#160;</td>
-          <td class="paramname"><em>bcz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const container &amp;&#160;</td>
-          <td class="paramname"><em>global</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>scal_left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>scal_right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set boundary conditions in the limiter region. </p>
-<p>if Dirichlet boundaries are used the left value is the left function value, if Neumann boundaries are used the left value is the left derivative value </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bcz</td><td>boundary condition </td></tr>
-    <tr><td class="paramname">global</td><td>3D vector containing boundary values </td></tr>
-    <tr><td class="paramname">scal_left</td><td>left scaling factor </td></tr>
-    <tr><td class="paramname">scal_right</td><td>right scaling factor </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li>/home/matthias/Projekte/feltor/inc/dg/geometry/<a class="el" href="fieldaligned_8h_source.html">fieldaligned.h</a></li>
-<li>/home/matthias/Projekte/feltor/inc/dg/geometry/<a class="el" href="new__fieldaligned_8h_source.html">new_fieldaligned.h</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>/home/matthias/feltor/inc/dg/geometry/<a class="el" href="fieldaligned_8h_source.html">fieldaligned.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1454,7 +811,7 @@ template&lt;class Geometry , class Matrix , class container &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedg.html">dg</a></li><li class="navelem"><a class="el" href="structdg_1_1_field_aligned.html">FieldAligned</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

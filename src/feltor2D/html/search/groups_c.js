@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['utility_20functions_20for_20reorder_20operations_20on_20dg_2dformatted_20vectors',['Utility functions for reorder operations on DG-formatted vectors',['../../../../inc/dg/html/group__scatter.html',1,'']]],
-  ['utilities',['Utilities',['../../../../inc/dg/html/group__utilities.html',1,'']]]
+  ['scatter',['Scatter',['../../../../inc/dg/html/group__scatter.html',1,'']]],
+  ['sparse_20matrix_20formats',['Sparse matrix formats',['../../../../inc/dg/html/group__sparsematrix.html',1,'']]]
 ];

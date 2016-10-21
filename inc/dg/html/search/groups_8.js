@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numerical_20schemes',['Numerical schemes',['../group__algorithms.html',1,'']]]
+  ['root_20finding',['Root finding',['../group__root.html',1,'']]]
 ];

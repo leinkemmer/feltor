@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['the_20discontinuous_20galerkin_20library',['The Discontinuous Galerkin library',['../../../../inc/dg/html/group___d_g.html',1,'']]],
-  ['the_20field_20line_20geometry',['The field line geometry',['../../../../inc/geometries/html/group__geom.html',1,'']]],
-  ['the_20toefl_20library',['The TOEFL library',['../../../../inc/toefl/html/group___t_o_e_f_l.html',1,'']]],
-  ['typedefs',['Typedefs',['../../../../inc/dg/html/group__typedefs.html',1,'']]]
+  ['scatter',['Scatter',['../../../../inc/dg/html/group__scatter.html',1,'']]],
+  ['solvers',['Solvers',['../group__solvers.html',1,'']]],
+  ['sparse_20matrix_20formats',['Sparse matrix formats',['../../../../inc/dg/html/group__sparsematrix.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Solovev: solovev::flux::FieldRZYRYZY Struct Reference</title>
+<title>Geometry: solovev::flux::FieldRZYRYZY&lt; PsiR, PsiZ, PsiRR, PsiRZ, PsiZZ, Ipol, IpolR, IpolZ &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -50,10 +50,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Solovev
+   <div id="projectname">Geometry
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">field line geometry</div>
+   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('structsolovev_1_1flux_1_1_field_r_z_y_
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structsolovev_1_1flux_1_1_field_r_z_y_r_y_z_y-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">solovev::flux::FieldRZYRYZY Struct Reference</div>  </div>
+<div class="title">solovev::flux::FieldRZYRYZY&lt; PsiR, PsiZ, PsiRR, PsiRZ, PsiZZ, Ipol, IpolR, IpolZ &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -154,21 +154,30 @@ $(document).ready(function(){initNavTree('structsolovev_1_1flux_1_1_field_r_z_y_
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adaec4023eab233aa55bc3f2140c7f70b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adaec4023eab233aa55bc3f2140c7f70b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FieldRZYRYZY</b> (const <a class="el" href="structsolovev_1_1_geom_parameters.html">GeomParameters</a> &amp;gp)</td></tr>
-<tr class="separator:adaec4023eab233aa55bc3f2140c7f70b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eb6aac642fb95365065085acff51a1b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0eb6aac642fb95365065085acff51a1b"></a>
+<tr class="memitem:a4c22d900189b8abf340728f008cbf7ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c22d900189b8abf340728f008cbf7ad"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FieldRZYRYZY</b> (PsiR psiR, PsiZ psiZ, PsiRR psiRR, PsiRZ psiRZ, PsiZZ psiZZ, <a class="el" href="structsolovev_1_1_ipol.html">Ipol</a> ipol, <a class="el" href="structsolovev_1_1_ipol_r.html">IpolR</a> ipolR, <a class="el" href="structsolovev_1_1_ipol_z.html">IpolZ</a> ipolZ)</td></tr>
+<tr class="separator:a4c22d900189b8abf340728f008cbf7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e08c3e50ad7036a3ee9db3932ddc2e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e08c3e50ad7036a3ee9db3932ddc2e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_f</b> (double new_f)</td></tr>
-<tr class="separator:a0eb6aac642fb95365065085acff51a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5866d21fef6f97e67696a7ce09adfcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5866d21fef6f97e67696a7ce09adfcb"></a>
+<tr class="separator:a9e08c3e50ad7036a3ee9db3932ddc2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa776e2a4052790b52b90341d3b06a86c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa776e2a4052790b52b90341d3b06a86c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_fp</b> (double new_fp)</td></tr>
-<tr class="separator:aa5866d21fef6f97e67696a7ce09adfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab682efb9b4e541abf02cc8dde689a2d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab682efb9b4e541abf02cc8dde689a2d6"></a>
+<tr class="separator:aa776e2a4052790b52b90341d3b06a86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c85b7f0e0acd489da5d9045e9276d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c85b7f0e0acd489da5d9045e9276d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> (double R0, double Z0, double &amp;yR, double &amp;yZ)</td></tr>
+<tr class="separator:a84c85b7f0e0acd489da5d9045e9276d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3495ba7f869e42373de460d11a3738c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3495ba7f869e42373de460d11a3738c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>derive</b> (double R0, double Z0, double &amp;xR, double &amp;xZ)</td></tr>
+<tr class="separator:a3495ba7f869e42373de460d11a3738c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0a2e541daa7b201e4bd7b4c7275921"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c0a2e541daa7b201e4bd7b4c7275921"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const dg::HVec &amp;y, dg::HVec &amp;yp) const </td></tr>
-<tr class="separator:ab682efb9b4e541abf02cc8dde689a2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7c0a2e541daa7b201e4bd7b4c7275921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="formulaDsp">
+<div class="textblock"><h3>template&lt;class PsiR, class PsiZ, class PsiRR, class PsiRZ, class PsiZZ, class Ipol, class IpolR, class IpolZ&gt;<br />
+struct solovev::flux::FieldRZYRYZY&lt; PsiR, PsiZ, PsiRR, PsiRZ, PsiZZ, Ipol, IpolR, IpolZ &gt;</h3>
+
+<p class="formulaDsp">
 \[ d R/d y = B^R/B^y = \frac{q R}{I} \frac{\partial \psi_p}{\partial Z} \]
 </p>
 <p>, </p><p class="formulaDsp">
@@ -182,7 +191,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 </p>
 <p>, </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/matthias/Projekte/feltor/inc/geometries/<a class="el" href="fields_8h_source.html">fields.h</a></li>
+<li>/home/matthias/feltor/inc/geometries/<a class="el" href="fields_8h_source.html">fields.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -190,7 +199,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><b>flux</b></li><li class="navelem"><a class="el" href="structsolovev_1_1flux_1_1_field_r_z_y_r_y_z_y.html">FieldRZYRYZY</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:46 for Solovev by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:14 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

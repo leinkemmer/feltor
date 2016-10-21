@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
@@ -170,10 +171,13 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="structdg_1_1_cartesian_grid1d.html#a6a2130bee088688684ab83bd86dd777b">dg::CartesianGrid1d</a>
 </li>
 <li>CartesianGrid2d()
-: <a class="el" href="structdg_1_1_cartesian_grid2d.html#a9bfb9eb4fb91ff0cb755ef5531c15f8e">dg::CartesianGrid2d</a>
+: <a class="el" href="structdg_1_1_cartesian_grid2d.html#a0b28fc4bb855f03fbd494628601ff976">dg::CartesianGrid2d</a>
 </li>
 <li>CartesianGrid3d()
 : <a class="el" href="structdg_1_1_cartesian_grid3d.html#a285ed505d9b7d483d7e382a03ce6a5c2">dg::CartesianGrid3d</a>
+</li>
+<li>Cauchy()
+: <a class="el" href="structdg_1_1_cauchy.html#a508cb8140a3505aeeac4af782e779d50">dg::Cauchy</a>
 </li>
 <li>centered()
 : <a class="el" href="structdg_1_1_d_s.html#af318c233edce815bda0890de38e07458">dg::DS&lt; FA, Matrix, container &gt;</a>
@@ -209,10 +213,13 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 </li>
 <li>communicator()
 : <a class="el" href="structdg_1_1_bijective_comm.html#aa9ff8caca0cc54b9b7fb7e2b60cf3f32">dg::BijectiveComm&lt; Index, Vector &gt;</a>
-, <a class="el" href="structdg_1_1_m_p_i___grid2d.html#abe042856814e47c69865b599e999ac38">dg::MPI_Grid2d</a>
-, <a class="el" href="structdg_1_1_m_p_i___grid3d.html#aef173dce8176f09b926eb14dd934bad5">dg::MPI_Grid3d</a>
 , <a class="el" href="structdg_1_1_m_p_i___vector.html#a7333d65d51c13784bc280b89db2b2ef8">dg::MPI_Vector&lt; container &gt;</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid2d.html#a556c26a49f49d847e7e4dc7b06e81a37">dg::MPIGrid2d</a>
+, <a class="el" href="structdg_1_1_m_p_i_grid3d.html#a2dcd4fe264db41740d646f98991fd8e8">dg::MPIGrid3d</a>
 , <a class="el" href="structdg_1_1_nearest_neighbor_comm.html#af66764f2258a99dc8362548dde0bd2b8">dg::NearestNeighborComm&lt; Index, Vector &gt;</a>
+</li>
+<li>compute_rhs()
+: <a class="el" href="classdg_1_1_refined_elliptic.html#ab1857c62f3f484c783c2114d27449413">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
 </li>
 <li>CONSTANT()
 : <a class="el" href="structdg_1_1_c_o_n_s_t_a_n_t.html#ae8096ed918793f4de9c56cb7d39baa98">dg::CONSTANT</a>
@@ -225,15 +232,21 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="structdg_1_1_m_p_i___vector.html#ad42ce5571b198915c6b5c2eb9033ceb3">dg::MPI_Vector&lt; container &gt;</a>
 </li>
 <li>contains()
-: <a class="el" href="structdg_1_1_grid1d.html#aa7610345a07e407992f75b2477d6cf86">dg::Grid1d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid2d.html#ab00607b3c5278242e97a61cf4ccb2363">dg::Grid2d&lt; T &gt;</a>
-, <a class="el" href="structdg_1_1_grid3d.html#abd52e901dd79055eb8d55f36733b3be5">dg::Grid3d&lt; T &gt;</a>
+: <a class="el" href="structdg_1_1_grid1d.html#a6fc902fae7001426005c968ae472f127">dg::Grid1d</a>
+, <a class="el" href="structdg_1_1_grid2d.html#a58bc4eaf6c47706c277fef1ee6831ef4">dg::Grid2d</a>
+, <a class="el" href="structdg_1_1_grid3d.html#a068b4756ff906772ac050f44ee49b5d1">dg::Grid3d</a>
+, <a class="el" href="structdg_1_1_grid_x1d.html#a4bb96d64b8275985ebdd6c2ef3785026">dg::GridX1d</a>
+, <a class="el" href="structdg_1_1_grid_x2d.html#a2204e291487147772015f32fa7299170">dg::GridX2d</a>
+, <a class="el" href="structdg_1_1_grid_x3d.html#a5ae6c123b455df607be0ca18926b9643">dg::GridX3d</a>
 </li>
 <li>CooSparseBlockMat()
 : <a class="el" href="structdg_1_1_coo_sparse_block_mat.html#aa24a0237ff6d15655372d7b8181b5b32">dg::CooSparseBlockMat&lt; value_type &gt;</a>
 </li>
-<li>CylindricalGrid()
-: <a class="el" href="structdg_1_1_cylindrical_grid.html#acdc9d71d2ddc8ce40b2698bc3c8a6f42">dg::CylindricalGrid&lt; container &gt;</a>
+<li>CooSparseBlockMatDevice()
+: <a class="el" href="structdg_1_1_coo_sparse_block_mat_device.html#a1eeaedee4a9051a4dfdcfa4725d00b77">dg::CooSparseBlockMatDevice&lt; value_type &gt;</a>
+</li>
+<li>CylindricalGrid3d()
+: <a class="el" href="structdg_1_1_cylindrical_grid3d.html#a00ef88a85b0001aedfcb29b714a99a5d">dg::CylindricalGrid3d&lt; container &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -241,7 +254,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

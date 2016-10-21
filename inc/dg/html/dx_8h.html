@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: /home/matthias/Projekte/feltor/inc/dg/backend/dx.h File Reference</title>
+<title>Discontinuous Galerkin Library: /home/matthias/feltor/inc/dg/backend/dx.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -137,7 +138,7 @@ $(document).ready(function(){initNavTree('dx_8h.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg.html">dg</a></td></tr>
-<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous galerkin solvers. <br /></td></tr>
+<tr class="memdesc:namespacedg"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the namespace for all functions and classes defined and used by the discontinuous Galerkin solvers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespacedg_1_1create"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1create.html">dg::create</a></td></tr>
 <tr class="memdesc:namespacedg_1_1create"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains functions used for matrix creation. <br /></td></tr>
@@ -160,18 +161,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5ee93488ca96c8f1052b121ec4a38d91"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga5ee93488ca96c8f1052b121ec4a38d91">dg::create::dx_normed</a> (int n, int N, double h, bc bcx, direction dir)</td></tr>
 <tr class="memdesc:ga5ee93488ca96c8f1052b121ec4a38d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for normed derivative in 1d.  <a href="group__lowlevel.html#ga5ee93488ca96c8f1052b121ec4a38d91">More...</a><br /></td></tr>
 <tr class="separator:ga5ee93488ca96c8f1052b121ec4a38d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6df57e6c6396c9b70403d1c14326c17"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gab6df57e6c6396c9b70403d1c14326c17">dg::create::dx</a> (const Grid1d&lt; double &gt; &amp;g, bc bcx, direction dir=centered)</td></tr>
-<tr class="memdesc:gab6df57e6c6396c9b70403d1c14326c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#gab6df57e6c6396c9b70403d1c14326c17">More...</a><br /></td></tr>
-<tr class="separator:gab6df57e6c6396c9b70403d1c14326c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3d1059e6b22cbb315f51773443e53be"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gad3d1059e6b22cbb315f51773443e53be">dg::create::dx</a> (const Grid1d&lt; double &gt; &amp;g, direction dir=centered)</td></tr>
-<tr class="memdesc:gad3d1059e6b22cbb315f51773443e53be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#gad3d1059e6b22cbb315f51773443e53be">More...</a><br /></td></tr>
-<tr class="separator:gad3d1059e6b22cbb315f51773443e53be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab416a71e0146228d18b0752d998f36e3"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gab416a71e0146228d18b0752d998f36e3">dg::create::jump</a> (const Grid1d&lt; double &gt; &amp;g, bc bcx)</td></tr>
-<tr class="memdesc:gab416a71e0146228d18b0752d998f36e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#gab416a71e0146228d18b0752d998f36e3">More...</a><br /></td></tr>
-<tr class="separator:gab416a71e0146228d18b0752d998f36e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c16f7bf9442a8f6ab0f8bed796324c8"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga6c16f7bf9442a8f6ab0f8bed796324c8">dg::create::jump</a> (const Grid1d&lt; double &gt; &amp;g)</td></tr>
-<tr class="memdesc:ga6c16f7bf9442a8f6ab0f8bed796324c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#ga6c16f7bf9442a8f6ab0f8bed796324c8">More...</a><br /></td></tr>
-<tr class="separator:ga6c16f7bf9442a8f6ab0f8bed796324c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13005bf319a5cbb7bf079b42e020516f"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga13005bf319a5cbb7bf079b42e020516f">dg::create::dx</a> (const Grid1d &amp;g, bc bcx, direction dir=centered)</td></tr>
+<tr class="memdesc:ga13005bf319a5cbb7bf079b42e020516f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#ga13005bf319a5cbb7bf079b42e020516f">More...</a><br /></td></tr>
+<tr class="separator:ga13005bf319a5cbb7bf079b42e020516f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac6604f74c2ef0859316f08a10cc6262"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaac6604f74c2ef0859316f08a10cc6262">dg::create::dx</a> (const Grid1d &amp;g, direction dir=centered)</td></tr>
+<tr class="memdesc:gaac6604f74c2ef0859316f08a10cc6262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the derivative in 1d.  <a href="group__lowlevel.html#gaac6604f74c2ef0859316f08a10cc6262">More...</a><br /></td></tr>
+<tr class="separator:gaac6604f74c2ef0859316f08a10cc6262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a69b3a693be7e45a3d0e603e32a5381"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#ga8a69b3a693be7e45a3d0e603e32a5381">dg::create::jump</a> (const Grid1d &amp;g, bc bcx)</td></tr>
+<tr class="memdesc:ga8a69b3a693be7e45a3d0e603e32a5381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#ga8a69b3a693be7e45a3d0e603e32a5381">More...</a><br /></td></tr>
+<tr class="separator:ga8a69b3a693be7e45a3d0e603e32a5381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf667bbc9294febc7895f845aa4de6103"><td class="memItemLeft" align="right" valign="top">EllSparseBlockMat&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lowlevel.html#gaf667bbc9294febc7895f845aa4de6103">dg::create::jump</a> (const Grid1d &amp;g)</td></tr>
+<tr class="memdesc:gaf667bbc9294febc7895f845aa4de6103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and assemble a host Matrix for the jump in 1d.  <a href="group__lowlevel.html#gaf667bbc9294febc7895f845aa4de6103">More...</a><br /></td></tr>
+<tr class="separator:gaf667bbc9294febc7895f845aa4de6103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple 1d derivatives </p>
@@ -181,7 +182,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="dir_2534fabef37d53a9be799c6b35cbe4e0.html">backend</a></li><li class="navelem"><a class="el" href="dx_8h.html">dx.h</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Discontinuous Galerkin Library: Geometric operations</title>
+<title>Discontinuous Galerkin Library: Geometric grids and operations</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -120,13 +121,21 @@ $(document).ready(function(){initNavTree('group__geometry.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#groups">Modules</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Geometric operations<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a> &raquo; <a class="el" href="group__blas.html">Basic Linear Algebra and Geometric Subprograms</a></div></div>  </div>
+<div class="title">Geometric grids and operations<div class="ingroups"><a class="el" href="group__geo.html">Topology and Geometry</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group__basicgrids"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__basicgrids.html">Basic grids</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__utilities"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilities.html">Fieldalignment and Averaging</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedg_1_1geo"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedg_1_1geo.html">dg::geo</a></td></tr>
@@ -147,6 +156,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga2094d6099dd7f84df9ba5caeeb77c13c">dg::geo::raisePerpIndex</a> (container &amp;covX, container &amp;covY, container &amp;contraX, container &amp;contraY, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises the index of a covariant vector in 2d.  <a href="group__geometry.html#ga2094d6099dd7f84df9ba5caeeb77c13c">More...</a><br /></td></tr>
 <tr class="separator:ga2094d6099dd7f84df9ba5caeeb77c13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memTemplParams" colspan="2">template&lt;class container , class Geometry &gt; </td></tr>
+<tr class="memitem:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga110d789fb36d1d0e9a58ae873da00ea4">dg::geo::volRaisePerpIndex</a> (container &amp;covX, container &amp;covY, container &amp;contraX, container &amp;contraY, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raises the index of a covariant vector in 2d and multiplies the perpendicular volume.  <a href="group__geometry.html#ga110d789fb36d1d0e9a58ae873da00ea4">More...</a><br /></td></tr>
+<tr class="separator:ga110d789fb36d1d0e9a58ae873da00ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga042c1df6b25c05ba35291380a8761ee0"><td class="memTemplParams" colspan="2">template&lt;class container , class Geometry &gt; </td></tr>
 <tr class="memitem:ga042c1df6b25c05ba35291380a8761ee0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga042c1df6b25c05ba35291380a8761ee0">dg::geo::multiplyPerpVolume</a> (container &amp;inout, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga042c1df6b25c05ba35291380a8761ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the two-dimensional volume element.  <a href="group__geometry.html#ga042c1df6b25c05ba35291380a8761ee0">More...</a><br /></td></tr>
@@ -155,10 +168,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga45a8674961cba99abfc21210c24800b4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga45a8674961cba99abfc21210c24800b4">dg::geo::dividePerpVolume</a> (container &amp;inout, const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga45a8674961cba99abfc21210c24800b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Divides the two-dimensional volume element.  <a href="group__geometry.html#ga45a8674961cba99abfc21210c24800b4">More...</a><br /></td></tr>
 <tr class="separator:ga45a8674961cba99abfc21210c24800b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memTemplParams" colspan="2">template&lt;class TernaryOp1 , class TernaryOp2 , class Geometry &gt; </td></tr>
-<tr class="memitem:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga3f30faec99c8e29c17d22e63d64ef8c0">dg::geo::pushForwardPerp</a> (TernaryOp1 vR, TernaryOp2 vZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vy, const Geometry &amp;g)</td></tr>
-<tr class="memdesc:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical to a new coordinate system.  <a href="group__geometry.html#ga3f30faec99c8e29c17d22e63d64ef8c0">More...</a><br /></td></tr>
-<tr class="separator:ga3f30faec99c8e29c17d22e63d64ef8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fab27b490e14bfdf659a153d10f7800"><td class="memTemplParams" colspan="2">template&lt;class Functor1 , class Functor2 , class Geometry &gt; </td></tr>
+<tr class="memitem:ga5fab27b490e14bfdf659a153d10f7800"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga5fab27b490e14bfdf659a153d10f7800">dg::geo::pushForwardPerp</a> (Functor1 vR, Functor2 vZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;vy, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga5fab27b490e14bfdf659a153d10f7800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a vector from cylindrical or Cartesian to a new coordinate system.  <a href="group__geometry.html#ga5fab27b490e14bfdf659a153d10f7800">More...</a><br /></td></tr>
+<tr class="separator:ga5fab27b490e14bfdf659a153d10f7800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada63086d574ca1963289b26bc5576226"><td class="memTemplParams" colspan="2">template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class Geometry &gt; </td></tr>
+<tr class="memitem:gada63086d574ca1963289b26bc5576226"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#gada63086d574ca1963289b26bc5576226">dg::geo::pushForwardPerp</a> (FunctorRR chiRR, FunctorRZ chiRZ, FunctorZZ chiZZ, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chixx, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chixy, typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;chiyy, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:gada63086d574ca1963289b26bc5576226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system.  <a href="group__geometry.html#gada63086d574ca1963289b26bc5576226">More...</a><br /></td></tr>
+<tr class="separator:gada63086d574ca1963289b26bc5576226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplParams" colspan="2">template&lt;class Geometry &gt; </td></tr>
 <tr class="memitem:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga1d9bd38a37e9beebdf4b4b43e46b8585">dg::create::volume</a> (const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga1d9bd38a37e9beebdf4b4b43e46b8585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the volume element on the grid (including weights!!)  <a href="group__geometry.html#ga1d9bd38a37e9beebdf4b4b43e46b8585">More...</a><br /></td></tr>
@@ -167,9 +184,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga44b9b10fbe5ae21f6f44448177e5e161">dg::create::inv_volume</a> (const Geometry &amp;g)</td></tr>
 <tr class="memdesc:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the inverse volume element on the grid (including weights!!)  <a href="group__geometry.html#ga44b9b10fbe5ae21f6f44448177e5e161">More...</a><br /></td></tr>
 <tr class="separator:ga44b9b10fbe5ae21f6f44448177e5e161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memTemplParams" colspan="2">template&lt;class Functor , class Geometry &gt; </td></tr>
+<tr class="memitem:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memTemplItemLeft" align="right" valign="top">HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__geometry.html#ga0e19e232c5e127f8d69a55d70686f6a9">dg::pullback</a> (Functor f, const Geometry &amp;g)</td></tr>
+<tr class="memdesc:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function pulls back a function defined in cartesian coordinates to the curvilinear coordinate system.  <a href="group__geometry.html#ga0e19e232c5e127f8d69a55d70686f6a9">More...</a><br /></td></tr>
+<tr class="separator:ga0e19e232c5e127f8d69a55d70686f6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>These routines form the heart of our geometry free numerical algorithms. They are called by our geometric operators like the arakawa bracket. </p>
+<p>These routines form the heart of our geometry free numerical algorithms. They are called by our geometric operators like the <a class="el" href="structdg_1_1_poisson.html" title="Poisson bracket scheme. ">Poisson</a> bracket. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ga45a8674961cba99abfc21210c24800b4"></a>
 <div class="memitem">
@@ -380,22 +401,67 @@ template&lt;class container , class Geometry &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga3f30faec99c8e29c17d22e63d64ef8c0"></a>
+<a class="anchor" id="ga0e19e232c5e127f8d69a55d70686f6a9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class TernaryOp1 , class TernaryOp2 , class Geometry &gt; </div>
+template&lt;class Functor , class Geometry &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HostVec&lt; typename GeometryTraits&lt;Geometry&gt;::memory_category&gt;::host_vector dg::pullback </td>
+          <td>(</td>
+          <td class="paramtype">Functor&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Geometry &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function pulls back a function defined in cartesian coordinates to the curvilinear coordinate system. </p>
+<p>i.e. F(x,y) = f(R(x,y), Z(x,y)) in 2d </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Functor</td><td>The (binary or ternary) function object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>The function defined in cartesian coordinates </td></tr>
+    <tr><td class="paramname">g</td><td>The grid </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Template deduction will fail if you overload functions with different dimensionality (e.g. double sine( double x) and double sine(double x, double y) ) You will want to rename those uniquely</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A set of points representing F </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5fab27b490e14bfdf659a153d10f7800"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Functor1 , class Functor2 , class Geometry &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void dg::geo::pushForwardPerp </td>
           <td>(</td>
-          <td class="paramtype">TernaryOp1&#160;</td>
+          <td class="paramtype">Functor1&#160;</td>
           <td class="paramname"><em>vR</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TernaryOp2&#160;</td>
+          <td class="paramtype">Functor2&#160;</td>
           <td class="paramname"><em>vZ</em>, </td>
         </tr>
         <tr>
@@ -424,7 +490,7 @@ template&lt;class TernaryOp1 , class TernaryOp2 , class Geometry &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Push forward a vector from cylindrical to a new coordinate system. </p>
+<p>Push forward a vector from cylindrical or Cartesian to a new coordinate system. </p>
 <p>Computes </p><p class="formulaDsp">
 \[ v^x(x,y) = x_R (x,y) v^R(R(x,y), Z(x,y)) + x_Z v^Z(R(x,y), Z(x,y)) \\ v^y(x,y) = y_R (x,y) v^R(R(x,y), Z(x,y)) + y_Z v^Z(R(x,y), Z(x,y)) \]
 </p>
@@ -440,6 +506,87 @@ template&lt;class TernaryOp1 , class TernaryOp2 , class Geometry &gt; </div>
     <tr><td class="paramname">vZ</td><td>input Z-component in cylindrical coordinates </td></tr>
     <tr><td class="paramname">vx</td><td>x-component of vector (gets properly resized) </td></tr>
     <tr><td class="paramname">vy</td><td>y-component of vector (gets properly resized) </td></tr>
+    <tr><td class="paramname">g</td><td>The geometry object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gada63086d574ca1963289b26bc5576226"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class FunctorRR , class FunctorRZ , class FunctorZZ , class Geometry &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::geo::pushForwardPerp </td>
+          <td>(</td>
+          <td class="paramtype">FunctorRR&#160;</td>
+          <td class="paramname"><em>chiRR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FunctorRZ&#160;</td>
+          <td class="paramname"><em>chiRZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FunctorZZ&#160;</td>
+          <td class="paramname"><em>chiZZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;&#160;</td>
+          <td class="paramname"><em>chixx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;&#160;</td>
+          <td class="paramname"><em>chixy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename HostVec&lt; typename GeometryTraits&lt; Geometry &gt;::memory_category &gt;::host_vector &amp;&#160;</td>
+          <td class="paramname"><em>chiyy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Geometry &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Push forward a symmetric 2d tensor from cylindrical or Cartesian to a new coordinate system. </p>
+<p>Computes </p><p class="formulaDsp">
+\[ \chi^{xx}(x,y) = x_R x_R \chi^{RR} + 2x_Rx_Z \chi^{RZ} + x_Zx_Z\chi^{ZZ} \\ \chi^{xy}(x,y) = x_R x_R \chi^{RR} + (x_Ry_Z+y_Rx_Z) \chi^{RZ} + x_Zx_Z\chi^{ZZ} \\ \chi^{yy}(x,y) = y_R y_R \chi^{RR} + 2y_Ry_Z \chi^{RZ} + y_Zy_Z\chi^{ZZ} \\ \]
+</p>
+<p> where \( x_R = \frac{\partial x}{\partial R}\), ... </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Geometry</td><td>The Geometry class </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chiRR</td><td>input RR-component in cylindrical coordinates </td></tr>
+    <tr><td class="paramname">chiRZ</td><td>input RZ-component in cylindrical coordinates </td></tr>
+    <tr><td class="paramname">chiZZ</td><td>input ZZ-component in cylindrical coordinates </td></tr>
+    <tr><td class="paramname">chixx</td><td>xx-component of tensor (gets properly resized) </td></tr>
+    <tr><td class="paramname">chixy</td><td>xy-component of tensor (gets properly resized) </td></tr>
+    <tr><td class="paramname">chiyy</td><td>yy-component of tensor (gets properly resized) </td></tr>
     <tr><td class="paramname">g</td><td>The geometry object </td></tr>
   </table>
   </dd>
@@ -513,6 +660,72 @@ template&lt;class container , class Geometry &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ga110d789fb36d1d0e9a58ae873da00ea4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class container , class Geometry &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dg::geo::volRaisePerpIndex </td>
+          <td>(</td>
+          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramname"><em>covX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramname"><em>covY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramname"><em>contraX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">container &amp;&#160;</td>
+          <td class="paramname"><em>contraY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Geometry &amp;&#160;</td>
+          <td class="paramname"><em>g</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raises the index of a covariant vector in 2d and multiplies the perpendicular volume. </p>
+<p>Computes \( v^i = \sqrt{g/g_{zz}} g^{ij}v_j\) for \( i,j\in \{1,2\}\) in the two dimensions of a 2x1 product space. This special form occurs in the discretization of elliptic operators which is why it get's a special function. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">container</td><td>the container class </td></tr>
+    <tr><td class="paramname">Geometry</td><td>the geometry class </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">covX</td><td>(input) covariant first component (may get destroyed!!) </td></tr>
+    <tr><td class="paramname">covY</td><td>(input) covariant second component (may get destroyed!!) </td></tr>
+    <tr><td class="paramname">contraX</td><td>(output) contravariant first component </td></tr>
+    <tr><td class="paramname">contraY</td><td>(output) contravariant second component </td></tr>
+    <tr><td class="paramname">g</td><td>The geometry object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>covX, covY, contraX and contraY may not be the same </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga1d9bd38a37e9beebdf4b4b43e46b8585"></a>
 <div class="memitem">
 <div class="memproto">
@@ -551,7 +764,7 @@ template&lt;class Geometry &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['arakawas_20scheme',['Arakawas scheme',['../../../../inc/dg/html/group__arakawa.html',1,'']]]
+  ['advanced_20numerical_20schemes',['Advanced numerical schemes',['../../../../inc/dg/html/group__numerical1.html',1,'']]]
 ];

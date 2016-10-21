@@ -8,19 +8,20 @@ var dir_cba352cc187f01702d3926d435723909 =
     [ "blas.h", "blas_8h.html", null ],
     [ "blas1.h", "blas1_8h.html", "blas1_8h" ],
     [ "blas2.h", "blas2_8h.html", "blas2_8h" ],
-    [ "cg.h", "cg_8h.html", [
-      [ "Inverse", "structdg_1_1_inverse.html", "structdg_1_1_inverse" ]
-    ] ],
+    [ "cg.h", "cg_8h.html", null ],
     [ "dg_doc.h", "dg__doc_8h_source.html", null ],
     [ "ds.h", "ds_8h.html", "ds_8h" ],
     [ "elliptic.h", "elliptic_8h.html", null ],
     [ "enums.h", "enums_8h.html", "enums_8h" ],
     [ "exceptions.h", "exceptions_8h.html", null ],
-    [ "functors.h", "functors_8h.html", "functors_8h" ],
+    [ "functors.h", "functors_8h.html", null ],
     [ "geometry.h", "geometry_8h.html", "geometry_8h" ],
     [ "helmholtz.h", "helmholtz_8h.html", null ],
     [ "multistep.h", "multistep_8h.html", null ],
     [ "nullstelle.h", "nullstelle_8h.html", "nullstelle_8h" ],
     [ "poisson.h", "poisson_8h.html", null ],
+    [ "refined_elliptic.h", "refined__elliptic_8h.html", [
+      [ "RefinedElliptic", "classdg_1_1_refined_elliptic.html", "classdg_1_1_refined_elliptic" ]
+    ] ],
     [ "runge_kutta.h", "runge__kutta_8h.html", "runge__kutta_8h" ]
 ];

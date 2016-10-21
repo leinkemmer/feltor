@@ -1,51 +1,31 @@
 var namespacesolovev =
 [
-    [ "boozer", null, [
-      [ "FieldRZY", "structsolovev_1_1boozer_1_1_field_r_z_y.html", "structsolovev_1_1boozer_1_1_field_r_z_y" ],
-      [ "FieldRZYRYZY", "structsolovev_1_1boozer_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1boozer_1_1_field_r_z_y_r_y_z_y" ],
-      [ "FieldRZYT", "structsolovev_1_1boozer_1_1_field_r_z_y_t.html", "structsolovev_1_1boozer_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1boozer_1_1_field_r_z_y_z.html", "structsolovev_1_1boozer_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1boozer_1_1_field_y.html", "structsolovev_1_1boozer_1_1_field_y" ]
-    ] ],
-    [ "conformal", null, [
-      [ "FieldRZY", "structsolovev_1_1conformal_1_1_field_r_z_y.html", "structsolovev_1_1conformal_1_1_field_r_z_y" ],
-      [ "FieldRZYRYZY", "structsolovev_1_1conformal_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1conformal_1_1_field_r_z_y_r_y_z_y" ],
-      [ "FieldRZYT", "structsolovev_1_1conformal_1_1_field_r_z_y_t.html", "structsolovev_1_1conformal_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1conformal_1_1_field_r_z_y_z.html", "structsolovev_1_1conformal_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1conformal_1_1_field_y.html", "structsolovev_1_1conformal_1_1_field_y" ]
-    ] ],
     [ "equalarc", null, [
       [ "FieldRZY", "structsolovev_1_1equalarc_1_1_field_r_z_y.html", "structsolovev_1_1equalarc_1_1_field_r_z_y" ],
       [ "FieldRZYRYZY", "structsolovev_1_1equalarc_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1equalarc_1_1_field_r_z_y_r_y_z_y" ],
       [ "FieldRZYT", "structsolovev_1_1equalarc_1_1_field_r_z_y_t.html", "structsolovev_1_1equalarc_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1equalarc_1_1_field_r_z_y_z.html", "structsolovev_1_1equalarc_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1equalarc_1_1_field_y.html", "structsolovev_1_1equalarc_1_1_field_y" ]
+      [ "FieldRZYZ", "structsolovev_1_1equalarc_1_1_field_r_z_y_z.html", "structsolovev_1_1equalarc_1_1_field_r_z_y_z" ]
     ] ],
     [ "flux", null, [
       [ "FieldRZY", "structsolovev_1_1flux_1_1_field_r_z_y.html", "structsolovev_1_1flux_1_1_field_r_z_y" ],
       [ "FieldRZYRYZY", "structsolovev_1_1flux_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1flux_1_1_field_r_z_y_r_y_z_y" ],
       [ "FieldRZYT", "structsolovev_1_1flux_1_1_field_r_z_y_t.html", "structsolovev_1_1flux_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1flux_1_1_field_r_z_y_z.html", "structsolovev_1_1flux_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1flux_1_1_field_y.html", "structsolovev_1_1flux_1_1_field_y" ]
+      [ "FieldRZYZ", "structsolovev_1_1flux_1_1_field_r_z_y_z.html", "structsolovev_1_1flux_1_1_field_r_z_y_z" ]
     ] ],
-    [ "flux2", null, [
-      [ "FieldRZY", "structsolovev_1_1flux2_1_1_field_r_z_y.html", "structsolovev_1_1flux2_1_1_field_r_z_y" ],
-      [ "FieldRZYRYZY", "structsolovev_1_1flux2_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1flux2_1_1_field_r_z_y_r_y_z_y" ],
-      [ "FieldRZYT", "structsolovev_1_1flux2_1_1_field_r_z_y_t.html", "structsolovev_1_1flux2_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1flux2_1_1_field_r_z_y_z.html", "structsolovev_1_1flux2_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1flux2_1_1_field_y.html", "structsolovev_1_1flux2_1_1_field_y" ]
+    [ "mod", null, [
+      [ "LaplacePsip", "structsolovev_1_1mod_1_1_laplace_psip.html", "structsolovev_1_1mod_1_1_laplace_psip" ],
+      [ "Psip", "structsolovev_1_1mod_1_1_psip.html", "structsolovev_1_1mod_1_1_psip" ],
+      [ "PsipR", "structsolovev_1_1mod_1_1_psip_r.html", "structsolovev_1_1mod_1_1_psip_r" ],
+      [ "PsipRR", "structsolovev_1_1mod_1_1_psip_r_r.html", "structsolovev_1_1mod_1_1_psip_r_r" ],
+      [ "PsipRZ", "structsolovev_1_1mod_1_1_psip_r_z.html", "structsolovev_1_1mod_1_1_psip_r_z" ],
+      [ "PsipZ", "structsolovev_1_1mod_1_1_psip_z.html", "structsolovev_1_1mod_1_1_psip_z" ],
+      [ "PsipZZ", "structsolovev_1_1mod_1_1_psip_z_z.html", "structsolovev_1_1mod_1_1_psip_z_z" ]
     ] ],
-    [ "hamada", null, [
-      [ "FieldRZY", "structsolovev_1_1hamada_1_1_field_r_z_y.html", "structsolovev_1_1hamada_1_1_field_r_z_y" ],
-      [ "FieldRZYRYZY", "structsolovev_1_1hamada_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1hamada_1_1_field_r_z_y_r_y_z_y" ],
-      [ "FieldRZYT", "structsolovev_1_1hamada_1_1_field_r_z_y_t.html", "structsolovev_1_1hamada_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1hamada_1_1_field_r_z_y_z.html", "structsolovev_1_1hamada_1_1_field_r_z_y_z" ],
-      [ "FieldY", "structsolovev_1_1hamada_1_1_field_y.html", "structsolovev_1_1hamada_1_1_field_y" ]
-    ] ],
-    [ "orthogonal", null, [
-      [ "FieldRZY", "structsolovev_1_1orthogonal_1_1_field_r_z_y.html", "structsolovev_1_1orthogonal_1_1_field_r_z_y" ],
-      [ "FieldRZYT", "structsolovev_1_1orthogonal_1_1_field_r_z_y_t.html", "structsolovev_1_1orthogonal_1_1_field_r_z_y_t" ],
-      [ "FieldRZYZ", "structsolovev_1_1orthogonal_1_1_field_r_z_y_z.html", "structsolovev_1_1orthogonal_1_1_field_r_z_y_z" ]
+    [ "ribeiro", null, [
+      [ "FieldRZY", "structsolovev_1_1ribeiro_1_1_field_r_z_y.html", "structsolovev_1_1ribeiro_1_1_field_r_z_y" ],
+      [ "FieldRZYRYZY", "structsolovev_1_1ribeiro_1_1_field_r_z_y_r_y_z_y.html", "structsolovev_1_1ribeiro_1_1_field_r_z_y_r_y_z_y" ],
+      [ "FieldRZYT", "structsolovev_1_1ribeiro_1_1_field_r_z_y_t.html", "structsolovev_1_1ribeiro_1_1_field_r_z_y_t" ],
+      [ "FieldRZYZ", "structsolovev_1_1ribeiro_1_1_field_r_z_y_z.html", "structsolovev_1_1ribeiro_1_1_field_r_z_y_z" ]
     ] ],
     [ "Alpha", "structsolovev_1_1_alpha.html", "structsolovev_1_1_alpha" ],
     [ "BHatP", "structsolovev_1_1_b_hat_p.html", "structsolovev_1_1_b_hat_p" ],
@@ -55,21 +35,24 @@ var namespacesolovev =
     [ "Bmodule", "structsolovev_1_1_bmodule.html", "structsolovev_1_1_bmodule" ],
     [ "BR", "structsolovev_1_1_b_r.html", "structsolovev_1_1_b_r" ],
     [ "BZ", "structsolovev_1_1_b_z.html", "structsolovev_1_1_b_z" ],
-    [ "CurvatureR", "structsolovev_1_1_curvature_r.html", "structsolovev_1_1_curvature_r" ],
-    [ "CurvatureZ", "structsolovev_1_1_curvature_z.html", "structsolovev_1_1_curvature_z" ],
+    [ "CollectivePsip", "structsolovev_1_1_collective_psip.html", "structsolovev_1_1_collective_psip" ],
+    [ "CurvatureKappaR", "structsolovev_1_1_curvature_kappa_r.html", "structsolovev_1_1_curvature_kappa_r" ],
+    [ "CurvatureKappaZ", "structsolovev_1_1_curvature_kappa_z.html", "structsolovev_1_1_curvature_kappa_z" ],
+    [ "CurvatureNablaBR", "structsolovev_1_1_curvature_nabla_b_r.html", "structsolovev_1_1_curvature_nabla_b_r" ],
+    [ "CurvatureNablaBZ", "structsolovev_1_1_curvature_nabla_b_z.html", "structsolovev_1_1_curvature_nabla_b_z" ],
     [ "DeltaFunction", "structsolovev_1_1_delta_function.html", "structsolovev_1_1_delta_function" ],
     [ "DeriNeu", "structsolovev_1_1_deri_neu.html", "structsolovev_1_1_deri_neu" ],
     [ "DeriTestFunction", "structsolovev_1_1_deri_test_function.html", "structsolovev_1_1_deri_test_function" ],
+    [ "DivCurvatureKappa", "structsolovev_1_1_div_curvature_kappa.html", "structsolovev_1_1_div_curvature_kappa" ],
     [ "EllipticDirNeuM", "structsolovev_1_1_elliptic_dir_neu_m.html", "structsolovev_1_1_elliptic_dir_neu_m" ],
     [ "EllipticDirPerM", "structsolovev_1_1_elliptic_dir_per_m.html", "structsolovev_1_1_elliptic_dir_per_m" ],
+    [ "EllipticDirSimpleM", "structsolovev_1_1_elliptic_dir_simple_m.html", "structsolovev_1_1_elliptic_dir_simple_m" ],
     [ "Field", "structsolovev_1_1_field.html", "structsolovev_1_1_field" ],
     [ "FieldP", "structsolovev_1_1_field_p.html", "structsolovev_1_1_field_p" ],
     [ "FieldR", "structsolovev_1_1_field_r.html", "structsolovev_1_1_field_r" ],
-    [ "FieldRZ", "structsolovev_1_1_field_r_z.html", "structsolovev_1_1_field_r_z" ],
     [ "FieldRZtau", "structsolovev_1_1_field_r_ztau.html", "structsolovev_1_1_field_r_ztau" ],
     [ "FieldT", "structsolovev_1_1_field_t.html", "structsolovev_1_1_field_t" ],
     [ "FieldZ", "structsolovev_1_1_field_z.html", "structsolovev_1_1_field_z" ],
-    [ "FieldZR", "structsolovev_1_1_field_z_r.html", "structsolovev_1_1_field_z_r" ],
     [ "FluxSurfaceAverage", "structsolovev_1_1_flux_surface_average.html", "structsolovev_1_1_flux_surface_average" ],
     [ "FuncDirNeu", "structsolovev_1_1_func_dir_neu.html", "structsolovev_1_1_func_dir_neu" ],
     [ "FuncDirPer", "structsolovev_1_1_func_dir_per.html", "structsolovev_1_1_func_dir_per" ],
@@ -85,6 +68,7 @@ var namespacesolovev =
     [ "IpolR", "structsolovev_1_1_ipol_r.html", "structsolovev_1_1_ipol_r" ],
     [ "IpolZ", "structsolovev_1_1_ipol_z.html", "structsolovev_1_1_ipol_z" ],
     [ "Iris", "structsolovev_1_1_iris.html", "structsolovev_1_1_iris" ],
+    [ "LaplacePsip", "structsolovev_1_1_laplace_psip.html", "structsolovev_1_1_laplace_psip" ],
     [ "LnB", "structsolovev_1_1_ln_b.html", "structsolovev_1_1_ln_b" ],
     [ "MinimalCurve", "structsolovev_1_1_minimal_curve.html", "structsolovev_1_1_minimal_curve" ],
     [ "Nprofile", "structsolovev_1_1_nprofile.html", "structsolovev_1_1_nprofile" ],

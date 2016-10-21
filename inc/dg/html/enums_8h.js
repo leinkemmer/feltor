@@ -16,9 +16,6 @@ var enums_8h =
       [ "normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a3f222a3e51d054ebe21228c62569e123", null ],
       [ "not_normed", "enums_8h.html#gga9945b71a335bc97f78dc7425911c7287a07217e3dd9be28b4da85d46fef38f066", null ]
     ] ],
-    [ "system", "enums_8h.html#ga75789d2c36dff2caed4b3bb80191b346", [
-      [ "cartesian", "enums_8h.html#gga75789d2c36dff2caed4b3bb80191b346a49a654c38e355ec847e55f927511019d", null ],
-      [ "cylindrical", "enums_8h.html#gga75789d2c36dff2caed4b3bb80191b346a6962eb4bbef38ebabc41458844991bfd", null ]
-    ] ],
+    [ "display_bc", "enums_8h.html#a140b60e3c0ccbf703e385cf223d24bda", null ],
     [ "str2bc", "enums_8h.html#a7b085d8c8fe7084a653bf69956cf200a", null ]
 ];

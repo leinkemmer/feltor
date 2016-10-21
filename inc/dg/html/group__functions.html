@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -67,6 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
@@ -123,7 +124,7 @@ $(document).ready(function(){initNavTree('group__functions.html','');});
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Functions and Functors<div class="ingroups"><a class="el" href="group___d_g.html">The Discontinuous Galerkin library</a></div></div>  </div>
+<div class="title">Functions and Functors<div class="ingroups"><a class="el" href="group__geo.html">Topology and Geometry</a> &raquo; <a class="el" href="group__grid.html">Topological grids and operations</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -146,6 +147,12 @@ Classes</h2></td></tr>
 \[ f(x,y) = Ae^{-\left(\frac{(x-x_0)^2}{2\sigma_x^2} + \frac{(y-y_0)^2}{2\sigma_y^2}\right)} \]
 </p>
 <p>.  <a href="structdg_1_1_gaussian.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_cauchy.html">dg::Cauchy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A blob that drops to zero </p><p class="formulaDsp">
+\[ f(x,y) = Ae^{1 + \left(\frac{(x-x_0)^2}{\sigma_x^2} + \frac{(y-y_0)^2}{\sigma_y^2} - \right)^{-1}} \]
+</p>
+<p>.  <a href="structdg_1_1_cauchy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_gaussian3d.html">dg::Gaussian3d</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The 3d gaussian </p><p class="formulaDsp">
@@ -243,6 +250,12 @@ Classes</h2></td></tr>
 </p>
 <p>.  <a href="structdg_1_1_p_l_u_s.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_i_n_v_e_r_t.html">dg::INVERT&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structdg_1_1_invert.html" title="Smart conjugate gradient solver. ">Invert</a> the given value </p><p class="formulaDsp">
+\[ f(x) = 1/x \]
+</p>
+<p>.  <a href="structdg_1_1_i_n_v_e_r_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_m_o_d.html">dg::MOD&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns (positive) modulo </p><p class="formulaDsp">
 \[ f(x) = x\mod m\]
@@ -266,6 +279,18 @@ Classes</h2></td></tr>
 \[ f(x) = c\]
 </p>
 <p>.  <a href="structdg_1_1_c_o_n_s_t_a_n_t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_o_n_e.html">dg::ONE</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return one </p><p class="formulaDsp">
+\[ f(x) = 1\]
+</p>
+<p>.  <a href="structdg_1_1_o_n_e.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_z_e_r_o.html">dg::ZERO</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return zero </p><p class="formulaDsp">
+\[ f(x) = 0\]
+</p>
+<p>.  <a href="structdg_1_1_z_e_r_o.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdg_1_1_histogram.html">dg::Histogram&lt; container &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a histogram on a 1D grid.  <a href="structdg_1_1_histogram.html#details">More...</a><br /></td></tr>
@@ -312,136 +337,52 @@ Functions</h2></td></tr>
 </p>
   <a href="group__functions.html#gafe8af9f57dfc455b23e054f107acd28d">More...</a><br /></td></tr>
 <tr class="separator:gafe8af9f57dfc455b23e054f107acd28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59b5a3c6ae442e096d03c937e43cb30a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga59b5a3c6ae442e096d03c937e43cb30a">dg::coo1</a> (double x)</td></tr>
-<tr class="memdesc:ga59b5a3c6ae442e096d03c937e43cb30a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+<tr class="memitem:ga585f4aa011369c015dd68cade3d17d51"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga585f4aa011369c015dd68cade3d17d51">dg::cooX1d</a> (double x)</td></tr>
+<tr class="memdesc:ga585f4aa011369c015dd68cade3d17d51"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x) = x\]
 </p>
-  <a href="group__functions.html#ga59b5a3c6ae442e096d03c937e43cb30a">More...</a><br /></td></tr>
-<tr class="separator:ga59b5a3c6ae442e096d03c937e43cb30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2a696c36a0e02b0b2ddc7d24e47e5c9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gab2a696c36a0e02b0b2ddc7d24e47e5c9">dg::coo1</a> (double x, double y)</td></tr>
-<tr class="memdesc:gab2a696c36a0e02b0b2ddc7d24e47e5c9"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+  <a href="group__functions.html#ga585f4aa011369c015dd68cade3d17d51">More...</a><br /></td></tr>
+<tr class="separator:ga585f4aa011369c015dd68cade3d17d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57832a7433f639967c88dba28c86a39c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga57832a7433f639967c88dba28c86a39c">dg::cooX2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:ga57832a7433f639967c88dba28c86a39c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x,y) = x\]
 </p>
-  <a href="group__functions.html#gab2a696c36a0e02b0b2ddc7d24e47e5c9">More...</a><br /></td></tr>
-<tr class="separator:gab2a696c36a0e02b0b2ddc7d24e47e5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9b55ef9761fe4771b708e7b4f543e24"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gab9b55ef9761fe4771b708e7b4f543e24">dg::coo1</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:gab9b55ef9761fe4771b708e7b4f543e24"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+  <a href="group__functions.html#ga57832a7433f639967c88dba28c86a39c">More...</a><br /></td></tr>
+<tr class="separator:ga57832a7433f639967c88dba28c86a39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3391865c980e362f471162a65dd66e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gaf3391865c980e362f471162a65dd66e0">dg::cooX3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gaf3391865c980e362f471162a65dd66e0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x,y,z) = x\]
 </p>
-  <a href="group__functions.html#gab9b55ef9761fe4771b708e7b4f543e24">More...</a><br /></td></tr>
-<tr class="separator:gab9b55ef9761fe4771b708e7b4f543e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66ec91cd05d75e09896a0198737d05c1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga66ec91cd05d75e09896a0198737d05c1">dg::coo2</a> (double x, double y)</td></tr>
-<tr class="memdesc:ga66ec91cd05d75e09896a0198737d05c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+  <a href="group__functions.html#gaf3391865c980e362f471162a65dd66e0">More...</a><br /></td></tr>
+<tr class="separator:gaf3391865c980e362f471162a65dd66e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c4b9a55a5b8f8cd183a18d4303b63e3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga4c4b9a55a5b8f8cd183a18d4303b63e3">dg::cooY2d</a> (double x, double y)</td></tr>
+<tr class="memdesc:ga4c4b9a55a5b8f8cd183a18d4303b63e3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x,y) = y\]
 </p>
-  <a href="group__functions.html#ga66ec91cd05d75e09896a0198737d05c1">More...</a><br /></td></tr>
-<tr class="separator:ga66ec91cd05d75e09896a0198737d05c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2761f13261f98b9080c3d41330f91e74"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga2761f13261f98b9080c3d41330f91e74">dg::coo2</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:ga2761f13261f98b9080c3d41330f91e74"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+  <a href="group__functions.html#ga4c4b9a55a5b8f8cd183a18d4303b63e3">More...</a><br /></td></tr>
+<tr class="separator:ga4c4b9a55a5b8f8cd183a18d4303b63e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ea2f36bd92fca22e8547317dd10c201"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga7ea2f36bd92fca22e8547317dd10c201">dg::cooY3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:ga7ea2f36bd92fca22e8547317dd10c201"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x,y,z) = y\]
 </p>
-  <a href="group__functions.html#ga2761f13261f98b9080c3d41330f91e74">More...</a><br /></td></tr>
-<tr class="separator:ga2761f13261f98b9080c3d41330f91e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac71c7be4a51ce1589f13fe8a803af81f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gac71c7be4a51ce1589f13fe8a803af81f">dg::coo3</a> (double x, double y, double z)</td></tr>
-<tr class="memdesc:gac71c7be4a51ce1589f13fe8a803af81f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+  <a href="group__functions.html#ga7ea2f36bd92fca22e8547317dd10c201">More...</a><br /></td></tr>
+<tr class="separator:ga7ea2f36bd92fca22e8547317dd10c201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8de69a16789a98d51e454a487b4bf50"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#gac8de69a16789a98d51e454a487b4bf50">dg::cooZ3d</a> (double x, double y, double z)</td></tr>
+<tr class="memdesc:gac8de69a16789a98d51e454a487b4bf50"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ f(x,y,z) = z\]
 </p>
-  <a href="group__functions.html#gac71c7be4a51ce1589f13fe8a803af81f">More...</a><br /></td></tr>
-<tr class="separator:gac71c7be4a51ce1589f13fe8a803af81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31e93254b91f287daf4ca4756fb32385"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga31e93254b91f287daf4ca4756fb32385">dg::bessj1</a> (double x)</td></tr>
-<tr class="memdesc:ga31e93254b91f287daf4ca4756fb32385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Bessel function \( J_1(x)\) for any real x.  <a href="group__functions.html#ga31e93254b91f287daf4ca4756fb32385">More...</a><br /></td></tr>
-<tr class="separator:ga31e93254b91f287daf4ca4756fb32385"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga8f29ee46cf5603af9cabd93163cf98cc">dg::bessi1</a> (double x)</td></tr>
-<tr class="memdesc:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modified Bessel function \( I_1(x)\) for any real x.  <a href="group__functions.html#ga8f29ee46cf5603af9cabd93163cf98cc">More...</a><br /></td></tr>
-<tr class="separator:ga8f29ee46cf5603af9cabd93163cf98cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">dg::bessk1</a> (double x)</td></tr>
-<tr class="memdesc:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the modified Bessel function \( K_1(x)\) for positive real x.  <a href="group__functions.html#ga43e254f13fa144c646b2e509bcd5d1d1">More...</a><br /></td></tr>
-<tr class="separator:ga43e254f13fa144c646b2e509bcd5d1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+  <a href="group__functions.html#gac8de69a16789a98d51e454a487b4bf50">More...</a><br /></td></tr>
+<tr class="separator:gac8de69a16789a98d51e454a487b4bf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The functions are useful mainly in the constructor of <a class="el" href="classdg_1_1_operator.html" title="Helper class mainly for the assembly of Matrices. ">Operator</a> objects. The functors are useful for either vector transformations or as init functions in the evaluate routines. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga8f29ee46cf5603af9cabd93163cf98cc"></a>
+<a class="anchor" id="ga585f4aa011369c015dd68cade3d17d51"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::bessi1 </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the modified Bessel function \( I_1(x)\) for any real x. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>I_1(x) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga31e93254b91f287daf4ca4756fb32385"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double dg::bessj1 </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the Bessel function \( J_1(x)\) for any real x. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>x-value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>J_1(x) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga43e254f13fa144c646b2e509bcd5d1d1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double dg::bessk1 </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the modified Bessel function \( K_1(x)\) for positive real x. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>x-value</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>K_1(x) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga59b5a3c6ae442e096d03c937e43cb30a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double dg::coo1 </td>
+          <td class="memname">double dg::cooX1d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em></td><td>)</td>
@@ -464,12 +405,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab2a696c36a0e02b0b2ddc7d24e47e5c9"></a>
+<a class="anchor" id="ga57832a7433f639967c88dba28c86a39c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::coo1 </td>
+          <td class="memname">double dg::cooX2d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -503,12 +444,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab9b55ef9761fe4771b708e7b4f543e24"></a>
+<a class="anchor" id="gaf3391865c980e362f471162a65dd66e0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::coo1 </td>
+          <td class="memname">double dg::cooX3d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -549,12 +490,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga66ec91cd05d75e09896a0198737d05c1"></a>
+<a class="anchor" id="ga4c4b9a55a5b8f8cd183a18d4303b63e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::coo2 </td>
+          <td class="memname">double dg::cooY2d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -588,12 +529,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2761f13261f98b9080c3d41330f91e74"></a>
+<a class="anchor" id="ga7ea2f36bd92fca22e8547317dd10c201"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::coo2 </td>
+          <td class="memname">double dg::cooY3d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -634,12 +575,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac71c7be4a51ce1589f13fe8a803af81f"></a>
+<a class="anchor" id="gac8de69a16789a98d51e454a487b4bf50"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double dg::coo3 </td>
+          <td class="memname">double dg::cooZ3d </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>x</em>, </td>
@@ -959,7 +900,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:44 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

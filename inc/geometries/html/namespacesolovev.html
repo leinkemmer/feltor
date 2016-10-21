@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Solovev: solovev Namespace Reference</title>
+<title>Geometry: solovev Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -50,10 +50,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Solovev
+   <div id="projectname">Geometry
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">field line geometry</div>
+   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -92,6 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="namespacemembers.html"><span>Namespace&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -131,7 +132,7 @@ $(document).ready(function(){initNavTree('namespacesolovev.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>This is the namespace for all functions and objects for the geometry.  
+<p>This is the namespace for a solvev magnetic flux.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -171,17 +172,31 @@ Classes</h2></td></tr>
 </p>
   <a href="structsolovev_1_1_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_r.html">CurvatureR</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{R}} \]
-</p>
-  <a href="structsolovev_1_1_curvature_r.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_collective_psip.html">CollectivePsip</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_z.html">CurvatureZ</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_kappa_r.html">CurvatureKappaR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
-\[ \mathcal{\hat{K}}^{\hat{Z}} \]
+\[ \mathcal{\hat{K}}^{\hat{R}}_{\vec{\kappa}} \]
 </p>
-  <a href="structsolovev_1_1_curvature_z.html#details">More...</a><br /></td></tr>
+  <a href="structsolovev_1_1_curvature_kappa_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_kappa_z.html">CurvatureKappaZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \mathcal{\hat{K}}^{\hat{Z}}_{\vec{\kappa}} \]
+</p>
+  <a href="structsolovev_1_1_curvature_kappa_z.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_nabla_b_r.html">CurvatureNablaBR</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \mathcal{\hat{K}}^{\hat{R}}_{\nabla B} \]
+</p>
+  <a href="structsolovev_1_1_curvature_nabla_b_r.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_curvature_nabla_b_z.html">CurvatureNablaBZ</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \mathcal{\hat{K}}^{\hat{Z}}_{\nabla B} \]
+</p>
+  <a href="structsolovev_1_1_curvature_nabla_b_z.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_delta_function.html">DeltaFunction</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delta function for poloidal flux \( B_Z\) </p><p class="formulaDsp">
@@ -197,9 +212,17 @@ Classes</h2></td></tr>
 </p>
   <a href="structsolovev_1_1_deri_test_function.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_div_curvature_kappa.html">DivCurvatureKappa</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
+\[ \vec{\hat{\nabla}}\cdot \mathcal{\hat{K}}_{\vec{\kappa}} \]
+</p>
+  <a href="structsolovev_1_1_div_curvature_kappa.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_elliptic_dir_neu_m.html">EllipticDirNeuM</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_elliptic_dir_per_m.html">EllipticDirPerM</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_elliptic_dir_simple_m.html">EllipticDirSimpleM</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field.html">Field</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integrates the equations for a field line and 1/B.  <a href="structsolovev_1_1_field.html#details">More...</a><br /></td></tr>
@@ -210,8 +233,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r.html">FieldR</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">R component of magnetic field \( B_R\).  <a href="structsolovev_1_1_field_r.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r_z.html">FieldRZ</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_r_ztau.html">FieldRZtau</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_t.html">FieldT</a></td></tr>
@@ -219,8 +240,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_z.html">FieldZ</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Z component of magnetic field \( B_Z\).  <a href="structsolovev_1_1_field_z.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field_z_r.html">FieldZR</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_flux_surface_average.html">FluxSurfaceAverage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flux surface average over quantity.  <a href="structsolovev_1_1_flux_surface_average.html#details">More...</a><br /></td></tr>
@@ -281,6 +300,8 @@ Classes</h2></td></tr>
 \[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
 </p>
 <p>.  <a href="structsolovev_1_1_iris.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_laplace_psip.html">LaplacePsip</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_ln_b.html">LnB</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
@@ -376,14 +397,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This is the namespace for all functions and objects for the geometry. </p>
+<div class="textblock"><p>This is the namespace for a solvev magnetic flux. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:46 for Solovev by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:14 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

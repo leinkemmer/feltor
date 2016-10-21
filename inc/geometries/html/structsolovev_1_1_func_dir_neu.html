@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Solovev: solovev::FuncDirNeu Struct Reference</title>
+<title>Geometry: solovev::FuncDirNeu Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
     <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
     <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
     <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">GEOMETRY lib</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
     <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
     <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
@@ -50,10 +50,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Solovev
+   <div id="projectname">Geometry
    &#160;<span id="projectnumber">3.0</span>
    </div>
-   <div id="projectbrief">field line geometry</div>
+   <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
  </tr>
  </tbody>
@@ -137,12 +137,15 @@ $(document).ready(function(){initNavTree('structsolovev_1_1_func_dir_neu.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5e96c9e475214919db16fca0091da5ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e96c9e475214919db16fca0091da5ef"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>FuncDirNeu</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">GeomParameters</a> gp, double psi_0, double psi_1)</td></tr>
-<tr class="separator:a5e96c9e475214919db16fca0091da5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60b7c41450a8956cbbaeddbbd599c673"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60b7c41450a8956cbbaeddbbd599c673"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>FuncDirNeu</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">GeomParameters</a> gp, double psi_0, double psi_1, double R_blob, double Z_blob, double sigma_blob, double amp_blob)</td></tr>
+<tr class="separator:a60b7c41450a8956cbbaeddbbd599c673"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f22118085f80e5c7573c9d7815643f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f22118085f80e5c7573c9d7815643f8"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (double R, double Z, double phi) const </td></tr>
 <tr class="separator:a8f22118085f80e5c7573c9d7815643f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a73f89c6daf220afed9cc2e9d45565"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64a73f89c6daf220afed9cc2e9d45565"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (double R, double Z) const </td></tr>
+<tr class="separator:a64a73f89c6daf220afed9cc2e9d45565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e29eb229bd720d9b621117c10a1965"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57e29eb229bd720d9b621117c10a1965"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>dR</b> (double R, double Z) const </td></tr>
 <tr class="separator:a57e29eb229bd720d9b621117c10a1965"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +160,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>dZZ</b> (double R, 
 <tr class="separator:ad14d474dd4f78e7986adb1b62020d776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/matthias/Projekte/feltor/inc/geometries/<a class="el" href="fields_8h_source.html">fields.h</a></li>
+<li>/home/matthias/feltor/inc/geometries/<a class="el" href="fields_8h_source.html">fields.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -165,7 +168,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>dZZ</b> (double R, 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><a class="el" href="structsolovev_1_1_func_dir_neu.html">FuncDirNeu</a></li>
-    <li class="footer">Generated on Thu Jun 23 2016 12:05:46 for Solovev by
+    <li class="footer">Generated on Fri Oct 21 2016 17:52:14 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
