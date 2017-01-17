@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['r_5f0',['R_0',['../group__geom.html#ga04042807c96e6c40e0ecda5fa494423b',1,'solovev::GeomParameters']]],
-  ['rk4eps',['rk4eps',['../group__geom.html#ga6447257304ba1dec05d84d1f27efdc41',1,'solovev::GeomParameters']]]
+  ['forward',['forward',['../../../../inc/dg/html/group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2',1,'dg::forward()'],['../../../../inc/dg/html/group__creation.html#ggabf9ea3df33484cbb5886e257c3899e48a573a4a72e7f55df92b88c254a13762f2',1,'forward()(Global Namespace)']]]
 ];

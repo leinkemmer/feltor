@@ -36,14 +36,14 @@
 <div id="titlearea">
     <!--My own title area-->
   <ul class="tablist"> 
-      <li><a href="../../../index.html">/</a><li>
-    <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
-    <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
-    <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
-    <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
+      <!-- <li><a href="../../../index.html">/</a><li>-->
+    <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
+    <li><a href="../../../inc/file/html/index.html">file</a></li>
+    <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
-    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
+    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -51,7 +51,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -188,8 +187,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>set_chi()
 : <a class="el" href="classdg_1_1_elliptic.html#abe14e6a277addc6bec7022218a7500d9">dg::Elliptic&lt; Geometry, Matrix, Vector &gt;</a>
-, <a class="el" href="group__matrixoperators.html#ga0fc587749c003360eab032cec506237e">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
-, <a class="el" href="group__matrixoperators.html#gaf45fae77c7bdf38af02016d1b7b1e921">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a0fc587749c003360eab032cec506237e">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#af45fae77c7bdf38af02016d1b7b1e921">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="classdg_1_1_refined_elliptic.html#a96b50f83b9127cf4ea0ee97323f7b4a7">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
 </li>
 <li>set_coords()
@@ -266,8 +265,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="structdg_1_1_ell_sparse_block_mat_device.html#a0cff38341994bbe0ccea72549188f115">dg::EllSparseBlockMatDevice&lt; value_type &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic.html#ab6ee7470bdae91dce095f9eec1626ca1">dg::GeneralElliptic&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_general_elliptic_sym.html#a024e00907d37657b9d346bb29dc22ee2">dg::GeneralEllipticSym&lt; Geometry, Matrix, Vector &gt;</a>
-, <a class="el" href="group__matrixoperators.html#ga977f526daa90a2c04ff298838a88fbd0">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
-, <a class="el" href="group__matrixoperators.html#ga0bea530c607a7713e619b9641fc946a0">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz2.html#a977f526daa90a2c04ff298838a88fbd0">dg::Helmholtz2&lt; Geometry, Matrix, Vector &gt;</a>
+, <a class="el" href="structdg_1_1_helmholtz.html#a0bea530c607a7713e619b9641fc946a0">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_inverse.html#affc00be4ba357dcfae683ad79c8c6b02">dg::Inverse&lt; SymmetricOp, container &gt;</a>
 , <a class="el" href="classdg_1_1_refined_elliptic.html#a5187aeb38331f0773ddbee453ae184d1">dg::RefinedElliptic&lt; Geometry, IMatrix, Matrix, Vector &gt;</a>
 , <a class="el" href="structdg_1_1_row_col_dist_mat.html#a69be149644264515dd361b49e724e042">dg::RowColDistMat&lt; LocalMatrixInner, LocalMatrixOuter, Collective &gt;</a>
@@ -280,7 +279,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -7,8 +7,8 @@ var searchData=
   ['backwardt',['backwardT',['../structdg_1_1_d_s.html#acaaae77dd4791497116914556e079fb2',1,'dg::DS']]],
   ['backwardtd',['backwardTD',['../structdg_1_1_d_s.html#a20e1eed33344778ea9b49e6637bb2340',1,'dg::DS']]],
   ['basic_20grids',['Basic grids',['../group__basicgrids.html',1,'']]],
-  ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html#ad3957e162dc4759b89df68e9696cb81d',1,'dg::BathRZ']]],
   ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html',1,'dg']]],
+  ['bathrz',['BathRZ',['../structdg_1_1_bath_r_z.html#ad3957e162dc4759b89df68e9696cb81d',1,'dg::BathRZ']]],
   ['bc',['bc',['../group__creation.html#ga59440bdf436f2874b49aa52b670ed364',1,'dg']]],
   ['bcx',['bcx',['../structdg_1_1_grid1d.html#ae14b654763d1104ab70dbf51ed01bf5b',1,'dg::Grid1d::bcx()'],['../structdg_1_1_grid2d.html#a9d1ecc621c765141b14462b40b908d19',1,'dg::Grid2d::bcx()'],['../structdg_1_1_grid3d.html#a6ea3eee7e7d76b9f15cd23087c21c6d2',1,'dg::Grid3d::bcx()'],['../structdg_1_1_grid_x1d.html#ad022f11dac47e099f451da8cd470f868',1,'dg::GridX1d::bcx()'],['../structdg_1_1_grid_x2d.html#ab35780e0cbe8f9aa270ea0c1903d93a1',1,'dg::GridX2d::bcx()'],['../structdg_1_1_grid_x3d.html#a7b4267dab228b8a38f2f921da3dec8b5',1,'dg::GridX3d::bcx()'],['../structdg_1_1_m_p_i_grid2d.html#a86ebf1ecebc76af68e2bbbe9dd4192d1',1,'dg::MPIGrid2d::bcx()'],['../structdg_1_1_m_p_i_grid3d.html#ae7bef12201469587597ebe6df381e1d0',1,'dg::MPIGrid3d::bcx()']]],
   ['bcy',['bcy',['../structdg_1_1_grid2d.html#afb132f221689301be98c1ca87f63f01d',1,'dg::Grid2d::bcy()'],['../structdg_1_1_grid3d.html#abdcc8ad0aaf09a35d2beaf9b9d936cf4',1,'dg::Grid3d::bcy()'],['../structdg_1_1_grid_x2d.html#a8f7140895a7ff49145abeb66d5c45213',1,'dg::GridX2d::bcy()'],['../structdg_1_1_grid_x3d.html#aa421e9905326ab270958f34ff5cb1672',1,'dg::GridX3d::bcy()'],['../structdg_1_1_m_p_i_grid2d.html#a0795a5a4fe378c2fb976ce856694507a',1,'dg::MPIGrid2d::bcy()'],['../structdg_1_1_m_p_i_grid3d.html#af7dbf3cebef0056e9eb091dfec9113ec',1,'dg::MPIGrid3d::bcy()']]],
@@ -18,7 +18,7 @@ var searchData=
   ['bijectivecomm',['BijectiveComm',['../structdg_1_1_bijective_comm.html',1,'dg']]],
   ['binwidth',['binwidth',['../structdg_1_1_histogram.html#a41da837ab831cd709ccb49390163b407',1,'dg::Histogram']]],
   ['bisection1d',['bisection1d',['../group__root.html#gaa269808db678039605044e14fc849675',1,'dg']]],
-  ['basic_20linear_20algebra_20and_20geometric_20subprograms',['Basic Linear Algebra and Geometric Subprograms',['../group__blas.html',1,'']]],
+  ['basic_20linear_20algebra_20subroutines',['Basic Linear Algebra Subroutines',['../group__blas.html',1,'']]],
   ['blas_2eh',['blas.h',['../blas_8h.html',1,'']]],
   ['blas_20level_201_20routines',['BLAS level 1 routines',['../group__blas1.html',1,'']]],
   ['blas1_2eh',['blas1.h',['../blas1_8h.html',1,'']]],
@@ -26,6 +26,5 @@ var searchData=
   ['blas2_2eh',['blas2.h',['../blas2_8h.html',1,'']]],
   ['blocks_5fper_5fline',['blocks_per_line',['../structdg_1_1_ell_sparse_block_mat.html#a49d70e8ce88ac45a7db26c1375550834',1,'dg::EllSparseBlockMat']]],
   ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html',1,'dg']]],
-  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]],
-  ['basic_20numerical_20algorithms',['Basic numerical algorithms',['../group__numerical0.html',1,'']]]
+  ['boxintegrator',['BoxIntegrator',['../structdg_1_1_box_integrator.html#ab6462a5e77839d7029a57ea4e3e85aea',1,'dg::BoxIntegrator::BoxIntegrator()'],['../namespacedg.html#aef282725f18bfde89893cca06b78f97a',1,'dg::boxintegrator()']]]
 ];

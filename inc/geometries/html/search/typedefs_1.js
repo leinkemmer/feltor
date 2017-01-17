@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['perpendicular_5fgrid',['perpendicular_grid',['../structdg_1_1_conformal_grid3d.html#acf0e8ae8e5bce1cadd755786da572c66',1,'dg::ConformalGrid3d::perpendicular_grid()'],['../structdg_1_1_conformal_m_p_i_grid3d.html#aac94ac27ee4d824a074a28b94e1f8d25',1,'dg::ConformalMPIGrid3d::perpendicular_grid()'],['../structdg_1_1_curvilinear_m_p_i_grid3d.html#a0cbe7dcf908861943102d69ba1951be2',1,'dg::CurvilinearMPIGrid3d::perpendicular_grid()'],['../structdg_1_1_orthogonal_m_p_i_grid3d.html#adead690560f9a91d048b3c186ed4332c',1,'dg::OrthogonalMPIGrid3d::perpendicular_grid()'],['../structdg_1_1_curvilinear_refined_grid3d.html#aba027b5b429093ab4b6ded7b97d4960d',1,'dg::CurvilinearRefinedGrid3d::perpendicular_grid()']]]
+  ['dds',['DDS',['../../../../inc/dg/html/group__typedefs.html#ga2ba45513822826da6e3192c2fc891c79',1,'dg::DDS()'],['../../../../inc/dg/html/group__typedefs.html#ga2ba45513822826da6e3192c2fc891c79',1,'DDS()(Global Namespace)']]],
+  ['dmatrix',['DMatrix',['../../../../inc/dg/html/group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922',1,'dg::DMatrix()'],['../../../../inc/dg/html/group__typedefs.html#gade8f2d2e22d78d961a4a83baad054922',1,'DMatrix()(Global Namespace)']]],
+  ['dvec',['DVec',['../../../../inc/dg/html/group__typedefs.html#ga37ed1fd26f3f0e82ae62228c987ddd6b',1,'dg::DVec()'],['../../../../inc/dg/html/group__typedefs.html#ga37ed1fd26f3f0e82ae62228c987ddd6b',1,'DVec()(Global Namespace)']]]
 ];

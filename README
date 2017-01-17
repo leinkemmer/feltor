@@ -12,3 +12,10 @@ In order to update the gh-pages on github
     git push origin gh-pages
 
 
+In order to view and test the site locally install jekyll as described in 
+https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+
+Then as described run 
+bundle exec jekyll serve
+and view
+firefox http://127.0.0.1:4000/

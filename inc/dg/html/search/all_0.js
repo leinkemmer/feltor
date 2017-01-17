@@ -12,7 +12,7 @@ var searchData=
   ['adaptive_5fstep',['adaptive_step',['../structdg_1_1_s_i_r_k.html#a01757c756e22e533e871286f91672a5a',1,'dg::SIRK']]],
   ['add_5fvalue',['add_value',['../structdg_1_1_coo_sparse_block_mat.html#aa573b0725f3c77c5037c42f01ab18d8a',1,'dg::CooSparseBlockMat']]],
   ['algorithm_2eh',['algorithm.h',['../algorithm_8h.html',1,'']]],
-  ['alpha',['alpha',['../structdg_1_1rk__coeff.html#a23c2aa1eeb057a2cccd29d586d787afa',1,'dg::rk_coeff::alpha()'],['../group__matrixoperators.html#gaca7c3b6fa97aca47c847724bf4d5017a',1,'dg::Helmholtz::alpha()'],['../group__matrixoperators.html#ga063811d4e2858ef457a6be6e53b1b707',1,'dg::Helmholtz::alpha() const '],['../group__matrixoperators.html#ga751933d21ae5db8e840701fb74d7edbc',1,'dg::Helmholtz2::alpha()'],['../group__matrixoperators.html#ga4def19717746a850da660874acd25f9a',1,'dg::Helmholtz2::alpha() const ']]],
+  ['alpha',['alpha',['../structdg_1_1rk__coeff.html#a23c2aa1eeb057a2cccd29d586d787afa',1,'dg::rk_coeff::alpha()'],['../structdg_1_1_helmholtz.html#aca7c3b6fa97aca47c847724bf4d5017a',1,'dg::Helmholtz::alpha()'],['../structdg_1_1_helmholtz.html#a063811d4e2858ef457a6be6e53b1b707',1,'dg::Helmholtz::alpha() const '],['../structdg_1_1_helmholtz2.html#a751933d21ae5db8e840701fb74d7edbc',1,'dg::Helmholtz2::alpha()'],['../structdg_1_1_helmholtz2.html#a4def19717746a850da660874acd25f9a',1,'dg::Helmholtz2::alpha() const ']]],
   ['anymatrixtag',['AnyMatrixTag',['../structdg_1_1_any_matrix_tag.html',1,'dg']]],
   ['anyvectortag',['AnyVectorTag',['../structdg_1_1_any_vector_tag.html',1,'dg']]],
   ['anzeigen',['anzeigen',['../classdg_1_1_keine_n_s_t__1_d.html#ab9089e775ecb1a2a2d13aab1e5e47b20',1,'dg::KeineNST_1D']]],
@@ -23,6 +23,5 @@ var searchData=
   ['average_2ecuh',['average.cuh',['../average_8cuh.html',1,'']]],
   ['average_2eh',['average.h',['../average_8h.html',1,'']]],
   ['average_2eh',['average.h',['../backend_2average_8h.html',1,'']]],
-  ['axpby',['axpby',['../group__blas1.html#ga6ee5b940147ba6b71e1fe1fc538e9459',1,'dg::blas1::axpby(typename VectorTraits&lt; Vector &gt;::value_type alpha, const Vector &amp;x, typename VectorTraits&lt; Vector &gt;::value_type beta, Vector &amp;y)'],['../group__blas1.html#ga24d1c58804538649f88ebafd65c2845b',1,'dg::blas1::axpby(typename VectorTraits&lt; Vector &gt;::value_type alpha, const Vector &amp;x, typename VectorTraits&lt; Vector &gt;::value_type beta, const Vector &amp;y, Vector &amp;result)']]],
-  ['advanced_20numerical_20schemes',['Advanced numerical schemes',['../group__numerical1.html',1,'']]]
+  ['axpby',['axpby',['../group__blas1.html#ga6ee5b940147ba6b71e1fe1fc538e9459',1,'dg::blas1::axpby(typename VectorTraits&lt; Vector &gt;::value_type alpha, const Vector &amp;x, typename VectorTraits&lt; Vector &gt;::value_type beta, Vector &amp;y)'],['../group__blas1.html#ga24d1c58804538649f88ebafd65c2845b',1,'dg::blas1::axpby(typename VectorTraits&lt; Vector &gt;::value_type alpha, const Vector &amp;x, typename VectorTraits&lt; Vector &gt;::value_type beta, const Vector &amp;y, Vector &amp;result)']]]
 ];

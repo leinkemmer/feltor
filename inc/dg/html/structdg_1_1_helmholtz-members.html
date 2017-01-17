@@ -36,14 +36,14 @@
 <div id="titlearea">
     <!--My own title area-->
   <ul class="tablist"> 
-      <li><a href="../../../index.html">/</a><li>
-    <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
-    <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
-    <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
-    <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
+      <!-- <li><a href="../../../index.html">/</a><li>-->
+    <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
+    <li><a href="../../../inc/file/html/index.html">file</a></li>
+    <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
-    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
+    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -51,7 +51,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -135,22 +134,22 @@ $(document).ready(function(){initNavTree('structdg_1_1_helmholtz.html','');});
 
 <p>This is the complete list of members for <a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="group__matrixoperators.html#gaca7c3b6fa97aca47c847724bf4d5017a">alpha</a>()</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__matrixoperators.html#ga063811d4e2858ef457a6be6e53b1b707">alpha</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__matrixoperators.html#ga6b1ffe5e120fedcc9415f75219c241cd">chi</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__matrixoperators.html#ga7d83963ab6cba7a264c115917acbfcbc">Helmholtz</a>(Geometry g, double alpha=1., direction dir=dg::forward)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__matrixoperators.html#ga72c4df6fe1b8cbdd8cac6c7e826556b1">Helmholtz</a>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__matrixoperators.html#gaf2db23f6f9f7d12864c720581c86fa6e">precond</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__matrixoperators.html#ga97293c4b945515a6eaec503856f6cde2">reset_chi</a>()</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__matrixoperators.html#gaf45fae77c7bdf38af02016d1b7b1e921">set_chi</a>(const Vector &amp;chi)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="group__matrixoperators.html#ga0bea530c607a7713e619b9641fc946a0">symv</a>(Vector &amp;x, Vector &amp;y)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="group__matrixoperators.html#gab83777043bbd5a66e604e51c3fb4f147">weights</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#aca7c3b6fa97aca47c847724bf4d5017a">alpha</a>()</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a063811d4e2858ef457a6be6e53b1b707">alpha</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a6b1ffe5e120fedcc9415f75219c241cd">chi</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a7d83963ab6cba7a264c115917acbfcbc">Helmholtz</a>(Geometry g, double alpha=1., direction dir=dg::forward)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a72c4df6fe1b8cbdd8cac6c7e826556b1">Helmholtz</a>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#af2db23f6f9f7d12864c720581c86fa6e">precond</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a97293c4b945515a6eaec503856f6cde2">reset_chi</a>()</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#af45fae77c7bdf38af02016d1b7b1e921">set_chi</a>(const Vector &amp;chi)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#a0bea530c607a7713e619b9641fc946a0">symv</a>(Vector &amp;x, Vector &amp;y)</td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html#ab83777043bbd5a66e604e51c3fb4f147">weights</a>() const </td><td class="entry"><a class="el" href="structdg_1_1_helmholtz.html">dg::Helmholtz&lt; Geometry, Matrix, Vector &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

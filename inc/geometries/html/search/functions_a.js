@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['width',['width',['../structdg_1_1_ribeiro_x.html#a6310dfad503dacecf959bede87d6446c',1,'dg::RibeiroX::width()'],['../structdg_1_1_flux_generator.html#a86f7e2275ad13eb37f120ada3ca00552',1,'dg::FluxGenerator::width()'],['../structdg_1_1_ribeiro_flux_generator.html#a69c473b03e1a66f2b34c4c224c273c1a',1,'dg::RibeiroFluxGenerator::width()'],['../structdg_1_1_hector.html#a662e984503a7ae96a3780c070ce0559a',1,'dg::Hector::width()'],['../structdg_1_1_simple_orthogonal.html#a41b78620757b4f6d452cc0f51b9fe135',1,'dg::SimpleOrthogonal::width()'],['../structdg_1_1_ribeiro.html#a2fdbb88052ccfe3fd92191b6b4718555',1,'dg::Ribeiro::width()']]]
+  ['karniadakis',['Karniadakis',['../../../../inc/dg/html/structdg_1_1_karniadakis.html#ae8a8dbf53c366e472ef172de06b12f83',1,'dg::Karniadakis::Karniadakis()'],['../../../../inc/toefl/html/classtoefl_1_1_karniadakis.html#a26750af2a9b2840fabb98b1a207bb41c',1,'toefl::Karniadakis::Karniadakis()']]],
+  ['keinenst_5f1d',['KeineNST_1D',['../../../../inc/dg/html/classdg_1_1_keine_n_s_t__1_d.html#a1cb65bbd2b61ad62a656f1e1fc569600',1,'dg::KeineNST_1D']]]
 ];

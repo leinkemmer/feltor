@@ -36,14 +36,14 @@
 <div id="titlearea">
     <!--My own title area-->
   <ul class="tablist"> 
-      <li><a href="../../../index.html">/</a><li>
-    <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
-    <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
-    <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
-    <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
+      <!-- <li><a href="../../../index.html">/</a><li>-->
+    <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
+    <li><a href="../../../inc/file/html/index.html">file</a></li>
+    <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
-    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
+    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -51,7 +51,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Geometry
-   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
@@ -146,7 +145,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Field</b> (<a class="el" href="structsolovev_1_1_geom_parameters.html">GeomParameters</a> gp)</td></tr>
 <tr class="separator:ab38fe0dbe0823e9c7536220fb9a20da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab923245d704dda9bc77e8a3b71cbe4b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab923245d704dda9bc77e8a3b71cbe4b2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field.html#ab923245d704dda9bc77e8a3b71cbe4b2">operator()</a> (const dg::HVec &amp;y, dg::HVec &amp;yp) const </td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsolovev_1_1_field.html#ab923245d704dda9bc77e8a3b71cbe4b2">operator()</a> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;y, <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;yp) const </td></tr>
 <tr class="memdesc:ab923245d704dda9bc77e8a3b71cbe4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><p class="formulaDsp">
 \[ \frac{d \hat{R} }{ d \varphi} = \frac{\hat{R}}{\hat{I}} \frac{\partial\hat{\psi}_p}{\partial \hat{Z}}, \hspace {3 mm} \frac{d \hat{Z} }{ d \varphi} =- \frac{\hat{R}}{\hat{I}} \frac{\partial \hat{\psi}_p}{\partial \hat{R}} , \hspace {3 mm} \frac{d \hat{l} }{ d \varphi} =\frac{\hat{R}^2 \hat{B}}{\hat{I} \hat{R}_0} \]
 </p>
@@ -164,10 +163,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 <tr class="memdesc:a0a0761cd26c8f7e7077ae3fbd60b738f"><td class="mdescLeft">&#160;</td><td class="mdescRight">== operator()(R,Z) <br /></td></tr>
 <tr class="separator:a0a0761cd26c8f7e7077ae3fbd60b738f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3adc310324911bfb82b92d7937338233"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3adc310324911bfb82b92d7937338233"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> (const dg::HVec &amp;x0, const dg::HVec &amp;x1)</td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>error</b> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;x0, const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;x1)</td></tr>
 <tr class="separator:a3adc310324911bfb82b92d7937338233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad966ac3f16558497d86bdcdabe4ea2e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad966ac3f16558497d86bdcdabe4ea2e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>monitor</b> (const dg::HVec &amp;end)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>monitor</b> (const <a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/group__typedefs.html#gab99e8227ed890885a7b9915806865a7a">dg::HVec</a> &amp;end)</td></tr>
 <tr class="separator:ad966ac3f16558497d86bdcdabe4ea2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,7 +180,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>monitor</b> (const dg
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacesolovev.html">solovev</a></li><li class="navelem"><a class="el" href="structsolovev_1_1_field.html">Field</a></li>
-    <li class="footer">Generated on Fri Oct 21 2016 17:52:14 for Geometry by
+    <li class="footer">Generated on Tue Jan 17 2017 13:58:36 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

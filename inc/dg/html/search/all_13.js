@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['vectors_2c_20matrices_20and_20basic_20operations',['Vectors, Matrices and basic operations',['../group__backend.html',1,'']]],
   ['value_5ftype',['value_type',['../classdg_1_1_operator.html#a322ecb3322b51f04d23178d05578cdd9',1,'dg::Operator::value_type()'],['../classdg_1_1_c_g.html#a1ef5a42ac2f35b465a9b5e5d2293d572',1,'dg::CG::value_type()']]],
   ['variation',['variation',['../structdg_1_1_arakawa_x.html#a289a1260a866710e46050063d7acaed3',1,'dg::ArakawaX']]],
   ['variationrhs',['variationRHS',['../structdg_1_1_poisson.html#ada279f7ffead5ed6ef676c96354f8787',1,'dg::Poisson']]],

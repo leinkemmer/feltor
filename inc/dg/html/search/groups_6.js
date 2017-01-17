@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lowlevel_20helper_20functions_20and_20classes',['Lowlevel helper functions and classes',['../group__lowlevel.html',1,'']]]
+  ['matrix_20inversion',['Matrix inversion',['../group__invert.html',1,'']]],
+  ['mpi_20backend_20functionality',['MPI backend functionality',['../group__mpi__structures.html',1,'']]]
 ];

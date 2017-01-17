@@ -18,7 +18,7 @@ var searchData=
   ['cg',['CG',['../classdg_1_1_c_g.html#a670ef27210508cb36b9e94b95d5d2782',1,'dg::CG::CG()'],['../classdg_1_1_c_g.html#ad7f145a193177e75f310405e96d6e20d',1,'dg::CG::CG(const Vector &amp;copyable, unsigned max_iter)']]],
   ['cg_2eh',['cg.h',['../cg_8h.html',1,'']]],
   ['cg_3c_20container_20_3e',['CG&lt; container &gt;',['../classdg_1_1_c_g.html',1,'dg']]],
-  ['chi',['chi',['../group__matrixoperators.html#ga6b1ffe5e120fedcc9415f75219c241cd',1,'dg::Helmholtz::chi()'],['../group__matrixoperators.html#ga52d5def49e8d522c52599e6eee727401',1,'dg::Helmholtz2::chi()']]],
+  ['chi',['chi',['../structdg_1_1_helmholtz.html#a6b1ffe5e120fedcc9415f75219c241cd',1,'dg::Helmholtz::chi()'],['../structdg_1_1_helmholtz2.html#a52d5def49e8d522c52599e6eee727401',1,'dg::Helmholtz2::chi()']]],
   ['coldistmat',['ColDistMat',['../structdg_1_1_col_dist_mat.html#a4297a483e3ad3f1a7128be73b1265a4d',1,'dg::ColDistMat']]],
   ['coldistmat',['ColDistMat',['../structdg_1_1_col_dist_mat.html',1,'dg']]],
   ['collect',['collect',['../structdg_1_1_bijective_comm.html#ac99aa91a4eb223f327c305734c429291',1,'dg::BijectiveComm::collect()'],['../structdg_1_1_nearest_neighbor_comm.html#a567bf1426f7b6ec4b70d1ccc6552df17',1,'dg::NearestNeighborComm::collect()']]],

@@ -189,140 +189,140 @@
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga847578afcce10a86d4008d4887508e65</anchor>
       <arglist>(const GridX2d &amp;g, bc bcx, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga5a8a0b47821c282c8993a05e7def7b9e</anchor>
       <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga9101fc947165d374befb610466e86685</anchor>
       <arglist>(const GridX2d &amp;g, bc bcy, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gac4b36f72ed1fe0d27c06078d4c39525b</anchor>
       <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga88919924c76e64717f3a6626626201ef</anchor>
       <arglist>(const GridX2d &amp;g, bc bcx)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gae70931588fce6c43c891ec0685222875</anchor>
       <arglist>(const GridX2d &amp;g, bc bcy)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga68544d757de0b00407508a5b7b4cf76f</anchor>
       <arglist>(const GridX2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga47b9788fab407120d68b22be3070c84c</anchor>
       <arglist>(const GridX2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga91fd9086d0f5a954aeca9a24e26015eb</anchor>
       <arglist>(const GridX3d &amp;g, bc bcx)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gacb74c2f92340c357f3e3b40d745baa41</anchor>
       <arglist>(const GridX3d &amp;g, bc bcy)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga621c4fa259c999e891d35c8c74c0e522</anchor>
       <arglist>(const GridX3d &amp;g, bc bcz)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gadc6637be3a320466b81230249a46217a</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gaf2262f08b549298a1b1892479d546cd1</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gad4f0a614b23abcb2df464b1bc6d955b9</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gabc81462757f60719dffff9f390f18a6e</anchor>
       <arglist>(const GridX3d &amp;g, bc bcx, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga37a3244f8accf9d8e1cf0f7ce9ef248a</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gae3994623c9e63caa217b528ba47754f1</anchor>
       <arglist>(const GridX3d &amp;g, bc bcy, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga844858da7195c4e8547d3a3201d7888a</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga30cba7a7eb8093df853726bc61110fc6</anchor>
       <arglist>(const GridX3d &amp;g, bc bcz, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gad08afc1d081b3d263d5769276ed0421b</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
@@ -4227,71 +4227,71 @@
     <member kind="function">
       <type></type>
       <name>Helmholtz</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga7d83963ab6cba7a264c115917acbfcbc</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a7d83963ab6cba7a264c115917acbfcbc</anchor>
       <arglist>(Geometry g, double alpha=1., direction dir=dg::forward)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Helmholtz</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga72c4df6fe1b8cbdd8cac6c7e826556b1</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a72c4df6fe1b8cbdd8cac6c7e826556b1</anchor>
       <arglist>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>symv</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga0bea530c607a7713e619b9641fc946a0</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a0bea530c607a7713e619b9641fc946a0</anchor>
       <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>weights</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gab83777043bbd5a66e604e51c3fb4f147</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>ab83777043bbd5a66e604e51c3fb4f147</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>precond</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf2db23f6f9f7d12864c720581c86fa6e</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>af2db23f6f9f7d12864c720581c86fa6e</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>double &amp;</type>
       <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaca7c3b6fa97aca47c847724bf4d5017a</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>aca7c3b6fa97aca47c847724bf4d5017a</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga063811d4e2858ef457a6be6e53b1b707</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a063811d4e2858ef457a6be6e53b1b707</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>set_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf45fae77c7bdf38af02016d1b7b1e921</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>af45fae77c7bdf38af02016d1b7b1e921</anchor>
       <arglist>(const Vector &amp;chi)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>reset_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga97293c4b945515a6eaec503856f6cde2</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a97293c4b945515a6eaec503856f6cde2</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga6b1ffe5e120fedcc9415f75219c241cd</anchor>
+      <anchorfile>structdg_1_1_helmholtz.html</anchorfile>
+      <anchor>a6b1ffe5e120fedcc9415f75219c241cd</anchor>
       <arglist>() const </arglist>
     </member>
   </compound>
@@ -4304,71 +4304,71 @@
     <member kind="function">
       <type></type>
       <name>Helmholtz2</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gab11228830a1faa6f649738c4e60a1f31</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>ab11228830a1faa6f649738c4e60a1f31</anchor>
       <arglist>(Geometry g, double alpha=1., direction dir=dg::forward)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>Helmholtz2</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga1155c571611088ecc448a6f24ea9d440</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a1155c571611088ecc448a6f24ea9d440</anchor>
       <arglist>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>symv</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga977f526daa90a2c04ff298838a88fbd0</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a977f526daa90a2c04ff298838a88fbd0</anchor>
       <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>weights</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga9c799848da0eb3399a3def3d09813922</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a9c799848da0eb3399a3def3d09813922</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>precond</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gafdf00a11485c5283743a60fc75eaf96e</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>afdf00a11485c5283743a60fc75eaf96e</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>double &amp;</type>
       <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga751933d21ae5db8e840701fb74d7edbc</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a751933d21ae5db8e840701fb74d7edbc</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>double</type>
       <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga4def19717746a850da660874acd25f9a</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a4def19717746a850da660874acd25f9a</anchor>
       <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>set_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga0fc587749c003360eab032cec506237e</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a0fc587749c003360eab032cec506237e</anchor>
       <arglist>(const Vector &amp;chi)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>reset_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaac6e6002246f4c9f7c5838f524f4206f</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>aac6e6002246f4c9f7c5838f524f4206f</anchor>
       <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>const Vector &amp;</type>
       <name>chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga52d5def49e8d522c52599e6eee727401</anchor>
+      <anchorfile>structdg_1_1_helmholtz2.html</anchorfile>
+      <anchor>a52d5def49e8d522c52599e6eee727401</anchor>
       <arglist>() const </arglist>
     </member>
   </compound>
@@ -7567,140 +7567,140 @@
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga847578afcce10a86d4008d4887508e65</anchor>
       <arglist>(const GridX2d &amp;g, bc bcx, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga5a8a0b47821c282c8993a05e7def7b9e</anchor>
       <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga9101fc947165d374befb610466e86685</anchor>
       <arglist>(const GridX2d &amp;g, bc bcy, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gac4b36f72ed1fe0d27c06078d4c39525b</anchor>
       <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga88919924c76e64717f3a6626626201ef</anchor>
       <arglist>(const GridX2d &amp;g, bc bcx)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gae70931588fce6c43c891ec0685222875</anchor>
       <arglist>(const GridX2d &amp;g, bc bcy)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga68544d757de0b00407508a5b7b4cf76f</anchor>
       <arglist>(const GridX2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga47b9788fab407120d68b22be3070c84c</anchor>
       <arglist>(const GridX2d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga91fd9086d0f5a954aeca9a24e26015eb</anchor>
       <arglist>(const GridX3d &amp;g, bc bcx)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gacb74c2f92340c357f3e3b40d745baa41</anchor>
       <arglist>(const GridX3d &amp;g, bc bcy)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga621c4fa259c999e891d35c8c74c0e522</anchor>
       <arglist>(const GridX3d &amp;g, bc bcz)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gadc6637be3a320466b81230249a46217a</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gaf2262f08b549298a1b1892479d546cd1</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gad4f0a614b23abcb2df464b1bc6d955b9</anchor>
       <arglist>(const GridX3d &amp;g)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gabc81462757f60719dffff9f390f18a6e</anchor>
       <arglist>(const GridX3d &amp;g, bc bcx, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga37a3244f8accf9d8e1cf0f7ce9ef248a</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gae3994623c9e63caa217b528ba47754f1</anchor>
       <arglist>(const GridX3d &amp;g, bc bcy, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga844858da7195c4e8547d3a3201d7888a</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>ga30cba7a7eb8093df853726bc61110fc6</anchor>
       <arglist>(const GridX3d &amp;g, bc bcz, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
       <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
+      <anchorfile>group__creation.html</anchorfile>
       <anchor>gad08afc1d081b3d263d5769276ed0421b</anchor>
       <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
@@ -8422,7 +8422,7 @@
   </compound>
   <compound kind="group">
     <name>backend</name>
-    <title>Vectors, Matrices and basic operations</title>
+    <title>Level 1: Vectors, Matrices and basic operations</title>
     <filename>group__backend.html</filename>
     <subgroup>blas</subgroup>
     <subgroup>sparsematrix</subgroup>
@@ -8431,7 +8431,7 @@
   </compound>
   <compound kind="group">
     <name>blas</name>
-    <title>Basic Linear Algebra and Geometric Subprograms</title>
+    <title>Basic Linear Algebra Subroutines</title>
     <filename>group__blas.html</filename>
     <subgroup>blas1</subgroup>
     <subgroup>blas2</subgroup>
@@ -8790,7 +8790,7 @@
   </compound>
   <compound kind="group">
     <name>numerical0</name>
-    <title>Basic numerical algorithms</title>
+    <title>Level 2: Basic numerical algorithms</title>
     <filename>group__numerical0.html</filename>
     <subgroup>time</subgroup>
     <subgroup>invert</subgroup>
@@ -8866,7 +8866,7 @@
   </compound>
   <compound kind="group">
     <name>geo</name>
-    <title>Topology and Geometry</title>
+    <title>Level 3: Topology and Geometry</title>
     <filename>group__geo.html</filename>
     <subgroup>grid</subgroup>
     <subgroup>geometry</subgroup>
@@ -9289,146 +9289,6 @@
     <title>Weight functions</title>
     <filename>group__highlevel.html</filename>
     <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga847578afcce10a86d4008d4887508e65</anchor>
-      <arglist>(const GridX2d &amp;g, bc bcx, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga5a8a0b47821c282c8993a05e7def7b9e</anchor>
-      <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga9101fc947165d374befb610466e86685</anchor>
-      <arglist>(const GridX2d &amp;g, bc bcy, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gac4b36f72ed1fe0d27c06078d4c39525b</anchor>
-      <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga88919924c76e64717f3a6626626201ef</anchor>
-      <arglist>(const GridX2d &amp;g, bc bcx)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gae70931588fce6c43c891ec0685222875</anchor>
-      <arglist>(const GridX2d &amp;g, bc bcy)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga68544d757de0b00407508a5b7b4cf76f</anchor>
-      <arglist>(const GridX2d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga47b9788fab407120d68b22be3070c84c</anchor>
-      <arglist>(const GridX2d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga91fd9086d0f5a954aeca9a24e26015eb</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcx)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gacb74c2f92340c357f3e3b40d745baa41</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcy)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga621c4fa259c999e891d35c8c74c0e522</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcz)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpX</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gadc6637be3a320466b81230249a46217a</anchor>
-      <arglist>(const GridX3d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpY</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gaf2262f08b549298a1b1892479d546cd1</anchor>
-      <arglist>(const GridX3d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>jumpZ</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gad4f0a614b23abcb2df464b1bc6d955b9</anchor>
-      <arglist>(const GridX3d &amp;g)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gabc81462757f60719dffff9f390f18a6e</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcx, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dx</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga37a3244f8accf9d8e1cf0f7ce9ef248a</anchor>
-      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gae3994623c9e63caa217b528ba47754f1</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcy, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dy</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga844858da7195c4e8547d3a3201d7888a</anchor>
-      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>ga30cba7a7eb8093df853726bc61110fc6</anchor>
-      <arglist>(const GridX3d &amp;g, bc bcz, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
-      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
-      <name>dz</name>
-      <anchorfile>group__highlevel.html</anchorfile>
-      <anchor>gad08afc1d081b3d263d5769276ed0421b</anchor>
-      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
-    </member>
-    <member kind="function">
       <type>MPI_Vector&lt; thrust::host_vector&lt; double &gt; &gt;</type>
       <name>weights</name>
       <anchorfile>group__highlevel.html</anchorfile>
@@ -9765,6 +9625,146 @@
       <anchorfile>group__creation.html</anchorfile>
       <anchor>gae6d3a4fc87b06bb8d36ab0677b8e6ba5</anchor>
       <arglist>(const Grid3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga847578afcce10a86d4008d4887508e65</anchor>
+      <arglist>(const GridX2d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga5a8a0b47821c282c8993a05e7def7b9e</anchor>
+      <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga9101fc947165d374befb610466e86685</anchor>
+      <arglist>(const GridX2d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gac4b36f72ed1fe0d27c06078d4c39525b</anchor>
+      <arglist>(const GridX2d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga88919924c76e64717f3a6626626201ef</anchor>
+      <arglist>(const GridX2d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gae70931588fce6c43c891ec0685222875</anchor>
+      <arglist>(const GridX2d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga68544d757de0b00407508a5b7b4cf76f</anchor>
+      <arglist>(const GridX2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga47b9788fab407120d68b22be3070c84c</anchor>
+      <arglist>(const GridX2d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga91fd9086d0f5a954aeca9a24e26015eb</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcx)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gacb74c2f92340c357f3e3b40d745baa41</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcy)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga621c4fa259c999e891d35c8c74c0e522</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcz)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpX</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gadc6637be3a320466b81230249a46217a</anchor>
+      <arglist>(const GridX3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpY</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gaf2262f08b549298a1b1892479d546cd1</anchor>
+      <arglist>(const GridX3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>jumpZ</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gad4f0a614b23abcb2df464b1bc6d955b9</anchor>
+      <arglist>(const GridX3d &amp;g)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gabc81462757f60719dffff9f390f18a6e</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcx, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dx</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga37a3244f8accf9d8e1cf0f7ce9ef248a</anchor>
+      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gae3994623c9e63caa217b528ba47754f1</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcy, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dy</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga844858da7195c4e8547d3a3201d7888a</anchor>
+      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>ga30cba7a7eb8093df853726bc61110fc6</anchor>
+      <arglist>(const GridX3d &amp;g, bc bcz, direction dir=centered)</arglist>
+    </member>
+    <member kind="function">
+      <type>Composite&lt; EllSparseBlockMat&lt; double &gt; &gt;</type>
+      <name>dz</name>
+      <anchorfile>group__creation.html</anchorfile>
+      <anchor>gad08afc1d081b3d263d5769276ed0421b</anchor>
+      <arglist>(const GridX3d &amp;g, direction dir=centered)</arglist>
     </member>
     <member kind="function">
       <type>RowColDistMat&lt; EllSparseBlockMat&lt; double &gt;, CooSparseBlockMat&lt; double &gt;, NNCH &gt;</type>
@@ -10179,7 +10179,7 @@
   </compound>
   <compound kind="group">
     <name>numerical1</name>
-    <title>Advanced numerical schemes</title>
+    <title>Level 4: Advanced numerical schemes</title>
     <filename>group__numerical1.html</filename>
     <subgroup>arakawa</subgroup>
     <subgroup>matrixoperators</subgroup>
@@ -10202,146 +10202,6 @@
     <class kind="struct">dg::TensorElliptic</class>
     <class kind="struct">dg::Helmholtz</class>
     <class kind="struct">dg::Helmholtz2</class>
-    <member kind="function">
-      <type></type>
-      <name>Helmholtz</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga7d83963ab6cba7a264c115917acbfcbc</anchor>
-      <arglist>(Geometry g, double alpha=1., direction dir=dg::forward)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Helmholtz</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga72c4df6fe1b8cbdd8cac6c7e826556b1</anchor>
-      <arglist>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>symv</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga0bea530c607a7713e619b9641fc946a0</anchor>
-      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>weights</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gab83777043bbd5a66e604e51c3fb4f147</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>precond</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf2db23f6f9f7d12864c720581c86fa6e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double &amp;</type>
-      <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaca7c3b6fa97aca47c847724bf4d5017a</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga063811d4e2858ef457a6be6e53b1b707</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaf45fae77c7bdf38af02016d1b7b1e921</anchor>
-      <arglist>(const Vector &amp;chi)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga97293c4b945515a6eaec503856f6cde2</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga6b1ffe5e120fedcc9415f75219c241cd</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Helmholtz2</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gab11228830a1faa6f649738c4e60a1f31</anchor>
-      <arglist>(Geometry g, double alpha=1., direction dir=dg::forward)</arglist>
-    </member>
-    <member kind="function">
-      <type></type>
-      <name>Helmholtz2</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga1155c571611088ecc448a6f24ea9d440</anchor>
-      <arglist>(Geometry g, bc bcx, bc bcy, double alpha=1., direction dir=dg::forward)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>symv</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga977f526daa90a2c04ff298838a88fbd0</anchor>
-      <arglist>(Vector &amp;x, Vector &amp;y)</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>weights</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga9c799848da0eb3399a3def3d09813922</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>precond</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gafdf00a11485c5283743a60fc75eaf96e</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>double &amp;</type>
-      <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga751933d21ae5db8e840701fb74d7edbc</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>double</type>
-      <name>alpha</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga4def19717746a850da660874acd25f9a</anchor>
-      <arglist>() const </arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>set_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga0fc587749c003360eab032cec506237e</anchor>
-      <arglist>(const Vector &amp;chi)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>reset_chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>gaac6e6002246f4c9f7c5838f524f4206f</anchor>
-      <arglist>()</arglist>
-    </member>
-    <member kind="function">
-      <type>const Vector &amp;</type>
-      <name>chi</name>
-      <anchorfile>group__matrixoperators.html</anchorfile>
-      <anchor>ga52d5def49e8d522c52599e6eee727401</anchor>
-      <arglist>() const </arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>fieldaligned</name>

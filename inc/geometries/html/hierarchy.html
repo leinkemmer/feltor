@@ -36,14 +36,14 @@
 <div id="titlearea">
     <!--My own title area-->
   <ul class="tablist"> 
-      <li><a href="../../../index.html">/</a><li>
-    <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
-    <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
-    <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
-    <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
+      <!-- <li><a href="../../../index.html">/</a><li>-->
+    <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
+    <li><a href="../../../inc/file/html/index.html">file</a></li>
+    <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
-    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
+    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -51,7 +51,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Geometry
-   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Library for magnetic flux functions, grids and grid generators</div>
   </td>
@@ -132,7 +131,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock">This inheritance list is sorted roughly, but not completely, alphabetically:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span>]</div><table class="directory">
+<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span>]</div><table class="directory">
 <tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_alpha.html" target="_self">solovev::Alpha</a></td><td class="desc">Global safety factor </p><p class="formulaDsp">
 \[ \alpha(R,Z) = \frac{|B^\varphi|}{R|B^\eta|} = \frac{I_{pol}(R,Z)}{R|\nabla\psi_p|} \]
 </p>
@@ -179,11 +178,11 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 \[ |\nabla \psi_p|\delta(\psi_p(R,Z)-\psi_0) = \frac{\sqrt{ (\nabla \psi_p)^2}}{\sqrt{2\pi\varepsilon}} \exp\left(-\frac{(\psi_p(R,Z) - \psi_{0})^2}{2\varepsilon} \right) \]
 </p>
  </td></tr>
-<tr id="row_16_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_deri_neu.html" target="_self">guenther::DeriNeu</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_16_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_deri_neu.html" target="_self">solovev::DeriNeu</a></td><td class="desc"></td></tr>
+<tr id="row_17_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_deri_neu.html" target="_self">guenther::DeriNeu</a></td><td class="desc"><p class="formulaDsp">
 \[\nabla_\parallel f(R,Z,\phi)\]
 </p>
  </td></tr>
-<tr id="row_17_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_deri_neu.html" target="_self">solovev::DeriNeu</a></td><td class="desc"></td></tr>
 <tr id="row_18_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_deri_neu2.html" target="_self">guenther::DeriNeu2</a></td><td class="desc"><p class="formulaDsp">
 \[\nabla_\parallel \nabla_\parallel f\]
 </p>
@@ -213,9 +212,9 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <tr id="row_26_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_elliptic_dir_neu_m.html" target="_self">solovev::EllipticDirNeuM</a></td><td class="desc"></td></tr>
 <tr id="row_27_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_elliptic_dir_per_m.html" target="_self">solovev::EllipticDirPerM</a></td><td class="desc"></td></tr>
 <tr id="row_28_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_elliptic_dir_simple_m.html" target="_self">solovev::EllipticDirSimpleM</a></td><td class="desc"></td></tr>
-<tr id="row_29_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_field.html" target="_self">solovev::Field</a></td><td class="desc">Integrates the equations for a field line and 1/B </td></tr>
-<tr id="row_30_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_field.html" target="_self">guenther::Field</a></td><td class="desc"></td></tr>
-<tr id="row_31_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_field.html" target="_self">dg::Field</a></td><td class="desc">Integrates the equations for a field line and 1/B </td></tr>
+<tr id="row_29_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_field.html" target="_self">dg::Field</a></td><td class="desc">Integrates the equations for a field line and 1/B </td></tr>
+<tr id="row_30_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_field.html" target="_self">solovev::Field</a></td><td class="desc">Integrates the equations for a field line and 1/B </td></tr>
+<tr id="row_31_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_field.html" target="_self">guenther::Field</a></td><td class="desc"></td></tr>
 <tr id="row_32_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_field_p.html" target="_self">solovev::FieldP</a></td><td class="desc">Phi component of magnetic field \( B_\Phi\) </td></tr>
 <tr id="row_33_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_field_p.html" target="_self">guenther::FieldP</a></td><td class="desc"><p class="formulaDsp">
 \[ b^\phi\]
@@ -283,11 +282,11 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 \[\Delta_\parallel f\]
 </p>
  </td></tr>
-<tr id="row_60_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_func_neu.html" target="_self">guenther::FuncNeu</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_60_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_func_neu.html" target="_self">solovev::FuncNeu</a></td><td class="desc"></td></tr>
+<tr id="row_61_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_func_neu.html" target="_self">guenther::FuncNeu</a></td><td class="desc"><p class="formulaDsp">
 \[ f(R,Z,\phi)\]
 </p>
  </td></tr>
-<tr id="row_61_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_func_neu.html" target="_self">solovev::FuncNeu</a></td><td class="desc"></td></tr>
 <tr id="row_62_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_func_neu2.html" target="_self">guenther::FuncNeu2</a></td><td class="desc"><p class="formulaDsp">
 \[ f2(R,Z,\phi)\]
 </p>
@@ -305,33 +304,45 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </p>
  </td></tr>
 <tr id="row_66_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_geom_parameters.html" target="_self">solovev::GeomParameters</a></td><td class="desc">Constructs and display geometric parameters </td></tr>
-<tr id="row_67_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_grad_ln_b.html" target="_self">guenther::GradLnB</a></td><td class="desc"></td></tr>
-<tr id="row_68_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_grad_ln_b.html" target="_self">solovev::GradLnB</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_67_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_grad_ln_b.html" target="_self">solovev::GradLnB</a></td><td class="desc"><p class="formulaDsp">
 \[ \hat{\nabla}_\parallel \ln{(\hat{B})} \]
 </p>
  </td></tr>
-<tr id="row_69_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_69_" class="arrow" onclick="toggleFolder('69_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>Grid2d</b></td><td class="desc"></td></tr>
+<tr id="row_68_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_grad_ln_b.html" target="_self">guenther::GradLnB</a></td><td class="desc"></td></tr>
+<tr id="row_69_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_69_" class="arrow" onclick="toggleFolder('69_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid2d.html" target="_self">dg::Grid2d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_69_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_grid2d.html" target="_self">dg::ConformalGrid2d&lt; container &gt;</a></td><td class="desc">A two-dimensional grid based on the conformal coordinates generated by hector </td></tr>
 <tr id="row_69_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_grid2d.html" target="_self">dg::CurvilinearGrid2d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
 <tr id="row_69_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_grid2d.html" target="_self">dg::OrthogonalGrid2d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on orthogonal coordinates </td></tr>
-<tr id="row_70_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_70_" class="arrow" onclick="toggleFolder('70_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>Grid3d</b></td><td class="desc"></td></tr>
+<tr id="row_69_3_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_69_3_" class="arrow" onclick="toggleFolder('69_3_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid2d.html" target="_self">dg::RefinedGrid2d</a>&#160;[external]</td><td class="desc"></td></tr>
+<tr id="row_69_3_0_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_refined_grid2d.html" target="_self">dg::ConformalRefinedGrid2d&lt; container &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_69_3_1_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_refined_grid2d.html" target="_self">dg::CurvilinearRefinedGrid2d&lt; container &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_69_3_2_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid2d.html" target="_self">dg::OrthogonalRefinedGrid2d&lt; container &gt;</a></td><td class="desc">An orthogonal refined grid </td></tr>
+<tr id="row_70_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_70_" class="arrow" onclick="toggleFolder('70_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid3d.html" target="_self">dg::Grid3d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_70_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_grid3d.html" target="_self">dg::ConformalGrid3d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on conformal coordintes generated by hector </td></tr>
 <tr id="row_70_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_grid3d.html" target="_self">dg::CurvilinearGrid3d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on curvilinear coordinates </td></tr>
 <tr id="row_70_2_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_grid3d.html" target="_self">dg::OrthogonalGrid3d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on orthogonal coordinates </td></tr>
-<tr id="row_71_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_71_" class="arrow" onclick="toggleFolder('71_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>GridX2d</b></td><td class="desc"></td></tr>
+<tr id="row_70_3_" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_70_3_" class="arrow" onclick="toggleFolder('70_3_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid3d.html" target="_self">dg::RefinedGrid3d</a>&#160;[external]</td><td class="desc"></td></tr>
+<tr id="row_70_3_0_" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_refined_grid3d.html" target="_self">dg::ConformalRefinedGrid3d&lt; container &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_70_3_1_" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_refined_grid3d.html" target="_self">dg::CurvilinearRefinedGrid3d&lt; container &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_70_3_2_" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid3d.html" target="_self">dg::OrthogonalRefinedGrid3d&lt; container &gt;</a></td><td class="desc">An orthogonal refined grid </td></tr>
+<tr id="row_71_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_71_" class="arrow" onclick="toggleFolder('71_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid_x2d.html" target="_self">dg::GridX2d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_71_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_grid_x2d.html" target="_self">dg::CurvilinearGridX2d&lt; container &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_71_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_grid_x2d.html" target="_self">dg::OrthogonalGridX2d&lt; container &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_72_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_72_" class="arrow" onclick="toggleFolder('72_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>GridX3d</b></td><td class="desc"></td></tr>
+<tr id="row_71_2_" class="even" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_71_2_" class="arrow" onclick="toggleFolder('71_2_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid_x2d.html" target="_self">dg::RefinedGridX2d</a>&#160;[external]</td><td class="desc"></td></tr>
+<tr id="row_71_2_0_" class="even" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid_x2d.html" target="_self">dg::OrthogonalRefinedGridX2d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
+<tr id="row_72_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_72_" class="arrow" onclick="toggleFolder('72_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_grid_x3d.html" target="_self">dg::GridX3d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_72_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_grid_x3d.html" target="_self">dg::CurvilinearGridX3d&lt; container &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_72_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_grid_x3d.html" target="_self">dg::OrthogonalGridX3d&lt; container &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_72_2_" style="display:none;"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_72_2_" class="arrow" onclick="toggleFolder('72_2_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_refined_grid_x3d.html" target="_self">dg::RefinedGridX3d</a>&#160;[external]</td><td class="desc"></td></tr>
+<tr id="row_72_2_0_" style="display:none;"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid_x3d.html" target="_self">dg::OrthogonalRefinedGridX3d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
 <tr id="row_73_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_hector.html" target="_self">dg::Hector&lt; IMatrix, Matrix, container &gt;</a></td><td class="desc">The High PrEcision Conformal grid generaTOR </td></tr>
 <tr id="row_74_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_hector_x.html" target="_self">dg::HectorX&lt; IMatrix, Matrix, container &gt;</a></td><td class="desc">The High PrEcision Conformal grid generaTOR </td></tr>
 <tr id="row_75_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_hessian_r_ztau.html" target="_self">solovev::HessianRZtau&lt; PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_76_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_inv_b.html" target="_self">guenther::InvB</a></td><td class="desc"></td></tr>
-<tr id="row_77_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_inv_b.html" target="_self">solovev::InvB</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_76_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_inv_b.html" target="_self">solovev::InvB</a></td><td class="desc"><p class="formulaDsp">
 \[ \frac{1}{\hat{B}} \]
 </p>
  </td></tr>
+<tr id="row_77_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_inv_b.html" target="_self">guenther::InvB</a></td><td class="desc"></td></tr>
 <tr id="row_78_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_ipol.html" target="_self">taylor::Ipol</a></td><td class="desc"><p class="formulaDsp">
 \[\hat{I}\]
 </p>
@@ -340,10 +351,10 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 \[\hat{I}\]
 </p>
  </td></tr>
-<tr id="row_80_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_ipol_r.html" target="_self">solovev::IpolR</a></td><td class="desc"></td></tr>
-<tr id="row_81_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_ipol_r.html" target="_self">taylor::IpolR</a></td><td class="desc"></td></tr>
-<tr id="row_82_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_ipol_z.html" target="_self">solovev::IpolZ</a></td><td class="desc"></td></tr>
-<tr id="row_83_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_ipol_z.html" target="_self">taylor::IpolZ</a></td><td class="desc"></td></tr>
+<tr id="row_80_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_ipol_r.html" target="_self">taylor::IpolR</a></td><td class="desc"></td></tr>
+<tr id="row_81_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_ipol_r.html" target="_self">solovev::IpolR</a></td><td class="desc"></td></tr>
+<tr id="row_82_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_ipol_z.html" target="_self">taylor::IpolZ</a></td><td class="desc"></td></tr>
+<tr id="row_83_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_ipol_z.html" target="_self">solovev::IpolZ</a></td><td class="desc"></td></tr>
 <tr id="row_84_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_iris.html" target="_self">solovev::Iris</a></td><td class="desc">Returns zero outside psipmax and inside psipmin, otherwise 1 </p><p class="formulaDsp">
 \[ \begin{cases} 1 \text{ if } \psi_{p,min} &lt; \psi_p(R,Z) &lt; \psi_{p,max}\\ 0 \text{ else} \end{cases}\]
 </p>
@@ -364,11 +375,11 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
  </td></tr>
 <tr id="row_96_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structguenther_1_1_ln_b.html" target="_self">guenther::LnB</a></td><td class="desc"></td></tr>
 <tr id="row_97_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_minimal_curve.html" target="_self">solovev::MinimalCurve&lt; Psi, PsiX, PsiY &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_98_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_98_" class="arrow" onclick="toggleFolder('98_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>MPIGrid2d</b></td><td class="desc"></td></tr>
+<tr id="row_98_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_98_" class="arrow" onclick="toggleFolder('98_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_m_p_i_grid2d.html" target="_self">dg::MPIGrid2d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_98_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_m_p_i_grid2d.html" target="_self">dg::ConformalMPIGrid2d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_98_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_m_p_i_grid2d.html" target="_self">dg::CurvilinearMPIGrid2d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_98_2_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_m_p_i_grid2d.html" target="_self">dg::OrthogonalMPIGrid2d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_99_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_99_" class="arrow" onclick="toggleFolder('99_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>MPIGrid3d</b></td><td class="desc"></td></tr>
+<tr id="row_99_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_99_" class="arrow" onclick="toggleFolder('99_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="elRef" doxygen="/home/matthias/feltor/doc/inc/dg.tag:../../../inc/dg/html/" href="../../../inc/dg/html/structdg_1_1_m_p_i_grid3d.html" target="_self">dg::MPIGrid3d</a>&#160;[external]</td><td class="desc"></td></tr>
 <tr id="row_99_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_m_p_i_grid3d.html" target="_self">dg::ConformalMPIGrid3d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_99_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_m_p_i_grid3d.html" target="_self">dg::CurvilinearMPIGrid3d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_99_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_m_p_i_grid3d.html" target="_self">dg::OrthogonalMPIGrid3d&lt; LocalContainer &gt;</a></td><td class="desc"></td></tr>
@@ -385,35 +396,35 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 </p>
  </td></tr>
 <tr id="row_106_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip.html" target="_self">taylor::Psip</a></td><td class="desc"></td></tr>
-<tr id="row_107_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip.html" target="_self">solovev::Psip</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_107_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip.html" target="_self">solovev::mod::Psip</a></td><td class="desc"></td></tr>
+<tr id="row_108_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip.html" target="_self">solovev::Psip</a></td><td class="desc"><p class="formulaDsp">
 \[ \hat{\psi}_p \]
 </p>
  </td></tr>
-<tr id="row_108_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip.html" target="_self">solovev::mod::Psip</a></td><td class="desc"></td></tr>
 <tr id="row_109_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_r.html" target="_self">solovev::PsipR</a></td><td class="desc"><p class="formulaDsp">
 \[ \frac{\partial \hat{\psi}_p }{ \partial \hat{R}} \]
 </p>
  </td></tr>
 <tr id="row_110_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_r.html" target="_self">taylor::PsipR</a></td><td class="desc"></td></tr>
 <tr id="row_111_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_r.html" target="_self">solovev::mod::PsipR</a></td><td class="desc"></td></tr>
-<tr id="row_112_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_r_r.html" target="_self">solovev::PsipRR</a></td><td class="desc"><p class="formulaDsp">
-\[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R}^2}\]
-</p>
- </td></tr>
+<tr id="row_112_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_r_r.html" target="_self">solovev::mod::PsipRR</a></td><td class="desc"></td></tr>
 <tr id="row_113_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_r_r.html" target="_self">taylor::PsipRR</a></td><td class="desc"><p class="formulaDsp">
 \[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R}^2}\]
 </p>
  </td></tr>
-<tr id="row_114_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_r_r.html" target="_self">solovev::mod::PsipRR</a></td><td class="desc"></td></tr>
-<tr id="row_115_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_r_z.html" target="_self">solovev::PsipRZ</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_114_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_r_r.html" target="_self">solovev::PsipRR</a></td><td class="desc"><p class="formulaDsp">
+\[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R}^2}\]
+</p>
+ </td></tr>
+<tr id="row_115_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_r_z.html" target="_self">taylor::PsipRZ</a></td><td class="desc"><p class="formulaDsp">
 \[\frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R} \partial\hat{Z}}\]
 </p>
  </td></tr>
-<tr id="row_116_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_r_z.html" target="_self">taylor::PsipRZ</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_116_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_r_z.html" target="_self">solovev::mod::PsipRZ</a></td><td class="desc"></td></tr>
+<tr id="row_117_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_r_z.html" target="_self">solovev::PsipRZ</a></td><td class="desc"><p class="formulaDsp">
 \[\frac{\partial^2 \hat{\psi}_p }{ \partial \hat{R} \partial\hat{Z}}\]
 </p>
  </td></tr>
-<tr id="row_117_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_r_z.html" target="_self">solovev::mod::PsipRZ</a></td><td class="desc"></td></tr>
 <tr id="row_118_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psi_pupil.html" target="_self">solovev::PsiPupil</a></td><td class="desc">Returns psi inside psipmax and psipmax outside psipmax </p><p class="formulaDsp">
 \[ \begin{cases} \psi_{p,max} \text{ if } \psi_p(R,Z) &gt; \psi_{p,max} \\ \psi_p(R,Z) \text{ else} \end{cases}\]
 </p>
@@ -427,11 +438,11 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 \[\frac{\partial \hat{\psi}_p }{ \partial \hat{Z}}\]
 </p>
  </td></tr>
-<tr id="row_122_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_z_z.html" target="_self">taylor::PsipZZ</a></td><td class="desc"><p class="formulaDsp">
+<tr id="row_122_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_z_z.html" target="_self">solovev::mod::PsipZZ</a></td><td class="desc"></td></tr>
+<tr id="row_123_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structtaylor_1_1_psip_z_z.html" target="_self">taylor::PsipZZ</a></td><td class="desc"><p class="formulaDsp">
 \[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{Z}^2}\]
 </p>
  </td></tr>
-<tr id="row_123_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1mod_1_1_psip_z_z.html" target="_self">solovev::mod::PsipZZ</a></td><td class="desc"></td></tr>
 <tr id="row_124_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_psip_z_z.html" target="_self">solovev::PsipZZ</a></td><td class="desc"><p class="formulaDsp">
 \[ \frac{\partial^2 \hat{\psi}_p }{ \partial \hat{Z}^2}\]
 </p>
@@ -440,37 +451,25 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 \[ \begin{cases} 0 \text{ if } \psi_p(R,Z) &gt; \psi_{p,maxcut} \\ 1 \text{ else} \end{cases}\]
 </p>
  </td></tr>
-<tr id="row_126_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_126_" class="arrow" onclick="toggleFolder('126_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>RefinedGrid2d</b></td><td class="desc"></td></tr>
-<tr id="row_126_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_refined_grid2d.html" target="_self">dg::ConformalRefinedGrid2d&lt; container &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_126_1_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_refined_grid2d.html" target="_self">dg::CurvilinearRefinedGrid2d&lt; container &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_126_2_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid2d.html" target="_self">dg::OrthogonalRefinedGrid2d&lt; container &gt;</a></td><td class="desc">An orthogonal refined grid </td></tr>
-<tr id="row_127_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_127_" class="arrow" onclick="toggleFolder('127_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>RefinedGrid3d</b></td><td class="desc"></td></tr>
-<tr id="row_127_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_conformal_refined_grid3d.html" target="_self">dg::ConformalRefinedGrid3d&lt; container &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_127_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_curvilinear_refined_grid3d.html" target="_self">dg::CurvilinearRefinedGrid3d&lt; container &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_127_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid3d.html" target="_self">dg::OrthogonalRefinedGrid3d&lt; container &gt;</a></td><td class="desc">An orthogonal refined grid </td></tr>
-<tr id="row_128_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_128_" class="arrow" onclick="toggleFolder('128_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>RefinedGridX2d</b></td><td class="desc"></td></tr>
-<tr id="row_128_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid_x2d.html" target="_self">dg::OrthogonalRefinedGridX2d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
-<tr id="row_129_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_129_" class="arrow" onclick="toggleFolder('129_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><b>RefinedGridX3d</b></td><td class="desc"></td></tr>
-<tr id="row_129_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_orthogonal_refined_grid_x3d.html" target="_self">dg::OrthogonalRefinedGridX3d&lt; container &gt;</a></td><td class="desc">A three-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
-<tr id="row_130_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro.html" target="_self">dg::Ribeiro&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
-<tr id="row_131_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro_flux_generator.html" target="_self">dg::RibeiroFluxGenerator&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">Same as the <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> class just but uses psi as a flux label directly </td></tr>
-<tr id="row_132_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro_x.html" target="_self">dg::RibeiroX&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
-<tr id="row_133_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_safety_factor.html" target="_self">solovev::SafetyFactor&lt; container &gt;</a></td><td class="desc">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
+<tr id="row_126_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro.html" target="_self">dg::Ribeiro&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
+<tr id="row_127_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro_flux_generator.html" target="_self">dg::RibeiroFluxGenerator&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">Same as the <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> class just but uses psi as a flux label directly </td></tr>
+<tr id="row_128_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_ribeiro_x.html" target="_self">dg::RibeiroX&lt; Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY &gt;</a></td><td class="desc">A two-dimensional grid based on "almost-conformal" coordinates by <a class="el" href="structdg_1_1_ribeiro.html" title="A two-dimensional grid based on &quot;almost-conformal&quot; coordinates by Ribeiro and Scott 2010...">Ribeiro</a> and Scott 2010 </td></tr>
+<tr id="row_129_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_safety_factor.html" target="_self">solovev::SafetyFactor&lt; container &gt;</a></td><td class="desc">Class for the evaluation of the safety factor q </p><p class="formulaDsp">
 \[ q(\psi_0) = \frac{1}{2\pi} \int dV |\nabla\psi_p| \delta(\psi_p-\psi_0) \alpha( R,Z) \]
 </p>
  </td></tr>
-<tr id="row_134_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_separatrix_orthogonal.html" target="_self">dg::SeparatrixOrthogonal&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Choose points on separatrix </td></tr>
-<tr id="row_135_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_simple_orthogonal.html" target="_self">dg::SimpleOrthogonal&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Generate a simple orthogonal grid </td></tr>
-<tr id="row_136_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_simple_orthogonal_x.html" target="_self">dg::SimpleOrthogonalX&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Choose points on inside or outside line </td></tr>
-<tr id="row_137_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_tanh_source.html" target="_self">solovev::TanhSource</a></td><td class="desc">Source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
+<tr id="row_130_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_separatrix_orthogonal.html" target="_self">dg::SeparatrixOrthogonal&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Choose points on separatrix </td></tr>
+<tr id="row_131_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_simple_orthogonal.html" target="_self">dg::SimpleOrthogonal&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Generate a simple orthogonal grid </td></tr>
+<tr id="row_132_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structdg_1_1_simple_orthogonal_x.html" target="_self">dg::SimpleOrthogonalX&lt; Psi, PsiX, PsiY, LaplacePsi &gt;</a></td><td class="desc">Choose points on inside or outside line </td></tr>
+<tr id="row_133_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_tanh_source.html" target="_self">solovev::TanhSource</a></td><td class="desc">Source for quantities N ... dtlnN = ...+ source/N Returns a tanh profile shifted to \( \psi_{p,min}-3\alpha\) </p><p class="formulaDsp">
 \[ 0.5\left( 1 + \tanh\left( -\frac{\psi_p(R,Z) - \psi_{p,min} + 3\alpha}{\alpha}\right)\right) \]
 </p>
  </td></tr>
-<tr id="row_138_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_test_function.html" target="_self">solovev::TestFunction</a></td><td class="desc">Testfunction to test the parallel derivative </p><p class="formulaDsp">
+<tr id="row_134_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_test_function.html" target="_self">solovev::TestFunction</a></td><td class="desc">Testfunction to test the parallel derivative </p><p class="formulaDsp">
 \[ f(R,Z,\varphi) = -\frac{\cos(\varphi)}{R\hat b_\varphi} \]
 </p>
  </td></tr>
-<tr id="row_139_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_zonal_flow.html" target="_self">solovev::ZonalFlow</a></td><td class="desc">Returns zonal flow field </p><p class="formulaDsp">
+<tr id="row_135_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structsolovev_1_1_zonal_flow.html" target="_self">solovev::ZonalFlow</a></td><td class="desc">Returns zonal flow field </p><p class="formulaDsp">
 \[ N(R,Z)=\begin{cases} A_{bg} |\cos(2\pi\psi_p(R,Z) k_\psi)| \text{ if }\psi_p &lt; \psi_{p,max} \\ 0 \text{ else } \end{cases} \]
 </p>
  </td></tr>
@@ -481,7 +480,7 @@ $(document).ready(function(){initNavTree('hierarchy.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 21 2016 17:52:15 for Geometry by
+    <li class="footer">Generated on Tue Jan 17 2017 13:58:36 for Geometry by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

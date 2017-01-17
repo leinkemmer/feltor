@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['solovev_2eh',['solovev.h',['../solovev_8h.html',1,'']]],
-  ['solovev_5fparameters_2eh',['solovev_parameters.h',['../solovev__parameters_8h.html',1,'']]]
+  ['derivatives_2eh',['derivatives.h',['../../../../inc/dg/html/derivatives_8h.html',1,'']]],
+  ['derivativesx_2eh',['derivativesX.h',['../../../../inc/dg/html/derivatives_x_8h.html',1,'']]],
+  ['ds_2eh',['ds.h',['../../../../inc/dg/html/ds_8h.html',1,'']]],
+  ['dx_2eh',['dx.h',['../../../../inc/dg/html/dx_8h.html',1,'']]],
+  ['dxx_2eh',['dxX.h',['../../../../inc/dg/html/dx_x_8h.html',1,'']]]
 ];

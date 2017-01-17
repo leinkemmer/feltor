@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['root_20finding',['Root finding',['../group__root.html',1,'']]]
+  ['scatter',['Scatter',['../group__scatter.html',1,'']]],
+  ['sparse_20matrix_20formats',['Sparse matrix formats',['../group__sparsematrix.html',1,'']]]
 ];

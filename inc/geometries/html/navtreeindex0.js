@@ -196,7 +196,10 @@ var NAVTREEINDEX0 =
 "namespacedg.html":[1,0,0],
 "namespacedg.html":[2,0,0],
 "namespacemembers.html":[1,1,0],
+"namespacemembers_enum.html":[1,1,4],
 "namespacemembers_func.html":[1,1,1],
+"namespacemembers_type.html":[1,1,3],
+"namespacemembers_vars.html":[1,1,2],
 "namespaces.html":[1,0],
 "namespacesolovev.html":[1,0,1],
 "namespacesolovev.html":[2,0,2],
@@ -246,8 +249,5 @@ var NAVTREEINDEX0 =
 "structdg_1_1_conformal_m_p_i_grid2d.html":[0,2,8],
 "structdg_1_1_conformal_m_p_i_grid2d.html#a01dcbdd42f254594f895e79535e7d50d":[0,2,8,7],
 "structdg_1_1_conformal_m_p_i_grid2d.html#a045a9dc77abfdb984637f30c37a06fd8":[0,2,8,6],
-"structdg_1_1_conformal_m_p_i_grid2d.html#a3fc562791e72b5f8a45ff475f6adab3d":[0,2,8,5],
-"structdg_1_1_conformal_m_p_i_grid2d.html#a43c1e655af842a486e9a1979e1db525a":[0,2,8,11],
-"structdg_1_1_conformal_m_p_i_grid2d.html#a44cc0d64ac9bcc86a51c3d4a23715c34":[0,2,8,3],
-"structdg_1_1_conformal_m_p_i_grid2d.html#a5185c3889f542615e8ad3e6304d81ad9":[0,2,8,10]
+"structdg_1_1_conformal_m_p_i_grid2d.html#a3fc562791e72b5f8a45ff475f6adab3d":[0,2,8,5]
 };

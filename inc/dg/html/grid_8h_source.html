@@ -36,14 +36,14 @@
 <div id="titlearea">
     <!--My own title area-->
   <ul class="tablist"> 
-      <li><a href="../../../index.html">/</a><li>
-    <li><a href="../../../inc/dg/html/index.html">DG lib</a></li>
-    <li><a href="../../../inc/file/html/index.html">FILE lib</a></li>
-    <li><a href="../../../inc/toefl/html/index.html">TOEFL lib</a></li>
-    <li><a href="../../../inc/geometries/html/index.html">Geometry</a></li>
-    <li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
+      <!-- <li><a href="../../../index.html">/</a><li>-->
+    <li><a href="../../../inc/dg/html/modules.html">dG</a></li>
+    <li><a href="../../../inc/file/html/index.html">file</a></li>
+    <li><a href="../../../inc/toefl/html/index.html">spectral</a></li>
+    <li><a href="../../../inc/geometries/html/index.html">geometry</a></li>
+    <!--li><a href="../../../src/feltor/html/index.html">FELTOR code</a></li>
     <li><a href="../../../src/feltor2D/html/index.html">FELTOR2D code</a></li>
-    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li>
+    <li><a href="../../../src/innto/html/index.html">INNTO code</a></li-->
   </ul>
   <!--End My own title area-->
 <table cellspacing="0" cellpadding="0">
@@ -51,7 +51,6 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Discontinuous Galerkin Library
-   &#160;<span id="projectnumber">3.0</span>
    </div>
    <div id="projectbrief">Discontinuous Galerkin numerical methods and container free numerical algorithms</div>
   </td>
@@ -159,7 +158,7 @@ $(document).ready(function(){initNavTree('grid_8h_source.html','');});
 <div class="ttc" id="structdg_1_1_grid1d_html_a60941b7ae6037e5e799c07ad05f93bf6"><div class="ttname"><a href="structdg_1_1_grid1d.html#a60941b7ae6037e5e799c07ad05f93bf6">dg::Grid1d::n</a></div><div class="ttdeci">unsigned n() const </div><div class="ttdoc">number of polynomial coefficients </div><div class="ttdef"><b>Definition:</b> grid.h:85</div></div>
 <div class="ttc" id="structdg_1_1_grid2d_html_acd52e0ba30c6b27d5e410d6f95c6d6f0"><div class="ttname"><a href="structdg_1_1_grid2d.html#acd52e0ba30c6b27d5e410d6f95c6d6f0">dg::Grid2d::Grid2d</a></div><div class="ttdeci">Grid2d(const Grid1d &amp;gx, const Grid1d &amp;gy)</div><div class="ttdoc">Construct a 2d grid as the product of two 1d grids. </div><div class="ttdef"><b>Definition:</b> grid.h:198</div></div>
 <div class="ttc" id="structdg_1_1_grid2d_html_a23d42968158fe7c149bb7bb6d732fd1f"><div class="ttname"><a href="structdg_1_1_grid2d.html#a23d42968158fe7c149bb7bb6d732fd1f">dg::Grid2d::dlt</a></div><div class="ttdeci">const DLT&lt; double &gt; &amp; dlt() const </div><div class="ttdoc">discrete legendre trafo </div><div class="ttdef"><b>Definition:</b> grid.h:297</div></div>
-<div class="ttc" id="structdg_1_1_m_p_i_grid3d_html"><div class="ttname"><a href="structdg_1_1_m_p_i_grid3d.html">dg::MPIGrid3d</a></div><div class="ttdoc">3D MPI Grid class </div><div class="ttdef"><b>Definition:</b> mpi_grid.h:298</div></div>
+<div class="ttc" id="structdg_1_1_m_p_i_grid3d_html"><div class="ttname"><a href="structdg_1_1_m_p_i_grid3d.html">dg::MPIGrid3d</a></div><div class="ttdoc">3D MPI Grid class </div><div class="ttdef"><b>Definition:</b> mpi_grid.h:299</div></div>
 <div class="ttc" id="structdg_1_1_grid2d_html_aedaf642eafb95d966245af85a60c952b"><div class="ttname"><a href="structdg_1_1_grid2d.html#aedaf642eafb95d966245af85a60c952b">dg::Grid2d::local_grid</a></div><div class="ttdeci">Grid2d local_grid() const </div><div class="ttdoc">Return a copy. </div><div class="ttdef"><b>Definition:</b> grid.h:291</div></div>
 <div class="ttc" id="structdg_1_1_grid2d_html_aae333d585b691d23b864a0b65f41b372"><div class="ttname"><a href="structdg_1_1_grid2d.html#aae333d585b691d23b864a0b65f41b372">dg::Grid2d::Grid2d</a></div><div class="ttdeci">Grid2d(double x0, double x1, double y0, double y1, unsigned n, unsigned Nx, unsigned Ny, bc bcx=PER, bc bcy=PER)</div><div class="ttdoc">Construct a 2D grid. </div><div class="ttdef"><b>Definition:</b> grid.h:182</div></div>
 <div class="ttc" id="structdg_1_1_grid3d_html_a3bef0a20ee7e575ba79c94a809f3c0c3"><div class="ttname"><a href="structdg_1_1_grid3d.html#a3bef0a20ee7e575ba79c94a809f3c0c3">dg::Grid3d::hx</a></div><div class="ttdeci">double hx() const </div><div class="ttdoc">cell size in x </div><div class="ttdef"><b>Definition:</b> grid.h:508</div></div>
@@ -207,7 +206,7 @@ $(document).ready(function(){initNavTree('grid_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="dir_cba352cc187f01702d3926d435723909.html">dg</a></li><li class="navelem"><a class="el" href="dir_2534fabef37d53a9be799c6b35cbe4e0.html">backend</a></li><li class="navelem"><a class="el" href="grid_8h.html">grid.h</a></li>
-    <li class="footer">Generated on Fri Oct 21 2016 17:52:13 for Discontinuous Galerkin Library by
+    <li class="footer">Generated on Tue Jan 17 2017 13:58:33 for Discontinuous Galerkin Library by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -16,8 +16,8 @@ var hierarchy =
     [ "solovev::CurvatureNablaBR", "structsolovev_1_1_curvature_nabla_b_r.html", null ],
     [ "solovev::CurvatureNablaBZ", "structsolovev_1_1_curvature_nabla_b_z.html", null ],
     [ "solovev::DeltaFunction", "structsolovev_1_1_delta_function.html", null ],
-    [ "guenther::DeriNeu", "structguenther_1_1_deri_neu.html", null ],
     [ "solovev::DeriNeu", "structsolovev_1_1_deri_neu.html", null ],
+    [ "guenther::DeriNeu", "structguenther_1_1_deri_neu.html", null ],
     [ "guenther::DeriNeu2", "structguenther_1_1_deri_neu2.html", null ],
     [ "guenther::DeriNeuT", "structguenther_1_1_deri_neu_t.html", null ],
     [ "guenther::DeriNeuT2", "structguenther_1_1_deri_neu_t2.html", null ],
@@ -29,9 +29,9 @@ var hierarchy =
     [ "solovev::EllipticDirNeuM", "structsolovev_1_1_elliptic_dir_neu_m.html", null ],
     [ "solovev::EllipticDirPerM", "structsolovev_1_1_elliptic_dir_per_m.html", null ],
     [ "solovev::EllipticDirSimpleM", "structsolovev_1_1_elliptic_dir_simple_m.html", null ],
+    [ "dg::Field", "structdg_1_1_field.html", null ],
     [ "solovev::Field", "structsolovev_1_1_field.html", null ],
     [ "guenther::Field", "structguenther_1_1_field.html", null ],
-    [ "dg::Field", "structdg_1_1_field.html", null ],
     [ "solovev::FieldP", "structsolovev_1_1_field_p.html", null ],
     [ "guenther::FieldP", "structguenther_1_1_field_p.html", null ],
     [ "solovev::FieldR", "structsolovev_1_1_field_r.html", null ],
@@ -60,44 +60,60 @@ var hierarchy =
     [ "solovev::FuncDirNeu", "structsolovev_1_1_func_dir_neu.html", null ],
     [ "solovev::FuncDirPer", "structsolovev_1_1_func_dir_per.html", null ],
     [ "guenther::FuncMinusDeriNeuT2", "structguenther_1_1_func_minus_deri_neu_t2.html", null ],
-    [ "guenther::FuncNeu", "structguenther_1_1_func_neu.html", null ],
     [ "solovev::FuncNeu", "structsolovev_1_1_func_neu.html", null ],
+    [ "guenther::FuncNeu", "structguenther_1_1_func_neu.html", null ],
     [ "guenther::FuncNeu2", "structguenther_1_1_func_neu2.html", null ],
     [ "solovev::GaussianDamping", "structsolovev_1_1_gaussian_damping.html", null ],
     [ "solovev::GaussianProfDamping", "structsolovev_1_1_gaussian_prof_damping.html", null ],
     [ "solovev::GaussianProfXDamping", "structsolovev_1_1_gaussian_prof_x_damping.html", null ],
     [ "solovev::GeomParameters", "structsolovev_1_1_geom_parameters.html", null ],
-    [ "guenther::GradLnB", "structguenther_1_1_grad_ln_b.html", null ],
     [ "solovev::GradLnB", "structsolovev_1_1_grad_ln_b.html", null ],
-    [ "Grid2d", null, [
+    [ "guenther::GradLnB", "structguenther_1_1_grad_ln_b.html", null ],
+    [ "dg::Grid2d", "../../../inc/dg/html/structdg_1_1_grid2d.html", [
       [ "dg::ConformalGrid2d< container >", "structdg_1_1_conformal_grid2d.html", null ],
       [ "dg::CurvilinearGrid2d< container >", "structdg_1_1_curvilinear_grid2d.html", null ],
-      [ "dg::OrthogonalGrid2d< container >", "structdg_1_1_orthogonal_grid2d.html", null ]
+      [ "dg::OrthogonalGrid2d< container >", "structdg_1_1_orthogonal_grid2d.html", null ],
+      [ "dg::RefinedGrid2d", "../../../inc/dg/html/structdg_1_1_refined_grid2d.html", [
+        [ "dg::ConformalRefinedGrid2d< container >", "structdg_1_1_conformal_refined_grid2d.html", null ],
+        [ "dg::CurvilinearRefinedGrid2d< container >", "structdg_1_1_curvilinear_refined_grid2d.html", null ],
+        [ "dg::OrthogonalRefinedGrid2d< container >", "structdg_1_1_orthogonal_refined_grid2d.html", null ]
+      ] ]
     ] ],
-    [ "Grid3d", null, [
+    [ "dg::Grid3d", "../../../inc/dg/html/structdg_1_1_grid3d.html", [
       [ "dg::ConformalGrid3d< container >", "structdg_1_1_conformal_grid3d.html", null ],
       [ "dg::CurvilinearGrid3d< container >", "structdg_1_1_curvilinear_grid3d.html", null ],
-      [ "dg::OrthogonalGrid3d< container >", "structdg_1_1_orthogonal_grid3d.html", null ]
+      [ "dg::OrthogonalGrid3d< container >", "structdg_1_1_orthogonal_grid3d.html", null ],
+      [ "dg::RefinedGrid3d", "../../../inc/dg/html/structdg_1_1_refined_grid3d.html", [
+        [ "dg::ConformalRefinedGrid3d< container >", "structdg_1_1_conformal_refined_grid3d.html", null ],
+        [ "dg::CurvilinearRefinedGrid3d< container >", "structdg_1_1_curvilinear_refined_grid3d.html", null ],
+        [ "dg::OrthogonalRefinedGrid3d< container >", "structdg_1_1_orthogonal_refined_grid3d.html", null ]
+      ] ]
     ] ],
-    [ "GridX2d", null, [
+    [ "dg::GridX2d", "../../../inc/dg/html/structdg_1_1_grid_x2d.html", [
       [ "dg::CurvilinearGridX2d< container >", "structdg_1_1_curvilinear_grid_x2d.html", null ],
-      [ "dg::OrthogonalGridX2d< container >", "structdg_1_1_orthogonal_grid_x2d.html", null ]
+      [ "dg::OrthogonalGridX2d< container >", "structdg_1_1_orthogonal_grid_x2d.html", null ],
+      [ "dg::RefinedGridX2d", "../../../inc/dg/html/structdg_1_1_refined_grid_x2d.html", [
+        [ "dg::OrthogonalRefinedGridX2d< container >", "structdg_1_1_orthogonal_refined_grid_x2d.html", null ]
+      ] ]
     ] ],
-    [ "GridX3d", null, [
+    [ "dg::GridX3d", "../../../inc/dg/html/structdg_1_1_grid_x3d.html", [
       [ "dg::CurvilinearGridX3d< container >", "structdg_1_1_curvilinear_grid_x3d.html", null ],
-      [ "dg::OrthogonalGridX3d< container >", "structdg_1_1_orthogonal_grid_x3d.html", null ]
+      [ "dg::OrthogonalGridX3d< container >", "structdg_1_1_orthogonal_grid_x3d.html", null ],
+      [ "dg::RefinedGridX3d", "../../../inc/dg/html/structdg_1_1_refined_grid_x3d.html", [
+        [ "dg::OrthogonalRefinedGridX3d< container >", "structdg_1_1_orthogonal_refined_grid_x3d.html", null ]
+      ] ]
     ] ],
     [ "dg::Hector< IMatrix, Matrix, container >", "structdg_1_1_hector.html", null ],
     [ "dg::HectorX< IMatrix, Matrix, container >", "structdg_1_1_hector_x.html", null ],
     [ "solovev::HessianRZtau< PsiX, PsiY, PsiXX, PsiXY, PsiYY >", "structsolovev_1_1_hessian_r_ztau.html", null ],
-    [ "guenther::InvB", "structguenther_1_1_inv_b.html", null ],
     [ "solovev::InvB", "structsolovev_1_1_inv_b.html", null ],
+    [ "guenther::InvB", "structguenther_1_1_inv_b.html", null ],
     [ "taylor::Ipol", "structtaylor_1_1_ipol.html", null ],
     [ "solovev::Ipol", "structsolovev_1_1_ipol.html", null ],
-    [ "solovev::IpolR", "structsolovev_1_1_ipol_r.html", null ],
     [ "taylor::IpolR", "structtaylor_1_1_ipol_r.html", null ],
-    [ "solovev::IpolZ", "structsolovev_1_1_ipol_z.html", null ],
+    [ "solovev::IpolR", "structsolovev_1_1_ipol_r.html", null ],
     [ "taylor::IpolZ", "structtaylor_1_1_ipol_z.html", null ],
+    [ "solovev::IpolZ", "structsolovev_1_1_ipol_z.html", null ],
     [ "solovev::Iris", "structsolovev_1_1_iris.html", null ],
     [ "dg::detail::LaplaceAdaptPsi< PsiX, PsiY, LaplacePsi, Chi, ChiX, ChiY >", "structdg_1_1detail_1_1_laplace_adapt_psi.html", null ],
     [ "dg::detail::LaplaceChiPsi< PsiX, PsiY, PsiXX, PsiXY, PsiYY, ChiXX, ChiXY, ChiYY, DivChiX, DivChiY >", "structdg_1_1detail_1_1_laplace_chi_psi.html", null ],
@@ -112,12 +128,12 @@ var hierarchy =
     [ "solovev::LnB", "structsolovev_1_1_ln_b.html", null ],
     [ "guenther::LnB", "structguenther_1_1_ln_b.html", null ],
     [ "solovev::MinimalCurve< Psi, PsiX, PsiY >", "structsolovev_1_1_minimal_curve.html", null ],
-    [ "MPIGrid2d", null, [
+    [ "dg::MPIGrid2d", "../../../inc/dg/html/structdg_1_1_m_p_i_grid2d.html", [
       [ "dg::ConformalMPIGrid2d< LocalContainer >", "structdg_1_1_conformal_m_p_i_grid2d.html", null ],
       [ "dg::CurvilinearMPIGrid2d< LocalContainer >", "structdg_1_1_curvilinear_m_p_i_grid2d.html", null ],
       [ "dg::OrthogonalMPIGrid2d< LocalContainer >", "structdg_1_1_orthogonal_m_p_i_grid2d.html", null ]
     ] ],
-    [ "MPIGrid3d", null, [
+    [ "dg::MPIGrid3d", "../../../inc/dg/html/structdg_1_1_m_p_i_grid3d.html", [
       [ "dg::ConformalMPIGrid3d< LocalContainer >", "structdg_1_1_conformal_m_p_i_grid3d.html", null ],
       [ "dg::CurvilinearMPIGrid3d< LocalContainer >", "structdg_1_1_curvilinear_m_p_i_grid3d.html", null ],
       [ "dg::OrthogonalMPIGrid3d< LocalContainer >", "structdg_1_1_orthogonal_m_p_i_grid3d.html", null ]
@@ -129,41 +145,25 @@ var hierarchy =
     [ "solovev::Nprofile", "structsolovev_1_1_nprofile.html", null ],
     [ "solovev::PsiLimiter", "structsolovev_1_1_psi_limiter.html", null ],
     [ "taylor::Psip", "structtaylor_1_1_psip.html", null ],
-    [ "solovev::Psip", "structsolovev_1_1_psip.html", null ],
     [ "solovev::mod::Psip", "structsolovev_1_1mod_1_1_psip.html", null ],
+    [ "solovev::Psip", "structsolovev_1_1_psip.html", null ],
     [ "solovev::PsipR", "structsolovev_1_1_psip_r.html", null ],
     [ "taylor::PsipR", "structtaylor_1_1_psip_r.html", null ],
     [ "solovev::mod::PsipR", "structsolovev_1_1mod_1_1_psip_r.html", null ],
-    [ "solovev::PsipRR", "structsolovev_1_1_psip_r_r.html", null ],
-    [ "taylor::PsipRR", "structtaylor_1_1_psip_r_r.html", null ],
     [ "solovev::mod::PsipRR", "structsolovev_1_1mod_1_1_psip_r_r.html", null ],
-    [ "solovev::PsipRZ", "structsolovev_1_1_psip_r_z.html", null ],
+    [ "taylor::PsipRR", "structtaylor_1_1_psip_r_r.html", null ],
+    [ "solovev::PsipRR", "structsolovev_1_1_psip_r_r.html", null ],
     [ "taylor::PsipRZ", "structtaylor_1_1_psip_r_z.html", null ],
     [ "solovev::mod::PsipRZ", "structsolovev_1_1mod_1_1_psip_r_z.html", null ],
+    [ "solovev::PsipRZ", "structsolovev_1_1_psip_r_z.html", null ],
     [ "solovev::PsiPupil", "structsolovev_1_1_psi_pupil.html", null ],
     [ "solovev::mod::PsipZ", "structsolovev_1_1mod_1_1_psip_z.html", null ],
     [ "solovev::PsipZ", "structsolovev_1_1_psip_z.html", null ],
     [ "taylor::PsipZ", "structtaylor_1_1_psip_z.html", null ],
-    [ "taylor::PsipZZ", "structtaylor_1_1_psip_z_z.html", null ],
     [ "solovev::mod::PsipZZ", "structsolovev_1_1mod_1_1_psip_z_z.html", null ],
+    [ "taylor::PsipZZ", "structtaylor_1_1_psip_z_z.html", null ],
     [ "solovev::PsipZZ", "structsolovev_1_1_psip_z_z.html", null ],
     [ "solovev::Pupil", "structsolovev_1_1_pupil.html", null ],
-    [ "RefinedGrid2d", null, [
-      [ "dg::ConformalRefinedGrid2d< container >", "structdg_1_1_conformal_refined_grid2d.html", null ],
-      [ "dg::CurvilinearRefinedGrid2d< container >", "structdg_1_1_curvilinear_refined_grid2d.html", null ],
-      [ "dg::OrthogonalRefinedGrid2d< container >", "structdg_1_1_orthogonal_refined_grid2d.html", null ]
-    ] ],
-    [ "RefinedGrid3d", null, [
-      [ "dg::ConformalRefinedGrid3d< container >", "structdg_1_1_conformal_refined_grid3d.html", null ],
-      [ "dg::CurvilinearRefinedGrid3d< container >", "structdg_1_1_curvilinear_refined_grid3d.html", null ],
-      [ "dg::OrthogonalRefinedGrid3d< container >", "structdg_1_1_orthogonal_refined_grid3d.html", null ]
-    ] ],
-    [ "RefinedGridX2d", null, [
-      [ "dg::OrthogonalRefinedGridX2d< container >", "structdg_1_1_orthogonal_refined_grid_x2d.html", null ]
-    ] ],
-    [ "RefinedGridX3d", null, [
-      [ "dg::OrthogonalRefinedGridX3d< container >", "structdg_1_1_orthogonal_refined_grid_x3d.html", null ]
-    ] ],
     [ "dg::Ribeiro< Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY >", "structdg_1_1_ribeiro.html", null ],
     [ "dg::RibeiroFluxGenerator< Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY >", "structdg_1_1_ribeiro_flux_generator.html", null ],
     [ "dg::RibeiroX< Psi, PsiX, PsiY, PsiXX, PsiXY, PsiYY >", "structdg_1_1_ribeiro_x.html", null ],

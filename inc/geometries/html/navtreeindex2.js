@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"structdg_1_1_nabla_psi_inv_x.html#a5c1f1e8dbbb41ef005cc322153008e47":[2,0,0,28,1],
+"structdg_1_1_nabla_psi_inv_x.html#a95ba61c59a2e02beca15fe9b1908dc73":[2,0,0,28,0],
+"structdg_1_1_nabla_psi_inv_y.html":[2,0,0,29],
 "structdg_1_1_nabla_psi_inv_y.html#a19e21e1561e49316dd4af867995803ce":[2,0,0,29,1],
 "structdg_1_1_nabla_psi_inv_y.html#aaf3f77e4cfd1eb950a9fe68c86afb003":[2,0,0,29,0],
 "structdg_1_1_orthogonal_grid2d.html":[0,2,14],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "structguenther_1_1_divb.html":[0,0,47],
 "structguenther_1_1_divb.html#a2b480ecdef1144ffc26c03ee320291eb":[0,0,47,0],
 "structguenther_1_1_divb.html#a430a0efd3cda29abaa7513f366c3b578":[0,0,47,1],
-"structguenther_1_1_field.html":[0,0,35],
-"structguenther_1_1_field.html#a21632f1d8b6683d7ade3b1c0683f8e66":[0,0,35,3],
-"structguenther_1_1_field.html#a34daa686f28ab94f162f9c9eb24dd966":[0,0,35,4],
-"structguenther_1_1_field.html#a3ea6106a71731ef458e342aec358cd7d":[0,0,35,7]
+"structguenther_1_1_field.html":[0,0,35]
 };

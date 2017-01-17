@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['level_201_3a_20vectors_2c_20matrices_20and_20basic_20operations',['Level 1: Vectors, Matrices and basic operations',['../group__backend.html',1,'']]],
+  ['level_203_3a_20topology_20and_20geometry',['Level 3: Topology and Geometry',['../group__geo.html',1,'']]],
   ['lamb',['Lamb',['../structdg_1_1_lamb.html',1,'dg']]],
   ['lamb',['Lamb',['../structdg_1_1_lamb.html#a8bbe13dcd12f398e0426f1c92388ecdd',1,'dg::Lamb']]],
   ['last',['last',['../structdg_1_1_karniadakis.html#abc9068a1ad218f7dcc9d0663555af55b',1,'dg::Karniadakis']]],
@@ -19,5 +21,7 @@ var searchData=
   ['lowlevel_20helper_20functions_20and_20classes',['Lowlevel helper functions and classes',['../group__lowlevel.html',1,'']]],
   ['lx',['lx',['../structdg_1_1_grid1d.html#a2c287b73546860a964157ca9d0e9dea2',1,'dg::Grid1d::lx()'],['../structdg_1_1_grid2d.html#a658afc23ae7c12ec3451a7915784c0ca',1,'dg::Grid2d::lx()'],['../structdg_1_1_grid3d.html#ab8f3c6278137d6926e79cdbf508ba43b',1,'dg::Grid3d::lx()'],['../structdg_1_1_grid_x1d.html#a0dc73f182169638bea559c5c992a6ae6',1,'dg::GridX1d::lx()'],['../structdg_1_1_grid_x2d.html#a0cb4233030b9ae03144fa97d3c9039c5',1,'dg::GridX2d::lx()'],['../structdg_1_1_grid_x3d.html#a0d411257e9a7004ba773fe5fb070b054',1,'dg::GridX3d::lx()'],['../structdg_1_1_m_p_i_grid2d.html#aeb6a8da4dfe3f756153970a88d1b43dd',1,'dg::MPIGrid2d::lx()'],['../structdg_1_1_m_p_i_grid3d.html#aa8717712f60e64bcfab72f42926185d5',1,'dg::MPIGrid3d::lx()']]],
   ['ly',['ly',['../structdg_1_1_grid2d.html#a244b45fade5b110b531edfa53af359d6',1,'dg::Grid2d::ly()'],['../structdg_1_1_grid3d.html#abd81fa432a955fe879767ec01a2e8b38',1,'dg::Grid3d::ly()'],['../structdg_1_1_grid_x2d.html#a4883d948af6c3f7bfceb5e473962ab76',1,'dg::GridX2d::ly()'],['../structdg_1_1_grid_x3d.html#a0f3360c52b50d2268c30b110924981fa',1,'dg::GridX3d::ly()'],['../structdg_1_1_m_p_i_grid2d.html#a317a524eaef9385b77d8121a439c1b21',1,'dg::MPIGrid2d::ly()'],['../structdg_1_1_m_p_i_grid3d.html#ad6e66181c98ec0cc717e55fdc9cb1350',1,'dg::MPIGrid3d::ly()']]],
-  ['lz',['lz',['../structdg_1_1_grid3d.html#a42ef40c3353e0b364f8ade2e44efdeba',1,'dg::Grid3d::lz()'],['../structdg_1_1_grid_x3d.html#af191e752505c3dd3f71bd63fe307ebf6',1,'dg::GridX3d::lz()'],['../structdg_1_1_m_p_i_grid3d.html#a5539112fcb4274d0a56f77a677652ba5',1,'dg::MPIGrid3d::lz()']]]
+  ['lz',['lz',['../structdg_1_1_grid3d.html#a42ef40c3353e0b364f8ade2e44efdeba',1,'dg::Grid3d::lz()'],['../structdg_1_1_grid_x3d.html#af191e752505c3dd3f71bd63fe307ebf6',1,'dg::GridX3d::lz()'],['../structdg_1_1_m_p_i_grid3d.html#a5539112fcb4274d0a56f77a677652ba5',1,'dg::MPIGrid3d::lz()']]],
+  ['level_202_3a_20basic_20numerical_20algorithms',['Level 2: Basic numerical algorithms',['../group__numerical0.html',1,'']]],
+  ['level_204_3a_20advanced_20numerical_20schemes',['Level 4: Advanced numerical schemes',['../group__numerical1.html',1,'']]]
 ];

@@ -1,5 +1,8 @@
 var NAVTREEINDEX4 =
 {
+"structsolovev_1_1_psip_z_z.html#ga9766f1002269177eebe0ef383cfa62cb":[0,0,26,1],
+"structsolovev_1_1_pupil.html":[0,1,13],
+"structsolovev_1_1_pupil.html#a7bc1e3e5606a589c061298ee994e575b":[0,1,13,0],
 "structsolovev_1_1_pupil.html#aa3b229b269a2ade0937833b66e63c791":[0,1,13,1],
 "structsolovev_1_1_pupil.html#ab1f7acf8205571c5315ab5d47440a42d":[0,1,13,2],
 "structsolovev_1_1_safety_factor.html":[0,1,2],

@@ -13,7 +13,7 @@ var searchData=
   ['refinedgridx2d',['RefinedGridX2d',['../structdg_1_1_refined_grid_x2d.html#aabbe250f69eecdb27360e6e7bab62e5c',1,'dg::RefinedGridX2d::RefinedGridX2d(unsigned add_x, unsigned add_y, unsigned howmanyX, unsigned howmanyY, double x0, double x1, double y0, double y1, double fx, double fy, unsigned n_ref, unsigned n, unsigned Nx, unsigned Ny, bc bcx=dg::PER, bc bcy=dg::PER)'],['../structdg_1_1_refined_grid_x2d.html#aa469e472cc713f0ff22f22acb12c3d58',1,'dg::RefinedGridX2d::RefinedGridX2d(const dg::RefinedGridX3d &amp;g)']]],
   ['refinedgridx3d',['RefinedGridX3d',['../structdg_1_1_refined_grid_x3d.html#ac566363ee40112b8f6ce666d17348d43',1,'dg::RefinedGridX3d']]],
   ['refinedgridx3d',['RefinedGridX3d',['../structdg_1_1_refined_grid_x3d.html',1,'dg']]],
-  ['reset_5fchi',['reset_chi',['../group__matrixoperators.html#ga97293c4b945515a6eaec503856f6cde2',1,'dg::Helmholtz::reset_chi()'],['../group__matrixoperators.html#gaac6e6002246f4c9f7c5838f524f4206f',1,'dg::Helmholtz2::reset_chi()']]],
+  ['reset_5fchi',['reset_chi',['../structdg_1_1_helmholtz.html#a97293c4b945515a6eaec503856f6cde2',1,'dg::Helmholtz::reset_chi()'],['../structdg_1_1_helmholtz2.html#aac6e6002246f4c9f7c5838f524f4206f',1,'dg::Helmholtz2::reset_chi()']]],
   ['resize',['resize',['../classdg_1_1_operator.html#a4c03dee26cfa432aecb8d9a5b2b2e56c',1,'dg::Operator']]],
   ['right_5frange',['right_range',['../structdg_1_1_ell_sparse_block_mat.html#ab609bd21cd26de2b7f0f360d4e8b2e07',1,'dg::EllSparseBlockMat']]],
   ['right_5fsize',['right_size',['../structdg_1_1_ell_sparse_block_mat.html#abce816133c166271872359eb96a9b897',1,'dg::EllSparseBlockMat::right_size()'],['../structdg_1_1_coo_sparse_block_mat.html#af2e04cf5f744a5a2284b57d50c849545',1,'dg::CooSparseBlockMat::right_size()']]],

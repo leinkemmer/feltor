@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['the_20field_20line_20geometry',['The field line geometry',['../group__geom.html',1,'']]]
+  ['discretization_20of_20poisson_20bracket',['Discretization of Poisson bracket',['../../../../inc/dg/html/group__arakawa.html',1,'']]],
+  ['discrete_20derivatives',['Discrete derivatives',['../../../../inc/dg/html/group__creation.html',1,'']]]
 ];

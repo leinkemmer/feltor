@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['topology_20and_20geometry',['Topology and Geometry',['../group__geo.html',1,'']]],
   ['topological_20grids_20and_20operations',['Topological grids and operations',['../group__grid.html',1,'']]],
   ['tanhprofx',['TanhProfX',['../structdg_1_1_tanh_prof_x.html',1,'dg']]],
   ['tanhprofx',['TanhProfX',['../structdg_1_1_tanh_prof_x.html#a38043606afa505f7f9a70511119ac74b',1,'dg::TanhProfX']]],
