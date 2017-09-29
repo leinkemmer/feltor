@@ -25,8 +25,10 @@
  *     @}
  *     @defgroup sparsematrix Sparse matrix formats
  *     @defgroup mpi_structures MPI backend functionality
+ *             The general idea is to separate global communication from local parallelization and thus 
+ *             readily reuse the existing, optimized library for the local part
  *     @defgroup typedefs Typedefs
-       Useful type definitions for easy programming
+ *          Useful type definitions for easy programming
  * @}
  * @defgroup numerical0 Level 2: Basic numerical algorithms
  * These algorithms make use only of blas level 1 and 2 functions
@@ -42,7 +44,8 @@
  *     Objects that store topological information (which point is neighbour of which other point) 
  *     about the grid. 
  *     @{
- *         @defgroup evaluation Function discretization
+ *         @defgroup basictopology Topology base classes
+ *         @defgroup evaluation evaluate
  *             
  *             The function discretisation routines compute the DG discretisation
  *             of analytic functions on a given grid. In 1D the discretisation
@@ -52,28 +55,27 @@
  *             use the product space. We choose x to be the contiguous direction.
  *             The first elements of the resulting vector lie in the cell at (x0,y0) and the last
  *             in (x1, y1).
- *         @defgroup functions Functions and Functors
- *
- *             The functions are useful mainly in the constructor of Operator objects. 
- *             The functors are useful for either vector transformations or
- *             as init functions in the evaluate routines.
- *         @defgroup lowlevel Lowlevel helper functions and classes
- *             Low level helper routines.
- *         @defgroup highlevel Weight functions
- *         @defgroup creation Discrete derivatives 
+ *         @defgroup highlevel create weights 
+ *              overloads for the create::weights and create::inv_weights functions for all
+ *              available topologies
+ *         @defgroup creation create derivatives 
  *
  *             High level matrix creation functions
- *         @defgroup scatter Scatter
+ *         @defgroup interpolation Interpolation and projection
+ *         @defgroup scatter Scatter and Gather
  *     @}
  *     @defgroup geometry Geometric grids and operations
  *
-          These routines form the heart of our geometry free numerical algorithms. 
-          They are called by our geometric operators like the Poisson bracket. 
-      @{
-          @defgroup basicgrids Basic grids
- *        @defgroup utilities Fieldalignment and Averaging
- *            Utilities that might come in handy at some place or the other.
-      @}
+ *        These routines form the heart of our geometry free numerical algorithms. 
+ *        They are called by our geometric operators like the Poisson bracket. 
+ *    @{
+ *        @defgroup basicgeometry Geometry base classes
+ *        @defgroup pullback pullback and pushforward
+ *        @defgroup metric create volume
+ *        @defgroup utilities Averaging
+ *        @defgroup generators Grid Generator classes
+ *            The classes to perform field line integration for DS and averaging classes
+ *    @}
  * @}
  * @defgroup numerical1 Level 4: Advanced numerical schemes
  *
@@ -81,110 +83,93 @@
  * @{
  *     @defgroup arakawa Discretization of Poisson bracket
  *     @defgroup matrixoperators Elliptic and Helmholtz operators
- *     @defgroup fieldaligned Fieldaligned derivatives
  * @}
- * @defgroup templates Level 99: Template models
-   Documentation for template models
+ * @defgroup misc Level 00: Miscellaneous additions
+ * @{
+ *     @defgroup timer Timer class
+ *     @defgroup functions Functions and Functors
+ * 
+ *         The functions are useful mainly in the constructor of Operator objects. 
+ *         The functors are useful for either vector transformations or
+ *         as init functions in the evaluate routines.
+ *     @defgroup lowlevel Lowlevel helper functions and classes
+ *         Low level helper routines.
+ * @}
  * 
  */
-/*! @mainpage
- * Welcome to the DG library. 
- *
- * @par Design principles
- *
- * The DG library is built on top of the <a href="https://thrust.github.io/">thrust</a> and <a href="http://cusplibrary.github.io/index.html">cusp</a> libraries. 
- * Its intention is to provide easy to use
- * functions and objects needed for the integration of 2D and 3D partial differential equations discretized with a
- * discontinuous galerkin method.  
- * Since it is built on top of <a href="https://thrust.github.io/">thrust</a> and <a href="http://cusplibrary.github.io/index.html">cusp</a>, code can run on a CPU as well as a GPU by simply 
- * switching between thrust's host_vector and device_vector. 
- * The DG library uses a design pattern also employed in the cusp library and other modern C++ codes. 
- * It might be referred to as <a href="http://dx.doi.org/10.1063/1.168674">container-free numerical algorithms</a>. 
- *
- *
- *
- */
 
-/**
- * @brief Struct that performs collective scatter and gather operations across processes
- * on distributed vectors using mpi
- *
- * @ingroup templates
- @attention this is not a real class it's there for documentation only
- @attention parameter names can be different
- *
- * @code
- int i = myrank;
- double values[10] = {i,i,i,i, 9,9,9,9};
- thrust::host_vector<double> hvalues( values, values+10);
- int pids[10] =      {0,1,2,3, 0,1,2,3};
- thrust::host_vector<int> hpids( pids, pids+10);
- BijectiveComm coll( hpids, MPI_COMM_WORLD);
- thrust::host_vector<double> hrecv = coll.scatter( hvalues);
- //hrecv is now {0,9,1,9,2,9,3,9} e.g. for process 0 
- thrust::host_vector<double> hrecv2( coll.send_size());
- coll.gather( hrecv, hrecv2);
- //hrecv2 now equals hvalues independent of process rank
- @endcode
- */
-struct aCommunicator
-{
+/** @class hide_binary
+  * @tparam BinaryOp A class or function type with a member/signature equivalent to
+  *  - double operator()(double, double) const
+  */
+/** @class hide_ternary
+  * @tparam TernaryOp A class or function type with a member/signature equivalent to
+  *  - double operator()(double, double, double) const
+  */
 
-    /**
-     * @brief Scatters data according to a specific scheme given in the Constructor
-     *
-     * The order of the received elements is according to their original array index (i.e. a[0] appears before a[1]) and their process rank of origin ( i.e. values from rank 0 appear before values from rank 1)
-     * @param values data to send (must have the size given 
-     * by the map in the constructor, s.a. send_size())
-     * @tparam LocalContainer a container on a shared memory system
-     *
-     * @return received data from other processes of size recv_size()
-     * @note a scatter followed by a gather of the received values restores the original array
-     * @note this function is only needed in the RowDistMat matrix format
-     */
-    template< class LocalContainer>
-    LocalContainer collect( const LocalContainer& values)const;
+ /** @class hide_container
+  * @tparam container 
+  * A data container class for which the blas1 functionality is overloaded.
+  * We assume that container is copyable/assignable and has a swap member function. 
+  * Currently this is one of 
+  *  - dg::HVec, dg::DVec, dg::MHVec or dg::MDVec  
+  *  - std::vector<dg::HVec>, std::vector<dg::DVec>, std::vector<dg::MHVec> or std::vector<dg::MDVec> . 
+  *
+  */
+ /** @class hide_matrix
+  * @tparam Matrix 
+  * A class for which the blas2 functions are callable in connection with the container class. 
+  * The Matrix type can be one of:
+  *  - container: A container acts as a  diagonal matrix. 
+  *  - dg::HMatrix and dg::IHMatrix with dg::HVec or std::vector<dg::HVec>
+  *  - dg::DMatrix and dg::IDMatrix with dg::DVec or std::vector<dg::DVec>
+  *  - dg::MHMatrix with dg::MHVec or std::vector<dg::MHVec>
+  *  - dg::MDMatrix with dg::MDVec or std::vector<dg::MDVec>
+  *  - Any type that has the SelfMadeMatrixTag specified in a corresponding 
+  *  MatrixTraits class (e.g. Elliptic). In this case only those blas2 functions 
+  *  that have a corresponding member function in the Matrix class (e.g. symv( const container&, container&); ) can be called.
+  *  If the container is a std::vector, then the Matrix is applied to each of the elements.
+  */
+  /** @class hide_geometry
+  * @tparam Geometry 
+  A type that is or derives from one of the abstract geometry base classes ( aGeometry2d, aGeometry3d, aMPIGeometry2d, ...). 
+  */
 
-    /**
-     * @brief Gather data according to the map given in the constructor 
-     *
-     * This method is the inverse of scatter 
-     * @tparam LocalContainer a container on a shared memory system
-     * @param gatherFrom other processes collect data from this vector (has to be of size given by recv_size())
-     * @param values contains values from other processes sent back to the origin (must have the size of the map given in the constructor, or send_size())
-     * @note a scatter followed by a gather of the received values restores the original array
-     * @note this format is only needed in the ColDistMat matrix format
-     */
-    template< class LocalContainer>
-    void send_and_reduce( const LocalContainer& gatherFrom, LocalContainer& values) const;
+  /** @class hide_container_geometry
+  * @tparam container 
+  * A data container class for which the blas1 functionality is overloaded and to which the return type of blas1::evaluate() can be converted. 
+  * We assume that container is copyable/assignable and has a swap member function. 
+  * In connection with Geometry this is one of 
+  *  - dg::HVec, dg::DVec when Geometry is a shared memory geometry
+  *  - dg::MHVec or dg::MDVec when Geometry is one of the MPI geometries
+  * @tparam Geometry 
+  A type that is or derives from one of the abstract geometry base classes ( aGeometry2d, aGeometry3d, aMPIGeometry2d, ...). Geometry determines which container type can be used.
+  */
 
-    /**
-     * @brief compute total # of elements the calling process receives in the scatter process (or sends in the gather process)
-     *
-     * (which might not equal the send size in each process)
-     *
-     * @return # of elements to receive
-     */
-    unsigned recv_size() const;
-    /**
-     * @brief return # of elements the calling process has to send in a scatter process (or receive in the gather process)
-     *
-     * equals the size of the map given in the constructor
-     * @return # of elements to send
-     */
-    unsigned send_size() const; 
-    /**
-    * @brief The size of the collected vector = recv_size()
-    *
-    * may return 0
-    * @return 
-    */
-    unsigned size() const;
-    /**
-    * @brief The internal mpi communicator used 
-    *
-    * used to assert that communicators of matrix and vector are the same
-    * @return MPI Communicator
-    */
-    MPI_Comm communicator() const {return p_.communicator();}
-};
+  /** @class hide_geometry_matrix_container
+  * @tparam Geometry 
+  A type that is or derives from one of the abstract geometry base classes ( aGeometry2d, aGeometry3d, aMPIGeometry2d, ...). Geometry determines which Matrix and container types can be used:
+  * @tparam Matrix 
+  * A class for which the blas2 functions are callable in connection with the container class and to which the return type of create::dx() can be converted. 
+  * The Matrix type can be one of:
+  *  - dg::HMatrix with dg::HVec and one of the shared memory geometries
+  *  - dg::DMatrix with dg::DVec and one of the shared memory geometries
+  *  - dg::MHMatrix with dg::MHVec and one of the MPI geometries
+  *  - dg::MDMatrix with dg::MDVec and one of the MPI geometries
+  * @tparam container 
+  * A data container class for which the blas1 functionality is overloaded and to which the return type of blas1::evaluate() can be converted. 
+  * We assume that container is copyable/assignable and has a swap member function. 
+  * In connection with Geometry this is one of 
+  *  - dg::HVec, dg::DVec when Geometry is a shared memory geometry
+  *  - dg::MHVec or dg::MDVec when Geometry is one of the MPI geometries
+  */
+
+ /** @class hide_symmetric_op
+ * @tparam SymmetricOp 
+ A class for which the blas2::symv(Matrix&, Vector1&, Vector2&) function is callable 
+ with the container type as argument. Also, The functions %inv_weights() and %precond() 
+ need to be callable and return inverse weights and the preconditioner for the conjugate 
+ gradient method. The Operator is assumed to be linear and symmetric!
+ @note you can make your own SymmetricOp by providing the member function void symv(const container&, container&);
+  and specializing MatrixTraits with the SelfMadeMatrixTag as the matrix_category
+  */

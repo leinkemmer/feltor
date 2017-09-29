@@ -41,24 +41,17 @@ typedef dg::geo::solovev::GeomParameters GeomParameters; //!< bring GeomParamete
  * This is taken from A. J. Cerfon and M. O'Neil: Exact axisymmetric Taylor states for shaped plasmas, Physics of Plasmas 21, 064501 (2014)
  * @attention When the taylor field is used we need the boost library for special functions
  */
-struct Psip
-{
-    /**
+struct Psip : public aCloneableBinaryFunctor<Psip>
+{ /**
      * @brief Construct from given geometric parameters
      *
-     * @param gp useful geometric parameters
+     * @param gp geometric parameters
      */
     Psip( solovev::GeomParameters gp): R0_(gp.R_0), c_(gp.c) {
         cs_ = sqrt( c_[11]*c_[11]-c_[10]*c_[10]);
     }
-    /**
-     * @brief \f$ \hat \psi_p(R,Z) \f$
-     *
-      @param R radius (cylindrical coordinates)
-      @param Z height (cylindrical coordinates)
-      @return \f$ \hat \psi_p(R,Z) \f$
-     */
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         double Rn = R/R0_, Zn = Z/R0_;
         double j1_c12 = boost::math::cyl_bessel_j( 1, c_[11]*Rn);
@@ -79,20 +72,6 @@ struct Psip
                + c_[9]*sin(c_[11]*Zn));
 
     }
-    /**
-     * @brief \f$ \psi_p(R,Z,\phi) \equiv \psi_p(R,Z)\f$
-     *
-      @param R radius (boost::math::cylindrical coordinates)
-      @param Z height (boost::math::cylindrical coordinates)
-      @param phi angle (boost::math::cylindrical coordinates)
-     *
-     * @return \f$ \hat \psi_p(R,Z,\phi) \f$
-     */
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
     double R0_, cs_;
     std::vector<double> c_;
 };
@@ -101,25 +80,15 @@ struct Psip
  * @brief \f[\psi_R\f]
  * @attention When the taylor field is used we need the boost library for special functions
  */
-struct PsipR
+struct PsipR: public aCloneableBinaryFunctor<PsipR>
 {
-    /**
-     * @brief Construct from given geometric parameters
-     *
-     * @param gp useful geometric parameters
-     */
+    ///@copydoc Psip::Psip()
     PsipR( solovev::GeomParameters gp): R0_(gp.R_0), c_(gp.c) {
         cs_=sqrt(c_[11]*c_[11]-c_[10]*c_[10]);
     
     }
-/**
- * @brief \f$ \frac{\partial  \hat{\psi}_p }{ \partial \hat{R}}(R,Z)  \f$
-
-      @param R radius (boost::math::cylindrical coordinates)
-      @param Z height (boost::math::cylindrical coordinates)
-    * @return \f$ \frac{\partial  \hat{\psi}_p}{ \partial \hat{R}}(R,Z)  \f$
- */ 
-    double operator()(double R, double Z) const
+    private:
+    double do_compute(double R, double Z) const
     {    
         double Rn=R/R0_, Zn=Z/R0_;
         double j1_c12R = boost::math::cyl_bessel_j(1, c_[11]*Rn) + c_[11]/2.*Rn*(
@@ -143,37 +112,20 @@ struct PsipR
                + c_[7]*j1_csR*sin(c_[10]*Zn)
                + c_[8]*y1_csR*sin(c_[10]*Zn) );
     }
-    /**
-     * @brief \f$ \frac{\partial  \hat{\psi}_p }{ \partial \hat{R}}(R,Z,\phi) \equiv \frac{\partial  \hat{\psi}_p }{ \partial \hat{R}}(R,Z)\f$
-      @param R radius (boost::math::cylindrical coordinates)
-      @param Z height (boost::math::cylindrical coordinates)
-      @param phi angle (boost::math::cylindrical coordinates)
-    * @return \f$ \frac{\partial  \hat{\psi}_p}{ \partial \hat{R}}(R,Z,\phi)  \f$
- */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-
-
-  private:
     double R0_, cs_;
     std::vector<double> c_;
 };
 /**
  * @brief \f[ \frac{\partial^2  \hat{\psi}_p }{ \partial \hat{R}^2}\f]
  */ 
-struct PsipRR
+struct PsipRR: public aCloneableBinaryFunctor<PsipRR>
 {
-    /**
-    * @brief Constructor
-    *
-    * @param gp geometric parameters
-    */
+    ///@copydoc Psip::Psip()
     PsipRR( solovev::GeomParameters gp ): R0_(gp.R_0), c_(gp.c) {
         cs_ = sqrt( c_[11]*c_[11]-c_[10]*c_[10]);
     }
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         double Rn=R/R0_, Zn=Z/R0_;
         double j1_c12R = c_[11]*(boost::math::cyl_bessel_j(0, c_[11]*Rn) - Rn*c_[11]*boost::math::cyl_bessel_j(1, c_[11]*Rn));
@@ -193,32 +145,20 @@ struct PsipRR
                + c_[7]*j1_csR*sin(c_[10]*Zn)
                + c_[8]*y1_csR*sin(c_[10]*Zn) );
     }
-    /**
-    * @brief return operator()(R,Z)
-    *
-      @param R radius (boost::math::cylindrical coordinates)
-      @param Z height (boost::math::cylindrical coordinates)
-      @param phi angle (boost::math::cylindrical coordinates)
-    *
-    * @return value
-    */
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
     double R0_, cs_;
     std::vector<double> c_;
 };
 /**
  * @brief \f[\frac{\partial \hat{\psi}_p }{ \partial \hat{Z}}\f]
  */ 
-struct PsipZ
+struct PsipZ: public aCloneableBinaryFunctor<PsipZ>
 {
+    ///@copydoc Psip::Psip()
     PsipZ( solovev::GeomParameters gp ): R0_(gp.R_0), c_(gp.c) { 
         cs_ = sqrt( c_[11]*c_[11]-c_[10]*c_[10]);
     }
-    double operator()(double R, double Z) const
+    private:
+    double do_compute(double R, double Z) const
     {    
         double Rn = R/R0_, Zn = Z/R0_;
         double j1_c12 = boost::math::cyl_bessel_j( 1, c_[11]*Rn);
@@ -236,26 +176,20 @@ struct PsipZ
                + c_[8]*Rn*y1_cs*c_[10]*cos(c_[10]*Zn)
                + c_[9]*c_[11]*cos(c_[11]*Zn));
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
     double R0_,cs_; 
     std::vector<double> c_;
 };
 /**
  * @brief \f[ \frac{\partial^2  \hat{\psi}_p }{ \partial \hat{Z}^2}\f]
  */ 
-struct PsipZZ
+struct PsipZZ: public aCloneableBinaryFunctor<PsipZZ>
 {
-  PsipZZ( solovev::GeomParameters gp): R0_(gp.R_0), c_(gp.c) { 
+    ///@copydoc Psip::Psip()
+    PsipZZ( solovev::GeomParameters gp): R0_(gp.R_0), c_(gp.c) { 
         cs_ = sqrt( c_[11]*c_[11]-c_[10]*c_[10]);
     }
-    double operator()(double R, double Z) const
+    private:
+    double do_compute(double R, double Z) const
     {    
         double Rn = R/R0_, Zn = Z/R0_;
         double j1_cs = boost::math::cyl_bessel_j( 1, cs_*Rn);
@@ -271,26 +205,20 @@ struct PsipZZ
                - c_[8]*Rn*y1_cs*c_[10]*c_[10]*sin(c_[10]*Zn)
                - c_[9]*c_[11]*c_[11]*sin(c_[11]*Zn));
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
     double R0_, cs_;
     std::vector<double> c_;
 };
 /**
  * @brief  \f[\frac{\partial^2  \hat{\psi}_p }{ \partial \hat{R} \partial\hat{Z}}\f] 
  */ 
-struct PsipRZ
+struct PsipRZ: public aCloneableBinaryFunctor<PsipRZ>
 {
+    ///@copydoc Psip::Psip()
     PsipRZ( solovev::GeomParameters gp ): R0_(gp.R_0), c_(gp.c) { 
         cs_ = sqrt( c_[11]*c_[11]-c_[10]*c_[10]);
     }
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         double Rn=R/R0_, Zn=Z/R0_;
         double j1_c12R = boost::math::cyl_bessel_j(1, c_[11]*Rn) + c_[11]/2.*Rn*(
@@ -312,124 +240,81 @@ struct PsipRZ
                + c_[7]*j1_csR*c_[10]*cos(c_[10]*Zn)
                + c_[8]*y1_csR*c_[10]*cos(c_[10]*Zn) );
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
     double R0_, cs_;
     std::vector<double> c_;
 };
 
-struct LaplacePsip
-{
-    LaplacePsip( solovev::GeomParameters gp ): psipRR_(gp), psipZZ_(gp){}
-    double operator()(double R, double Z) const
-    {    
-        return psipRR_(R,Z) + psipZZ_(R,Z);
-    }
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()(R,Z);
-    }
-  private:
-    PsipRR psipRR_;
-    PsipZZ psipZZ_;
-};
-
-
 /**
  * @brief \f[\hat{I} = c_{12}\psi\f] 
+ *
+   \f[\hat{I}= \sqrt{-2 A \hat{\psi}_p / \hat{R}_0 +1}\f] 
  */ 
-struct Ipol
+struct Ipol: public aCloneableBinaryFunctor<Ipol>
 {
+    ///@copydoc Psip::Psip()
     Ipol(  solovev::GeomParameters gp ): c12_(gp.c[11]), psip_(gp) { }
-    /**
-    * @brief \f[\hat{I}= \sqrt{-2 A \hat{\psi}_p / \hat{R}_0 +1}\f] 
-    */ 
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         return c12_*psip_(R,Z);
         
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()( R,Z);
-    }
-  private:
     double c12_;
     Psip psip_;
 };
 /**
  * @brief \f[\hat I_R\f]
  */
-struct IpolR
+struct IpolR: public aCloneableBinaryFunctor<IpolR>
 {
+    ///@copydoc Psip::Psip()
     IpolR(  solovev::GeomParameters gp ): c12_(gp.c[11]), psipR_(gp) { }
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         return c12_*psipR_(R,Z);
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()( R,Z);
-    }
-  private:
     double c12_;
     PsipR psipR_;
 };
 /**
  * @brief \f[\hat I_Z\f]
  */
-struct IpolZ
+struct IpolZ: public aCloneableBinaryFunctor<IpolZ>
 {
+    ///@copydoc Psip::Psip()
     IpolZ(  solovev::GeomParameters gp ): c12_(gp.c[11]), psipZ_(gp) { }
-    double operator()(double R, double Z) const
+  private:
+    double do_compute(double R, double Z) const
     {    
         return c12_*psipZ_(R,Z);
     }
-    /**
-     * @brief == operator()(R,Z)
-     */ 
-    double operator()(double R, double Z, double phi) const
-    {    
-        return operator()( R,Z);
-    }
-  private:
     double c12_;
     PsipZ psipZ_;
 };
 
-/**
- * @brief Contains all taylor fields (models aTokamakMagneticField)
- */
-struct MagneticField
+BinaryFunctorsLvl2 createPsip( solovev::GeomParameters gp)
 {
-    MagneticField( solovev::GeomParameters gp):psip(gp), psipR(gp), psipZ(gp), psipRR(gp), psipRZ(gp), psipZZ(gp), laplacePsip(gp), ipol(gp), ipolR(gp), ipolZ(gp){}
-    Psip psip;
-    PsipR psipR;
-    PsipZ psipZ;
-    PsipRR psipRR;
-    PsipRZ psipRZ;
-    PsipZZ psipZZ;
-    LaplacePsip laplacePsip;
-    Ipol ipol;
-    IpolR ipolR;
-    IpolZ ipolZ;
-};
+    BinaryFunctorsLvl2 psip( new Psip(gp), new PsipR(gp), new PsipZ(gp),new PsipRR(gp), new PsipRZ(gp), new PsipZZ(gp));
+    return psip;
+}
+BinaryFunctorsLvl1 createIpol( solovev::GeomParameters gp)
+{
+    BinaryFunctorsLvl1 ipol( new Ipol(gp), new IpolR(gp), new IpolZ(gp));
+    return ipol;
+}
+dg::geo::TokamakMagneticField createMagField( solovev::GeomParameters gp)
+{
+    return TokamakMagneticField( gp.R_0, dg::geo::taylor::createPsip(gp), dg::geo::taylor::createIpol(gp));
+}
 
 ///@}
 
 } //namespace taylor
+dg::geo::TokamakMagneticField createTaylorField( solovev::GeomParameters gp)
+{
+    return TokamakMagneticField( gp.R_0, dg::geo::taylor::createPsip(gp), dg::geo::taylor::createIpol(gp));
+}
 } //namespace geo
 
 }//namespace dg

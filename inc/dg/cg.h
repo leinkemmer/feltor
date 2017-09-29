@@ -16,41 +16,32 @@
 
 namespace dg{
 
-//// TO DO: check for better stopping criteria using condition number estimates
+//// TO DO: check for better stopping criteria using condition number estimates?
 
 /**
 * @brief Functor class for the preconditioned conjugate gradient method to solve
 * \f[ Ax=b\f]
 *
  @ingroup invert
- @tparam Vector The Vector class: needs to model Assignable 
-
- The following 3 pseudo - BLAS routines need to be callable 
- \li value_type dot = dg::blas1::dot( const Vector&, const Vector&); 
- \li dg::blas1::axpby();  with the Vector type
- \li dg::blas2::symv(Matrix& m, Vector1& x, Vector2& y ); with the Matrix type
- \li value_type dot = dg::blas2::dot( );  with the Preconditioner type
- \li dg::blas2::symv( ); with the Preconditioner type
+ @copydoc hide_container
 
  @note Conjugate gradients might become unstable for positive semidefinite
  matrices arising e.g. in the discretization of the periodic laplacian
 */
-template< class Vector>
+template< class container>
 class CG
 {
   public:
-    typedef typename VectorTraits<Vector>::value_type value_type;//!< value type of the Vector class
-    /**
-     * @brief Allocate nothing, 
-     */
+    typedef typename VectorTraits<container>::value_type value_type;//!< value type of the container class
+    ///@brief Allocate nothing, 
     CG(){}
       /**
        * @brief Reserve memory for the pcg method
        *
-       * @param copyable A Vector must be copy-constructible from this
+       * @param copyable A container must be copy-constructible from this
        * @param max_iter Maximum number of iterations to be used
        */
-    CG( const Vector& copyable, unsigned max_iter):r(copyable), p(r), ap(r), max_iter(max_iter){}
+    CG( const container& copyable, unsigned max_iter):r(copyable), p(r), ap(r), max_iter(max_iter){}
     /**
      * @brief Set the maximum number of iterations 
      *
@@ -70,49 +61,39 @@ class CG
      * @param copyable
      * @param max_iterations
      */
-    void construct( const Vector& copyable, unsigned max_iterations) { 
+    void construct( const container& copyable, unsigned max_iterations) { 
         ap = p = r = copyable;
         max_iter = max_iterations;
     }
     /**
      * @brief Solve the system A*x = b using a preconditioned conjugate gradient method
      *
-     * The iteration stops if \f$ ||Ax|| < \epsilon( ||b|| + C) \f$ where \f$C\f$ is 
+     * The iteration stops if \f$ ||b - Ax|| < \epsilon( ||b|| + C) \f$ where \f$C\f$ is 
      * a correction factor to the absolute error
-     @tparam Matrix The matrix class: no requirements except for the 
-            BLAS routines
-     @tparam Preconditioner no requirements except for the blas routines. Thus far the dg library
-        provides only diagonal preconditioners, which should be enough if the result is extrapolated from
-        previous timesteps.
-     * In every iteration the following BLAS functions are called: \n
-       symv 1x, dot 1x, axpby 2x, Prec. dot 1x, Prec. symv 1x
+     * @copydoc hide_matrix
+     * @tparam Preconditioner A class for which the blas2::symv() and 
+     blas2::dot( const Matrix&, const Vector&) functions are callable. Currently Preconditioner must be the same as container (diagonal preconditioner) except when container is std::vector<container_type> then Preconditioner can be container_type
      * @param A A symmetric positive definit matrix
      * @param x Contains an initial value on input and the solution on output.
      * @param b The right hand side vector. x and b may be the same vector.
      * @param P The preconditioner to be used
      * @param eps The relative error to be respected
      * @param nrmb_correction Correction factor C for norm of b
-     * @attention This versions uses the Preconditioner to compute the norm for the error condition (this safes one scalar product)
+     * @attention This version uses the Preconditioner to compute the norm for the error condition (this safes one scalar product)
      *
      * @return Number of iterations used to achieve desired precision
      */
     template< class Matrix, class Preconditioner >
-    unsigned operator()( Matrix& A, Vector& x, const Vector& b, Preconditioner& P , value_type eps = 1e-12, value_type nrmb_correction = 1);
+    unsigned operator()( Matrix& A, container& x, const container& b, Preconditioner& P , value_type eps = 1e-12, value_type nrmb_correction = 1);
     //version of CG where Preconditioner is not trivial
     /**
      * @brief Solve the system A*x = b using a preconditioned conjugate gradient method
      *
      * The iteration stops if \f$ ||Ax||_S < \epsilon( ||b||_S + C) \f$ where \f$C\f$ is 
      * a correction factor to the absolute error and \f$ S \f$ defines a square norm
-     @tparam Matrix The matrix class: no requirements except for the 
-            BLAS routines
-     @tparam Preconditioner no requirements except for the blas routines. Thus far the dg library
-        provides only diagonal preconditioners, which should be enough if the result is extrapolated from
-        previous timesteps.
-     @tparam SquareNorm  (usually is the same as the container class)
-
-     * In every iteration the following BLAS functions are called: \n
-       symv 1x, dot 1x, axpby 2x, Prec. dot 1x, Prec. symv 1x
+     * @copydoc hide_matrix
+     * @tparam Preconditioner A type for which the blas2::symv(Matrix&, Vector1&, Vector2&) function is callable. 
+     * @tparam SquareNorm A type for which the blas2::dot( const Matrix&, const Vector&) function is callable. This can e.g. be one of the container types.
      * @param A A symmetric positive definit matrix
      * @param x Contains an initial value on input and the solution on output.
      * @param b The right hand side vector. x and b may be the same vector.
@@ -124,9 +105,9 @@ class CG
      * @return Number of iterations used to achieve desired precision
      */
     template< class Matrix, class Preconditioner, class SquareNorm >
-    unsigned operator()( Matrix& A, Vector& x, const Vector& b, Preconditioner& P, SquareNorm& S, value_type eps = 1e-12, value_type nrmb_correction = 1);
+    unsigned operator()( Matrix& A, container& x, const container& b, Preconditioner& P, SquareNorm& S, value_type eps = 1e-12, value_type nrmb_correction = 1);
   private:
-    Vector r, p, ap; 
+    container r, p, ap; 
     unsigned max_iter;
 };
 
@@ -146,9 +127,10 @@ class CG
     NOTE: the same comparison hold for A with the result that A contains 
     significantly more elements than z whence ddot(r,A,r) is far slower than ddot(r,z)
 */
-template< class Vector>
+///@cond
+template< class container>
 template< class Matrix, class Preconditioner>
-unsigned CG< Vector>::operator()( Matrix& A, Vector& x, const Vector& b, Preconditioner& P, value_type eps, value_type nrmb_correction)
+unsigned CG< container>::operator()( Matrix& A, container& x, const container& b, Preconditioner& P, value_type eps, value_type nrmb_correction)
 {
     value_type nrmb = sqrt( blas2::dot( P, b));
 #ifdef DG_DEBUG
@@ -209,9 +191,9 @@ unsigned CG< Vector>::operator()( Matrix& A, Vector& x, const Vector& b, Precond
     return max_iter;
 }
 
-template< class Vector>
+template< class container>
 template< class Matrix, class Preconditioner, class SquareNorm>
-unsigned CG< Vector>::operator()( Matrix& A, Vector& x, const Vector& b, Preconditioner& P, SquareNorm& S, value_type eps, value_type nrmb_correction)
+unsigned CG< container>::operator()( Matrix& A, container& x, const container& b, Preconditioner& P, SquareNorm& S, value_type eps, value_type nrmb_correction)
 {
     value_type nrmb = sqrt( blas2::dot( S, b));
 #ifdef DG_DEBUG
@@ -263,6 +245,100 @@ unsigned CG< Vector>::operator()( Matrix& A, Vector& x, const Vector& b, Precond
     }
     return max_iter;
 }
+///@endcond
+
+
+/**
+* @brief Class that stores up to three solutions of iterative methods and
+can be used to get initial guesses based on past solutions
+
+ \f[ x_{init} = \alpha_0 x_0 + \alpha_{-1}x_{-1} + \alpha_{-2} x_{-2}\f]
+ where the indices indicate the current (0) and past (negative) solutions.
+*
+* @copydoc hide_container
+* @ingroup misc
+*/
+template<class container>
+struct Extrapolation
+{
+    /*! @brief Set extrapolation type without initializing values
+     * @param type number of vectors to use for extrapolation ( 0<=type<=3)
+     * @attention the update function must be used at least type times before the extrapolate function can be called
+     */
+    Extrapolation( unsigned type = 2){ set_type(type); }
+    /*! @brief Set extrapolation type and initialize values
+     * @param type number of vectors to use for extrapolation ( 0<=type<=3)
+     * @param init the vectors are initialized with this value
+     */
+    Extrapolation( unsigned type, const container& init) { 
+        set_type(type, init); 
+    }
+    ///@copydoc Extrapolation(unsigned)
+    void set_type( unsigned type)
+    {
+        m_type = type;
+        m_x.resize( type);
+        assert( m_type <= 3 );
+    }
+    ///@copydoc Extrapolation(unsigned,const container&)
+    void set_type( unsigned type, const container& init)
+    {
+        m_x.assign( type, init);
+        m_type = type;
+        assert( m_type <= 3 );
+    }
+    ///read the current extrapolation type
+    unsigned get_type( ) const{return m_type;}
+
+    /**
+    * @brief Extrapolate values 
+    *
+    * @param new_x (write only) contains extrapolated value on output ( may alias the tail)
+    */
+    void extrapolate( container& new_x) const{
+        switch(m_type)
+        {
+            case(0): 
+                     break;
+            case(1): dg::blas1::copy( m_x[0], new_x);
+                     break;
+            case(2): dg::blas1::axpby( 2., m_x[0], -1., m_x[1], new_x);
+                     break;
+            case(3): dg::blas1::axpby( 1., m_x[2], -3., m_x[1], new_x);
+                     dg::blas1::axpby( 3., m_x[0], 1., new_x);
+                     break;
+            default: dg::blas1::axpby( 2., m_x[0], -1., m_x[1], new_x);
+        }
+    }
+
+    
+    /**
+    * @brief move the all values one step back and copy the given vector as current head
+    *
+    * @param new_head the new head ( may alias the tail)
+    */
+    void update( const container& new_head){
+        if( m_type == 0) return;
+        //push out last value
+        for (unsigned u=m_type-1; u>0; u--)
+            m_x[u].swap( m_x[u-1]);
+        blas1::copy( new_head, m_x[0]);
+    }
+
+    /**
+     * @brief return the current head 
+     * @return current head (undefined if m_type==0)
+     */
+    const container& head()const{return m_x[0];}
+    ///write access to tail value ( the one that will be deleted in the next update
+    container& tail(){return m_x[m_type-1];}
+    ///read access to tail value ( the one that will be deleted in the next update
+    const container& tail()const{return m_x[m_type-1];}
+
+    private:
+    unsigned m_type;
+    std::vector<container> m_x;
+};
 
 
 /**
@@ -277,7 +353,7 @@ unsigned CG< Vector>::operator()( Matrix& A, Vector& x, const Vector& b, Precond
  * by appropriate weights \f$W\f$ (s. comment below). 
  * It uses solutions from the last two calls to 
  * extrapolate a solution for the current call.
- * @tparam container The Vector class to be used
+ * @copydoc hide_container
  * @note A note on weights, inverse weights and preconditioning. 
  * A normalized DG-discretized derivative or operator is normally not symmetric. 
  * The diagonal coefficient matrix that is used to make the operator 
@@ -293,11 +369,8 @@ struct Invert
 {
     typedef typename VectorTraits<container>::value_type value_type;
 
-    /**
-     * @brief Allocate nothing
-     *
-     */
-    Invert() { multiplyWeights_ = true; set_extrapolationType(2); nrmb_correction_ = 1.; }
+    ///@brief Allocate nothing
+    Invert() { multiplyWeights_ = true; nrmb_correction_ = 1.; }
 
     /**
      * @brief Constructor
@@ -326,10 +399,10 @@ struct Invert
      */
     void construct( const container& copyable, unsigned max_iter, value_type eps, int extrapolationType = 2, bool multiplyWeights = true, value_type nrmb_correction = 1.) 
     {
+        m_ex.set_type( extrapolationType);
         set_size( copyable, max_iter);
         set_accuracy( eps, nrmb_correction);
         multiplyWeights_=multiplyWeights;
-        set_extrapolationType( extrapolationType);
     }
 
 
@@ -341,7 +414,7 @@ struct Invert
      */
     void set_size( const container& assignable, unsigned max_iterations) {
         cg.construct(assignable, max_iterations);
-        phi0 = phi1 = phi2 = assignable;
+        m_ex.set_type( m_ex.get_type(), assignable);
     }
 
     /**
@@ -360,39 +433,22 @@ struct Invert
      *
      * @param extrapolationType number of last values to use for next extrapolation of initial guess
      */
-    void set_extrapolationType( int extrapolationType)
-    {
-        assert( extrapolationType <= 3 && extrapolationType >= 0);
-        switch(extrapolationType)
-        {
-            case(0): alpha[0] = 0, alpha[1] = 0, alpha[2] = 0;
-                     break;
-            case(1): alpha[0] = 1, alpha[1] = 0, alpha[2] = 0;
-                     break;
-            case(2): alpha[0] = 2, alpha[1] = -1, alpha[2] = 0;
-                     break;
-            case(3): alpha[0] = 3, alpha[1] = -3, alpha[2] = 1;
-                     break;
-            default: alpha[0] = 2, alpha[1] = -1, alpha[2] = 0;
-        }
+    void set_extrapolationType( int extrapolationType) {
+        m_ex.set_type( extrapolationType);
     }
     /**
      * @brief Set the maximum number of iterations 
-     *
      * @param new_max New maximum number
      */
     void set_max( unsigned new_max) {cg.set_max( new_max);}
     /**
      * @brief Get the current maximum number of iterations
-     *
      * @return the current maximum
      */
     unsigned get_max() const {return cg.get_max();}
 
-    /**
-    * @brief Return last solution
-    */
-    const container& get_last() const { return phi0;}
+    /// @brief Return last solution
+    const container& get_last() const { return m_ex.head();}
 
     /**
      * @brief Solve linear problem
@@ -400,23 +456,19 @@ struct Invert
      * Solves the Equation \f[ \hat O \phi = W\rho \f] using a preconditioned 
      * conjugate gradient method. The initial guess comes from an extrapolation 
      * of the last solutions
-     * @tparam SymmetricOp Symmetric operator with the SelfMadeMatrixTag
-        The functions weights() and precond() need to be callable and return
-        weights and the preconditioner for the conjugate gradient method.
-        The Operator is assumed to be symmetric!
+     * @copydoc hide_symmetric_op
      * @param op selfmade symmetric Matrix operator class
      * @param phi solution (write only)
      * @param rho right-hand-side
      * @note computes inverse weights from the weights 
+     * @note If the Macro DG_BENCHMARK is defined this function will write timings to std::cout
      *
      * @return number of iterations used 
      */
     template< class SymmetricOp >
     unsigned operator()( SymmetricOp& op, container& phi, const container& rho)
     {
-        container inv_weights( op.weights());
-        dg::blas1::transform( inv_weights, inv_weights, dg::INVERT<double>());
-        return this->operator()(op, phi, rho, op.weights(), op.precond(), inv_weights);
+        return this->operator()(op, phi, rho, op.weights(), op.inv_weights(), op.precond());
     }
 
     /**
@@ -425,213 +477,60 @@ struct Invert
      * Solves the Equation \f[ \hat O \phi = W\rho \f] using a preconditioned 
      * conjugate gradient method. The initial guess comes from an extrapolation 
      * of the last solutions.
-     * @tparam SymmetricOp Symmetric matrix or operator (with the selfmade tag)
-     * @tparam Preconditioner class of the Preconditioner
-     * @param op selfmade symmetric Matrix operator class
+     * @copydoc hide_matrix
+     * @tparam Preconditioner A type for which the blas2::symv(Matrix&, Vector1&, Vector2&) function is callable. 
+     * @param op symmetric Matrix operator class
      * @param phi solution (write only)
      * @param rho right-hand-side
-     * @param w The weights that made the operator symmetric
+     * @param weights The weights that normalize the symmetric operator
+     * @param inv_weights The inverse of the weights that normalize the symmetric operator
      * @param p The preconditioner  
-     * @note computes inverse weights from the weights 
+     * @note If the Macro DG_BENCHMARK is defined this function will write timings to std::cout
      *
      * @return number of iterations used 
      */
-    template< class SymmetricOp, class Preconditioner >
-    unsigned operator()( SymmetricOp& op, container& phi, const container& rho, const container& w, Preconditioner& p)
+    template< class Matrix, class Preconditioner >
+    unsigned operator()( Matrix& op, container& phi, const container& rho, const container& weights, const container& inv_weights, Preconditioner& p)
     {
-        container inv_weights( w);
-        dg::blas1::transform( inv_weights, inv_weights, dg::INVERT<double>());
-        return this->operator()(op, phi, rho, w, p, inv_weights);
-    }
-
-    /**
-     * @brief Solve linear problem
-     *
-     * Solves the Equation \f[ \hat O \phi = W\rho \f] using a preconditioned 
-     * conjugate gradient method. The initial guess comes from an extrapolation 
-     * of the last solutions.
-     * @tparam SymmetricOp Symmetric matrix or operator (with the selfmade tag)
-     * @tparam Preconditioner class of the Preconditioner
-     * @param op selfmade symmetric Matrix operator class
-     * @param phi solution (write only)
-     * @param rho right-hand-side
-     * @param w The weights that made the operator symmetric
-     * @param p The preconditioner  
-     * @param inv_weights The inverse weights used to compute the scalar product in the CG solver
-     * @note Calls the most general form of the CG solver with SquareNorm being the container class
-     *
-     * @return number of iterations used 
-     */
-    template< class SymmetricOp, class Preconditioner >
-    unsigned operator()( SymmetricOp& op, container& phi, const container& rho, const container& w, Preconditioner& p, const container& inv_weights)
-    {
-        assert( phi0.size() != 0);
+        assert( phi.size() != 0);
         assert( &rho != &phi);
-        blas1::axpby( alpha[0], phi0, alpha[1], phi1, phi); // 1. phi0 + 0.*phi1 = phi
-        blas1::axpby( alpha[2], phi2, 1., phi); // 0. phi2 + 1. phi0 + 0.*phi1 = phi
-
-        unsigned number;
 #ifdef DG_BENCHMARK
-#ifdef MPI_VERSION
-        int rank;
-        MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-#endif //MPI
         Timer t;
         t.tic();
 #endif //DG_BENCHMARK
+        m_ex.extrapolate( phi);
+
+        unsigned number;
         if( multiplyWeights_ ) 
         {
-            dg::blas2::symv( w, rho, phi2);
-            number = cg( op, phi, phi2, p, inv_weights, eps_, nrmb_correction_);
+            dg::blas2::symv( rho, weights, m_ex.tail());
+            number = cg( op, phi, m_ex.tail(), p, inv_weights, eps_, nrmb_correction_);
         }
         else
             number = cg( op, phi, rho, p, inv_weights, eps_, nrmb_correction_);
+
+        m_ex.update(phi);
 #ifdef DG_BENCHMARK
-#ifdef MPI_VERSION
-        if(rank==0)
-#endif //MPI
-        std::cout << "# of cg iterations \t"<< number << "\t";
         t.toc();
 #ifdef MPI_VERSION
+        int rank;
+        MPI_Comm_rank(MPI_COMM_WORLD, &rank);
         if(rank==0)
 #endif //MPI
-        std::cout<< "took \t"<<t.diff()<<"s\n";
+        {
+            std::cout << "# of cg iterations \t"<< number << "\t";
+            std::cout<< "took \t"<<t.diff()<<"s\n";
+        }
 #endif //DG_BENCHMARK
-        phi1.swap( phi2);
-        phi0.swap( phi1);
-        
-        blas1::axpby( 1., phi, 0, phi0);
         return number;
     }
 
   private:
     value_type eps_, nrmb_correction_;
-    container phi0, phi1, phi2;
     dg::CG< container > cg;
-    value_type alpha[3];
+    Extrapolation<container> m_ex;
     bool multiplyWeights_; 
 };
-
-/**
- * @brief This struct holds a matrix and applies its inverse to vectors 
- *
- * The inverse is computed with a conjugate gradient method
- * @ingroup invert
- * @tparam SymmetricOp A symmetric Matrix type
- * @tparam container The container type to use
- */
-template<class SymmetricOp, class container>
-struct Inverse
-{
-    typedef typename VectorTraits<container>::value_type value_type;
-    Inverse( SymmetricOp& op, container& copyable, unsigned max_iter, value_type eps, int extrapolationType=0): 
-        x_(copyable), b_(copyable), op_( op), invert_( copyable, max_iter, eps, extrapolationType, false, 1.){}
-    /**
-     * @brief Computes Op^{-1} b = x
-     *
-     * @param b
-     * @param x
-     */
-    template<class OtherContainer>
-    void symv( const OtherContainer& b, OtherContainer& x)
-    {
-        //std::cout << "Number in inverse "<<invert( op, x, b, op.weights(), op.precond())<<std::endl;
-        dg::blas1::transfer(b,b_);
-        invert_( op_, x_, b_); 
-        dg::blas1::transfer(x_,x);
-    }
-    private:
-    container x_,b_;
-    SymmetricOp op_;
-    Invert<container> invert_;
-};
-
-///@cond
-template< class M, class V>
-struct MatrixTraits< Inverse< M, V > >
-{
-    typedef typename Inverse<M, V>::value_type value_type;
-    typedef SelfMadeMatrixTag matrix_category;
-};
-
-///@endcond
-
-
-/**
- * @brief Function version of CG class
- *
- * @ingroup invert 
- * @tparam Matrix Matrix type
- * @tparam Vector Vector type (must be constructible from given size)
- * @tparam Preconditioner Preconditioner type
- * @param A Matrix 
- * @param x contains initial guess on input and solution on output
- * @param b right hand side
- * @param P Preconditioner
- * @param eps relative error
- * @param max_iter maximum iterations allowed
- *
- * @return number of iterations
- */
-/*
-template< class Matrix, class Vector, class Preconditioner>
-unsigned cg( Matrix& A, Vector& x, const Vector& b, const Preconditioner& P, typename VectorTraits<Vector>::value_type eps, unsigned max_iter)
-{
-    typedef typename VectorTraits<Vector>::value_type value_type;
-    value_type nrmb = sqrt( blas2::dot( P, b)); //norm of b
-#ifdef DG_DEBUG
-#ifdef MPI_VERSION
-    int rank;
-    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
-    if(rank==0)
-#endif //MPI
-    {
-    std::cout << "Norm of b "<<nrmb <<"\n";
-    std::cout << "Residual errors: \n";
-    }
-#endif //DG_DEBUG
-    if( nrmb == 0)
-    {
-        blas1::axpby( 1., b, 0., x); //x=b
-        return 0;
-    }
-    Vector r(x.size()), p(x.size()), ap(x.size()); //1% time at 20 iterations
-    //r = b; blas2::symv( -1., A, x, 1.,r); //compute r_0 
-    blas2::symv( A,x,r); //r=A x
-    blas1::axpby( 1., b, -1., r); //r=b-Ax
-    blas2::symv( P, r, p );//<-- compute p_0  //p=P(b-Ax)
-    //note that dot does automatically synchronize
-    value_type nrm2r_old = blas2::dot( P,r); //and store the norm of it // norm of r^2 = ||r||^2 = r^T P r 
-    if( sqrt( nrm2r_old ) < eps*nrmb + eps)
-        return 0;
-    value_type alpha, nrm2r_new;
-    for( unsigned i=1; i<max_iter; i++)
-    {
-        blas2::symv( A, p, ap); // ap = A ( P(b-Ax))
-        alpha = nrm2r_old /blas1::dot( p, ap); // alpha = ||r||^2 / ( ((b-Ax)^T P^T) A (P (b-Ax))  )
-        blas1::axpby( alpha, p, 1.,x);
-        //here one could add a ifstatement to remove accumulated floating point error
-        //(if i modulo sqrt(n)) r=b-Ax else ...
-        blas1::axpby( -alpha, ap, 1., r); // r = r-alpha*A ( P(b-Ax))
-        nrm2r_new = blas2::dot( P, r);  //||r_new||^2 =  r^T P r 
-#ifdef DG_DEBUG
-#ifdef MPI_VERSION
-        if(rank==0)
-#endif //MPI
-        {
-        std::cout << "Absolute "<<sqrt( nrm2r_new) <<"\t ";
-        std::cout << " < Critical "<<eps*nrmb + eps <<"\t ";
-        std::cout << "(Relative "<<sqrt( nrm2r_new)/nrmb << ")\n";
-        }
-#endif //DG_DEBUG
-        if( sqrt( nrm2r_new) < eps*nrmb + eps) 
-            return i;
-        blas2::symv(1.,P, r, nrm2r_new/nrm2r_old, p ); //p= 1*P*r + ||r_new||^2 /||r_old||^2 *p
-        nrm2r_old=nrm2r_new;
-    }
-    return max_iter;
-}
-*/
 
 } //namespace dg
 

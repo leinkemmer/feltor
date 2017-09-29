@@ -11,13 +11,13 @@
 #include "dlt.h"
 #include "operator.h"
 #include "operator_tensor.cuh"
-#include "tensor.cuh"
+#include "dgtensor.cuh"
 #include "interpolation.cuh" //makes typedefs available
 
 
 /*! @file
 
-  * provides some utility functions
+  * @brief provides some utility functions
   */
 
 namespace dg{
@@ -86,7 +86,7 @@ cusp::coo_matrix<int, double, cusp::host_memory> scatter( const thrust::host_vec
  * @return transformation matrix
  * @note this matrix has ~n^4 N^2 entries and is not sorted
  */
-cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const Grid2d& g)
+cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const aTopology2d& g)
 {
     typedef cusp::coo_matrix<int, double, cusp::host_memory> Matrix;
     //create equidistant backward transformation
@@ -94,8 +94,8 @@ cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const Grid2d& g)
     dg::Operator<double> forward( g.dlt().forward());
     dg::Operator<double> backward1d = backwardeq*forward;
 
-    Matrix transformX = dg::tensor( g.Nx(), backward1d);
-    Matrix transformY = dg::tensor( g.Ny(), backward1d);
+    Matrix transformX = dg::tensorproduct( g.Nx(), backward1d);
+    Matrix transformY = dg::tensorproduct( g.Ny(), backward1d);
     Matrix backward = dg::dgtensor( g.n(), transformY, transformX);
 
     //thrust::host_vector<int> map = dg::create::gatherMap( g.n(), g.Nx(), g.Ny());
@@ -116,11 +116,11 @@ cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const Grid2d& g)
  * @return transformation matrix
  * @note this matrix has ~n^4 N^2 entries and is not sorted
  */
-cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const Grid3d& g)
+cusp::coo_matrix<int, double, cusp::host_memory> backscatter( const aTopology3d& g)
 {
     Grid2d g2d( g.x0(), g.x1(), g.y0(), g.y1(), g.n(), g.Nx(), g.Ny(), g.bcx(), g.bcy());
     cusp::coo_matrix<int,double, cusp::host_memory> back2d = backscatter( g2d);
-    return dgtensor<double>( 1, tensor<double>( g.Nz(), delta(1)), back2d);
+    return dgtensor<double>( 1, tensorproduct<double>( g.Nz(), delta(1)), back2d);
 }
 
 

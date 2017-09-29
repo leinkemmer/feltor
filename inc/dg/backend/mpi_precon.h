@@ -4,6 +4,11 @@
 #include "weights.cuh"
 #include "mpi_grid.h"
 
+
+
+/**@file
+* @brief contains MPI weights
+*/
 namespace dg
 {
  
@@ -36,7 +41,7 @@ namespace create
 *
 * @return Preconditioner
 */
-MPI_Vector<thrust::host_vector<double> > weights( const MPIGrid2d& g)
+MPI_Vector<thrust::host_vector<double> > weights( const aMPITopology2d& g)
 {
     thrust::host_vector<double> w = create::weights( g.local());
     return MPI_Vector<thrust::host_vector<double> >( w, g.communicator());
@@ -48,7 +53,7 @@ MPI_Vector<thrust::host_vector<double> > weights( const MPIGrid2d& g)
 *
 * @return Preconditioner
 */
-MPI_Vector<thrust::host_vector<double> > inv_weights( const MPIGrid2d& g)
+MPI_Vector<thrust::host_vector<double> > inv_weights( const aMPITopology2d& g)
 {
     thrust::host_vector<double> w = create::inv_weights( g.local());
     return MPI_Vector<thrust::host_vector<double> >( w, g.communicator());
@@ -60,7 +65,7 @@ MPI_Vector<thrust::host_vector<double> > inv_weights( const MPIGrid2d& g)
 *
 * @return Preconditioner
 */
-MPI_Vector<thrust::host_vector<double> > weights( const MPIGrid3d& g)
+MPI_Vector<thrust::host_vector<double> > weights( const aMPITopology3d& g)
 {
     thrust::host_vector<double> w = create::weights( g.local());
     return MPI_Vector<thrust::host_vector<double> >( w, g.communicator());
@@ -72,7 +77,7 @@ MPI_Vector<thrust::host_vector<double> > weights( const MPIGrid3d& g)
 *
 * @return Preconditioner
 */
-MPI_Vector<thrust::host_vector<double> > inv_weights( const MPIGrid3d& g)
+MPI_Vector<thrust::host_vector<double> > inv_weights( const aMPITopology3d& g)
 {
     thrust::host_vector<double> w = create::inv_weights( g.local());
     return MPI_Vector<thrust::host_vector<double> >( w, g.communicator());

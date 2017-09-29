@@ -191,10 +191,11 @@ We initialize
 \begin{align}
     M(t) = \int n-1 \\
     \Lambda_n = \nu \int \Delta n  \\
+    ...
     \label{}
 \end{align}
 \section{Numerical methods}
-discontinuouos Galerkin on structured grid
+discontinuous Galerkin on structured grid
 \begin{longtable}{ll>{\RaggedRight}p{7cm}}
 \toprule
 \rowcolor{gray!50}\textbf{Term} &  \textbf{Method} & \textbf{Description}  \\ \midrule
@@ -289,9 +290,13 @@ mass                     & Dataset & 1 (energy\_time) & mass integral   \\
 \bottomrule
 \end{longtable}
 \section{Diagnostics toeflRdiag.cu}
+There only is a shared memory version available
 \begin{verbatim}
+cd path/to/feltor/diag
+make toeflRdiag 
 path/to/feltor/diag/toeflRdiag input.nc output.nc
 \end{verbatim}
+
 Input file format: netcdf-4/hdf5
 %
 %Name | Type | Dimensionality | Description
