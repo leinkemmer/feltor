@@ -1,6 +1,9 @@
 #include <iostream>
 #include <iomanip>
 
+#include <limits.h>
+#include <unistd.h>
+
 #include <thrust/device_vector.h>
 #include <thrust/host_vector.h>
 #include <mpi.h>
@@ -43,13 +46,64 @@ double jacobian( double x, double y)
 //double right( double x, double y) {return y;}
 //double jacobian( double x, double y) {return 2.*M_PI*cos(2.*M_PI*(x-hx/2.));}
 
+
+void mpi_init2d_cli( dg::bc bcx, dg::bc bcy, unsigned& n, unsigned& Nx, unsigned& Ny, MPI_Comm& comm, char argc, char* argv[]  )
+{
+    int periods[2] = {false,false};
+    if( bcx == dg::PER) periods[0] = true;
+    if( bcy == dg::PER) periods[1] = true;
+    int rank, size;
+    MPI_Comm_rank( MPI_COMM_WORLD, &rank);
+    MPI_Comm_size( MPI_COMM_WORLD, &size);
+    std::cout << rank << " " << size << std::endl;
+
+    if(argc != 6 && argc != 7) {
+        std::cerr << "ERROR: 5 or 6 arguments are required: n, Nx, Ny, npx, npy, [gpus_per_node]" << std::endl;
+        exit(1);
+    }
+#ifdef __NVCC__
+    if(argc == 7)
+        cudaSetDevice(rank % atoi(argv[6]));
+#endif
+
+    //exit(1);
+    if(rank==0)std::cout << "MPI v"<<MPI_VERSION<<"."<<MPI_SUBVERSION<<std::endl;
+    int np[2];
+    np[0] = atoi(argv[4]); np[1] = atoi(argv[5]);
+    if( rank == 0)
+    {
+        std::cout<< "Computing with "<<np[0] <<" x "<<np[1]<<" = "<<size<<" processes! "<<std::endl;
+        assert( size == np[0]*np[1]);
+    }
+    MPI_Bcast( np, 2, MPI_INT, 0, MPI_COMM_WORLD);
+    MPI_Cart_create( MPI_COMM_WORLD, 2, np, periods, true, &comm);
+    n = atoi(argv[1]); Nx = atoi(argv[2]); Ny = atoi(argv[3]);
+    if( rank == 0)
+    {
+        std::cout<< "On the grid "<<n <<" x "<<Nx<<" x "<<Ny<<std::endl;
+    }
+    MPI_Bcast(  &n,1 , MPI_UNSIGNED, 0, comm);
+    MPI_Bcast( &Nx,1 , MPI_UNSIGNED, 0, comm);
+    MPI_Bcast( &Ny,1 , MPI_UNSIGNED, 0, comm);
+}
+
+
 int main(int argc, char* argv[])
 {
     MPI_Init( &argc, &argv);
     int rank;
+
+    char host[100];
+    gethostname(host,100);
+
+    int size;
+    MPI_Comm_rank( MPI_COMM_WORLD, &rank);
+    MPI_Comm_size( MPI_COMM_WORLD, &size);
+    std::cout << rank << " " << size << " " << host << std::endl;
+
     unsigned n, Nx, Ny; 
     MPI_Comm comm;
-    mpi_init2d( bcx, bcy, n, Nx, Ny, comm);
+    mpi_init2d_cli( bcx, bcy, n, Nx, Ny, comm, argc, argv);
     dg::MPIGrid2d grid( 0, lx, 0, ly, n, Nx, Ny, bcx, bcy, comm);
     MPI_Comm_rank( MPI_COMM_WORLD, &rank);
     dg::Timer t;
@@ -61,7 +115,7 @@ int main(int argc, char* argv[])
     std::cout<< std::setprecision(3);
 
     dg::ArakawaX<dg::CartesianMPIGrid2d, dg::MDMatrix, dg::MDVec> arakawa( grid);
-    unsigned multi=1000;
+    unsigned multi=20;
     t.tic(); 
     for( unsigned i=0; i<multi; i++)
         arakawa( lhs, rhs, jac);

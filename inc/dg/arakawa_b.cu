@@ -42,13 +42,16 @@ double jacobian( double x, double y)
 typedef dg::DVec Vector;
 typedef dg::DMatrix Matrix;
 
-int main()
+int main(int argc, char* argv[])
 {
     std::cout << std::fixed<<"\nTEST 2D VERSION!!\n";
     dg::Timer t;
     unsigned n, Nx, Ny;
-    std::cout << "Type n, Nx and Ny! \n";
-    std::cin >> n >> Nx >> Ny;
+    if(argc != 4) {
+        std::cout << "ERROR: exactly three arguments n, Nx, Ny are required" << std::endl;
+        exit(1);
+    }
+    n = atoi(argv[1]); Nx = atoi(argv[2]); Ny = atoi(argv[3]);
     dg::Grid2d grid( 0, lx, 0, ly, n, Nx, Ny, dg::PER, dg::PER);
     Vector w2d = dg::create::weights( grid);
     std::cout << "Computing on the Grid " <<n<<" x "<<Nx<<" x "<<Ny <<std::endl;
